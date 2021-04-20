@@ -1,3 +1,0 @@
-caspe
-DESKTOP-BB98PJC
-25 feb 2021 15:06:03
