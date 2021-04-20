@@ -1,0 +1,4 @@
+arial narrow
+swis721 bt
+@arial unicode ms
+simplex

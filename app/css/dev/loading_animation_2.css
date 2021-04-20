@@ -1,0 +1,91 @@
+
+/* loading_animation_sm.html START */
+
+.containerTopSm {
+    padding-top: 0px;
+    width: 200px;
+    height: 315px;
+    margin: auto;
+}
+
+.containerBottomSm {
+    padding-top: 0px;
+    background-color: #FFF;
+    width: 200px;
+    height: 130px;
+    margin: auto;
+    border-radius: 14px;
+    -webkit-box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.6);
+}
+
+#loadingSm-top p {
+    text-align: center;
+    font-size: 26px;
+    color: #124089;
+    padding-top: 18px;
+}
+
+#cyclingGraphicSm {
+    position: absolute;
+    padding-top: 16px;
+    margin-left: 78px;
+}
+
+/* loading_animation_sm.html END */
+
+/* animation css */
+
+.leviathan {display:block;position:relative;background:transparent;width:96px;height:28px;padding:0;margin:0;transform-style:preserve-3d;-webkit-perspective:1000;-webkit-backface-visibility:hidden}
+.leviathan i{display:block;float:left;background-color:rgb(0,150,215);opacity:.5;width:10px;height:10px;margin:4px 3px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px}
+.leviathan.dark i{background:#bbb;background:rgba(0,0,0,0.25)}
+    
+.uno {
+    -webkit-animation: play 1.8s linear .6s infinite;
+       -moz-animation: play 1.8s linear .6s infinite;
+        -ms-animation: play 1.8s linear .6s infinite;
+         -o-animation: play 1.8s linear .6s infinite;
+            animation: play 1.8s linear .6s infinite;
+}
+
+.dos {
+    -webkit-animation: play 1.8s linear 1.2s infinite;
+       -moz-animation: play 1.8s linear 1.2s infinite;
+        -ms-animation: play 1.8s linear 1.2s infinite;
+         -o-animation: play 1.8s linear 1.2s infinite;
+            animation: play 1.8s linear 1.2s infinite;
+}
+
+.tres {
+    -webkit-animation: play 1.8s linear 1.8s infinite;
+       -moz-animation: play 1.8s linear 1.8s infinite;
+        -ms-animation: play 1.8s linear 1.8s infinite;
+         -o-animation: play 1.8s linear 1.8s infinite;
+            animation: play 1.8s linear 1.8s infinite;
+}
+
+@-webkit-keyframes play {
+   from { opacity:    1.0; }
+     to { opacity:    0.1; }
+}
+
+@-moz-keyframes play {
+   from { opacity:    1.0; }
+     to { opacity:    0.1; }
+}
+
+@-ms-keyframes play {
+   from { opacity:    1.0; }
+     to { opacity:    0.1; }
+}
+
+@-o-keyframes play {
+   from { opacity:    1.0; }
+     to { opacity:    0.1; }
+}
+
+@keyframes play {
+   from { opacity:    1.0; }
+     to { opacity:    0.1; }
+}

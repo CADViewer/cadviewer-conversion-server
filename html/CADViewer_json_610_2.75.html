@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+    <title>CADViewer</title>
+    <link rel="icon" href="https://cadviewer.com/images/cvlogo.png">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="TMS" />
+    <meta name="created" content="Thu, 23 Apr 2020 16:14:30 GMT" />
+    <meta name="description" content="Tailor Made Software  - CADViewer Online Sample Implementation Page." />
+    <meta name="keywords" content="" />
+
+
+	<script src="../app/js/jquery-2.2.3.js" type="text/javascript"></script>
+	<script src="../app/js/jquery.qtip.min.js" type="text/javascript"></script>
+	<link href="../app/css/jquery.qtip.min.css" media="screen" rel="stylesheet" type="text/css" />
+
+	<script src="../app/js/popper.js" type="text/javascript"></script>
+
+	<script src="../app/js/bootstrap.min.js" type="text/javascript"></script>
+	<link href="../app/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
+
+	<script src="../app/js/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+	<link href="../app/css/jquery-ui-1.11.4.min.css" media="screen" rel="stylesheet" type="text/css" />
+
+	<script src="../app/cv/cv-core/cadviewer_base_6_2_75.js" type="text/javascript" ></script>
+	<script src="../app/cv/cv-pro/cadviewer_pro_6_2_75.js" type="text/javascript" ></script> 
+
+<!--	<script src="../app/cv/cv-core/cadviewer_base.min.js" type="text/javascript" ></script>  -->
+<!--	<script src="../app/cv/cv-pro/cadviewer.min.js" type="text/javascript" ></script> -->
+
+	<script src="../app/cv/cv-custom_commands/CADViewer_custom_commands.js" type="text/javascript" ></script>
+
+	<script src="../app/cv/cvlicense.js" type="text/javascript" ></script>
+	<script src="../app//cv/cv-core/axuploader_2_19.js" type="text/javascript" ></script>
+
+	<script src="../app/js/bootstrap-multiselect.js" type="text/javascript" ></script>
+	<link href="../app/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css" />
+
+	<link href="../app/css/cvjs_6.1.0.css" media="screen" rel="stylesheet" type="text/css" />
+
+	<script src="../app/js/library_js_svg_path.js" type="text/javascript"></script>			
+	<script src="../app/js/snap.svg-min.js" type="text/javascript" ></script>
+
+	<script src="../app/js/cvjs_api_styles_2_0_26.js" type="text/javascript" ></script>
+	<script src="../app/js/rgbcolor.js"type="text/javascript" ></script>
+	<script src="../app/js/StackBlur.js"type="text/javascript" ></script>
+	<script src="../app/js/canvg.js" type="text/javascript"  ></script>
+	<script src="../app/js/list.js" type="text/javascript"></script>
+	<script src="../app/js/jscolor.js" type="text/javascript" ></script>
+	
+	<script src="../app/js/jstree/jstree.min.js"></script>
+	<script src="../app/js/xml2json.min.js"></script>
+
+<!--	<script src="../app/cv/CADViewer_PHPHandlerSettings.js" type="text/javascript"></script>	-->	
+<!--	<script src="../app/cv/CADViewer_ServletHandlerSettings.js" type="text/javascript"></script> -->
+<!--	<script src="../app/cv/CADViewer_AshxHandlerSettings.js" type="text/javascript"></script> -->
+	<script src="../app/cv/CADViewer_NodeJSHandlerSettings.js" type="text/javascript"></script> 
+	
+	
+	<script type="text/javascript">
+
+
+	// PATH and FILE to be loaded, can be in formats DWG, DXF, DWF, SVG , JS, DGN, PCF, JPG, GIF, PNG
+	
+	
+				
+
+	var FileName = ServerUrl +"/content/drawings/dwg/hq17.dwg";
+	var FileName = ServerUrl +"/content/dgn  Ref w workspace 1/HAU-P533-A-51-015245.dgn";
+//	var FileName = ServerUrl +"/content/test03.svg";
+
+	var FileName = ServerUrl +"/content/drawings/dwg/AA_frame_for_CADViewer.dgn";
+	var FileName = ServerUrl +"/content/drawings/dwg/base_xref_json.dwg";
+	var FileName = ServerUrl +"/content/drawings/dwg/test01.dwg";
+
+
+	// Location of installation folders
+	// NOTE: THE LOCATION OF THE ServerLocation/ServerUrl VARIABLES ARE DEFINED IN /cadviewer/app/cv/XXXHandlerSettings.js	
+	//	var ServerLocation = 
+	//	var ServerUrl = 
+
+
+
+
+	$(document).ready(function()
+		{
+
+		cvjs_superimposeBackgroundDrawing_PrintOutputAtZoom("floorPlan", ServerUrl +"/content/drawings/dwg/AA_frame_for_CADViewer.dgn", 0.05, 0.15, 0.05, 0.05);
+
+		//$(document).html();
+		// Set CADViewer with full CADViewer Pro features
+		cvjs_CADViewerPro(true);
+		cvjs_debugMode(true);
+		
+		// Pass over the location of the installation, will update the internal paths
+		cvjs_setServerLocationURL(ServerLocation, ServerUrl);
+		cvjs_PrintToPDFWindowRelativeSize(0.8);
+	
+
+		cvjs_setFileModalEditMode(false);
+
+
+		// NOTE BELOW: THESE SETTINGS ARE FOR SERVER CONTROLS FOR CONVERTING DWG, DXF, DWF files
+
+		// settings of Converter Path, Controller and Converter Name are done in the XXXHandlerSettings.js files
+
+		cvjs_conversion_clearAXconversionParameters();
+		cvjs_conversion_addAXconversionParameter("model", "");	
+
+
+		
+//		cvjs_conversion_addAXconversionParameter("lwmin", "0.1");		 
+//		cvjs_conversion_addAXconversionParameter("lw", "0.3");		 
+
+	
+		// http://127.0.0.1:8081/html/CADViewer_json_610.html?drawing_name=/home/mydrawing.dgn&dgn_workspace=/home/workspace.txt&json_location=c:/nodejs/cadviewer/content/helloworld.json&print_modal_custom_checkbox=add_json
+
+		// IF CADVIEWER IS OPENED WITH A URL  http://localhost/cadviewer/html/CADViewer_sample_610.html?drawing_name=../content/drawings/dwg/hq17.dwg
+		//  or CADViewer_sample_610.html?drawing_name=http://localhost/cadviewer/content/drawings/dwg/hq17.dwg
+		//  this code segment will pass over the drawing_name to FileName for load of drawing
+
+		var myDrawing = cvjs_GetURLParameter("drawing_name");
+		console.log("DRAWING NAME >"+cvjs_GetURLParameter("drawing_name")+"</end>  ");
+		if (myDrawing==""){
+			window.alert("no drawing_name parameter!!!");				
+		}
+		else{
+//			console.log("we pass over to FileName to load Drawing");
+			FileName =  myDrawing;
+		}
+
+		var dgn_workspace = cvjs_GetURLParameter("dgn_workspace");
+		console.log("dgn_workspace >"+cvjs_GetURLParameter("dgn_workspace")+"</end>  ");
+		if (dgn_workspace==""){
+			console.log("no dgn_workspace parameter!!!");				
+		}
+		else{
+			cvjs_setDgnWorkSpace(dgn_workspace, "");
+			console.log("WE GOT workspace"+dgn_workspace);
+
+		}
+		
+		cvjs_jsonLocation = cvjs_GetURLParameter("json_location");
+		console.log("json_location >"+cvjs_GetURLParameter("json_location")+"</end>  ");
+		if (cvjs_jsonLocation==""){
+			console.log("no json_location!");				
+		}
+		else{
+//			window.alert("WE GOT JSON "+cvjs_jsonLocation);
+			console.log("WE GOT JSON "+cvjs_jsonLocation);
+		}
+
+/**
+		var print_modal_custom_checkbox = cvjs_GetURLParameter("print_modal_custom_checkbox");
+		console.log("print_modal_custom_checkbox >"+cvjs_GetURLParameter("print_modal_custom_checkbox")+"</end>  ");
+		if (print_modal_custom_checkbox==""){
+			window.alert("no print_modal_custom_checkbox!");				
+		}
+		else{
+//			window.alert("WE GOT print_modal_custom_checkbox "+print_modal_custom_checkbox);
+			cvjs_setPrintModalCustomCheckBox(true, print_modal_custom_checkbox);
+		}
+**/
+
+/**
+		var print_modal_variable_replacement = cvjs_GetURLParameter("print_modal_variable_replacement");
+		console.log("print_modal_variable_replacement >"+cvjs_GetURLParameter("print_modal_variable_replacement")+"</end>  ");
+		if (print_modal_variable_replacement==""){
+			window.alert("NO print_modal_variable_replacement!");				
+		}
+		else{
+			window.alert("WE GOT print_modal_variable_replacement "+print_modal_variable_replacement);
+			cvjs_setPrintModalCustomTextBox(true, print_modal_variable_replacement);
+		}
+**/
+
+
+/**
+		var print_modal_variable_replacement_dualtextbox = cvjs_GetURLParameter("print_modal_variable_replacement_dualtextbox");
+		console.log("print_modal_variable_replacement_dualtextbox >"+cvjs_GetURLParameter("print_modal_variable_replacement_dualtextbox")+"</end>  ");
+		if (print_modal_variable_replacement_dualtextbox==""){
+			window.alert("NO print_modal_variable_replacement_dualtextbox!");				
+		}
+		else{
+			window.alert("WE GOT print_modal_variable_replacement_dualtextbox "+print_modal_variable_replacement_dualtextbox);
+			cvjs_setPrintModalCustomDualTextBox(true, print_modal_variable_replacement_dualtextbox);
+		}
+**/
+
+		cvjs_setPrintModalCustomCheckBoxFromFile(true, "print_modal_custom_checkbox.txt");
+
+//		cvjs_setPrintModalCustomTextBoxFromFile(true, "print_modal_variable_replacement.txt");
+//		cvjs_setPrintModalCustomDualTextBoxFromFile(true, "print_modal_variable_replacement_dualtextbox.txt");
+
+		cvjs_setPrintModalCustomDualTextBoxFromFile(true, "print_modal_variable_replacement_dualtextbox_AA.txt");
+
+
+
+
+
+
+		// For "Merge DWG" / "Merge PDF" commands, set up the email server to send merged DWG files or merged PDF files with redlines/interactive highlight.
+		// See php / xampp documentation on how to prepare your server
+		cvjs_emailSettings_PDF_publish("From CAD Server", "my_from_address@mydomain.com", "my_cc_address@mydomain.com", "my_reply_to@mydomain.com");
+
+		
+		// CHANGE LANGUAGE - DEFAULT IS ENGLISH
+		cvjs_loadCADViewerLanguage("English", "/app/cv/cv-pro/language_table/cadviewerProLanguage.xml");
+		// Available languages:  "English" ; "French, "Korean", "Spanish", "Portuguese", "Portuguese (Brazil)" ;  "Russian" ; "Malay" ;  "Chinese-Simplified"
+				
+		// Set Icon Menu Interface controls. Users can: 
+		// 1: Disable all icon interfaces
+		//  cvjs_displayAllInterfaceControls(false, "floorPlan");  // disable all icons for user control of interface
+		// 2: Disable either top menu icon menus or navigation menu, or both
+		//	cvjs_displayTopMenuIconBar(false, "floorPlan");  // disable top menu icon bar
+		//	cvjs_displayTopNavigationBar(false, "floorPlan");  // disable top navigation bar
+		// 3: Users can change the number of top menu icon pages and the content of pages, based on a configuration file in folder /cadviewer/app/js/menu_config/
+
+		
+		cvjs_setTopMenuXML("floorPlan", "cadviewer_full_commands_01.xml", "/app/cv/cv-pro/menu_config/");
+		
+				
+		// Initialize CADViewer JS  - needs the div name on the svg element on page that contains CADViewerJS and the location of the
+		// main application "app" folder. It can be either absolute or relative
+
+		cvjs_InitCADViewer_app("floorPlan", ServerUrl+"app/");
+ 
+		// set the location to license key, typically the js folder in main app application folder ../app/js/
+		 cvjs_setLicenseKeyPath(ServerUrl+"/app/cv/");
+		// alternatively, set the key directly, by pasting in the cvKey portion of the cvlicense.js file, note the JSON \" around all entities 	 
+		//cvjs_setLicenseKeyDirect('{ \"cvKey\": \"00110010 00110010 00110000 00110010 00110001 00111001 00111001 00110001 00110100 00111000 00110001 00110100 00110101 00110001 00110101 00110111 00110001 00110101 00111001 00110001 00110100 00111000 00110001 00110101 00110010 00110001 00110100 00110101 00110001 00110100 00110001 00110001 00110100 00110000 00110001 00111001 00110111 00110010 00110000 00110111 00110010 00110000 00110110 00110010 00110000 00110001 00110010 00110001 00110000 00110010 00110000 00111000 00110010 00110001 00110000 00110010 00110000 00111000 00110010 00110001 00110000 00110010 00110000 00110111 00110001 00111001 00111000 00110010 00110000 00110110 00110010 00110000 00111000 00110010 00110000 00110111 00110001 00111001 00111001 00110010 00110001 00110001 00110010 00110000 00111000 00110010 00110000 00110111 00110010 00110001 00110001 00110010 00110000 00110101 00110010 00110000 00111000 \" }');		 
+		 
+		 
+
+		// Sets the icon interface for viewing, layerhanding, measurement, etc. only
+		//cvjs_setIconInterfaceControls_ViewingOnly();
+
+		// disable canvas interface.  For developers building their own interface
+		// cvjs_setIconInterfaceControls_DisableIcons(true);
+
+		// Set the icon interface to include image handling
+		// cvjs_setIconInterfaceControls_ImageInsert();
+
+		cvjs_allowFileLoadToServer(true);
+
+//		cvjs_setUrl_singleDoubleClick(1);
+//		cvjs_encapsulateUrl_callback(true);
+
+
+		// NOTE BELOW: THESE SETTINGS ARE FOR SERVER CONTROLS FOR UPLOAD OF REDLINES
+		
+		// If the redline load/save is application controlled, the user will set the load/save files using the following methods:
+		//cvjs_setStickyNoteRedlineUrl("../redlines/filename-red_t1.js");
+		//cvjs_setStickyNoteSaveRedlineUrl("../redlines/filename-red_s1.js");
+
+		// Redines folder location is
+		// Redlines folder location used when file-manager is used for upload and redline selection
+		//cvjs_setRedlinesRelativePath('../redlines/demo_red/', ServerLocation+'/redlines/demo_red/');
+		cvjs_setRedlinesAbsolutePath(ServerUrl+'/content/redlines/fileloader_610/', ServerLocation+'/content/redlines/fileloader_610/');
+
+		// NOTE ABOVE: THESE SETTINGS ARE FOR SERVER CONTROLS FOR UPLOAD OF REDLINES
+
+
+		// NOTE BELOW: THESE SETTINGS ARE FOR SERVER CONTROLS FOR UPLOAD OF FILES AND FILE MANAGER
+
+		// I am setting the full path to the location of the floorplan drawings (typically  /home/myserver/drawings/floorplans/)
+		// and the relative location of floorplans drawings relative to my current location
+		// as well as the URL to the location of floorplan drawings with username and password if it is protected "" "" if not
+
+		// cvjs_setServerFileLocation(ServerLocation+'/content/drawings/dwg/', '../content/drawings/dwg/', ServerUrl+'/content/drawings/dwg/',"","");
+		cvjs_setServerFileLocation_AbsolutePaths(ServerLocation+'/content/drawings/dwg/', ServerUrl+'content/drawings/dwg/',"","");
+		// NOTE ABOVE: THESE SETTINGS ARE FOR SERVER CONTROLS FOR UPLOAD OF FILES AND FILE MANAGER
+		
+
+	
+		// NOTE ABOVE: THESE SETTINGS ARE FOR SERVER CONTROLS FOR CONVERTING DWG, DXF, DWF files
+
+
+		// Load file - needs the svg div name and name and path of file to load
+		cvjs_LoadDrawing("floorPlan", FileName );
+
+		// set maximum CADViewer canvas side
+	    cvjs_resizeWindow_position("floorPlan" );
+		// alternatively set a fixed CADViewer canvas size
+		//	cvjs_resizeWindow_fixedSize(800, 600, "floorPlan");		
+   });  // end ready()
+
+
+
+
+   $(window).resize(function() {
+		// set maximum CADViewer canvas side
+	    cvjs_resizeWindow_position("floorPlan" );
+		// alternatively set a fixed CADViewer canvas size
+		//	cvjs_resizeWindow_fixedSize(800, 600, "floorPlan");		
+   });
+
+
+/// NOTE: THESE METHODS BELOW ARE JS SCRIPT CALLBACK METHODS FROM CADVIEWER JS, THEY NEED TO BE IMPLEMENTED BUT CAN BE EMPTY
+
+
+	function cvjs_OnLoadEnd(){
+			// generic callback method, called when the drawing is loaded
+			// here you fill in your stuff, call DB, set up arrays, etc..
+			// this method MUST be retained as a dummy method! - if not implemeted -
+
+			cvjs_resetZoomPan("floorPlan");
+
+			var user_name = "Bob Smith";
+			var user_id = "user_1";
+
+			// set a value for redlines
+			cvjs_setCurrentStickyNoteValues_NameUserId(user_name, user_id );
+			cvjs_setCurrentRedlineValues_NameUserid(user_name, user_id);
+			
+			cvjs_dragBackgroundToFront_SVG("floorPlan");					
+//			cvjs_initZeroWidthHandling("floorPlan", 1.0);			
+
+	}
+
+
+	function cvjs_OnLoadEndRedlines(){
+			// generic callback method, called when the redline is loaded
+			// here you fill in your stuff, hide specific users and lock specific users
+			// this method MUST be retained as a dummy method! - if not implemeted -
+
+			// I am hiding users added to the hide user list
+			cvjs_hideAllRedlines_HiddenUsersList();
+
+			// I am freezing users added to the lock user list
+			cvjs_lockAllRedlines_LockedUsersList();
+
+
+	}
+
+
+	// generic callback method, tells which FM object has been clicked
+	function cvjs_change_space(){
+
+	}
+
+	function cvjs_graphicalObjectCreated(graphicalObject){
+
+	// do something with the graphics object created!
+//		window.alert(graphicalObject);
+
+	}
+
+	function cvjs_ObjectSelected(rmid){
+	 	// placeholder for method in tms_cadviewerjs_modal_1_0_14.js   - must be removed when in creation mode and using creation modal
+	}
+
+/// NOTE: THESE METHODS ABOVE ARE JS SCRIPT CALLBACK METHODS FROM CADVIEWER JS, THEY NEED TO BE IMPLEMENTED BUT CAN BE EMPTY
+
+
+/// NOTE: BELOW REDLINE SAVE LOAD CONTROLLERS
+
+// This method is linked to the save redline icon in the imagemap
+function cvjs_saveStickyNotesRedlinesUser(){
+
+	// there are two modes, user handling of redlines
+	// alternatively use the build in redline file manager
+
+	// cvjs_openRedlineSaveModal("floorPlan");
+
+	// custom method startMethodRed to set the name and location of redline to save
+	// see implementation below
+	//startMethodRed();
+	// API call to save stickynotes and redlines
+	//cvjs_saveStickyNotesRedlines("floorPlan");
+	
+	cvjs_directDownloadStickyNotesRedlines("floorPlan", "myredlinename.js");
+	
+}
+
+
+// This method is linked to the load redline icon in the imagemap
+function cvjs_loadStickyNotesRedlinesUser(){
+
+
+//	cvjs_openRedlineLoadModal("floorPlan");
+
+	// first the drawing needs to be cleared of stickynotes and redlines
+	//cvjs_deleteAllStickyNotes();
+	//cvjs_deleteAllRedlines();
+
+	// custom method startMethodRed to set the name and location of redline to load
+	// see implementation below
+	// startMethodRed();
+
+	// API call to load stickynotes and redlines
+	//cvjs_loadStickyNotesRedlines("floorPlan");
+
+	cvjs_directUploadStickyNotesRedlines("floorPlan");
+
+
+}
+
+/// NOTE: ABOVE REDLINE SAVE LOAD CONTROLLERS
+
+
+ 	</script>
+
+  </head>
+  <body bgcolor="white" style="margin:0" >
+
+
+	<table width="100%" height="100%" border="0" cellspacing="0" border-spacing="0" id="mainTable">
+	<tr style="background-color:rgb(255,255,255)" height="100px" >
+			<td height="10">
+				<canvas id="dummy" width="10" height="10"></canvas>
+			</td>
+		<td>
+			<a href="https://cadviewer.com/cadviewertechdocs"><img src="https://cadviewer.com/images/cadviewer/cv-logo.gif" width="240" height="60" alt="Tailor Made logo" /></a>
+		</td>
+		<td>
+		<canvas id="dummy" width="10" height="10"></canvas>
+		</td>
+		<td>
+		<h4><b>CADViewer: Dynamic Modification of Title Block PDF Output using JSON</b></h4>
+		<p>Check out the full <strong><a href="http://cadviewer.com/cadviewertechdocs/samples/json2/">Documentation</a></strong> of this <strong><a href="http://cadviewer.com/cadviewertechdocs/samples/json2/">Sample</a></strong> at our <strong><a href="http://cadviewer.com/cadviewertechdocs/samples/json2/">TechDocs</a></strong>. Contact us at: <a href="mailto:developer@tailormade.com">developer@tailormade.com</a> or <a href="mailto:internationalsales@tailormade.com">internationalsales@tailormade.com</a>.
+		</p></td>
+	</tr>
+	</table>
+
+
+
+	<table id="none">
+	<tr>
+	<td>
+
+	<!--This is the CADViewer floorplan div declaration -->
+
+		<div id="floorPlan"  style="border:2px none; width:1800;height:1400;">
+		</div>
+
+	<!--End of CADViewer declaration -->
+
+	</td>
+	</tr>
+	</table>
+
+</body>
+</html>

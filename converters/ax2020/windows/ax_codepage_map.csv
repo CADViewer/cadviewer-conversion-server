@@ -1,0 +1,45 @@
+codepage,type,font
+CP_ASCII,arial,arial
+CP_8859_1,arial,arial
+CP_8859_2,arial,arial
+CP_8859_3,arial,arial
+CP_8859_4,arial,arial
+CP_8859_5,arial,arial
+CP_8859_6,arial,arial
+CP_8859_7,arial,arial
+CP_8859_8,arial,arial
+CP_8859_9,arial,arial
+CP_DOS437,arial,arial
+CP_DOS850,arial,arial
+CP_DOS852,arial,arial
+CP_DOS855,cyrillic,arial unicode
+CP_DOS857,arial,arial
+CP_DOS860,portuguese,arial unicode
+CP_DOS861,icelandic,arial unicode
+CP_DOS863,canadian french,arial unicode
+CP_DOS864,arabic,simplified arabic
+CP_DOS865,danish/norwegian,arial unicode
+CP_DOS869,greek,arial unicode
+CP_DOS932,japanese,ms gothic
+CP_MACINTOSH,arial,arial
+CP_BIG5,chinese,simsun
+CP_KSC5601,korean/hangul,nanum gothic
+CP_JOHAB,korean,batang
+CP_DOS866,russian/belarus/ukranian,arial unicode
+CP_ANSI_1250,arial unicode,arial unicode
+CP_ANSI_1251,cyrillic,arial unicode
+CP_ANSI_1252,arial,arial
+CP_GB2312,simplified chinese,simsun
+CP_ANSI_1253,greek,arial unicode
+CP_ANSI_1254,turkish,arial unicode
+CP_ANSI_1255,hebrew,david
+CP_ANSI_1256,arabic,arabic
+CP_ANSI_1257,baltic,arial unicode
+CP_ANSI_874,thai,norasi
+CP_ANSI_932,japanese,ms gothic
+CP_ANSI_936,simplified chinese,simsun
+CP_ANSI_949,korean,batang
+CP_ANSI_950,korean,batang
+CP_ANSI_1361,korean (johab),batang
+CP_ANSI_1200,arial,arial
+CP_ANSI_1258,vietnamese,calibri

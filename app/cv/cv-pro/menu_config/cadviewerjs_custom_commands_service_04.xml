@@ -1,0 +1,35 @@
+<cvjs>
+<iconmenu>
+	<totalpages>1</totalpages>
+	<startpage>1</startpage>
+	<pages>
+		<page>
+			<command>cvjs_About</command>
+			<command>cvjs_Settings</command>
+			<command>cvjs_Print</command>
+			<command>cvjs_toggleBlackWhite</command>
+			<command>cvjs_setBackgroundColor</command>
+			<command>cvjs_interactiveSearchText</command>
+			<command>cvjs_interactiveLayerOff</command>
+			<command>cvjs_swapLayersInDrawing</command>
+			<command>cvjs_allLayersInDrawingOn</command>
+			<command>cvjs_Measurement</command>
+			<command>cvjs_calibrateMeasurement</command>
+			<command>cvjs_activateLineThicknessModal</command>
+			<command>cvjs_customCommand_03</command>
+			<command>cvjs_customCommand_04</command>			
+			<command>cvjs_customCommand_01</command>
+			<command>cvjs_customCommand_02</command>			
+		</page>
+	</pages>
+
+	<customcommand>
+		<tooltip>Process layers, and download processed SVG directly</tooltip>
+		<tooltip>Process layers, and pass processed SVG back to Thingable</tooltip>
+		<tooltip>Load CAD drawing for polygon processing</tooltip>
+		<tooltip>Select Layers to be processed</tooltip>
+	</customcommand>
+	
+</iconmenu>
+</cvjs>
+						

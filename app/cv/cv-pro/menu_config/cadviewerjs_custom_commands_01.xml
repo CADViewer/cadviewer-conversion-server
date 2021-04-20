@@ -1,0 +1,41 @@
+<cvjs>
+<iconmenu>
+	<totalpages>1</totalpages>
+	<startpage>1</startpage>
+	<pages>
+		<page>
+			<command>cvjs_About</command>
+			<command>cvjs_Settings</command>
+			<command>cvjs_Print</command>
+			<command>cvjs_toggleBlackWhite</command>
+			<command>cvjs_setBackgroundColor</command>
+			<command>cvjs_interactiveSearchText</command>
+			<command>cvjs_interactiveLayerOff</command>
+			<command>cvjs_swapLayersInDrawing</command>
+			<command>cvjs_allLayersInDrawingOn</command>
+			<command>cvjs_Measurement</command>
+			<command>cvjs_calibrateMeasurement</command>
+			<command>cvjs_activateLineThicknessModal</command>
+			<command>cvjs_customFileLoad</command>
+			<command>cvjs_customLayerList</command>			
+			<command>cvjs_customCommand_01</command>
+			<command>cvjs_customCommand_02</command>			
+		</page>
+	</pages>
+
+	<customcommand>
+		<tooltip>This is the highlight text for customCommand 01</tooltip>
+		<tooltip>This is the highlight text for customCommand 02</tooltip>
+		<tooltip>This is the highlight text for customCommand 03</tooltip>
+		<tooltip>This is the highlight text for customCommand 04</tooltip>
+		<tooltip>This is the highlight text for customCommand 05</tooltip>
+		<tooltip>This is the highlight text for customCommand 06</tooltip>
+		<tooltip>This is the highlight text for customCommand 07</tooltip>
+		<tooltip>This is the highlight text for customCommand 08</tooltip>
+		<tooltip>This is the highlight text for customCommand 09</tooltip>
+		<tooltip>This is the highlight text for customCommand 10</tooltip>
+	</customcommand>
+	
+</iconmenu>
+</cvjs>
+						
