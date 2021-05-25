@@ -229,6 +229,8 @@
 				<Brown>Brown</Brown>
 				<Gray>Gray</Gray>
 				<OK>OK</OK>
+				<Transparent>Transparent</Transparent>
+				<Opacity>Opacity:</Opacity>
 			</BackgroundColorModal>
 			<RedlineTextModal>
 				<Header>Redline Text</Header>
@@ -752,6 +754,8 @@
 				<Brown> Marrón </Brown>
 				<Gray> Gris </Gray>
 				<OK> OK </OK>
+				<Transparent>Transparente</Transparent>
+				<Opacity>Opacidad:</Opacity>				
 			</BackgroundColorModal>
 			<RedlineTextModal>
 				<Header> Texto de línea roja </Header>
@@ -1276,6 +1280,8 @@
 			<Brown>布朗</Brown>
 			<Gray>灰色</Gray>
 			<OK>确定</OK>
+			<Transparent>透明</Transparent>
+			<Opacity>不透明度:</Opacity>			
 			</BackgroundColorModal>
 			<RedlineTextModal>
 			<Header>红线文字</Header>
@@ -1800,6 +1806,8 @@
 			<Brown>布朗</Brown>
 			<Gray>灰色</Gray>
 			<OK>確定</OK>
+			<Transparent>透明</Transparent>
+			<Opacity>不透明度:</Opacity>			
 			</BackgroundColorModal>
 			<RedlineTextModal>
 			<Header>紅線文字</Header>
@@ -2324,6 +2332,8 @@
 				<Brown> Marrom </Brown>
 				<Gray> Cinza </Gray>
 				<OK> OK </OK>
+				<Transparent>Transparente</Transparent>
+				<Opacity>Opacidade:</Opacity>				
 			</BackgroundColorModal>
 			<RedlineTextModal>
 				<Header> Texto em linha vermelha</Header>
@@ -2848,6 +2858,8 @@
 			<Brown> 브라운 </Brown>
 			<Gray> 회색 </Gray>
 			<OK> 확인 </OK>
+			<Transparent>투명한</Transparent>
+			<Opacity>불투명:</Opacity>			
 			</BackgroundColorModal>
 			<RedlineTextModal>
 			<Header> 레드 라인 텍스트 </Header>
@@ -3374,6 +3386,8 @@
 			<Brown> Coklat </Brown>
 			<Gray> Abu-abu </Gray>
 			<OK> OK </OK>
+			<Transparent>Transparan</Transparent>
+			<Opacity>Kegelapan:</Opacity>			
 			</BackgroundColorModal>
 			<RedlineTextModal>
 			<Header> Teks Redline </Header>
@@ -3897,6 +3911,8 @@
 				<Brown>Braun</Brown>
 				<Gray>Grau</Gray>
 				<OK>OK</OK>
+				<Transparent>Transparent</Transparent>
+				<Opacity>Opazität:</Opacity>				
 			</BackgroundColorModal>
 			<RedlineTextModal>
 				<Header> Redline-Text </Header>
@@ -4421,6 +4437,8 @@
 				<Brown> Marron </Brown>
 				<Gray> Gris </Gray>
 				<OK> OK </OK>
+				<Transparent>Transparent</Transparent>
+				<Opacity>Opacité:</Opacity>				
 			</BackgroundColorModal>
 			<RedlineTextModal>
 				<Header> Texte rouge </Header>
