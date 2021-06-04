@@ -1,6 +1,6 @@
 {
-    "ServerUrl" : "http://127.0.0.1:3000",
-    "ServerFrontEndUrl" : "http://localhost:8080/",
+    "ServerUrl" : "http://localhost:3000",
+    "ServerFrontEndUrl" : "http://localhost:8000",
     "ServerLocation" : "c:/nodejs/cadviewer-conversion-server/",
     "fileLocation" : "c:/nodejs/cadviewer-conversion-server/converters/files/",
     "fileLocationUrl" : "http://127.0.0.1:3000/converters/files/",

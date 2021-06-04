@@ -1,6 +1,6 @@
 {
   "name": "cadviewer-conversion-server",
-  "version": "6.5.2",
+  "version": "1.5.5",
   "description": "CADViewer NodeJS Server Encapsulation of CAD Converters",
   "main": "CV_6.5.2.js",
   "scripts": {
@@ -8,6 +8,10 @@
   },
   "author": "charnung",
   "license": "TMS 1.0",
+  "dependencies": {
+    "formidable": "^1.2.2",
+    "request": "^2.88.2"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/CADViewer/cadviewer-conversion-server"
@@ -32,9 +36,5 @@
     "CAFM",
     "IOT",
     "Asset Management"
-  ],
-  "dependencies": {
-    "formidable": "^1.2.2",
-    "request": "^2.88.2"
-  }
+  ]
 }
