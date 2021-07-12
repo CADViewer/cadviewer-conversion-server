@@ -1,4 +1,4 @@
-// Version 6.5.10
+// Version 6.5.12
 const express = require('express');
 const httprequest = require('request');
 const app = express();
@@ -23,11 +23,9 @@ var listdirectoryredlines = require("./routes/listdirectoryredlines_cv6.5.10.js"
 var saveredline = require("./routes/saveredline_cv6.5.10.js");
 var savefile = require("./routes/savefile_cv6.5.10.js");
 var appendfile = require("./routes/appendfile_cv6.5.10.js");
-//var getFile_09 = require("./routes/getFile_09_cv6.5.9.js");
-var getFile_09 = require("./routes/getFile_09_cv6.5.11.js");
+var getFile_09 = require("./routes/getFile_09_cv6.5.12.js");
 var returnpdfparams = require("./routes/returnpdfparams_cv6.5.9.js");
-//var callapiconversion = require("./routes/callapiconversion_cv6.5.9.js");
-var callapiconversion = require("./routes/callapiconversion_cv6.5.11.js");
+var callapiconversion = require("./routes/callapiconversion_cv6.5.12.js");
 var returnpdfparams = require("./routes/returnpdfparams_cv6.5.9.js");
 var temp_print = require("./routes/temp_print_cv6.5.9.js");
 var files = require("./routes/files_cv6.5.9.js");
