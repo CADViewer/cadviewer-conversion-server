@@ -10,6 +10,7 @@
   "license": "TMS 1.0",
   "dependencies": {
     "formidable": "^1.2.2",
+    "node-gyp": "^8.1.0",
     "request": "^2.88.2"
   },
   "repository": {

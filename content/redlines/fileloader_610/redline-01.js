@@ -6,11 +6,11 @@ var cvjs_stickyNotesRedlines_Base = {
 						layer: "RedLineLayer",
 						group: "unassigned",
 						color: "#FF0000",
-						strokeWidth: "2",
+						strokeWidth: "3",
 						fill: "#FF0000",
 						username: "Bob Smith",
 						userid: "user_1",
-						currentPage: 2,
+						currentPage: 1,
 						triangle_design: "none",
 						polypath_arrow: "none",
 						redline_text: "none",
@@ -22,7 +22,7 @@ var cvjs_stickyNotesRedlines_Base = {
 
 function cvjs_setUpStickyNotesRedlines(paper){
 
-var cItemRed1= paper.path("M707.8240887348356,267.7411907482293h305.22495745298147v270.41860265571165h-305.22495745298147v-270.41860265571165 Z ").attr({stroke: "#FF0000", "stroke-width": "2", "fill": "#FF0000", "fill-opacity": "0.1"})
+var cItemRed1= paper.path("M644.8953235677084,542.0373333333333h1236.5226666666665v622.496h-1236.5226666666665v-622.496 Z ").attr({stroke: "#FF0000", "stroke-width": "3", "fill": "#FF0000", "fill-opacity": "0.1"})
 .data("node","RED_1");
 vqRedlines.push(cItemRed1);
 
