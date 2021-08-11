@@ -58,8 +58,14 @@ var express = require('express'),
 // loadredline post - non conversion drawings
 
 router.get('/callapiconversion', (req, res) => {
-	if (config.cvjs_debug) console.log("callapiconversion ");	
-    res.send("callapiconversion!");
+	if (config.cvjs_debug) console.log("/callapiconversion - direct call");	
+
+	/*
+	var cvjsRequest = req.body.request;	
+	var cvjsRequestJSON = JSON.parse(cvjsRequest);
+	var action = cvjsRequestJSON.action;
+*/
+	res.send("callapiconversion! - get call - no further action");
 })
 
 router.post('/callapiconversion', (req, res) => {

@@ -297,6 +297,13 @@
 				<PointsText>Select multiple points, capture from clipboard.</PointsText>
 				<PathText>Click on an path for length</PathText>
 				<PathLength>Length:</PathLength>
+				<Snap>Snap Mode:</Snap>
+				<SnapItems>
+					<SnapItem>None</SnapItem>
+					<SnapItem>Nearest</SnapItem>
+					<SnapItem>End Point</SnapItem>
+					<SnapItem>Center Point</SnapItem>
+				</SnapItems>
 			</MeasurementModal>
 			<BirdsEyeModal>
 				<Header>Birds-Eye Window</Header>
@@ -822,6 +829,13 @@
 				<PointsText> Seleccione varios puntos, capture desde el portapapeles. </PointsText>
 				<PathText>Haga clic en una ruta para ver la longitud</PathText>
 				<PathLength>Longitud:</PathLength>
+				<Snap>Modo de ajuste:</Snap>
+				<SnapItems>
+					<SnapItem>Ninguno</SnapItem>
+					<SnapItem>Más cercano</SnapItem>
+					<SnapItem>Punto final</SnapItem>
+					<SnapItem>Punto central</SnapItem>   
+				</SnapItems>
 			</MeasurementModal>
 			<BirdsEyeModal>
 				<Header> Ventana de ojo de pájaro </Header>
@@ -1348,7 +1362,14 @@
 			<PointsText>选择多个点，从剪贴板中捕获。</PointsText>			
 				<PathText>单击路径以获取长度</PathText>
 				<PathLength>长度：</PathLength>
-			</MeasurementModal>
+				<Snap>捕捉模式:</Snap>
+				<SnapItems>
+					<SnapItem>无</SnapItem>
+					<SnapItem>最近</SnapItem>
+					<SnapItem>终点</SnapItem>
+					<SnapItem>中心点</SnapItem>
+				</SnapItems>
+			</MeasurementModal>  
 			<BirdsEyeModal>
 			<Header>鸟眼窗口</Header>
 			</BirdsEyeModal>
@@ -1874,7 +1895,14 @@
 			<PointsText>選擇多個點，從剪貼板中捕獲。</PointsText>
 				<PathText>單擊路徑以獲取長度</PathText>
 				<PathLength>長度：</PathLength>
-			</MeasurementModal>
+				<Snap>捕捉模式:</Snap>
+				<SnapItems>
+					<SnapItem>無</SnapItem>
+					<SnapItem>最近</SnapItem>
+					<SnapItem>終點</SnapItem>
+					<SnapItem>中心點</SnapItem>
+				</SnapItems>
+			</MeasurementModal> 
 			<BirdsEyeModal>
 			<Header>鳥眼窗口</Header>
 			</BirdsEyeModal>
@@ -2400,6 +2428,13 @@
 			<PointsText> Selecione vários pontos, capture da área de transferência. </PointsText>
 				<PathText>Clique em um caminho para obter comprimento</PathText>
 				<PathLength>Comprimento:</PathLength>
+				<Snap>Modo de ajuste:</Snap>
+				<SnapItems>
+					<SnapItem>Nenhum</SnapItem>
+					<SnapItem>Mais próximo</SnapItem>
+					<SnapItem>Ponto final</SnapItem>
+					<SnapItem>Ponto central</SnapItem>  
+				</SnapItems>
 			</MeasurementModal>
 			<BirdsEyeModal>
 			<Header> Janela panorâmica </Header>
@@ -2927,6 +2962,13 @@
 			<PointsText> 여러 지점을 선택하고 클립 보드에서 캡처합니다. </PointsText>
 				<PathText>길이를 보려면 경로를 클릭하십시오</PathText>
 				<PathLength>길이:</PathLength>
+				<Snap>스냅 모드:</Snap>
+				<SnapItems>
+					<SnapItem>없음</SnapItem>
+					<SnapItem>가장 가까운</SnapItem>
+					<SnapItem>끝점</SnapItem>
+					<SnapItem>중심점</SnapItem>
+				</SnapItems>
 			</MeasurementModal>
 			<BirdsEyeModal>
 			<Header> 새 눈 창 </Header>
@@ -3454,6 +3496,13 @@
 			<PointsText> Pilih beberapa titik, ambil dari clipboard. </PointsText>
 				<PathText>Klik pada sebuah jalur untuk panjangnya</PathText>
 				<PathLength>Panjangnya:</PathLength>
+				<Snap>Mode jepret:</Snap>
+				<SnapItems>
+					<SnapItem>Tidak ada</SnapItem>
+					<SnapItem>Terdekat</SnapItem> 
+					<SnapItem>Titik akhir</SnapItem>
+					<SnapItem>Titik tengah</SnapItem>
+				</SnapItems>
 			</MeasurementModal>
 			<BirdsEyeModal>
 			<Header> Jendela Bird-Eyes </Header>
@@ -3979,6 +4028,13 @@
 				<PointsText> Wählen Sie mehrere Punkte aus, die aus der Zwischenablage erfasst werden sollen. </PointsText>
 				<PathText>Klicken Sie auf einen Pfad für die Länge</PathText>
 				<PathLength>Länge:</PathLength>
+				<Snap>Fangmodus:</Snap>
+				<SnapItems>
+					<SnapItem>Keiner</SnapItem>
+					<SnapItem>Nächster</SnapItem> 
+					<SnapItem>Endpunkt</SnapItem>
+					<SnapItem>Mittelpunkt</SnapItem>
+				</SnapItems>
 			</MeasurementModal>
 				<BirdsEyeModal>
 				<Header> Birds-Eye-Fenster </Header>
@@ -4505,6 +4561,13 @@
 				<PointsText> Sélectionnez plusieurs points, capturez à partir du presse-papiers. </PointsText>
 				<PathText>Cliquez sur un chemin pour la longueur</PathText>
 				<PathLength>Longueur:</PathLength>
+				<Snap>Mode Snap:</Snap>
+				<SnapItems>
+					<SnapItem>Aucun</SnapItem> 
+					<SnapItem>Le plus proche</SnapItem>
+					<SnapItem>Point final</SnapItem>
+					<SnapItem>Point central</SnapItem>
+				</SnapItems>
 			</MeasurementModal>
 				<BirdsEyeModal>
 				<Header> Fenêtre à vol d'oiseau </Header>
@@ -4524,8 +4587,8 @@
 				<AllLayerOn> Calques activés </AllLayerOn>
 				<AllLayerOff> Désactivés </AllLayerOff>
 				<SwapLayers> Permuter </SwapLayers>
-				<On> Sur </On>
-				<Off> Hors </Off>
+				<On>OUI</On>
+				<Off>NON</Off>
 				<BaseAndXref> Dessin de base </BaseAndXref>
 				<Xref> Xref: </Xref>
 				</LayerListModal>			
@@ -4533,8 +4596,8 @@
 				<Header> Modifier la page de dessin </Header>
 				<Search> Recherche </Search>
 				<Sort> Trier par nom </Sort>
-				<On>Sur</On>
-				<Off>Hors</Off>
+				<On>OUI</On>
+				<Off>NON</Off>
 			</PageChangeListModal>
 			<LayerListSpaceModal>
 				<Header>Liste des calques - Objets spatiaux</Header>
@@ -4543,8 +4606,8 @@
 				<AllLayerOn> Calques activés </AllLayerOn>
 				<AllLayerOff> Désactivés </AllLayerOff>
 				<SwapLayers> Permuter </SwapLayers>
-				<On> Sur </On>
-				<Off> Hors </Off>
+				<On>OUI</On>
+				<Off>NON</Off>
 				<NotAssigned> Non attribué </NotAssigned>
 				<TextLayer> Calque de texte </TextLayer>
 				<RoomLayer> Couche de la pièce </RoomLayer>
@@ -4730,7 +4793,7 @@
 			<WaitModal>
 				<Printing> Impression </Printing>
 				<Thumbnails> Enregistrement </Thumbnails>
-				<BatchPDF> Imprimer au format PDF </BatchPDF>
+				<BatchPDF> Imprimer au PDF </BatchPDF>
 				<MergeDWG> Impression </MergeDWG>
 			</WaitModal>			
 	</languages>	

@@ -2215,6 +2215,38 @@ table.info_messageModal_2Table td {
    
 }
 
+
+
+
+
+.cvjs_inputCalibrateModal{   /*6.5.11a*/
+
+	width: 80px;
+	height: 20px; 
+	padding: 1px;
+    	top: 3px;
+    	bottom: 3px;
+    	z-index:1000;
+    	margin: 0px;
+    	text-indent: 1px;
+    	text-align:center;
+	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-weight: none;
+	color:#000000;
+	font-size: 12px;
+	line-height: 1;
+	background: #D28A8E0;
+
+}
+
+
+
+
+
+
+
+
 .calibrateModal{
    	z-index:1000;
 	width: 360px; 
@@ -2360,13 +2392,6 @@ table.calibrateModalTable td {
 }
 
 
-
-
-
-
-
-
-
 #cvjs_measurementModalText{
 	margin-top: 1px;
 	margin-bottom: 2px;
@@ -2382,7 +2407,7 @@ table.calibrateModalTable td {
 .measurementModal{
    	z-index:1000;
 	width: 480px; 
-	height: 120px;
+	height: 150px;   /*  6.5.14a */
 	border-radius: 3px;
 	background-color: #FFFFFF;
 	border: 2px solid gray;
@@ -6622,7 +6647,7 @@ table.settingsModalTable td {
 	color:#000000;
 	font-size: 12px;
 	line-height: 1;
-	background: #D28A8E0;
+	background: "#D28A8E0";
 
 }
 
@@ -6641,8 +6666,30 @@ table.settingsModalTable td {
  	width: 200px; 
  	position: absolute; 
 	left : 10px;
-	bottom : 6px
+	bottom : 36px    /* 6.5.14a 6 -> 26 */
 }
+
+
+
+.cvjs_measurementSnap{
+	width: 100px; 
+	display: inline-block;
+	position: absolute; 
+	left : 10px;
+	bottom : 6px    /* 6.5.14a */
+
+}
+
+.cvjs_measurementSnapSelect{
+	width: 140px; 
+	display: inline-block;
+	position: absolute; 
+	left : 140px;
+	bottom : 6px    /* 6.5.14a */
+
+}
+
+
 
 
 .cvjs_measurementDisplayBox{
