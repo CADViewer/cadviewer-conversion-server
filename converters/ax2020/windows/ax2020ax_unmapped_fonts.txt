@@ -1,5 +1,0 @@
-archstyl
-au101s00
-helvetic
-swis721 bt
-@arial unicode ms

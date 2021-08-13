@@ -1,0 +1,11 @@
+archs ==> simfang.ttf 
+nsimsun ==>  simfang.ttf 
+b体 ==>  simfang.ttf 
+b_gb2312 ==>  simfang.ttf 
+fangsong_gb2312 ==>  simfang.ttf 
+fangsong ==>  simfang.ttf
+仿宋_GB2312 ==> simfang.ttf
+romans.shx ==>romans__.ttf @1.1
+romanx.shx ==>romans__.ttf @1.1
+[stroke]
+techno_m.shx
