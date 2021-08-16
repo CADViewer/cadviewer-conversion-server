@@ -9,7 +9,7 @@
     "cvjs_svgz_compress" : false,
     "licenseLocation" : "c:/nodejs/cadviewer-conversion-server/converters/ax2022/windows/",
     "xpathLocation" : "c:/nodejs/cadviewer-conversion-server/converters/xpath/",
-    "callbackMethod" : "getFile_09",
+    "callbackMethod" : "getcadviewercontent",
     "cvjs_debug" : true,
     "temp_print_folder" : "C:/nodejs/cadviewer-conversion-server/temp_print",
 	"dwgmergeLocation" : "c:/nodejs/cadviewer-conversion-server/converters/dwgmerge2020/windows/",
