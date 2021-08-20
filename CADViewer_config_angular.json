@@ -14,7 +14,7 @@
     "temp_print_folder" : "C:/nodejs/cadviewer-conversion-server/temp_print",
 	"dwgmergeLocation" : "c:/nodejs/cadviewer-conversion-server/converters/dwgmerge2020/windows/",
 	"dwgmerge2020_executable" : "DwgMerge2020.exe",
-	"linklistLocation" : "c:/nodejs/cadviewer-conversion-server/converters/linklist2020/windows/",
+	"linklistLocation" : "c:/nodejs/cadviewer-conversion-server/converters/linklist2022/windows/",
 	"linklist2020_executable" : "LinkList_2020_W32_20_02_15.exe"
 }	
 	

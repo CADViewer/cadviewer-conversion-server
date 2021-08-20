@@ -11,7 +11,7 @@ var config = require('./CADViewer_config.json');
 
 // 6.5.09  - DLL load
 //var ffi = require('ffi');
-var callapiconversion = require("./routes/callapiconversion_cv6.5.15.js");
+var callapiconversion = require("./routes/callapiconversion_cv6.5.15c.js");
 
 var loadredline = require("./routes/loadredlines_cv6.5.10.js");
 var uploadfile = require("./routes/uploadfile_cv6.5.8.js");
@@ -35,7 +35,7 @@ var directload = require("./routes/directload_cv6.5.9.js");
 
 
 var cvjs_debug = config.cvjs_debug;
-var version = "CADViewer Server v6.5.10"
+var version = "CADViewer Server v6.5.15c"
 
 var globalCounter = 0;
 
