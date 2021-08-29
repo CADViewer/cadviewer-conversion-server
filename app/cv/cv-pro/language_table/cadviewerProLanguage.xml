@@ -304,6 +304,8 @@
 					<SnapItem>End Point</SnapItem>
 					<SnapItem>Center Point</SnapItem>
 				</SnapItems>
+			<Horizontal>Horizontal:</Horizontal>
+			<Vertical>Vertical:</Vertical>
 			</MeasurementModal>
 			<BirdsEyeModal>
 				<Header>Birds-Eye Window</Header>
@@ -387,6 +389,7 @@
 				<LoadRedline>Load Redline</LoadRedline>
 				<DeleteSingle>Delete Single Redline</DeleteSingle>
 				<DeleteLast>Delete Last Redline</DeleteLast>
+				<UndoDeleteLast>Undo Delete Last Redline</UndoDeleteLast>
 				<Color>Redline Color</Color>
 				<Thickness>Redline Thickness</Thickness>
 				<StickyNote>Make StickyNote</StickyNote>
@@ -397,6 +400,7 @@
 				<Polyline>Redline Polyline</Polyline>
 				<Polygon>Redline Polygon</Polygon>
 				<FilledRectangle>Redline Filled Rectangle</FilledRectangle>
+				<Triangle>Redline Triangle</Triangle>
 				<Rectangle>Redline Rectangle</Rectangle>
 				<Arrow>Redline Arrow</Arrow>
 				<Text>Redline Text</Text>
@@ -836,6 +840,8 @@
 					<SnapItem>Punto final</SnapItem>
 					<SnapItem>Punto central</SnapItem>   
 				</SnapItems>
+			<Horizontal>Horizontal:</Horizontal>   
+			<Vertical>Vertical:</Vertical>
 			</MeasurementModal>
 			<BirdsEyeModal>
 				<Header> Ventana de ojo de pájaro </Header>
@@ -918,6 +924,7 @@
 				<SaveRedline> Guardar Redline </SaveRedline>
 				<LoadRedline> Cargar línea roja </LoadRedline>
 				<DeleteSingle> Eliminar línea roja única </DeleteSingle>
+				<UndoDeleteLast>Deshacer Eliminar última línea roja</UndoDeleteLast>
 				<DeleteLast> Eliminar la última línea roja </DeleteLast>
 				<Color> Color de línea roja </Color>
 				<Thickness> Grosor de línea roja </Thickness>
@@ -929,6 +936,7 @@
 				<Polyline> Línea roja polilínea</Polyline>
 				<Polygon> Línea roja polígono</Polygon>
 				<FilledRectangle> Rectángulo relleno de línea roja </FilledRectangle>
+				<Triangle>Triángulo de línea roja</Triangle>
 				<Rectangle>Rectángulo de línea roja</Rectangle>				
 				<Arrow> Flecha de línea roja </Arrow>
 				<Text> Texto de línea roja </Text>
@@ -1369,6 +1377,8 @@
 					<SnapItem>终点</SnapItem>
 					<SnapItem>中心点</SnapItem>
 				</SnapItems>
+			<Horizontal>水平:</Horizontal>  
+			<Vertical>垂直:</Vertical>
 			</MeasurementModal>  
 			<BirdsEyeModal>
 			<Header>鸟眼窗口</Header>
@@ -1451,6 +1461,7 @@
 			<SaveRedline>保存红线</SaveRedline>
 			<LoadRedline>加载红线</LoadRedline>
 			<DeleteSingle>删除单个红线</DeleteSingle>
+				<UndoDeleteLast>撤消删除最后一条红线</UndoDeleteLast>
 			<DeleteLast>删除最后一个红线</DeleteLast>
 			<Color>红线颜色</Color>
 			<Thickness>红线粗细</Thickness>
@@ -1463,6 +1474,7 @@
 			<Polygon>红线多边形</Polygon>
 			<FilledRectangle>红线填充矩形</FilledRectangle>
 			<Rectangle>红线矩形</Rectangle>
+				<Triangle>红线三角</Triangle>
 			<Arrow>红线箭头</Arrow>
 			<Text>红线文本</Text>
 			<PublishAsPDF>发布为PDF </PublishAsPDF>
@@ -1902,6 +1914,8 @@
 					<SnapItem>終點</SnapItem>
 					<SnapItem>中心點</SnapItem>
 				</SnapItems>
+			<Horizontal>水平:</Horizontal>   
+			<Vertical>垂直:</Vertical>
 			</MeasurementModal> 
 			<BirdsEyeModal>
 			<Header>鳥眼窗口</Header>
@@ -1984,6 +1998,7 @@
 			<SaveRedline>保存紅線</SaveRedline>
 			<LoadRedline>加載紅線</LoadRedline>
 			<DeleteSingle>刪除單個紅線</DeleteSingle>
+				<UndoDeleteLast>撤消刪除最後一條紅線</UndoDeleteLast>
 			<DeleteLast>刪除最後一個紅線</DeleteLast>
 			<Color>紅線顏色</Color>
 			<Thickness>紅線粗細</Thickness>
@@ -1996,6 +2011,7 @@
 			<Polygon>紅線多邊形</Polygon>
 			<FilledRectangle>紅線填充矩形</FilledRectangle>
 			<Rectangle>紅線矩形</Rectangle>
+							<Triangle>紅線三角</Triangle>
 			<Arrow>紅線箭頭</Arrow>
 			<Text>紅線文本</Text>
 			<PublishAsPDF>發佈為PDF </PublishAsPDF>
@@ -2435,6 +2451,8 @@
 					<SnapItem>Ponto final</SnapItem>
 					<SnapItem>Ponto central</SnapItem>  
 				</SnapItems>
+			<Horizontal>Horizontal:</Horizontal>
+			<Vertical>Vertical:</Vertical>
 			</MeasurementModal>
 			<BirdsEyeModal>
 			<Header> Janela panorâmica </Header>
@@ -2516,7 +2534,8 @@
 				<NextPage> Próxima página de ícone </NextPage>
 				<SaveRedline> Salvar redline </SaveRedline>
 				<LoadRedline> Carregar redline </LoadRedline>
-				<DeleteSingle> Excluir linha única única </DeleteSingle>
+				<DeleteSingle> Excluir linha única</DeleteSingle>
+				<UndoDeleteLast>Desfazer exclusão da última linha redline</UndoDeleteLast>
 				<DeleteLast> Excluir último redline </DeleteLast>
 				<Color> Cor da linha vermelha </Color>
 				<Thickness> Espessura da linha vermelha </Thickness>
@@ -2529,6 +2548,7 @@
 				<Polygon> Polígono de linha vermelha </Polygon>
 				<FilledRectangle> Redline Preenchido Retângulo </FilledRectangle>
 				<Rectangle> Retângulo de linha vermelha </Rectangle>
+								<Triangle>Triângulo da linha vermelha</Triangle>
 				<Arrow> Seta de linha vermelha </Arrow>
 				<Text> Texto em linha vermelha </Text>				
 				<PublishAsPDF> Publicar como PDF </PublishAsPDF>
@@ -2969,6 +2989,8 @@
 					<SnapItem>끝점</SnapItem>
 					<SnapItem>중심점</SnapItem>
 				</SnapItems>
+			<Horizontal>수평:</Horizontal> 
+			<Vertical>수직:</Vertical>
 			</MeasurementModal>
 			<BirdsEyeModal>
 			<Header> 새 눈 창 </Header>
@@ -3051,6 +3073,7 @@
 				<SaveRedline> 레드 라인 저장 </SaveRedline>
 				<LoadRedline> 레드 라인로드 </LoadRedline>
 				<DeleteSingle> 단일 수정 지시 삭제 </DeleteSingle>
+				<UndoDeleteLast>마지막 수정 지시 삭제 실행 취소</UndoDeleteLast>
 				<DeleteLast> 마지막 수정 지시 삭제 </DeleteLast>
 				<Color> 레드 라인 색상 </Color>
 				<Thickness> 레드 라인 두께 </Thickness>
@@ -3063,6 +3086,7 @@
 				<Polygon> 레드 라인 폴리곤 </Polygon>
 				<FilledRectangle> 레드 라인으로 채워진 직사각형 </FilledRectangle>
 				<Rectangle> 레드 라인 직사각형 </Rectangle>
+								<Triangle>레드라인 삼각형</Triangle>
 				<Arrow> 레드 라인 화살표 </Arrow>
 				<Text> 레드 라인 텍스트 </Text>
 				<PublishAsPDF> PDF로 게시 </PublishAsPDF>
@@ -3503,6 +3527,8 @@
 					<SnapItem>Titik akhir</SnapItem>
 					<SnapItem>Titik tengah</SnapItem>
 				</SnapItems>
+			<Horizontal>Horisontal:</Horizontal>
+			<Vertical>Vertical:</Vertical>
 			</MeasurementModal>
 			<BirdsEyeModal>
 			<Header> Jendela Bird-Eyes </Header>
@@ -3585,6 +3611,7 @@
 				<SaveRedline>Simpan Redline</SaveRedline>
 				<LoadRedline>Muat Redline</LoadRedline>
 				<DeleteSingle>Hapus Single Redline</DeleteSingle>
+				<UndoDeleteLast>Urungkan Hapus Garis Merah Terakhir</UndoDeleteLast>
 				<DeleteLast>Hapus Redline Terakhir</DeleteLast>
 				<Color>Warna Redline</Color>
 				<Thickness>Ketebalan Redline</Thickness>
@@ -3597,6 +3624,7 @@
 				<Polygon>Poligon Redline</Polygon>
 				<FilledRectangle>Persegi Panjang Redline (Filled)</FilledRectangle>
 				<Rectangle>Persegi Panjang Redline </Rectangle>
+								<Triangle>Segitiga Garis Merah</Triangle>
 				<Arrow>Panah Redline</Arrow>
 				<Text>Teks Redline</Text>
 				<PublishAsPDF>Publikasikan Sebagai PDF</PublishAsPDF>
@@ -4035,6 +4063,8 @@
 					<SnapItem>Endpunkt</SnapItem>
 					<SnapItem>Mittelpunkt</SnapItem>
 				</SnapItems>
+			<Horizontal>Horizontal:</Horizontal>
+			<Vertical>Vertical:</Vertical>
 			</MeasurementModal>
 				<BirdsEyeModal>
 				<Header> Birds-Eye-Fenster </Header>
@@ -4117,6 +4147,7 @@
 				<SaveRedline> Redline speichern </SaveRedline>
 				<LoadRedline> Redline laden </LoadRedline>
 				<DeleteSingle> Einzelne Redline löschen </DeleteSingle>
+				<UndoDeleteLast>Letzte Redline löschen rückgängig machen</UndoDeleteLast>
 				<DeleteLast> Letzte Redline löschen </DeleteLast>
 				<Color>Redline-Farbe </Color>
 				<Thickness>Redline-Dicke</Thickness>
@@ -4129,6 +4160,7 @@
 				<Polygon> Redline-Polygon </Polygon>
 				<FilledRectangle>Redline gefülltes Rechteck</FilledRectangle>
 				<Rectangle>Redline-Rechteck</Rectangle>
+								<Triangle>Redline-Dreieck</Triangle>
 				<Arrow>Redline-Pfeil</Arrow>
 				<Text>Redline-Text</Text>
 				<PublishAsPDF> Als PDF veröffentlichen </PublishAsPDF>
@@ -4568,7 +4600,9 @@
 					<SnapItem>Point final</SnapItem>
 					<SnapItem>Point central</SnapItem>
 				</SnapItems>
-			</MeasurementModal>
+				<Horizontal>Horizontal:</Horizontal>
+				<Vertical>Vertical:</Vertical>
+				</MeasurementModal>
 				<BirdsEyeModal>
 				<Header> Fenêtre à vol d'oiseau </Header>
 				</BirdsEyeModal>
@@ -4650,6 +4684,7 @@
 				<SaveRedline> Enregistrer Redline </SaveRedline>
 				<LoadRedline> Charger la ligne rouge </LoadRedline>
 				<DeleteSingle> Supprimer une seule ligne rouge </DeleteSingle>
+				<UndoDeleteLast>Annuler Supprimer la dernière ligne rouge</UndoDeleteLast>
 				<DeleteLast> Supprimer la dernière ligne rouge </DeleteLast>
 				<Color> Couleur Redline </Color>
 				<Thickness> Épaisseur de la ligne rouge </Thickness>
@@ -4662,6 +4697,7 @@
 				<Polygon> Polygone Redline </Polygon>
 				<FilledRectangle> Rectangle rempli Redline </FilledRectangle>
 				<Rectangle> Rectangle Redline </Rectangle>
+				<Triangle>Triangle de la ligne rouge</Triangle>
 				<Arrow> Flèche Redline </Arrow>
 				<Text> Texte rouge </Text>
 				<PublishAsPDF> Publier au format PDF </PublishAsPDF>

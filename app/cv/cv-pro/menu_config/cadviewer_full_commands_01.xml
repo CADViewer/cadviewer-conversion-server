@@ -35,9 +35,11 @@
 			<command>cvjs_drawRedlinePolyline</command>
 			<command>cvjs_drawRedlineFilledRectangle</command>
 			<command>cvjs_drawRedlineRectangle</command>
+			<command>cvjs_drawRedlineTriangle</command>
 			<command>cvjs_drawRedlineArrow</command>
 			<command>cvjs_deleteSingleRedline</command>
 			<command>cvjs_deleteLastRedline</command>
+			<command>cvjs_undoDeleteLastRedline</command>
 			<command>cvjs_clearCurrentRedline</command>
 			<command>cvjs_mergeDXFDWG</command>
 		</page>

@@ -1,6 +1,6 @@
 {
     "ServerUrl" : "http://127.0.0.1:3000",
-    "ServerFrontEndUrl" : "http://localhost/",
+    "ServerFrontEndUrl" : "http://127.0.0.1:8000/",
     "ServerLocation" : "c:/nodejs/cadviewer-conversion-server/",
     "fileLocation" : "c:/nodejs/cadviewer-conversion-server/converters/files/",
     "fileLocationUrl" : "http://127.0.0.1:3000/converters/files/",
@@ -15,6 +15,6 @@
 	"dwgmergeLocation" : "c:/nodejs/cadviewer-conversion-server/converters/dwgmerge2020/windows/",
 	"dwgmerge2020_executable" : "DwgMerge2020.exe",
 	"linklistLocation" : "c:/nodejs/cadviewer-conversion-server/converters/linklist2022/windows/",
-	"linklist2020_executable" : "LinkList_2020_W32_20_02_15.exe"
+	"linklist2020_executable" : "LinkList_2022_W32_22_07_15.exe"
 }	
 	
