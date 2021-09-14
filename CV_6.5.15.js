@@ -1,4 +1,4 @@
-// Version 6.5.12
+// Version 6.5.15
 const express = require('express');
 const httprequest = require('request');
 const app = express();
@@ -35,7 +35,7 @@ var directload = require("./routes/directload_cv6.5.9.js");
 
 
 var cvjs_debug = config.cvjs_debug;
-var version = "CADViewer Server v6.5.15c"
+var version = "CADViewer Server v6.5.15d"
 
 var globalCounter = 0;
 
@@ -45,7 +45,8 @@ console.log("ServerFrontEndUrl: "+config.ServerFrontEndUrl);
 console.log("ServerLocation: "+config.ServerLocation);
 console.log("Callback: "+config.callbackMethod);
 console.log("debug: "+config.cvjs_debug);
-console.log("converter: "+config.ax2020_executable);
+console.log("AX converter: "+config.ax2020_executable);
+console.log("LInkList converter: "+config.linklist2020_executable);
 
 
 //app.use(bodyParser.json()); // support json encoded bodies
