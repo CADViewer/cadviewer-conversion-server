@@ -1,4 +1,4 @@
-// Version 6.5.15
+// Version 6.7.01
 const express = require('express');
 const httprequest = require('request');
 const app = express();
@@ -44,6 +44,7 @@ console.log("ServerUrl: "+config.ServerUrl);
 console.log("ServerFrontEndUrl: "+config.ServerFrontEndUrl);
 console.log("ServerLocation: "+config.ServerLocation);
 console.log("Callback: "+config.callbackMethod);
+console.log("svgz_compress: "+config.cvjs_svgz_compress);
 console.log("debug: "+config.cvjs_debug);
 console.log("AX converter: "+config.ax2020_executable);
 console.log("LInkList converter: "+config.linklist2020_executable);
