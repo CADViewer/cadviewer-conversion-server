@@ -1,8 +1,8 @@
 {
   "name": "cadviewer-conversion-server",
-  "version": "1.5.5",
+  "version": "6.7.45",
   "description": "CADViewer NodeJS Server Encapsulation of CAD Converters",
-  "main": "CV_6.5.2.js",
+  "main": "CV_6.7.45.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +10,7 @@
   "license": "TMS 1.0",
   "dependencies": {
     "formidable": "^1.2.2",
+    "image-size": "^1.0.0",
     "node-gyp": "^8.1.0",
     "request": "^2.88.2"
   },
