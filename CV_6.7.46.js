@@ -1,4 +1,4 @@
-// Version 6.7.01
+// Version 6.7.46
 const express = require('express');
 const httprequest = require('request');
 const app = express();
@@ -13,13 +13,9 @@ var config = require('./CADViewer_config.json');
 //var ffi = require('ffi');
 var callapiconversion = require("./routes/callapiconversion_cv6.5.15c.js");
 
-var loadredline = require("./routes/loadredlines_cv6.5.10.js");
 var makesinglepagepdf = require("./routes/makesinglepagepdf_cv6.5.8.js");
 var makethumbnails = require("./routes/makethumbnails_cv6.5.8.js");
 var copyfile = require("./routes/copyfile_cv6.5.10.js");
-var listdirectory = require("./routes/listdirectory_cv6.5.9.js");
-var listdirectoryredlines = require("./routes/listdirectoryredlines_cv6.5.10.js");
-var saveredline = require("./routes/saveredline_cv6.5.10.js");
 var savefile = require("./routes/savefile_cv6.5.10.js");
 var appendfile = require("./routes/appendfile_cv6.5.10.js");
 var getCADViewerContent = require("./routes/getcadviewercontent_cv6.5.15.js");
@@ -33,6 +29,10 @@ var directload = require("./routes/directload_cv6.5.9.js");
 
 var directload2 = require("./routes/directload2_cv6.7.45.js");
 var uploadfile = require("./routes/uploadfile_cv6.7.45.js");
+var saveredline = require("./routes/saveredline_cv6.7.45.js");
+var listdirectory = require("./routes/listdirectory_cv6.7.45.js");
+var listdirectoryredlines = require("./routes/listdirectoryredlines_cv6.7.45.js");
+var loadredline = require("./routes/loadredlines_cv6.7.46.js");
 
 
 

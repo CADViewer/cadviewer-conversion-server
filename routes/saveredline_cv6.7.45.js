@@ -21,6 +21,17 @@ router.post('/saveredline', (req, res) => {
             var fileName = req.body.file;
             var fileContent = req.body.file_content;
             var buffer = Buffer.from(fileContent);
+
+            var listtype = req.body.listtype;
+
+            if (cvjs_debug) console.log("save redline listtype:"+listtype)
+
+            if (listtype == "serverfolder"){
+                fileName = config.ServerLocation+fileName;
+            }
+            
+            if (cvjs_debug) console.log("filename:"+fileName)
+
             
             var fs = require('fs');
                 

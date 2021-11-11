@@ -15,6 +15,17 @@ router.post('/listdirectoryredlines', (req, res) => {
         
         try {
             var directory = req.body.directory;
+
+
+            var listtype = req.body.listtype;
+            if (cvjs_debug) console.log("list redline listtype:"+listtype)
+
+            if (listtype == "serverfolder"){
+                directory = config.ServerLocation+directory;
+            }
+            if (cvjs_debug) console.log("directory:"+directory)
+
+
         
             directory = decodeURI(directory);
             directory = directory.replace(/%3A/g, ':');
