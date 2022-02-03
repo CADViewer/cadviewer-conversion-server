@@ -1,0 +1,20 @@
+{
+    "ServerUrl" : "http://127.0.0.1:3000",
+    "ServerFrontEndUrl" : "http://localhost:4200",
+    "ServerLocation" : "c:/nodejs/cadviewer-conversion-server/",
+    "fileLocation" : "c:/nodejs/cadviewer-conversion-server/converters/files/",
+    "fileLocationUrl" : "http://127.0.0.1:3000/converters/files/",
+    "converterLocation" : "c:/nodejs/cadviewer-conversion-server/converters/ax2022/windows/",
+    "ax2020_executable" : "AX2022_W64_22_12_65.exe",
+    "cvjs_svgz_compress" : true,
+    "licenseLocation" : "c:/nodejs/cadviewer-conversion-server/converters/ax2022/windows/",
+    "xpathLocation" : "c:/nodejs/cadviewer-conversion-server/converters/xpath/",
+    "callbackMethod" : "getcadviewercontent",
+    "cvjs_debug" : true,
+    "temp_print_folder" : "C:/nodejs/cadviewer-conversion-server/temp_print",
+	"dwgmergeLocation" : "c:/nodejs/cadviewer-conversion-server/converters/dwgmerge2020/windows/",
+	"dwgmerge2020_executable" : "DwgMerge2020.exe",
+	"linklistLocation" : "c:/nodejs/cadviewer-conversion-server/converters/linklist2022/windows/",
+	"linklist2020_executable" : "LinkList_2022_W32_22_07_15.exe"
+}	
+	
