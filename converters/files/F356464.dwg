@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /content/drawings/dwg/1st%20floor%20architectural.dwg</pre>
+</body>
+</html>
