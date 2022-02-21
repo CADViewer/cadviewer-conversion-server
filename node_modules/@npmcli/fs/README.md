@@ -12,6 +12,7 @@ polyfills, and extensions, of the core `fs` module.
 - `fs.mkdtemp` extended to accept an `owner` option
 - `fs.writeFile` extended to accept an `owner` option
 - `fs.withTempDir` added
+- `fs.cp` polyfill for node < 16.7.0
 
 ## The `owner` option
 
