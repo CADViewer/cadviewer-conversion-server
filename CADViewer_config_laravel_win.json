@@ -5,6 +5,7 @@
     "ServerLocation" : "c:/nodejs/cadviewer-conversion-server/",
     "fileLocation" : "c:/nodejs/cadviewer-conversion-server/converters/files/",
     "fileLocationUrl" : "http://127.0.0.1:3000/converters/files/",
+    "fontLocation" : "c:/nodejs/cadviewer-conversion-server/converters/ax2022/windows/fonts/",
     "converterLocation" : "c:/nodejs/cadviewer-conversion-server/converters/ax2022/windows/",
     "ax2020_executable" : "AX2022_W64_22_12_67.exe",
     "cvjs_svgz_compress" : false,
