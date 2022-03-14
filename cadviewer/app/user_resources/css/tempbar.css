@@ -1,0 +1,23 @@
+.tempbar {
+    display: block;
+    min-width: 1024px;
+    width: 100%;
+    text-align: right;
+    background: #000;
+    clear: both;
+    top: 0px;
+    left: 0px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    height: 36px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    padding-top: 7px;
+    a {
+        color: #ccc;
+    }
+    img {
+        padding-bottom: 6px;
+    }  
+}

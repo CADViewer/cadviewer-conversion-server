@@ -43,7 +43,7 @@ router.get('/directload', function (req, res) {
 		});	
 	}
 	catch (e) {
-		res.send("error -loadfile");  // no file
+		res.send("error - directload loadfile");  // no file
 		if (config.cvjs_debug) console.log(e);
 	}
 		

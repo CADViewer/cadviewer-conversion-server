@@ -1,0 +1,1095 @@
+/* line 18, ../sass/wizards.scss */
+#closeButton {
+  background-color: #090;
+  color: #fff;
+  border-color: #666;
+}
+/* line 22, ../sass/wizards.scss */
+#closeButton[disabled] {
+  background-color: #999;
+  color: #fff;
+  border-color: #666;
+}
+
+/* line 29, ../sass/wizards.scss */
+button[disabled] {
+  border-color: #999;
+  color: #999;
+}
+
+/* line 34, ../sass/wizards.scss */
+input:required, select:required {
+  box-shadow: none;
+}
+
+/* line 38, ../sass/wizards.scss */
+.search-box, .close-icon {
+  position: relative;
+  padding: 0px;
+}
+
+/* line 43, ../sass/wizards.scss */
+.search-wrapper {
+  position: relative;
+  padding: 0px;
+  width: 500px;
+  margin: auto;
+  margin-top: -1px;
+}
+
+/* line 51, ../sass/wizards.scss */
+.search-box {
+  border: 1px solid #eee;
+  outline: 0;
+  margin-left: 4px;
+  width: 218px;
+  height: 24px;
+  padding: 0px 0px 0 4px;
+}
+/* line 58, ../sass/wizards.scss */
+.search-box:focus {
+  border: 2px solid #0cf;
+}
+
+/* line 63, ../sass/wizards.scss */
+.close-icon {
+  border: 1px solid transparent;
+  background-color: transparent;
+  display: inline-block;
+  vertical-align: middle;
+  outline: 0;
+  cursor: pointer;
+  padding-left: 4%;
+  margin-top: -8px;
+  margin-left: -42px;
+}
+/* line 73, ../sass/wizards.scss */
+.close-icon:before {
+  margin-right: -12px;
+  margin-bottom: -6px;
+  right: 100%;
+  bottom: 50%;
+}
+/* line 79, ../sass/wizards.scss */
+.close-icon:after {
+  right: 100%;
+  bottom: 50%;
+}
+/* line 84, ../sass/wizards.scss */
+.close-icon:hover:after, .close-icon:hover:before {
+  -webkit-transform: translateX(-8px);
+  -moz-transform: translateX(-8px);
+  transform: translateX(-8px);
+}
+/* line 91, ../sass/wizards.scss */
+.close-icon:focus:after, .close-icon:focus:before {
+  -webkit-transform: translateX(-8px);
+  -moz-transform: translateX(-8px);
+  transform: translateX(-8px);
+}
+/* line 97, ../sass/wizards.scss */
+.close-icon:after {
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  background-color: #eee;
+  z-index: 1;
+  right: 35px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  margin-top: -9px;
+  margin-bottom: -14px;
+  padding-top: -1px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  font-weight: normal;
+  font-size: 12px;
+  box-shadow: 0 0 2px;
+  cursor: pointer;
+}
+
+/* line 121, ../sass/wizards.scss */
+.search-box:not(:valid) ~ .close-icon {
+  display: none;
+}
+
+/* line 125, ../sass/wizards.scss */
+.red {
+  color: #ff0000;
+}
+
+/* line 129, ../sass/wizards.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 133, ../sass/wizards.scss */
+.cellToolTip {
+  overflow: visible;
+}
+
+/* line 137, ../sass/wizards.scss */
+#sensorModalContent, #fixtureModalContent {
+  height: 600px;
+  width: 980px;
+  border-radius: 5px;
+}
+
+/* line 143, ../sass/wizards.scss */
+.modal-dialog-wizard {
+  width: 980px;
+}
+
+/* line 148, ../sass/wizards.scss */
+.wizardModal a:link, .wizardModal a:hover, .wizardModal a:visited, .wizardModal a:active {
+  text-decoration: none;
+}
+/* line 152, ../sass/wizards.scss */
+.wizardModal h1 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bold;
+  position: relative;
+  padding-top: 9px;
+  margin: 0 12px 0 0;
+  text-transform: uppercase;
+}
+/* line 162, ../sass/wizards.scss */
+.wizardModal h2 {
+  text-transform: uppercase;
+}
+/* line 167, ../sass/wizards.scss */
+.wizardModal h3 ul {
+  list-style-type: none;
+  float: left;
+  margin-top: 10px;
+}
+/* line 172, ../sass/wizards.scss */
+.wizardModal h3 li {
+  display: inline;
+  font-size: 15px;
+  font-weight: normal;
+  padding-left: 4px;
+  padding-right: 8px;
+}
+/* line 179, ../sass/wizards.scss */
+.wizardModal h3 img {
+  margin: 8px 0 0 12px;
+  float: left;
+}
+/* line 185, ../sass/wizards.scss */
+.wizardModal .header {
+  width: 100%;
+  margin: auto;
+  background: #00539B;
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+}
+/* line 194, ../sass/wizards.scss */
+.wizardModal .wizard-frame {
+  clear: both;
+  border: 1px solid #666;
+  height: 610px;
+  width: 980px;
+  min-width: 980px;
+  margin: auto;
+  background-color: #fff;
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+/* line 209, ../sass/wizards.scss */
+.wizardModal .modal-header {
+  height: 40px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: none;
+  padding-top: 10px;
+}
+/* line 230, ../sass/wizards.scss */
+.wizardModal #steps {
+  text-align: center;
+  height: 30px;
+}
+/* line 234, ../sass/wizards.scss */
+.wizardModal #steps ul {
+  list-style: none outside none;
+  display: inline-table;
+}
+/* line 237, ../sass/wizards.scss */
+.wizardModal #steps ul li {
+  display: inline;
+}
+/* line 239, ../sass/wizards.scss */
+.wizardModal #steps ul li a {
+  display: block;
+  float: left;
+  height: 40px;
+  background: #ccc;
+  text-align: center;
+  padding: 12px 40px 0 40px;
+  position: relative;
+  margin: 0 8px 0px 0;
+  font-size: 14px;
+  text-decoration: none;
+}
+/* line 251, ../sass/wizards.scss */
+.wizardModal #steps ul li a:after {
+  content: "";
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #ccc;
+  position: absolute;
+  right: -20px;
+  top: 0;
+  z-index: 2;
+}
+/* line 259, ../sass/wizards.scss */
+.wizardModal #steps ul li a:before {
+  content: "";
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+/* line 269, ../sass/wizards.scss */
+.wizardModal #steps ul li:first-child a {
+  color: #333;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background: #ccc;
+}
+/* line 275, ../sass/wizards.scss */
+.wizardModal #steps ul li:first-child a:before {
+  display: none;
+}
+/* line 278, ../sass/wizards.scss */
+.wizardModal #steps ul li:first-child a:after {
+  content: "";
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #ccc;
+  position: absolute;
+  right: -20px;
+  top: 0;
+  z-index: 2;
+}
+/* line 288, ../sass/wizards.scss */
+.wizardModal #steps ul li:last-child a {
+  padding-right: 40px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+/* line 293, ../sass/wizards.scss */
+.wizardModal #steps ul li:last-child a:after {
+  display: none;
+}
+/* line 298, ../sass/wizards.scss */
+.wizardModal #steps ul .active a {
+  background: #666 !important;
+  color: #fff !important;
+}
+/* line 302, ../sass/wizards.scss */
+.wizardModal #steps ul .active a:after {
+  border-left-color: #666 !important;
+}
+/* line 307, ../sass/wizards.scss */
+.wizardModal #steps ul .inactive a {
+  background: #ccc;
+  color: #333;
+}
+/* line 311, ../sass/wizards.scss */
+.wizardModal #steps ul .inactive a:after {
+  border-left-color: #ccc;
+}
+/* line 318, ../sass/wizards.scss */
+.wizardModal .filter-nest {
+  background: #aaa;
+  height: 30px;
+}
+/* line 321, ../sass/wizards.scss */
+.wizardModal .filter-nest a:link, .wizardModal .filter-nest a:visited {
+  color: #006CD8;
+}
+/* line 324, ../sass/wizards.scss */
+.wizardModal .filter-nest a:hover {
+  color: #00ccff;
+  border-bottom: 1px #00ccff dotted;
+}
+/* line 332, ../sass/wizards.scss */
+.wizardModal .filter-nest ul:first-child {
+  float: left;
+  position: absolute;
+}
+/* line 335, ../sass/wizards.scss */
+.wizardModal .filter-nest ul:first-child li:first-child {
+  position: relative;
+  top: 4px;
+}
+/* line 340, ../sass/wizards.scss */
+.wizardModal .filter-nest ul:last-child {
+  float: right;
+  margin-top: 2px;
+  margin-right: -20px;
+  height: 18px;
+}
+/* line 345, ../sass/wizards.scss */
+.wizardModal .filter-nest ul:last-child li:last-child input {
+  margin-top: 1px;
+  width: 272px;
+  /* 202px for sidebar-narrow; 272px for sidebar-wide */
+  height: 22px;
+}
+/* line 351, ../sass/wizards.scss */
+.wizardModal .filter-nest ul:last-child li:last-child:after {
+  content: url("../images/clear.png");
+  position: relative;
+  z-index: 1000;
+  left: -22px;
+  top: 2px;
+  cursor: pointer;
+}
+/* line 360, ../sass/wizards.scss */
+.wizardModal .filter-nest li:first-child {
+  padding-left: 10px;
+}
+/* line 363, ../sass/wizards.scss */
+.wizardModal .filter-nest li {
+  list-style-type: none;
+  display: inline;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-size: 12px;
+  color: #555;
+}
+/* line 372, ../sass/wizards.scss */
+.wizardModal .filter-nest input {
+  color: #bbb;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* line 377, ../sass/wizards.scss */
+.wizardModal .filter-nest .count {
+  font-weight: 700;
+  color: #333;
+  font-size: 14px;
+}
+/* line 384, ../sass/wizards.scss */
+.wizardModal .summary-table-container {
+  border: 1px solid #999;
+  width: 960px;
+  height: 420px;
+  background-color: #eee;
+  margin: 0px auto;
+  position: relative;
+  top: 20px;
+}
+/* line 394, ../sass/wizards.scss */
+.wizardModal .summary-table {
+  position: absolute;
+  width: 958px;
+  height: 418px;
+  overflow: auto;
+  background: #fff;
+}
+/* line 400, ../sass/wizards.scss */
+.wizardModal .summary-table table tr:nth-child(odd) {
+  background: #e8f4fc;
+}
+/* line 403, ../sass/wizards.scss */
+.wizardModal .summary-table td {
+  height: 28px;
+  vertical-align: middle;
+  padding-left: 4px;
+}
+/* line 408, ../sass/wizards.scss */
+.wizardModal .summary-table th:first-child {
+  padding-left: 4px;
+}
+/* line 411, ../sass/wizards.scss */
+.wizardModal .summary-table tr:first-child > th {
+  background: #eee;
+  font-size: 12px;
+  height: 28px;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+/* line 420, ../sass/wizards.scss */
+.wizardModal .summary-table-slug {
+  margin: 44px 0 -20px 12px;
+  height: 24px;
+  font-size: 14px;
+}
+/* line 424, ../sass/wizards.scss */
+.wizardModal .summary-table-slug .pull-right {
+  margin-right: 10px;
+}
+/* line 429, ../sass/wizards.scss */
+.wizardModal .fix-table-container {
+  border: 1px solid #999;
+  width: 960px;
+  height: 458px;
+  background-color: #eee;
+  margin: 0px auto;
+  margin-top: 30px;
+}
+/* line 438, ../sass/wizards.scss */
+.wizardModal .fix-table-header {
+  width: 750px;
+  /* 750px for sidebar-narrow; 678px for sidebar-wide */
+  height: 30px;
+}
+/* line 441, ../sass/wizards.scss */
+.wizardModal .fix-table-header td {
+  padding: 2px 0 0 4px;
+  color: #999;
+  vertical-align: top;
+}
+/* line 446, ../sass/wizards.scss */
+.wizardModal .fix-table-header table {
+  float: left;
+  height: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/* line 451, ../sass/wizards.scss */
+.wizardModal .fix-table-header table a:link, .wizardModal .fix-table-header table a:visited {
+  color: #006CD8;
+}
+/* line 454, ../sass/wizards.scss */
+.wizardModal .fix-table-header table a:hover {
+  color: #00ccff;
+  border-bottom: 1px #00ccff dotted;
+}
+/* line 461, ../sass/wizards.scss */
+.wizardModal .fix-table-content {
+  height: 408px;
+  overflow: auto;
+  background: #fff;
+}
+/* line 465, ../sass/wizards.scss */
+.wizardModal .fix-table-content table tr:nth-child(odd) {
+  background: #e8f4fc;
+}
+/* line 470, ../sass/wizards.scss */
+.wizardModal .fix-table-content-left {
+  height: 388px;
+  background-color: #fff;
+  overflow: auto;
+}
+/* line 474, ../sass/wizards.scss */
+.wizardModal .fix-table-content-left table tr:nth-child(odd) {
+  background: #e8f4fc;
+}
+/* line 477, ../sass/wizards.scss */
+.wizardModal .fix-table-content-left td {
+  height: 16px;
+  vertical-align: middle;
+}
+/* line 481, ../sass/wizards.scss */
+.wizardModal .fix-table-content-left td:first-child {
+  padding-left: 4px;
+}
+/* line 486, ../sass/wizards.scss */
+.wizardModal .sidebar-narrow {
+  float: right;
+  background-color: #ccc;
+  width: 210px;
+  display: inline-block;
+  position: relative;
+  top: -426px;
+  height: 426px;
+  z-index: 1000;
+}
+/* line 495, ../sass/wizards.scss */
+.wizardModal .sidebar-narrow select {
+  width: 170px;
+}
+/* line 498, ../sass/wizards.scss */
+.wizardModal .sidebar-narrow table {
+  background-color: none;
+}
+/* line 500, ../sass/wizards.scss */
+.wizardModal .sidebar-narrow table td {
+  background-color: none;
+  padding: 0px;
+  border-spacing: 0px;
+}
+/* line 506, ../sass/wizards.scss */
+.wizardModal .sidebar-narrow .sidebar-btn-stack a {
+  width: 170px;
+}
+/* line 509, ../sass/wizards.scss */
+.wizardModal .sidebar-narrow .sidebar-btn-stack li:last-child {
+  width: 170px;
+}
+/* line 512, ../sass/wizards.scss */
+.wizardModal .sidebar-narrow .sidebar-select {
+  padding: 0 20px;
+}
+/* line 517, ../sass/wizards.scss */
+.wizardModal .sidebar-wide {
+  float: right;
+  background-color: #ccc;
+  width: 280px;
+  display: inline-block;
+  position: relative;
+  top: -426px;
+  height: 426px;
+  z-index: 1000;
+}
+/* line 526, ../sass/wizards.scss */
+.wizardModal .sidebar-wide table {
+  background-color: none;
+}
+/* line 528, ../sass/wizards.scss */
+.wizardModal .sidebar-wide table td {
+  background-color: none;
+  padding: 0px;
+  border-spacing: 0px;
+}
+/* line 534, ../sass/wizards.scss */
+.wizardModal .sidebar-wide .sidebar-btn-stack a {
+  width: 240px;
+}
+/* line 537, ../sass/wizards.scss */
+.wizardModal .sidebar-wide .sidebar-btn-stack li:last-child {
+  width: 240px;
+}
+/* line 542, ../sass/wizards.scss */
+.wizardModal .sidebar-select {
+  height: 286px;
+}
+/* line 544, ../sass/wizards.scss */
+.wizardModal .sidebar-select .button-wide {
+  display: block;
+  width: 240px;
+  height: 30px;
+  padding: 4px 0;
+  line-height: 1.6;
+  font-size: 13px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #666;
+  background-color: #eee;
+  color: #666;
+}
+/* line 557, ../sass/wizards.scss */
+.wizardModal .sidebar-select .button-narrow {
+  display: block;
+  width: 170px;
+  height: 30px;
+  padding: 4px 0;
+  line-height: 1.6;
+  font-size: 13px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #666;
+  background-color: #eee;
+  color: #666;
+}
+/* line 570, ../sass/wizards.scss */
+.wizardModal .sidebar-select .open-sidebar-panel, .wizardModal .sidebar-select .close-sidebar-panel {
+  padding-bottom: 12px;
+  cursor: pointer;
+}
+/* line 574, ../sass/wizards.scss */
+.wizardModal .sidebar-select li:first-child {
+  color: #333;
+  padding-top: 12px;
+  font-size: 12px;
+}
+/* line 579, ../sass/wizards.scss */
+.wizardModal .sidebar-select li {
+  padding-top: 12px;
+  font-size: 12px;
+}
+/* line 583, ../sass/wizards.scss */
+.wizardModal .sidebar-select .select-step-text {
+  color: #333;
+  font-size: 12px;
+  line-height: 1.2;
+}
+/* line 588, ../sass/wizards.scss */
+.wizardModal .sidebar-select .target-mod-table {
+  width: 240px;
+  border: 1px solid #999;
+}
+/* line 591, ../sass/wizards.scss */
+.wizardModal .sidebar-select .target-mod-table tr:first-child th:first-child {
+  font-weight: 700;
+}
+/* line 594, ../sass/wizards.scss */
+.wizardModal .sidebar-select .target-mod-table th {
+  background-color: #aaa;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 4px 4px;
+}
+/* line 601, ../sass/wizards.scss */
+.wizardModal .sidebar-select .target-mod-table td {
+  background-color: #fff;
+  font-size: 11px;
+  padding: 2px 4px;
+}
+/* line 606, ../sass/wizards.scss */
+.wizardModal .sidebar-select .target-mod-table th:first-child, .wizardModal .sidebar-select .target-mod-table td:first-child {
+  width: 30px;
+  text-align: left;
+}
+/* line 610, ../sass/wizards.scss */
+.wizardModal .sidebar-select .target-mod-table th:nth-child(2), .wizardModal .sidebar-select .target-mod-table td:nth-child(2) {
+  width: 120px;
+  text-align: left;
+}
+/* line 617, ../sass/wizards.scss */
+.wizardModal .sidebar-btn-stack, .wizardModal .sidebar-select {
+  padding: 0 20px;
+}
+/* line 622, ../sass/wizards.scss */
+.wizardModal .sidebar-btn-stack a {
+  display: block;
+  padding: 4px 0;
+  line-height: 1.6;
+  font-size: 13px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #999;
+  background-color: #eee;
+}
+/* line 637, ../sass/wizards.scss */
+.wizardModal .sidebar-btn-stack .inactive {
+  background-color: #eee;
+  color: #999;
+}
+/* line 641, ../sass/wizards.scss */
+.wizardModal .sidebar-btn-stack .green-active {
+  background-color: #4ba84b;
+  color: #fff;
+  border: 1px solid #666;
+}
+/* line 649, ../sass/wizards.scss */
+.wizardModal .sidebar-btn-stack .grey-active {
+  background-color: #eee;
+  border: 1px solid #666;
+  color: #666;
+}
+/* line 657, ../sass/wizards.scss */
+.wizardModal .sidebar-btn-stack li:first-child {
+  color: #333;
+  font-size: 12px;
+}
+/* line 663, ../sass/wizards.scss */
+.wizardModal .sidebar-btn-stack li:nth-child(2) {
+  padding: 12px 0;
+}
+/* line 666, ../sass/wizards.scss */
+.wizardModal .sidebar-btn-stack li:last-child {
+  border-top: 1px solid #aaa;
+  padding-top: 12px;
+}
+/* line 672, ../sass/wizards.scss */
+.wizardModal .modal-summary-footer {
+  width: 100%;
+  clear: both;
+  position: relative;
+  top: 13px;
+  border-top: none;
+}
+/* line 678, ../sass/wizards.scss */
+.wizardModal .modal-summary-footer button {
+  width: 120px;
+}
+/* line 681, ../sass/wizards.scss */
+.wizardModal .modal-summary-footer .button-left {
+  margin-left: -6px;
+}
+/* line 684, ../sass/wizards.scss */
+.wizardModal .modal-summary-footer .button-right {
+  margin-right: -6px;
+}
+/* line 689, ../sass/wizards.scss */
+.wizardModal .modal-select-footer {
+  width: 100%;
+  clear: both;
+  position: relative;
+  top: -432px;
+  border-top: none;
+}
+/* line 695, ../sass/wizards.scss */
+.wizardModal .modal-select-footer button {
+  width: 120px;
+}
+/* line 698, ../sass/wizards.scss */
+.wizardModal .modal-select-footer .button-left {
+  margin-left: -6px;
+}
+/* line 701, ../sass/wizards.scss */
+.wizardModal .modal-select-footer .button-right {
+  margin-right: -6px;
+}
+
+/* line 707, ../sass/wizards.scss */
+.wide-table-header {
+  border-collapse: collapse;
+  width: 958px;
+  white-space: nowrap;
+  border-color: #999;
+}
+/* line 712, ../sass/wizards.scss */
+.wide-table-header thead {
+  background: #eee;
+}
+
+/* line 717, ../sass/wizards.scss */
+.treeview-panel {
+  float: left;
+  overflow-y: scroll;
+  height: 425px;
+}
+/* line 721, ../sass/wizards.scss */
+.treeview-panel table {
+  height: 425px;
+  width: 476px;
+  margin: -2px 0 0 8px;
+}
+/* line 726, ../sass/wizards.scss */
+.treeview-panel tr td {
+  background-color: #ccc;
+  vertical-align: top;
+}
+
+/* grid */
+/* line 733, ../sass/wizards.scss */
+.mySelectHeaderCell {
+  padding-left: 5px;
+  height: 21px;
+  padding-top: 4px;
+}
+
+/* line 739, ../sass/wizards.scss */
+.checkonoff {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+/* line 744, ../sass/wizards.scss */
+#checkon a {
+  font-size: 11px;
+}
+
+/* line 748, ../sass/wizards.scss */
+#checkoff a {
+  font-size: 11px;
+}
+
+/* line 752, ../sass/wizards.scss */
+.divider {
+  color: #999;
+}
+
+/* line 756, ../sass/wizards.scss */
+.ngCellText a {
+  color: #333;
+}
+
+/* line 761, ../sass/wizards.scss */
+#filter {
+  color: #bbb;
+  font-size: 14px;
+  font-family: arial, helvetica, sans-serif;
+}
+
+/* line 767, ../sass/wizards.scss */
+span.deleteicon {
+  position: absolute;
+}
+/* line 769, ../sass/wizards.scss */
+span.deleteicon span {
+  float: right;
+  margin: 6px 10px 0 954px;
+  width: 13px;
+  height: 13px;
+  /*background: url('../images/clear.png') no-repeat;*/
+  cursor: pointer;
+}
+/* line 777, ../sass/wizards.scss */
+span.deleteicon input {
+  padding-right: -32px;
+}
+
+/* page#1 assign gateway fixture type */
+/* line 784, ../sass/wizards.scss */
+#pidScreen1 {
+  background-color: #ccc;
+  width: 958px;
+  height: 450px;
+  margin-left: 9px;
+  margin-right: 9px;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #666;
+}
+
+/* line 797, ../sass/wizards.scss */
+.gridHeaderLeft {
+  padding: 6px 0 5px 0px;
+  border-style: none;
+  border-width: 0px;
+  height: 35px;
+}
+/* line 802, ../sass/wizards.scss */
+.gridHeaderLeft span {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+/* line 808, ../sass/wizards.scss */
+.leftmost {
+  margin-left: 23px;
+}
+
+/* line 812, ../sass/wizards.scss */
+.gridHeaderLeft a {
+  font-weight: 500;
+  color: #428bca;
+  font-size: 12px;
+}
+
+/* line 818, ../sass/wizards.scss */
+.gridHeaderRight {
+  float: right;
+  margin-left: 5px;
+  width: auto;
+  height: 35px;
+  padding: 0px 6px 0 0;
+  border-style: none;
+  border-width: 0px;
+}
+
+/* line 828, ../sass/wizards.scss */
+.countSpan {
+  font-weight: 700;
+  color: #333;
+  font-size: 14px;
+}
+
+/* line 834, ../sass/wizards.scss */
+.searchDiv {
+  margin-left: 5px;
+  width: 222px;
+  height: 34px;
+  padding: 6px 0px 0 0;
+  border: none;
+}
+
+/* line 842, ../sass/wizards.scss */
+.gridDiv {
+  margin-bottom: 1px;
+  padding-left: 30px;
+  padding-right: 3px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border: none;
+  height: 412px;
+}
+
+/* line 852, ../sass/wizards.scss */
+#loadingWidget {
+  padding: 0 .30em;
+  margin-left: 50%;
+}
+
+/* line 857, ../sass/wizards.scss */
+.sideBar {
+  margin-bottom: -34px;
+  padding-bottom: 1px;
+  padding-left: 2px;
+  padding-right: 49px;
+  border: none;
+}
+
+/* line 865, ../sass/wizards.scss */
+.sideColumn {
+  padding-top: 20px;
+  margin-top: -16px;
+  margin-right: -20px;
+  padding-bottom: -22px;
+  height: 413px;
+  border-right: 1px solid;
+}
+
+/* line 874, ../sass/wizards.scss */
+.btnLabel {
+  color: #666;
+  padding-top: 12px;
+  padding-left: -16px;
+  font-size: 12px;
+  margin-left: 13px;
+}
+
+/* line 882, ../sass/wizards.scss */
+.innerDropDownLabel {
+  color: #666;
+  padding-left: -16px;
+  font-size: 11px;
+  margin-left: 27px;
+  display: block;
+}
+
+/* line 890, ../sass/wizards.scss */
+select {
+  font-size: 12px;
+  width: 100%;
+}
+
+/*s2id_ is a prefix generated by select2*/
+/* line 898, ../sass/wizards.scss */
+#s2id_modelSelect2 {
+  width: 160px;
+  margin-left: 26px;
+  padding-bottom: 15px;
+}
+
+/* line 904, ../sass/wizards.scss */
+.select2-container .select2-choice, .select2-result-label {
+  font-size: 11px;
+}
+
+/* line 908, ../sass/wizards.scss */
+.select2-no-results {
+  font-size: 12px;
+  color: #999;
+}
+
+/* line 913, ../sass/wizards.scss */
+.promptOption {
+  color: #DDD;
+}
+
+/* line 917, ../sass/wizards.scss */
+.incompaDiv {
+  color: #666;
+  padding: 10px 0 0 32px;
+  font-size: 11px;
+  text-indent: 1px;
+  margin-top: -2px;
+  margin-bottom: 10px;
+}
+
+/* line 926, ../sass/wizards.scss */
+.redInlineSpan {
+  font-weight: 700;
+  color: #900;
+}
+
+/* line 931, ../sass/wizards.scss */
+.btnWizard {
+  background-color: #eee;
+  width: 190px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 13px;
+  margin-bottom: 8px;
+  margin-top: 10px;
+  margin-left: 19px;
+  text-justify: center;
+  border-radius: 5px;
+}
+
+/* line 945, ../sass/wizards.scss */
+#btnAssign:hover, #btnUndo:hover {
+  color: #0cf;
+}
+
+/* line 975, ../sass/wizards.scss */
+.sideBarDivider {
+  width: 187px;
+  margin-left: 20px;
+  margin-top: -4px;
+  margin-bottom: 4px;
+}
+
+/* line 982, ../sass/wizards.scss */
+.desc {
+  font-size: 12px;
+  color: #666;
+  padding-top: 9px;
+  margin-bottom: 3px;
+  padding-left: 17px;
+}
+
+/* line 990, ../sass/wizards.scss */
+.footDiv {
+  margin-left: 3px;
+  padding-right: 21px;
+  padding-top: 7px;
+  border: none;
+}
+
+/* page#2 save changes page*/
+/* line 999, ../sass/wizards.scss */
+.pidScreenFull {
+  width: 958px;
+  background-color: #fff;
+  height: 450px;
+  margin: 0px auto;
+}
+
+/* line 1006, ../sass/wizards.scss */
+.headerMessageDiv {
+  padding-top: 40px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #999;
+  margin-left: 15px;
+}
+
+/* line 1014, ../sass/wizards.scss */
+.boldMessage {
+  font-weight: 700;
+  color: #666;
+}
+
+/* line 1019, ../sass/wizards.scss */
+.gridDivFull {
+  padding-bottom: 0px;
+  margin-left: 30px;
+  margin-top: 5px;
+  margin-right: -56px;
+  width: 953px;
+  border: 1px solid;
+  height: 400px;
+}
+
+/* page#3 summary page */
+/* line 1031, ../sass/wizards.scss */
+.actionSummary {
+  float: right;
+  padding-right: 17px;
+  font-size: 14px;
+  color: #999;
+  font-weight: 500;
+}
+
+/* line 1039, ../sass/wizards.scss */
+.statusIconCell {
+  text-align: right;
+}
+
+/* line 1043, ../sass/wizards.scss */
+.statusCell span {
+  padding-left: 6px;
+}

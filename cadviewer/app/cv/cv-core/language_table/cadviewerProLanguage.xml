@@ -1,0 +1,4402 @@
+<cvjs>
+	<numberOfLanguages>9</numberOfLanguages>
+	<languages>
+			<languageCode>EN-US</languageCode>
+			<thisLanguage>English</thisLanguage>
+			<PrintModal>
+				<Header>CADViewer - Print Settings</Header>
+				<Paper>Paper Size:</Paper>
+				<Landscape>Landscape</Landscape>
+				<Portrait>Portrait</Portrait>
+				<Orientation>Orientation:</Orientation>
+				<Resolution>Resolution:</Resolution>
+				<ResolutionText>(min 75dpi, standard 300dpi)</ResolutionText>
+				<Print>Print</Print>
+				<Grayscale>Grayscale</Grayscale>
+				<PrintPDF>Print as PDF</PrintPDF>
+				<PrintToScale>Print to Scale</PrintToScale>
+				<TextBox1Header>Drawing Title (4 x line max)</TextBox1Header>
+				<TextBox2Header>Drawing No</TextBox2Header>
+				<EnterScale>Scale:</EnterScale>
+				<CustomCheckbox>Title Block</CustomCheckbox>
+				<JsonVariable>Variable($$$):</JsonVariable>
+				<PaperSizeTotal>19</PaperSizeTotal>
+				<PaperSizes>
+					<PaperSize>A4</PaperSize>
+					<PaperSize>A3</PaperSize>
+					<PaperSize>A2</PaperSize>
+					<PaperSize>A1</PaperSize>
+					<PaperSize>A0</PaperSize>
+					<PaperSize>A5</PaperSize>
+					<PaperSize>letter</PaperSize>
+					<PaperSize>legal</PaperSize>
+					<PaperSize>tabloid</PaperSize>
+					<PaperSize>USA</PaperSize>
+					<PaperSize>USB</PaperSize>
+					<PaperSize>USC</PaperSize>
+					<PaperSize>USD</PaperSize>
+					<PaperSize>USE</PaperSize>
+					<PaperSize>ARCHA</PaperSize>
+					<PaperSize>ARCHB</PaperSize>
+					<PaperSize>ARCHC</PaperSize>
+					<PaperSize>ARCHD</PaperSize>
+					<PaperSize>ARCHE</PaperSize>
+					<PaperSize>ALCOAA</PaperSize>
+				</PaperSizes>
+				<MenuItems>
+					<MenuItem>A4 (210 x 297 mm)</MenuItem>
+					<MenuItem>A3 (297 x 420 mm)</MenuItem>
+					<MenuItem>A2 (420 x 594 mm)</MenuItem>
+					<MenuItem>A1 (594 x 841 mm)</MenuItem>
+					<MenuItem>A0 (841 x 1189 mm)</MenuItem>
+					<MenuItem>A5 (148 x 210 mm)</MenuItem>
+					<MenuItem>Letter (8.5 x 11 in)</MenuItem>
+					<MenuItem>Legal (8.5 x 14 in)</MenuItem>
+					<MenuItem>Tabloid (11 x 17 in)</MenuItem>
+					<MenuItem>A (8.5 x 11 in)</MenuItem>
+					<MenuItem>B (11 x 17 in)</MenuItem>
+					<MenuItem>C (17 x 22 in)</MenuItem>
+					<MenuItem>D (22 x 34 in)</MenuItem>
+					<MenuItem>E (34 x 44 in)</MenuItem>
+					<MenuItem>A+ (9 x 12 in)</MenuItem>
+					<MenuItem>B+ (12 x 18 in)</MenuItem>
+					<MenuItem>C+ (18 x 24 in)</MenuItem>
+					<MenuItem>D+ (24 x 36 in)</MenuItem>
+					<MenuItem>E+ (36 x 48 in)</MenuItem>
+					<MenuItem>ALCOA A (30 x 36 in)</MenuItem>
+				</MenuItems>
+			</PrintModal>
+			<SearchTextModal>
+				<Header>Search Text</Header>
+				<SearchText>Search Text:</SearchText>
+				<Zoom>Zoom Level:</Zoom>
+				<Search>Search</Search>
+			</SearchTextModal>
+			<SearchCustomModal>
+				<Header>Search Text</Header>
+				<SearchText>Search Text:</SearchText>
+				<Search>Search</Search>
+			</SearchCustomModal>
+			<InfoMessageModal>
+				<Header>CADViewer Information</Header>
+				<Header2>CADViewer Information</Header2>
+				<Version>CADViewer version:</Version>
+				<AXVersion>AutoXchange version:</AXVersion>
+				<ComingSoon>Coming Soon!</ComingSoon>
+				<NoUnits>No units defined in drawing, please use command Calibrate Measurement first.</NoUnits>
+				<UnitLess>The originating drawing is unitless, please use command Calibrate Measurement first</UnitLess>
+				<QuickCountSingle>Number of Quick Counts is:</QuickCountSingle>
+				<QuickCountMultiple>Number of Quick Counts are:</QuickCountMultiple>
+				<RedlinesLocked>Redlines are locked for User:</RedlinesLocked>
+				<LicensePath>Could not find license key at path:</LicensePath>
+				<LicenseNotFound>License key not found</LicenseNotFound>
+				<SelectTwoPoints>Please select two points in the drawing with the mouse first, then enter unit and distance, finally press OK.</SelectTwoPoints>
+				<ReferenceDistance>Please enter a reference distance.</ReferenceDistance>
+				<RedlinesSaved>Redlines Saved</RedlinesSaved>
+				<SinglePage>Single page drawing - no change of page</SinglePage>
+				<FirstPage>The current page is the first page in a multipage drawing - no change of page</FirstPage>
+				<LastPage>The current page is the last page in a multipage drawing - no change of page</LastPage>
+				<OutOfRange>The page number entered is outside of the range of pages - no change of page</OutOfRange>
+				<FileLoadThroughApp>NOTE: File Load enabled only through the encapsulating application</FileLoadThroughApp>
+				<ErrorConnectingToHost>Error when connecting to Host. Go to the Settings Pane and check your Network Settings!</ErrorConnectingToHost>
+				<ConnectToHostFirst>Please go to the Settings Pane, check your Network Settings and click Save Changes to connect to your Network Host to retrieve the data structure used when mapping locations.</ConnectToHostFirst>
+				<NoObjectSelected>Please select a Space Object.</NoObjectSelected>
+				<PaperSizePDFPrintOnly>Please select Print as PDF for large paper sizes size. Large papersizes are A1 and A0, as well as US Arch D and above.</PaperSizePDFPrintOnly>
+				<ServerSideFormatForPDFPrint>PDF print requires an original file in formats DWG, DWF, DXF or DGN or PCF. Please upload a file in these formats or select a smaller papersize for direct print. Direct print papersizes are A4-A2 or US Letter through ANSI C</ServerSideFormatForPDFPrint>
+				<PrintDisabled>NOTE: Print Disabled</PrintDisabled>
+				<NoQRCode>No QR Code received from Server!</NoQRCode>
+				<DrawingName>Drawing:</DrawingName>
+			</InfoMessageModal>
+			<FileLoadModal>
+				<Header>CADViewer - File Manager</Header>
+				<DrawingFilename>DRAWING / FILENAME</DrawingFilename>
+				<EditFloorplanInfo>Edit Floor Plan Info</EditFloorplanInfo>
+			</FileLoadModal>
+			<SaveRedlineModal>
+				<Header>CADViewer - Save Redline</Header>
+				<RedlineFilename>REDLINE / FILENAME</RedlineFilename>
+				<EditRedlineInfo>Edit Redline Info</EditRedlineInfo>
+				<Upload>UPLOAD</Upload>
+			</SaveRedlineModal>
+			<OpenRedlineModal>
+				<Header>CADViewer - Open Redline</Header>
+				<RedlineFilename>REDLINE / FILENAME</RedlineFilename>
+				<EditRedlineInfo>Edit Redline Info</EditRedlineInfo>
+			</OpenRedlineModal>
+			<OpenSpaceObjectModal>
+				<Header>CADViewer - Open Space Objects</Header>
+				<SpaceObjectFilename>REDLINE / FILENAME</SpaceObjectFilename>
+				<EditSpaceObjectInfo>Edit Redline Info</EditSpaceObjectInfo>
+			</OpenSpaceObjectModal>
+			<RedlineThicknessModal>
+				<Header>Select Redline Thickness</Header>
+				<Thickness>Thickness:</Thickness>
+				<OK>OK</OK>
+			</RedlineThicknessModal>
+			<DocumentPageChangeModal>
+				<Header>Select Document Page</Header>
+				<Page>Page:</Page>
+				<OK>OK</OK>
+			</DocumentPageChangeModal>
+			<CollaborationStartModal>
+				<Header>Enter Collaboration Session</Header>
+				<Session>Session Name:</Session>
+				<OK>OK</OK>
+			</CollaborationStartModal>
+			<PublishPDFModal>
+				<Header>Publish Redlined Screen Content to PDF</Header>
+				<SelectMode>Select Mode</SelectMode>
+				<Mode1>Print/Download</Mode1>
+				<Mode2>Send as e-mail</Mode2>
+				<Mode3>Upload to Server</Mode3>
+				<EntireDoc>Publish Entire Document:</EntireDoc>
+				<OK>OK</OK>
+				<Recipient>E-mail:</Recipient>
+				<Title>Title:</Title>
+				<Message>Message:</Message>
+			</PublishPDFModal>
+			<MergeDXFModal>
+				<Header>Merge Redline with Source DWG</Header>
+				<SelectMode>Select Mode</SelectMode>
+				<Mode1>Download</Mode1>
+				<Mode2>Send as e-mail</Mode2>
+				<Mode3>Upload to Server</Mode3>
+				<EntireDoc>Publish Entire Document:</EntireDoc>
+				<OK>OK</OK>
+				<Recipient>E-mail:</Recipient>
+				<Title>Title:</Title>
+				<Message>Message:</Message>
+			</MergeDXFModal>
+			<RedlineColorModal>
+				<Header>Select Redline Color</Header>
+				<PickColor>Pick Color:</PickColor>
+				<SelectColor>Select:</SelectColor>
+				<Blue>Blue</Blue>
+				<Red>Red</Red>
+				<Yellow>Yellow</Yellow>
+				<Orange>Orange</Orange>
+				<Green>Green</Green>
+				<Purple>Purple</Purple>
+				<Brown>Brown</Brown>
+				<Gray>Gray</Gray>
+				<OK>OK</OK>
+			</RedlineColorModal>
+			<RedlineEllipseModal>
+				<Header>Select Redline Shape</Header>
+				<SelectType>Select:</SelectType>
+				<Ellipse>Ellipse:</Ellipse>
+				<Cloud>Cloud:</Cloud>
+				<OK>OK</OK>
+			</RedlineEllipseModal>
+			<CreationModeModal>
+				<Header>Select Space ID source</Header>
+				<SelectType>Select:</SelectType>
+				<DataSource>From Data Source via API</DataSource>
+				<Manually>Cloud</Manually>
+				<OK>OK</OK>
+			</CreationModeModal>
+			<BackgroundColorModal>
+				<Header>Select Background Color</Header>
+				<PickColor>Pick Color:</PickColor>
+				<SelectColor>Select:</SelectColor>
+				<White>White</White>
+				<Black>Black</Black>
+				<Azure>Azure</Azure>
+				<Pink>Pink</Pink>
+				<Snow>Snow</Snow>
+				<Silver>Silver</Silver>
+				<Brown>Brown</Brown>
+				<Gray>Gray</Gray>
+				<OK>OK</OK>
+			</BackgroundColorModal>
+			<RedlineTextModal>
+				<Header>Redline Text</Header>
+				<FontSize>Font Size:</FontSize>
+				<OK>OK</OK>
+				<Text>Enter text, click OK and select the insertion point in the drawing.</Text>
+			</RedlineTextModal>
+			<LineThicknessModal>
+				<Header>Adjust Line Weights</Header>
+				<LineThickness>Adjust Line Weights:</LineThickness>
+				<Text>Talk about Zero Weights.</Text>
+			</LineThicknessModal>
+			<CalibrateModal>
+				<Header>Calibrate Measurement</Header>
+				<Unit>Unit:</Unit>
+				<Distance>Distance:</Distance>
+				<OK>OK</OK>
+				<Text>Select two points in the drawing with the mouse first, then enter unit and distance and press OK</Text>
+			</CalibrateModal>
+			<SettingsModal>
+				<Header>CADViewer General Settings</Header>
+				<OnlineLanguage>Online Language:</OnlineLanguage>
+				<Distance>Distance:</Distance>
+				<ConversionFixed>Conversion Parameters (Fixed):</ConversionFixed>
+				<ConversionUser>Conversion Parameters (User Controlled):</ConversionUser>
+				<Param>Parameter:</Param>
+				<Value>(Value):</Value>
+				<TotalParameters>0</TotalParameters>
+				<ParamNames>
+					<ParamName></ParamName>
+				</ParamNames>
+				<ParamValues>
+					<ParamValue></ParamValue>
+				</ParamValues>
+				<OK>Update Settings</OK>
+				<Text>Please refer to the &lt;a href=&quot;https://tailormade.com/ax2020techdocs/parameter_interface/&quot;&gt;AX2020 techdocs&lt;/a&gt; for detailed parameter settings!</Text>
+			</SettingsModal>
+			<MeasurementModal>
+				<Header>CADViewer Measurement</Header>
+				<Distance>Distance:</Distance>
+				<MeasureAgain>Measure Again</MeasureAgain>
+				<ClosePolygon>Close Area Polygon</ClosePolygon>
+				<Text>Select two points in the drawing for distance.</Text>
+				<TextArea>Select a sequence of points. Doubleclick, Esc or 'Close Area' button for area.</TextArea>
+				<Area>Area:</Area>
+				<MenuItems>
+					<MenuItem>Distance</MenuItem>
+					<MenuItem>Area</MenuItem>
+					<MenuItem>Point (Global Coordinates)</MenuItem>
+					<MenuItem>Point (SVG Coordinates)</MenuItem>
+					<MenuItem>Multiple Points(Global)</MenuItem>
+					<MenuItem>Multiple Points(SVG)</MenuItem>
+					<MenuItem>SVG Path</MenuItem>
+				</MenuItems>
+				<Point>Point:</Point>
+				<Points>Points:</Points>
+				<PointText>Select a single point, capture from clipboard.</PointText>
+				<PointsText>Select multiple points, capture from clipboard.</PointsText>
+			</MeasurementModal>
+			<BirdsEyeModal>
+				<Header>Birds-Eye Window</Header>
+			</BirdsEyeModal>
+			<ImageObjectModal>
+				<Header>Image Object Nr.</Header>
+				<LoadImage>Load New Image</LoadImage>
+				<RemoveImageNote>Remove Image Note</RemoveImageNote>
+				<MinimizeImageNote>Minimize Image Note</MinimizeImageNote>
+			</ImageObjectModal>
+			<LayerListModal>
+				<Header>CADViewer - Layer List</Header>
+				<SelectDrawings>Select Xref/Sub-drawings for display:</SelectDrawings>
+				<XrefLayerName>Use Original Xref Layer Name</XrefLayerName>
+				<Search>Search</Search>
+				<Sort>Sort by Layer</Sort>
+				<AllLayerOn>All Layer On</AllLayerOn>
+				<AllLayerOff>All Layer Off</AllLayerOff>
+				<SwapLayers>Swap Layers</SwapLayers>
+				<On>ON</On>
+				<Off>OFF</Off>
+				<BaseAndXref>Base Drawing</BaseAndXref>
+				<Xref>Xref:</Xref>
+			</LayerListModal>
+			<PageChangeListModal>
+				<Header>Change Drawing Page</Header>
+				<Search>Search</Search>
+				<Sort>Sort by Name</Sort>
+				<On>ON</On>
+				<Off>OFF</Off>
+			</PageChangeListModal>
+			<LayerListSpaceModal>
+				<Header>Layer List - Space Objects</Header>
+				<Search>Search</Search>
+				<Sort>Sort by Layer</Sort>
+				<AllLayerOn>All Layer On</AllLayerOn>
+				<AllLayerOff>All Layer Off</AllLayerOff>
+				<SwapLayers>Swap Layers</SwapLayers>
+				<On>ON</On>
+				<Off>OFF</Off>
+				<NotAssigned>Not Assigned</NotAssigned>
+				<TextLayer>Text Layer</TextLayer>
+				<RoomLayer>Room Layer</RoomLayer>
+				<HandleLayer>Active Layer</HandleLayer>
+				<FloodfillLayer>SpaceID Layer</FloodfillLayer>
+			</LayerListSpaceModal>
+			<DataMaps>
+				<Map>Data Maps - User Map 1</Map>
+				<Map>Data Maps - User Map 2</Map>
+				<Map>Data Maps - User Map 3</Map>
+				<Map>Data Maps - User Map 4</Map>			
+			</DataMaps>
+			<IconPage_p1_8>
+				<PreviousPage>Previous Menu Page</PreviousPage>
+				<NextPage>Next Icon Page</NextPage>
+				<NextMenuPage>Next Menu Page</NextMenuPage>
+				<LayerList>Layer List</LayerList>
+				<Print>Print</Print>
+				<ZoomIn>Zoom In</ZoomIn>
+				<ZoomOut>Zoom Out</ZoomOut>
+				<ZoomExtents>Zoom Extents</ZoomExtents>
+				<ZoomWindow>Zoom Window</ZoomWindow>
+				<Toggle>Toggle Black/White</Toggle>
+				<Background>Background</Background>
+				<FileLoad>File Load</FileLoad>
+				<Search>Search</Search>
+				<About>About</About>
+				<Settings> Settings </Settings>
+				<LayerOff>Layer Off</LayerOff>
+				<SwapLayers>Swap Layers</SwapLayers>
+				<AllLayersOn>All Layers On</AllLayersOn>
+				<Measurement>Measurement</Measurement>
+				<Calibrate>Calibrate Measurement</Calibrate>
+				<BirdsEye>Toggle Birds-Eye Window</BirdsEye>
+				<LineThickness>Adjust Line Thickness</LineThickness>
+			</IconPage_p1_8>
+			<IconPage_p2_8>
+				<PreviousPage>Previous Icon Page</PreviousPage>
+				<NextPage>Next Icon Page</NextPage>
+				<SaveRedline>Save Redline</SaveRedline>
+				<LoadRedline>Load Redline</LoadRedline>
+				<DeleteSingle>Delete Single Redline</DeleteSingle>
+				<DeleteLast>Delete Last Redline</DeleteLast>
+				<Color>Redline Color</Color>
+				<Thickness>Redline Thickness</Thickness>
+				<StickyNote>Make StickyNote</StickyNote>
+				<ClearAll>Clear Visible Redlines</ClearAll>
+				<Freehand>Freehand Redline</Freehand>
+				<Cloud>Redline Ellipse/Cloud</Cloud>
+				<FilledPolygon>Redline Filled Polygon</FilledPolygon>
+				<Polyline>Redline Polyline</Polyline>
+				<Polygon>Redline Polygon</Polygon>
+				<FilledRectangle>Redline Filled Rectangle</FilledRectangle>
+				<Rectangle>Redline Rectangle</Rectangle>
+				<Arrow>Redline Arrow</Arrow>
+				<Text>Redline Text</Text>
+				<PublishAsPDF>Publish As PDF</PublishAsPDF>
+				<MergeAsDXF>Merge Redline with Source DWG</MergeAsDXF>
+				<Free>Free</Free>
+				<MergeWithQR>Merge QR code with source DWG</MergeWithQR>
+				<LineThickness>Adjust Line Thickness</LineThickness>
+			</IconPage_p2_8>
+			<IconPage_p3_8>
+				<PreviousPage>Previous Icon Page</PreviousPage>
+				<NextPage>Next Icon Page</NextPage>
+				<PublishAsPDF>Publish As PDF</PublishAsPDF>
+				<Free>Free</Free>
+				<LayerOff>Layer Off</LayerOff>
+				<SwapLayers>Swap Layers</SwapLayers>
+				<AllLayersOn>All Layers On</AllLayersOn>
+				<ZoomExtents>Zoom Extents</ZoomExtents>
+				<ZoomWindow>Zoom Window</ZoomWindow>
+				<LoadLink>Load All Image Links</LoadLink>
+				<InsertLink>Insert Image Links</InsertLink>
+				<SaveLink>Save All Image Links</SaveLink>
+				<QuickCount>Quick Count</QuickCount>
+				<CountSum>Summary Quick Count</CountSum>
+				<ClearCount>Clear Quick Count</ClearCount>
+			</IconPage_p3_8>
+			<IconPage_p4_8>
+				<PreviousPage>Previous Icon Page</PreviousPage>
+				<NextPage>Next Icon Page</NextPage>
+				<Free>Free</Free>
+				<CompareLoad>Load Second Drawing for Compare</CompareLoad>
+				<CompareToggle>Toggle Drawings Individually</CompareToggle>
+				<CompareToggleOverlay>Toggle Overlaid Drawings</CompareToggleOverlay>
+				<CompareExit>Exit Compare Drawings</CompareExit>
+				<CollaborationJoinSession>Join Collaboration Session</CollaborationJoinSession>
+				<CollaborationTakeControl>take Control Over Collaboration Session</CollaborationTakeControl>
+				<CollaborationClearSession>Clear Redlines In Collaboration Session</CollaborationClearSession>
+				<CollaborationLeaveSession>Leave Collaboration Session</CollaborationLeaveSession>
+				<LayerOff>Layer Off</LayerOff>
+				<SwapLayers>Swap Layers</SwapLayers>
+				<AllLayersOn>All Layers On</AllLayersOn>
+				<ZoomExtents>Zoom Extents</ZoomExtents>
+				<ZoomWindow>Zoom Window</ZoomWindow>
+			</IconPage_p4_8>
+			<IconPage_p5_8>
+				<PreviousPage>Previous Icon Page</PreviousPage>
+				<NextPage>Next Icon Page</NextPage>
+				<InsertSpaceImage>Insert Space Image Object</InsertSpaceImage>
+				<DragSpaceImage>Drag Space Image Object</DragSpaceImage>
+				<ResizeSpaceImage>Resize Space Image Object</ResizeSpaceImage>
+				<LoadSpaceObjects>Load Space Objects</LoadSpaceObjects>
+				<Publish>View Space Object Structure in User Display Mode</Publish>
+				<DownloadSVG>Download processed SVG drawing</DownloadSVG>
+				<Load>Load Floorplan and pre-process Space Objects</Load>
+				<Settings>Settings</Settings>
+				<SelectObject>Select Object</SelectObject>
+				<Rect>Rectangle Space Object</Rect>
+				<Polygon>Polygon Space Object</Polygon>
+				<Circle>Circle Space Object</Circle>
+				<CopyCircle>Copy Circle Space Object</CopyCircle>
+				<Delete>Delete Space Object</Delete>
+				<LayerList>Layer List</LayerList>
+				<Mode>Toggle Space Object Display and Edit Mode</Mode>
+				<Free>Free</Free>
+				<SelectPolygon>Generate Space Object on closed polygon</SelectPolygon>
+			</IconPage_p5_8>		
+			<IconPage_p6_1>
+				<PinMarker>Add Pin Marker</PinMarker>
+			</IconPage_p6_1>
+			<PageModal>
+				<ZoomExtents>Zoom Extents</ZoomExtents>
+				<ZoomWindow>Zoom Window</ZoomWindow>
+				<SelectPageFromList>Select Drawing Page From List</SelectPageFromList>
+				<EnterPage>Enter page number</EnterPage>
+				<RotateBack>Rotate 90 degrees counter clockwise</RotateBack>
+				<RotateForward>Rotate 90 degrees clockwise</RotateForward>
+				<First>Load First Page in Drawing</First>
+				<Previous>Load Previous Page in Drawing</Previous>
+				<Next>Load Next Page in Drawing</Next>
+				<Last>Load Last Page in Drawing</Last>
+			</PageModal>
+			<StickyNote>
+				<MoveNote>Move Note</MoveNote>
+				<EditNote>Edit Note</EditNote>
+				<DeleteNote>Delete Note</DeleteNote>
+				<MinimizeNote>Minimize Note</MinimizeNote>
+				<Inactive>Inactive</Inactive>
+				<SaveNote>Save Note</SaveNote>
+				<Cancel>Cancel Edit Note</Cancel>
+			</StickyNote>
+			<ImageObject>
+				<InsertReplace>Insert Or Replace Image</InsertReplace>
+				<Delete>Delete Image and Associated Icon</Delete>
+				<DeleteNote>Delete Note</DeleteNote>
+				<Minimize>Minimize Image Object</Minimize>
+			</ImageObject>			
+			<DeleteModal>
+				<Header>Delete</Header>
+				<Text1>This action will remove</Text1>
+				<Text2>and disable access to the floor plan for all users.</Text2>
+			</DeleteModal>
+			<UnlinkModal>
+				<Header>Unlink</Header>
+				<Text1>This action will remove all metadata from</Text1>
+				<Text2>Location objects will remain unchanged.</Text2>
+			</UnlinkModal>
+			<ClearModal>
+				<Header>Clear</Header>
+				<Text1>This action will remove all metadata and location objects from</Text1>
+			</ClearModal>	
+			<FileLoadSpaceModal>
+				<Header>CADViewer: Space Management File Loader</Header>
+				<DrawingFilename>DRAWING / FILENAME</DrawingFilename>
+				<EditFloorplanInfo>Edit Floor Plan Info</EditFloorplanInfo>
+				<BuildRoomTextHyperlinks>Build ROOM/TEXT Layer Hyperlinks on Load</BuildRoomTextHyperlinks>
+			</FileLoadSpaceModal>	
+			<LoadingModal>
+				<Loading>Loading</Loading>
+			</LoadingModal>
+			<HeaderObjectLayers>
+				<ObjectLayer>Spaces - User Layer 1</ObjectLayer>
+				<ObjectLayer>Assets - User Layer 1</ObjectLayer>
+			</HeaderObjectLayers>
+			<WaitModal>
+				<Printing>Printing</Printing>
+				<Thumbnails>Saving</Thumbnails>
+				<BatchPDF>Print to PDF</BatchPDF>
+				<MergeDWG>Printing</MergeDWG>
+			</WaitModal>			
+	</languages>
+	<languages>
+			<languageCode>ES-ES</languageCode>
+			<thisLanguage>Spanish</thisLanguage>		
+			<PrintModal>	
+				<Header> CADViewer - Configuración de impresión </Header>
+				<Paper>Tamaño:</Paper>
+				<Landscape>Paisaje</Landscape>
+				<Portrait>Retrato</Portrait>
+				<Orientation>Orientación:</Orientation>
+				<Resolution>Resolución:</Resolution>
+				<ResolutionText>(mínimo 75dpi, estándar 300dpi) </ResolutionText>
+				<Print> Imprimir</Print>
+				<Grayscale> Gris </Grayscale>
+				<PrintPDF> Imprimir PDF </PrintPDF>
+				<PrintToScale> Imprimir a escala </PrintToScale>
+				<TextBox1Header> Título del dibujo (4 x líneas como máximo) </TextBox1Header>
+				<TextBox2Header> No de dibujo </TextBox2Header>
+				<EnterScale> Escala: </EnterScale>
+				<CustomCheckbox> Bloque de título </CustomCheckbox>
+				<JsonVariable> Variable ($$$): </JsonVariable>
+				<PaperSizeTotal> 19 </PaperSizeTotal>
+				<PaperSizes>
+					<PaperSize>A4</PaperSize>
+					<PaperSize>A3</PaperSize>
+					<PaperSize>A2</PaperSize>
+					<PaperSize>A1</PaperSize>
+					<PaperSize>A0</PaperSize>
+					<PaperSize>A5</PaperSize>
+					<PaperSize>letter</PaperSize>
+					<PaperSize>legal</PaperSize>
+					<PaperSize>tabloid</PaperSize>
+					<PaperSize>USA</PaperSize>
+					<PaperSize>USB</PaperSize>
+					<PaperSize>USC</PaperSize>
+					<PaperSize>USD</PaperSize>
+					<PaperSize>USE</PaperSize>
+					<PaperSize>ARCHA</PaperSize>
+					<PaperSize>ARCHB</PaperSize>
+					<PaperSize>ARCHC</PaperSize>
+					<PaperSize>ARCHD</PaperSize>
+					<PaperSize>ARCHE</PaperSize>
+					<PaperSize>ALCOAA</PaperSize>
+				</PaperSizes>
+				<MenuItems>
+				<MenuItem> A4 (210 x 297 mm) </MenuItem>
+				<MenuItem> A3 (297 x 420 mm) </MenuItem>
+				<MenuItem> A2 (420 x 594 mm) </MenuItem>
+				<MenuItem> A1 (594 x 841 mm) </MenuItem>
+				<MenuItem> A0 (841 x 1189 mm) </MenuItem>
+				<MenuItem> A5 (148 x 210 mm) </MenuItem>
+				<MenuItem> Letter (8.5 x 11 in) </MenuItem>
+				<MenuItem> Legal (8.5 x 14 in) </MenuItem>
+				<MenuItem> Tabloide (11 x 17 in) </MenuItem>
+				<MenuItem> A (8.5 x 11 in) </MenuItem>
+				<MenuItem> B (11 x 17 in) </MenuItem>
+				<MenuItem> C (17 x 22 in) </MenuItem>
+				<MenuItem> D (22 x 34 in) </MenuItem>
+				<MenuItem> E (34 x 44 in) </MenuItem>
+				<MenuItem> A + (9 x 12 in) </MenuItem>
+				<MenuItem> B + (12 x 18 in) </MenuItem>
+				<MenuItem> C + (18 x 24 in) </MenuItem>
+				<MenuItem> D + (24 x 36 in) </MenuItem>
+				<MenuItem> E + (36 x 48 in) </MenuItem>
+				<MenuItem> ALCOA A (30 x 36 in) </MenuItem>
+				</MenuItems>
+			</PrintModal>	
+			<SearchTextModal>
+				<Header> Buscar texto </Header>
+				<SearchText> Buscar texto: </SearchText>
+				<Zoom> Nivel de zoom: </Zoom>
+				<Search> Buscar </Search>			
+			</SearchTextModal>
+			<SearchCustomModal>
+				<Header> Buscar texto </Header>
+				<SearchText> Buscar texto: </SearchText>
+				<Search> Buscar </Search>
+			</SearchCustomModal>
+			<InfoMessageModal>
+				<Header> Información de CADViewer </Header>
+				<Header2> Información de CADViewer </Header2>
+				<Version> Versión CADViewer: </Version>
+				<AXVersion> Versión de AutoXchange: </AXVersion>
+				<ComingSoon> ¡Próximamente! </ComingSoon>
+				<NoUnits> No hay unidades definidas en el dibujo, utilice el comando Calibrar medición primero. </NoUnits>
+				<UnitLess> El dibujo de origen no tiene unidades, utilice el comando Calibrar medición primero </UnitLess>
+				<QuickCountSingle> El número de conteos rápidos es: </QuickCountSingle>
+				<QuickCountMultiple> El número de conteos rápidos es: </QuickCountMultiple>
+				<RedlinesLocked> Las líneas rojas están bloqueadas para el usuario: </RedlinesLocked>
+				<LicensePath> No se pudo encontrar la clave de licencia en la ruta: </LicensePath>
+				<LicenseNotFound> Clave de licencia no encontrada </LicenseNotFound>
+				<SelectTwoPoints> Seleccione primero dos puntos en el dibujo con el mouse, luego ingrese la unidad y la distancia, finalmente presione OK. </SelectTwoPoints>
+				<ReferenceDistance> Introduzca una distancia de referencia. </ReferenceDistance>
+				<RedlinesSaved> Líneas rojas guardadas </RedlinesSaved>
+				<SinglePage> Dibujo de página única: sin cambio de página </SinglePage>
+				<FirstPage> La página actual es la primera página en un dibujo de varias páginas, sin cambio de página </FirstPage>
+				<LastPage> La página actual es la última página en un dibujo de varias páginas, sin cambios de página </LastPage>
+				<OutOfRange> El número de página ingresado está fuera del rango de páginas, sin cambio de página </OutOfRange>
+				<FileLoadThroughApp> NOTA: Carga de archivos habilitada solo a través de la aplicación encapsuladora </FileLoadThroughApp>
+				<ErrorConnectingToHost> Error al conectarse al host. ¡Vaya al Panel de configuración y verifique su Configuración de red! </ErrorConnectingToHost>
+				<ConnectToHostFirst> Vaya al Panel de configuración, verifique su Configuración de red y haga clic en Guardar cambios para conectarse a su Host de red para recuperar la estructura de datos utilizada al asignar ubicaciones. </ConnectToHostFirst>
+				<NoObjectSelected> Seleccione un objeto espacial. </NoObjectSelected>
+				<PaperSizePDFPrintOnly> Seleccione Imprimir como PDF para tamaños de papel grandes. Los papeles de gran tamaño son A1 y A0, así como US Arch D y superior. </PaperSizePDFPrintOnly>
+				<ServerSideFormatForPDFPrint> La impresión en PDF requiere un archivo original en formatos DWG, DWF, DXF o DGN o PCF. Cargue un archivo en estos formatos o seleccione un tamaño de papel más pequeño para impresión directa. Los tamaños de papel de impresión directa son A4-A2 o Carta de EE. UU. A través de ANSI C </ServerSideFormatForPDFPrint>
+				<PrintDisabled> NOTA: Impresión deshabilitada </PrintDisabled>
+				<NoQRCode> ¡No se recibió ningún código QR del servidor! </NoQRCode>
+				<DrawingName> Dibujo: </DrawingName>			
+			</InfoMessageModal>
+			<FileLoadModal>
+				<Header> CADViewer - Administrador de archivos </Header>
+				<DrawingFilename> DIBUJO / NOMBRE DE ARCHIVO </DrawingFilename>
+				<EditFloorplanInfo> Editar información del plano de planta </EditFloorplanInfo>
+			</FileLoadModal>
+			<SaveRedlineModal>
+				<Header> CADViewer - Guardar línea roja </Header>
+				<RedlineFilename> Línea roja / Nombre del archivo </RedlineFilename>
+				<EditRedlineInfo> Editar información de línea roja </EditRedlineInfo>
+				<Upload> CARGAR </Upload>
+			</SaveRedlineModal>
+			<OpenRedlineModal>
+				<Header> CADViewer - Abrir línea roja </Header>
+				<RedlineFilename> Línea roja / Nombre del archivo</RedlineFilename>
+				<EditRedlineInfo> Editar información de línea roja </EditRedlineInfo>
+			</OpenRedlineModal>
+			<OpenSpaceObjectModal>
+				<Header> CADViewer - Objetos de espacio abierto </Header>
+				<SpaceObjectFilename> Línea roja / Nombre del archivo </SpaceObjectFilename>
+				<EditSpaceObjectInfo> Editar información de línea roja </EditSpaceObjectInfo>
+			</OpenSpaceObjectModal>
+			<RedlineThicknessModal>
+				<Header> Grosor de línea roja </Header>
+				<Thickness> Espesor: </Thickness>
+				<OK> OK </OK>
+			</RedlineThicknessModal>
+			<DocumentPageChangeModal>
+				<Header> Seleccionar página</Header>
+				<Page> Página: </Page>
+				<OK> OK </OK>			
+			</DocumentPageChangeModal>
+			<CollaborationStartModal>
+				<Header> Ingrese a la sesión de colaboración </Header>
+				<Session> Nombre de la sesión: </Session>
+				<OK> OK </OK>
+			</CollaborationStartModal>
+			<PublishPDFModal>
+				<Header> Publicar contenido de pantalla marcado en PDF </Header>
+				<SelectMode> Seleccionar modo </SelectMode>
+				<Mode1> Descargar </Mode1>
+				<Mode2> E-mail</Mode2>
+				<Mode3> Cargar al servidor </Mode3>
+				<EntireDoc> Publicar todo el documento: </EntireDoc>
+				<OK> OK </OK>
+				<Recipient> Correo electrónico: </Recipient>
+				<Title> Título: </Title>
+				<Message> Mensaje: </Message>
+			</PublishPDFModal>
+			<MergeDXFModal>
+				<Header> Fusionar línea roja con fuente DWG </Header>
+				<SelectMode> Seleccionar modo </SelectMode>
+				<Mode1> Descargar </Mode1>
+				<Mode2> E-mail</Mode2>
+				<Mode3> Cargar al servidor </Mode3>
+				<EntireDoc> Publicar todo el documento: </EntireDoc>
+				<OK> OK </OK>
+				<Recipient> Correo electrónico: </Recipient>
+				<Title> Título: </Title>
+				<Message> Mensaje: </Message>
+			</MergeDXFModal>
+			<RedlineColorModal>
+				<Header> Seleccionar color de línea roja </Header>
+				<PickColor> Elegir color: </PickColor>
+				<SelectColor> Seleccione: </SelectColor>
+				<Blue> Azul </Blue>
+				<Red> Rojo </Red>
+				<Yellow> Amarillo </Yellow>
+				<Orange> Naranja </Orange>
+				<Green> Verde </Green>
+				<Purple> Púrpura </Purple>
+				<Brown> Marrón </Brown>
+				<Gray> Gris </Gray>
+				<OK> OK </OK>
+			</RedlineColorModal>
+			<RedlineEllipseModal>
+				<Header> Seleccionar forma de línea roja </Header>
+				<SelectType> Seleccionar: </SelectType>
+				<Ellipse> Elipse: </Ellipse>
+				<Cloud> Nube: </Cloud>
+				<OK> OK </OK>
+			</RedlineEllipseModal>
+			<CreationModeModal>
+				<Header> Seleccionar fuente de ID de espacio </Header>
+				<SelectType> Seleccionar: </SelectType>
+				<DataSource> 'Desde fuente de datos a través de API </DataSource>
+				<Manually> Cloud </Manually>
+				<OK> OK </OK>
+			</CreationModeModal>
+			<BackgroundColorModal>
+				<Header> Seleccionar color de fondo </Header>
+				<PickColor> Elegir color: </PickColor>
+				<SelectColor> Seleccione: </SelectColor>
+				<White> Blanco </White>
+				<Black> Negro </Black>
+				<Azure> Azur </Azure>
+				<Pink> Rosa </Pink>
+				<Snow> Nieve </Snow>
+				<Silver> Plata </Silver>
+				<Brown> Marrón </Brown>
+				<Gray> Gris </Gray>
+				<OK> OK </OK>
+			</BackgroundColorModal>
+			<RedlineTextModal>
+				<Header> Texto de línea roja </Header>
+				<FontSize> Tamaño de fuente: </FontSize>
+				<OK> OK </OK>
+				<Text> Ingrese el texto, Aceptar, luego seleccione el punto de inserción.</Text>
+			</RedlineTextModal>
+			<LineThicknessModal>
+				<Header> Ajustar grosor de línea </Header>
+				<LineThickness> Grosor de línea: </LineThickness>
+				<Text> Ingrese el texto, haga clic en Aceptar, luego seleccione el punto de inserción. </Text>
+			</LineThicknessModal>
+			<CalibrateModal>
+				<Header> Calibrar medición </Header>
+				<Unit> Unidad: </Unit>
+				<Distance> Distancia: </Distance>
+				<OK> OK </OK>
+				<Text> Seleccione primero dos puntos en el dibujo con el mouse, luego ingrese la unidad y la distancia y presione OK </Text>
+			</CalibrateModal>	
+			<SettingsModal>
+				<Header> Configuración general de CADViewer </Header>
+				<OnlineLanguage> Idioma en línea: </OnlineLanguage>
+				<Distance> Distancia: </Distance>
+				<ConversionFixed> Parámetros de conversión (Fiho): </ConversionFixed>
+				<ConversionUser> Parámetros de conversión (Controlada por el usuario): </ConversionUser>
+				<Param> Parámetro: </Param>
+				<Value> (Valor): </Value>
+				<TotalParameters>0</TotalParameters>
+				<ParamNames>
+					<ParamName></ParamName>
+				</ParamNames>
+				<ParamValues>
+					<ParamValue></ParamValue>
+				</ParamValues>
+				<OK> Actualizar </OK>
+				<Text> Consulte el &lt;a href=&quot;https://tailormade.com/ax2020techdocs/parameter_interface/&quot;&gt;AX2020 techdocs&lt;/a&gt; para configuraciones de parámetros detalladas! </Text>
+			</SettingsModal>			
+			<MeasurementModal>
+				<Header> Medición CADViewer </Header>
+				<Distance> Distancia: </Distance>
+				<MeasureAgain> Mida de nuevo </MeasureAgain>
+				<ClosePolygon> Cerrar polígono de área </ClosePolygon>
+				<Text> Seleccione dos puntos en el dibujo para la distancia. </Text>
+				<TextArea> Seleccione una secuencia de puntos. Haga doble clic, Esc o el botón 'Cerrar área' para el área. </TextArea>
+				<Area> Área: </Area>
+				<MenuItems>
+					<MenuItem> Distancia </MenuItem>
+					<MenuItem> Area </MenuItem>
+					<MenuItem> Punto (Coordenadas globales) </MenuItem>
+					<MenuItem> Punto (coordenadas SVG) </MenuItem>
+					<MenuItem> Puntos múltiples (Global) </MenuItem>
+					<MenuItem> Puntos múltiples (SVG) </MenuItem>
+				</MenuItems>				
+				<Point> Punto: </Point>
+				<Points> Puntos: </Points>
+				<PointText> Seleccione un solo punto, capturar desde el portapapeles. </PointText>
+				<PointsText> Seleccione varios puntos, capture desde el portapapeles. </PointsText>
+			</MeasurementModal>
+			<BirdsEyeModal>
+				<Header> Ventana de ojo de pájaro </Header>
+			</BirdsEyeModal>
+			<ImageObjectModal>
+				<Header> Nº de objeto de imagen </Header>
+				<LoadImage> Cargar nueva imagen </LoadImage>
+				<RemoveImageNote> Eliminar nota de imagen </RemoveImageNote>
+				<MinimizeImageNote> Minimizar nota de imagen </MinimizeImageNote>
+			</ImageObjectModal>
+			<LayerListModal>
+				<Header> CADViewer - Lista de capas </Header>
+				<SelectDrawings> Seleccione Xref / Sub-dibujos para mostrar: </SelectDrawings>
+				<XrefLayerName> Use el nombre original de la capa Xref </XrefLayerName>
+				<Search> Buscar </Search>
+				<Sort> Ordenar </Sort>
+				<AllLayerOn>Capas activadas </AllLayerOn>
+				<AllLayerOff> Capas apagadas</AllLayerOff>
+				<SwapLayers> Intercambiar</SwapLayers>
+				<On> ON </On>
+				<Off> OFF </Off>
+				<BaseAndXref> Dibujo base </BaseAndXref>
+				<Xref> Xref: </Xref>
+			</LayerListModal>
+			<PageChangeListModal>
+				<Header> Cambiar página de dibujo </Header>
+				<Search> Buscar </Search>
+				<Sort> Ordenar </Sort>
+				<On> ON </On>
+				<Off> OFF </Off>
+			</PageChangeListModal>
+			<LayerListSpaceModal>
+				<Header> Lista de capas - Objetos espaciales </Header>
+				<Search> Buscar </Search>
+				<Sort> Ordenar </Sort>
+				<AllLayerOn>Capas activadas </AllLayerOn>
+				<AllLayerOff> Capas apagadas</AllLayerOff>
+				<SwapLayers> Intercambiar</SwapLayers>
+				<On> ON </On>
+				<Off> OFF </Off>
+				<NotAssigned> No asignado </NotAssigned>
+				<TextLayer> Capa de texto </TextLayer>
+				<RoomLayer> Capa de habitación </RoomLayer>
+				<HandleLayer> Capa activa </HandleLayer>
+				<FloodfillLayer> SpaceID Layer </FloodfillLayer>
+			</LayerListSpaceModal>
+			<DataMaps>
+				<Map> Mapas de datos - Mapa de usuario 1 </Map>
+				<Map> Mapas de datos - Mapa de usuario 2 </Map>
+				<Map> Mapas de datos - Mapa de usuario 3 </Map>
+				<Map> Mapas de datos - Mapa de usuario 4 </Map>
+			</DataMaps>
+			<IconPage_p1_8>
+				<PreviousPage> Página de menú anterior </PreviousPage>
+				<NextPage> Página de icono siguiente </NextPage>
+				<NextMenuPage> Página siguiente del menú </NextMenuPage>
+				<LayerList> Lista de capas </LayerList>
+				<Print> Imprimir </Print>
+				<ZoomIn> Acercar </ZoomIn>
+				<ZoomOut> Alejar </ZoomOut>
+				<ZoomExtents> Extensiones de zoom </ZoomExtents>
+				<ZoomWindow> Ventana de zoom </ZoomWindow>
+				<Toggle> TAlternar negro / blanco </Toggle>
+				<Background> Color de Fondo </Background>
+				<FileLoad> Carga de archivos </FileLoad>
+				<Search> Buscar </Search>
+				<About> Acerca de </About>
+				<Settings> Configuraciones </Settings>
+				<LayerOff> Capa de </LayerOff>
+				<SwapLayers> Intercambiar capas </SwapLayers>
+				<AllLayersOn> Todas las capas activadas </AllLayersOn>
+				<Measurement> Medición </Measurement>
+				<Calibrate> Calibrar medición </Calibrate>
+				<BirdsEye> Alternar ventana de ojo de pájaro </BirdsEye>
+				<LineThickness> Ajustar grosor de línea </LineThickness>
+			</IconPage_p1_8>
+			<IconPage_p2_8>
+				<PreviousPage> Página de icono anterior </PreviousPage>
+				<NextPage> Página de icono siguiente </NextPage>
+				<SaveRedline> Guardar Redline </SaveRedline>
+				<LoadRedline> Cargar línea roja </LoadRedline>
+				<DeleteSingle> Eliminar línea roja única </DeleteSingle>
+				<DeleteLast> Eliminar la última línea roja </DeleteLast>
+				<Color> Color de línea roja </Color>
+				<Thickness> Grosor de línea roja </Thickness>
+				<StickyNote> Hacer nota adhesiva </StickyNote>
+				<ClearAll> Borrar líneas rojas visibles </ClearAll>
+				<Freehand> Línea roja a mano alzada </Freehand>
+				<Cloud> Línea roja Elipse / Nube </Cloud>
+				<FilledPolygon> Polígono relleno de línea roja </FilledPolygon>
+				<Polyline> Línea roja polilínea</Polyline>
+				<Polygon> Línea roja polígono</Polygon>
+				<FilledRectangle> Rectángulo relleno de línea roja </FilledRectangle>
+				<Rectangle>Rectángulo de línea roja</Rectangle>				
+				<Arrow> Flecha de línea roja </Arrow>
+				<Text> Texto de línea roja </Text>
+				<PublishAsPDF> Publicar como PDF </PublishAsPDF>
+				<MergeAsDXF> Fusionar línea roja con DWG de origen </MergeAsDXF>
+				<Free> Gratis </Free>
+				<MergeWithQR> Combinar código QR con DWG de origen </MergeWithQR>
+				<LineThickness> Ajustar grosor de línea </LineThickness>
+			</IconPage_p2_8>
+			<IconPage_p3_8>
+				<PreviousPage> Página de icono anterior </PreviousPage>
+				<NextPage> Página de icono siguiente </NextPage>
+				<PublishAsPDF> Publicar como PDF </PublishAsPDF>
+				<Free> Gratis </Free>
+				<LayerOff> Layer Off </LayerOff>
+				<SwapLayers> Intercambiar capas </SwapLayers>
+				<AllLayersOn> Todas las capas activadas </AllLayersOn>
+				<ZoomExtents> Extensiones de zoom </ZoomExtents>
+				<ZoomWindow> Ventana de zoom </ZoomWindow>
+				<LoadLink> Cargar todos los enlaces de imágenes </LoadLink>
+				<InsertLink> Insertar enlaces de imagen </InsertLink>
+				<SaveLink> Guardar todos los enlaces de imágenes </SaveLink>
+				<QuickCount> Cuenta rápida </QuickCount>
+				<CountSum> Cuenta rápida de resumen </CountSum>
+				<ClearCount> Borrar conteo rápido </ClearCount>
+			</IconPage_p3_8>
+			<IconPage_p4_8>
+				<PreviousPage> Página de icono anterior </PreviousPage>
+				<NextPage> Página de icono siguiente </NextPage>
+				<Free> Gratis </Free>
+				<CompareLoad> Cargar segundo dibujo para comparar </CompareLoad>
+				<CompareToggle> Alternar dibujos individualmente </CompareToggle>
+				<CompareToggleOverlay> Alternar dibujos superpuestos </CompareToggleOverlay>
+				<CompareExit> Salir Comparar dibujos </CompareExit>
+				<CollaborationJoinSession> Únase a la sesión de colaboración </CollaborationJoinSession>
+				<CollaborationTakeControl> tomar el control sobre la sesión de colaboración </CollaborationTakeControl>
+				<CollaborationClearSession> Borrar líneas rojas en la sesión de colaboración </CollaborationClearSession>
+				<CollaborationLeaveSession> Salir de la sesión de colaboración </CollaborationLeaveSession>
+				<LayerOff> Layer Off </LayerOff>
+				<SwapLayers> Intercambiar capas </SwapLayers>
+				<AllLayersOn> Todas las capas activadas </AllLayersOn>
+				<ZoomExtents> Extensiones de zoom </ZoomExtents>
+				<ZoomWindow> Ventana de zoom </ZoomWindow>
+			</IconPage_p4_8>
+			<IconPage_p5_8>
+				<PreviousPage> Página de icono anterior </PreviousPage>
+				<NextPage> Página de icono siguiente </NextPage>
+				<InsertSpaceImage> Insertar objeto de imagen espacial </InsertSpaceImage>
+				<DragSpaceImage> Arrastrar objeto de imagen de espacio </DragSpaceImage>
+				<ResizeSpaceImage> Cambiar el tamaño del objeto de imagen espacial </ResizeSpaceImage>
+				<LoadSpaceObjects> Cargar objetos de espacio </LoadSpaceObjects>
+				<Publish> Ver estructura de objeto espacial en modo de visualización de usuario </Publish>
+				<DownloadSVG> Descargar dibujo SVG procesado </DownloadSVG>
+				<Load> Cargar plano y preprocesar objetos espaciales </Load>
+				<Settings> Configuración </Settings>
+				<SelectObject> Seleccionar objeto </SelectObject>
+				<Rect> Objeto espacial de rectángulo </Rect>
+				<Polygon> Polygon Space Object </Polygon>
+				<Circle> Objeto de espacio circular </Circle>
+				<CopyCircle> Copiar objeto de espacio circular </CopyCircle>
+				<Delete> Eliminar objeto de espacio </Delete>
+				<LayerList> Lista de capas </LayerList>
+				<Mode> Alternar visualización de objetos espaciales y modo de edición </Mode>
+				<Free> Gratis </Free>
+				<SelectPolygon> Generar objeto espacial en polígono cerrado </SelectPolygon>
+			</IconPage_p5_8>		
+			<IconPage_p6_1>
+				<PinMarker> Añadir marcador de pin </PinMarker>
+			</IconPage_p6_1>
+			<PageModal>
+				<ZoomExtents> Extensiones de zoom </ZoomExtents>
+				<ZoomWindow> Ventana de zoom </ZoomWindow>
+				<SelectPageFromList> Seleccionar página de dibujo de la lista </SelectPageFromList>
+				<EnterPage> Ingrese el número de página </EnterPage>
+				<RotateBack> Rota 90 grados en sentido antihorario </RotateBack>
+				<RotateForward> Rota 90 grados en sentido horario </RotateForward>
+				<First> Cargar primera página en dibujo </First>
+				<Previous> Cargar página anterior en dibujo </Previous>
+				<Next> Cargar página siguiente en dibujo </Next>
+				<Last> Cargar última página en dibujo </Last>
+			</PageModal>
+			<StickyNote>
+				<MoveNote> Mover nota </MoveNote>
+				<EditNote> Editar nota </EditNote>
+				<DeleteNote> Eliminar nota </DeleteNote>
+				<MinimizeNote> Minimizar nota </MinimizeNote>
+				<Inactive> Inactivo </Inactive>
+				<SaveNote> Guardar nota </SaveNote>
+				<Cancel> Cancelar Editar Nota </Cancel>
+			</StickyNote>
+			<ImageObject>
+				<InsertReplace> Insertar o reemplazar imagen </InsertReplace>
+				<Delete> Eliminar imagen e icono asociado </Delete>
+				<DeleteNote> Eliminar nota </DeleteNote>
+				<Minimize> Minimizar objeto de imagen </Minimize>
+			</ImageObject>			
+			<DeleteModal>
+				<Header> Eliminar </Header>
+				<Text1> Esta acción eliminará </Text1>
+				<Text2> e inhabilite el acceso al plano de planta para todos los usuarios. </Text2>
+			</DeleteModal>
+			<UnlinkModal>
+				<Header> Desvincular </Header>
+				<Text1> Esta acción eliminará todos los metadatos de </Text1>
+				<Text2> Los objetos de ubicación permanecerán sin cambios. </Text2>
+			</UnlinkModal>
+			<ClearModal>
+				<Header> Clear </Header>
+				<Text1> Esta acción eliminará todos los metadatos y objetos de ubicación de </Text1>
+			</ClearModal>	
+			<FileLoadSpaceModal>
+				<Header> CADViewer: Cargador de archivos de gestión de espacio </Header>
+				<DrawingFilename> DIBUJO / NOMBRE DE ARCHIVO </DrawingFilename>
+				<EditFloorplanInfo> Editar información del plano de planta </EditFloorplanInfo>
+				<BuildRoomTextHyperlinks> Construir hipervínculos de capa ROOM / TEXT al cargar </BuildRoomTextHyperlinks>
+			</FileLoadSpaceModal>	
+			<LoadingModal>
+				<Loading> Cargando </Loading>
+			</LoadingModal>
+			<HeaderObjectLayers>
+				<ObjectLayer> Espacios - Capa de usuario 1 </ObjectLayer>
+				<ObjectLayer> Activos - Capa de usuario 1 </ObjectLayer>
+			</HeaderObjectLayers>
+			<WaitModal>
+				<Printing> Impresión </Printing>
+				<Thumbnails> Guardando </Thumbnails>
+				<BatchPDF> Imprimir PDF </BatchPDF>
+				<MergeDWG> Impresión </MergeDWG>
+			</WaitModal>			
+	</languages>	
+	<languages>
+			<languageCode>ZN-CH</languageCode>
+			<thisLanguage>Chinese-Simplified</thisLanguage>
+			<PrintModal>
+				<Header> CADViewer-打印设置</Header>
+				<Paper> 纸张尺寸：</Paper>
+				<Landscape>景观</Landscape>
+				<Portrait>肖像</Portrait>
+				<Orientation>方向：</Orientation>
+				<Resolution>决议：</Resolution>
+				<ResolutionText>（最低75dpi，标准300dpi）</ResolutionText>
+				<Print>打印</Print>
+				<Grayscale>灰度</Grayscale>
+				<PrintPDF>打印为PDF </PrintPDF>
+				<PrintToScale>按比例打印</PrintToScale>
+				<TextBox1Header>图形标题（最多4行）</TextBox1Header>
+				<TextBox2Header>工程图编号</TextBox2Header>
+				<EnterScale>比例：</EnterScale>
+				<CustomCheckbox>标题栏</CustomCheckbox>
+				<JsonVariable>变量（$$$）：</JsonVariable>
+				<PaperSizeTotal> 19 </PaperSizeTotal>
+				<PaperSizes>
+					<PaperSize>A4</PaperSize>
+					<PaperSize>A3</PaperSize>
+					<PaperSize>A2</PaperSize>
+					<PaperSize>A1</PaperSize>
+					<PaperSize>A0</PaperSize>
+					<PaperSize>A5</PaperSize>
+					<PaperSize>letter</PaperSize>
+					<PaperSize>legal</PaperSize>
+					<PaperSize>tabloid</PaperSize>
+					<PaperSize>USA</PaperSize>
+					<PaperSize>USB</PaperSize>
+					<PaperSize>USC</PaperSize>
+					<PaperSize>USD</PaperSize>
+					<PaperSize>USE</PaperSize>
+					<PaperSize>ARCHA</PaperSize>
+					<PaperSize>ARCHB</PaperSize>
+					<PaperSize>ARCHC</PaperSize>
+					<PaperSize>ARCHD</PaperSize>
+					<PaperSize>ARCHE</PaperSize>
+					<PaperSize>ALCOAA</PaperSize>
+				</PaperSizes>
+				<MenuItems>
+				<MenuItem> A4（210 x 297毫米）</MenuItem>
+				<MenuItem> A3（297 x 420毫米）</MenuItem>
+				<MenuItem> A2（420 x 594毫米）</MenuItem>
+				<MenuItem> A1（594 x 841毫米）</MenuItem>
+				<MenuItem> A0（841 x 1189毫米）</MenuItem>
+				<MenuItem> A5（148 x 210毫米）</MenuItem>
+				<MenuItem>字母（8.5 x 11英寸）</MenuItem>
+				<MenuItem>法律（8.5 x 14英寸）</MenuItem>
+				<MenuItem>小报（11 x 17英寸）</MenuItem>
+				<MenuItem> A（8.5 x 11英寸）</MenuItem>
+				<MenuItem> B（11 x 17英寸）</MenuItem>
+				<MenuItem> C（17 x 22英寸）</MenuItem>
+				<MenuItem> D（22 x 34英寸）</MenuItem>
+				<MenuItem> E（34 x 44英寸）</MenuItem>
+				<MenuItem> A +（9 x 12英寸）</MenuItem>
+				<MenuItem> B +（12 x 18英寸）</MenuItem>
+				<MenuItem> C +（18 x 24英寸）</MenuItem>
+				<MenuItem> D +（24 x 36英寸）</MenuItem>
+				<MenuItem> E +（36 x 48英寸）</MenuItem>
+				<MenuItem> ALCOA A（30 x 36英寸）</MenuItem>
+				</MenuItems>
+			</PrintModal>
+			<SearchTextModal>
+			<Header>搜索文字</Header>
+			<SearchText>搜索文本：</SearchText>
+			<Zoom> Zoom Level：</Zoom>
+			<Search>搜索</Search>
+			</SearchTextModal>
+			<SearchCustomModal>
+			<Header>搜索文字</Header>
+			<SearchText>搜索文本：</SearchText>
+			<Search>搜索</Search>
+			</SearchCustomModal>
+			<InfoMessageModal>
+			<Header> CADViewer信息</Header>
+			<Header2> CADViewer信息</Header2>
+			<Version> CADViewer版本：</Version>
+			<AXVersion> AutoXchange版本：</AXVersion>
+			<ComingSoon>即将到来！</ComingSoon>
+			<NoUnits>图中未定义单位，请先使用命令校准测量。</NoUnits>
+			<UnitLess>原图是无单位的，请先使用命令校准测量</UnitLess>
+			<QuickCountSingle>快速计数的数量是：</QuickCountSingle>
+			<QuickCountMultiple>快速计数的数量为：</QuickCountMultiple>
+			<RedlinesLocked>用户的红线被锁定：</RedlinesLocked>
+			<LicensePath>在以下路径找不到许可证密钥：</LicensePath>
+			<LicenseNotFound>找不到许可证密钥</LicenseNotFound>
+			<SelectTwoPoints>请先用鼠标在图形中选择两个点，然后输入单位和距离，最后按OK。</SelectTwoPoints>
+			<ReferenceDistance>请输入参考距离。</ReferenceDistance>
+			<RedlinesSaved>已保存红线</RedlinesSaved>
+			<SinglePage>单页绘图-页面无变化</SinglePage>
+			<FirstPage>当前页面是多页绘图中的第一页-页面不变</FirstPage>
+			<LastPage>当前页面是多页绘图中的最后一页-页面不变</LastPage>
+			<OutOfRange>输入的页码超出页面范围-页面未更改</OutOfRange>
+			<FileLoadThroughApp>注意：仅通过封装应用程序启用文件加载</FileLoadThroughApp>
+			<ErrorConnectingToHost>连接到主机时出错。转到“设置”窗格并检查您的网络设置！</ErrorConnectingToHost>
+			<ConnectToHostFirst>请转到“设置”窗格，检查“网络设置”，然后单击“保存更改”以连接到网络主机，以检索映射位置时使用的数据结构。</ConnectToHostFirst>
+			<NoObjectSelected>请选择一个空间对象。</NoObjectSelected>
+			<PaperSizePDFPrintOnly>对于大尺寸纸张，请选择“打印为PDF”。较大的纸张尺寸为A1和A0，以及US Arch D及更高版本。</PaperSizePDFPrintOnly>
+			<ServerSideFormatForPDFPrint> PDF打印需要原始文件，格式为DWG，DWF，DXF或DGN或PCF。请上传这些格式的文件或选择较小的纸张尺寸以直接打印。通过ANSI C 直接打印的纸张尺寸为A4-A2或美国字母。</ServerSideFormatForPDFPrint>
+			<PrintDisabled>注意：禁用打印</PrintDisabled>
+			<NoQRCode>没有收到来自服务器的QR码！</NoQRCode>
+			<DrawingName>绘图：</DrawingName>
+			</InfoMessageModal>
+			<FileLoadModal>
+			<Header> CADViewer-文件管理器</Header>
+			<DrawingFilename>绘图/文件名</DrawingFilename>
+			<EditFloorplanInfo>编辑平面图信息</EditFloorplanInfo>
+			</FileLoadModal>
+			<SaveRedlineModal>
+			<Header> CADViewer-保存红线</Header>
+			<RedlineFilename> REDLINE /文件名</RedlineFilename>
+			<EditRedlineInfo>编辑红线信息</EditRedlineInfo>
+			<Upload> UPLOAD </Upload>
+			</SaveRedlineModal>
+			<OpenRedlineModal>
+			<Header> CADViewer-打开红线</Header>
+			<RedlineFilename> REDLINE /文件名</RedlineFilename>
+			<EditRedlineInfo>编辑红线信息</EditRedlineInfo>
+			</OpenRedlineModal>
+			<OpenSpaceObjectModal>
+			<Header> CADViewer-开放空间对象</Header>
+			<SpaceObjectFilename> REDLINE /文件名</SpaceObjectFilename>
+			<EditSpaceObjectInfo>编辑红线信息</EditSpaceObjectInfo>
+			</OpenSpaceObjectModal>
+			<RedlineThicknessModal>
+			<Header>选择红线粗细</Header>
+			<Thickness> Thickness：</Thickness>
+			<OK>确定</OK>
+			</RedlineThicknessModal>
+			<DocumentPageChangeModal>
+			<Header>选择文档页面</Header>
+			<Page> 页：</Page>
+			<OK>确定</OK>
+			</DocumentPageChangeModal>
+			<CollaborationStartModal>
+			<Header>进入协作会话</Header>
+			<Session>会话名称：</Session>
+			<OK>确定</OK>
+			</CollaborationStartModal>
+			<PublishPDFModal>
+			<Header>将带红线的屏幕内容发布为PDF </Header>
+			<SelectMode>选择模式</SelectMode>
+			<Mode1>打印/下载</Mode1>
+			<Mode2>发送为电子邮件</Mode2>
+			<Mode3>上传到服务器</Mode3>
+			<EntireDoc>发布整个文档：</EntireDoc>
+			<OK>确定</OK>
+			<Recipient>电子邮件：</Recipient>
+			<Title>标题：</Title>
+			<Message>消息：</Message>
+			</PublishPDFModal>
+			<MergeDXFModal>
+			<Header>将红线与源DWG合并</Header>
+			<SelectMode>选择模式</SelectMode>
+			<Mode1>下载</Mode1>
+			<Mode2>发送为电子邮件</Mode2>
+			<Mode3>上传到服务器</Mode3>
+			<EntireDoc>发布整个文档：</EntireDoc>
+			<OK>确定</OK>
+			<Recipient>电子邮件：</Recipient>
+			<Title>标题：</Title>
+			<Message>消息：</Message>
+			</MergeDXFModal>
+			<RedlineColorModal>
+			<Header>选择红线颜色</Header>
+			<PickColor>选择颜色：</PickColor>
+			<SelectColor>选择：</SelectColor>
+			<Blue>蓝色</Blue>
+			<Red>红色</Red>
+			<Yellow> 黄色 </Yellow>
+			<Orange>橙子 </Orange>
+			<Green>绿色</Green>
+			<Purple> 紫色 </Purple>
+			<Brown>布朗</Brown>
+			<Gray>灰色</Gray>
+			<OK>确定</OK>
+			</RedlineColorModal>
+			<RedlineEllipseModal>
+			<Header>选择红线形状</Header>
+			<SelectType>选择：</SelectType>
+			<Ellipse>椭圆：</Ellipse>
+			<Cloud>云：</Cloud>
+			<OK>确定</OK>
+			</RedlineEllipseModal>
+			<CreationModeModal>
+			<Header>选择空间ID源</Header>
+			<SelectType>选择：</SelectType>
+			<DataSource>通过API从数据源</DataSource>
+			<Manually>云</Manually>
+			<OK>确定</OK>
+			</CreationModeModal>
+			<BackgroundColorModal>
+			<Header>选择背景色</Header>
+			<PickColor>选择颜色：</PickColor>
+			<SelectColor>选择：</SelectColor>
+			<White> 白色 </White>
+			<Black>黑色</Black>
+			<Azure> 蔚蓝 </Azure>
+			<Pink> 粉 </Pink>
+			<Snow>雪</Snow>
+			<Silver>银</Silver>
+			<Brown>布朗</Brown>
+			<Gray>灰色</Gray>
+			<OK>确定</OK>
+			</BackgroundColorModal>
+			<RedlineTextModal>
+			<Header>红线文字</Header>
+			<FontSize>字体大小：</FontSize>
+			<OK>确定</OK>
+			<Text>输入文本，单击“确定”，然后在图形中选择插入点。</Text>
+			</RedlineTextModal>
+			<LineThicknessModal>
+			<Header>调整线条粗细</Header>
+			<LineThickness>线粗度：</LineThickness>
+			<Text>输入文本，单击“确定”，然后在图形中选择插入点。</Text>
+			</LineThicknessModal>			
+			<CalibrateModal>
+			<Header>校准测量</Header>
+			<Unit>单位：</Unit>
+			<Distance> 距离：</Distance>
+			<OK>确定</OK>
+			<Text>首先用鼠标在图形中选择两个点，然后输入单位和距离，然后按确定</Text>
+			</CalibrateModal>
+			<SettingsModal>
+			<Header> CADViewer常规设置</Header>
+			<OnlineLanguage>在线语言：</OnlineLanguage>
+			<Distance> 距离：</Distance>
+			<ConversionFixed>转换参数（固定）：</ConversionFixed>
+			<ConversionUser>转换参数（用户控制）：</ConversionUser>
+			<Param>参数：</Param>
+			<Value>（值）：</Value>				
+			<TotalParameters>0</TotalParameters>
+				<ParamNames>
+					<ParamName></ParamName>
+				</ParamNames>
+				<ParamValues>
+					<ParamValue></ParamValue>
+				</ParamValues>
+				<OK>更新设定</OK>
+				<Text>详细的参数设置请参考 &lt;a href=&quot;https://tailormade.com/ax2020techdocs/parameter_interface/&quot;&gt;AX2020 techdocs&lt;/a&gt;!</Text>
+			</SettingsModal>
+			<MeasurementModal>
+			<Header> CADViewer测量</Header>
+			<Distance> 距离：</Distance>
+			<MeasureAgain>再次测量</MeasureAgain>
+			<ClosePolygon>关闭区域多边形</ClosePolygon>
+			<Text>在图形中选择两个点作为距离。</Text>
+			<TextArea>选择点序列。 双击，按Esc或单击“关闭区域”按钮以显示区域。</TextArea>				
+			<Area>区:</Area>
+			<MenuItems>
+				<MenuItem>距离</MenuItem>
+				<MenuItem>区域</MenuItem>
+				<MenuItem>点（全局坐标）</MenuItem>
+				<MenuItem>点（SVG坐标）</MenuItem>
+				<MenuItem>多个点（全局）</MenuItem>
+				<MenuItem>多点（SVG）</MenuItem>
+			</MenuItems>
+			<Point>单点:</Point>
+			<Points>多点:</Points>			
+			<PointText>选择一个点，从剪贴板捕获。</PointText>
+			<PointsText>选择多个点，从剪贴板中捕获。</PointsText>			
+			</MeasurementModal>
+			<BirdsEyeModal>
+			<Header>鸟眼窗口</Header>
+			</BirdsEyeModal>
+			<ImageObjectModal>
+			<Header>图像对象编号。</Header>
+			<LoadImage>加载新图像</LoadImage>
+			<RemoveImageNote>删除图像注释</RemoveImageNote>
+			<MinimizeImageNote>最小化图像注释</MinimizeImageNote>
+			</ImageObjectModal>
+			<LayerListModal>
+			<Header> CADViewer-图层列表</Header>
+			<SelectDrawings>选择要显示的外部参照/子图形：</SelectDrawings>
+			<XrefLayerName>使用原始外部参照图层名称</XrefLayerName>
+			<Search>搜索</Search>
+			<Sort>按图层排序</Sort>
+			<AllLayerOn>所有层均已打开</AllLayerOn>
+			<AllLayerOff>所有层关闭</AllLayerOff>
+			<SwapLayers>交换层</SwapLayers>
+			<On>打开</On>
+			<Off>关闭</Off>
+			<BaseAndXref>基础图纸</BaseAndXref>
+			<Xref>外部参照：</Xref>
+			</LayerListModal>
+			<PageChangeListModal>
+			<Header>更改工程图页面</Header>
+			<Search>搜索</Search>
+			<Sort>按名称排序</Sort>
+			<On>打开</On>
+			<Off>关闭</Off>
+			</PageChangeListModal>
+			<LayerListSpaceModal>
+			<Header>层列表-空间对象</Header>
+			<Search>搜索</Search>
+			<Sort>按图层排序</Sort>
+			<AllLayerOn>所有层均已打开</AllLayerOn>
+			<AllLayerOff>所有层关闭</AllLayerOff>
+			<SwapLayers>交换层</SwapLayers>
+			<On>打开</On>
+			<Off>关闭</Off>
+			<NotAssigned>未分配</NotAssigned>
+			<TextLayer>文本层</TextLayer>
+			<RoomLayer>房间层</RoomLayer>
+			<HandleLayer>活动层</HandleLayer>
+			<FloodfillLayer> SpaceID层</FloodfillLayer>
+			</LayerListSpaceModal>
+			<DataMaps>
+			<Map>数据地图-用户地图1 </Map>
+			<Map>数据地图-用户地图2 </Map>
+			<Map>数据地图-用户地图3 </Map>
+			<Map>数据地图-用户地图4 </Map>
+			</DataMaps>
+			<IconPage_p1_8>
+			<PreviousPage>上一个菜单页面</PreviousPage>
+			<NextPage>下一个图标页</NextPage>
+			<NextMenuPage>下一个菜单页</NextMenuPage>
+			<LayerList>层列表</LayerList>
+			<Print>打印</Print>
+			<ZoomIn>放大</ZoomIn>
+			<ZoomOut>缩小</ZoomOut>
+			<ZoomExtents> 缩放范围 </ZoomExtents>
+			<ZoomWindow>缩放窗口</ZoomWindow>
+			<Toggle>切换黑色/白色</Toggle>
+			<Background>背景</Background>
+			<FileLoad>文件加载</FileLoad>
+			<Search>搜索</Search>
+			<About>关于</About>
+			<Settings>设置</Settings>
+			<LayerOff>层关闭</LayerOff>
+			<SwapLayers>交换层</SwapLayers>
+			<AllLayersOn>所有图层均已</AllLayersOn>
+			<Measurement>测量</Measurement>
+			<Calibrate>校准测量</Calibrate>
+			<BirdsEye>切换鸟眼窗口</BirdsEye>
+			<LineThickness>调整线粗</LineThickness>
+			</IconPage_p1_8>			
+			<IconPage_p2_8>
+			<PreviousPage>上一个图标页</PreviousPage>
+			<NextPage>下一个图标页</NextPage>
+			<SaveRedline>保存红线</SaveRedline>
+			<LoadRedline>加载红线</LoadRedline>
+			<DeleteSingle>删除单个红线</DeleteSingle>
+			<DeleteLast>删除最后一个红线</DeleteLast>
+			<Color>红线颜色</Color>
+			<Thickness>红线粗细</Thickness>
+			<StickyNote>制作粘滞便笺</StickyNote>
+			<ClearAll>清除可见的红线</ClearAll>
+			<Freehand>手绘红线</Freehand>
+			<Cloud> Redline Ellipse / Cloud </Cloud>
+			<FilledPolygon>红线填充多边形</FilledPolygon>
+			<Polyline>红线折线</Polyline>
+			<Polygon>红线多边形</Polygon>
+			<FilledRectangle>红线填充矩形</FilledRectangle>
+			<Rectangle>红线矩形</Rectangle>
+			<Arrow>红线箭头</Arrow>
+			<Text>红线文本</Text>
+			<PublishAsPDF>发布为PDF </PublishAsPDF>
+			<MergeAsDXF>与源DWG合并红线</MergeAsDXF>
+			<Free>免费</Free>
+			<MergeWithQR>将QR代码与源DWG合并</MergeWithQR>
+			<LineThickness>调整线粗</LineThickness>
+			</IconPage_p2_8>			
+			<IconPage_p3_8>
+			<PreviousPage>上一个图标页</PreviousPage>
+			<NextPage>下一个图标页</NextPage>
+			<PublishAsPDF>发布为PDF </PublishAsPDF>
+			<Free>免费</Free>
+			<LayerOff>层关闭</LayerOff>
+			<SwapLayers>交换层</SwapLayers>
+			<AllLayersOn>所有图层均已</AllLayersOn>
+			<ZoomExtents> 缩放范围 </ZoomExtents>
+			<ZoomWindow>缩放窗口</ZoomWindow>
+			<LoadLink>加载所有图像链接</LoadLink>
+			<InsertLink>插入图像链接</InsertLink>
+			<SaveLink>保存所有图像链接</SaveLink>
+			<QuickCount>快速计数</QuickCount>
+			<CountSum>摘要快速计数</CountSum>
+			<ClearCount>清除快速计数</ClearCount>
+			</IconPage_p3_8>
+			<IconPage_p4_8>
+			<PreviousPage>上一个图标页</PreviousPage>
+			<NextPage>下一个图标页</NextPage>
+			<Free>免费</Free>
+			<CompareLoad>加载第二张图纸进行比较</CompareLoad>
+			<CompareToggle>分别切换图形</CompareToggle>
+			<CompareToggleOverlay>切换叠加的工程图</CompareToggleOverlay>
+			<CompareExit>退出比较工程图</CompareExit>
+			<CollaborationJoinSession>加入协作会议</CollaborationJoinSession>
+			<CollaborationTakeControl>控制协作会话</CollaborationTakeControl>
+			<CollaborationClearSession>在协作会话中清除红线</CollaborationClearSession>
+			<CollaborationLeaveSession>离开协作会议</CollaborationLeaveSession>
+			<LayerOff>层关闭</LayerOff>
+			<SwapLayers>交换层</SwapLayers>
+			<AllLayersOn>所有图层均已</AllLayersOn>
+			<ZoomExtents> 缩放范围 </ZoomExtents>
+			<ZoomWindow>缩放窗口</ZoomWindow>
+			</IconPage_p4_8>
+			<IconPage_p5_8>
+			<PreviousPage>上一个图标页</PreviousPage>
+			<NextPage>下一个图标页</NextPage>
+			<InsertSpaceImage>插入空间图像对象</InsertSpaceImage>
+			<DragSpaceImage>拖动空间图像对象</DragSpaceImage>
+			<ResizeSpaceImage>调整空间图像对象的大小</ResizeSpaceImage>
+			<LoadSpaceObjects>加载空间对象</LoadSpaceObjects>
+			<Publish>以用户显示模式查看空间对象结构</Publish>
+			<DownloadSVG>下载已处理的SVG图纸</DownloadSVG>
+			<Load>加载平面图和预处理空间对象</Load>
+			<Settings>设置</Settings>
+			<SelectObject>选择对象</SelectObject>
+			<Rect>矩形空间对象</Rect>
+			<Polygon>多边形空间对象</Polygon>
+			<Circle>圆形空间对象</Circle>
+			<CopyCircle>复制圆空间对象</CopyCircle>
+			<Delete>删除空间对象</Delete>
+			<LayerList>层列表</LayerList>
+			<Mode>切换空间对象的显示和编辑模式</Mode>
+			<Free>免费</Free>
+			<SelectPolygon>在封闭的多边形上生成空间对象</SelectPolygon>
+			</IconPage_p5_8>
+			<IconPage_p6_1>
+			<PinMarker>添加Pin标记</PinMarker>
+			</IconPage_p6_1>
+			<PageModal>
+			<ZoomExtents> 缩放范围 </ZoomExtents>
+			<ZoomWindow>缩放窗口</ZoomWindow>
+			<SelectPageFromList>从列表中选择工程图页面</SelectPageFromList>
+			<EnterPage>输入页码</EnterPage>
+			<RotateBack>逆时针旋转90度</RotateBack>
+			<RotateForward>顺时针旋转90度</RotateForward>
+			<First>在工程图中加载第一页</First>
+			<Previous>在工程图中加载上一页</Previous>
+			<Next>在工程图中加载下一页</Next>
+			<Last>加载工程图中的最后一页</Last>
+			</PageModal>
+			<StickyNote>
+			<MoveNote>移动注释</MoveNote>
+			<EditNote>编辑注释</EditNote>
+			<DeleteNote>删除注释</DeleteNote>
+			<MinimizeNote>最小化笔记</MinimizeNote>
+			<Inactive>不活动</Inactive>
+			<SaveNote>保存注释</SaveNote>
+			<Cancel>取消编辑笔记</Cancel>
+			</StickyNote>
+			<ImageObject>
+			<InsertReplace>插入或替换图像</InsertReplace>
+			<Delete>删除图像和相关图标</Delete>
+			<DeleteNote>删除注释</DeleteNote>
+			<Minimize>最小化图像对象</Minimize>
+			</ImageObject>
+			<DeleteModal>
+			<Header>删除</Header>
+			<Text1>此操作将删除</Text1>
+			<Text2>，并禁止所有用户访问平面图。</Text2>
+			</DeleteModal>
+			<UnlinkModal>
+			<Header>取消链接</Header>
+			<Text1>此操作将从</Text1>中删除所有元数据
+			<Text2>位置对象将保持不变。</Text2>
+			</UnlinkModal>
+			<ClearModal>
+			<Header>清除</Header>
+			<Text1>此操作将从</Text1>中删除所有元数据和位置对象
+			</ClearModal>
+			<FileLoadSpaceModal>
+			<Header> CADViewer：空间管理文件加载器</Header>
+			<DrawingFilename>绘图/文件名</DrawingFilename>
+			<EditFloorplanInfo>编辑平面图信息</EditFloorplanInfo>
+			<BuildRoomTextHyperlinks>在加载时构建ROOM / TEXT层超链接</BuildRoomTextHyperlinks>
+			</FileLoadSpaceModal>
+			<LoadingModal>
+			<Loading>正在加载</Loading>
+			</LoadingModal>
+			<HeaderObjectLayers>
+			<ObjectLayer>空间-用户层1 </ObjectLayer>
+			<ObjectLayer>资产-用户层1 </ObjectLayer>
+			</HeaderObjectLayers>
+			<WaitModal>
+			<Printing>打印</Printing>	
+			<Thumbnails>保存</Thumbnails>
+			<BatchPDF>打印为PDF </BatchPDF>
+			<MergeDWG>打印</MergeDWG>
+			</WaitModal>			
+	</languages>
+	<languages>
+			<languageCode>ZN-HK</languageCode>
+			<thisLanguage>Chinese-Traditional</thisLanguage>
+			<PrintModal>
+			<Header> CADViewer-打印設置</Header>
+			<Paper> 紙張尺寸：</Paper>
+			<Landscape>景觀</Landscape>
+			<Portrait>肖像</Portrait>
+			<Orientation>方向：</Orientation>
+			<Resolution>決議：</Resolution>
+			<ResolutionText>（最低75dpi，標準300dpi）</ResolutionText>
+			<Print>打印</Print>
+			<Grayscale>灰度</Grayscale>
+			<PrintPDF>打印為PDF </PrintPDF>
+			<PrintToScale>按比例打印</PrintToScale>
+			<TextBox1Header>圖形標題（最多4行）</TextBox1Header>
+			<TextBox2Header>工程圖編號</TextBox2Header>
+			<EnterScale>比例：</EnterScale>
+			<CustomCheckbox>標題欄</CustomCheckbox>
+			<JsonVariable>變量（$$$）：</JsonVariable>
+			<PaperSizeTotal> 19 </PaperSizeTotal>
+			<PaperSizes>
+			<PaperSize>A4</PaperSize>
+			<PaperSize>A3</PaperSize>
+			<PaperSize>A2</PaperSize>
+			<PaperSize>A1</PaperSize>
+			<PaperSize>A0</PaperSize>
+			<PaperSize>A5</PaperSize>
+			<PaperSize>letter</PaperSize>
+			<PaperSize>legal</PaperSize>
+			<PaperSize>tabloid</PaperSize>
+			<PaperSize>USA</PaperSize>
+			<PaperSize>USB</PaperSize>
+			<PaperSize>USC</PaperSize>
+			<PaperSize>USD</PaperSize>
+			<PaperSize>USE</PaperSize>
+			<PaperSize>ARCHA</PaperSize>
+			<PaperSize>ARCHB</PaperSize>
+			<PaperSize>ARCHC</PaperSize>
+			<PaperSize>ARCHD</PaperSize>
+			<PaperSize>ARCHE</PaperSize>
+			<PaperSize>ALCOAA</PaperSize>
+			</PaperSizes>
+			<MenuItems>
+			<MenuItem> A4（210 x 297毫米）</MenuItem>
+			<MenuItem> A3（297 x 420毫米）</MenuItem>
+			<MenuItem> A2（420 x 594毫米）</MenuItem>
+			<MenuItem> A1（594 x 841毫米）</MenuItem>
+			<MenuItem> A0（841 x 1189毫米）</MenuItem>
+			<MenuItem> A5（148 x 210毫米）</MenuItem>
+			<MenuItem>字母（8.5 x 11英寸）</MenuItem>
+			<MenuItem>法律（8.5 x 14英寸）</MenuItem>
+			<MenuItem>小報（11 x 17英寸）</MenuItem>
+			<MenuItem> A（8.5 x 11英寸）</MenuItem>
+			<MenuItem> B（11 x 17英寸）</MenuItem>
+			<MenuItem> C（17 x 22英寸）</MenuItem>
+			<MenuItem> D（22 x 34英寸）</MenuItem>
+			<MenuItem> E（34 x 44英寸）</MenuItem>
+			<MenuItem> A +（9 x 12英寸）</MenuItem>
+			<MenuItem> B +（12 x 18英寸）</MenuItem>
+			<MenuItem> C +（18 x 24英寸）</MenuItem>
+			<MenuItem> D +（24 x 36英寸）</MenuItem>
+			<MenuItem> E +（36 x 48英寸）</MenuItem>
+			<MenuItem> ALCOA A（30 x 36英寸）</MenuItem>
+			</MenuItems>
+			</PrintModal>
+			<SearchTextModal>
+			<Header>搜索文字</Header>
+			<SearchText>搜索文本：</SearchText>
+			<Zoom> Zoom Level：</Zoom>
+			<Search>搜索</Search>
+			</SearchTextModal>
+			<SearchCustomModal>
+			<Header>搜索文字</Header>
+			<SearchText>搜索文本：</SearchText>
+			<Search>搜索</Search>
+			</SearchCustomModal>
+			<InfoMessageModal>
+			<Header> CADViewer信息</Header>
+			<Header2> CADViewer信息</Header2>
+			<Version> CADViewer版本：</Version>
+			<AXVersion> AutoXchange版本：</AXVersion>
+			<ComingSoon>即將到來！ </ComingSoon>
+			<NoUnits>圖中未定義單位，請先使用命令校準測量。 </NoUnits>
+			<UnitLess>原圖是無單位的，請先使用命令校準測量</UnitLess>
+			<QuickCountSingle>快速計數的數量是：</QuickCountSingle>
+			<QuickCountMultiple>快速計數的數量為：</QuickCountMultiple>
+			<RedlinesLocked>用戶的紅線被鎖定：</RedlinesLocked>
+			<LicensePath>在以下路徑找不到許可證密鑰：</LicensePath>
+			<LicenseNotFound>找不到許可證密鑰</LicenseNotFound>
+			<SelectTwoPoints>請先用鼠標在圖形中選擇兩個點，然後輸入單位和距離，最後按OK。 </SelectTwoPoints>
+			<ReferenceDistance>請輸入參考距離。 </ReferenceDistance>
+			<RedlinesSaved>已保存紅線</RedlinesSaved>
+			<SinglePage>單頁繪圖-頁面無變化</SinglePage>
+			<FirstPage>當前頁面是多頁繪圖中的第一頁-頁面不變</FirstPage>
+			<LastPage>當前頁面是多頁繪圖中的最後一頁-頁面不變</LastPage>
+			<OutOfRange>輸入的頁碼超出頁面範圍-頁面未更改</OutOfRange>
+			<FileLoadThroughApp>注意：僅通過封裝應用程序啟用文件加載</FileLoadThroughApp>
+			<ErrorConnectingToHost>連接到主機時出錯。轉到“設置”窗格並檢查您的網絡設置！ </ErrorConnectingToHost>
+			<ConnectToHostFirst>請轉到“設置”窗格，檢查“網絡設置”，然後單擊“保存更改”以連接到網絡主機，以檢索映射位置時使用的數據結構。 </ConnectToHostFirst>
+			<NoObjectSelected>請選擇一個空間對象。 </NoObjectSelected>
+			<PaperSizePDFPrintOnly>對於大尺寸紙張，請選擇“打印為PDF”。較大的紙張尺寸為A1和A0，以及US Arch D及更高版本。 </PaperSizePDFPrintOnly>
+			<ServerSideFormatForPDFPrint> PDF打印需要原始文件，格式為DWG，DWF，DXF或DGN或PCF。請上傳這些格式的文件或選擇較小的紙張尺寸以直接打印。通過ANSI C 直接打印的紙張尺寸為A4-A2或美國字母。 </ServerSideFormatForPDFPrint>
+			<PrintDisabled>注意：禁用打印</PrintDisabled>
+			<NoQRCode>沒有收到來自服務器的QR碼！ </NoQRCode>
+			<DrawingName>繪圖：</DrawingName>
+			</InfoMessageModal>
+			<FileLoadModal>
+			<Header> CADViewer-文件管理器</Header>
+			<DrawingFilename>繪圖/文件名</DrawingFilename>
+			<EditFloorplanInfo>編輯平面圖信息</EditFloorplanInfo>
+			</FileLoadModal>
+			<SaveRedlineModal>
+			<Header> CADViewer-保存紅線</Header>
+			<RedlineFilename> REDLINE /文件名</RedlineFilename>
+			<EditRedlineInfo>編輯紅線信息</EditRedlineInfo>
+			<Upload> UPLOAD </Upload>
+			</SaveRedlineModal>
+			<OpenRedlineModal>
+			<Header> CADViewer-打開紅線</Header>
+			<RedlineFilename> REDLINE /文件名</RedlineFilename>
+			<EditRedlineInfo>編輯紅線信息</EditRedlineInfo>
+			</OpenRedlineModal>
+			<OpenSpaceObjectModal>
+			<Header> CADViewer-開放空間對象</Header>
+			<SpaceObjectFilename> REDLINE /文件名</SpaceObjectFilename>
+			<EditSpaceObjectInfo>編輯紅線信息</EditSpaceObjectInfo>
+			</OpenSpaceObjectModal>
+			<RedlineThicknessModal>
+			<Header>選擇紅線粗細</Header>
+			<Thickness> Thickness：</Thickness>
+			<OK>確定</OK>
+			</RedlineThicknessModal>
+			<DocumentPageChangeModal>
+			<Header>選擇文檔頁面</Header>
+			<Page> 頁：</Page>
+			<OK>確定</OK>
+			</DocumentPageChangeModal>
+			<CollaborationStartModal>
+			<Header>進入協作會話</Header>
+			<Session>會話名稱：</Session>
+			<OK>確定</OK>
+			</CollaborationStartModal>
+			<PublishPDFModal>
+			<Header>將帶紅線的屏幕內容髮佈為PDF </Header>
+			<SelectMode>選擇模式</SelectMode>
+			<Mode1>打印/下載</Mode1>
+			<Mode2>發送為電子郵件</Mode2>
+			<Mode3>上傳到服務器</Mode3>
+			<EntireDoc>發布整個文檔：</EntireDoc>
+			<OK>確定</OK>
+			<Recipient>電子郵件：</Recipient>
+			<Title>標題：</Title>
+			<Message>消息：</Message>
+			</PublishPDFModal>
+			<MergeDXFModal>
+			<Header>將紅線與源DWG合併</Header>
+			<SelectMode>選擇模式</SelectMode>
+			<Mode1>下載</Mode1>
+			<Mode2>發送為電子郵件</Mode2>
+			<Mode3>上傳到服務器</Mode3>
+			<EntireDoc>發布整個文檔：</EntireDoc>
+			<OK>確定</OK>
+			<Recipient>電子郵件：</Recipient>
+			<Title>標題：</Title>
+			<Message>消息：</Message>
+			</MergeDXFModal>
+			<RedlineColorModal>
+			<Header>選擇紅線顏色</Header>
+			<PickColor>選擇顏色：</PickColor>
+			<SelectColor>選擇：</SelectColor>
+			<Blue>藍色</Blue>
+			<Red>紅色</Red>
+			<Yellow> 黃色 </Yellow>
+			<Orange>橙子 </Orange>
+			<Green>綠色</Green>
+			<Purple> 紫色 </Purple>
+			<Brown>布朗</Brown>
+			<Gray>灰色</Gray>
+			<OK>確定</OK>
+			</RedlineColorModal>
+			<RedlineEllipseModal>
+			<Header>選擇紅線形狀</Header>
+			<SelectType>選擇：</SelectType>
+			<Ellipse>橢圓：</Ellipse>
+			<Cloud>雲：</Cloud>
+			<OK>確定</OK>
+			</RedlineEllipseModal>
+			<CreationModeModal>
+			<Header>選擇空間ID源</Header>
+			<SelectType>選擇：</SelectType>
+			<DataSource>通過API從數據源</DataSource>
+			<Manually>雲</Manually>
+			<OK>確定</OK>
+			</CreationModeModal>
+			<BackgroundColorModal>
+			<Header>選擇背景色</Header>
+			<PickColor>選擇顏色：</PickColor>
+			<SelectColor>選擇：</SelectColor>
+			<White> 白色 </White>
+			<Black>黑色</Black>
+			<Azure> 蔚藍 </Azure>
+			<Pink> 粉 </Pink>
+			<Snow>雪</Snow>
+			<Silver>銀</Silver>
+			<Brown>布朗</Brown>
+			<Gray>灰色</Gray>
+			<OK>確定</OK>
+			</BackgroundColorModal>
+			<RedlineTextModal>
+			<Header>紅線文字</Header>
+			<FontSize>字體大小：</FontSize>
+			<OK>確定</OK>
+			<Text>輸入文本，單擊“確定”，然後在圖形中選擇插入點。 </Text>
+			</RedlineTextModal>
+			<LineThicknessModal>
+			<Header>調整線條粗細</Header>
+			<LineThickness>線粗度：</LineThickness>
+			<Text>輸入文本，單擊“確定”，然後在圖形中選擇插入點。 </Text>
+			</LineThicknessModal>
+			<CalibrateModal>
+			<Header>校準測量</Header>
+			<Unit>單位：</Unit>
+			<Distance> 距離：</Distance>
+			<OK>確定</OK>
+			<Text>首先用鼠標在圖形中選擇兩個點，然後輸入單位和距離，然後按確定</Text>
+			</CalibrateModal>
+			<SettingsModal>
+			<Header> CADViewer常規設置</Header>
+			<OnlineLanguage>在線語言：</OnlineLanguage>
+			<Distance> 距離：</Distance>
+			<ConversionFixed>轉換參數（固定）：</ConversionFixed>
+			<ConversionUser>轉換參數（用戶控制）：</ConversionUser>
+			<Param>參數：</Param>
+			<Value>（值）：</Value>
+			<TotalParameters>0</TotalParameters>
+			<ParamNames>
+			<ParamName></ParamName>
+			</ParamNames>
+			<ParamValues>
+			<ParamValue></ParamValue>
+			</ParamValues>
+			<OK>更新設定</OK>
+			<Text>詳細的參數設置請參考 &lt;a href=&quot;https://tailormade.com/ax2020techdocs/parameter_interface/&quot;&gt;AX2020 techdocs&lt;/a&gt; !</Text>
+			</SettingsModal>
+			<MeasurementModal>
+			<Header> CADViewer測量</Header>
+			<Distance> 距離：</Distance>
+			<MeasureAgain>再次測量</MeasureAgain>
+			<ClosePolygon>關閉區域多邊形</ClosePolygon>
+			<Text>在圖形中選擇兩個點作為距離。 </Text>
+			<TextArea>選擇點序列。雙擊，按Esc或單擊“關閉區域”按鈕以顯示區域。 </TextArea>
+			<Area>區:</Area>
+			<MenuItems>
+				<MenuItem>距離</MenuItem>
+				<MenuItem>區域</MenuItem>
+				<MenuItem>點（全局坐標）</MenuItem>
+				<MenuItem>點（SVG坐標）</MenuItem>
+				<MenuItem>多個點（全局）</MenuItem>
+				<MenuItem>多點（SVG）</MenuItem>
+			</MenuItems>
+			<Point>單點:</Point>
+			<Points>多點:</Points>
+			<PointText>選擇一個點，從剪貼板捕獲。</PointText>
+			<PointsText>選擇多個點，從剪貼板中捕獲。</PointsText>
+			</MeasurementModal>
+			<BirdsEyeModal>
+			<Header>鳥眼窗口</Header>
+			</BirdsEyeModal>
+			<ImageObjectModal>
+			<Header>圖像對象編號。 </Header>
+			<LoadImage>加載新圖像</LoadImage>
+			<RemoveImageNote>刪除圖像註釋</RemoveImageNote>
+			<MinimizeImageNote>最小化圖像註釋</MinimizeImageNote>
+			</ImageObjectModal>
+			<LayerListModal>
+			<Header> CADViewer-圖層列表</Header>
+			<SelectDrawings>選擇要顯示的外部參照/子圖形：</SelectDrawings>
+			<XrefLayerName>使用原始外部參照圖層名稱</XrefLayerName>
+			<Search>搜索</Search>
+			<Sort>按圖層排序</Sort>
+			<AllLayerOn>所有層均已打開</AllLayerOn>
+			<AllLayerOff>所有層關閉</AllLayerOff>
+			<SwapLayers>交換層</SwapLayers>
+			<On>打開</On>
+			<Off>關閉</Off>
+			<BaseAndXref>基礎圖紙</BaseAndXref>
+			<Xref>外部參照：</Xref>
+			</LayerListModal>
+			<PageChangeListModal>
+			<Header>更改工程圖頁面</Header>
+			<Search>搜索</Search>
+			<Sort>按名稱排序</Sort>
+			<On>打開</On>
+			<Off>關閉</Off>
+			</PageChangeListModal>
+			<LayerListSpaceModal>
+			<Header>層列表-空間對象</Header>
+			<Search>搜索</Search>
+			<Sort>按圖層排序</Sort>
+			<AllLayerOn>所有層均已打開</AllLayerOn>
+			<AllLayerOff>所有層關閉</AllLayerOff>
+			<SwapLayers>交換層</SwapLayers>
+			<On>打開</On>
+			<Off>關閉</Off>
+			<NotAssigned>未分配</NotAssigned>
+			<TextLayer>文本層</TextLayer>
+			<RoomLayer>房間層</RoomLayer>
+			<HandleLayer>活動層</HandleLayer>
+			<FloodfillLayer> SpaceID層</FloodfillLayer>
+			</LayerListSpaceModal>
+			<DataMaps>
+			<Map>數據地圖-用戶地圖1 </Map>
+			<Map>數據地圖-用戶地圖2 </Map>
+			<Map>數據地圖-用戶地圖3 </Map>
+			<Map>數據地圖-用戶地圖4 </Map>
+			</DataMaps>
+			<IconPage_p1_8>
+			<PreviousPage>上一個菜單頁面</PreviousPage>
+			<NextPage>下一個圖標頁</NextPage>
+			<NextMenuPage>下一個菜單頁</NextMenuPage>
+			<LayerList>層列表</LayerList>
+			<Print>打印</Print>
+			<ZoomIn>放大</ZoomIn>
+			<ZoomOut>縮小</ZoomOut>
+			<ZoomExtents> 縮放範圍 </ZoomExtents>
+			<ZoomWindow>縮放窗口</ZoomWindow>
+			<Toggle>切換黑色/白色</Toggle>
+			<Background>背景</Background>
+			<FileLoad>文件加載</FileLoad>
+			<Search>搜索</Search>
+			<About>關於</About>
+			<Settings>設置</Settings>
+			<LayerOff>層關閉</LayerOff>
+			<SwapLayers>交換層</SwapLayers>
+			<AllLayersOn>所有圖層均已</AllLayersOn>
+			<Measurement>測量</Measurement>
+			<Calibrate>校準測量</Calibrate>
+			<BirdsEye>切換鳥眼窗口</BirdsEye>
+			<LineThickness>調整線粗</LineThickness>
+			</IconPage_p1_8>
+			<IconPage_p2_8>
+			<PreviousPage>上一個圖標頁</PreviousPage>
+			<NextPage>下一個圖標頁</NextPage>
+			<SaveRedline>保存紅線</SaveRedline>
+			<LoadRedline>加載紅線</LoadRedline>
+			<DeleteSingle>刪除單個紅線</DeleteSingle>
+			<DeleteLast>刪除最後一個紅線</DeleteLast>
+			<Color>紅線顏色</Color>
+			<Thickness>紅線粗細</Thickness>
+			<StickyNote>製作粘滯便箋</StickyNote>
+			<ClearAll>清除可見的紅線</ClearAll>
+			<Freehand>手繪紅線</Freehand>
+			<Cloud> Redline Ellipse / Cloud </Cloud>
+			<FilledPolygon>紅線填充多邊形</FilledPolygon>
+			<Polyline>紅線折線</Polyline>
+			<Polygon>紅線多邊形</Polygon>
+			<FilledRectangle>紅線填充矩形</FilledRectangle>
+			<Rectangle>紅線矩形</Rectangle>
+			<Arrow>紅線箭頭</Arrow>
+			<Text>紅線文本</Text>
+			<PublishAsPDF>發佈為PDF </PublishAsPDF>
+			<MergeAsDXF>與源DWG合併紅線</MergeAsDXF>
+			<Free>免費</Free>
+			<MergeWithQR>將QR代碼與源DWG合併</MergeWithQR>
+			<LineThickness>調整線粗</LineThickness>
+			</IconPage_p2_8>
+			<IconPage_p3_8>
+			<PreviousPage>上一個圖標頁</PreviousPage>
+			<NextPage>下一個圖標頁</NextPage>
+			<PublishAsPDF>發佈為PDF </PublishAsPDF>
+			<Free>免費</Free>
+			<LayerOff>層關閉</LayerOff>
+			<SwapLayers>交換層</SwapLayers>
+			<AllLayersOn>所有圖層均已</AllLayersOn>
+			<ZoomExtents> 縮放範圍 </ZoomExtents>
+			<ZoomWindow>縮放窗口</ZoomWindow>
+			<LoadLink>加載所有圖像鏈接</LoadLink>
+			<InsertLink>插入圖像鏈接</InsertLink>
+			<SaveLink>保存所有圖像鏈接</SaveLink>
+			<QuickCount>快速計數</QuickCount>
+			<CountSum>摘要快速計數</CountSum>
+			<ClearCount>清除快速計數</ClearCount>
+			</IconPage_p3_8>
+			<IconPage_p4_8>
+			<PreviousPage>上一個圖標頁</PreviousPage>
+			<NextPage>下一個圖標頁</NextPage>
+			<Free>免費</Free>
+			<CompareLoad>加載第二張圖紙進行比較</CompareLoad>
+			<CompareToggle>分別切換圖形</CompareToggle>
+			<CompareToggleOverlay>切換疊加的工程圖</CompareToggleOverlay>
+			<CompareExit>退出比較工程圖</CompareExit>
+			<CollaborationJoinSession>加入協作會議</CollaborationJoinSession>
+			<CollaborationTakeControl>控制協作會話</CollaborationTakeControl>
+			<CollaborationClearSession>在協作會話中清除紅線</CollaborationClearSession>
+			<CollaborationLeaveSession>離開協作會議</CollaborationLeaveSession>
+			<LayerOff>層關閉</LayerOff>
+			<SwapLayers>交換層</SwapLayers>
+			<AllLayersOn>所有圖層均已</AllLayersOn>
+			<ZoomExtents> 縮放範圍 </ZoomExtents>
+			<ZoomWindow>縮放窗口</ZoomWindow>
+			</IconPage_p4_8>			
+			<IconPage_p5_8>
+			<PreviousPage>上一個圖標頁</PreviousPage>
+			<NextPage>下一個圖標頁</NextPage>
+			<InsertSpaceImage>插入空間圖像對象</InsertSpaceImage>
+			<DragSpaceImage>拖動空間圖像對象</DragSpaceImage>
+			<ResizeSpaceImage>調整空間圖像對象的大小</ResizeSpaceImage>
+			<LoadSpaceObjects>加載空間對象</LoadSpaceObjects>
+			<Publish>以用戶顯示模式查看空間對象結構</Publish>
+			<DownloadSVG>下載已處理的SVG圖紙</DownloadSVG>
+			<Load>加載平面圖和預處理空間對象</Load>
+			<Settings>設置</Settings>
+			<SelectObject>選擇對象</SelectObject>
+			<Rect>矩形空間對象</Rect>
+			<Polygon>多邊形空間對象</Polygon>
+			<Circle>圓形空間對象</Circle>
+			<CopyCircle>複製圓空間對象</CopyCircle>
+			<Delete>刪除空間對象</Delete>
+			<LayerList>層列表</LayerList>
+			<Mode>切換空間對象的顯示和編輯模式</Mode>
+			<Free>免費</Free>
+			<SelectPolygon>在封閉的多邊形上生成空間對象</SelectPolygon>
+			</IconPage_p5_8>
+			<IconPage_p6_1>
+			<PinMarker>添加Pin標記</PinMarker>
+			</IconPage_p6_1>
+			<PageModal>
+			<ZoomExtents> 縮放範圍 </ZoomExtents>
+			<ZoomWindow>縮放窗口</ZoomWindow>
+			<SelectPageFromList>從列表中選擇工程圖頁面</SelectPageFromList>
+			<EnterPage>輸入頁碼</EnterPage>
+			<RotateBack>逆時針旋轉90度</RotateBack>
+			<RotateForward>順時針旋轉90度</RotateForward>
+			<First>在工程圖中加載第一頁</First>
+			<Previous>在工程圖中加載上一頁</Previous>
+			<Next>在工程圖中加載下一頁</Next>
+			<Last>加載工程圖中的最後一頁</Last>
+			</PageModal>
+			<StickyNote>
+			<MoveNote>移動註釋</MoveNote>
+			<EditNote>編輯註釋</EditNote>
+			<DeleteNote>刪除註釋</DeleteNote>
+			<MinimizeNote>最小化筆記</MinimizeNote>
+			<Inactive>不活動</Inactive>
+			<SaveNote>保存註釋</SaveNote>
+			<Cancel>取消編輯筆記</Cancel>
+			</StickyNote>
+			<ImageObject>
+			<InsertReplace>插入或替換圖像</InsertReplace>
+			<Delete>刪除圖像和相關圖標</Delete>
+			<DeleteNote>刪除註釋</DeleteNote>
+			<Minimize>最小化圖像對象</Minimize>
+			</ImageObject>
+			<DeleteModal>
+			<Header>刪除</Header>
+			<Text1>此操作將刪除</Text1>
+			<Text2>，並禁止所有用戶訪問平面圖。 </Text2>
+			</DeleteModal>
+			<UnlinkModal>
+			<Header>取消鏈接</Header>
+			<Text1>此操作將從</Text1>中刪除所有元數據
+			<Text2>位置對象將保持不變。 </Text2>
+			</UnlinkModal>
+			<ClearModal>
+			<Header>清除</Header>
+			<Text1>此操作將從</Text1>中刪除所有元數據和位置對象
+			</ClearModal>
+			<FileLoadSpaceModal>
+			<Header> CADViewer：空間管理文件加載器</Header>
+			<DrawingFilename>繪圖/文件名</DrawingFilename>
+			<EditFloorplanInfo>編輯平面圖信息</EditFloorplanInfo>
+			<BuildRoomTextHyperlinks>在加載時構建ROOM / TEXT層超鏈接</BuildRoomTextHyperlinks>
+			</FileLoadSpaceModal>
+			<LoadingModal>
+			<Loading>正在加載</Loading>
+			</LoadingModal>
+			<HeaderObjectLayers>
+			<ObjectLayer>空間-用戶層1 </ObjectLayer>
+			<ObjectLayer>資產-用戶層1 </ObjectLayer>
+			</HeaderObjectLayers>
+			<WaitModal>
+			<Printing>打印</Printing>
+			<Thumbnails>保存</Thumbnails>
+			<BatchPDF>打印為PDF </BatchPDF>
+			<MergeDWG>打印</MergeDWG>
+			</WaitModal>
+	</languages>
+	<languages>
+			<languageCode>PT-PT</languageCode>
+			<thisLanguage>Portuguese</thisLanguage>
+			<PrintModal>
+				<Header> CADViewer - Configurações de impressão </Header>
+				<Paper> Tamanho: </Paper>
+				<Landscape> Paisagem </Landscape>
+				<Portrait> Retrato </Portrait>
+				<Orientation> Orientation: </Orientation>
+				<Resolução> Resolução: </Resolução>
+				<ResolutionText> (75dpi mínimo, 300dpi padrão) </ResolutionText>
+				<Print> Imprimir </Print>
+				<Grayscale> Cinza </Grayscale>
+				<PrintPDF> Imprimir PDF </PrintPDF>
+				<PrintToScale> Imprimir em escala </PrintToScale>
+				<TextBox1Header> Título do desenho (4 x linha no máximo) </TextBox1Header>
+				<TextBox2Header> Desenho não </TextBox2Header>
+				<EnterScale> Escala : </EnterScale>
+				<CustomCheckbox> Bloco de título </CustomCheckbox>
+				<JsonVariable> Variável($$$): </JsonVariable>				
+				<PaperSizeTotal>19</PaperSizeTotal>
+				<PaperSizes>
+					<PaperSize>A4</PaperSize>
+					<PaperSize>A3</PaperSize>
+					<PaperSize>A2</PaperSize>
+					<PaperSize>A1</PaperSize>
+					<PaperSize>A0</PaperSize>
+					<PaperSize>A5</PaperSize>
+					<PaperSize>letter</PaperSize>
+					<PaperSize>legal</PaperSize>
+					<PaperSize>tabloid</PaperSize>
+					<PaperSize>USA</PaperSize>
+					<PaperSize>USB</PaperSize>
+					<PaperSize>USC</PaperSize>
+					<PaperSize>USD</PaperSize>
+					<PaperSize>USE</PaperSize>
+					<PaperSize>ARCHA</PaperSize>
+					<PaperSize>ARCHB</PaperSize>
+					<PaperSize>ARCHC</PaperSize>
+					<PaperSize>ARCHD</PaperSize>
+					<PaperSize>ARCHE</PaperSize>
+					<PaperSize>ALCOAA</PaperSize>
+				</PaperSizes>
+				<MenuItems>
+					<MenuItem>A4 (210 x 297 mm)</MenuItem>
+					<MenuItem>A3 (297 x 420 mm)</MenuItem>
+					<MenuItem>A2 (420 x 594 mm)</MenuItem>
+					<MenuItem>A1 (594 x 841 mm)</MenuItem>
+					<MenuItem>A0 (841 x 1189 mm)</MenuItem>
+					<MenuItem>A5 (148 x 210 mm)</MenuItem>
+					<MenuItem>Letter (8.5 x 11 in)</MenuItem>
+					<MenuItem>Legal (8.5 x 14 in)</MenuItem>
+					<MenuItem>Tabloid (11 x 17 in)</MenuItem>
+					<MenuItem>A (8.5 x 11 in)</MenuItem>
+					<MenuItem>B (11 x 17 in)</MenuItem>
+					<MenuItem>C (17 x 22 in)</MenuItem>
+					<MenuItem>D (22 x 34 in)</MenuItem>
+					<MenuItem>E (34 x 44 in)</MenuItem>
+					<MenuItem>A+ (9 x 12 in)</MenuItem>
+					<MenuItem>B+ (12 x 18 in)</MenuItem>
+					<MenuItem>C+ (18 x 24 in)</MenuItem>
+					<MenuItem>D+ (24 x 36 in)</MenuItem>
+					<MenuItem>E+ (36 x 48 in)</MenuItem>
+					<MenuItem>ALCOA A (30 x 36 in)</MenuItem>
+				</MenuItems>
+			</PrintModal>
+			<SearchTextModal>
+				<Header> Pesquisar texto </Header>
+				<SearchText> Pesquisar texto: </SearchText>
+				<Zoom> Nível de zoom: </Zoom>
+				<Search> Pesquisa </Search>
+				</SearchTextModal>
+				<SearchCustomModal>
+				<Header> Pesquisar texto </Header>
+				<SearchText> Pesquisar texto: </SearchText>
+				<Search> Pesquisa </Search>
+			</SearchCustomModal>			
+		<InfoMessageModal>
+				<Header> Informações sobre o CADViewer </Header>
+				<Header2> Informações sobre o CADViewer </Header2>
+				<Version> Versão do CADViewer: </Version>
+				<AXVersion> Versão do AutoXchange: </AXVersion>
+				<ComingSoon> Em breve! </ComingSoon>
+				<NoUnits> Nenhuma unidade definida no desenho, use o comando Calibrar medição primeiro. </NoUnits>
+				<UnitLess> O desenho de origem é sem unidade, use o comando Calibrar medição primeiro </UnitLess>
+				<QuickCountSingle> O número de contagens rápidas é: </QuickCountSingle>
+				<QuickCountMultiple> O número de contagens rápidas é: </QuickCountMultiple>
+				<RedlinesLocked> As linhas vermelhas estão bloqueadas para o usuário: </RedlinesLocked>
+				<LicensePath> Não foi possível encontrar a chave de licença no caminho: </LicensePath>
+				<LicenseNotFound> Chave de licença não encontrada </LicenseNotFound>
+				<SelectTwoPoints> Selecione primeiro dois pontos no desenho com o mouse, digite a unidade e a distância e, finalmente, pressione OK. </SelectTwoPoints>
+				<ReferenceDistance> Digite uma distância de referência. </ReferenceDistance>
+				<RedlinesSaved> Redlines salvas </RedlinesSaved>
+				<SinglePage> Desenho de página única - sem alteração de página </SinglePage>
+				<FirstPage> A página atual é a primeira página em um desenho de várias páginas - nenhuma alteração de página </FirstPage>
+				<LastPage> A página atual é a última página em um desenho de várias páginas - nenhuma alteração de página </LastPage>
+				<OutOfRange> O número da página digitado está fora do intervalo de páginas - nenhuma alteração de página </OutOfRange>
+				<FileLoadThroughApp> OBSERVAÇÃO: o carregamento de arquivo ativado somente por meio do aplicativo de encapsulamento </FileLoadThroughApp>
+				<ErrorConnectingToHost> Erroao conectar ao host. Vá para o Painel de configurações e verifique suas configurações de rede! </ErrorConnectingToHost>
+				<ConnectToHostFirst> Vá para o Painel de configurações, verifique suas configurações de rede e clique em Salvar alterações para conectar-se ao seu host de rede para recuperar a estrutura de dados usada ao mapear locais. </ConnectToHostFirst>
+				<NoObjectSelected> Selecione um objeto de espaço. </NoObjectSelected>
+				<PaperSizePDFPrintOnly> Selecione Imprimir como PDF para tamanhos de papel grandes. Tamanhos de papel grandes são A1 e A0, bem como US Arch D e acima. </PaperSizePDFPrintOnly>
+				<ServerSideFormatForPDFPrint> A impressão em PDF requer um arquivo original nos formatos DWG, DWF, DXF ou DGN ou PCF. Faça o upload de um arquivo nesses formatos ou selecione um tamanho menor para impressão direta. Os tamanhos de papel de impressão direta são A4-A2 ou US Letter por ANSI C </ServerSideFormatForPDFPrint>
+				<PrintDisabled> NOTA: Impressão desativada </PrintDisabled>
+				<NoQRCode> Nenhum código QR recebido do servidor! </NoQRCode>
+				<DrawingName> Desenho: </DrawingName>			
+		    </InfoMessageModal>
+			<FileLoadModal>
+			<Header> CADViewer - Gerenciador de arquivos </Header>
+			<DrawingFilename> Desenho / Nome do arquivo </DrawingFilename>
+			<EditFloorplanInfo> Editar informações da planta baixa </EditFloorplanInfo>
+			</FileLoadModal>
+			<SaveRedlineModal>
+			<Header> CADViewer - Salvar redline </Header>
+			<RedlineFilename> Linha vermelha / Nome do arquivo </RedlineFilename>
+			<EditRedlineInfo> Editar informações de redline </EditRedlineInfo>
+			<Upload> UPLOAD </Upload>
+			</SaveRedlineModal>
+			<OpenRedlineModal>
+			<Header> CADViewer - Abrir linha vermelha </Header>
+			<RedlineFilename> Linha vermelha / Nome do arquivo </RedlineFilename>
+			<EditRedlineInfo> Editar informações de redline </EditRedlineInfo>
+			</OpenRedlineModal>
+			<OpenSpaceObjectModal>
+			<Header> CADViewer - objetos de espaço aberto </Header>
+			<SpaceObjectFilename> Linha vermelha / Nome do arquivo </SpaceObjectFilename>
+			<EditSpaceObjectInfo> Editar informações da linha vermelha </EditSpaceObjectInfo>
+			</OpenSpaceObjectModal>
+			<RedlineThicknessModal>
+			<Header> Selecionar espessura da linha vermelha </Header>
+			<Thickness> Espessura: </Thickness>
+			<OK> OK </OK>
+			</RedlineThicknessModal>
+			<DocumentPageChangeModal>
+			<Header> Selecionar página do documento </Header>
+			<Page> Página: </Page>
+			<OK> OK </OK>
+			</DocumentPageChangeModal>
+			<CollaborationStartModal>
+			<Header> Entre na sessão de colaboração </Header>
+			<Session> Nome da sessão: </Session>
+			<OK> OK </OK>
+			</CollaborationStartModal>
+			<PublishPDFModal>
+			<Header> Publique o conteúdo da tela em vermelho em PDF </Header>
+			<SelectMode> Selecione o modo </SelectMode>
+			<Mode1> Baixar </Mode1>
+			<Mode2> Enviar email </Mode2>
+			<Mode3> Carregar no servidor </Mode3>
+			<EntireDoc> Publicar documento inteiro: </EntireDoc>
+			<OK> OK </OK>
+			<Recipient> E-mail: </Recipient>
+			<Title> Título: </Title>
+			<Message> Mensagem: </Message>
+			</PublishPDFModal>
+			<MergeDXFModal>
+			<Header> Mesclar redline com DWG de origem </Header>
+			<SelectMode> Selecione o modo </SelectMode>
+			<Mode1> Baixar </Mode1>
+			<Mode2> Enviar email </Mode2>
+			<Mode3> Carregar no servidor </Mode3>
+			<EntireDoc> Publicar documento inteiro: </EntireDoc>
+			<OK> OK </OK>
+			<Recipient> E-mail: </Recipient>
+			<Title> Título: </Title>
+			<Message> Mensagem: </Message>
+			</MergeDXFModal>
+			<RedlineColorModal>
+			<Header> Selecione Redline Color </Header>
+			<PickColor> Escolha: </PickColor>
+			<SelectColor> Selecione: </SelectColor>
+			<Blue> Azul </Blue>
+			<Red> Vermelho </Red>
+			<Yellow> Amarelo </Yellow>
+			<Laranja> Laranja </Laranja>
+			<Green> Verde </Green>
+			<Purple> Roxo </Purple>
+			<Brown> Marrom </Brown>
+			<Gray> Cinza </Gray>
+			<OK> OK </OK>
+			</RedlineColorModal>
+			<RedlineEllipseModal>
+			<Header> Selecionar forma de linha </Header>
+			<SelectType> Selecione: </SelectType>
+			<Ellipse> Elipse: </Ellipse>
+			<Cloud> Nuvem: </Cloud>
+			<OK> OK </OK>
+			</RedlineEllipseModal>
+			<CreationModeModal>
+			<Header> Selecione a fonte da ID do espaço </Header>
+			<SelectType> Selecione: </SelectType>
+			<DataSource> Da fonte de dados via API </DataSource>
+			<Manualmente> Nuvem </Manualmente>
+			<OK> OK </OK>
+			</CreationModeModal>
+			<BackgroundColorModal>
+				<Header> Selecione a cor de fundo </Header>
+				<PickColor> Escolha: </PickColor>
+				<SelectColor> Selecione: </SelectColor>
+				<White> Branco </White>
+				<Black> Preto </Black>
+				<Azure> Azure </Azure>
+				<Pink> Pink </Pink>
+				<Snow> Neve </Snow>
+				<Silver> Prata </Silver>
+				<Brown> Marrom </Brown>
+				<Gray> Cinza </Gray>
+				<OK> OK </OK>
+			</BackgroundColorModal>
+			<RedlineTextModal>
+				<Header> Texto em linha vermelha</Header>
+				<FontSize> Tamanho da fonte: </FontSize>
+				<OK> OK </OK>
+				<Text> Digite o texto, clique em OK, insira no desenho. </Text>
+			</RedlineTextModal>
+			<LineThicknessModal>
+			<Header> Ajustar pesos da linha </Header>
+			<LineThickness> Ajustar pesos da linha: </LineThickness>
+			<Text> Fale sobre pesos zero. </Text>
+			</LineThicknessModal>
+			<CalibrateModal>
+			<Header> Calibrar medição </Header>
+			<Unit> Unidade: </Unit>
+			<Distance> Distância: </Distance>
+			<OK> OK </OK>
+			<Text> Selecione primeiro dois pontos do desenho com o mouse, depois insira a unidade e a distância e pressione OK </Text>
+			</CalibrateModal>
+			<SettingsModal>
+			<Header> Configurações gerais do CADViewer </Header>
+			<OnlineLanguage> Idioma on-line: </OnlineLanguage>
+			<Distance> Distância: </Distance>
+			<ConversionFixed> Parâmetros de conversão (corrigidos): </ConversionFixed>
+			<ConversionUser> Parâmetros de conversão (controlados pelo usuário): </ConversionUser>
+			<Param>Parâmetro : </Param>
+			<Value> (Valor): </Value>
+			<TotalParameters> 0 </TotalParameters>
+			<ParamNames>
+			<ParamName> </ParamName>
+			</ParamNames>
+			<ParamValues>
+			<ParamValue> </ParamValue>
+			</ParamValues>
+			<OK> Atualizar configurações </OK>
+			<Text> Consulte o &lt;a href=&quot;https://tailormade.com/ax2020techdocs/parameter_interface/&quot;&gt;AX2020 techdocs&lt;/a&gt; para obter configurações detalhadas dos parâmetros! </Text>
+			</SettingsModal>			
+			<MeasurementModal>
+			<Header> Medição CADViewer </Header>
+			<Distance> Distância: </Distance>
+			<MeasureAgain> Meça novamente </MeasureAgain>
+			<ClosePolygon> Fechar polígono da área </ClosePolygon>
+			<Text> Selecione dois pontos no desenho para a distância. </Text>
+			<TextArea> Selecione uma sequência de pontos. Clique duas vezes, Esc ou 'Close Area' para a área. </TextArea>
+			<Area> Área: </Area>
+			<MenuItems>
+				<MenuItem> Distância </MenuItem>
+				<MenuItem> Área </MenuItem>
+				<MenuItem> Ponto (Coordenadas Globais) </MenuItem>
+				<MenuItem> Ponto (coordenadas SVG) </MenuItem>
+				<MenuItem> Vários pontos (global) </MenuItem>
+				<MenuItem> Vários pontos (SVG) </MenuItem>
+			</MenuItems>
+			<Point> Ponto: </Point>
+			<Points> Multiponto: </Points>
+			<PointText> Selecione um único ponto, capture da área de transferência. </PointText>
+			<PointsText> Selecione vários pontos, capture da área de transferência. </PointsText>
+			</MeasurementModal>
+			<BirdsEyeModal>
+			<Header> Janela panorâmica </Header>
+			</BirdsEyeModal>
+			<ImageObjectModal>
+			<Header> Nº do objeto de imagem </Header>
+			<LoadImage> Carregar nova imagem </LoadImage>
+			<RemoveImageNote> Remover nota da imagem </RemoveImageNote>
+			<MinimizeImageNote> Minimize Image Note </MinimizeImageNote>
+			</ImageObjectModal>
+			<LayerListModal>
+			<Header> CADViewer - Lista de camadas </Header>
+			<SelectDrawings> Selecione refex / sub-desenhos para exibição: </SelectDrawings>
+			<XrefLayerName> Use o nome original da camada de refex </XrefLayerName>
+			<Search> Search </Search>
+			<Sort> Classificar</Sort>
+			<AllLayerOn> Ativadas </AllLayerOn>
+			<AllLayerOff> Desativadas </AllLayerOff>
+			<SwapLayers> Trocar camadas </SwapLayers>
+			<On> EM </On>
+			<Off> FORA </Off>
+			<BaseAndXref> Desenho base </BaseAndXref>
+			<Xref> Xref: </Xref>
+			</LayerListModal>
+			<PageChangeListModal>
+			<Header> Alterar página de desenho </Header>
+			<Search> Search </Search>
+			<Sort> Classificar por nome </Sort>
+			<On> EM </On>
+			<Off> FORA </Off>
+			</PageChangeListModal>
+			<LayerListSpaceModal>
+			<Header> Lista de camadas - objetos de espaço </Header>
+			<Search> Search </Search>
+			<Sort> Classificar por camada </Sort>
+			<AllLayerOn> Ativadas </AllLayerOn>
+			<AllLayerOff> Desativadas </AllLayerOff>
+			<SwapLayers> Trocar camadas </SwapLayers>
+			<On> EM </On>
+			<Off> FORA </Off>
+			<NotAssigned> Não atribuído </NotAssigned>
+			<TextLayer> Camada de texto </TextLayer>
+			<RoomLayer> Camada da sala </RoomLayer>
+			<HandleLayer> Camada ativa </HandleLayer>
+			<FloodfillLayer> Camada SpaceID </FloodfillLayer>
+			</LayerListSpaceModal>
+			<DataMaps>
+				<Map>Data Maps - User Map 1</Map>
+				<Map>Data Maps - User Map 2</Map>
+				<Map>Data Maps - User Map 3</Map>
+				<Map>Data Maps - User Map 4</Map>			
+			</DataMaps>
+			<IconPage_p1_8>
+				<PreviousPage> Página do menu anterior </PreviousPage>
+				<NextPage> Próxima página de ícone </NextPage>
+				<NextMenuPage> Página do próximo menu </NextMenuPage>
+				<LayerList> Lista de camadas </LayerList>
+				<Print> Imprimir </Print>
+				<ZoomIn> Ampliar </ZoomIn>
+				<ZoomOut> Diminuir o zoom </ZoomOut>
+				<ZoomExtents> Extensões de zoom </ZoomExtents>
+				<ZoomWindow> Janela de zoom </ZoomWindow>
+				<Toggle> Alternar preto / branco </Toggle>
+				<Background> Plano de fundo </Background>
+				<FileLoad> Carregamento de arquivo </FileLoad>
+				<Search> Search </Search>
+				<About> About </About>
+				<Settings> Configurações </Settings>
+				<LayerOff> Camada desativada </LayerOff>
+				<SwapLayers> Trocar camadas </SwapLayers>
+				<AllLayersOn> Todas as camadas ativadas </AllLayersOn>
+				<Measurement> Medição </Measurement>
+				<Calibrate> Calibrar medição </Calibrate>
+				<BirdsEye> Alternar janela de olho de pássaro </BirdsEye>
+				<LineThickness> Ajustar a espessura da linha </LineThickness>
+			</IconPage_p1_8>
+			<IconPage_p2_8>
+				<PreviousPage> Página anterior do ícone </PreviousPage>
+				<NextPage> Próxima página de ícone </NextPage>
+				<SaveRedline> Salvar redline </SaveRedline>
+				<LoadRedline> Carregar redline </LoadRedline>
+				<DeleteSingle> Excluir linha única única </DeleteSingle>
+				<DeleteLast> Excluir último redline </DeleteLast>
+				<Color> Cor da linha vermelha </Color>
+				<Thickness> Espessura da linha vermelha </Thickness>
+				<StickyNote> Tornar StickyNote </StickyNote>
+				<ClearAll> Limpar linhas vermelhas visíveis </ClearAll>
+				<Freehand> Redline à mão livre </Freehand>
+				<Cloud> Elipse / nuvem de linha vermelha </Cloud>
+				<FilledPolygon> Redline o polígono preenchido </FilledPolygon>
+				<Polyline> Polilinha de linha vermelha </Polyline>
+				<Polygon> Polígono de linha vermelha </Polygon>
+				<FilledRectangle> Redline Preenchido Retângulo </FilledRectangle>
+				<Rectangle> Retângulo de linha vermelha </Rectangle>
+				<Arrow> Seta de linha vermelha </Arrow>
+				<Text> Texto em linha vermelha </Text>				
+				<PublishAsPDF> Publicar como PDF </PublishAsPDF>
+				<MergeAsDXF> Mesclar redline com DWG de origem </MergeAsDXF>
+				<Free> Grátis </Free>
+				<MergeWithQR> Mesclar o código QR com o DWG de origem </MergeWithQR>
+				<LineThickness> Ajustar a espessura da linha </LineThickness>
+			</IconPage_p2_8>
+			<IconPage_p3_8>
+				<PreviousPage> Página anterior do ícone </PreviousPage>
+				<NextPage> Próxima página de ícone </NextPage>
+				<PublishAsPDF> Publicar como PDF </PublishAsPDF>
+				<Free> Grátis </Free>
+				<LayerOff> Camada desativada </LayerOff>
+				<SwapLayers> Trocar camadas </SwapLayers>
+				<AllLayersOn> Todas as camadas ativadas </AllLayersOn>
+				<ZoomExtents> Extensões de zoom </ZoomExtents>
+				<ZoomWindow> Janela de zoom </ZoomWindow>
+				<LoadLink> Carregar todos os links de imagens </LoadLink>
+				<InsertLink> Inserir links de imagem </InsertLink>
+				<SaveLink> Salvar todos os links de imagens </SaveLink>
+				<QuickCount> Contagem rápida </QuickCount>
+				<CountSum> Contagem rápida de resumo </CountSum>
+				<ClearCount> Limpar contagem rápida </ClearCount>
+			</IconPage_p3_8>
+			<IconPage_p4_8>
+				<PreviousPage> Página anterior do ícone </PreviousPage>
+				<NextPage> Próxima página de ícone </NextPage>
+				<Free> Grátis </Free>
+				<CompareLoad> Carregar segundo desenho para comparação </CompareLoad>
+				<CompareToggle> Alternar desenhos individualmente </CompareToggle>
+				<CompareToggleOverlay> Alternar desenhos sobrepostos </CompareToggleOverlay>
+				<CompareExit> Sair Compare desenhos </CompareExit>
+				<CollaborationJoinSession> Participe da sessão de colaboração </CollaborationJoinSession>
+				<CollaborationTakeControl> assume o controle da sessão de colaboração </CollaborationTakeControl>
+				<CollaborationClearSession> Limpar linhas vermelhas na sessão de colaboração </CollaborationClearSession>
+				<CollaborationLeaveSession> Sair da sessão de colaboração </CollaborationLeaveSession>
+				<LayerOff> Camada desativada </LayerOff>
+				<SwapLayers> Trocar camadas </SwapLayers>
+				<AllLayersOn> Todas as camadas ativadas </AllLayersOn>
+				<ZoomExtents> Extensões de zoom </ZoomExtents>
+				<ZoomWindow> Janela de zoom </ZoomWindow>
+			</IconPage_p4_8>
+			<IconPage_p5_8>
+				<PreviousPage> Página anterior do ícone </PreviousPage>
+				<NextPage> Próxima página de ícone </NextPage>
+				<InsertSpaceImage> Inserir objeto de imagem espacial </InsertSpaceImage>
+				<DragSpaceImage> Arraste o objeto de imagem do espaço </DragSpaceImage>
+				<ResizeSpaceImage> Redimensionar objeto de imagem espacial </ResizeSpaceImage>
+				<LoadSpaceObjects> Carregar objetos de espaço </LoadSpaceObjects>
+				<Publish> Exibir estrutura de objetos espaciais no modo de exibição do usuário </Publish>
+				<DownloadSVG> Faça o download do desenho SVG processado </DownloadSVG>
+				<Load> Carregue a planta baixa e pré-processe os objetos espaciais </Load>
+				<Settings> Configurações </Settings>
+				<SelectObject> Selecionar objeto </SelectObject>
+				<Rect> Objeto de espaço retangular </Rect>
+				<Polygon> Objeto de espaço de polígono </Polygon>
+				<Circle> Objeto de espaço circular </Circle>
+				<CopyCircle> Copiar objeto de espaço em círculo </CopyCircle>
+				<Delete> Excluir objeto de espaço </Delete>
+				<LayerList> Lista de camadas </LayerList>
+				<Mode> Alternar exibição de objeto de espaço e modo de edição </Mode>
+				<Free> Grátis </Free>
+				<SelectPolygon> Gerar objeto de espaço no polígono fechado </SelectPolygon>
+			</IconPage_p5_8>		
+			<IconPage_p6_1>
+			<PinMarker> Adicionar marcador de pinos </PinMarker>
+			</IconPage_p6_1>
+			<PageModal>
+			<ZoomExtents> Extensões de zoom </ZoomExtents>
+			<ZoomWindow> Janela de zoom </ZoomWindow>
+			<SelectPageFromList> Selecionar página de desenho da lista </SelectPageFromList>
+			<EnterPage> Digite o número da página </EnterPage>
+			<RotateBack> Gire 90 graus no sentido anti-horário </RotateBack>
+			<RotateForward> Gire 90 graus no sentido horário </RotateForward>
+			<First> Carregar primeira página no desenho </First>
+			<Previous> Carregar página anterior no desenho </Previous>
+			<Next> Carregar próxima página no desenho </Next>
+			<Last> Carregar última página no desenho </Last>
+			</PageModal>
+			<StickyNote>
+			<MoveNote> Mover nota </MoveNote>
+			<EditNote> Editar nota </EditNote>
+			<DeleteNote> Excluir nota </DeleteNote>
+			<MinimizeNote> Minimize Note </MinimizeNote>
+			<Inativo> Inativo </Inativo>
+			<SaveNote> Salvar nota </SaveNote>
+			<Cancel> Cancelar nota de edição </Cancel>
+			</StickyNote>
+			<ImageObject>
+			<InsertReplace> Inserir ou substituir imagem </InsertReplace>
+			<Delete> Excluir imagem e ícone associado </Delete>
+			<DeleteNote> Excluir nota </DeleteNote>
+			<Minimize> Minimizar objeto de imagem </Minimize>
+			</ImageObject>
+			<DeleteModal>
+			<Header> Excluir </Header>
+			<Text1> Esta ação removerá </Text1>
+			<Text2> e desative o acesso à planta baixa para todos os usuários. </Text2>
+			</DeleteModal>
+			<UnlinkModal>
+			<Header> Desvincular </Header>
+			<Text1> Esta ação removerá todos os metadados de </Text1>
+			<Text2> Os objetos de localização permanecerão inalterados. </Text2>
+			</UnlinkModal>
+			<ClearModal>
+			<Header> Limpar </Header>
+			<Text1> Esta ação removerá todos os metadados e objetos de localização de </Text1>
+			</ClearModal>
+			<FileLoadSpaceModal>
+				<Header> CADViewer: Carregador de arquivos para gerenciamento de espaço </Header>
+				<DrawingFilename> DRAWING / FILENAME </DrawingFilename>
+				<EditFloorplanInfo> Editar informações da planta baixa </EditFloorplanInfo>
+				<BuildRoomTextHyperlinks> Crie hiperlinks da camada ROOM / TEXT ao carregar </BuildRoomTextHyperlinks>
+			</FileLoadSpaceModal>	
+			<LoadingModal>
+				<Loading> Carregando </Loading>
+			</LoadingModal>
+			<HeaderObjectLayers>
+				<ObjectLayer>Spaces - User Layer 1</ObjectLayer>
+				<ObjectLayer>Assets - User Layer 1</ObjectLayer>
+			</HeaderObjectLayers>
+			<WaitModal>
+				<Printing> Imprimindo </Printing>
+				<Thumbnails> Salvando </Thumbnails>
+				<BatchPDF> Imprimir em PDF </BatchPDF>
+				<MergeDWG> Imprimindo </MergeDWG>
+			</WaitModal>			
+	</languages>
+	<languages>
+			<languageCode>KO-KR</languageCode>
+			<thisLanguage>Korean</thisLanguage>
+			<PrintModal>
+				<Header> CADViewer-인쇄 설정 </Header>
+				<Paper> 용지 크기 : </Paper>
+				<Landscape> 풍경 </Landscape>
+				<Portrait> 세로 </Portrait>
+				<Orientation> 방향 : </Orientation>
+				<Resolution> 해결 : </Resolution>
+				<ResolutionText> (최소 75dpi, 표준 300dpi) </ResolutionText>
+				<Print> 인쇄 </Print>
+				<Grayscale> 그레이 스케일 </Grayscale>
+				<PrintPDF> PDF로 인쇄 </PrintPDF>
+				<PrintToScale> 크기로 인쇄 </PrintToScale>
+				<TextBox1Header> 그림 제목 (최대 4 x 줄) </TextBox1Header>
+				<TextBox2Header> 그림 없음 </TextBox2Header>
+				<EnterScale> 배율 : </EnterScale>
+				<CustomCheckbox> 제목 블록 </CustomCheckbox>
+				<JsonVariable> 변수 ($$$) : </JsonVariable>
+				<PaperSizeTotal>19</PaperSizeTotal>
+				<PaperSizes>
+					<PaperSize>A4</PaperSize>
+					<PaperSize>A3</PaperSize>
+					<PaperSize>A2</PaperSize>
+					<PaperSize>A1</PaperSize>
+					<PaperSize>A0</PaperSize>
+					<PaperSize>A5</PaperSize>
+					<PaperSize>letter</PaperSize>
+					<PaperSize>legal</PaperSize>
+					<PaperSize>tabloid</PaperSize>
+					<PaperSize>USA</PaperSize>
+					<PaperSize>USB</PaperSize>
+					<PaperSize>USC</PaperSize>
+					<PaperSize>USD</PaperSize>
+					<PaperSize>USE</PaperSize>
+					<PaperSize>ARCHA</PaperSize>
+					<PaperSize>ARCHB</PaperSize>
+					<PaperSize>ARCHC</PaperSize>
+					<PaperSize>ARCHD</PaperSize>
+					<PaperSize>ARCHE</PaperSize>
+					<PaperSize>ALCOAA</PaperSize>
+				</PaperSizes>
+				<MenuItems>
+					<MenuItem>A4 (210 x 297 mm)</MenuItem>
+					<MenuItem>A3 (297 x 420 mm)</MenuItem>
+					<MenuItem>A2 (420 x 594 mm)</MenuItem>
+					<MenuItem>A1 (594 x 841 mm)</MenuItem>
+					<MenuItem>A0 (841 x 1189 mm)</MenuItem>
+					<MenuItem>A5 (148 x 210 mm)</MenuItem>
+					<MenuItem>Letter (8.5 x 11 in)</MenuItem>
+					<MenuItem>Legal (8.5 x 14 in)</MenuItem>
+					<MenuItem>Tabloid (11 x 17 in)</MenuItem>
+					<MenuItem>A (8.5 x 11 in)</MenuItem>
+					<MenuItem>B (11 x 17 in)</MenuItem>
+					<MenuItem>C (17 x 22 in)</MenuItem>
+					<MenuItem>D (22 x 34 in)</MenuItem>
+					<MenuItem>E (34 x 44 in)</MenuItem>
+					<MenuItem>A+ (9 x 12 in)</MenuItem>
+					<MenuItem>B+ (12 x 18 in)</MenuItem>
+					<MenuItem>C+ (18 x 24 in)</MenuItem>
+					<MenuItem>D+ (24 x 36 in)</MenuItem>
+					<MenuItem>E+ (36 x 48 in)</MenuItem>
+					<MenuItem>ALCOA A (30 x 36 in)</MenuItem>
+				</MenuItems>
+			</PrintModal>
+			<SearchTextModal>
+			<Header> 텍스트 검색 </Header>
+			<SearchText> 검색 텍스트 : </SearchText>
+			<Zoom> 줌 레벨 : </Zoom>
+			<Search> 검색 </Search>
+			</SearchTextModal>
+			<SearchCustomModal>
+			<Header> 텍스트 검색 </Header>
+			<SearchText> 검색 텍스트 : </SearchText>
+			<Search> 검색 </Search>
+			</SearchCustomModal>
+			<InfoMessageModal>
+				<Header> CADViewer 정보 </Header>
+				<Header2> CADViewer 정보 </Header2>
+				<Version> CADViewer 버전 : </Version>
+				<AXVersion> AutoXchange 버전 : </AXVersion>
+				<ComingSoon> 출시 예정! </ComingSoon>
+				<NoUnits> 도면에 정의 된 단위가 없습니다. 먼저 측정 교정 명령을 사용하십시오. </NoUnits>
+				<UnitLess> 원래 도면은 단위가 없습니다. 먼저 측정 보정 명령을 사용하십시오. </UnitLess>
+				<QuickCountSingle> 빠른 카운트 수 : </QuickCountSingle>
+				<QuickCountMultiple> 빠른 카운트 수 : </QuickCountMultiple>
+				<RedlinesLocked> 사용자의 수정 지시가 잠겨 있습니다 : </RedlinesLocked>
+				<LicensePath> 경로에서 라이센스 키를 찾을 수 없습니다 : </LicensePath>
+				<LicenseNotFound> 라이센스 키를 찾을 수 없음 </LicenseNotFound>
+				<SelectTwoPoints> 먼저 마우스로 도면에서 두 점을 선택한 다음 단위와 거리를 입력하고 마지막으로 확인을 누르십시오. </SelectTwoPoints>
+				<ReferenceDistance> 기준 거리를 입력하세요. </ReferenceDistance>
+				<RedlinesSaved> 저장된 수정 지시 </RedlinesSaved>
+				<SinglePage> 단일 페이지 그리기-페이지 변경 없음 </SinglePage>
+				<FirstPage> 현재 페이지는 다중 페이지 도면의 첫 번째 페이지이며 페이지 변경 없음 </FirstPage>
+				<LastPage> 현재 페이지는 다중 페이지 그림의 마지막 페이지입니다. 페이지 변경 없음 </LastPage>
+				<OutOfRange> 입력 한 페이지 번호가 페이지 범위를 벗어났습니다. 페이지 변경 없음 </OutOfRange>
+				<FileLoadThroughApp> 참고 : 파일로드는 캡슐화 애플리케이션을 통해서만 활성화됩니다. </FileLoadThroughApp>
+				<ErrorConnectingToHost> 호스트에 연결할 때 오류가 발생했습니다. 설정 창으로 이동하여 네트워크 설정을 확인하십시오! </ErrorConnectingToHost>
+				<ConnectToHostFirst> 설정 창으로 이동하여 네트워크 설정을 확인하고 변경 사항 저장을 클릭하여 네트워크 호스트에 연결하여 위치 매핑시 사용되는 데이터 구조를 검색하십시오. </ConnectToHostFirst>
+				<NoObjectSelected> 공간 개체를 선택하십시오. </NoObjectSelected>
+				<PaperSizePDFPrintOnly> 큰 용지 크기의 경우 PDF로 인쇄를 선택하십시오. 대형 용지 크기는 A1 및 A0, US Arch D 이상입니다. </PaperSizePDFPrintOnly>
+				<ServerSideFormatForPDFPrint> PDF 인쇄에는 DWG, DWF, DXF 또는 DGN 또는 PCF 형식의 원본 파일이 필요합니다. 이러한 형식으로 파일을 업로드하거나 직접 인쇄하려면 더 작은 용지 크기를 선택하십시오. 직접 인쇄 용지 크기는 A4-A2 또는 ANSI C를 통한 US Letter입니다. </ServerSideFormatForPDFPrint>
+				<PrintDisabled> 참고 : 인쇄 비활성화 </PrintDisabled>
+				<NoQRCode> 서버에서받은 QR 코드가 없습니다! </NoQRCode>
+				<DrawingName> 그림 : </DrawingName>
+			</InfoMessageModal>
+			<FileLoadModal>
+			<Header> CADViewer-파일 관리자 </Header>
+			<DrawingFilename> 도면 / 파일 이름 </DrawingFilename>
+			<EditFloorplanInfo> 평면도 정보 편집 </EditFloorplanInfo>
+			</FileLoadModal>
+			<SaveRedlineModal>
+			<Header> CADViewer-수정 지시 저장 </Header>
+			<RedlineFilename> 레드 라인 / 파일 이름 </RedlineFilename>
+			<EditRedlineInfo> 레드 라인 정보 편집 </EditRedlineInfo>
+			<Upload> 업로드 </Upload>
+			</SaveRedlineModal>
+			<OpenRedlineModal>
+			<Header> CADViewer-오픈 레드 라인 </Header>
+			<RedlineFilename> 레드 라인 / 파일 이름 </RedlineFilename>
+			<EditRedlineInfo> 레드 라인 정보 편집 </EditRedlineInfo>
+			</OpenRedlineModal>
+			<OpenSpaceObjectModal>
+			<Header> CADViewer-열린 공간 개체 </Header>
+			<SpaceObjectFilename> 레드 라인 / 파일 이름 </SpaceObjectFilename>
+			<EditSpaceObjectInfo> 레드 라인 정보 편집 </EditSpaceObjectInfo>
+			</OpenSpaceObjectModal>
+			<RedlineThicknessModal>
+			<Header> 수정 지시 두께 선택 </Header>
+			<Thickness> 두께 : </Thickness>
+			<OK> 확인 </OK>
+			</RedlineThicknessModal>
+			<DocumentPageChangeModal>
+			<Header> 문서 페이지 선택 </Header>
+			<Page> 페이지 : </Page>
+			<OK> 확인 </OK>
+			</DocumentPageChangeModal>
+			<CollaborationStartModal>
+			<Header> 협업 세션 시작 </Header>
+			<Session> 세션 이름 : </Session>
+			<OK> 확인 </OK>
+			</CollaborationStartModal>
+			<PublishPDFModal>
+			<Header> 레드 라인 화면 내용을 PDF로 게시 </Header>
+			<SelectMode> 모드 선택 </SelectMode>
+			<Mode1> 인쇄 / 다운로드 </Mode1>
+			<Mode2> 이메일로 보내기 </Mode2>
+			<Mode3> 서버에 업로드 </Mode3>
+			<EntireDoc> 전체 문서 게시 : </EntireDoc>
+			<OK> 확인 </OK>
+			<Recipient> 이메일 : </Recipient>
+			<Title> 제목 : </Title>
+			<Message> 메시지 : </Message>
+			</PublishPDFModal>
+			<MergeDXFModal>
+			<Header> 소스 DWG와 수정 지시 병합 </Header>
+			<SelectMode> 모드 선택 </SelectMode>
+			<Mode1> 다운로드 </Mode1>
+			<Mode2> 이메일로 보내기 </Mode2>
+			<Mode3> 서버에 업로드 </Mode3>
+			<EntireDoc> 전체 문서 게시 : </EntireDoc>
+			<OK> 확인 </OK>
+			<Recipient> 이메일 : </Recipient>
+			<Title> 제목 : </Title>
+			<Message> 메시지 : </Message>
+			</MergeDXFModal>
+			<RedlineColorModal>
+			<Header> 수정 지시 색상 선택 </Header>
+			<PickColor> 색상 선택 : </PickColor>
+			<SelectColor> 선택 : </SelectColor>
+			<Blue> 파란색 </Blue>
+			<Red> 적색 </Red>
+			<Yellow> 노란색 </Yellow>
+			<Orange> 오렌지 </Orange>
+			<Green> 녹색 </Green>
+			<Purple> 보라색 </Purple>
+			<Brown> 브라운 </Brown>
+			<Gray> 회색 </Gray>
+			<OK> 확인 </OK>
+			</RedlineColorModal>
+			<RedlineEllipseModal>
+			<Header> 수정 지시 모양 선택 </Header>
+			<SelectType> 선택 : </SelectType>
+			<Ellipse> 타원 : </Ellipse>
+			<Cloud> 클라우드 : </Cloud>
+			<OK> 확인 </OK>
+			</RedlineEllipseModal>
+			<CreationModeModal>
+			<Header> 공간 ID 소스 선택 </Header>
+			<SelectType> 선택 : </SelectType>
+			<DataSource> API를 통해 데이터 소스에서 </DataSource>
+			<Manually> 클라우드 </Manually>
+			<OK> 확인 </OK>
+			</CreationModeModal>
+			<BackgroundColorModal>
+			<Header> 배경색 선택 </Header>
+			<PickColor> 색상 선택 : </PickColor>
+			<SelectColor> 선택 : </SelectColor>
+			<White> 흰색 </White>
+			<Black> 검정 </Black>
+			<Azure> Azure </Azure>
+			<Pink> 핑크 </Pink>
+			<Snow> 눈 </Snow>
+			<Silver> 실버 </Silver>
+			<Brown> 브라운 </Brown>
+			<Gray> 회색 </Gray>
+			<OK> 확인 </OK>
+			</BackgroundColorModal>
+			<RedlineTextModal>
+			<Header> 레드 라인 텍스트 </Header>
+			<FontSize> 글꼴 크기 : </FontSize>
+			<OK> 확인 </OK>
+			<Text> 텍스트를 입력하고 확인을 클릭 한 다음 도면에 삽입. </Text>
+			</RedlineTextModal>
+			<LineThicknessModal>
+			<Header> 선 두께 조정 </Header>
+			<LineThickness> 선 두께 조정 : </LineThickness>
+			<Text> 무게에 대해 이야기하십시오. </Text>
+			</LineThicknessModal>
+			<CalibrateModal>
+			<Header> 측정 보정 </Header>
+			<Unit> 단위 : </Unit>
+			<Distance> 거리 : </Distance>
+			<OK> 확인 </OK>
+			<Text> 먼저 마우스로 도면의 두 점을 선택한 다음 단위와 거리를 입력하고 확인을 누릅니다. </Text>
+			</CalibrateModal>
+			<SettingsModal>
+			<Header> CADViewer 일반 설정 </Header>
+			<OnlineLanguage> 온라인 언어 : </OnlineLanguage>
+			<Distance> 거리 : </Distance>
+			<ConversionFixed> 변환 매개 변수 (고정) : </ConversionFixed>
+			<ConversionUser> 변환 매개 변수 (사용자 제어) : </ConversionUser>
+			<Param> 매개 변수 : </Param>
+			<Value> (값) : </Value>
+			<TotalParameters> 0 </TotalParameters>
+			<ParamNames>
+			<ParamName> </ParamName>
+			</ParamNames>
+			<ParamValues>
+			<ParamValue> </ParamValue>
+			</ParamValues>
+			<OK> 설정 업데이트 </OK>
+				<Text>자세한 매개 변수 설정은 &lt;a href=&quot;https://tailormade.com/ax2020techdocs/parameter_interface/&quot;&gt;AX2020 techdocs&lt;/a&gt; 를 참조하십시오!</Text>
+			</SettingsModal>
+			<MeasurementModal>
+			<Header> CADViewer 측정 </Header>
+			<Distance> 거리 : </Distance>
+			<MeasureAgain> 다시 측정 </MeasureAgain>
+			<ClosePolygon> 영역 닫기 다각형 </ClosePolygon>
+			<Text> 도면에서 거리에 대한 두 점을 선택합니다. </Text>
+			<TextArea> 점 시퀀스를 선택합니다. 영역에 대한 더블 클릭, Esc 또는 '영역 닫기'버튼. </TextArea>
+			<Area> 면적 : </Area>
+			<MenuItems>
+			<MenuItem> 거리 </MenuItem>
+			<MenuItem> 영역 </MenuItem>
+			<MenuItem> 점 (전역 좌표) </MenuItem>
+			<MenuItem> 점 (SVG 좌표) </MenuItem>
+			<MenuItem> 다중 포인트 (글로벌) </MenuItem>
+			<MenuItem> 다중 점 (SVG) </MenuItem>
+			<MenuItem> SVG 경로 </MenuItem>
+			</MenuItems>
+			<Point> 포인트 : </Point>
+			<Points> 포인트 : </Points>
+			<PointText> 단일 지점을 선택하고 클립 보드에서 캡처합니다. </PointText>
+			<PointsText> 여러 지점을 선택하고 클립 보드에서 캡처합니다. </PointsText>
+			</MeasurementModal>
+			<BirdsEyeModal>
+			<Header> 새 눈 창 </Header>
+			</BirdsEyeModal>
+			<ImageObjectModal>
+			<Header> 이미지 개체 번호 </Header>
+			<LoadImage> 새 이미지로드 </LoadImage>
+			<RemoveImageNote> 이미지 노트 제거 </RemoveImageNote>
+			<MinimizeImageNote> 이미지 노트 최소화 </MinimizeImageNote>
+			</ImageObjectModal>
+			<LayerListModal>
+			<Header> CADViewer-레이어 목록 </Header>
+			<SelectDrawings> 표시 할 외부 참조 / 하위 도면 선택 : </SelectDrawings>
+			<XrefLayerName> 원래 외부 참조 도면층 이름 사용 </XrefLayerName>
+			<Search> 검색 </Search>
+			<Sort> 레이어 별 정렬 </Sort>
+			<AllLayerOn> 모든 레이어 켜기 </AllLayerOn>
+			<AllLayerOff> 모든 레이어 끄기 </AllLayerOff>
+			<SwapLayers> 레이어 교체 </SwapLayers>
+			<On> 켜기 </On>
+			<Off> 끄기 </Off>
+			<BaseAndXref> 기본 도면 </BaseAndXref>
+			<Xref> 외부 참조 : </Xref>
+			</LayerListModal>
+			<PageChangeListModal>
+			<Header> 도면 페이지 변경 </Header>
+			<Search> 검색 </Search>
+			<Sort> 이름으로 정렬 </Sort>
+			<On> 켜기 </On>
+			<Off> 끄기 </Off>
+			</PageChangeListModal>
+			<LayerListSpaceModal>
+			<Header> 레이어 목록-공간 개체 </Header>
+			<Search> 검색 </Search>
+			<Sort> 레이어 별 정렬 </Sort>
+			<AllLayerOn> 모든 레이어 켜기 </AllLayerOn>
+			<AllLayerOff> 모든 레이어 끄기 </AllLayerOff>
+			<SwapLayers> 레이어 교체 </SwapLayers>
+			<On> 켜기 </On>
+			<Off> 끄기 </Off>
+			<NotAssigned> 할당되지 않음 </NotAssigned>
+			<TextLayer> 텍스트 레이어 </TextLayer>
+			<RoomLayer> 룸 레이어 </RoomLayer>
+			<HandleLayer> 활성 레이어 </HandleLayer>
+			<FloodfillLayer> SpaceID 레이어 </FloodfillLayer>
+			</LayerListSpaceModal>
+			<DataMaps>
+				<Map>Data Maps - User Map 1</Map>
+				<Map>Data Maps - User Map 2</Map>
+				<Map>Data Maps - User Map 3</Map>
+				<Map>Data Maps - User Map 4</Map>			
+			</DataMaps>
+				<IconPage_p1_8>
+				<PreviousPage> 이전 메뉴 페이지 </PreviousPage>
+				<NextPage> 다음 아이콘 페이지 </NextPage>
+				<NextMenuPage> 다음 메뉴 페이지 </NextMenuPage>
+				<LayerList> 레이어 목록 </LayerList>
+				<Print> 인쇄 </Print>
+				<ZoomIn> 확대 </ZoomIn>
+				<ZoomOut> 축소 </ZoomOut>
+				<ZoomExtents> 범위 확대 </ZoomExtents>
+				<ZoomWindow> 창 확대 </ZoomWindow>
+				<Toggle> 흑백 전환 </Toggle>
+				<Background> 배경 </Background>
+				<FileLoad> 파일로드 </FileLoad>
+				<Search> 검색 </Search>
+				<About> 정보 </About>
+				<Settings> 설정 </Settings>
+				<LayerOff> 레이어 끄기 </LayerOff>
+				<SwapLayers> 레이어 교체 </SwapLayers>
+				<AllLayersOn> 모든 레이어 켜기 </AllLayersOn>
+				<Measurement> 측정 </Measurement>
+				<Calibrate> 측정 보정 </Calibrate>
+				<BirdsEye> 새 눈 창 전환 </BirdsEye>
+				<LineThickness> 선 두께 조정 </LineThickness>
+				</IconPage_p1_8>
+				<IconPage_p2_8>
+				<PreviousPage> 이전 아이콘 페이지 </PreviousPage>
+				<NextPage> 다음 아이콘 페이지 </NextPage>
+				<SaveRedline> 레드 라인 저장 </SaveRedline>
+				<LoadRedline> 레드 라인로드 </LoadRedline>
+				<DeleteSingle> 단일 수정 지시 삭제 </DeleteSingle>
+				<DeleteLast> 마지막 수정 지시 삭제 </DeleteLast>
+				<Color> 레드 라인 색상 </Color>
+				<Thickness> 레드 라인 두께 </Thickness>
+				<StickyNote> 스티키 노트 만들기 </StickyNote>
+				<ClearAll> 표시된 수정 지시 지우기 </ClearAll>
+				<Freehand> 자유 수정 지시 </Freehand>
+				<Cloud> 레드 라인 타원 / 구름 </Cloud>
+				<FilledPolygon> 레드 라인으로 채워진 다각형 </FilledPolygon>
+				<Polyline> 수정 지시 폴리 라인 </Polyline>
+				<Polygon> 레드 라인 폴리곤 </Polygon>
+				<FilledRectangle> 레드 라인으로 채워진 직사각형 </FilledRectangle>
+				<Rectangle> 레드 라인 직사각형 </Rectangle>
+				<Arrow> 레드 라인 화살표 </Arrow>
+				<Text> 레드 라인 텍스트 </Text>
+				<PublishAsPDF> PDF로 게시 </PublishAsPDF>
+				<MergeAsDXF> 소스 DWG와 수정 지시 병합 </MergeAsDXF>
+				<Free> 무료 </Free>
+				<MergeWithQR> QR 코드를 소스 DWG와 병합 </MergeWithQR>
+				<LineThickness> 선 두께 조정 </LineThickness>
+				</IconPage_p2_8>
+				<IconPage_p3_8>
+				<PreviousPage> 이전 아이콘 페이지 </PreviousPage>
+				<NextPage> 다음 아이콘 페이지 </NextPage>
+				<PublishAsPDF> PDF로 게시 </PublishAsPDF>
+				<Free> 무료 </Free>
+				<LayerOff> 레이어 끄기 </LayerOff>
+				<SwapLayers> 레이어 교체 </SwapLayers>
+				<AllLayersOn> 모든 레이어 켜기 </AllLayersOn>
+				<ZoomExtents> 범위 확대 </ZoomExtents>
+				<ZoomWindow> 창 확대 </ZoomWindow>
+				<LoadLink> 모든 이미지 링크로드 </LoadLink>
+				<InsertLink> 이미지 링크 삽입 </InsertLink>
+				<SaveLink> 모든 이미지 링크 저장 </SaveLink>
+				<QuickCount> 빠른 카운트 </QuickCount>
+				<CountSum> 요약 빠른 계산 </CountSum>
+				<ClearCount> 빠른 카운트 지우기 </ClearCount>
+				</IconPage_p3_8>
+				<IconPage_p4_8>
+				<PreviousPage> 이전 아이콘 페이지 </PreviousPage>
+				<NextPage> 다음 아이콘 페이지 </NextPage>
+				<Free> 무료 </Free>
+				<CompareLoad> 비교할 두 번째 도면로드 </CompareLoad>
+				<CompareToggle> 개별적으로 도면 전환 </CompareToggle>
+				<CompareToggleOverlay> 겹친 그림 전환 </CompareToggleOverlay>
+				<CompareExit> 도면 비교 종료 </CompareExit>
+				<CollaborationJoinSession> 협업 세션 참여 </CollaborationJoinSession>
+				<CollaborationTakeControl> 협업 세션 제어 </CollaborationTakeControl>
+				<CollaborationClearSession> 협업 세션에서 수정 지시 지우기 </CollaborationClearSession>
+				<CollaborationLeaveSession> 협업 세션 나가기 </CollaborationLeaveSession>
+				<LayerOff> 레이어 끄기 </LayerOff>
+				<SwapLayers> 레이어 교체 </SwapLayers>
+				<AllLayersOn> 모든 레이어 켜기 </AllLayersOn>
+				<ZoomExtents> 범위 확대 </ZoomExtents>
+				<ZoomWindow> 창 확대 </ZoomWindow>
+				</IconPage_p4_8>
+				<IconPage_p5_8>
+				<PreviousPage> 이전 아이콘 페이지 </PreviousPage>
+				<NextPage> 다음 아이콘 페이지 </NextPage>
+				<InsertSpaceImage> 공간 이미지 개체 삽입 </InsertSpaceImage>
+				<DragSpaceImage> 드래그 공간 이미지 개체 </DragSpaceImage>
+				<ResizeSpaceImage> 공간 이미지 개체 크기 조정 </ResizeSpaceImage>
+				<LoadSpaceObjects> 공간 개체로드 </LoadSpaceObjects>
+				<Publish> 사용자 표시 모드에서 공간 개체 구조보기 </Publish>
+				<DownloadSVG> 처리 된 SVG 그림 다운로드 </DownloadSVG>
+				<Load> 플로어 플랜로드 및 공간 개체 전처리 </Load>
+				<Settings> 설정 </Settings>
+				<SelectObject> 개체 선택 </SelectObject>
+				<Rect> 직사각형 공간 개체 </Rect>
+				<Polygon> 다각형 공간 개체 </Polygon>
+				<Circle> 원형 공간 개체 </Circle>
+				<CopyCircle> 원 공간 개체 복사 </CopyCircle>
+				<Delete> 공간 개체 삭제 </Delete>
+				<LayerList> 레이어 목록 </LayerList>
+				<Mode> 공간 개체 표시 및 편집 모드 전환 </Mode>
+				<Free> 무료 </Free>
+				<SelectPolygon> 닫힌 다각형에 공간 개체 생성 </SelectPolygon>
+				</IconPage_p5_8>
+				<IconPage_p6_1>
+				<PinMarker> 핀 마커 추가 </PinMarker>
+				</IconPage_p6_1>
+				<PageModal>
+				<ZoomExtents> 범위 확대 </ZoomExtents>
+				<ZoomWindow> 창 확대 </ZoomWindow>
+				<SelectPageFromList> 목록에서 그리기 페이지 선택 </SelectPageFromList>
+				<EnterPage> 페이지 번호 입력 </EnterPage>
+				<RotateBack> 시계 반대 방향으로 90도 회전 </RotateBack>
+				<RotateForward> 시계 방향으로 90도 회전 </RotateForward>
+				<First> 도면의 첫 페이지로드 </First>
+				<Previous> 도면에서 이전 페이지로드 </Previous>
+				<Next> 도면에서 다음 페이지로드 </Next>
+				<Last> 도면의 마지막 페이지로드 </Last>
+				</PageModal>
+				<StickyNote>
+				<MoveNote> 노트 이동 </MoveNote>
+				<EditNote> 메모 편집 </EditNote>
+				<DeleteNote> 메모 삭제 </DeleteNote>
+				<MinimizeNote> 노트 최소화 </MinimizeNote>
+				<Inactive> 비활성 </Inactive>
+				<SaveNote> 메모 저장 </SaveNote>
+				<Cancel> 노트 편집 취소 </Cancel>
+				</StickyNote>
+				<ImageObject>
+				<InsertReplace> 이미지 삽입 또는 바꾸기 </InsertReplace>
+				<Delete> 이미지 및 관련 아이콘 삭제 </Delete>
+				<DeleteNote> 메모 삭제 </DeleteNote>
+				<Minimize> 이미지 개체 최소화 </Minimize>
+				</ImageObject>
+				<DeleteModal>
+				<Header> 삭제 </Header>
+				<Text1>이 작업은 제거됩니다 </Text1>
+				<Text2> 모든 사용자의 평면도에 대한 액세스를 비활성화합니다. </Text2>
+				</DeleteModal>
+				<UnlinkModal>
+				<Header> 연결 해제 </Header>
+				<Text1>이 작업은 모든 메타 데이터를 제거합니다. </Text1>
+				<Text2> 위치 개체는 변경되지 않습니다. </Text2>
+				</UnlinkModal>
+				<ClearModal>
+				<Header> 지우기 </Header>
+				<Text1>이 작업은 모든 메타 데이터 및 위치 개체를 제거합니다. </Text1>
+				</ClearModal>
+				<FileLoadSpaceModal>
+				<Header> CADViewer : 공간 관리 파일 로더 </Header>
+				<DrawingFilename> DRAWING / FILENAME </DrawingFilename>
+				<EditFloorplanInfo> 평면 정보 편집 </EditFloorplanInfo>
+				<BuildRoomTextHyperlinks>로드시 ROOM / TEXT 레이어 하이퍼 링크 구축 </BuildRoomTextHyperlinks>
+				</FileLoadSpaceModal>
+				<LoadingModal>
+				<Loading>로드 중 </Loading>
+				</LoadingModal>
+				<HeaderObjectLayers>
+				<ObjectLayer> 공간-사용자 레이어 1 </ObjectLayer>
+				<ObjectLayer> 자산-사용자 계층 1 </ObjectLayer>
+				</HeaderObjectLayers>
+				<WaitModal>
+				<Printing> 인쇄 </Printing>
+				<Thumbnails> 저장 </Thumbnails>
+				<BatchPDF> PDF로 인쇄 </BatchPDF>
+				<MergeDWG> 인쇄 </MergeDWG>
+				</WaitModal>
+	</languages>
+	<languages>
+			<languageCode>ID</languageCode>
+			<thisLanguage>Indonesian</thisLanguage>
+			<PrintModal>
+				<Header> CADViewer - Pengaturan Cetak </Header>
+				<Paper> Ukuran: </Paper>
+				<Landscape> Pemandangan </Landscape>
+				<Portrait> Potret </Portrait>
+				<Orientation> Orientasin: </Orientation>
+				<Resolution> Resolusi: </Resolution>
+				<ResolutionText> (min 75dpi, standar 300dpi) </ResolutionText>
+				<Print> Cetak </Print>
+				<Grayscale> Grayscale </Grayscale>
+				<PrintPDF> Cetak PDF </PrintPDF>
+				<PrintToScale> Cetak ke Skala </PrintToScale>
+				<TextBox1Header> Judul Gambar (maks 4 x baris) </TextBox1Header>
+				<TextBox2Header> Menggambar No </TextBox2Header>
+				<EnterScale> Skala: </EnterScale>
+				<CustomCheckbox> Blok Judul </CustomCheckbox>
+				<JsonVariable> Variabel ($$$): </JsonVariable>
+				<PaperSizeTotal>19</PaperSizeTotal>
+				<PaperSizes>
+					<PaperSize>A4</PaperSize>
+					<PaperSize>A3</PaperSize>
+					<PaperSize>A2</PaperSize>
+					<PaperSize>A1</PaperSize>
+					<PaperSize>A0</PaperSize>
+					<PaperSize>A5</PaperSize>
+					<PaperSize>letter</PaperSize>
+					<PaperSize>legal</PaperSize>
+					<PaperSize>tabloid</PaperSize>
+					<PaperSize>USA</PaperSize>
+					<PaperSize>USB</PaperSize>
+					<PaperSize>USC</PaperSize>
+					<PaperSize>USD</PaperSize>
+					<PaperSize>USE</PaperSize>
+					<PaperSize>ARCHA</PaperSize>
+					<PaperSize>ARCHB</PaperSize>
+					<PaperSize>ARCHC</PaperSize>
+					<PaperSize>ARCHD</PaperSize>
+					<PaperSize>ARCHE</PaperSize>
+					<PaperSize>ALCOAA</PaperSize>
+				</PaperSizes>
+				<MenuItems>
+					<MenuItem>A4 (210 x 297 mm)</MenuItem>
+					<MenuItem>A3 (297 x 420 mm)</MenuItem>
+					<MenuItem>A2 (420 x 594 mm)</MenuItem>
+					<MenuItem>A1 (594 x 841 mm)</MenuItem>
+					<MenuItem>A0 (841 x 1189 mm)</MenuItem>
+					<MenuItem>A5 (148 x 210 mm)</MenuItem>
+					<MenuItem>Letter (8.5 x 11 in)</MenuItem>
+					<MenuItem>Legal (8.5 x 14 in)</MenuItem>
+					<MenuItem>Tabloid (11 x 17 in)</MenuItem>
+					<MenuItem>A (8.5 x 11 in)</MenuItem>
+					<MenuItem>B (11 x 17 in)</MenuItem>
+					<MenuItem>C (17 x 22 in)</MenuItem>
+					<MenuItem>D (22 x 34 in)</MenuItem>
+					<MenuItem>E (34 x 44 in)</MenuItem>
+					<MenuItem>A+ (9 x 12 in)</MenuItem>
+					<MenuItem>B+ (12 x 18 in)</MenuItem>
+					<MenuItem>C+ (18 x 24 in)</MenuItem>
+					<MenuItem>D+ (24 x 36 in)</MenuItem>
+					<MenuItem>E+ (36 x 48 in)</MenuItem>
+					<MenuItem>ALCOA A (30 x 36 in)</MenuItem>
+				</MenuItems>
+			</PrintModal>
+			<SearchTextModal>
+			<Header> Teks Pencarian </Header>
+			<SearchText> Teks Pencarian: </SearchText>
+			<Zoom> Tingkat Zoom: </Zoom>
+			<Search> Cari </Search>
+			</SearchTextModal>
+			<SearchCustomModal>
+			<Header> Teks Pencarian </Header>
+			<SearchText> Teks Pencarian: </SearchText>
+			<Search> Cari </Search>
+			</SearchCustomModal>
+			<InfoMessageModal>
+			<Header> Informasi CADViewer </Header>
+			<Header2> Informasi CADViewer </Header2>
+			<Version> Versi CADViewer: </Version>
+			<AXVersion> Versi AutoXchange: </AXVersion>
+			<ComingSoon> Segera Hadir! </ComingSoon>
+			<NoUnits> Tidak ada unit yang ditentukan dalam gambar, harap gunakan perintah Kalibrasi Pengukuran terlebih dahulu. </NoUnits>
+			<UnitLess> Gambar asal tidak memiliki unit, harap gunakan perintah Kalibrasi Pengukuran terlebih dahulu </UnitLess>
+			<QuickCountSingle> Jumlah Quick Count adalah: </QuickCountSingle>
+			<QuickCountMultiple> Jumlah Quick Count adalah: </QuickCountMultiple>
+			<RedlinesLocked> Redlines dikunci untuk Pengguna: </RedlinesLocked>
+			<LicensePath> Tidak dapat menemukan kunci lisensi di jalur: </LicensePath>
+			<LicenseNotFound> Kunci lisensi tidak ditemukan </LicenseNotFound>
+			<SelectTwoPoints> Pilih dua titik pada gambar dengan mouse terlebih dahulu, lalu masukkan satuan dan jarak, terakhir tekan OK. </SelectTwoPoints>
+			<ReferenceDistance> Harap masukkan jarak referensi. </ReferenceDistance>
+			<RedlinesSaved> Redlines Tersimpan </RedlinesSaved>
+			<SinglePage> Gambar satu halaman - tidak ada perubahan halaman </SinglePage>
+			<FirstPage> Halaman saat ini adalah halaman pertama dalam gambar multi halaman - tidak ada perubahan halaman </FirstPage>
+			<LastPage> Halaman saat ini adalah halaman terakhir dalam gambar multi halaman - tidak ada perubahan halaman </LastPage>
+			<OutOfRange> Nomor halaman yang dimasukkan berada di luar kisaran halaman - tidak ada perubahan halaman </OutOfRange>
+			<FileLoadThroughApp> CATATAN: Pemuatan File hanya diaktifkan melalui aplikasi enkapsulasi </FileLoadThroughApp>
+			<ErrorConnectingToHost> Kesalahan saat menghubungkan ke Host. Buka Panel Pengaturan dan periksa Pengaturan Jaringan Anda! </ErrorConnectingToHost>
+			<ConnectToHostFirst> Buka Panel Pengaturan, periksa Pengaturan Jaringan Anda dan klik Simpan Perubahan untuk menyambung ke Host Jaringan Anda untuk mengambil struktur data yang digunakan saat memetakan lokasi. </ConnectToHostFirst>
+			<NoObjectSelected> Pilih Objek Luar Angkasa. </NoObjectSelected>
+			<PaperSizePDFPrintOnly> Silakan pilih Cetak sebagai PDF untuk ukuran kertas besar. Ukuran kertas yang besar adalah A1 dan A0, serta US Arch D dan di atasnya. </PaperSizePDFPrintOnly>
+			<ServerSideFormatForPDFPrint> Cetak PDF memerlukan file asli dalam format DWG, DWF, DXF atau DGN atau PCF. Harap unggah file dalam format ini atau pilih ukuran kertas yang lebih kecil untuk langsung dicetak. Ukuran kertas cetak langsung adalah A4-A2 atau US Letter melalui ANSI C </ServerSideFormatForPDFPrint>
+			<PrintDisabled> CATATAN: Cetak Dinonaktifkan </PrintDisabled>
+			<NoQRCode> Tidak ada Kode QR yang diterima dari Server! </NoQRCode>
+			<DrawingName> Gambar: </DrawingName>
+			</InfoMessageModal>
+			<FileLoadModal>
+			<Header> CADViewer - Manajer File </Header>
+			<DrawingFilename> Gambar / Nama File</DrawingFilename>
+			<EditFloorplanInfo> Edit Info Denah Lantai </EditFloorplanInfo>
+			</FileLoadModal>
+			<SaveRedlineModal>
+			<Header> CADViewer - Simpan Garis Merah </Header>
+			<RedlineFilename> Garis merah / Nama file </RedlineFilename>
+			<EditRedlineInfo> Edit Info Garis merah </EditRedlineInfo>
+			<Upload> UPLOAD </Upload>
+			</SaveRedlineModal>
+			<OpenRedlineModal>
+			<Header> CADViewer - Buka Garis Merah</Header>
+			<RedlineFilename> Garis merah / Nama file </RedlineFilename>
+			<EditRedlineInfo> Edit Info Garis merah </EditRedlineInfo>
+			</OpenRedlineModal>
+			<OpenSpaceObjectModal>
+				<Header>CADViewer - Buka Objek Luar Angkasa</Header>
+				<SpaceObjectFilename>Garis merah / Nama file</SpaceObjectFilename>
+				<EditSpaceObjectInfo>Edit Info Buka Objek Luar Angkasa</EditSpaceObjectInfo>
+			</OpenSpaceObjectModal>
+			<RedlineThicknessModal>
+			<Header> Pilih Ketebalan Garis Merah </Header>
+			<Thickness> Ketebalan: </Thickness>
+			<OK> OK </OK>
+			</RedlineThicknessModal>
+			<DocumentPageChangeModal>
+			<Header> Pilih Halaman Dokumen </Header>
+			<Page> Halaman: </Page>
+			<OK> OK </OK>
+			</DocumentPageChangeModal>
+			<CollaborationStartModal>
+			<Header> Masuk ke Sesi Kolaborasi </Header>
+			<Session> Session Name: </Session>
+			<OK> OK </OK>
+			</CollaborationStartModal>
+			<PublishPDFModal>
+			<Header> Publikasikan Konten Layar Berwarna Merah ke PDF </Header>
+			<SelectMode> Pilih Mode </SelectMode>
+			<Mode1> Cetak / Unduh </Mode1>
+			<Mode2> Kirim email </Mode2>
+			<Mode3> Unggah ke Server </Mode3>
+			<EntireDoc> Publikasikan Seluruh Dokumen: </EntireDoc>
+			<OK> OK </OK>
+			<Recipient> E-mail: </Recipient>
+			<Title> Judul: </Title>
+			<Message> Pesan: </Message>
+			</PublishPDFModal>
+			<MergeDXFModal>
+			<Header> Gabungkan Redline dengan Source DWG </Header>
+			<SelectMode> Pilih Mode </SelectMode>
+			<Mode1> Unduh </Mode1>
+			<Mode2> Kirim email </Mode2>
+			<Mode3> Unggah ke Server </Mode3>
+			<EntireDoc> Publikasikan Seluruh Dokumen: </EntireDoc>
+			<OK> OK </OK>
+			<Recipient> E-mail: </Recipient>
+			<Title> Judul: </Title>
+			<Message> Pesan: </Message>
+			</MergeDXFModal>
+			<RedlineColorModal>
+			<Header> Pilih Redline Color </Header>
+			<PickColor> Pilih Warna: </PickColor>
+			<SelectColor> Pilih: </SelectColor>
+			<Blue> Biru </Blue>
+			<Red> Merah </Red>
+			<Yellow> Kuning </Yellow>
+			<Orange> Oranye </Orange>
+			<Green> Hijau </Green>
+			<Purple> Ungu </Purple>
+			<Brown> Coklat </Brown>
+			<Gray> Abu-abu </Gray>
+			<OK> OK </OK>
+			</RedlineColorModal>
+			<RedlineEllipseModal>
+			<Header> Pilih Bentuk Garis Merah </Header>
+			<SelectType> Pilih: </SelectType>
+			<Ellipse> Elips: </Ellipse>
+			<Cloud> Awan: </Cloud>
+			<OK> OK </OK>
+			</RedlineEllipseModal>
+			<CreationModeModal>
+			<Header> Pilih sumber Space ID </Header>
+			<SelectType> Pilih: </SelectType>
+			<DataSource> Dari Sumber Data melalui API </DataSource>
+			<Manually> Awan </Manually>
+			<OK> OK </OK>
+			</CreationModeModal>
+			<BackgroundColorModal>
+			<Header> Pilih Warna Latar Belakang </Header>
+			<PickColor> Pilih Warna: </PickColor>
+			<SelectColor> Pilih: </SelectColor>
+			<White> Putih </White>
+			<Black> Hitam </Black>
+			<Azure> Azure </Azure>
+			<Pink> Dadu </Pink>
+			<Snow> Salju </Snow>
+			<Silver> Perak </Silver>
+			<Brown> Coklat </Brown>
+			<Gray> Abu-abu </Gray>
+			<OK> OK </OK>
+			</BackgroundColorModal>
+			<RedlineTextModal>
+			<Header> Teks Garis Merah </Header>
+			<FontSize> Ukuran Font: </FontSize>
+			<OK> OK </OK>
+			<Text> Masukkan teks, klik OK dan pilih titik penyisipan dalam gambar. </Text>
+			</RedlineTextModal>
+			<LineThicknessModal>
+			<Header> Sesuaikan Bobot Garis </Header>
+			<LineThickness> Sesuaikan Bobot Garis: </LineThickness>
+			<Text> Bicara tentang bobot nol. </Text>
+			</LineThicknessModal>
+			<CalibrateModal>
+			<Header> Pengukuran Kalibrasi </Header>
+			<Unit> Satuan: </Unit>
+			<Distance> Jarak </Distance>
+			<OK> OK </OK>
+			<Text> Pilih dua titik pada gambar dengan mouse terlebih dahulu, kemudian masukkan satuan dan jarak dan tekan OK </Text>
+			</CalibrateModal>
+			<SettingsModal>
+			<Header> Pengaturan Umum CADViewer </Header>
+			<OnlineLanguage> Bahasa Online: </OnlineLanguage>
+			<Distance> Jarak: </Distance>
+			<ConversionFixed> Parameter Konversi (Tetap): </ConversionFixed>
+			<ConversionUser> Parameter Konversi (User Controlled): </ConversionUser>
+			<Param>Parameter: </Param>
+			<Value> (Nilai): </Value>
+			<TotalParameters> 0 </TotalParameters>
+			<ParamNames>
+			<ParamName> </ParamName>
+			</ParamNames>
+			<ParamValues>
+			<ParamValue> </ParamValue>
+			</ParamValues>
+			<OK> OK </OK>
+			<Text> Silakan merujuk ke XXX untuk pengaturan parameter rinci! </Text>
+			</SettingsModal>
+			<MeasurementModal>
+			<Header> Pengukuran CADViewer </Header>
+			<Distance> Jarak: </Distance>
+			<MeasureAgain> Ukur Lagi </MeasureAgain>
+			<ClosePolygon> Tutup Poligon Area </ClosePolygon>
+			<Text> Pilih dua titik dalam gambar untuk jarak. </Text>
+			<TextArea> Memilih urutan poin. Klik dua kali, Esc atau tombol 'Tutup Area' untuk area. </TextArea>
+			<Area>Arei: </Area>
+			<MenuItems>
+			<MenuItem> Jarak </MenuItem>
+			<MenuItem> Arei </MenuItem>
+			<MenuItem> Titik (Global Koordinat) </MenuItem>
+			<MenuItem> Titik (SVG Koordinat) </MenuItem>
+			<MenuItem> Beberapa Poin (Global) </MenuItem>
+			<MenuItem> Banyak Poin (SVG) </MenuItem>
+			<MenuItem> Jalur SVG </MenuItem>
+			</MenuItems>
+			<Point> Titik: </Point>
+			<Points> Poin: </Points>
+			<PointText> Pilih satu titik, ambil dari clipboard. </PointText>
+			<PointsText> Pilih beberapa titik, ambil dari clipboard. </PointsText>
+			</MeasurementModal>
+			<BirdsEyeModal>
+			<Header> Jendela Burung-Mata </Header>
+			</BirdsEyeModal>
+			<ImageObjectModal>
+			<Header> Image Object Nr. </Header>
+			<LoadImage> Muat Gambar Baru </LoadImage>
+			<RemoveImageNote> Hapus Catatan Gambar </RemoveImageNote>
+			<MinimizeImageNote> Minimalkan Catatan Gambar </MinimizeImageNote>
+			</ImageObjectModal>
+			<LayerListModal>
+			<Header> CADViewer - Daftar Layer </Header>
+			<SelectDrawings> Pilih Xref / Sub-gambar untuk tampilan: </SelectDrawings>
+			<XrefLayerName> Gunakan Nama Lapisan Xref Asli </XrefLayerName>
+			<Search> Cari </Search>
+			<Sort> Sortir lapisan</Sort>
+			<AllLayerOn> Lapisan aktif </AllLayerOn>
+			<AllLayerOff> Lapisan nonaktif </AllLayerOff>
+			<SwapLayers> Tukar lapisan </SwapLayers>
+			<On> HIDUP </On>
+			<Off> MATI </Off>
+			<BaseAndXref> Gambar Dasar </BaseAndXref>
+			<Xref> Xref: </Xref>
+			</LayerListModal>
+			<PageChangeListModal>
+			<Header> Ubah Halaman Gambar </Header>
+			<Search> Cari </Search>
+			<Sort> Sortir berdasarkan Nama </Sort>
+			<On> HIDUP </On>
+			<Off> MATI </Off>
+			</PageChangeListModal>
+			<LayerListSpaceModal>
+			<Header> Daftar Layer - Objek Luar Angkasa </Header>
+			<Search> Search </Search>
+			<Sort> Sortir berdasarkan Layer </Sort>
+			<AllLayerOn> Lapisan aktif </AllLayerOn>
+			<AllLayerOff> Lapisan nonaktif </AllLayerOff>
+			<SwapLayers> Tukar lapisan </SwapLayers>
+			<On> HIDUP </On>
+			<Off> MATI </Off>
+			<NotAssigned> Tidak Ditugaskan </NotAssigned>
+			<TextLayer> Lapisan Teks </TextLayer>
+			<RoomLayer> Lapisan Ruang </RoomLayer>
+			<HandleLayer> Lapisan Aktif </HandleLayer>
+			<FloodfillLayer> Lapisan SpaceID </FloodfillLayer>
+			</LayerListSpaceModal>
+			<DataMaps>
+				<Map>Data Maps - User Map 1</Map>
+				<Map>Data Maps - User Map 2</Map>
+				<Map>Data Maps - User Map 3</Map>
+				<Map>Data Maps - User Map 4</Map>			
+			</DataMaps>
+			<IconPage_p1_8>
+			<PreviousPage> Halaman Menu Sebelumnya </PreviousPage>
+			<NextPage> Halaman Ikon Berikutnya </NextPage>
+			<NextMenuPage> Halaman Menu Berikutnya </NextMenuPage>
+			<LayerList> Daftar Lapisan </LayerList>
+			<Print> Cetak </Print>
+			<ZoomIn> Memperbesar </ZoomIn>
+			<ZoomOut> Perkecil </ZoomOut>
+			<ZoomExtents> Perluasan Zoom, </ZoomExtents>
+			<ZoomWindow> Jendela Zoom </ZoomWindow>
+			<Toggle> Beralih Hitam / Putih </Toggle>
+			<Background> Latar Belakang </Background>
+			<FileLoad> Pemuatan File </FileLoad>
+			<Search> Cari </Search>
+			<About> Tentang </About>
+			<Settings> Pengaturan </Settings>
+			<LayerOff> Lapisan Mati </LayerOff>
+			<SwapLayers> Tukar Lapisan </SwapLayers>
+			<AllLayersOn> Semua Lapisan Aktif </AllLayersOn>
+			<Measurement> Pengukuran </Measurement>
+			<Calibrate> Kalibrasi Pengukuran </Calibrate>
+			<BirdsEye> Beralih Jendela Burung-Mata </BirdsEye>
+			<LineThickness> Sesuaikan Ketebalan Garis </LineThickness>
+			</IconPage_p1_8>
+			<IconPage_p2_8>
+				<PreviousPage> Halaman Menu Sebelumnya </PreviousPage>
+				<NextPage> Halaman Ikon Berikutnya </NextPage>
+				<SaveRedline>Simpan Garis Merah</SaveRedline>
+				<LoadRedline>Muat Garis Merah</LoadRedline>
+				<DeleteSingle>Hapus Garis Merah Tunggal</DeleteSingle>
+				<DeleteLast>Hapus Redline Terakhir</DeleteLast>
+				<Color>Warna Garis Merah</Color>
+				<Thickness>Ketebalan Garis Merah</Thickness>
+				<StickyNote>Buat Catatan Tempel</StickyNote>
+				<ClearAll>Hapus Garis Merah yang Terlihat</ClearAll>
+				<Freehand>Garis Merah tangan bebas</Freehand>
+				<Cloud>Elips Garis Merah / Awan</Cloud>
+				<FilledPolygon>Poligon Isi Garis Merah</FilledPolygon>
+				<Polyline>Garis Merah Polyline</Polyline>
+				<Polygon>Poligon Garis Merah</Polygon>
+				<FilledRectangle>Persegi Panjang Isi Garis Merah</FilledRectangle>
+				<Rectangle>Persegi Panjang Garis Merah</Rectangle>
+				<Arrow>Panah Garis Merah</Arrow>
+				<Text>Teks Garis Merah</Text>
+				<PublishAsPDF>Publikasikan Sebagai PDF</PublishAsPDF>
+				<MergeAsDXF>Gabungkan Redline dengan Sumber DWG</MergeAsDXF>
+				<Free>Luang</Free>
+				<MergeWithQR> Gabungkan kode QR dengan sumber DWG </MergeWithQR>
+				<LineThickness> Sesuaikan Ketebalan Garis </LineThickness>
+			</IconPage_p2_8>
+			<IconPage_p3_8>
+				<PreviousPage> Halaman Ikon Sebelumnya </PreviousPage>
+				<NextPage> Halaman Ikon Berikutnya </NextPage>
+				<PublishAsPDF> Publikasikan Sebagai PDF </PublishAsPDF>
+				<Free>Luang</Free>
+				<LayerOff> Lapisan Mati </LayerOff>
+				<SwapLayers> Tukar Lapisan </SwapLayers>
+				<AllLayersOn> Semua Lapisan Aktif </AllLayersOn>
+				<ZoomExtents> Perluasan Zoom, </ZoomExtents>
+				<ZoomWindow> Jendela Zoom </ZoomWindow>
+				<LoadLink> Muat Semua Link Gambar </LoadLink>
+				<InsertLink> Sisipkan Link Gambar </InsertLink>
+				<SaveLink> Simpan Semua Link Gambar </SaveLink>
+				<QuickCount> Hitungan Cepat </QuickCount>
+				<CountSum> Hitung Cepat Ringkasan </CountSum>
+				<ClearCount> Hapus Quick Count </ClearCount>
+			</IconPage_p3_8>
+			<IconPage_p4_8>
+				<PreviousPage> Halaman Ikon Sebelumnya </PreviousPage>
+				<NextPage> Halaman Ikon Berikutnya </NextPage>
+				<Free>Luang</Free>
+				<CompareLoad> Muat Gambar Kedua untuk Bandingkan </CompareLoad>
+				<CompareToggle> Toggle Drawings Individualually </CompareToggle>
+				<CompareToggleOverlay> Beralih Gambar Overlaid </CompareToggleOverlay>
+				<CompareExit> Keluar Bandingkan Gambar </CompareExit>
+				<CollaborationJoinSession> Gabung Sesi Kolaborasi </CollaborationJoinSession>
+				<CollaborationTakeControl> Kendalikan Sesi Kolaborasi </CollaborationTakeControl>
+				<CollaborationClearSession> Hapus Redline Dalam Sesi Kolaborasi </CollaborationClearSession>
+				<CollaborationLeaveSession> Keluar dari Sesi Kolaborasi </CollaborationLeaveSession>				<LayerOff> Lapisan Mati </LayerOff>
+				<SwapLayers> Tukar Lapisan </SwapLayers>
+				<AllLayersOn> Semua Lapisan Aktif </AllLayersOn>
+				<ZoomExtents> Perluasan Zoom, </ZoomExtents>
+				<ZoomWindow> Jendela Zoom </ZoomWindow>
+			</IconPage_p4_8>
+			<IconPage_p5_8>
+				<PreviousPage> Halaman Ikon Sebelumnya </PreviousPage>
+				<NextPage> Halaman Ikon Berikutnya </NextPage>
+				<InsertSpaceImage> Sisipkan Objek Gambar Ruang </InsertSpaceImage>
+				<DragSpaceImage> Tarik Objek Gambar Ruang </DragSpaceImage>
+				<ResizeSpaceImage> Ubah Ukuran Objek Gambar Ruang </ResizeSpaceImage>
+				<LoadSpaceObjects> Memuat Objek Space </LoadSpaceObjects>
+				<Publish> Lihat Struktur Objek Space dalam Mode Tampilan Pengguna </Publish>
+				<DownloadSVG> Unduh gambar SVG yang telah diproses </DownloadSVG>
+				<Load> Muat Denah Lantai dan pra-proses Objek Luar Angkasa </Load>
+				<Settings>Pengaturan</Settings>
+				<SelectObject> Pilih Objek </SelectObject>
+				<Rect> Objek Ruang Persegi Panjang </Rect>
+				<Polygon> Objek Spasi Poligon </Polygon>
+				<Circle> Circle Space Object </Circle>
+				<CopyCircle> Salin Objek Ruang Lingkaran </CopyCircle>
+				<Delete> Hapus Objek Space </Delete>
+				<LayerList> Daftar Lapisan </LayerList>
+				<Mode> Ubah Tampilan Objek Luar Angkasa dan Mode Edit </Mode>
+				<Free>Luang</Free>
+				<SelectPolygon> Hasilkan Objek Ruang pada poligon tertutup </SelectPolygon>
+			</IconPage_p5_8>		
+			<IconPage_p6_1>
+				<PinMarker> Tambahkan Penanda Pin </PinMarker>
+			</IconPage_p6_1>
+			<PageModal>
+				<ZoomExtents> Perluasan Zoom, </ZoomExtents>
+				<ZoomWindow> Jendela Zoom </ZoomWindow>
+				<SelectPageFromList> Pilih Halaman Gambar Dari Daftar </SelectPageFromList>
+				<EnterPage> Masukkan nomor halaman </EnterPage>
+				<RotateBack> Putar 90 derajat berlawanan arah jarum jam </RotateBack>
+				<RotateForward> Putar 90 derajat searah jarum jam </RotateForward>
+				<First> Muat Halaman Pertama dalam Gambar </First>
+				<Previous> Muat Halaman Sebelumnya dalam Gambar </Previous>
+				<Next> Muat Halaman Berikutnya dalam Gambar </Next>
+				<Last> Muat Halaman Terakhir dalam Gambar </Last>
+			</PageModal>
+			<StickyNote>
+				<MoveNote> Pindahkan Catatan </MoveNote>
+				<EditNote> Edit Catatan </EditNote>
+				<DeleteNote> Hapus Catatan </DeleteNote>
+				<MinimizeNote> Minimalkan Catatan </MinimizeNote>
+				<Inactive> Tidak aktif </Inactive>
+				<SaveNote> Simpan Catatan </SaveNote>
+				<Cancel> Batalkan Edit Catatan </Cancel>
+			</StickyNote>
+			<ImageObject>
+				<InsertReplace> Sisipkan atau Ganti Gambar </InsertReplace>
+				<Delete> Hapus Gambar dan Ikon Terkait </Delete>
+				<DeleteNote> Hapus Catatan </DeleteNote>
+				<Minimize> Minimalkan Objek Gambar </Minimize>
+			</ImageObject>			
+			<DeleteModal>
+				<Header> Hapus </Header>
+				<Text1> Tindakan ini akan menghapus </Text1>
+				<Text2> dan nonaktifkan akses ke denah lantai untuk semua pengguna. </Text2>
+			</DeleteModal>
+			<UnlinkModal>
+				<Header> Batalkan tautan </Header>
+				<Text1> Tindakan ini akan menghapus semua metadata dari </Text1>
+				<Text2> Objek lokasi tidak akan berubah. </Text2>
+			</UnlinkModal>
+			<ClearModal>
+				<Header> Hapus </Header>
+				<Text1> Tindakan ini akan menghapus semua metadata dan objek lokasi dari </Text1>
+			</ClearModal>	
+			<FileLoadSpaceModal>
+			<Header> CADViewer: Pemuat File Manajemen Ruang </Header>
+			<DrawingFilename> Gambar / Nama File</DrawingFilename>
+			<EditFloorplanInfo> Edit Info Denah Lantai </EditFloorplanInfo>
+			<BuildRoomTextHyperlinks> Buat Hyperlink Lapisan ROOM / TEXT saat Dimuat </BuildRoomTextHyperlinks>
+			</FileLoadSpaceModal>
+			<LoadingModal>
+			<Loading> Memuat </Loading>
+			</LoadingModal>
+			<HeaderObjectLayers>
+			<ObjectLayer> Spaces - Lapisan Pengguna 1 </ObjectLayer>
+			<ObjectLayer> Assets - User Layer 1 </ObjectLayer>
+			</HeaderObjectLayers>
+			<WaitModal>
+			<Printing> Pencetakan </Printing>
+			<Thumbnail> Menyimpan </Thumbnail>
+			<BatchPDF> Cetak ke PDF </BatchPDF>
+			<MergeDWG> Mencetak </MergeDWG>
+			</WaitModal>
+	</languages>	
+	<languages>
+			<languageCode>DE-DE</languageCode>
+			<thisLanguage>German</thisLanguage>
+			<PrintModal>
+				<Header> CADViewer - Druckeinstellungen </Header>
+				<Paper> Größe: </Paper>
+				<Landscape> Landschaft </Landscape>
+				<Portrait> Portrait </Portrait>
+				<Orientation> Orientierung: </Orientation>
+				<Resolution> Auflösung: </Resolution>
+				<ResolutionText> (min. 75 dpi, Standard 300 dpi) </ResolutionText>
+				<Print> Drucken </Print>
+				<Grayscale> Graustufen </Grayscale>
+				<PrintPDF> PDF drucken </PrintPDF>
+				<PrintToScale> Skalieren </PrintToScale>
+				<TextBox1Header> Zeichnungstitel (max. 4 x Zeile) </TextBox1Header>
+				<TextBox2Header> Zeichnungsnummer </TextBox2Header>
+				<EnterScale> Skalieren: </EnterScale>
+				<CustomCheckbox> Schriftfeld </CustomCheckbox>
+				<JsonVariable> Variable ($$$): </JsonVariable>
+				<PaperSizeTotal>19</PaperSizeTotal>
+				<PaperSizes>
+					<PaperSize>A4</PaperSize>
+					<PaperSize>A3</PaperSize>
+					<PaperSize>A2</PaperSize>
+					<PaperSize>A1</PaperSize>
+					<PaperSize>A0</PaperSize>
+					<PaperSize>A5</PaperSize>
+					<PaperSize>letter</PaperSize>
+					<PaperSize>legal</PaperSize>
+					<PaperSize>tabloid</PaperSize>
+					<PaperSize>USA</PaperSize>
+					<PaperSize>USB</PaperSize>
+					<PaperSize>USC</PaperSize>
+					<PaperSize>USD</PaperSize>
+					<PaperSize>USE</PaperSize>
+					<PaperSize>ARCHA</PaperSize>
+					<PaperSize>ARCHB</PaperSize>
+					<PaperSize>ARCHC</PaperSize>
+					<PaperSize>ARCHD</PaperSize>
+					<PaperSize>ARCHE</PaperSize>
+					<PaperSize>ALCOAA</PaperSize>
+				</PaperSizes>
+				<MenuItems>
+					<MenuItem>A4 (210 x 297 mm)</MenuItem>
+					<MenuItem>A3 (297 x 420 mm)</MenuItem>
+					<MenuItem>A2 (420 x 594 mm)</MenuItem>
+					<MenuItem>A1 (594 x 841 mm)</MenuItem>
+					<MenuItem>A0 (841 x 1189 mm)</MenuItem>
+					<MenuItem>A5 (148 x 210 mm)</MenuItem>
+					<MenuItem>Letter (8.5 x 11 in)</MenuItem>
+					<MenuItem>Legal (8.5 x 14 in)</MenuItem>
+					<MenuItem>Tabloid (11 x 17 in)</MenuItem>
+					<MenuItem>A (8.5 x 11 in)</MenuItem>
+					<MenuItem>B (11 x 17 in)</MenuItem>
+					<MenuItem>C (17 x 22 in)</MenuItem>
+					<MenuItem>D (22 x 34 in)</MenuItem>
+					<MenuItem>E (34 x 44 in)</MenuItem>
+					<MenuItem>A+ (9 x 12 in)</MenuItem>
+					<MenuItem>B+ (12 x 18 in)</MenuItem>
+					<MenuItem>C+ (18 x 24 in)</MenuItem>
+					<MenuItem>D+ (24 x 36 in)</MenuItem>
+					<MenuItem>E+ (36 x 48 in)</MenuItem>
+					<MenuItem>ALCOA A (30 x 36 in)</MenuItem>
+				</MenuItems>
+			</PrintModal>
+				<SearchTextModal>
+				<Header> Suchtext </Header>
+				<SearchText> Suchtext: </SearchText>
+				<Zoom> Zoomstufe: </Zoom>
+				<Search> Suche </Search>
+				</SearchTextModal>
+				<SearchCustomModal>
+				<Header> Suchtext </Header>
+				<SearchText> Suchtext: </SearchText>
+				<Suche> Suche </Suche>
+				</SearchCustomModal>
+			<InfoMessageModal>
+				<Header> CADViewer-Informationen </Header>
+				<Header2> CADViewer-Informationen </Header2>
+				<Version> CADViewer-Version: </Version>
+				<AXVersion> AutoXchange-Version: </AXVersion>
+				<ComingSoon> Bald erhältlich! </ComingSoon>
+				<NoUnits> In der Zeichnung sind eine Einheiten definiert. Verwenden Sie zuerst den Befehl Calibrate Measurement. </NoUnits>
+				<UnitLess> Die ursprüngliche Zeichnung ist einheitlos. Verwenden Sie zuerst den Befehl Calibrate Measurement </UnitLess>
+				<QuickCountSingle> Die Anzahl der Schnellzählungen beträgt: </QuickCountSingle>
+				<QuickCountMultiple> Die Anzahl der Schnellzählungen beträgt: </QuickCountMultiple>
+				<RedlinesLocked> Redlines sind für Benutzer gesperrt: </RedlinesLocked>
+				<LicensePath> Lizenzschlüssel konnte nicht unter folgendem Pfad gefunden werden: </LicensePath>
+				<LicenseNotFound> Lizenzschlüssel nicht gefunden </LicenseNotFound>
+				<SelectTwoPoints> Bitte wählen Sie zuerst mit der Maus zwei Punkte in der Zeichnung aus, geben Sie dann Einheit und Abstand ein und drücken Sie schließlich OK. </SelectTwoPoints>
+				<Referenzabstand> Bitte geben Sie einen Referenzabstand ein. </Referenzabstand>
+				<RedlinesSaved> Gespeicherte Redlines </RedlinesSaved>
+				<SinglePage> Einzelseitenzeichnung - keine Änderung der Seite </SinglePage>
+				<FirstPage> Die aktuelle Seite ist die erste Seite in einer mehrseitigen Zeichnung - keine Änderung der Seite </FirstPage>
+				<LastPage> Die aktuelle Seite ist die letzte Seite in einer mehrseitigen Zeichnung - keine Änderung der Seite </LastPage>
+				<OutOfRange> Die eingegebene Seitenzahl liegt außerhalb des Seitenbereichs - keine Änderung der Seite </OutOfRange>
+				<FileLoadThroughApp> HINWEIS: Das Laden von Dateien wird nur über die Kapselungsanwendung </FileLoadThroughApp> aktiviert
+				<ErrorConnectingToHost> Fehler beim Herstellen einer Verbindung zum Host. Gehen Sie zum Einstellungsbereich und überprüfen Sie Ihre Netzwerkeinstellungen! </ErrorConnectingToHost>
+				<ConnectToHostFirst> Gehen Sie zum Einstellungsbereich, überprüfen Sie Ihre Netzwerkeinstellungen und klicken Sie auf Änderungen speichern, um eine Verbindung zu Ihrem Netzwerkhost herzustellen und die Datenstruktur abzurufen, die beim Zuordnen von Standorten verwendet wird. </ConnectToHostFirst>
+				<NoObjectSelected> Bitte wählen Sie ein Space-Objekt aus. </NoObjectSelected>
+				<PaperSizePDFPrintOnly> Bitte wählen Sie Als PDF drucken für große Papierformate. Große Papiergrößen sind A1 und A0 sowie US Arch D und höher. </PaperSizePDFPrintOnly>
+				<ServerSideFormatForPDFPrint> Für den PDF-Druck ist eine Originaldatei in den Formaten DWG, DWF, DXF oder DGN oder PCF erforderlich. Bitte laden Sie eine Datei in diesen Formaten hoch oder wählen Sie eine kleinere Papiergröße für den direkten Druck. Direktdruckpapiere sind A4-A2 oder US Letter über ANSI C </ServerSideFormatForPDFPrint>
+				<PrintDisabled> HINWEIS: Druck deaktiviert </PrintDisabled>
+				<NoQRCode> Kein QR-Code vom Server empfangen! </NoQRCode>
+				<DrawingName> Zeichnung: </DrawingName>
+			</InfoMessageModal>
+				<FileLoadModal>
+				<Header> CADViewer - Dateimanager </Header>
+				<DrawingFilename> Zeichnung / Dateiname </DrawingFilename>
+				<EditFloorplanInfo> Grundrissinformationen bearbeiten </EditFloorplanInfo>
+				</FileLoadModal>
+				<SaveRedlineModal>
+				<Header> CADViewer - Redline Speichern </Header>
+				<RedlineFilename> Redline / Dateiname </RedlineFilename>
+				<EditRedlineInfo> Redline-Informationen bearbeiten </EditRedlineInfo>
+				<Upload> HOCHLADEN </Upload>
+				</SaveRedlineModal>
+				<OpenRedlineModal>
+				<Header> CADViewer - Redline Öffnen </Header>
+				<RedlineFilename> Redline / Dateiname </RedlineFilename>
+				<EditRedlineInfo> Redline-Informationen bearbeiten </EditRedlineInfo>
+				</OpenRedlineModal>
+				<OpenSpaceObjectModal>
+				<Header> CADViewer - Space-Objekte Öffnen </Header>
+				<SpaceObjectFilename> Redline / Dateiname </SpaceObjectFilename>
+				<EditSpaceObjectInfo> Redline-Informationen bearbeiten </EditSpaceObjectInfo>
+				</OpenSpaceObjectModal>
+				<RedlineThicknessModal>
+				<Header> Wählen Sie Redline-Dicke </Header>
+				<Thickness> Dicke: </Thickness>
+				<OK> OK </OK>
+				</RedlineThicknessModal>
+				<DocumentPageChangeModal>
+				<Header> Wählen Sie die Dokumentseite </Header>
+				<Seite> Seite: </Seite>
+				<OK> OK </OK>
+				</DocumentPageChangeModal>
+				<CollaborationStartModal>
+				<Header> Geben Sie die Kollaborationssitzung ein </Header>
+				<Session> Sitzungsname: </Session>
+				<OK> OK </OK>
+				</CollaborationStartModal>
+				<PublishPDFModal>
+				<Header> Veröffentlichen Sie redlinierten Bildschirminhalt als PDF </Header>
+				<SelectMode> Auswahlmodus </SelectMode>				
+				<Mode1> Herunterladen </Mode1>
+				<Mode2> Als E-Mail</Mode2>
+				<Mode3> Auf Server hochladen </Mode3>
+				<EntireDoc> Gesamtes Dokument veröffentlichen: </EntireDoc>
+				<OK> OK </OK>
+				<Recipient> E-Mail: </Recipient>
+				<Titel> Titel: </Titel>
+				<Message> Nachricht: </Message>
+				</PublishPDFModal>
+			<MergeDXFModal>
+				<Header> Redline mit Quell-DWG zusammenführen </Header>
+				<SelectMode> Auswahlmodus </SelectMode>				
+				<Mode1> Herunterladen </Mode1>
+				<Mode2> Als E-Mail</Mode2>
+				<Mode3> Auf Server hochladen </Mode3>
+				<EntireDoc> Gesamtes Dokument veröffentlichen: </EntireDoc>
+				<OK> OK </OK>
+				<Recipient> E-Mail: </Recipient>
+				<Titel> Titel: </Titel>
+				<Message> Nachricht: </Message>
+			</MergeDXFModal>
+			<RedlineColorModal>
+				<Header> Wählen Sie Redline-Farbe</Header>
+				<PickColor> Farbe:</PickColor>
+				<SelectColor> Wählen: </SelectColor>
+				<Blue> Blau </Blue>
+				<Red> Rot </Red>
+				<Yellow> Gelb </Yellow>
+				<Orange> Orange </Orange>
+				<Green> Grün </Green>
+				<Purple> Lila </Purple>
+				<Brown> Braun </Brown>
+				<Gray> Grau </Gray>
+				<OK> OK </OK>
+			</RedlineColorModal>
+			<RedlineEllipseModal>
+				<Header> Wählen Sie Redline-Form </Header>
+				<SelectType> Wählen Sie: </SelectType>
+				<Ellipse> Ellipse: </Ellipse>
+				<Cloud> Wolke: </Cloud>
+				<OK> OK </OK>
+			</RedlineEllipseModal>
+			<CreationModeModal>
+				<Header> Wählen Sie die Space ID-Quelle </Header>
+				<SelectType> Wählen Sie: </SelectType>
+				<DataSource> Von der Datenquelle über die API </DataSource>
+				<Manually>Cloud</Manually>
+				<OK>OK</OK>
+			</CreationModeModal>
+			<BackgroundColorModal>
+				<Header> Hintergrundfarbe auswählen </Header>
+				<PickColor> Farbe:</PickColor>
+				<SelectColor> Wählen: </SelectColor>
+				<White>Weiß</White>
+				<Black>Schwarz</Black>
+				<Azure>Azure</Azure>
+				<Pink>Pink</Pink>
+				<Snow>Schnee</Snow>
+				<Silver>Silber</Silver>
+				<Brown>Braun</Brown>
+				<Gray>Grau</Gray>
+				<OK>OK</OK>
+			</BackgroundColorModal>
+			<RedlineTextModal>
+				<Header> Redline-Text </Header>
+				<FontSize> Schriftgröße: </FontSize>
+				<OK> OK </OK>
+				<Text> Geben Sie Text ein, OK klicken, und dann einfügen. </Text>
+			</RedlineTextModal>
+			<LineThicknessModal>
+				<Header> Passen Sie die Liniengewichte an </Header>
+				<LineThickness> Liniengewichte: </LineThickness>
+				<Text> Sprechen Sie über Nullgewichte. </Text>
+				</LineThicknessModal>
+				<CalibrateModal>
+				<Header> Messung kalibrieren </Header>
+				<Unit> Einheit: </Unit>
+				<Entfernung> Entfernung: </Entfernung>
+				<OK> OK </OK>
+				<Text> Wählen Sie zuerst mit der Maus zwei Punkte in der Zeichnung aus, geben Sie dann Einheit und Abstand ein und drücken Sie OK </Text>
+				</CalibrateModal>
+			<SettingsModal>
+				<Header> Allgemeine CADViewer-Einstellungen </Header>
+				<OnlineLanguage> Online-Sprache: </OnlineLanguage>
+				<Distance> Entfernung: </Distance>
+				<ConversionFixed> Konvertierungsparameter (behoben): </ConversionFixed>
+				<ConversionUser> Konvertierungsparameter (benutzergesteuert): </ConversionUser>
+				<Param> -Parameter: </Param>
+				<Value> (Wert): </Value>
+				<TotalParameters>0</TotalParameters>
+				<ParamNames>
+					<ParamName></ParamName>
+				</ParamNames>
+				<ParamValues>
+					<ParamValue></ParamValue>
+				</ParamValues>
+					<OK> Einstellungen aktualisieren </OK>
+				<Text>Detaillierte Parametereinstellungen finden Sie im &lt;a href=&quot;https://tailormade.com/ax2020techdocs/parameter_interface/&quot;&gt;AX2020 techdocs&lt;/a&gt;!</Text>
+			</SettingsModal>
+			<MeasurementModal>
+				<Header> CADViewer-Messung </Header>
+				<Distance> Entfernung: </Distance>
+				<MeasureAgain> Messen Sie erneut </MeasureAgain>
+				<ClosePolygon> Bereichspolygon schließen </ClosePolygon>
+				<Text> Wählen Sie zwei Punkte in der Zeichnung für die Entfernung aus. </Text>
+				<TextArea> Wählen Sie eine Folge von Punkten aus. Doppelklicken Sie, Esc oder "Bereich schließen" für den Bereich. </TextArea>
+				<Area> Bereich: </Area>
+				<MenuItems>
+				<MenuItem> Abstand </MenuItem>
+				<MenuItem> Bereich </MenuItem>
+				<MenuItem> Punkt (globale Koordinaten) </MenuItem>
+				<MenuItem> Punkt (SVG-Koordinaten) </MenuItem>
+				<MenuItem> Mehrere Punkte (global) </MenuItem>
+				<MenuItem> Mehrere Punkte (SVG) </MenuItem>
+				<MenuItem> SVG-Pfad </MenuItem>
+				</MenuItems>
+				<Punkt> Punkt: </Punkt>
+				<Punkte> Punkte: </Punkte>
+				<PointText> Wählen Sie einen einzelnen Punkt aus, der aus der Zwischenablage erfasst werden soll. </PointText>
+				<PointsText> Wählen Sie mehrere Punkte aus, die aus der Zwischenablage erfasst werden sollen. </PointsText>
+			</MeasurementModal>
+				<BirdsEyeModal>
+				<Header> Birds-Eye-Fenster </Header>
+				</BirdsEyeModal>
+				<ImageObjectModal>
+				<Header> Bildobjekt Nr. </Header>
+				<LoadImage> Neues Image laden </LoadImage>
+				<RemoveImageNote> Bildnotiz entfernen </RemoveImageNote>
+				<MinimizeImageNote> Bildnotiz minimieren </MinimizeImageNote>
+				</ImageObjectModal>
+			<LayerListModal>
+				<Header> CADViewer - Ebenenliste </Header>
+				<SelectDrawings> Wählen Sie XRef / Unterzeichnungen für die Anzeige aus: </SelectDrawings>
+				<XrefLayerName> Verwenden Sie den ursprünglichen Xref-Layernamen </XrefLayerName>
+				<Search> Suche </Search>
+				<Sort> Ebene sortieren </Sort>
+				<AllLayerOn> Alle ein </AllLayerOn>
+				<AllLayerOff> Alle aus </AllLayerOff>
+				<SwapLayers> Tauschen </SwapLayers>
+				<On> AN </On>
+				<Off> AUS </Off>
+				<BaseAndXref> Basiszeichnung </BaseAndXref>
+				<Xref> Xref: </Xref>
+			</LayerListModal>
+			<PageChangeListModal>
+				<Header> Zeichnungsseite ändern </Header>
+				<Search> Suche </Search>
+				<Sort> Nach Namen sortieren </Sort>
+				<On> AN </On>
+				<Off> AUS </Off>
+			</PageChangeListModal>
+			<LayerListSpaceModal>
+				<Header>Ebenenliste - Space Objects</Header>
+				<Search> Suche </Search>
+				<Sort> Ebene sortieren </Sort>
+				<AllLayerOn> Alle ein </AllLayerOn>
+				<AllLayerOff> Alle aus </AllLayerOff>
+				<SwapLayers> Tauschen </SwapLayers>
+				<On> AN </On>
+				<Off> AUS </Off>
+				<NotAssigned> Nicht zugewiesen </NotAssigned>
+				<TextLayer> Textebene </TextLayer>
+				<RoomLayer> Raumebene </RoomLayer>
+				<HandleLayer> Aktive Schicht </HandleLayer>
+				<FloodfillLayer> SpaceID-Ebene </FloodfillLayer>
+			</LayerListSpaceModal>
+			<DataMaps>
+				<Map>Data Maps - User Map 1</Map>
+				<Map>Data Maps - User Map 2</Map>
+				<Map>Data Maps - User Map 3</Map>
+				<Map>Data Maps - User Map 4</Map>			
+			</DataMaps>
+			<IconPage_p1_8>
+				<PreviousPage> Vorherige Menüseite </PreviousPage>
+				<NextPage> Nächste Symbolseite </NextPage>
+				<NextMenuPage> Nächste Menüseite </NextMenuPage>
+				<LayerList> Layer-Liste</LayerList>
+				<Print> Drucken </Print>
+				<ZoomIn> Vergrößern </ZoomIn>
+				<ZoomOut> Verkleinern </ZoomOut>
+				<ZoomExtents> Zoom Ausdehnung </ZoomExtents>
+				<ZoomWindow> Zoomfenster </ZoomWindow>
+				<Toggle> Schwarz / Weiß umschalten </Toggle>
+				<Background> Hintergrund </Background>
+				<FileLoad> Laden von Dateien </FileLoad>
+				<Search> Suche </Search>
+				<About> Über </About>
+				<Settings> Einstellungen </Settings>
+				<LayerOff> Ebene aus </LayerOff>
+				<SwapLayers> Ebenen tauschen </SwapLayers>
+				<AllLayersOn> Alle Ebenen auf </AllLayersOn>
+				<Measurement>Messung</Measurement>
+				<Calibrate>Messung kalibrieren</Calibrate>				
+				<BirdsEye> Vogelaugenfenster umschalten </BirdsEye>
+				<LineThickness> Passen Sie die Liniendicke an</LineThickness> 
+			</IconPage_p1_8>
+			<IconPage_p2_8>
+				<PreviousPage> Vorherige Menüseite </PreviousPage>
+				<NextPage> Nächste Symbolseite </NextPage>
+				<SaveRedline> Redline speichern </SaveRedline>
+				<LoadRedline> Redline laden </LoadRedline>
+				<DeleteSingle> Einzelne Redline löschen </DeleteSingle>
+				<DeleteLast> Letzte Redline löschen </DeleteLast>
+				<Color>Redline-Farbe </Color>
+				<Thickness>Redline-Dicke</Thickness>
+				<StickyNote> Machen Sie StickyNote </StickyNote>
+				<ClearAll> Sichtbare Redlines löschen </ClearAll>
+				<Freehand>Freihand-Redline</Freehand>
+				<Cloud>Redline Ellipse/Wolke</Cloud>
+				<FilledPolygon>Redline gefülltes Polygon</FilledPolygon>
+				<Polyline> Redline-Polylinie </Polyline>
+				<Polygon> Redline-Polygon </Polygon>
+				<FilledRectangle>Redline gefülltes Rechteck</FilledRectangle>
+				<Rectangle>Redline-Rechteck</Rectangle>
+				<Arrow>Redline-Pfeil</Arrow>
+				<Text>Redline-Text</Text>
+				<PublishAsPDF> Als PDF veröffentlichen </PublishAsPDF>
+				<MergeAsDXF> Redline mit Quell-DWG zusammenführen </MergeAsDXF>
+				<Free> Leer </Free>
+				<MergeWithQR> QR-Code mit Quell-DWG zusammenführen </MergeWithQR>
+				<LineThickness> Passen Sie die Liniendicke an</LineThickness> 
+			</IconPage_p2_8>
+			<IconPage_p3_8>
+				<PreviousPage> Vorherige Menüseite </PreviousPage>
+				<NextPage> Nächste Symbolseite </NextPage>
+				<PublishAsPDF> Als PDF veröffentlichen </PublishAsPDF>
+				<Free> Leer </Free>
+				<LayerOff> Ebene aus</LayerOff>
+				<SwapLayers> Ebenen tauschen </SwapLayers>
+				<AllLayersOn> Alle Ebenen auf </AllLayersOn>
+				<ZoomExtents> Zoom Ausdehnung </ZoomExtents>
+				<ZoomWindow> Zoomfenster </ZoomWindow>
+				<LoadLink> Alle Bildlinks laden </LoadLink>
+				<InsertLink> Bildlinks einfügen </InsertLink>
+				<SaveLink> Alle Bildlinks speichern </SaveLink>
+				<QuickCount> Quick Count </QuickCount>
+				<CountSum> Zusammenfassung Quick Count </CountSum>
+				<ClearCount> Schnellzählung löschen </ClearCount>			
+			</IconPage_p3_8>
+			<IconPage_p4_8>
+				<PreviousPage> Vorherige Menüseite </PreviousPage>
+				<NextPage> Nächste Symbolseite </NextPage>
+				<Free>Leer</Free>
+				<CompareLoad> Zweite Zeichnung zum Vergleichen laden </CompareLoad>
+				<CompareToggle> Zeichnet Zeichnungen einzeln um </CompareToggle>
+				<CompareToggleOverlay> Überlagerte Zeichnungen umschalten </CompareToggleOverlay>
+				<CompareExit> Beenden Sie Compare Drawings </CompareExit>
+				<CollaborationJoinSession> An der Collaboration-Sitzung teilnehmen </CollaborationJoinSession>
+				<CollaborationTakeControl> übernimmt die Kontrolle über die Collaboration-Sitzung </CollaborationTakeControl>
+				<CollaborationClearSession> Redlines in Collaboration Session löschen </CollaborationClearSession>
+				<CollaborationLeaveSession> Verlassen Sie die Collaboration-Sitzung </CollaborationLeaveSession>
+				<LayerOff> Ebene aus </LayerOff>
+				<SwapLayers> Ebenen tauschen </SwapLayers>
+				<AllLayersOn> Alle Ebenen auf </AllLayersOn>
+				<ZoomExtents> Zoom Ausdehnung </ZoomExtents>
+				<ZoomWindow> Zoomfenster </ZoomWindow>
+			</IconPage_p4_8>
+			<IconPage_p5_8>
+				<PreviousPage> Vorherige Menüseite </PreviousPage>
+				<NextPage> Nächste Symbolseite </NextPage>
+				<InsertSpaceImage> Space Image-Objekt einfügen </InsertSpaceImage>
+				<DragSpaceImage> Space Image-Objekt ziehen </DragSpaceImage>
+				<ResizeSpaceImage> Größe des Space Image-Objekts ändern </ResizeSpaceImage>
+				<LoadSpaceObjects> Laden von Space-Objekten </LoadSpaceObjects>
+				<Publish> Anzeigen der Space-Objektstruktur im Benutzeranzeigemodus </Publish>
+				<DownloadSVG> Verarbeitete SVG-Zeichnung herunterladen </DownloadSVG>
+				<Load> Grundriss laden und Space-Objekte vorverarbeiten </Load>
+				<Settings> Einstellungen </Settings>
+				<SelectObject> Objekt auswählen </SelectObject>
+				<Rect> Rectangle Space Object </Rect>
+				<Polygon> Polygonraumobjekt </Polygon>
+				<Circle> Kreisraumobjekt </Circle>
+				<CopyCircle> Kreisraumobjekt kopieren </CopyCircle>
+				<Delete> Raumobjekt löschen </Delete>
+				<LayerList> Ebene Liste </LayerList>
+				<Mode> Umschalten des Anzeige- und Bearbeitungsmodus</Mode>
+				<SelectPolygon> Generiert ein Space-Objekt für ein geschlossenes Polygon </SelectPolygon>				
+				<Free>Leer</Free>
+			</IconPage_p5_8>		
+			<IconPage_p6_1>
+				<PinMarker> Pin-Marker hinzufügen </PinMarker>
+			</IconPage_p6_1>
+			<PageModal>
+				<ZoomExtents> Zoom Ausdehnung </ZoomExtents>
+				<ZoomWindow> Zoomfenster </ZoomWindow>				
+				<SelectPageFromList> Zeichnungsseite aus Liste auswählen </SelectPageFromList>
+				<EnterPage> Geben Sie die Seitenzahl ein </EnterPage>
+				<RotateBack> Um 90 Grad gegen den Uhrzeigersinn drehen </RotateBack>
+				<RotateForward> 90 Grad im Uhrzeigersinn drehen </RotateForward>
+				<First> Erste Seite in Zeichnung laden </First>
+				<Previous> Vorherige Seite in Zeichnung laden </Previous>
+				<Next> Nächste Seite in Zeichnung laden </Next>
+				<Last> Letzte Seite in Zeichnung laden </Last>				
+			</PageModal>
+			<StickyNote>
+				<MoveNote> Notiz verschieben </MoveNote>
+				<EditNote> Notiz bearbeiten </EditNote>
+				<DeleteNote> Notiz löschen </DeleteNote>
+				<MinimizeNote> Notiz minimieren </MinimizeNote>
+				<Inactive> Inaktiv </Inactive>
+				<SaveNote> Notiz speichern </SaveNote>
+				<Cancel> Abbrechen Bearbeitungsnotiz </Cancel>
+			</StickyNote>
+			<ImageObject>
+				<InsertReplace> Bild einfügen oder ersetzen</InsertReplace>
+				<Delete>Bild und zugehöriges Symbol löschen</Delete>
+				<DeleteNote>Notiz löschen</DeleteNote>
+				<Minimize> Bildobjekt minimieren</Minimize>
+			</ImageObject>			
+			<DeleteModal>
+				<Header> Löschen </Header>
+				<Text1> Diese Aktion entfernt </Text1>
+				<Text2> und deaktivieren Sie den Zugriff auf den Grundriss für alle Benutzer. </Text2>
+			</DeleteModal>
+			<UnlinkModal>
+				<Header> Verknüpfung aufheben </Header>
+				<Text1> Diese Aktion entfernt alle Metadaten aus </Text1>
+				<Text2> Standortobjekte bleiben unverändert. </Text2>
+			</UnlinkModal>
+			<ClearModal>
+				<Header> Löschen </Header>
+				<Text1> Diese Aktion entfernt alle Metadaten und Standortobjekte aus </Text1>
+			</ClearModal>	
+			<FileLoadSpaceModal>
+				<Header> CADViewer: Space Management File Loader </Header>
+				<DrawingFilename> Zeichnung / Dateiname </DrawingFilename>
+				<EditFloorplanInfo> Grundrissinformationen bearbeiten </EditFloorplanInfo>
+				<BuildRoomTextHyperlinks> Erstellen von Hyperlinks für Raum- / Textebenen beim Laden </BuildRoomTextHyperlinks>
+			</FileLoadSpaceModal>	
+			<LoadingModal>
+				<Loading>Laden</Loading>
+			</LoadingModal>
+			<HeaderObjectLayers>
+				<ObjectLayer>Spaces - User Layer 1</ObjectLayer>
+				<ObjectLayer>Assets - User Layer 1</ObjectLayer>
+			</HeaderObjectLayers>
+			<WaitModal>
+				<Drucken> Drucken </Drucken>
+				<Thumbnails> Speichern </Thumbnails>
+				<BatchPDF> In PDF drucken </BatchPDF>
+				<MergeDWG> Drucken </MergeDWG>
+			</WaitModal>			
+	</languages>
+	<languages>
+			<languageCode>FR-FR</languageCode>
+			<thisLanguage>French</thisLanguage>
+			<PrintModal>
+			<Header> CADViewer - Paramètres d'impression </Header>
+			<Paper> Taille: </Paper>
+			<Landscape> Paysage </Landscape>
+			<Portrait> Portrait </Portrait>
+			<Orientation> Orientation: </Orientation>
+			<Resolution> Résolution: </Resolution>
+			<ResolutionText> (min 75 dpi, standard 300 dpi) </ResolutionText>
+			<Print> Imprimer </Print>
+			<Grayscale> Niveaux gris </Grayscale>
+			<PrintPDF> Imprimer PDF </PrintPDF>
+			<PrintToScale> Imprimer à l'échelle </PrintToScale>
+			<TextBox1Header> Titre du dessin (4 x lignes maximum) </TextBox1Header>
+			<TextBox2Header> Numéro de dessin </TextBox2Header>
+			<EnterScale> Échelle: </EnterScale>
+			<CustomCheckbox> Bloc de titre </CustomCheckbox>
+			<JsonVariable> Variable ($$$): </JsonVariable>
+				<PaperSizeTotal>19</PaperSizeTotal>
+				<PaperSizes>
+					<PaperSize>A4</PaperSize>
+					<PaperSize>A3</PaperSize>
+					<PaperSize>A2</PaperSize>
+					<PaperSize>A1</PaperSize>
+					<PaperSize>A0</PaperSize>
+					<PaperSize>A5</PaperSize>
+					<PaperSize>letter</PaperSize>
+					<PaperSize>legal</PaperSize>
+					<PaperSize>tabloid</PaperSize>
+					<PaperSize>USA</PaperSize>
+					<PaperSize>USB</PaperSize>
+					<PaperSize>USC</PaperSize>
+					<PaperSize>USD</PaperSize>
+					<PaperSize>USE</PaperSize>
+					<PaperSize>ARCHA</PaperSize>
+					<PaperSize>ARCHB</PaperSize>
+					<PaperSize>ARCHC</PaperSize>
+					<PaperSize>ARCHD</PaperSize>
+					<PaperSize>ARCHE</PaperSize>
+					<PaperSize>ALCOAA</PaperSize>
+				</PaperSizes>
+				<MenuItems>
+					<MenuItem>A4 (210 x 297 mm)</MenuItem>
+					<MenuItem>A3 (297 x 420 mm)</MenuItem>
+					<MenuItem>A2 (420 x 594 mm)</MenuItem>
+					<MenuItem>A1 (594 x 841 mm)</MenuItem>
+					<MenuItem>A0 (841 x 1189 mm)</MenuItem>
+					<MenuItem>A5 (148 x 210 mm)</MenuItem>
+					<MenuItem>Letter (8.5 x 11 in)</MenuItem>
+					<MenuItem>Legal (8.5 x 14 in)</MenuItem>
+					<MenuItem>Tabloid (11 x 17 in)</MenuItem>
+					<MenuItem>A (8.5 x 11 in)</MenuItem>
+					<MenuItem>B (11 x 17 in)</MenuItem>
+					<MenuItem>C (17 x 22 in)</MenuItem>
+					<MenuItem>D (22 x 34 in)</MenuItem>
+					<MenuItem>E (34 x 44 in)</MenuItem>
+					<MenuItem>A+ (9 x 12 in)</MenuItem>
+					<MenuItem>B+ (12 x 18 in)</MenuItem>
+					<MenuItem>C+ (18 x 24 in)</MenuItem>
+					<MenuItem>D+ (24 x 36 in)</MenuItem>
+					<MenuItem>E+ (36 x 48 in)</MenuItem>
+					<MenuItem>ALCOA A (30 x 36 in)</MenuItem>
+				</MenuItems>
+			</PrintModal>
+				<SearchTextModal>
+				<Header> Texte de recherche </Header>
+				<SearchText> Texte de recherche: </SearchText>
+				<Zoom> Niveau de zoom: </Zoom>
+				<Search> Recherche </Search>
+				</SearchTextModal>
+				<SearchCustomModal>
+				<Header> Texte de recherche </Header>
+				<SearchText> Texte de recherche: </SearchText>
+				<Search> Recherche </Search>
+				</SearchCustomModal>
+			<InfoMessageModal>
+				<Header> Informations CADViewer </Header>
+				<Header2> Informations CADViewer </Header2>
+				<Version> Version de CADViewer: </Version>
+				<AXVersion> Version d'AutoXchange: </AXVersion>
+				<ComingSoon> Prochainement! </ComingSoon>
+				<NoUnits> Aucune unité définie dans le dessin, veuillez d'abord utiliser la commande Calibrer la mesure. </NoUnits>
+				<UnitLess> Le dessin d'origine est sans unité, veuillez d'abord utiliser la commande Calibrer la mesure </UnitLess>
+				<QuickCountSingle> Le nombre de comptages rapides est: </QuickCountSingle>
+				<QuickCountMultiple> Le nombre de comptages rapides est: </QuickCountMultiple>
+				<RedlinesLocked> Les lignes rouges sont verrouillées pour l'utilisateur: </RedlinesLocked>
+				<LicensePath> Impossible de trouver la clé de licence au chemin: </LicensePath>
+				<LicenseNotFound> Clé de licence introuvable </LicenseNotFound>
+				<SelectTwoPoints> Sélectionnez d'abord deux points dans le dessin avec la souris, puis entrez l'unité et la distance, puis appuyez sur OK. </SelectTwoPoints>
+				<ReferenceDistance> Veuillez saisir une distance de référence. </ReferenceDistance>
+				<RedlinesSaved> Redlines enregistrées </RedlinesSaved>
+				<SinglePage> Dessin d'une seule page - pas de changement de page </SinglePage>
+				<FirstPage> La page actuelle est la première page d'un dessin de plusieurs pages - pas de changement de page </FirstPage>
+				<LastPage> La page actuelle est la dernière page d'un dessin de plusieurs pages - pas de changement de page </LastPage>
+				<OutOfRange> Le numéro de page saisi est en dehors de la plage de pages - pas de changement de page </OutOfRange>
+				<FileLoadThroughApp> REMARQUE: le chargement de fichier est activé uniquement via l'application d'encapsulation </FileLoadThroughApp>
+				<ErrorConnectingToHost> Erreur lors de la connexion à l'hôte. Allez dans le volet Paramètres et vérifiez vos paramètres réseau! </ErrorConnectingToHost>
+				<ConnectToHostFirst> Accédez au volet Paramètres, vérifiez vos paramètres réseau et cliquez sur Enregistrer les modifications pour vous connecter à votre hôte réseau afin de récupérer la structure de données utilisée lors du mappage des emplacements. </ConnectToHostFirst>
+				<NoObjectSelected> Veuillez sélectionner un objet d'espace. </NoObjectSelected>
+				<PaperSizePDFPrintOnly> Veuillez sélectionner Imprimer au format PDF pour les grands formats de papier. Les grands formats de papier sont A1 et A0, ainsi que US Arch D et au-dessus. </PaperSizePDFPrintOnly>
+				<ServerSideFormatForPDFPrint> L'impression PDF nécessite un fichier original aux formats DWG, DWF, DXF ou DGN ou PCF. Veuillez télécharger un fichier dans ces formats ou sélectionner un format de papier plus petit pour l'impression directe. Les formats de papier à impression directe sont A4-A2 ou US Letter via ANSI C </ServerSideFormatForPDFPrint>
+				<PrintDisabled> REMARQUE: impression désactivée </PrintDisabled>
+				<NoQRCode> Aucun code QR reçu du serveur! </NoQRCode>
+				<DrawingName> Dessin: </DrawingName>
+			</InfoMessageModal>
+				<FileLoadModal>
+				<Header> CADViewer - Gestionnaire de fichiers </Header>
+				<DrawingFilename> Dessin / Nom de fichier </DrawingFilename>
+				<EditFloorplanInfo> Modifier les informations du plan d'étage </EditFloorplanInfo>
+				</FileLoadModal>
+				<SaveRedlineModal>
+				<Header> CADViewer - Enregistrer la ligne rouge </Header>
+				<RedlineFilename> Ligne rouge / Nom de fichier </RedlineFilename>
+				<EditRedlineInfo> Modifier les informations sur la ligne rouge </EditRedlineInfo>
+				<Upload> TÉLÉCHARGER </Upload>
+				</SaveRedlineModal>
+				<OpenRedlineModal>
+				<Header> CADViewer - Ouvrir Redline </Header>
+				<RedlineFilename> Ligne rouge / Nom de fichier </RedlineFilename>
+				<EditRedlineInfo> Modifier les informations sur la ligne rouge </EditRedlineInfo>
+				</OpenRedlineModal>
+				<OpenSpaceObjectModal>
+				<Header> CADViewer - Objets Open Space </Header>
+				<RedlineFilename> Ligne rouge / Nom de fichier </RedlineFilename>
+				<EditSpaceObjectInfo> Modifier les informations sur la ligne rouge </EditSpaceObjectInfo>
+				</OpenSpaceObjectModal>
+					<RedlineThicknessModal>
+					<Header> Sélectionnez l'épaisseur</Header>
+					<Thickness> Épaisseur: </Thickness>
+					<OK> OK </OK>
+					</RedlineThicknessModal>
+					<DocumentPageChangeModal>
+					<Header> Sélectionner la page </Header>
+					<Page> Page: </Page>
+					<OK> OK </OK>
+					</DocumentPageChangeModal>
+					<CollaborationStartModal>
+					<Header> Session de collaboration </Header>
+					<Session> Nom de la session: </Session>
+					<OK> OK </OK>
+					</CollaborationStartModal>
+			<PublishPDFModal>
+				<Header> Publier l'écran avec des Redlines au format PDF </Header>
+				<SelectMode> Sélectionner le mode </SelectMode>
+				<Mode1> Télécharger </Mode1>
+				<Mode2> Par e-mail </Mode2>
+				<Mode3> Télécharger sur le serveur </Mode3>
+				<EntireDoc> Publier le document entier: </EntireDoc>
+				<OK> OK </OK>
+				<Recipient> E-mail: </Recipient>
+				<Title> Titre: </Title>
+				<Message> Message: </Message>
+			</PublishPDFModal>
+			<MergeDXFModal>
+				<Header> Fusionner Redline avec Source DWG </Header>
+				<SelectMode> Sélectionner le mode </SelectMode>
+				<Mode1> Télécharger </Mode1>
+				<Mode2> Par e-mail </Mode2>
+				<Mode3> Télécharger sur le serveur </Mode3>
+				<EntireDoc> Publier le document entier: </EntireDoc>
+				<OK> OK </OK>
+				<Recipient> E-mail: </Recipient>
+				<Title> Titre: </Title>
+				<Message> Message: </Message>
+			</MergeDXFModal>
+			<RedlineColorModal>
+				<Header> Sélectionnez la couleur Redline </Header>
+				<PickColor> Choisissez: </PickColor>
+				<SelectColor> Sélection: </SelectColor>
+				<Blue> Bleu </Blue>
+				<Red> Rouge </Red>
+				<Yellow> Jaune </Yellow>
+				<Orange> Orange </Orange>
+				<Green> Vert </Green>
+				<Purple> Violet </Purple>
+				<Brown> Marron </Brown>
+				<Gray> Gris </Gray>
+				<OK> OK </OK>
+			</RedlineColorModal>
+			<RedlineEllipseModal>
+				<Header> Sélectionnez la forme Redline </Header>
+				<SelectType> Sélectionnez: </SelectType>
+				<Ellipse> Ellipse: </Ellipse>
+				<Cloud> Nuage: </Cloud>
+				<OK> OK </OK>
+			</RedlineEllipseModal>
+			<CreationModeModal>
+				<Header> Sélectionnez la source de l'ID d'espace </Header>
+				<SelectType> Sélectionnez: </SelectType>
+				<DataSource> De la source de données via l'API </DataSource>
+				<Manually> Cloud </Manually>
+				<OK> OK </OK>
+			</CreationModeModal>
+			<BackgroundColorModal>
+				<Header> Sélectionnez la couleur d'arrière-plan </Header>
+				<PickColor> Choisissez: </PickColor>
+				<SelectColor> Sélection: </SelectColor>
+				<White> Blanc </White>
+				<Black> Noir </Black>
+				<Azure> Azure </Azure>
+				<Pink> Rose </Pink>
+				<Snow> Neige </Snow>
+				<Silver> Argent </Silver>
+				<Brown> Marron </Brown>
+				<Gray> Gris </Gray>
+				<OK> OK </OK>
+			</BackgroundColorModal>
+			<RedlineTextModal>
+				<Header> Texte rouge </Header>
+				<FontSize> Taille de la police: </FontSize>
+				<OK> OK </OK>
+				<Text> Entrez du texte, cliquez sur OK et insérez dans le dessin. </Text>
+			</RedlineTextModal>
+			<LineThicknessModal>
+				<Header> Ajuster les épaisseurs de ligne </Header>
+				<LineThickness> Épaisseur de ligne: </LineThickness>
+				<Text> Parlez de poids zéro. </Text>
+			</LineThicknessModal>
+			<CalibrateModal>
+				<Header> Calibrer la mesure </Header>
+				<Unit> Unité: </Unit>
+				<Distance> Distance: </Distance>
+				<OK> OK </OK>
+				<Text> Sélectionnez d'abord deux points dans le dessin avec la souris, puis entrez l'unité et la distance et appuyez sur OK </Text>
+			</CalibrateModal>
+			<SettingsModal>
+				<Header> Paramètres généraux de CADViewer </Header>
+				<OnlineLanguage> Langue en ligne: </OnlineLanguage>
+				<Distance> Distance: </Distance>
+				<ConversionFixed> Paramètres de conversion (fixe): </ConversionFixed>
+				<ConversionUser> Paramètres de conversion (contrôlés par l'utilisateur): </ConversionUser>
+				<Param> Paramètre: </Param>
+				<Value> (Valeur): </Value>
+				<TotalParameters>0</TotalParameters>
+				<ParamNames>
+					<ParamName></ParamName>
+				</ParamNames>
+				<ParamValues>
+					<ParamValue></ParamValue>
+				</ParamValues>
+					<OK> Paramètres de mise à jour </OK>
+					<Text> Veuillez vous référer au &lt;a href=&quot;https://tailormade.com/ax2020techdocs/parameter_interface/&quot;&gt;AX2020 techdocs&lt;/a&gt; pour les réglages détaillés des paramètres! </Text>				
+			</SettingsModal>
+			<MeasurementModal>
+				<Header> Mesure CADViewer </Header>
+				<Distance> Distance: </Distance>
+				<MeasureAgain> Réessayer</MeasureAgain>
+				<ClosePolygon> Fermer le polygone de zone </ClosePolygon>
+				<Text> Sélectionnez deux points dans le dessin pour la distance. </Text>
+				<TextArea> Sélectionnez une séquence de points. Double-cliquez, Echap ou bouton "Fermer la zone" pour la zone. </TextArea>
+				<Area> Zone: </Area>
+				<MenuItems>
+				<MenuItem> Distance </MenuItem>
+				<MenuItem> Zone </MenuItem>
+				<MenuItem> Point (coordonnées globales) </MenuItem>
+				<MenuItem> Point (coordonnées SVG) </MenuItem>
+				<MenuItem> Plusieurs points (global) </MenuItem>
+				<MenuItem> Plusieurs points (SVG) </MenuItem>
+				<MenuItem> Chemin SVG </MenuItem>
+				</MenuItems>
+				<Point> Point: </Point>
+				<Points> Points: </Points>
+				<PointText> Sélectionnez un seul point, capturez à partir du presse-papiers. </PointText>
+				<PointsText> Sélectionnez plusieurs points, capturez à partir du presse-papiers. </PointsText>
+			</MeasurementModal>
+				<BirdsEyeModal>
+				<Header> Fenêtre à vol d'oiseau </Header>
+				</BirdsEyeModal>
+				<ImageObjectModal>
+				<Header> N ° d'objet image. </Header>
+				<LoadImage> Charger une nouvelle image </LoadImage>
+				<RemoveImageNote> Supprimer la note  </RemoveImageNote>
+				<MinimizeImageNote> Réduire la note </MinimizeImageNote>
+				</ImageObjectModal>
+				<LayerListModal>
+				<Header> CADViewer - Liste des calques </Header>
+				<SelectDrawings> Sélectionnez Xréf / Sous-dessins à afficher: </SelectDrawings>
+				<XrefLayerName> Utiliser le nom de calque Xref d'origine </XrefLayerName>
+				<Search> Recherche </Search>
+				<Sort> Trier par calque </Sort>
+				<AllLayerOn> Calques activés </AllLayerOn>
+				<AllLayerOff> Désactivés </AllLayerOff>
+				<SwapLayers> Permuter </SwapLayers>
+				<On> Sur </On>
+				<Off> Hors </Off>
+				<BaseAndXref> Dessin de base </BaseAndXref>
+				<Xref> Xref: </Xref>
+				</LayerListModal>			
+			<PageChangeListModal>
+				<Header> Modifier la page de dessin </Header>
+				<Search> Recherche </Search>
+				<Sort> Trier par nom </Sort>
+				<On>Sur</On>
+				<Off>Hors</Off>
+			</PageChangeListModal>
+			<LayerListSpaceModal>
+				<Header>Liste des calques - Objets spatiaux</Header>
+				<Search> Recherche </Search>
+				<Sort> Trier par calque </Sort>
+				<AllLayerOn> Calques activés </AllLayerOn>
+				<AllLayerOff> Désactivés </AllLayerOff>
+				<SwapLayers> Permuter </SwapLayers>
+				<On> Sur </On>
+				<Off> Hors </Off>
+				<NotAssigned> Non attribué </NotAssigned>
+				<TextLayer> Calque de texte </TextLayer>
+				<RoomLayer> Couche de la pièce </RoomLayer>
+				<HandleLayer> Couche active </HandleLayer>
+				<FloodfillLayer> Calque SpaceID </FloodfillLayer>
+			</LayerListSpaceModal>
+			<DataMaps>
+				<Map>Data Maps - User Map 1</Map>
+				<Map>Data Maps - User Map 2</Map>
+				<Map>Data Maps - User Map 3</Map>
+				<Map>Data Maps - User Map 4</Map>			
+			</DataMaps>
+			<IconPage_p1_8>
+				<PreviousPage> Page de menu précédente </PreviousPage>
+				<NextPage> Page d'icônes suivante </NextPage>
+				<NextMenuPage> Page de menu suivante </NextMenuPage>
+				<LayerList> Liste des calques </LayerList>
+				<Print> Imprimer </Print>
+				<ZoomIn> Zoom avant </ZoomIn>
+				<ZoomOut> Zoom arrière </ZoomOut>
+				<ZoomExtents> Étendue du zoom </ZoomExtents>
+				<ZoomWindow> Fenêtre Zoom </ZoomWindow>
+				<Toggle> Basculer noir / blanc </Toggle>
+				<Background> Arrière-plan </Background>
+				<FileLoad> Chargement de fichier </FileLoad>
+				<Search> Recherche </Search>
+				<About> À propos </About>
+				<Settings> Paramètres </Settings>
+				<LayerOff> Calque désactivé </LayerOff>
+				<SwapLayers> Permuter les couches </SwapLayers>
+				<AllLayersOn> Tous les calques activés </AllLayersOn>
+				<Measurement> Mesure </Measurement>
+				<Calibrate> Calibrer la mesure </Calibrate>
+				<BirdsEye> Basculer la fenêtre Birds-Eye </BirdsEye>
+				<LineThickness> Ajuster l'épaisseur de la ligne </LineThickness>
+			</IconPage_p1_8>
+			<IconPage_p2_8>
+				<PreviousPage> Page d'icônes précédente </PreviousPage>
+				<NextPage> Page d'icônes suivante </NextPage>
+				<SaveRedline> Enregistrer Redline </SaveRedline>
+				<LoadRedline> Charger la ligne rouge </LoadRedline>
+				<DeleteSingle> Supprimer une seule ligne rouge </DeleteSingle>
+				<DeleteLast> Supprimer la dernière ligne rouge </DeleteLast>
+				<Color> Couleur Redline </Color>
+				<Thickness> Épaisseur de la ligne rouge </Thickness>
+				<StickyNote> Rendre StickyNote </StickyNote>
+				<ClearAll> Effacer les lignes rouges visibles </ClearAll>
+				<Freehand> Ligne rouge à main levée </Freehand>
+				<Cloud> Redline Ellipse / Nuage </Cloud>
+				<FilledPolygon> Polygone rempli Redline </FilledPolygon>
+				<Polyline> Polyligne Redline </Polyline>
+				<Polygon> Polygone Redline </Polygon>
+				<FilledRectangle> Rectangle rempli Redline </FilledRectangle>
+				<Rectangle> Rectangle Redline </Rectangle>
+				<Arrow> Flèche Redline </Arrow>
+				<Text> Texte rouge </Text>
+				<PublishAsPDF> Publier au format PDF </PublishAsPDF>
+				<MergeAsDXF> Fusionner Redline avec le DWG source </MergeAsDXF>
+				<Free> Gratuit </Free>
+				<MergeWithQR> Fusionner le code QR avec le DWG source </MergeWithQR>
+				<LineThickness> Ajuster l'épaisseur de la ligne </LineThickness>
+			</IconPage_p2_8>
+			<IconPage_p3_8>
+				<PreviousPage> Page d'icônes précédente </PreviousPage>
+				<NextPage> Page d'icônes suivante </NextPage>
+				<PublishAsPDF> Publier au format PDF </PublishAsPDF>
+				<Free> Vide </Free>
+				<LayerOff> Calque désactivé </LayerOff>
+				<SwapLayers> Permuter les couches </SwapLayers>
+				<AllLayersOn> Tous les calques activés </AllLayersOn>
+				<ZoomExtents> Étendue du zoom </ZoomExtents>
+				<ZoomWindow> Fenêtre Zoom </ZoomWindow>
+				<LoadLink> Charger tous les liens d'image </LoadLink>
+				<InsertLink> Insérer des liens d'image </InsertLink>
+				<SaveLink> Enregistrer tous les liens d'image </SaveLink>
+				<QuickCount> Compte rapide </QuickCount>
+				<CountSum> Compte rapide récapitulatif </CountSum>
+				<ClearCount> Effacer le décompte rapide </ClearCount>
+			</IconPage_p3_8>
+			<IconPage_p4_8>
+				<PreviousPage> Page d'icônes précédente </PreviousPage>
+				<NextPage> Page d'icônes suivante </NextPage>
+				<Free> Gratuit </Free>
+				<CompareLoad> Charger le deuxième dessin pour comparer </CompareLoad>
+				<CompareToggle> Basculer les dessins individuellement </CompareToggle>
+				<CompareToggleOverlay> Activer / désactiver les dessins superposés </CompareToggleOverlay>
+				<CompareExit> Quitter Comparer les dessins </CompareExit>
+				<CollaborationJoinSession> Rejoindre la session de collaboration </CollaborationJoinSession>
+				<CollaborationTakeControl> prendre le contrôle de la session de collaboration </CollaborationTakeControl>
+				<CollaborationClearSession> Effacer les lignes rouges dans la session de collaboration </CollaborationClearSession>
+				<CollaborationLeaveSession> Quitter la session de collaboration </CollaborationLeaveSession>
+				<LayerOff> Calque désactivé </LayerOff>
+				<SwapLayers> Permuter les couches </SwapLayers>
+				<AllLayersOn> Tous les calques activés </AllLayersOn>
+				<ZoomExtents> Étendue du zoom </ZoomExtents>
+				<ZoomWindow> Fenêtre Zoom </ZoomWindow>
+			</IconPage_p4_8>
+			<IconPage_p5_8>
+				<PreviousPage> Page d'icônes précédente </PreviousPage>
+				<NextPage> Page d'icônes suivante </NextPage>
+				<InsertSpaceImage> Insérer un objet d'image d'espace </InsertSpaceImage>
+				<DragSpaceImage> Faites glisser l'objet d'image d'espace </DragSpaceImage>
+				<ResizeSpaceImage> Redimensionner l'objet d'image d'espace </ResizeSpaceImage>
+				<LoadSpaceObjects> Charger des objets d'espace </LoadSpaceObjects>
+				<Publish> Afficher la structure des objets d'espace en mode d'affichage utilisateur </Publish>
+				<DownloadSVG> Télécharger le dessin SVG traité </DownloadSVG>
+				<Load> Charger le plan d'étage et prétraiter les objets spatiaux </Load>
+				<Settings> Paramètres </Settings>
+				<SelectObject> Sélectionner un objet </SelectObject>
+				<Rect> Objet Espace Rectangle </Rect>
+				<Polygon> Objet Espace Polygone </Polygon>
+				<Circle> Objet d'espace cercle </Circle>
+				<CopyCircle> Copier l'objet d'espace de cercle </CopyCircle>
+				<Delete> Supprimer l'objet d'espace </Delete>
+				<LayerList> Liste des calques </LayerList>
+				<Mode> Activer / désactiver l'affichage des objets spatiaux et le mode d'édition </Mode>
+				<Free> Vide </Free>
+				<SelectPolygon> Générer un objet spatial sur un polygone fermé </SelectPolygon>
+			</IconPage_p5_8>		
+			<IconPage_p6_1>
+				<PinMarker> Ajouter un marqueur de broche </PinMarker>
+			</IconPage_p6_1>
+			<PageModal>
+				<ZoomExtents> Étendue du zoom </ZoomExtents>
+				<ZoomWindow> Fenêtre Zoom </ZoomWindow>
+				<SelectPageFromList> Sélectionner la page de dessin dans la liste </SelectPageFromList>
+				<EnterPage> Entrez le numéro de page </EnterPage>
+				<RotateBack> Rotation de 90 degrés dans le sens anti-horaire </RotateBack>
+				<RotateForward> Rotation de 90 degrés dans le sens des aiguilles d'une montre </RotateForward>
+				<First> Charger la première page du dessin </First>
+				<Previous> Charger la page précédente dans le dessin </Previous>
+				<Next> Charger la page suivante dans le dessin </Next>
+				<Last> Charger la dernière page du dessin </Last>
+			</PageModal>
+			<StickyNote>
+				<MoveNote> Déplacer la note </MoveNote>
+				<EditNote> Modifier la note </EditNote>
+				<DeleteNote> Supprimer la note </DeleteNote>
+				<MinimizeNote> Réduire la note </MinimizeNote>
+				<Inactive> Inactif </Inactive>
+				<SaveNote> Enregistrer la note </SaveNote>
+				<Cancel> Annuler la modification de la note </Cancel>
+			</StickyNote>
+			<ImageObject>
+				<InsertReplace> Insérer ou remplacer une image </InsertReplace>
+				<Delete> Supprimer l'image et l'icône associée </Delete>
+				<DeleteNote> Supprimer la note </DeleteNote>
+				<Minimize> Réduire l'objet image </Minimize>
+			</ImageObject>			
+			<DeleteModal>
+				<Header> Supprimer </Header>
+				<Text1> Cette action supprimera </Text1>
+				<Text2> et désactivez l'accès au plan d'étage pour tous les utilisateurs. </Text2>
+			</DeleteModal>
+			<UnlinkModal>
+				<Header> Dissocier </Header>
+				<Text1> Cette action supprimera toutes les métadonnées de </Text1>
+				<Text2> Les objets de localisation resteront inchangés. </Text2>
+			</UnlinkModal>
+			<ClearModal>
+				<Header> Effacer </Header>
+				<Text1> Cette action supprimera toutes les métadonnées et tous les objets de localisation de </Text1>
+			</ClearModal>	
+			<FileLoadSpaceModal>
+				<Header> CADViewer: chargeur de fichiers de gestion de l'espace </Header>
+				<DrawingFilename> dessin / nom de fichier </DrawingFilename>
+				<EditFloorplanInfo> Modifier les informations du plan d'étage </EditFloorplanInfo>
+				<BuildRoomTextHyperlinks> Créer des hyperliens de couche ROOM / TEXT lors du chargement </BuildRoomTextHyperlinks>
+			</FileLoadSpaceModal>	
+			<LoadingModal>
+				<Loading> Chargement </Loading>
+			</LoadingModal>
+			<HeaderObjectLayers>
+				<ObjectLayer>Spaces - User Layer 1</ObjectLayer>
+				<ObjectLayer>Assets - User Layer 1</ObjectLayer>
+			</HeaderObjectLayers>
+			<WaitModal>
+				<Printing> Impression </Printing>
+				<Thumbnails> Enregistrement </Thumbnails>
+				<BatchPDF> Imprimer au format PDF </BatchPDF>
+				<MergeDWG> Impression </MergeDWG>
+			</WaitModal>			
+	</languages>	
+</cvjs>
+						
+						
+						

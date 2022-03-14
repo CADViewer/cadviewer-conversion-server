@@ -1,0 +1,91 @@
+/* line 16, ../sass/topbar.scss */
+.topbar {
+  display: block;
+  min-width: 1024px;
+  width: 100%;
+  height: 44px;
+  top: 0px;
+  left: 0px;
+  z-index: 5000;
+  background: #00539B;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* line 33, ../sass/topbar.scss */
+.topbar-icon ul {
+  float: right;
+  margin: 12px 14px 0 0;
+  list-style-type: none;
+}
+/* line 38, ../sass/topbar.scss */
+.topbar-icon li:first-child {
+  top: 2px;
+  padding-right: 18px;
+}
+/* line 45, ../sass/topbar.scss */
+.topbar-icon li:nth-child(2) {
+  padding-right: 18px;
+}
+/* line 48, ../sass/topbar.scss */
+.topbar-icon li:nth-child(3) {
+  padding-right: 18px;
+}
+
+/* line 53, ../sass/topbar.scss */
+.topbar-center {
+  position: relative;
+  padding-top: 12px;
+  font-size: 14px;
+  width: 15%;
+  min-width: 180px;
+  margin: 0 auto;
+  color: #ccc;
+  text-align: center;
+  font-weight: 500;
+}
+/* line 63, ../sass/topbar.scss */
+.topbar-center #date {
+  padding-right: 10px;
+}
+/* line 66, ../sass/topbar.scss */
+.topbar-center #time {
+  border-left: 1px solid;
+  padding-left: 8px;
+}
+
+/* line 72, ../sass/topbar.scss */
+.topbar-appname {
+  float: left;
+  margin: 11px 0 0 6px;
+  border-left: 1px solid;
+  font-weight: 700;
+  font-size: 15px;
+  padding-left: 12px;
+}
+
+/* line 81, ../sass/topbar.scss */
+.topbar-brand {
+  float: left;
+  margin-top: 10px;
+}
+/* line 84, ../sass/topbar.scss */
+.topbar-brand ul {
+  list-style-type: none;
+  margin-left: 0px;
+}
+/* line 88, ../sass/topbar.scss */
+.topbar-brand li {
+  display: inline;
+}
+/* line 91, ../sass/topbar.scss */
+.topbar-brand li:first-child {
+  margin: 0px 10px 0px 12px;
+}
+/* line 94, ../sass/topbar.scss */
+.topbar-brand li:last-child {
+  text-shadow: 1px 1px 1px #000;
+}

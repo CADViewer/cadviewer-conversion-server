@@ -1,0 +1,162 @@
+#tool_tip{
+	 position : absolute;
+	 border : 1px solid gray;
+	 background-color : #efefef;
+	 color:#333;
+	 padding : 3px;
+	 z-index: 1000;
+	 /* set this to create word wrap */
+	 max-width: 200px;
+	}
+
+
+#display_tip{
+	 position : absolute;
+	 border : 1px solid gray;
+	 background-color : #efefef;
+	 color:#333;
+	 padding : 3px;
+	 z-index: 1010;
+	 /* set this to create word wrap */
+	}
+
+#tip{
+	 position : absolute;
+	 border : 1px solid gray;
+	 background-color : #efefef;
+	 color:#333;
+	 padding : 3px;
+	 z-index: 1000;
+	 /* set this to create word wrap */
+	 max-width: 200px;
+	 font-family:arial, verdana, sans-serif;
+	 font-size:0.75em;
+	}
+
+	#div_comment {
+		float:left;
+		clear:both;
+		margin: 0px 0px 0px 0px;
+ 	}
+
+	#div_comment p {
+		font-family:arial, verdana, sans-serif;
+		font-size:0.75em;
+		margin: 0px 0px 0px 0px;
+ 	}
+
+	.comments {
+		font-family:arial, verdana, sans-serif;
+		font-size:0.75em;
+		margin: 0px 0px 0px 0px;
+ 	}
+
+	#account_div {
+		font-family:arial;
+		margin:5px;
+		font-weight:bold;
+		float:right;
+		text-decoration:none;
+		color:white;
+	}
+
+	#account_div a {
+		font-family:arial;
+		font-weight:normal;
+		text-decoration: none;
+		font-style: italic;
+		color:white;
+		font-size: .7em;
+	}
+
+#floorPlan {
+    position: absolute;
+    margin: 0px;
+	border: 0;
+    z-index: 10;
+    display: block;
+    overflow: hidden;
+}
+
+#gMenu {
+    width: 129px;
+    height: 278px;
+    position: absolute;
+    z-index: 980;
+    display: block;
+}
+
+
+.cvjs_modal_header_1
+{
+	color: #00539B;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	font-weight: bold;
+	margin: 0;
+	margin-top:-10px;
+	cursor: pointer;
+	text-align:left;
+	vertical-align:top;
+	width: 128px;
+	z-index: 980;
+
+}
+
+
+.cvjs_modal_header_info_1
+{
+	color: #00539B;
+	margin: 0;
+	cursor: pointer;
+	width: 40px;
+	margin-top:-10px;
+	text-align:right;
+	vertical-align:top;
+	z-index: 20000;
+}
+
+#cvjs_modal_header_info_2
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 9pt;
+	margin: 0;
+	margin-top:0px;
+}
+
+
+.cvjs_modal_1 {
+	width:60px;
+	margin-bottom: 10px;
+	float: left;
+	clear: none;
+	text-align: center;
+	cursor: pointer;
+	color: #00539B;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	z-index: 201;
+}
+
+.cvjs_modal_2 {
+	width:60px;
+	margin-bottom: 10px;
+	float: left;
+	clear: none;
+	text-align: center;
+//	text-decoration: underline;
+	cursor: pointer;
+	color: green;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	z-index: 201;
+}
+
+img.map{
+    outline: none;
+}
+
+map area{
+    outline: none;
+}

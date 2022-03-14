@@ -1,0 +1,178 @@
+/* line 4, ../sass/legend.scss */
+.color-chip {
+  height: 16px;
+  width: 16px;
+  float: left;
+  border: 1px white solid;
+}
+
+/* Location Outline Colors */
+/* line 14, ../sass/legend.scss */
+.location-colors .meeting-rooms {
+  background-color: #12A89D;
+}
+/* line 15, ../sass/legend.scss */
+.location-colors .offices {
+  background-color: #ffd700;
+}
+/* line 16, ../sass/legend.scss */
+.location-colors .collab-space {
+  background-color: #FF00FF;
+}
+
+/* Sensor Pin Colors */
+/* line 22, ../sass/legend.scss */
+.sensor-colors .normal-sensor {
+  background-color: #6294ce;
+}
+/* line 23, ../sass/legend.scss */
+.sensor-colors .narrow-sensor {
+  background-color: #ff7570;
+}
+
+/* Data Layer Colors */
+/* line 34, ../sass/legend.scss */
+.occupancy-colors .high2 {
+  background-color: #FF413B;
+}
+/* line 35, ../sass/legend.scss */
+.occupancy-colors .high1 {
+  background-color: #FF7570;
+}
+/* line 36, ../sass/legend.scss */
+.occupancy-colors .mid0 {
+  background-color: #FFABA8;
+}
+/* line 37, ../sass/legend.scss */
+.occupancy-colors .low1 {
+  background-color: #C1E9B7;
+}
+/* line 38, ../sass/legend.scss */
+.occupancy-colors .low2 {
+  background-color: #89DC74;
+}
+/* line 39, ../sass/legend.scss */
+.occupancy-colors .void {
+  background-color: #d2d2d2;
+}
+
+/* line 43, ../sass/legend.scss */
+.power-colors .low2 {
+  background-color: #FFECD9;
+}
+/* line 44, ../sass/legend.scss */
+.power-colors .low1 {
+  background-color: #FFD5AB;
+}
+/* line 45, ../sass/legend.scss */
+.power-colors .mid0 {
+  background-color: #FFBF80;
+}
+/* line 46, ../sass/legend.scss */
+.power-colors .high1 {
+  background-color: #FFAA55;
+}
+/* line 47, ../sass/legend.scss */
+.power-colors .high2 {
+  background-color: #FF7F00;
+}
+/* line 48, ../sass/legend.scss */
+.power-colors .void {
+  background-color: #d2d2d2;
+}
+
+/* line 52, ../sass/legend.scss */
+.temperature-colors .low2 {
+  background-color: #fef0d9;
+}
+/* line 53, ../sass/legend.scss */
+.temperature-colors .low1 {
+  background-color: #fdcc8a;
+}
+/* line 54, ../sass/legend.scss */
+.temperature-colors .mid0 {
+  background-color: #fc8d59;
+}
+/* line 55, ../sass/legend.scss */
+.temperature-colors .high1 {
+  background-color: #e34a33;
+}
+/* line 56, ../sass/legend.scss */
+.temperature-colors .high2 {
+  background-color: #b30000;
+}
+/* line 57, ../sass/legend.scss */
+.temperature-colors .void {
+  background-color: #d2d2d2;
+}
+
+
+/* line 62, ../sass/legend.scss */
+.lightlevel-colors .high2 {
+  background-color: #f5f5dc;
+}
+/* line 63, ../sass/legend.scss */
+.lightlevel-colors .high1 {
+  background-color: #fbd9c0;
+}
+/* line 64, ../sass/legend.scss */
+.lightlevel-colors .mid0 {
+  background-color: #fdbca5;
+}
+/* line 65, ../sass/legend.scss */
+.lightlevel-colors .low1 {
+  background-color: #fd9e8b;
+}
+/* line 66, ../sass/legend.scss */
+.lightlevel-colors .low2 {
+  background-color: #fa8072;
+}
+/* line 67, ../sass/legend.scss */
+.lightlevel-colors .void {
+  background-color: #d2d2d2;
+}
+
+
+
+/* line 60, ../sass/legend.scss */
+.legend-bar {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-right: 13px;
+  padding-bottom: 12px;
+  width: 148px;
+  float: right;
+  z-index: 1040;
+  position: fixed;
+  bottom: 18px;
+  right: 18px;
+}
+/* line 77, ../sass/legend.scss */
+.legend-bar .subhead ul .color-chip {
+  height: 20px;
+  width: 20px;
+}
+/* line 81, ../sass/legend.scss */
+.legend-bar .subhead ul a {
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+}
+/* line 86, ../sass/legend.scss */
+.legend-bar .subhead ul a:hover {
+  color: #00ccff;
+}
+/* line 90, ../sass/legend.scss */
+.legend-bar .subhead li {
+  clear: both;
+}
+/* line 94, ../sass/legend.scss */
+.legend-bar .datatype {
+  font-size: 13px;
+  font-weight: 700;
+  padding-bottom: 2px;
+}
+/* line 99, ../sass/legend.scss */
+.legend-bar .refresh {
+  padding-bottom: 6px;
+  float: left;
+}
