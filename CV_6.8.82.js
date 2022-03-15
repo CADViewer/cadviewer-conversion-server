@@ -1,4 +1,4 @@
-var version = "CADViewer Server v6.8.81"
+var version = "CADViewer Server v6.8.82"
 const express = require('express');
 const httprequest = require('request');
 const app = express();
@@ -22,7 +22,7 @@ var makethumbnails = require("./routes/makethumbnails_cv6.5.8.js");
 var copyfile = require("./routes/copyfile_cv6.5.10.js");
 var savefile = require("./routes/savefile_cv6.5.10.js");
 var appendfile = require("./routes/appendfile_cv6.5.10.js");
-var getCADViewerContent = require("./routes/getcadviewercontent_cv6.8.80.js");
+var getCADViewerContent = require("./routes/getcadviewercontent_cv6.8.82.js");
 var returnpdfparams = require("./routes/returnpdfparams_cv6.5.9.js");
 var returnpdfparams = require("./routes/returnpdfparams_cv6.5.9.js");
 var temp_print = require("./routes/temp_print_cv6.5.9.js");
@@ -38,7 +38,7 @@ var saveredline = require("./routes/saveredline_cv6.7.45.js");
 var listdirectory = require("./routes/listdirectory_cv6.7.45.js");
 var listdirectoryredlines = require("./routes/listdirectoryredlines_cv6.7.45.js");
 var loadredline = require("./routes/loadredlines_cv6.7.46.js");
-var callapiconversion = require("./routes/callapiconversion_cv6.8.81.js");
+var callapiconversion = require("./routes/callapiconversion_cv6.8.82.js");
 
 
 var cvjs_debug = config.cvjs_debug;

@@ -58,7 +58,14 @@
 	// Location of installation folders
     var ServerBackEndUrl = window.location.protocol+"//"+window.location.hostname+":"+window.location.port+"/";
     var ServerUrl = window.location.protocol+"//"+window.location.hostname+":"+window.location.port+"/";
-    var ServerLocation = "";
+    
+	
+    var ServerBackEndUrl = "INSERTSERVERBACKEND";
+    var ServerUrl = "INSERTSERVERURL";
+	
+
+	
+	var ServerLocation = "";
 
 	// PATH and FILE to be loaded, can be in formats DWG, DXF, DWF, SVG , JS, DGN, PCF, JPG, GIF, PNG
 	var FileName = "";		
@@ -80,7 +87,7 @@
 			FileName =  myDrawing;
 		}
 
-		
+
 		FileName="INSERTFILENAME";/*INSERT THE FILENAME*/ 
 		if (cvjs_debug) console.log("loading file:"+FileName);
 

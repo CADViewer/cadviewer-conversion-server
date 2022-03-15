@@ -52,17 +52,29 @@ router.get('/getcadviewercontent', function (req, res) {
 
                                 // console.log(mystring0);
 
-                                var mystring1 = mystring0.substring(0, mystring0.indexOf("INSERTFILENAME"))
-                                var mystring2 = mystring0.substring(mystring0.indexOf("INSERTFILENAME")+14)
+                                var mystring1 = mystring0.substring(0, mystring0.indexOf("INSERTFILENAME"));
+                                var mystring2 = mystring0.substring(mystring0.indexOf("INSERTFILENAME")+14);
                                 //res.render(data);	
                                 // inject the converted file into the document. 
-                                var mydata = mystring1+config.fileLocationUrl+"/" + fileTag + "." + Type+mystring2;
+                                mystring0 = mystring1+config.fileLocationUrl+"/" + fileTag + "." + Type+mystring2;
                                 // update inputFile and return back. 
+                                mystring1 = mystring0.substring(0, mystring0.indexOf("INSERTSERVERBACKEND"));
+                                mystring2 = mystring0.substring(mystring0.indexOf("INSERTSERVERBACKEND")+19);
+
+                                mystring0 = mystring1+config.ServerUrl+"/"+mystring2;
+
+                                mystring1 = mystring0.substring(0, mystring0.indexOf("INSERTSERVERURL"));
+                                mystring2 = mystring0.substring(mystring0.indexOf("INSERTSERVERURL")+15);
+
+
+                                // this is hosted on CADViewer server so front-end and back-end are the same!!!!!
+
+                                mystring0 = mystring1+config.ServerUrl+"/"+mystring2;
 
                                 //console.log("mydata="+mydata)
                                 fs.open(writeFile, 'w', function(err, fd) {		
                                     
-                                    var buffer = Buffer.from(mydata);
+                                    var buffer = Buffer.from(mystring0);
                                     fs.write(fd, buffer, 0, buffer.length, null, function(err) {
                                         if (err) {
                                                 if (config.cvjs_debug) console.log("error savefile: "+err);
