@@ -299,7 +299,7 @@ var express = require('express'),
                 var fs = require('fs');
                 httprequest(contentLocation).pipe(fs.createWriteStream(newcontentLocation))
                 .on('error', () => {
-                    console.log('ERROR - httprequest');
+                    console.log('ERROR - httprequest/createWriteStream does this location exist?: '+contentLocation);
                   })
                 .on('finish', () => {
                                 
