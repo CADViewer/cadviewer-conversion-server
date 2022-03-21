@@ -4,6 +4,7 @@ var cvjs_debug = config.cvjs_debug;
 var express = require('express'),
     router = express.Router();
 
+var path = require('path');
 
 
 // loadfile post - non conversion drawings
@@ -33,8 +34,38 @@ router.post('/uploadfile', (req, res) => {
 		}
 		else{
 
-			// 6.8.63
-			var fileName = config.ServerLocation + uploadpath + name;		
+
+			//var dirnamepath = path.dirname(uploadpath);
+			//var dirname = path.dirname(config.ServerLocation);
+			//if (config.cvjs_debug) console.log('/uploadfile uploadpath:'+uploadpath+" dirnamepath "+dirnamepath+" dirnmame "+dirname);
+
+			if (config.cvjs_debug) console.log('/uploadfile uploadpath:'+uploadpath);
+
+			// 6.8.83
+            if (uploadpath.indexOf(config.ServerUrl)==0){
+				// if the path contains the ServerUrl , then we concatenate the server location path
+                // the ServerUrl is replaced with ServerLocation
+                uploadpath = config.ServerLocation + uploadpath.substring(config.ServerUrl.length);
+				if (config.cvjs_debug) console.log('/uploadfile case 1');
+            }
+			else{
+				if (uploadpath.indexOf(config.ServerLocation)==0){
+					// do nothing the server path is already there 
+					if (config.cvjs_debug) console.log('/uploadfile case 2');
+				}
+				else{
+					// we assume ServerLocation = "" and concatenate
+					if (config.cvjs_debug) console.log('/uploadfile case 3');
+					uploadpath = config.ServerLocation + uploadpath;
+				}
+			}
+
+			if (config.cvjs_debug) console.log('/uploadfile uploadpath 2:'+uploadpath);
+
+
+			var fileName = uploadpath + name;		
+
+
 			var body = [];
 			
 			req.on('data', function (data) {
@@ -76,9 +107,7 @@ router.post('/uploadfile', (req, res) => {
 					});
 				});
 			});
-	//		if (config.cvjs_debug) console.log('/uploadfile: !!! '+uploadpath+"  "+ext+"  "+name+"  "+start);
-	//		if (config.cvjs_debug) console.log(req.body);
-			if (config.cvjs_debug) console.log('/uploadfile:'+fileName);
+			//if (config.cvjs_debug) console.log('/uploadfile:'+fileName);
 	
 		}
 

@@ -261,6 +261,7 @@ var express = require('express'),
             
             if (config.cvjs_debug) console.log("\n\r \n\r  decodeURL contentLocation: "+contentLocation+" Server URL: "+config.ServerUrl+" \n\r ");
         
+            /*
             if (contentLocation.indexOf(config.ServerFrontEndUrl)==0){
                     // the ServerFrontEndUrl is replaced with ServerLocation
                     contentLocation = config.ServerLocation + contentLocation.substring(config.ServerFrontEndUrl.length);
@@ -271,7 +272,14 @@ var express = require('express'),
                         contentLocation = config.ServerLocation + contentLocation.substring(config.ServerUrl.length);
                 }			
             }
+            */
+
             
+            if (contentLocation.indexOf(config.ServerUrl)==0){
+                // the ServerUrl is replaced with ServerLocation
+                contentLocation = config.ServerLocation + contentLocation.substring(config.ServerUrl.length);
+            }			
+
             
             if (config.cvjs_debug) console.log("callapiconversion "+contentLocation+" "+config.ServerFrontEndUrl+"  "+config.ServerUrl);
             

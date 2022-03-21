@@ -33,7 +33,7 @@ var directload = require("./routes/directload_cv6.5.9.js");
 var directloadcadviewer = require("./routes/directloadcadviewer_cv6.8.80.js");
 
 var directload2 = require("./routes/directload2_cv6.8.80.js");
-var uploadfile = require("./routes/uploadfile_cv6.8.63.js");
+var uploadfile = require("./routes/uploadfile_cv6.8.83.js");
 var saveredline = require("./routes/saveredline_cv6.7.45.js");
 var listdirectory = require("./routes/listdirectory_cv6.7.45.js");
 var listdirectoryredlines = require("./routes/listdirectoryredlines_cv6.7.45.js");
