@@ -35,6 +35,9 @@ Read the sections on installing and handling [Fonts](https://tailormade.com/ax20
 
 5: The [CADViewer](https://cadviewer.com/cadviewertechdocs) front-end can be found from our [download](https://cadviewer.com/download) resources, or installed directly from npm with: **npm i cadviewer**.
 
+6: See [Business Extensions to Handlers](https://cadviewer.com/cadviewertechdocs/handlers_business/) and [CADViewer RESTFUL API](https://cadviewer.com/cadviewertechdocs/rest_api/) to extend the back-end with a customExtension for reading of Blobs/internal datastructure, etc. 
+
+
 
 **NOTE:** Make sure the converter version number in CADViwer_config.json match the converters you install, and change any paths settings to correspond to your install folders.  
 
@@ -44,7 +47,7 @@ Read the sections on installing and handling [Fonts](https://tailormade.com/ax20
 
 ## General Documentation 
 
--   [CADViewer Techdocs and Installation Guide](https://cadviewer.com/cadviewertechdocs/download)
+-   [CADViewer Techdocs and Installation Guide](https://cadviewer.com/cadviewertechdocs)
 
 
 
