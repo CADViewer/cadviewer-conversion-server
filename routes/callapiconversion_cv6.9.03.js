@@ -4,7 +4,7 @@ var globalCounter = 0;
 
 const httprequest = require('request');
 
-var customendpointextension = require('./cvjs_customConversionEndpointExtension_6.9.02.js');
+var customendpointextension = require('./cvjs_customConversionEndpointExtension_6.9.03.js');
 
 
 var express = require('express'),
@@ -327,17 +327,22 @@ var express = require('express'),
             // the *entire* stdout and stderr (buffered)
             if (config.cvjs_debug) console.log(`stdout-log: ${stdout}`);
             if (config.cvjs_debug) console.log(`stderr-log: ${stderr}`);
-            
-
             if (config.cvjs_debug) console.log("action= "+action);
 
+            
 
             // if  conversion, svg_display, pdf_display  
-            if (action == "conversion" || action == "svg_creation" || action == "pdf_creation")
+            if (action == "conversion" || action == "svg_creation" || action == "pdf_creation"){
+
+                // callback for custom creation with file ?
                 AX2022_callback(res, stderr, err, outputFormat, contentLocation, config.ServerUrl+"/"+config.callbackMethod, tempFileName);	  
+            }
             // if cadviewer                            
-            if (action == "cadviewer_display")
+            if (action == "cadviewer_display"){
+                // callback for custom creation with file ?
+
                 CADViewer_callback(res, stderr, err, outputFormat, contentLocation, config.ServerUrl+"/"+config.callbackMethod, tempFileName);	  
+            }
                         
         });	
 

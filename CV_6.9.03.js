@@ -1,4 +1,4 @@
-var version = "CADViewer Server v6.9.02"
+var version = "CADViewer Server v6.9.03"
 const express = require('express');
 const httprequest = require('request');
 const app = express();
@@ -38,7 +38,7 @@ var saveredline = require("./routes/saveredline_cv6.7.45.js");
 var listdirectory = require("./routes/listdirectory_cv6.7.45.js");
 var listdirectoryredlines = require("./routes/listdirectoryredlines_cv6.7.45.js");
 var loadredline = require("./routes/loadredlines_cv6.7.46.js");
-var callapiconversion = require("./routes/callapiconversion_cv6.9.02.js");
+var callapiconversion = require("./routes/callapiconversion_cv6.9.03.js");
 
 
 var cvjs_debug = config.cvjs_debug;
