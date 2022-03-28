@@ -30,7 +30,7 @@ exports.cvjs_customConversionEndpointExtension =  function (contentLocation, wri
     if (config.cvjs_debug) console.log("fileFomat ="+fileFormat+"  outputFormat: "+outputFormat+" format from contentLocation string:"+contentLocation.indexOf("ftype="));
 
     var conversionFlag = true;
-    var svgTest = true;  // test only
+    var svgTest = false;  // test only
      // we need to do the following checks:  
      // if no ftype, then assuming dwg
      // if ftype, we have to find it and update the command string fileFormat string
