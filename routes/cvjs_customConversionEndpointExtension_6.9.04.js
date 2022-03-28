@@ -23,7 +23,6 @@ exports.cvjs_customConversionEndpointExtension =  function (contentLocation, wri
     //  branch = 2   // sample to do a GET (or POST) with bearer authentication to get a blob and then save that to /converter/files/folder
 
   
-
     if (branch == 1){
 
     contentLocation = decodeURIComponent(contentLocation);
@@ -36,8 +35,6 @@ exports.cvjs_customConversionEndpointExtension =  function (contentLocation, wri
      // if no ftype, then assuming dwg
      // if ftype, we have to find it and update the command string fileFormat string
 
-
-     decodeURIComponent()
 
     if (contentLocation.indexOf("ftype=")>0){
 
@@ -139,7 +136,7 @@ exports.cvjs_customConversionEndpointExtension =  function (contentLocation, wri
     
             try{
               // save the file or blob-body to the location of temp folder
-
+  
               var newcontentLocation = config.fileLocation + tempFileName + fileFormat;			
 
 
