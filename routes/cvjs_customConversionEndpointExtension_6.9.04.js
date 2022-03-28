@@ -1,6 +1,5 @@
 var config = require('../CADViewer_config.json');
-var callapiconversion = require('./callapiconversion_cv6.9.03.js');
-var cvjs_debug = config.cvjs_debug;
+var callapiconversion = require('./callapiconversion_cv6.9.04.js');
 
 const request = require('request');
 
@@ -15,48 +14,86 @@ exports.cvjs_customConversionEndpointExtension =  function (contentLocation, wri
     // contentLocation is passed over from REST API
     // writeFile is the location on server to write the file/blob
     // cvjs_standard_CV_AX_processing() is the call to continue the processing to convert and return to CADViewer
+    
     var cadfilename = "";   // filename is passed over from cadviewer contentLocation, or pulled from user call
     var fileurl =  "";
 
     // we make branches depending on how the incoming stream is parsed  
     var branch = 1;   // simply request a URL and store in /converters/files/ folder and as server to convert  
-
-    // branch = 2   // sample to do a GET (or POST) with bearer authentication to get a blob and then save that to /converter/files/folder
+    //  branch = 2   // sample to do a GET (or POST) with bearer authentication to get a blob and then save that to /converter/files/folder
 
   
-    // IF contentLocation is serverURL , then we never get to this branch!! 
-
 
     if (branch == 1){
 
-      // location of intermediary dwg
-      var newcontentLocation = config.fileLocation + tempFileName + fileFormat;			
+    contentLocation = decodeURIComponent(contentLocation);
+        
+    if (config.cvjs_debug) console.log("fileFomat ="+fileFormat+"  outputFormat: "+outputFormat+" format from contentLocation string:"+contentLocation.indexOf("ftype="));
+
+    var conversionFlag = true;
+    var svgTest = true;  // test only
+     // we need to do the following checks:  
+     // if no ftype, then assuming dwg
+     // if ftype, we have to find it and update the command string fileFormat string
+
+
+     decodeURIComponent()
+
+    if (contentLocation.indexOf("ftype=")>0){
+
+        fileFormat = "."+contentLocation.substring( contentLocation.indexOf("ftype")+6, contentLocation.indexOf("ftype")+10);
+        if (fileFormat.indexOf("svg")>-1){
+            conversionFlag = false;
+            outputFormat = "svg";
+        } 
+
+        if (config.cvjs_debug) console.log("new fileFomat ="+fileFormat);
+
+    }
+
+    // location of intermediary file for conversion
+    var newcontentLocation = config.fileLocation + tempFileName + fileFormat;			
 
       // add bearer tokents, etc to url
+    fileurl = contentLocation+"?access_token="+bearerautentication+"&download";
 
-      fileurl = contentLocation+"?access_token="+bearerautentication+"&download";
+    // if we have SVG test then we test with CADViewer server SVG
+    if (svgTest)
+        fileurl = "https://onlinedemo.cadviewer.com/cadviewer_7_0/php/load-demo-file-npm-install.php?file=base_xref_json_Mar_15_H11_8.svg";
 
 
-      if (cvjs_debug) console.log("fileurl="+fileurl+ " newcontentLocation="+newcontentLocation);
 
+    if (config.cvjs_debug) console.log("fileurl="+fileurl+ " newcontentLocation="+newcontentLocation);
 
-      var fs = require('fs');
-      request(fileurl).pipe(fs.createWriteStream(newcontentLocation))
-      .on('error', () => {
-          console.log('ERROR - httprequest/createWriteStream does this location exist?: '+newcontentLocation);
-        })
-      .on('finish', () => {
-            
-          console.log("finished!");
-
-          // NOTE: here contentLocation is replaced with with the temp name
-
-          contentLocation = newcontentLocation;
+    var fs = require('fs');
+    request(fileurl).pipe(fs.createWriteStream(newcontentLocation))
+    .on('error', () => {
+        if (config.cvjs_debug) console.log('ERROR - httprequest/createWriteStream does this location exist?: '+newcontentLocation);
+    })
+    .on('finish', () => {
         
-          callapiconversion.cvjs_standard_CV_AX_processing(outputFormat,contentLocation, parameters, tempFileName, res, writeFile, action)
-  
-  
-      });	    
+        if (config.cvjs_debug) console.log("finished!");
+
+        // NOTE: here contentLocation is replaced with with the temp name
+
+        contentLocation = newcontentLocation;
+
+      // if ftype then make two brances:
+      // 1) move the folder for conversion
+      // 2) move to folder for direct extraction
+
+        if (conversionFlag){
+            callapiconversion.cvjs_standard_CV_AX_processing(outputFormat,contentLocation, parameters, tempFileName, res, writeFile, action)
+        }
+        else{
+
+            if (config.cvjs_debug) console.log(outputFormat+" "+contentLocation+" "+tempFileName)
+
+            callapiconversion.SVG_callback(res, outputFormat, contentLocation, tempFileName);
+        }
+
+
+    });	    
   
   
 

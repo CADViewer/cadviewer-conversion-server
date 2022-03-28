@@ -4,7 +4,7 @@ var globalCounter = 0;
 
 const httprequest = require('request');
 
-var customendpointextension = require('./cvjs_customConversionEndpointExtension_6.9.03.js');
+var customendpointextension = require('./cvjs_customConversionEndpointExtension_6.9.04.js');
 
 
 var express = require('express'),
@@ -78,6 +78,45 @@ var express = require('express'),
     };
 
 
+
+    // 6.9.04
+    function SVG_callback(res, stderr, exitCode, outputFormat, contentLocation, callbackMethod, tempFileName){
+        
+
+        try{	
+    
+			var CVJSresponse = "not populated";
+    
+            if (config.cvjs_debug) console.log("SVG_callback outputFormat:"+outputFormat+" exitcode:"+exitCode+"XX");
+                    
+            if (exitCode == undefined || exitCode == null|| exitCode == "") 
+                exitCode = 0;
+
+            CVJSresponse = "{\"completedAction\":\"svg_creation\",\"errorCode\":\"E"+exitCode+"\",\"converter\":\"AutoXchange AX2022\",\"version\":\"V2.00\",\"userLabel\":\"fromCADViewerJS\",\"contentLocation\":\""+contentLocation+"\",\"contentResponse\":\"stream\",\"contentStreamData\":\""+callbackMethod+"?returnCadviewer=0&remainOnServer=0&fileTag="+tempFileName+"&Type="+outputFormat+"\"}";
+    
+            if (cvjs_debug) console.log(CVJSresponse);
+            // send callback message and terminate
+            res.send(CVJSresponse);
+            if (config.cvjs_debug) console.log("finished - AX2022_callback"+CVJSresponse+" "+outputFormat);	
+                
+        
+        }
+        catch (e) {
+            res.send("AX2022_callback:"+e);	
+            if (config.cvjs_debug) console.log("AX2022_callback:"+e);
+        }   
+
+    }
+
+
+    exports.SVG_callback = function (res, outputFormat, contentLocation, tempFileName){
+
+        SVG_callback(res, "", "0", outputFormat, contentLocation, config.ServerUrl+"/"+config.callbackMethod, tempFileName);
+
+    }
+
+
+
     // 6.8.83  - rest call to return CADViewer
     function CADViewer_callback(res, stderr, exitCode, outputFormat, contentLocation, callbackMethod, tempFileName){
 
@@ -93,7 +132,7 @@ var express = require('express'),
             CVJSresponse = "{\"completedAction\":\"cadviewer_display\",\"errorCode\":\"E"+exitCode+"\",\"converter\":\"AutoXchange AX2022\",\"version\":\"V2.00\",\"userLabel\":\"fromCADViewerJS\",\"contentLocation\":\""+contentLocation+"\",\"contentResponse\":\"stream\",\"contentStreamData\":\""+callbackMethod+"?returnCadviewer=1&remainOnServer=0&fileTag="+tempFileName+"&Type="+outputFormat+"\"}";
     
             if (cvjs_debug) console.log(CVJSresponse);
-            // send callback message and terminate
+            // send callbacks message and terminate
             res.send(CVJSresponse);
             if (config.cvjs_debug) console.log("finished - CADViewer_callback"+CVJSresponse+" "+outputFormat);	 
         }
