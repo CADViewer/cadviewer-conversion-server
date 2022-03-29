@@ -36,6 +36,7 @@ exports.cvjs_customConversionEndpointExtension =  function (contentLocation, wri
      // if ftype, we have to find it and update the command string fileFormat string
 
 
+
     if (contentLocation.indexOf("ftype=")>0){
 
         fileFormat = "."+contentLocation.substring( contentLocation.indexOf("ftype")+6, contentLocation.indexOf("ftype")+10);
@@ -52,7 +53,10 @@ exports.cvjs_customConversionEndpointExtension =  function (contentLocation, wri
     var newcontentLocation = config.fileLocation + tempFileName + fileFormat;			
 
       // add bearer tokents, etc to url
-    fileurl = contentLocation+"?access_token="+bearerautentication+"&download";
+      if (contentLocation.indexOf("ftype=")>0){
+        fileurl = contentLocation+"&access_token="+bearerautentication+"&download";
+      else
+        fileurl = contentLocation+"?access_token="+bearerautentication+"&download";
 
     // if we have SVG test then we test with CADViewer server SVG
     if (svgTest)
