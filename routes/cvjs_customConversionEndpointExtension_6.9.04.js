@@ -53,7 +53,7 @@ exports.cvjs_customConversionEndpointExtension =  function (contentLocation, wri
     var newcontentLocation = config.fileLocation + tempFileName + fileFormat;			
 
       // add bearer tokents, etc to url
-      if (contentLocation.indexOf("ftype=")>0){
+      if (contentLocation.indexOf("ftype=")>0)
         fileurl = contentLocation+"&access_token="+bearerautentication+"&download";
       else
         fileurl = contentLocation+"?access_token="+bearerautentication+"&download";
