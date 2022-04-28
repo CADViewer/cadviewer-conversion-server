@@ -4788,6 +4788,56 @@ table.redlinetextModalTable td {
 }
 
 
+/* 6.9.10*/
+.adjustspaceobjectModalHeader{
+    z-index: 1100;
+	position:absolute;
+	top: 0px;
+	left: 0px;
+ 	width: 330px; 
+ 	height: 23px;
+ 	border-radius: 0px;
+ 	background-color: #DDDDDD;
+ 	margin-top: 0px;
+	 border-bottom: 1px solid gray;
+	 
+	 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	 font-size: 14px;
+	 /* line-height: 1.42857143; */
+	 color: #333
+ 
+}
+
+
+.adjustspaceobjectModal{
+   	z-index:1000;
+	width: 333px; 
+	height: 102px;
+	border-radius: 3px;
+	background-color: #FFFFFF;
+	border: 2px solid gray;
+	position: absolute;
+	
+		 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	 font-size: 14px;
+	 /* line-height: 1.42857143; */
+	 color: #333
+	
+}
+
+table.adjustspaceobjectModalTable {
+	width: 324px  ;
+	height: 198px ;
+   	z-index:1000;
+	padding: 0px !important;
+	border-spacing: 0px;
+	border-collapse: separate;
+	text-align: left;
+
+}
+
+
+
 
 
 .linethicknessModalHeader{
@@ -4884,6 +4934,14 @@ table.linethicknessModalTable td {
 }
 
 
+.cvjs_objectslider2{
+ z-index:1000;
+ width: 300px; 
+ border: 1px solid gray;
+  position: absolute;
+	  left: 10px;
+	  top: 0px;
+}
 
 
 
@@ -4893,7 +4951,7 @@ table.linethicknessModalTable td {
 	border: 1px solid gray;
 	 position: absolute;
     	 left: 10px;
-    	 top: 70px;
+    	 top: 0px;
 }
 
 .cvjs_slider3{

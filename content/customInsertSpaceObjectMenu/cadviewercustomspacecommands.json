@@ -1,0 +1,99 @@
+{
+    "cadviewercustomspacecommands" : {
+        "totalpages" : 2,
+        "currentpage" : 1,
+        "pages" :[
+                [
+                    {
+                        "commandName" : "Danger",
+                        "imageLocation" : "/images/danger.png",
+                        "toolTip" : "Insert Danger object"
+                    },
+                    {
+                        "commandName" : "Wi-Fi",
+                        "imageLocation" : "/images/wifi_25.svg",
+                        "toolTip" : "Insert Wi-Fi object "
+                    }
+                    ,
+                    {
+                        "commandName" : "Heater",
+                        "imageLocation" : "/images/HVAC_01.svg",
+                        "toolTip" : "Insert Heater object "
+                    },
+                    {
+                        "commandName" : "Fan",
+                        "imageLocation" : "/images/HVAC_02.svg",
+                        "toolTip" : "Insert Fan object "
+                    },
+                    {
+                        "commandName" : "Thermo",
+                        "imageLocation" : "/images/HVAC_03.svg",
+                        "toolTip" : "Insert Thermometer object "
+                    },
+                    {
+                        "commandName" : "Aircon",
+                        "imageLocation" : "/images/HVAC_04.svg",
+                        "toolTip" : "Insert AirCon object "
+                    }
+                    ,
+                    {
+                        "commandName" : "Sensor",
+                        "imageLocation" : "/images/device_54.svg",
+                        "toolTip" : "Insert Sensor object "
+                    }
+                    ,                    
+                    {
+                        "commandName" : "AssemblyPoint",
+                        "imageLocation" : "/images/assembly_point.png",
+                        "toolTip" : "Insert Assembly Point object "
+                    }
+                    ,
+                    {
+                        "commandName" : "FireAlarmCallPoint",
+                        "imageLocation" : "/images/fire_alarm_call_point.png",
+                        "toolTip" : "Insert Fire Alarm Call Point object "
+                    }
+                    ,
+                    {
+                        "commandName" : "FireExit",
+                        "imageLocation" : "/images/fire_exit.png",
+                        "toolTip" : "Insert Fire Exit object "
+                    }
+                    ,
+                    {
+                        "commandName" : "FireExtinguisher",
+                        "imageLocation" : "/images/fire_extinguisher.png",
+                        "toolTip" : "Insert Fire Extinguisher object "
+                    }
+                    ,
+                    {
+                        "commandName" : "RefugePoint",
+                        "imageLocation" : "/images/refuge_point.png",
+                        "toolTip" : "Insert Refuge Point object "
+                    },
+                    {
+                        "commandName" : "Marker",
+                        "imageLocation" : "/images/pin_02.svg",
+                        "toolTip" : "Insert marker object "
+                    }
+
+
+                
+
+                ]
+                ,
+                [
+                    {
+                        "commandName" : "RefugePoint",
+                        "imageLocation" : "/images/refuge_point.png",
+                        "toolTip" : "Insert Refuge Point object "
+                    },
+                    {
+                        "commandName" : "Marker",
+                        "imageLocation" : "/images/pin_02.svg",
+                        "toolTip" : "Insert marker object "
+                    }
+                ]
+        ]
+    }
+}
