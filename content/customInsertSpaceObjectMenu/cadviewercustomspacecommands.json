@@ -5,6 +5,11 @@
         "pages" :[
                 [
                     {
+                        "commandName" : "Door",
+                        "imageLocation" : "/images/door_allstates01.svg",
+                        "toolTip" : "Insert Door Object - with states"
+                    },
+                    {
                         "commandName" : "Danger",
                         "imageLocation" : "/images/danger.png",
                         "toolTip" : "Insert Danger object"
@@ -75,14 +80,21 @@
                         "commandName" : "Marker",
                         "imageLocation" : "/images/pin_02.svg",
                         "toolTip" : "Insert marker object "
-                    }
+                    },
 
+                    {
+                        "commandName" : "Person",
+                        "imageLocation" : "/images/personicon.svg",
+                        "toolTip" : "Insert person "
+                    }
+ 
 
                 
 
                 ]
                 ,
                 [
+                   
                     {
                         "commandName" : "RefugePoint",
                         "imageLocation" : "/images/refuge_point.png",
@@ -93,7 +105,13 @@
                         "imageLocation" : "/images/pin_02.svg",
                         "toolTip" : "Insert marker object "
                     }
-                ]
+
+
+
+            ]
+
+
+
         ]
     }
 }

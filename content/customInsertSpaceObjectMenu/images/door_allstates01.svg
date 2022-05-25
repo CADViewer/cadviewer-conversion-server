@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="150mm"
+   height="200mm"
+   viewBox="0 0 150 200"
+   version="1.1"
+   id="svg36"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="door_allstates01.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview38"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.733172"
+     inkscape:cx="317.79719"
+     inkscape:cy="288.47255"
+     inkscape:window-width="1285"
+     inkscape:window-height="932"
+     inkscape:window-x="205"
+     inkscape:window-y="55"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer6"
+     inkscape:snap-nodes="false" />
+  <defs
+     id="defs33">
+    <rect
+       x="53.193519"
+       y="55.921394"
+       width="656.05337"
+       height="248.23643"
+       id="rect20391" />
+    <rect
+       x="75.016504"
+       y="75.016504"
+       width="605.58777"
+       height="211.41015"
+       id="rect8549" />
+    <linearGradient
+       id="linearGradient1137"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#333333;stop-opacity:1;"
+         offset="0"
+         id="stop1135" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="open"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 2.6981494,3.0928863 120.5322,19.848116 c 0,0 6.02114,2.447548 5.77399,9.02187 l -0.36087,145.793434 c -0.72098,4.16047 -3.12911,6.97123 -8.65184,7.29031 L 9.3377929,198.16774 2.6981491,197.9144 Z"
+       id="path1681"
+       sodipodi:nodetypes="cccccccc" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:6;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 114.39733,83.722963 V 94.188335 108.26245"
+       id="path2855"
+       sodipodi:nodetypes="ccc" />
+    <rect
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:6;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3316"
+       width="144.89966"
+       height="195.0274"
+       x="2.6981494"
+       y="3.0928862" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="closed"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <rect
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:6;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3582"
+       width="144.89966"
+       height="195.0274"
+       x="2.6981494"
+       y="3.0928862" />
+    <path
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:6.7664;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 133.52369,87.425315 V 100.735 118.63422"
+       id="path2855-7"
+       sodipodi:nodetypes="ccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="locked"
+     style="display:inline">
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:6;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3582-2"
+       width="144.89966"
+       height="195.0274"
+       x="3.3338888"
+       y="3.1703799" />
+    <path
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:6.7664;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 134.15944,87.502807 V 100.8125 118.71172"
+       id="path2855-7-1"
+       sodipodi:nodetypes="ccc" />
+    <ellipse
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:14;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path4439-0"
+       cx="32.478737"
+       cy="153.01094"
+       rx="17.020411"
+       ry="17.381287" />
+    <rect
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:12;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4089-9"
+       width="49.325993"
+       height="29.477877"
+       x="8.1766138"
+       y="156.67662" />
+    <ellipse
+       style="fill:none;fill-opacity:1;stroke:#d40000;stroke-width:7.02453;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path4439"
+       cx="32.478741"
+       cy="153.3718"
+       rx="17.020411"
+       ry="17.381287" />
+    <rect
+       style="fill:#d40000;fill-rule:evenodd;stroke:#d40000;stroke-width:4.03123;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4089"
+       width="49.325993"
+       height="29.477877"
+       x="7.8157415"
+       y="156.85703" />
+  </g>
+  <style
+     type="text/css"
+     id="style1183">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+  <style
+     type="text/css"
+     id="style1023">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+  <style
+     type="text/css"
+     id="style1054">
+	.st0{fill:#FFFFFF;}
+</style>
+  <style
+     type="text/css"
+     id="style1089">
+	.st0{fill:#C62828;}
+	.st1{fill:#FFFFFF;}
+</style>
+  <style
+     type="text/css"
+     id="style940">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+</svg>
