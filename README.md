@@ -11,7 +11,7 @@ The repository contains a full setup including converters and NodeJS controlling
 
 2: AutoXchange AX2023 Converter and DWG Merge 2023 Converter - in their preferred folder structure
 
-***Note:*** If on linux, unpack the compressed AX2023 binary in /converters/ax2023/linux and update the executable name in CADViewer_config.json.
+***Note:*** If on Linux, unpack the compressed AX2023 binary in /converters/ax2023/linux and update the executable name in CADViewer_config.json.
 
 3: All structures for file-conversion, sample drawings, redlines, etc. 
 
