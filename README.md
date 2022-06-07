@@ -9,16 +9,18 @@ The repository contains a full setup including converters and NodeJS controlling
 
 1: NodeJS script library for controlling CAD Conversions and communication with CADViewer  - in its preferred folder structure
 
-2: AutoXchange AX2023 Converter and DWG Merge 2022 Converter - in their preferred folder structure
+2: AutoXchange AX2023 Converter and DWG Merge 2023 Converter - in their preferred folder structure
+
+***Note:*** If on linux, unpack the compressed AX2023 binary in /converters/ax2023/linux and update the executable name in CADViewer_config.json.
 
 3: All structures for file-conversion, sample drawings, redlines, etc. 
 
 
 ## This package does not contain
 
-4: The converter folder structure contains a larger set of fonts, installed in /cadviewer/converters/ax2022/windows/fonts/, but a fuller set of fonts can be installed. 
+4: The converter folder structure contains a larger set of fonts, installed in /cadviewer/converters/ax2023/windows/fonts/, but a fuller set of fonts can be installed. 
 
-Read the sections on installing and handling [Fonts](https://tailormade.com/ax2020techdocs/installation/fonts/) in [AutoXchange 2022 TechDocs](https://tailormade.com/ax2020techdocs/) and [TroubleShooting](https://tailormade.com/ax2020techdocs/troubleshooting/).
+Read the sections on installing and handling [Fonts](https://tailormade.com/ax2020techdocs/installation/fonts/) in [AutoXchange 2023 TechDocs](https://tailormade.com/ax2020techdocs/) and [TroubleShooting](https://tailormade.com/ax2020techdocs/troubleshooting/).
 
 
 
@@ -26,7 +28,7 @@ Read the sections on installing and handling [Fonts](https://tailormade.com/ax20
 
 1: Depending on the implementation, copy: CADViewer_config_XXXXXX.json -> **CADViewer_config.json** (where XXXXXX is either NodeJS, Angular, Laravel, ReactJS, Rails7 or VueJS), to set up a template server and path configuration prior to running the server. 
 
-2: Ensure the port is set correctly in **CADViewer_config.json** , standard is 3000, but Rails/ runs on port 3000, so on that platform change to 4000 (or another suitable port)
+2: Ensure the port is set correctly in **CADViewer_config.json**, standard is 3000, but the given setup or framework may require a different setting. 
 
 
 3: The CAD converter [AutoXchange 2023](https://cadviewer.com/alldownloads/autoxchange), - and other converters -, needs to be installed and referenced through the configuration file. The converters typically is in the /nodejs/cadviewer-conversion-server/ folder structure, and the NodeJS download contains template folders in which to place the executables. 
@@ -41,7 +43,7 @@ Read the sections on installing and handling [Fonts](https://tailormade.com/ax20
 
 **NOTE:** Make sure the converter version number in CADViwer_config.json match the converters you install, and change any paths settings to correspond to your install folders.  
 
-**Run:** the NodeJS server with:  *node CV_6.x.yy*
+**Run:** the NodeJS server with:  *node CV_7.x.yy*
 
 
 
@@ -55,7 +57,7 @@ Read the sections on installing and handling [Fonts](https://tailormade.com/ax20
 
 This repository should contain the latest converters, but in case you need to update any of the back-end converters please follow: 
 
-* [Download **AutoXchange**](/download/) (and other converters), install (unzip) AX2023 in **cadviewer/converters/ax2022/windows** or **cadviewer/converters/ax2022/linux** or in the designated folder structure.
+* [Download **AutoXchange**](/download/) (and other converters), install (unzip) AX2023 in **cadviewer/converters/ax2023/windows** or **cadviewer/converters/ax2023/linux** or in the designated folder structure.
 
 * Read the sections on installing and handling [Fonts](https://tailormade.com/ax2020techdocs/installation/fonts/) in [AutoXchange 2023 TechDocs](https://tailormade.com/ax2020techdocs/) and [TroubleShooting](https://tailormade.com/ax2020techdocs/troubleshooting/).
 
