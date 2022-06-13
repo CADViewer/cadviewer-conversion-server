@@ -1,14 +1,15 @@
 {
   "name": "cadviewer-conversion-server",
-  "version": "7.0.25",
+  "version": "7.0.26",
   "description": "CADViewer NodeJS Server Encapsulation of CAD Converters",
-  "main": "CV_7.0.25.js",
+  "main": "CV_7.0.26.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "charnung",
   "license": "TMS 1.0",
   "dependencies": {
+    "express": "^4.18.1",
     "formidable": "^1.2.2",
     "image-size": "^1.0.0",
     "mysql": "^2.18.1",
