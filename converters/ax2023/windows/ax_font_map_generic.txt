@@ -1,0 +1,2 @@
+MyTTFont  ==> /my/map/location/of/this/font/Another.ttf
+FangSong_GB2312 ==> simfang

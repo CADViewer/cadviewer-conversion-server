@@ -10,9 +10,5 @@ fangsong_gb2312 ==>  fangsong.ttf
 仿宋_GB2312 ==> fangsong.ttf
 romans.shx ==> romans__.ttf @1.1
 romanx.shx ==> romans__.ttf @1.1
-TSSD_Dimension ==> simfang.ttf 
-xxcomplex ==> simfang.ttf 
 [stroke]
 techno_m.shx
-STANDARD.shx
-STANDARD
