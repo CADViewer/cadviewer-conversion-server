@@ -7,7 +7,7 @@
     "fileLocationUrl" : "http://localhost:4000/converters/files/",
     "converterLocation" : "c:/nodejs/cadviewer-conversion-server/converters/ax2023/windows/",
     "fontLocation" : "c:/nodejs/cadviewer-conversion-server/converters/ax2023/windows/fonts/",
-    "ax2023_executable" : "AX2023_W64_23_05_87.exe",
+    "ax2023_executable" : "AX2023_W64_23_05_88.exe",
     "cvjs_svgz_compress" : false,
     "licenseLocation" : "c:/nodejs/cadviewer-conversion-server/converters/ax2023/windows/",
     "xpathLocation" : "c:/nodejs/cadviewer-conversion-server/converters/xpath/",
@@ -18,7 +18,7 @@
 	"dwgmergeLocation" : "c:/nodejs/cadviewer-conversion-server/converters/dwgmerge2020/windows/",
 	"dwgmerge2020_executable" : "DwgMerge2020.exe",
 	"linklistLocation" : "c:/nodejs/cadviewer-conversion-server/converters/linklist2023/windows/",
-	"linklist2023_executable" : "LinkList_2023_W64_23_03_24.exe",
+	"linklist2023_executable" : "LinkList_2023_W64_23_05_25.exe",
 	"custom_bearerAutentication" : "x5d483e8-2f8d-463e-cc01-f41a78b1d94c"
 }	
 	

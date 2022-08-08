@@ -26,9 +26,17 @@ Read the sections on installing and handling [Fonts](https://tailormade.com/ax20
 
 ## How to Use
 
-1: Depending on the implementation, copy: CADViewer_config_XXXXXX.json -> **CADViewer_config.json** (where XXXXXX is either NodeJS, Angular, Laravel, ReactJS, Rails7 or VueJS), to set up a template server and path configuration prior to running the server. 
+1: Depending on the implementation, copy: CADViewer_config_XXXXXX.json -> ***CADViewer_config.json*** (where XXXXXX is either NodeJS, Angular, Laravel, ReactJS, Rails7 or VueJS), to set up a template server and path configuration prior to running the server. 
 
-2: Ensure the port is set correctly in **CADViewer_config.json**, standard is 3000, but the given setup or framework may require a different setting. 
+2: Ensure that all paths and ports are set correctly in ***CADViewer_config.json***, we use port 3000 as standard, but the given setup or framework may require a different setting. 
+
+3: The ***CADViewer_config.json*** is set up for a Windows server.  If runnung on Linux do the following: 
+
+    3A:  Unpack the ax2023_L64_xx_yy_zz.tar.xz AutoXchange executable in /converters/ax2023/linux.  
+    3B:  Move all unpacked files to /converters/ax2023/linux.
+    3C:  In CADViewer_config.json update all paths so  /ax2023/windows is exchanged with /ax2023/linux
+    3D:  Rename the ax2023_executable parameters, for example for version 23.05.87 it is "ax2023_executable" : "AX2023_W64_23_05_87.exe" on Windows, but "ax2023_executable" : "ax2023_L64_23_05_87"  for Linux.
+    3F:  Ensure that the executable is chmod 777 permission and that the /converters/files folder has full read and write permission. 
 
 
 3: The CAD converter [AutoXchange 2023](https://cadviewer.com/alldownloads/autoxchange), - and other converters -, needs to be installed and referenced through the configuration file. The converters typically is in the /nodejs/cadviewer-conversion-server/ folder structure, and the NodeJS download contains template folders in which to place the executables. 

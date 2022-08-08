@@ -1,0 +1,10 @@
+{
+    "Number_Of_Splits" : 5, 
+    "Drawings" : [
+           "c:/nodejs/cadviewer-conversion-server//content/drawings/dwg/Floorplan-2-Multilevel_split_1_of_5.dwg",
+           "c:/nodejs/cadviewer-conversion-server//content/drawings/dwg/Floorplan-2-Multilevel_split_2_of_5.dwg",
+           "c:/nodejs/cadviewer-conversion-server//content/drawings/dwg/Floorplan-2-Multilevel_split_3_of_5.dwg",
+           "c:/nodejs/cadviewer-conversion-server//content/drawings/dwg/Floorplan-2-Multilevel_split_4_of_5.dwg",
+           "c:/nodejs/cadviewer-conversion-server//content/drawings/dwg/Floorplan-2-Multilevel_split_5_of_5.dwg"
+        ]
+}
