@@ -104,8 +104,18 @@
                         "commandName" : "Marker",
                         "imageLocation" : "/images/pin_02.svg",
                         "toolTip" : "Insert marker object "
+                    },
+                    {
+                        "commandName" : "StateCircle",
+                        "imageLocation" : "/images/sensor_c.svg",
+                        "toolTip" : "Sensor Object "
                     }
-
+                    ,
+                    {
+                        "commandName" : "StateTriangle",
+                        "imageLocation" : "/images/gateway_c.svg",
+                        "toolTip" : "Gateway Object "
+                    }
 
 
             ]
