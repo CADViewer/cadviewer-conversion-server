@@ -1,0 +1,44 @@
+<cvjs>
+<iconmenu>
+	<totalpages>1</totalpages>
+	<startpage>1</startpage>
+	<pages>
+		<page>
+			<command>cvjs_LayerList</command>
+			<command>cvjs_Print</command>
+			<command>cvjs_toggleBlackWhite</command>
+			<command>cvjs_setBackgroundColor</command>
+			<command>cvjs_interactiveSearchText</command>
+			<command>cvjs_interactiveLayerOff</command>
+			<command>cvjs_swapLayersInDrawing</command>
+			<command>cvjs_allLayersInDrawingOn</command>
+			<command>cvjs_Measurement</command>
+			<command>cvjs_calibrateMeasurement</command>
+			<command>cvjs_displayMagnifyingGlass</command>
+			<command>cvjs_activateLineThicknessModal</command>
+			<command>cvjs_About</command>
+			<command>cvjs_Settings</command>
+		</page>
+	</pages>
+	<icons_per_row>0</icons_per_row>
+	<icon_page_left_x>0</icon_page_left_x>
+	<icon_page_left_y>0</icon_page_left_y>
+	<customcommand>
+		<tooltip>Commmand tooltip 1</tooltip>
+		<tooltip>Commmand tooltip 2</tooltip>
+		<tooltip>Commmand tooltip 3</tooltip>
+		<tooltip>Commmand tooltip 4</tooltip>
+		<tooltip>Commmand tooltip 5</tooltip>
+		<tooltip>Commmand tooltip 6</tooltip>
+		<tooltip>Commmand tooltip 7</tooltip>
+		<tooltip>Commmand tooltip 8</tooltip>
+		<tooltip>Commmand tooltip 9</tooltip>
+		<tooltip>Commmand tooltip 10</tooltip>
+	</customcommand>	
+</iconmenu>
+<zoommenu>
+	<location_left_x>0</location_left_x>
+	<location_left_y>30</location_left_y>
+</zoommenu>
+</cvjs>
+						
