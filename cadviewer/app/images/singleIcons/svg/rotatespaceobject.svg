@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200mm"
+   height="200mm"
+   viewBox="0 0 200 200"
+   version="1.1"
+   id="svg36"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="rotatespaceobject.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview38"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.733172"
+     inkscape:cx="362.80709"
+     inkscape:cy="355.30544"
+     inkscape:window-width="1285"
+     inkscape:window-height="994"
+     inkscape:window-x="330"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer3"
+     inkscape:snap-nodes="false" />
+  <defs
+     id="defs33">
+    <linearGradient
+       id="linearGradient1137"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#333333;stop-opacity:1;"
+         offset="0"
+         id="stop1135" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:label="Lager 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:none">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 54.131225,134.96719 75.422841,156.61968 159.14581,74.701092"
+       id="path36589" />
+    <path
+       style="display:inline;fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 159.14581,74.701092 137.8542,53.048602 54.131225,134.96719"
+       id="path36589-2" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Lager 2"
+     style="display:inline">
+    <rect
+       style="opacity:1;fill:#333333;fill-opacity:1;fill-rule:evenodd;stroke:#333333;stroke-width:4;stroke-opacity:1"
+       id="rect1472"
+       width="196"
+       height="196"
+       x="2"
+       y="2" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Lager 3"
+     style="display:inline">
+    <rect
+       style="fill:#333333;fill-opacity:1;fill-rule:evenodd;stroke:#1ccbd1;stroke-width:4.42;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:4.42, 8.84;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect33603"
+       width="77.085808"
+       height="81.777176"
+       x="91.011169"
+       y="78.741425" />
+    <rect
+       style="display:inline;fill:#333333;fill-opacity:1;fill-rule:evenodd;stroke:#1ccbd1;stroke-width:4.41966;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect33603-6"
+       width="77.085999"
+       height="81.777176"
+       x="-36.255589"
+       y="84.613876"
+       transform="rotate(-35.068025)" />
+    <path
+       sodipodi:type="spiral"
+       style="fill:none;fill-rule:evenodd;stroke:#1ccbd1;stroke-width:22.67716648;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path1192"
+       sodipodi:cx="411.90881"
+       sodipodi:cy="126.84608"
+       sodipodi:expansion="1"
+       sodipodi:revolution="3"
+       sodipodi:radius="87.97126"
+       sodipodi:argument="-18.973911"
+       sodipodi:t0="0.855546"
+       d="m 339.88222,105.01127 c 9.98945,-42.204635 54.42998,-67.284896 95.98819,-57.207438 32.52763,7.887633 57.45358,35.343764 63.33033,68.130718"
+       transform="matrix(0.26366043,0.02207965,-0.02207965,0.26366043,24.55053,-0.37004162)"
+       inkscape:transform-center-x="3.9726068"
+       inkscape:transform-center-y="-3.1878648" />
+    <path
+       style="fill:none;stroke:#1ccbd1;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 109.0244,17.028501 -0.0957,17.514505 17.51451,0.09566"
+       id="path1498" />
+  </g>
+</svg>

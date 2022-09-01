@@ -5,18 +5,18 @@
 
 function cvjs_customCommand_01(floorplan_div){
 
-
 	// In the menu configuration file app/cv/community/menu_config/*.xml  or app/cv/pro/menu_config/*.xml 
 	// change the  <tooltip>Commmand tooltip X</tooltip> to the highlight text you want
 	
 	// In folder app/images/singleicons/ change the icon cvjsIcon_customCommand_XX.png into your image of choice
 
-
 	// Use the CADViewer API to program your own interaction with the CAD canvas
-
+ 
 	window.alert("Hello world - Custom Command 01");
 
+
 }
+
 
 /**
  * Placeholder for a custom Icon command

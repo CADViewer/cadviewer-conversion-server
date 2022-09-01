@@ -18,8 +18,6 @@
 			<command>cvjs_activateLineThicknessModal</command>
 			<command>cvjs_About</command>
 			<command>cvjs_Settings</command>
-			<command>cvjs_customCommand_01</command>
-			<command>cvjs_customCommand_02</command>			
 		</page>
 		<page>
 			<command>cvjs_loadStickyNotesRedlinesUser</command>
