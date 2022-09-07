@@ -1,6 +1,7 @@
 {
     "ServerPort" : 3000,
     "ServerUrl" : "http://localhost:3000",
+    "https" : false,
     "ServerFrontEndUrl" : "http://localhost:8000",
     "ServerLocation" : "c:/nodejs/cadviewer-conversion-server/",
     "fileLocation" : "c:/nodejs/cadviewer-conversion-server/converters/files/",
@@ -15,8 +16,8 @@
     "remainOnServer" : true,
     "cvjs_debug" : true,
     "temp_print_folder" : "C:/nodejs/cadviewer-conversion-server/temp_print",
-	"dwgmergeLocation" : "c:/nodejs/cadviewer-conversion-server/converters/dwgmerge2020/windows/",
-	"dwgmerge2020_executable" : "DwgMerge2020.exe",
+	"dwgmergeLocation" : "c:/nodejs/cadviewer-conversion-server/converters/dwgmerge2023/windows/",
+	"dwgmerge2020_executable" : "DwgMerge2023_W32_23_01_01.exe",
 	"linklistLocation" : "c:/nodejs/cadviewer-conversion-server/converters/linklist2023/windows/",
 	"linklist2023_executable" : "LinkList_2023_W64_23_05_25.exe",
     "custom_bearerAutentication" : "d5d483e8-2f8d-463e-cc01-f41a78b1d94c",
