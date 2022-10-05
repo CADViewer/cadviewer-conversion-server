@@ -115,7 +115,13 @@
                         "commandName" : "StateTriangle",
                         "imageLocation" : "/images/gateway_c.svg",
                         "toolTip" : "Gateway Object "
+                    },
+                    {
+                        "commandName" : "Arrow",
+                        "imageLocation" : "/images/arrow_rotate03.svg",
+                        "toolTip" : "RotateArrow Symbol "
                     }
+
 
 
             ]
