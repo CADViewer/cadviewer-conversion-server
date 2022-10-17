@@ -25,8 +25,10 @@
     "mysqlHost" : "localhost",
     "mysqlUsername" : "root",
     "mysqlPassword" : "",
+    "ContentSecurityPolicyReportOnly" : true,
     "ContentSecurityPolicy" : "default-src 'self'; font-src 'self'; img-src 'self' https://cadviewer.com data:; script-src 'self' 'nonce-INSERTNONCE'; style-src 'self' 'unsafe-inline'; frame-src 'self'",
-    "ContentSecurityPolicyReportOnly" : true
-    
+    "fileLoad_PasswordAuthentication" : false,
+    "fileLoad_UserName" : "myusername",
+    "fileLoad_Password" : "mypassword"
 }	
 	
