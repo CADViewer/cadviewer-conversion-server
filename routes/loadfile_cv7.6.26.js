@@ -64,7 +64,7 @@ function loadFile(req,res){
             else{
                 // if menu-file with blank path, we must concatenate the path
                 // 7.0.70   - menufile / languagefile
-                if ((loadtype!= undefined && loadtype.indexOf("menufile")==0) || (loadtype!= undefined && loadtype.indexOf("languagefile")==0) || (loadtype!= undefined && loadtype.indexOf("merge")==0)){
+                if ((loadtype!= undefined && loadtype.indexOf("menufile")==0) || (loadtype!= undefined && loadtype.indexOf("languagefile")==0) || (loadtype!= undefined && loadtype.indexOf("merge")==0) || (loadtype!= undefined && loadtype.indexOf("redline")==0)){
 
                     if (inputFile.indexOf("http:")==0 || inputFile.indexOf("https:")==0){
                         // do nothing  - this is a call with http or https
