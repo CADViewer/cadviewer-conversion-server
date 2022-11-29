@@ -174,7 +174,7 @@
 			</CollaborationStartModal>
 			<PublishPDFModal>
 				<Header>Publish Redlined Screen Content to PDF</Header>
-				<SelectMode>Select Mode</SelectMode>
+				<SelectMode>Select Mode:</SelectMode>
 				<Mode1>Print/Download</Mode1>
 				<Mode2>Send as e-mail</Mode2>
 				<Mode3>Upload to Server</Mode3>
@@ -186,7 +186,7 @@
 			</PublishPDFModal>
 			<MergeDXFModal>
 				<Header>Merge Redline with Source DWG</Header>
-				<SelectMode>Select Mode</SelectMode>
+				<SelectMode>Select Mode:</SelectMode>
 				<Mode1>Download</Mode1>
 				<Mode2>Send as e-mail</Mode2>
 				<Mode3>Upload to Server</Mode3>
@@ -199,7 +199,7 @@
 			<RedlineColorModal>
 				<Header>Select Redline Color</Header>
 				<PickColor>Pick Color:</PickColor>
-				<SelectColor>Select:</SelectColor>
+				<SelectColor></SelectColor>
 				<Blue>Blue</Blue>
 				<Red>Red</Red>
 				<Yellow>Yellow</Yellow>
@@ -228,7 +228,7 @@
 			<BackgroundColorModal>
 				<Header>Select Background Color</Header>
 				<PickColor>Pick Color:</PickColor>
-				<SelectColor>Select:</SelectColor>
+				<SelectColor></SelectColor>
 				<White>White</White>
 				<Black>Black</Black>
 				<Azure>Azure</Azure>
@@ -372,7 +372,12 @@
 				<Map>Data Maps - User Map 4</Map>			
 			</DataMaps>
 			<IconPage_p1_8>
-				<PreviousPage>Previous Menu Page</PreviousPage>
+                <ZoomWidth>Zoom to Width</ZoomWidth>
+                <PanUp>Pan Up</PanUp>
+                <PanDown>Pan Down</PanDown>
+                <PanLeft>Pan Left</PanLeft>
+                <PanRight>Pan Right</PanRight>
+                <PreviousPage>Previous Menu Page</PreviousPage>
 				<NextPage>Next Icon Page</NextPage>
 				<NextMenuPage>Next Menu Page</NextMenuPage>
 				<LayerList>Layer List</LayerList>
@@ -725,7 +730,7 @@
 			</CollaborationStartModal>
 			<PublishPDFModal>
 				<Header> Publicar contenido de pantalla marcado en PDF </Header>
-				<SelectMode> Seleccionar modo </SelectMode>
+				<SelectMode> Seleccionar: </SelectMode>
 				<Mode1> Descargar </Mode1>
 				<Mode2> E-mail</Mode2>
 				<Mode3> Cargar al servidor </Mode3>
@@ -737,7 +742,7 @@
 			</PublishPDFModal>
 			<MergeDXFModal>
 				<Header> Fusionar línea roja con fuente DWG </Header>
-				<SelectMode> Seleccionar modo </SelectMode>
+				<SelectMode> Seleccionar: </SelectMode>
 				<Mode1> Descargar </Mode1>
 				<Mode2> E-mail</Mode2>
 				<Mode3> Cargar al servidor </Mode3>
@@ -750,7 +755,7 @@
 			<RedlineColorModal>
 				<Header> Seleccionar color de línea roja </Header>
 				<PickColor> Elegir color: </PickColor>
-				<SelectColor> Seleccione: </SelectColor>
+				<SelectColor></SelectColor>
 				<Blue> Azul </Blue>
 				<Red> Rojo </Red>
 				<Yellow> Amarillo </Yellow>
@@ -779,7 +784,7 @@
 			<BackgroundColorModal>
 				<Header> Seleccionar color de fondo </Header>
 				<PickColor> Elegir color: </PickColor>
-				<SelectColor> Seleccione: </SelectColor>
+				<SelectColor></SelectColor>
 				<White> Blanco </White>
 				<Black> Negro </Black>
 				<Azure> Azur </Azure>
@@ -804,8 +809,8 @@
 				<Text> Ingrese el texto, haga clic en Aceptar, luego seleccione el punto de inserción. </Text>
 			</LineThicknessModal>
 			<SpaceObjectSizeModal>
-				<Header>Adjust Space Object Size</Header>
-				<SpaceObjectSize>Space Object Size (%):</SpaceObjectSize>
+				<Header>Ajustar el tamaño del objeto espacial</Header>
+				<SpaceObjectSize>Tamaño del objeto (%):</SpaceObjectSize>
 			</SpaceObjectSizeModal>
 			<CalibrateModal>
 				<Header> Calibrar medición </Header>
@@ -923,7 +928,12 @@
 				<Map> Mapas de datos - Mapa de usuario 4 </Map>
 			</DataMaps>
 			<IconPage_p1_8>
-				<PreviousPage> Página de menú anterior </PreviousPage>
+            <ZoomWidth>Zoom a ancho</ZoomWidth>
+                <PanUp>Panorámica arriba</PanUp>
+                <PanDown>Panorámica hacia abajo</PanDown>
+                <PanLeft>Panorámica a la izquierda</PanLeft>
+                <PanRight>Panorámica a la derecha</PanRight>
+                <PreviousPage> Página de menú anterior </PreviousPage>
 				<NextPage> Página de icono siguiente </NextPage>
 				<NextMenuPage> Página siguiente del menú </NextMenuPage>
 				<LayerList> Lista de capas </LayerList>
@@ -1277,7 +1287,7 @@
 			</CollaborationStartModal>
 			<PublishPDFModal>
 			<Header>将带红线的屏幕内容发布为PDF </Header>
-			<SelectMode>选择模式</SelectMode>
+			<SelectMode>选择模式:</SelectMode>
 			<Mode1>打印/下载</Mode1>
 			<Mode2>发送为电子邮件</Mode2>
 			<Mode3>上传到服务器</Mode3>
@@ -1289,7 +1299,7 @@
 			</PublishPDFModal>
 			<MergeDXFModal>
 			<Header>将红线与源DWG合并</Header>
-			<SelectMode>选择模式</SelectMode>
+			<SelectMode>选择模式:</SelectMode>
 			<Mode1>下载</Mode1>
 			<Mode2>发送为电子邮件</Mode2>
 			<Mode3>上传到服务器</Mode3>
@@ -1302,7 +1312,7 @@
 			<RedlineColorModal>
 			<Header>选择红线颜色</Header>
 			<PickColor>选择颜色：</PickColor>
-			<SelectColor>选择：</SelectColor>
+			<SelectColor></SelectColor>
 			<Blue>蓝色</Blue>
 			<Red>红色</Red>
 			<Yellow> 黄色 </Yellow>
@@ -1331,7 +1341,7 @@
 			<BackgroundColorModal>
 			<Header>选择背景色</Header>
 			<PickColor>选择颜色：</PickColor>
-			<SelectColor>选择：</SelectColor>
+			<SelectColor></SelectColor>
 			<White> 白色 </White>
 			<Black>黑色</Black>
 			<Azure> 蔚蓝 </Azure>
@@ -1356,8 +1366,8 @@
 			<Text>输入文本，单击“确定”，然后在图形中选择插入点。</Text>
 			</LineThicknessModal>
 			<SpaceObjectSizeModal>
-				<Header>Adjust Space Object Size</Header>
-				<SpaceObjectSize>Space Object Size (%):</SpaceObjectSize>
+				<Header>调整空间物体大小</Header>
+				<SpaceObjectSize>空间物体大小（%）：</SpaceObjectSize>
 			</SpaceObjectSizeModal>
 			<CalibrateModal>
 			<Header>校准测量</Header>
@@ -1475,7 +1485,12 @@
 			<Map>数据地图-用户地图4 </Map>
 			</DataMaps>
 			<IconPage_p1_8>
-			<PreviousPage>上一个菜单页面</PreviousPage>
+            <ZoomWidth>缩放到宽度</ZoomWidth>
+            <PanUp>向上平移</PanUp>
+            <PanDown>向下平移</PanDown>
+            <PanLeft>向左平移</PanLeft>
+            <PanRight>P向右平移</PanRight>
+            <PreviousPage>上一个菜单页面</PreviousPage>
 			<NextPage>下一个图标页</NextPage>
 			<NextMenuPage>下一个菜单页</NextMenuPage>
 			<LayerList>层列表</LayerList>
@@ -1829,7 +1844,7 @@
 			</CollaborationStartModal>
 			<PublishPDFModal>
 			<Header>將帶紅線的屏幕內容髮佈為PDF </Header>
-			<SelectMode>選擇模式</SelectMode>
+			<SelectMode>選擇模式:</SelectMode>
 			<Mode1>打印/下載</Mode1>
 			<Mode2>發送為電子郵件</Mode2>
 			<Mode3>上傳到服務器</Mode3>
@@ -1841,7 +1856,7 @@
 			</PublishPDFModal>
 			<MergeDXFModal>
 			<Header>將紅線與源DWG合併</Header>
-			<SelectMode>選擇模式</SelectMode>
+			<SelectMode>選擇模式:</SelectMode>
 			<Mode1>下載</Mode1>
 			<Mode2>發送為電子郵件</Mode2>
 			<Mode3>上傳到服務器</Mode3>
@@ -1854,7 +1869,7 @@
 			<RedlineColorModal>
 			<Header>選擇紅線顏色</Header>
 			<PickColor>選擇顏色：</PickColor>
-			<SelectColor>選擇：</SelectColor>
+			<SelectColor></SelectColor>
 			<Blue>藍色</Blue>
 			<Red>紅色</Red>
 			<Yellow> 黃色 </Yellow>
@@ -1883,7 +1898,7 @@
 			<BackgroundColorModal>
 			<Header>選擇背景色</Header>
 			<PickColor>選擇顏色：</PickColor>
-			<SelectColor>選擇：</SelectColor>
+			<SelectColor></SelectColor>
 			<White> 白色 </White>
 			<Black>黑色</Black>
 			<Azure> 蔚藍 </Azure>
@@ -1908,8 +1923,8 @@
 			<Text>輸入文本，單擊“確定”，然後在圖形中選擇插入點。 </Text>
 			</LineThicknessModal>
 			<SpaceObjectSizeModal>
-				<Header>Adjust Space Object Size</Header>
-				<SpaceObjectSize>Space Object Size (%):</SpaceObjectSize>
+				<Header>調整空間物體大小</Header>
+				<SpaceObjectSize>空間物體大小（%）：</SpaceObjectSize>
 			</SpaceObjectSizeModal>
 			<CalibrateModal>
 			<Header>校準測量</Header>
@@ -2027,7 +2042,12 @@
 			<Map>數據地圖-用戶地圖4 </Map>
 			</DataMaps>
 			<IconPage_p1_8>
-			<PreviousPage>上一個菜單頁面</PreviousPage>
+            <ZoomWidth>縮放到寬度</ZoomWidth>
+            <PanUp>向上平移</PanUp>
+            <PanDown>向下平移</PanDown>
+            <PanLeft>向左平移</PanLeft>
+            <PanRight>向右平移</PanRight>
+            <PreviousPage>上一個菜單頁面</PreviousPage>
 			<NextPage>下一個圖標頁</NextPage>
 			<NextMenuPage>下一個菜單頁</NextMenuPage>
 			<LayerList>層列表</LayerList>
@@ -2381,7 +2401,7 @@
 			</CollaborationStartModal>
 			<PublishPDFModal>
 			<Header> Publique o conteúdo da tela em vermelho em PDF </Header>
-			<SelectMode> Selecione o modo </SelectMode>
+			<SelectMode> Selecione: </SelectMode>
 			<Mode1> Baixar </Mode1>
 			<Mode2> Enviar email </Mode2>
 			<Mode3> Carregar no servidor </Mode3>
@@ -2393,7 +2413,7 @@
 			</PublishPDFModal>
 			<MergeDXFModal>
 			<Header> Mesclar redline com DWG de origem </Header>
-			<SelectMode> Selecione o modo </SelectMode>
+			<SelectMode> Selecione: </SelectMode>
 			<Mode1> Baixar </Mode1>
 			<Mode2> Enviar email </Mode2>
 			<Mode3> Carregar no servidor </Mode3>
@@ -2406,7 +2426,7 @@
 			<RedlineColorModal>
 			<Header> Selecione Redline Color </Header>
 			<PickColor> Escolha: </PickColor>
-			<SelectColor> Selecione: </SelectColor>
+			<SelectColor></SelectColor>
 			<Blue> Azul </Blue>
 			<Red> Vermelho </Red>
 			<Yellow> Amarelo </Yellow>
@@ -2435,7 +2455,7 @@
 			<BackgroundColorModal>
 				<Header> Selecione a cor de fundo </Header>
 				<PickColor> Escolha: </PickColor>
-				<SelectColor> Selecione: </SelectColor>
+				<SelectColor></SelectColor>
 				<White> Branco </White>
 				<Black> Preto </Black>
 				<Azure> Azure </Azure>
@@ -2460,8 +2480,8 @@
 			<Text> Fale sobre pesos zero. </Text>
 			</LineThicknessModal>
 			<SpaceObjectSizeModal>
-				<Header>Adjust Space Object Size</Header>
-				<SpaceObjectSize>Space Object Size (%):</SpaceObjectSize>
+				<Header>Ajustar tamanho do objeto de espaço</Header>
+				<SpaceObjectSize>Tamanho do objeto (%):</SpaceObjectSize>
 			</SpaceObjectSizeModal>
 			<CalibrateModal>
 			<Header> Calibrar medição </Header>
@@ -2579,7 +2599,12 @@
 				<Map>Data Maps - User Map 4</Map>			
 			</DataMaps>
 			<IconPage_p1_8>
-				<PreviousPage> Página do menu anterior </PreviousPage>
+            <ZoomWidth>Zoom para largura</ZoomWidth>
+                <PanUp>Pan para cima</PanUp>
+                <PanDown>Pan para baixo</PanDown>
+                <PanLeft>Pan Esquerda</PanLeft>
+                <PanRight>Pan direita</PanRight>
+                <PreviousPage> Página do menu anterior </PreviousPage>
 				<NextPage> Próxima página de ícone </NextPage>
 				<NextMenuPage> Página do próximo menu </NextMenuPage>
 				<LayerList> Lista de camadas </LayerList>
@@ -2933,7 +2958,7 @@
 			</CollaborationStartModal>
 			<PublishPDFModal>
 			<Header> 레드 라인 화면 내용을 PDF로 게시 </Header>
-			<SelectMode> 모드 선택 </SelectMode>
+			<SelectMode> 모드 선택: </SelectMode>
 			<Mode1> 인쇄 / 다운로드 </Mode1>
 			<Mode2> 이메일로 보내기 </Mode2>
 			<Mode3> 서버에 업로드 </Mode3>
@@ -2945,7 +2970,7 @@
 			</PublishPDFModal>
 			<MergeDXFModal>
 			<Header> 소스 DWG와 수정 지시 병합 </Header>
-			<SelectMode> 모드 선택 </SelectMode>
+			<SelectMode> 모드 선택: </SelectMode>
 			<Mode1> 다운로드 </Mode1>
 			<Mode2> 이메일로 보내기 </Mode2>
 			<Mode3> 서버에 업로드 </Mode3>
@@ -2958,7 +2983,7 @@
 			<RedlineColorModal>
 			<Header> 수정 지시 색상 선택 </Header>
 			<PickColor> 색상 선택 : </PickColor>
-			<SelectColor> 선택 : </SelectColor>
+			<SelectColor></SelectColor>
 			<Blue> 파란색 </Blue>
 			<Red> 적색 </Red>
 			<Yellow> 노란색 </Yellow>
@@ -2987,7 +3012,7 @@
 			<BackgroundColorModal>
 			<Header> 배경색 선택 </Header>
 			<PickColor> 색상 선택 : </PickColor>
-			<SelectColor> 선택 : </SelectColor>
+			<SelectColor></SelectColor>
 			<White> 흰색 </White>
 			<Black> 검정 </Black>
 			<Azure> 하늘빛 </Azure>
@@ -3012,8 +3037,8 @@
 			<Text> 무게에 대해 이야기하십시오. </Text>
 			</LineThicknessModal>
 			<SpaceObjectSizeModal>
-				<Header>Adjust Space Object Size</Header>
-				<SpaceObjectSize>Space Object Size (%):</SpaceObjectSize>
+				<Header>공간 개체 크기 조정</Header>
+				<SpaceObjectSize>우주 물체 크기(%):</SpaceObjectSize>
 			</SpaceObjectSizeModal>
 			<CalibrateModal>
 			<Header> 측정 보정 </Header>
@@ -3132,6 +3157,11 @@
 				<Map>Data Maps - User Map 4</Map>			
 			</DataMaps>
 				<IconPage_p1_8>
+                <ZoomWidth>너비로 확대</ZoomWidth>
+                <PanUp>팬업</PanUp>
+                <PanDown>팬 다운</PanDown>
+                <PanLeft>왼쪽으로 이동</PanLeft>
+                <PanRight>오른쪽으로 이동</PanRight>
 				<PreviousPage> 이전 메뉴 페이지 </PreviousPage>
 				<NextPage> 다음 아이콘 페이지 </NextPage>
 				<NextMenuPage> 다음 메뉴 페이지 </NextMenuPage>
@@ -3487,7 +3517,7 @@
 			</CollaborationStartModal>
 			<PublishPDFModal>
 			<Header> Publikasikan Konten Layar Berwarna Merah ke PDF </Header>
-			<SelectMode> Pilih Mode </SelectMode>
+			<SelectMode> Pilih Mode: </SelectMode>
 			<Mode1> Cetak / Unduh </Mode1>
 			<Mode2> Kirim email </Mode2>
 			<Mode3> Unggah ke Server </Mode3>
@@ -3499,7 +3529,7 @@
 			</PublishPDFModal>
 			<MergeDXFModal>
 			<Header> Gabungkan Redline dengan Source DWG </Header>
-			<SelectMode> Pilih Mode </SelectMode>
+			<SelectMode> Pilih Mode: </SelectMode>
 			<Mode1> Unduh </Mode1>
 			<Mode2> Kirim email </Mode2>
 			<Mode3> Unggah ke Server </Mode3>
@@ -3512,7 +3542,7 @@
 			<RedlineColorModal>
 			<Header> Pilih Warna Redline </Header>
 			<PickColor> Pilih Warna: </PickColor>
-			<SelectColor> Pilih: </SelectColor>
+			<SelectColor></SelectColor>
 			<Blue> Biru </Blue>
 			<Red> Merah </Red>
 			<Yellow> Kuning </Yellow>
@@ -3541,7 +3571,7 @@
 			<BackgroundColorModal>
 			<Header> Pilih Warna Latar Belakang </Header>
 			<PickColor> Pilih Warna: </PickColor>
-			<SelectColor> Pilih: </SelectColor>
+			<SelectColor></SelectColor>
 			<White> Putih </White>
 			<Black> Hitam </Black>
 			<Azure> Azure </Azure>
@@ -3566,8 +3596,8 @@
 			<Text> Bicara tentang bobot nol. </Text>
 			</LineThicknessModal>
 			<SpaceObjectSizeModal>
-				<Header>Adjust Space Object Size</Header>
-				<SpaceObjectSize>Space Object Size (%):</SpaceObjectSize>
+				<Header>Sesuaikan Ukuran Objek Luar Angkasa</Header>
+				<SpaceObjectSize>Ukuran Objek (%):</SpaceObjectSize>
 			</SpaceObjectSizeModal>
 			<CalibrateModal>
 			<Header> Pengukuran Kalibrasi </Header>
@@ -3685,7 +3715,12 @@
 				<Map>Data Maps - User Map 4</Map>			
 			</DataMaps>
 			<IconPage_p1_8>
-			<PreviousPage> Halaman Menu Sebelumnya </PreviousPage>
+            <ZoomWidth>Perbesar ke Lebar</ZoomWidth>
+            <PanUp>Geser ke Atas</PanUp>
+            <PanDown>Geser ke Bawah</PanDown>
+            <PanLeft>Geser Kiri</PanLeft>
+            <PanRight>Geser Kanan</PanRight>
+            <PreviousPage> Halaman Menu Sebelumnya </PreviousPage>
 			<NextPage> Halaman Ikon Berikutnya </NextPage>
 			<NextMenuPage> Halaman Menu Berikutnya </NextMenuPage>
 			<LayerList> Daftar layer </LayerList>
@@ -4038,7 +4073,7 @@
 				</CollaborationStartModal>
 				<PublishPDFModal>
 				<Header> Veröffentlichen Sie redlinierten Bildschirminhalt als PDF </Header>
-				<SelectMode> Auswahlmodus </SelectMode>				
+				<SelectMode> Auswahlmodus: </SelectMode>				
 				<Mode1> Herunterladen </Mode1>
 				<Mode2> Als E-Mail</Mode2>
 				<Mode3> Auf Server hochladen </Mode3>
@@ -4050,7 +4085,7 @@
 				</PublishPDFModal>
 			<MergeDXFModal>
 				<Header> Redline mit Quell-DWG zusammenführen </Header>
-				<SelectMode> Auswahlmodus </SelectMode>				
+				<SelectMode> Auswahlmodus: </SelectMode>				
 				<Mode1> Herunterladen </Mode1>
 				<Mode2> Als E-Mail</Mode2>
 				<Mode3> Auf Server hochladen </Mode3>
@@ -4063,7 +4098,7 @@
 			<RedlineColorModal>
 				<Header> Wählen Sie Redline-Farbe</Header>
 				<PickColor> Farbe:</PickColor>
-				<SelectColor> Wählen: </SelectColor>
+				<SelectColor></SelectColor>
 				<Blue> Blau </Blue>
 				<Red> Rot </Red>
 				<Yellow> Gelb </Yellow>
@@ -4092,7 +4127,7 @@
 			<BackgroundColorModal>
 				<Header> Hintergrundfarbe auswählen </Header>
 				<PickColor> Farbe:</PickColor>
-				<SelectColor> Wählen: </SelectColor>
+				<SelectColor></SelectColor>
 				<White>Weiß</White>
 				<Black>Schwarz</Black>
 				<Azure>Azur</Azure>
@@ -4117,8 +4152,8 @@
 				<Text> Sprechen Sie über Nullgewichte. </Text>
 				</LineThicknessModal>
                 <SpaceObjectSizeModal>
-				<Header>Adjust Space Object Size</Header>
-				<SpaceObjectSize>Space Object Size (%):</SpaceObjectSize>
+				<Header>SpaceObject-Größe Anpassen</Header>
+				<SpaceObjectSize>Objekt-Größe (%):</SpaceObjectSize>
 			    </SpaceObjectSizeModal>
 				<CalibrateModal>
 				<Header> Messung kalibrieren </Header>
@@ -4236,7 +4271,12 @@
 				<Map>Data Maps - User Map 4</Map>			
 			</DataMaps>
 			<IconPage_p1_8>
-				<PreviousPage> Vorherige Menüseite </PreviousPage>
+            <ZoomWidth>Auf Breite zoomen</ZoomWidth>
+                <PanUp>Nach oben schwenken</PanUp>
+                <PanDown>Nach unten schwenken</PanDown>
+                <PanLeft>Nach links schwenken</PanLeft>
+                <PanRight>Nach rechts schwenken</PanRight>
+                <PreviousPage> Vorherige Menüseite </PreviousPage>
 				<NextPage> Nächste Symbolseite </NextPage>
 				<NextMenuPage> Nächste Menüseite </NextMenuPage>
 				<LayerList> Layer-Liste</LayerList>
@@ -4590,7 +4630,7 @@
 					</CollaborationStartModal>
 			<PublishPDFModal>
 				<Header> Publier l'écran avec des Redlines au format PDF </Header>
-				<SelectMode> Sélectionner le mode </SelectMode>
+				<SelectMode> Sélectionner: </SelectMode>
 				<Mode1> Télécharger </Mode1>
 				<Mode2> Par e-mail </Mode2>
 				<Mode3> Télécharger sur le serveur </Mode3>
@@ -4602,7 +4642,7 @@
 			</PublishPDFModal>
 			<MergeDXFModal>
 				<Header> Fusionner Redline avec Source DWG </Header>
-				<SelectMode> Sélectionner le mode </SelectMode>
+				<SelectMode> Sélectionner: </SelectMode>
 				<Mode1> Télécharger </Mode1>
 				<Mode2> Par e-mail </Mode2>
 				<Mode3> Télécharger sur le serveur </Mode3>
@@ -4615,7 +4655,7 @@
 			<RedlineColorModal>
 				<Header> Sélectionnez la couleur Redline </Header>
 				<PickColor> Choisissez: </PickColor>
-				<SelectColor> Sélection: </SelectColor>
+				<SelectColor></SelectColor>
 				<Blue> Bleu </Blue>
 				<Red> Rouge </Red>
 				<Yellow> Jaune </Yellow>
@@ -4644,7 +4684,7 @@
 			<BackgroundColorModal>
 				<Header> Sélectionnez la couleur d'arrière-plan </Header>
 				<PickColor> Choisissez: </PickColor>
-				<SelectColor> Sélection: </SelectColor>
+				<SelectColor></SelectColor>
 				<White> Blanc </White>
 				<Black> Noir </Black>
 				<Azure> Azure </Azure>
@@ -4669,8 +4709,8 @@
 				<Text> Parlez de poids zéro. </Text>
 			</LineThicknessModal>
 			<SpaceObjectSizeModal>
-				<Header>Adjust Space Object Size</Header>
-				<SpaceObjectSize>Space Object Size (%):</SpaceObjectSize>
+				<Header>Ajuster la taille de l'objet spatial</Header>
+				<SpaceObjectSize>Taille de l'objet (%) :</SpaceObjectSize>
 			</SpaceObjectSizeModal>
 			<CalibrateModal>
 				<Header> Calibrer la mesure </Header>
@@ -4788,6 +4828,11 @@
 				<Map>Data Maps - User Map 4</Map>			
 			</DataMaps>
 			<IconPage_p1_8>
+            <ZoomWidth>Zoom sur la largeur</ZoomWidth>
+                <PanUp>Panoramique vers le haut</PanUp>
+                <PanDown>Panoramique vers le bas</PanDown>
+                <PanLeft>Panoramique à gauche</PanLeft>
+                <PanRight>Panoramique à droite</PanRight>
 				<PreviousPage> Page de menu précédente </PreviousPage>
 				<NextPage> Page d'icônes suivante </NextPage>
 				<NextMenuPage> Page de menu suivante </NextMenuPage>
