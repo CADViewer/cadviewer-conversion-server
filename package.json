@@ -1,8 +1,8 @@
 {
   "name": "cadviewer-conversion-server",
-  "version": "8.1.5",
+  "version": "8.33.1",
   "description": "CADViewer NodeJS Server Encapsulation of CAD Converters",
-  "main": "CV_8.1.5.js",
+  "main": "CV_8.33.1.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

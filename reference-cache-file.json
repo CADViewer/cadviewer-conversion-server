@@ -1,0 +1,47 @@
+{
+	"fullfilepath": "full file path",
+	"filename": "filename",
+	"filecreatestamp": "date1",
+	"filechangestamp": "2023-01-31T08:30:25.597Z",
+	"cachedfiles": [{
+			"fileName": "F1- 533271c6c7ec58eda68a0f882.svgz",
+			"filecreatestamp": "datef1",
+			"parameters": [{
+				"paramName": "f",
+				"paramValue": "svg"
+			}, {
+				"paramName": "ak",
+				"paramValue": "FWK_1"
+			}, {
+				"paramName": "ia",
+				"paramValue": ""
+			}, {
+				"paramName": "extents",
+				"paramValue": ""
+			}, {
+				"paramName": "layout",
+				"paramValue": "Sheet1"
+			}]
+		},
+		{
+			"fileName": "F7fb34b99d6a6f1ca982c14040bc658add4a28a5f.svgz",
+			"filecreatestamp": "2023-01-31T08:30:25.597Z",
+			"parameters": [{
+				"paramName": "f",
+				"paramValue": "svg"
+			}, {
+				"paramName": "ak",
+				"paramValue": "FWK_DEVICE_TYPE"
+			}, {
+				"paramName": "ia",
+				"paramValue": ""
+			}, {
+				"paramName": "extents",
+				"paramValue": ""
+			}, {
+				"paramName": "last",
+				"paramValue": ""
+			}]
+		}
+	]
+}
