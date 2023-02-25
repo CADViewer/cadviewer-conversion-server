@@ -10,7 +10,7 @@ var fs = require('fs');   // 8.19.1
 
 
 
-var customendpointextension = require('./cvjs_customConversionEndpointExtension_cv8.33.1.js');
+var customendpointextension = require('./cvjs_customConversionEndpointExtension_cv8.37.1.js');
 
 var customConversionEndpointExtension = false;
 
@@ -632,7 +632,7 @@ var express = require('express'),
 
     }
 
-    function cvjs_returnIfSVGhttp(contentLocation, tempFileName){
+    function cvjs_returnIfSVGhttp(contentLocation, tempFileName, res){   // 8.37.1
 
             // 6.2.69 
             // if it is an SVG on the server then we simply echo it back up
@@ -991,7 +991,7 @@ var express = require('express'),
     
 
         // echo back SVG file if http/https
-        if (cvjs_returnIfSVGhttp(contentLocation, tempFileName)) return;
+        if (cvjs_returnIfSVGhttp(contentLocation, tempFileName, res)) return;
         
         // in case of pdf creation, we make temp dir + filename similar to php setup
         // 6.1.25 / 25
@@ -1015,8 +1015,6 @@ var express = require('express'),
         // end 	
         if (cvjs_debug) console.log("writeFile="+writeFile);
         if (cvjs_debug) console.log("BEFORE HTTP BRANCH "+contentLocation);
-
-
 
         // 8.19.1  8.19.3
         if (cvjs_check_file_cache(outputFormat,contentLocation, parameters, tempFileName, res, writeFile, action, fileFormat, paramName, paramValue, FileStamp)){
