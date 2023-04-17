@@ -9,7 +9,7 @@
     "fileLocationUrl" : "http://localhost:3000/converters/files/",
     "converterLocation" : "c:/nodejs/cadviewer-conversion-server/converters/ax2024/windows/",
     "fontLocation" : "c:/nodejs/cadviewer-conversion-server/converters/ax2024/windows/fonts/",
-    "ax2024_executable" : "AX2024_W64_24_01_109c.exe",
+    "ax2024_executable" : "AX2024_W64_24_01_112.exe",
     "cvjs_svgz_compress" : false,
     "cached_conversion" : false,
     "licenseLocation" : "c:/nodejs/cadviewer-conversion-server/converters/ax2024/windows/",

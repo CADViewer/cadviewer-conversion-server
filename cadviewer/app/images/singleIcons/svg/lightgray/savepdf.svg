@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg filter = "url(#grayscale)"
+   width="200mm"
+   height="200mm"
+   viewBox="0 0 200 200"
+   version="1.1"
+   id="svg36"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="savepdf.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><filter xmlns="http://www.w3.org/2000/svg" id="grayscale"><feColorMatrix type="matrix" values="0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0"/></filter>
+  <sodipodi:namedview
+     id="namedview38"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.733172"
+     inkscape:cx="388.72188"
+     inkscape:cy="371.67268"
+     inkscape:window-width="1285"
+     inkscape:window-height="932"
+     inkscape:window-x="428"
+     inkscape:window-y="75"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer3" />
+  <defs
+     id="defs33">
+    <rect
+       x="53.193519"
+       y="55.921394"
+       width="656.05337"
+       height="248.23643"
+       id="rect20391" />
+    <rect
+       x="75.016504"
+       y="75.016504"
+       width="605.58777"
+       height="211.41015"
+       id="rect8549" />
+    <linearGradient
+       id="linearGradient1137"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#333333;stop-opacity:1;"
+         offset="0"
+         id="stop1135" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:label="Lager 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Lager 2"
+     style="display:inline">
+    <rect
+       style="opacity:1;fill:#FFF;fill-opacity:1;fill-rule:evenodd;stroke:#ECECEC;stroke-width:4;stroke-opacity:1"
+       id="rect1472"
+       width="196"
+       height="196"
+       x="2"
+       y="2" />
+    <path
+       style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:10;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 103.19105,119.43043 0.39918,56.33477"
+       id="path3005" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:10;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 80.475091,160.22843 23.095989,15.51762"
+       id="path3339" />
+    <path
+       style="display:inline;fill:none;stroke:#ff0000;stroke-width:10;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 126.66708,160.22843 -23.096,15.51762"
+       id="path3339-5" />
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text8547"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';white-space:pre;shape-inside:url(#rect8549);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="75.015625"
+         y="456.84898"
+         id="tspan32324"><tspan
+           dx="0 106.78125 138.65625"
+           id="tspan32322"></tspan></tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Lager 3"
+     style="display:inline">
+    <rect
+       style="display:inline;fill:#ff0000;fill-rule:evenodd;stroke:#ffffff;stroke-width:4.15307;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2761"
+       width="166.57034"
+       height="73.782066"
+       x="18.098942"
+       y="28.968628" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.3025797,0,0,0.3050077,28.57773,16.33517)"
+       id="text20389"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';white-space:pre;shape-inside:url(#rect20391);fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1"><tspan
+         x="53.193359"
+         y="226.34508"
+         id="tspan32326">PDF</tspan></text>
+  </g>
+</svg>

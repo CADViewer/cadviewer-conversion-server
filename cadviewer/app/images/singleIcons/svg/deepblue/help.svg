@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200mm"
+   height="200mm"
+   viewBox="0 0 200 200"
+   version="1.1"
+   id="svg36"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="help.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview38"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.733172"
+     inkscape:cx="388.72188"
+     inkscape:cy="483.51546"
+     inkscape:window-width="1285"
+     inkscape:window-height="956"
+     inkscape:window-x="481"
+     inkscape:window-y="21"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer2" />
+  <defs
+     id="defs33">
+    <rect
+       x="167.76418"
+       y="122.75428"
+       width="331.43655"
+       height="253.69218"
+       id="rect15409" />
+    <rect
+       x="150.03301"
+       y="84.564059"
+       width="455.55477"
+       height="572.8533"
+       id="rect6569" />
+    <linearGradient
+       id="linearGradient1137"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#333333;stop-opacity:1;"
+         offset="0"
+         id="stop1135" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:label="Lager 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:none" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Lager 2"
+     style="display:inline">
+    <rect
+       style="opacity:1;fill:#0588cf;fill-opacity:1;fill-rule:evenodd;stroke:#0588cf;stroke-width:4;stroke-opacity:1"
+       id="rect1472"
+       width="196"
+       height="196"
+       x="2"
+       y="2" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Lager 3"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       transform="matrix(5.9444003,0,0,4.2638363,-850.42465,-349.09402)"
+       id="text6567"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect6569);fill:#1ccbd0;fill-opacity:1;stroke:none"><tspan
+         x="150.0332"
+         y="119.95508"
+         id="tspan20147">?</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text15407"
+       style="fill:black;fill-opacity:1;line-height:1.25;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;white-space:pre;shape-inside:url(#rect15409)" />
+  </g>
+</svg>
