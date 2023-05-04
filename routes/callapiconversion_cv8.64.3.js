@@ -10,7 +10,7 @@ var fs = require('fs');   // 8.19.1
 
 
 
-var customendpointextension = require('./cvjs_customConversionEndpointExtension_cv8.56.1.js');
+var customendpointextension = require('./cvjs_customConversionEndpointExtension_cv8.64.3.js');
 
 var customConversionEndpointExtension = false;
 
@@ -726,6 +726,11 @@ var express = require('express'),
                         if (paramValue[i].indexOf(config.ServerUrl)==0){
                             // the ServerUrl is replaced with ServerLocation
                             paramValue[i] = config.ServerLocation + paramValue[i].substring(config.ServerUrl.length);
+                        }else{ // 8.64.3
+                            if (paramValue[i].indexOf(config.ServerFrontEndUrl)==0){
+                                // the ServerUrl is replaced with ServerLocation
+                                paramValue[i] = config.ServerLocation + paramValue[i].substring(config.ServerFrontEndUrl.length);
+                            }
                         }			
                     }
                     
