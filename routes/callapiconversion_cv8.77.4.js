@@ -10,7 +10,7 @@ var fs = require('fs');   // 8.19.1
 
 
 
-var customendpointextension = require('./cvjs_customConversionEndpointExtension_cv8.77.1.js');
+var customendpointextension = require('./cvjs_customConversionEndpointExtension_cv8.77.4.js');
 
 var customConversionEndpointExtension = false;
 
@@ -294,8 +294,17 @@ var express = require('express'),
             
             if (config.cvjs_debug) console.log("\n\r \n\r  decodeURL contentLocation: "+contentLocation+" Server URL: "+config.ServerUrl+" \n\r ");
         
+
+            // 8.77.4
+            var contentLocationCheck = true;
+            if (config.contentLocationCheck != undefined) contentLocationCheck = config.contentLocationCheck;
+            if (config.cvjs_debug) console.log("8.77.4:  contentLocationCheck="+contentLocationCheck);
+
+            // 6.8.65 we only substitute for the back-end, if front-end then user controlled
+            if (contentLocation.indexOf(config.ServerUrl)==0   && contentLocationCheck){
+
             // we only replace ServerUrl = back-end match
-            if (contentLocation.indexOf(config.ServerUrl)==0){
+            // if (contentLocation.indexOf(config.ServerUrl)==0){
                 // the ServerUrl is replaced with ServerLocation
                 contentLocation = config.ServerLocation + contentLocation.substring(config.ServerUrl.length);
             }			
@@ -1037,8 +1046,15 @@ var express = require('express'),
 
     function cvjs_standard_CV_AX_processing(outputFormat,contentLocation, parameters, tempFileName, res, writeFile, action, fileFormat, paramName, paramValue, FileStamp){
 
+
+        // 8.77.4
+        var contentLocationCheck = true;
+        if (config.contentLocationCheck != undefined) contentLocationCheck = config.contentLocationCheck;
+        if (config.cvjs_debug) console.log("8.77.4:  contentLocationCheck="+contentLocationCheck);
+
+
         // 6.8.65 we only substitute for the back-end, if front-end then user controlled
-        if (contentLocation.indexOf(config.ServerUrl)==0){
+        if (contentLocation.indexOf(config.ServerUrl)==0   && contentLocationCheck){
             // the ServerUrl is replaced with ServerLocation
             contentLocation = config.ServerLocation + contentLocation.substring(config.ServerUrl.length);
         }			

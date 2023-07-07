@@ -32,6 +32,7 @@
     "ContentSecurityPolicy" : "default-src 'self'; font-src 'self'; img-src 'self' https://cadviewer.com data:; script-src 'self' 'nonce-INSERTNONCE'; style-src 'self' 'unsafe-inline'; frame-src 'self'",
     "fileLoad_PasswordAuthentication" : false,
     "fileLoad_UserName" : "myusername",
-    "fileLoad_Password" : "mypassword"
+    "fileLoad_Password" : "mypassword",
+    "contentLocationCheck" : true
 }	
 	
