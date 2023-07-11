@@ -33,6 +33,6 @@
     "fileLoad_PasswordAuthentication" : false,
     "fileLoad_UserName" : "myusername",
     "fileLoad_Password" : "mypassword",
-    "contentLocationCheck" : true
+    "contentLocationCheck" : false
 }	
 	

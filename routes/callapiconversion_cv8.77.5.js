@@ -457,6 +457,9 @@ var express = require('express'),
                     if (!contentLocationCheck){
                         // 8.77.5
 
+
+                        /*
+
                         httprequest(contentLocation).pipe(fs.createWriteStream(newcontentLocation))
                         .on('error', () => {
                             console.log('ERROR - httprequest/createWriteStream does this location exist?: '+contentLocation);
@@ -543,6 +546,16 @@ var express = require('express'),
                             });	    
 
                         });
+
+                        */
+
+                        // cannot load file
+                        console.log('LinkList location does not exist:'+contentLocation);                            
+                        var CVJSresponse = "{\"completedAction\":\"data_extraction\",\"errorCode\":\"E"+1+"\",\"converter\":\"LinkList2023\",\"version\":\"V2.00\",\"userLabel\":\"fromCADViewerJS\",\"tempFile\":\""+tempFileName+"."+outputFormat+"\",\"contentLocation\":\""+contentLocationOrg+"\",\"contentResponse\":\"stream\",\"contentStreamData\":\""+callbackMethod+"?remainOnServer="+remainOnServer+"&fileTag="+tempFileName+"&Type="+outputFormat+"\"}";
+                        res.send(CVJSresponse);
+                        return;
+
+
 
                         // 8.77.5
                     }
@@ -1000,6 +1013,7 @@ var express = require('express'),
 
 
 
+
                     // 8.77.5
                     var contentLocationCheck = true;
                     if (config.contentLocationCheck != undefined) contentLocationCheck = config.contentLocationCheck;
@@ -1008,10 +1022,10 @@ var express = require('express'),
                     // 8.77.5
                     console.log('8.77.5 AX contentLocationCheck after UrlExits check:'+contentLocationCheck);
 
-
                     // if no content location check, we pass over the standard file load process
                     if (!contentLocationCheck){
 
+                    /*
 
                         httprequest(contentLocation).pipe(fs.createWriteStream(newcontentLocation))
                         .on('error', () => {
@@ -1061,6 +1075,24 @@ var express = require('express'),
                 
                             cvjs_buildcommandline_and_execute(outputFormat,contentLocation, parameters, res, writeFile, action, tempFileName);
                         });	
+
+
+                        */
+
+                        console.log('AX: location does not exist:'+contentLocation);
+
+                        // 8.33.1 
+                        var fullcallback = "";
+                        if (config.callbackMethod_gatewayUrl_flag){
+                            fullcallback =  config.callbackMethod_gatewayUrl +"/"+config.callbackMethod
+                        }
+                        else 
+                            fullcallback = config.ServerUrl+"/"+config.callbackMethod
+    
+                        var CVJSresponse = "{\"completedAction\":\"svg_creation\",\"errorCode\":\"E"+0+"\",\"converter\":\"AutoXchange AX2020\",\"version\":\"V1.00\",\"userLabel\":\"fromCADViewerJS\",\"tempFile\":\""+tempFileName+"."+outputFormat+"\",\"contentLocation\":\""+contentLocationOrg+"\",\"contentResponse\":\"stream\",\"contentStreamData\":\""+fullcallback+"?remainOnServer=1&fileTag="+tempFileName+"&Type=svg\"}";
+                        res.send(CVJSresponse);
+                        return;
+
     
                     }
                     else{
@@ -1079,11 +1111,7 @@ var express = require('express'),
                         res.send(CVJSresponse);
                         return;
     
-
-
                     }
-
-
 
         
                 }		
