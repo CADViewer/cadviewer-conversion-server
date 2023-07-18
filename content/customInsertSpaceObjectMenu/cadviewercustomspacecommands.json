@@ -80,16 +80,7 @@
                         "commandName" : "Marker",
                         "imageLocation" : "/images/pin_02.svg",
                         "toolTip" : "Insert marker object "
-                    },
-
-                    {
-                        "commandName" : "Person",
-                        "imageLocation" : "/images/personicon.svg",
-                        "toolTip" : "Insert person "
                     }
- 
-
-                
 
                 ]
                 ,
@@ -120,9 +111,26 @@
                         "commandName" : "Arrow",
                         "imageLocation" : "/images/arrow_rotate03.svg",
                         "toolTip" : "RotateArrow Symbol "
+                    },
+                    {
+                        "commandName" : "HM Logo",
+                        "imageLocation" : "/images/HM-Logo.svg",
+                        "toolTip" : "HM Logo"
+                    },
+                    {
+                        "commandName" : "Gap Logo",
+                        "imageLocation" : "/images/Gap_logo.svg",
+                        "toolTip" : "Gap Logo"
+                    },
+                    {
+                        "commandName" : "UNIQLO Logo",
+                        "imageLocation" : "/images/uniqlo.svg",
+                        "toolTip" : "UNIQLO Logo"
                     }
 
 
+
+                    
 
             ]
 

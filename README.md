@@ -2,19 +2,16 @@
 
 The CADViewer NodeJS Conversion server (nodejs/cadviewer-conversion-server/) is used in six different implementations: **NodeJS**, **Angular**,**ReactJS**, **Laravel**, **Rails7** and **VueJS**. 
 
-The repository contains a full setup including converters and NodeJS controlling script
+The repository contains a full setup including converters and NodeJS controlling script.
 
-If installing on Linux, please use the repository: [cadviewer-conversion-server-linux](https://github.com/CADViewer/cadviewer-conversion-server-linux)
-
+It contains all components to run on either a Windows server or a Linux Server.
 
 
 ## This package contains
 
 1: NodeJS script library for controlling CAD Conversions and communication with CADViewer  - in its preferred folder structure
 
-2: AutoXchange AX2024Converter and DWG Merge 2024 Converter - in their preferred folder structure
-
-***Note:*** If on Linux, unpack the compressed AX2024 binary in /converters/ax2023/linux and update the executable name in CADViewer_config.json.
+2: AutoXchange AX2024 Converter, LinkList2023 Converterand DWGMerge2023 Converter - in their preferred folder structure
 
 3: All structures for file-conversion, sample drawings, redlines, etc. 
 
@@ -28,6 +25,21 @@ Read the sections on installing and handling [Fonts](https://tailormade.com/ax20
 
 
 ## How to Use
+
+1. The ***CADViewer_config.json*** contains all settings for running under Windows and Linux.
+
+2. In the ***CADViewer_config.json*** the default settings of the variable ***autodetect_platform*** is ***true*** and the variable ***autodetect_location*** is  ***true***. With these settings running **cadviewer_server** will automatically set up all folder paths for conversions when running on either Windows or Linux. 
+
+3. If a user sets ***autodetect_platform*** to ***false*** and the variable ***autodetect_location*** to  ***false***, all paths in **CADViewer_config.json** MUST correspond to the actual server setting. 
+
+4. The variable ***ServerUrl*** sets the URL of the server with its port, the default setup is ***http://localhost:3000***.
+
+5. When running on Linux, ensure the following:
+
+    5A: Ensure the converter ***ax2023_L64_12_xx_yy*** has full chmod 777 permissions (or 755). 
+    5B: Ensure the folder with temporary files ***/converters/files*** has full read and write permissions. 
+
+
 
 1: Depending on the implementation, copy: CADViewer_config_XXXXXX.json -> ***CADViewer_config.json*** (where XXXXXX is either NodeJS, Angular, Laravel, ReactJS, Rails7 or VueJS), to set up a template server and path configuration prior to running the server. 
 
