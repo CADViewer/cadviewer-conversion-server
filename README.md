@@ -1,4 +1,4 @@
-# Installing CADViewer NodeJS Conversion Server - Windows
+# Installing CADViewer NodeJS Conversion Server - Windows and Linux
 
 The CADViewer NodeJS Conversion server (nodejs/cadviewer-conversion-server/) is used in six different implementations: **NodeJS**, **Angular**,**ReactJS**, **Laravel**, **Rails7** and **VueJS**. 
 
