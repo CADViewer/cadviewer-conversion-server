@@ -1,0 +1,824 @@
+{
+"details": {
+	"Input File": "C:\nodejs\cadviewer-conversion-server\\\content\custom\brookfield\3442-LP2-fm-layers-on-tenants.dwg",
+ 	"Room Layer": "SF-TENANT-PL",
+	"Text Layer": [
+		          FM-TEXT-TENANT,
+		          TEXT-ANCHORS
+ 	]
+ 	},
+"Linked": [
+ 	{
+		"Name": "BURBERRY",
+		"Handle" : "2026BE0C",
+		"Area" : 489792,
+		"Real Name" : "BURBERRY"
+	},
+ 	{
+		"Name": "VALEXTRA",
+		"Handle" : "2026A78E",
+		"Area" : 341400,
+		"Real Name" : "VALEXTRA"
+	},
+ 	{
+		"Name": "RED_VALENTINO",
+		"Handle" : "10DEF",
+		"Area" : 75144,
+		"Real Name" : "RED VALENTINO"
+	},
+ 	{
+		"Name": "TENANT_STORAGE",
+		"Handle" : "20201355",
+		"Area" : 70982,
+		"Real Name" : "TENANT STORAGE"
+	},
+ 	{
+		"Name": "TENANT",
+		"Handle" : "171B66",
+		"Area" : 90582,
+		"Real Name" : "TENANT"
+	},
+ 	{
+		"Name": "MAUI_DIVERS_JEWELRY",
+		"Handle" : "1E1E4A8E",
+		"Area" : 221843,
+		"Real Name" : "MAUI DIVERS JEWELRY"
+	},
+ 	{
+		"Name": "AVAILABLE",
+		"Handle" : "11373",
+		"Area" : 610281,
+		"Real Name" : "AVAILABLE"
+	},
+ 	{
+		"Name": "SALVATORE_FERRAGAMO",
+		"Handle" : "11508",
+		"Area" : 552678,
+		"Real Name" : "SALVATORE FERRAGAMO"
+	},
+ 	{
+		"Name": "OMEGA",
+		"Handle" : "FA92",
+		"Area" : 484137,
+		"Real Name" : "OMEGA"
+	},
+ 	{
+		"Name": "BATH_&_BODY_WORKS",
+		"Handle" : "10D79",
+		"Area" : 723273,
+		"Real Name" : "BATH & BODY WORKS"
+	},
+ 	{
+		"Name": "AVAILABLE_Dupe_1",
+		"Handle" : "10C3B",
+		"Area" : 318550,
+		"Real Name" : "AVAILABLE_Dupe_1"
+	},
+ 	{
+		"Name": "MONCLER",
+		"Handle" : "FAA1",
+		"Area" : 436322,
+		"Real Name" : "MONCLER"
+	},
+ 	{
+		"Name": "M.A.C.",
+		"Handle" : "FAA2",
+		"Area" : 239328,
+		"Real Name" : "M.A.C."
+	},
+ 	{
+		"Name": "VALENTINO",
+		"Handle" : "FAA3",
+		"Area" : 455534,
+		"Real Name" : "VALENTINO"
+	},
+ 	{
+		"Name": "BALENCIAGA",
+		"Handle" : "FAA8",
+		"Area" : 349056,
+		"Real Name" : "BALENCIAGA"
+	},
+ 	{
+		"Name": "PRADA",
+		"Handle" : "FAAB",
+		"Area" : 698112,
+		"Real Name" : "PRADA"
+	},
+ 	{
+		"Name": "TRAVISMATHEW",
+		"Handle" : "FAB5",
+		"Area" : 336096,
+		"Real Name" : "TRAVISMATHEW"
+	},
+ 	{
+		"Name": "LEVI'S",
+		"Handle" : "FAB6",
+		"Area" : 464400,
+		"Real Name" : "LEVI'S"
+	},
+ 	{
+		"Name": "BOTTEGA_VENETA",
+		"Handle" : "10C59",
+		"Area" : 497939,
+		"Real Name" : "BOTTEGA VENETA"
+	},
+ 	{
+		"Name": "GOLDEN_GOOSE_DELUXE",
+		"Handle" : "10C6F",
+		"Area" : 345600,
+		"Real Name" : "GOLDEN GOOSE DELUXE"
+	},
+ 	{
+		"Name": "MONTBLANC",
+		"Handle" : "10E39",
+		"Area" : 142713,
+		"Real Name" : "MONTBLANC"
+	},
+ 	{
+		"Name": "BLUE_HAWAII",
+		"Handle" : "11372",
+		"Area" : 191198,
+		"Real Name" : "BLUE HAWAII"
+	},
+ 	{
+		"Name": "JAMS_WORLD",
+		"Handle" : "113F2",
+		"Area" : 126335,
+		"Real Name" : "JAMS WORLD"
+	},
+ 	{
+		"Name": "TIGER_SUGAR",
+		"Handle" : "113F5",
+		"Area" : 133598,
+		"Real Name" : "TIGER SUGAR"
+	},
+ 	{
+		"Name": "MADSCI_LAB",
+		"Handle" : "11403",
+		"Area" : 162398,
+		"Real Name" : "MADSCI LAB"
+	},
+ 	{
+		"Name": "HEALTH_KOREA",
+		"Handle" : "1146E",
+		"Area" : 261921,
+		"Real Name" : "HEALTH KOREA"
+	},
+ 	{
+		"Name": "AROUND_THE_PEARL",
+		"Handle" : "114F4",
+		"Area" : 219911,
+		"Real Name" : "AROUND THE PEARL"
+	},
+ 	{
+		"Name": "TOMMY_BAHAMA",
+		"Handle" : "114F6",
+		"Area" : 434749,
+		"Real Name" : "TOMMY BAHAMA"
+	},
+ 	{
+		"Name": "TORI_RICHARD",
+		"Handle" : "11F1E",
+		"Area" : 217107,
+		"Real Name" : "TORI RICHARD"
+	},
+ 	{
+		"Name": "MICHAEL_KORS",
+		"Handle" : "10DE9",
+		"Area" : 652419,
+		"Real Name" : "MICHAEL KORS"
+	},
+ 	{
+		"Name": "TUMI",
+		"Handle" : "38947",
+		"Area" : 297216,
+		"Real Name" : "TUMI"
+	},
+ 	{
+		"Name": "ON_TWO_LEVELS",
+		"Handle" : "9CF08",
+		"Area" : 740011,
+		"Real Name" : "ON TWO LEVELS"
+	},
+ 	{
+		"Name": "BRUNELLO_CUCINELLI",
+		"Handle" : "AE918",
+		"Area" : 345600,
+		"Real Name" : "BRUNELLO CUCINELLI"
+	},
+ 	{
+		"Name": "TOD'S",
+		"Handle" : "AE919",
+		"Area" : 345600,
+		"Real Name" : "TOD'S"
+	},
+ 	{
+		"Name": "NA_HOKU",
+		"Handle" : "B5F03",
+		"Area" : 176341,
+		"Real Name" : "NA HOKU"
+	},
+ 	{
+		"Name": "VICTORIA'S_SECRET",
+		"Handle" : "38BBB",
+		"Area" : 2987963,
+		"Real Name" : "VICTORIA'S SECRET"
+	},
+ 	{
+		"Name": "REFORMATION",
+		"Handle" : "B8F96",
+		"Area" : 205632,
+		"Real Name" : "REFORMATION"
+	},
+ 	{
+		"Name": "REYN_SPOONER",
+		"Handle" : "C1EC7",
+		"Area" : 229368,
+		"Real Name" : "REYN SPOONER"
+	},
+ 	{
+		"Name": "LESPORTSAC",
+		"Handle" : "C1EC5",
+		"Area" : 326180,
+		"Real Name" : "LESPORTSAC"
+	},
+ 	{
+		"Name": "APPLE",
+		"Handle" : "B8F95",
+		"Area" : 1080230,
+		"Real Name" : "APPLE"
+	},
+ 	{
+		"Name": "PREMIER_BARBERSHOP",
+		"Handle" : "CB229",
+		"Area" : 173668,
+		"Real Name" : "PREMIER BARBERSHOP"
+	},
+ 	{
+		"Name": "PATISSERIE_LA_PALME",
+		"Handle" : "CB22E",
+		"Area" : 163004,
+		"Real Name" : "PATISSERIE LA PALME"
+	},
+ 	{
+		"Name": "MANI_PEDI_SPA",
+		"Handle" : "CB22F",
+		"Area" : 581180,
+		"Real Name" : "MANI PEDI SPA"
+	},
+ 	{
+		"Name": "LOEWE",
+		"Handle" : "CBCBC",
+		"Area" : 336828,
+		"Real Name" : "LOEWE"
+	},
+ 	{
+		"Name": "BALLY",
+		"Handle" : "CBCD5",
+		"Area" : 339170,
+		"Real Name" : "BALLY"
+	},
+ 	{
+		"Name": "CELINE",
+		"Handle" : "DA7A2",
+		"Area" : 576082,
+		"Real Name" : "CELINE"
+	},
+ 	{
+		"Name": "PSYCHO_BUNNY",
+		"Handle" : "E0CDD",
+		"Area" : 282480,
+		"Real Name" : "PSYCHO BUNNY"
+	},
+ 	{
+		"Name": "BEN_BRIDGE_JEWELER",
+		"Handle" : "E81C5",
+		"Area" : 430789,
+		"Real Name" : "BEN BRIDGE JEWELER"
+	},
+ 	{
+		"Name": "BEN_BRIDGE_TIMEWORKS",
+		"Handle" : "13F28B",
+		"Area" : 702211,
+		"Real Name" : "BEN BRIDGE TIMEWORKS"
+	},
+ 	{
+		"Name": "HERMES",
+		"Handle" : "13F299",
+		"Area" : 1343869,
+		"Real Name" : "HERMES"
+	},
+ 	{
+		"Name": "ZIMMERMANN",
+		"Handle" : "13F29A",
+		"Area" : 435733,
+		"Real Name" : "ZIMMERMANN"
+	},
+ 	{
+		"Name": "JOHNNY_WAS",
+		"Handle" : "13F2A2",
+		"Area" : 316845,
+		"Real Name" : "JOHNNY WAS"
+	},
+ 	{
+		"Name": "WAHLBURGERS",
+		"Handle" : "13F2A4",
+		"Area" : 587442,
+		"Real Name" : "WAHLBURGERS"
+	},
+ 	{
+		"Name": "TORY_BURCH",
+		"Handle" : "13F2BA",
+		"Area" : 705648,
+		"Real Name" : "TORY BURCH"
+	},
+ 	{
+		"Name": "RIMOWA",
+		"Handle" : "13F2BB",
+		"Area" : 174510,
+		"Real Name" : "RIMOWA"
+	},
+ 	{
+		"Name": "ZARA",
+		"Handle" : "13F2BC",
+		"Area" : 2636028,
+		"Real Name" : "ZARA"
+	},
+ 	{
+		"Name": "TED_BAKER_LONDON",
+		"Handle" : "13FC57",
+		"Area" : 407027,
+		"Real Name" : "TED BAKER LONDON"
+	},
+ 	{
+		"Name": "LONGS_DRUGS",
+		"Handle" : "13FC58",
+		"Area" : 2192253,
+		"Real Name" : "LONGS DRUGS"
+	},
+ 	{
+		"Name": "TAG_HEUER",
+		"Handle" : "13FC59",
+		"Area" : 95629,
+		"Real Name" : "TAG HEUER"
+	},
+ 	{
+		"Name": "UNIQLO",
+		"Handle" : "13FD13",
+		"Area" : 865950,
+		"Real Name" : "UNIQLO"
+	},
+ 	{
+		"Name": "COACH",
+		"Handle" : "13FEE0",
+		"Area" : 647519,
+		"Real Name" : "COACH"
+	},
+ 	{
+		"Name": "RIMOWA_STORAGE",
+		"Handle" : "13FEEF",
+		"Area" : 97092,
+		"Real Name" : "RIMOWA STORAGE"
+	},
+ 	{
+		"Name": "PANDORA",
+		"Handle" : "17216B",
+		"Area" : 151934,
+		"Real Name" : "PANDORA"
+	},
+ 	{
+		"Name": "THE_ESCAPE_GAME",
+		"Handle" : "17B478",
+		"Area" : 928404,
+		"Real Name" : "THE ESCAPE GAME"
+	},
+ 	{
+		"Name": "MIU_MIU",
+		"Handle" : "17EA93",
+		"Area" : 698112,
+		"Real Name" : "MIU MIU"
+	},
+ 	{
+		"Name": "FENDI",
+		"Handle" : "17F2DE",
+		"Area" : 346905,
+		"Real Name" : "FENDI"
+	},
+ 	{
+		"Name": "BRUG",
+		"Handle" : "1D37E1",
+		"Area" : 147258,
+		"Real Name" : "BRUG"
+	},
+ 	{
+		"Name": "HITEA_CAFE",
+		"Handle" : "1D3B49",
+		"Area" : 87240,
+		"Real Name" : "HITEA CAFE"
+	},
+ 	{
+		"Name": "TEPPANYAKI_FARMER",
+		"Handle" : "1D3B4B",
+		"Area" : 118341,
+		"Real Name" : "TEPPANYAKI FARMER"
+	},
+ 	{
+		"Name": "AHI_&_VEGETABLE",
+		"Handle" : "1D3B4C",
+		"Area" : 124931,
+		"Real Name" : "AHI & VEGETABLE"
+	},
+ 	{
+		"Name": "KAMUKURA",
+		"Handle" : "1D3B4D",
+		"Area" : 96964,
+		"Real Name" : "KAMUKURA"
+	},
+ 	{
+		"Name": "AGAVE_AND_VINE",
+		"Handle" : "1D3BCD",
+		"Area" : 101089,
+		"Real Name" : "AGAVE AND VINE"
+	},
+ 	{
+		"Name": "PINK_BOX",
+		"Handle" : "1D1D6418",
+		"Area" : 373607,
+		"Real Name" : "PINK BOX"
+	},
+ 	{
+		"Name": "THE_FACE_SHOP",
+		"Handle" : "1D1D6419",
+		"Area" : 174220,
+		"Real Name" : "THE FACE SHOP"
+	},
+ 	{
+		"Name": "PRADA_Dupe_2",
+		"Handle" : "1D1D74F4",
+		"Area" : 544174,
+		"Real Name" : "PRADA_Dupe_2"
+	},
+ 	{
+		"Name": "SEOUL_MIX",
+		"Handle" : "1D1DBCD5",
+		"Area" : 110254,
+		"Real Name" : "SEOUL MIX"
+	},
+ 	{
+		"Name": "HERVE_CHAPELIER",
+		"Handle" : "1D1DD4AD",
+		"Area" : 106269,
+		"Real Name" : "HERVE CHAPELIER"
+	},
+ 	{
+		"Name": "KAHALA",
+		"Handle" : "1D1DD4AE",
+		"Area" : 106762,
+		"Real Name" : "KAHALA"
+	},
+ 	{
+		"Name": "MORTON'S_OF_CHICAGO",
+		"Handle" : "1D1DE43E",
+		"Area" : 1227310,
+		"Real Name" : "MORTON'S OF CHICAGO"
+	},
+ 	{
+		"Name": "NIU_HEALTH",
+		"Handle" : "1E1E064E",
+		"Area" : 245817,
+		"Real Name" : "NIU HEALTH"
+	},
+ 	{
+		"Name": "YUNG_YEE_KEE_DIM_SUM",
+		"Handle" : "1E1E4A8F",
+		"Area" : 124129,
+		"Real Name" : "YUNG YEE KEE DIM SUM"
+	},
+ 	{
+		"Name": "SHABUYA",
+		"Handle" : "1E1EDA4F",
+		"Area" : 809525,
+		"Real Name" : "SHABUYA"
+	},
+ 	{
+		"Name": "AESOP",
+		"Handle" : "1E1EE1DE",
+		"Area" : 79810,
+		"Real Name" : "AESOP"
+	},
+ 	{
+		"Name": "DAVE_FOSTER_BUILDERS",
+		"Handle" : "1F1FD26B",
+		"Area" : 109800,
+		"Real Name" : "DAVE FOSTER BUILDERS"
+	},
+ 	{
+		"Name": "ROKKAKU_HAMAKATSU",
+		"Handle" : "20200D74",
+		"Area" : 281370,
+		"Real Name" : "ROKKAKU HAMAKATSU"
+	},
+ 	{
+		"Name": "TANAKA_RAMEN_&",
+		"Handle" : "20200D75",
+		"Area" : 282623,
+		"Real Name" : "TANAKA RAMEN &"
+	},
+ 	{
+		"Name": "TIFFANY_&_CO.",
+		"Handle" : "20201365",
+		"Area" : 1028266,
+		"Real Name" : "TIFFANY & CO."
+	},
+ 	{
+		"Name": "HARRY_WINSTON",
+		"Handle" : "2020137F",
+		"Area" : 353493,
+		"Real Name" : "HARRY WINSTON"
+	},
+ 	{
+		"Name": "GENKI_SUSHI",
+		"Handle" : "2020138C",
+		"Area" : 229890,
+		"Real Name" : "GENKI SUSHI"
+	},
+ 	{
+		"Name": "GUCCI",
+		"Handle" : "20202123",
+		"Area" : 1135200,
+		"Real Name" : "GUCCI"
+	},
+ 	{
+		"Name": "RAY-BAN",
+		"Handle" : "20202400",
+		"Area" : 182222,
+		"Real Name" : "RAY-BAN"
+	},
+ 	{
+		"Name": "MARTIN_&_MACARTHUR",
+		"Handle" : "20202401",
+		"Area" : 272199,
+		"Real Name" : "MARTIN & MACARTHUR"
+	},
+ 	{
+		"Name": "ZWILLING_J._A.",
+		"Handle" : "20202402",
+		"Area" : 154673,
+		"Real Name" : "ZWILLING J. A."
+	},
+ 	{
+		"Name": "AVAILABLE_Dupe_3",
+		"Handle" : "20202403",
+		"Area" : 181277,
+		"Real Name" : "AVAILABLE_Dupe_3"
+	},
+ 	{
+		"Name": "MIKA",
+		"Handle" : "20202404",
+		"Area" : 188247,
+		"Real Name" : "MIKA"
+	},
+ 	{
+		"Name": "ALO_YOGA",
+		"Handle" : "10D77",
+		"Area" : 810522,
+		"Real Name" : "ALO YOGA"
+	},
+ 	{
+		"Name": "BULGARI",
+		"Handle" : "20202735",
+		"Area" : 330043,
+		"Real Name" : "BULGARI"
+	},
+ 	{
+		"Name": "MAISON_MARGIELA",
+		"Handle" : "2020458D",
+		"Area" : 259398,
+		"Real Name" : "MAISON MARGIELA"
+	},
+ 	{
+		"Name": "MADEWELL",
+		"Handle" : "202063EF",
+		"Area" : 337671,
+		"Real Name" : "MADEWELL"
+	},
+ 	{
+		"Name": "LULULEMON_ATHLETICA",
+		"Handle" : "20207BD0",
+		"Area" : 1019110,
+		"Real Name" : "LULULEMON ATHLETICA"
+	},
+ 	{
+		"Name": "DOLCE&GABBANA",
+		"Handle" : "20208058",
+		"Area" : 1284692,
+		"Real Name" : "DOLCE&GABBANA"
+	},
+ 	{
+		"Name": "SEPHORA",
+		"Handle" : "20208087",
+		"Area" : 944112,
+		"Real Name" : "SEPHORA"
+	},
+ 	{
+		"Name": "GIORGIO_ARMANI",
+		"Handle" : "2020AB1C",
+		"Area" : 650411,
+		"Real Name" : "GIORGIO ARMANI"
+	},
+ 	{
+		"Name": "THE_ALLEY",
+		"Handle" : "13FA98",
+		"Area" : 158442,
+		"Real Name" : "THE ALLEY"
+	},
+ 	{
+		"Name": "JAMBA_JUICE",
+		"Handle" : "13FAC5",
+		"Area" : 163054,
+		"Real Name" : "JAMBA JUICE"
+	},
+ 	{
+		"Name": "SXY_SZECHUAN",
+		"Handle" : "2020AF2D",
+		"Area" : 312291,
+		"Real Name" : "SXY SZECHUAN"
+	},
+ 	{
+		"Name": "ARITZIA",
+		"Handle" : "2020BED0",
+		"Area" : 785993,
+		"Real Name" : "ARITZIA"
+	},
+ 	{
+		"Name": "L'OCCITANE",
+		"Handle" : "2020D8AE",
+		"Area" : 176062,
+		"Real Name" : "L'OCCITANE"
+	},
+ 	{
+		"Name": "APM_MONACO",
+		"Handle" : "2020FAF7",
+		"Area" : 164160,
+		"Real Name" : "APM MONACO"
+	},
+ 	{
+		"Name": "HUBLOT",
+		"Handle" : "20210C9D",
+		"Area" : 172800,
+		"Real Name" : "HUBLOT"
+	},
+ 	{
+		"Name": "BLOOMINGDALE'S",
+		"Handle" : "202160BD",
+		"Area" : 3045880,
+		"Real Name" : "BLOOMINGDALE'S"
+	},
+ 	{
+		"Name": "NORDSTROM",
+		"Handle" : "202160BF",
+		"Area" : 1266288,
+		"Real Name" : "NORDSTROM"
+	},
+ 	{
+		"Name": "NEIMAN",
+		"Handle" : "202160C6",
+		"Area" : 2618415,
+		"Real Name" : "NEIMAN"
+	},
+ 	{
+		"Name": "SHARETEA",
+		"Handle" : "202160C7",
+		"Area" : 2310012,
+		"Real Name" : "SHARETEA"
+	},
+ 	{
+		"Name": "MACY'S",
+		"Handle" : "202160C7",
+		"Area" : 2310012,
+		"Real Name" : "MACY'S"
+	},
+ 	{
+		"Name": "BOTTEGA_VENETA_Dupe_4",
+		"Handle" : "2021909F",
+		"Area" : 324324,
+		"Real Name" : "BOTTEGA VENETA_Dupe_4"
+	},
+ 	{
+		"Name": "DIOR",
+		"Handle" : "2021B0AD",
+		"Area" : 849025,
+		"Real Name" : "DIOR"
+	},
+ 	{
+		"Name": "KATE_SPADE_NEW_YORK",
+		"Handle" : "13EEB5",
+		"Area" : 647938,
+		"Real Name" : "KATE SPADE NEW YORK"
+	},
+ 	{
+		"Name": "CARTIER",
+		"Handle" : "2021B297",
+		"Area" : 551449,
+		"Real Name" : "CARTIER"
+	},
+ 	{
+		"Name": "LONGINES",
+		"Handle" : "2021B2B3",
+		"Area" : 343325,
+		"Real Name" : "LONGINES"
+	},
+ 	{
+		"Name": "CHANEL",
+		"Handle" : "2021E7F1",
+		"Area" : 972010,
+		"Real Name" : "CHANEL"
+	},
+ 	{
+		"Name": "CARTIER_Dupe_5",
+		"Handle" : "20222869",
+		"Area" : 74344,
+		"Real Name" : "CARTIER_Dupe_5"
+	},
+ 	{
+		"Name": "D'OR",
+		"Handle" : "202228A3",
+		"Area" : 110982,
+		"Real Name" : "D'OR"
+	},
+ 	{
+		"Name": "SAINT_LAURENT",
+		"Handle" : "20225280",
+		"Area" : 789360,
+		"Real Name" : "SAINT LAURENT"
+	},
+ 	{
+		"Name": "ALEXANDER_MCQUEEN",
+		"Handle" : "2023C1FC",
+		"Area" : 485514,
+		"Real Name" : "ALEXANDER MCQUEEN"
+	},
+ 	{
+		"Name": "OAKLEY",
+		"Handle" : "20248B0F",
+		"Area" : 340152,
+		"Real Name" : "OAKLEY"
+	},
+ 	{
+		"Name": "AVAILABLE_Dupe_6",
+		"Handle" : "20252E2A",
+		"Area" : 698050,
+		"Real Name" : "AVAILABLE_Dupe_6"
+	},
+ 	{
+		"Name": "COLE_HAAN",
+		"Handle" : "202669A2",
+		"Area" : 478707,
+		"Real Name" : "COLE HAAN"
+	},
+ 	{
+		"Name": "AVAILABLE_Dupe_7",
+		"Handle" : "202669A3",
+		"Area" : 313127,
+		"Real Name" : "AVAILABLE_Dupe_7"
+	},
+ 	{
+		"Name": "TESLA",
+		"Handle" : "202801FE",
+		"Area" : 508953,
+		"Real Name" : "TESLA"
+	},
+ 	{
+		"Name": "MARC_JACOBS",
+		"Handle" : "20280201",
+		"Area" : 189159,
+		"Real Name" : "MARC JACOBS"
+	}
+     ],
+"Unlinked": 
+	[
+		"STORAGE",
+		"1,180 SF",
+		"LOUIS VUITTON",
+		"CHANEL/CHANEL SHOE",
+		"OVACO",
+		"LEXBREEZY HAWAI'I",
+		"KPOP FRIENDS",
+		"MANA SANDWICHES",
+		"MAHALOHA BURGER",
+		"MUSUBI CAFE IYASUME",
+		"ONAONA",
+		"ILLY CAFFE",
+		"BOUTIQUE",
+		"/ROLEX",
+		"HENCKELS",
+		"/STEAKHOUSE",
+		"BRAND",
+		"IZAKAYA",
+		"LIFESTYLE",
+		"PARIS",
+		"MARCUS",
+		"TARGET",
+		"STARBUCKS"
+	]
+}
