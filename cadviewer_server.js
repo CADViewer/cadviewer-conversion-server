@@ -1,4 +1,4 @@
-var version = "CADViewer Server v9.1.9";
+var version = "CADViewer Server v9.2.1";
 const express = require('express');
 const httprequest = require('request');
 const app = express();
@@ -30,7 +30,7 @@ chrome://flags/#allow-insecure-localhost
 // 6.5.09  - DLL load
 //var ffi = require('ffi');
 
-var callapiconversion = require("./routes/callapiconversion_cv9.1.3.js");
+var callapiconversion = require("./routes/callapiconversion_cv9.2.1.js");
 var makesinglepagepdf = require("./routes/makesinglepagepdf_cv8.43.1.js");
 var copyfile = require("./routes/copyfile_cv7.1.17.js");
 var savefile = require("./routes/savefile_cv9.1.8.js");
@@ -98,7 +98,11 @@ if (config.autodetect_location){
         config.ax2024_executable = config.ax2024_executable_windows;
         config.linklist2023_executable = config.linklist2023_executable_windows;
         config.dwgmerge2023_executable = config.dwgmerge2023_executable_windows;
- 
+
+        // 9.2.1
+        config.fontLocation = config.ServerLocation + config.converterLocation + config.fontLocation;
+        
+
         config.converterLocation = config.ServerLocation + config.converterLocation + config.converterpathWin;
         config.linklistLocation = config.ServerLocation + config.linklistLocation + config.converterpathWin;
         config.dwgmergeLocation = config.ServerLocation + config.dwgmergeLocation + config.converterpathWin;
@@ -110,13 +114,16 @@ if (config.autodetect_location){
         config.linklist2023_executable = config.linklist2023_executable_linux;
         config.dwgmerge2023_executable = config.dwgmerge2023_executable_linux;
 
+        // 9.2.1
+        config.fontLocation = config.ServerLocation + config.converterLocation + config.fontLocation;
+
+
         config.converterLocation = config.ServerLocation + config.converterLocation + config.converterpathLin;
         config.linklistLocation = config.ServerLocation + config.linklistLocation + config.converterpathWin;
         config.dwgmergeLocation = config.ServerLocation + config.dwgmergeLocation + config.converterpathWin;
 
         config.licenseLocation = config.ServerLocation + config.licenseLocation + config.converterpathLin;
     }
-    config.fontLocation = config.converterLocation + config.fontLocation;
     config.fileLocation = config.ServerLocation + config.fileLocation;
     config.fileLocationUrl = config.ServerUrl + config.fileLocation;
     config.xpathLocation = config.ServerLocation + config.xpathLocation;
