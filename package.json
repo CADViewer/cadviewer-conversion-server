@@ -1,10 +1,11 @@
 {
   "name": "cadviewer-conversion-server",
-  "version": "9.2.1",
+  "version": "9.4.1",
   "description": "CADViewer NodeJS Server Encapsulation of CAD Converters",
   "main": "cadviewer_server.js",
   "scripts": {
     "start": "node cadviewer_server.js",
+    "run": "node cadviewer_server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "charnung",
