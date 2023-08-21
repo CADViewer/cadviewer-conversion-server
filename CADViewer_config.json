@@ -1,8 +1,8 @@
 {
     "ServerPort" : 3000,
-    "ServerUrl" : "http://localhost:3000",
+    "ServerUrl" : "",
     "https" : false,
-    "ServerFrontEndUrl" : "https://localhost",
+    "ServerFrontEndUrl" : "",
     "ServerFrontEndUrlAsAllowedOriginOnly" : false,
     "cvjs_svgz_compress" : true,
     "cached_conversion" : false,
@@ -47,6 +47,6 @@
     "fileLoad_UserName" : "myusername",
     "fileLoad_Password" : "mypassword",
     "contentLocationCheck" : true,
-    "version" : "v9.4.1"
+    "version" : "v9.5.2"
 }	
 	

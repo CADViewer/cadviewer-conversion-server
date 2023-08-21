@@ -1,4 +1,4 @@
-var version = "CADViewer Server v9.4.1";
+var version = "CADViewer Server v9.5.3";
 const express = require('express');
 const httprequest = require('request');
 const app = express();
@@ -30,7 +30,7 @@ chrome://flags/#allow-insecure-localhost
 // 6.5.09  - DLL load
 //var ffi = require('ffi');
 
-var callapiconversion = require("./routes/callapiconversion_cv9.2.1.js");
+var callapiconversion = require("./routes/callapiconversion_cv9.5.2.js");
 var makesinglepagepdf = require("./routes/makesinglepagepdf_cv8.43.1.js");
 var copyfile = require("./routes/copyfile_cv7.1.17.js");
 var savefile = require("./routes/savefile_cv9.1.8.js");
@@ -301,7 +301,7 @@ app.get('/favicon.ico', (req, res) => res.status(204));
 
 var host = config.ServerUrl.substring(0, config.ServerUrl.lastIndexOf(":"));
 host = host.substring(host.lastIndexOf("/")+1);
-console.log(host);
+console.log("Host address:"+host);
 
 
 // ECHO SERVER LOCATION: set port and host from the config file. 
@@ -310,13 +310,19 @@ console.log(host);
 
 if (config.https == false){   // http   - see config
     
-    if( host != ""){
+    if( host != ""){   // host is set
         if (port == "") {
 
             var server = app.listen(8080, host, function () {
                 var thishost = server.address().address;
                 var thisport = server.address().port;
                 console.log(' 1A: CADViewer Server listening at http://%s:%s', thishost, thisport);
+
+                console.log('config.callbackMethod:'+ config.callbackMethod);    
+
+                config.ServerUrl = "http://"+thishost+":"+thisport;
+
+
           });
 
             //app.listen(host, () => console.log('1: CADViewer Server '+config.ServerUrl+' is listening on host: '+host+' and port:'+port+'!'));
@@ -325,8 +331,19 @@ if (config.https == false){   // http   - see config
             var server = app.listen(port, host, function () {
                 var thishost = server.address().address;
                 var thisport = server.address().port;
-                console.log(' 1A: CADViewer Server listening at http://%s:%s', thishost, thisport);
+                console.log(' 1B: CADViewer Server listening at http://%s:%s', thishost, thisport);
+            
+            
+                // 9.5.1 - set all server URL paths with new port
+
+                // in this case we assume all ports and host address are preset
+                console.log('config.callbackMethod:'+ config.callbackMethod);    
+                config.ServerUrl = "http://"+thishost+":"+thisport;
+            
+            
             });
+
+
 
 
 //            app.listen(port, host, () => console.log('2: CADViewer Server '+config.ServerUrl+' is listening on host: '+host+' and port:'+port+'!'));
@@ -337,7 +354,11 @@ if (config.https == false){   // http   - see config
                 var thishost = server.address().address;
                 var thisport = server.address().port;
           
-                console.log(' 1B: CADViewer Server listening at http://%s:%s', thishost, thisport);
+                console.log(' 2A: CADViewer Server listening at http://%s:%s', thishost, thisport);
+                config.ServerUrl = "http://"+thishost+":"+thisport;
+
+
+
           });
             //app.listen("8080", () => console.log('1B: CADViewer Server '+config.ServerUrl+' is listening on host: '+host+' and port:'+port+'!'));
         }
@@ -347,9 +368,12 @@ if (config.https == false){   // http   - see config
                 var thisport = server.address().port;
           
                 console.log(' 2B: CADViewer Server listening at http://%s:%s', thishost, thisport);
-          });
+                config.ServerUrl = "http://"+thishost+":"+thisport;
+
+            });
             //app.listen(port, () => console.log('2B: CADViewer Server '+config.ServerUrl+' is listening on host: '+host+' and port:'+port+'! host='+app.address().port+ " "+app.address().address));
-       
+
+
             //console.log('2C: Hostname:'+ os.hostname());    
     }
 
@@ -361,20 +385,66 @@ else{   // https  - see config
         };
 
         https.createServer(options, app).listen(443);
-        if (port == "")
+
+
+
+        if( host != ""){   // host is set
+
+            if (port == "")
             var server = https.createServer(options, app).listen(host, function(){
                 var thishost = server.address().address;
                 var thisport = server.address().port;
                 console.log(' 3A: CADViewer Server listening at https://%s:%s', thishost, thisport);
 
+                config.ServerUrl = "https://"+thishost+":"+thisport;
+
+
             }); // => console.log('3: CADViewer Server '+config.ServerUrl+' is listening on host: '+host+' and port:'+port+'!'));
-        else 
-            //var server =  https.createServer(options, app).listen(port, host, () => console.log('4: CADViewer Server '+config.ServerUrl+' is listening on host: '+host+' and port:'+port+'!'));
-            var server = https.createServer(options, app).listen(port, host, function(){
+            else 
+                //var server =  https.createServer(options, app).listen(port, host, () => console.log('4: CADViewer Server '+config.ServerUrl+' is listening on host: '+host+' and port:'+port+'!'));
+                var server = https.createServer(options, app).listen(port, host, function(){
                 var thishost = server.address().address;
                 var thisport = server.address().port;
                 console.log(' 3B: CADViewer Server listening at https://%s:%s', thishost, thisport);
 
+                config.ServerUrl = "https://"+thishost+":"+thisport;
+
+
             }); // => console.log('3: CADViewer Server '+config.ServerUrl+' is listening on host: '+host+' and port:'+port+'!'));
+
+
+
+        }
+        else {   // no host 
+
+            if (port == "")
+                var server = https.createServer(options, app).listen(8080, function(){
+                var thishost = server.address().address;
+                var thisport = server.address().port;
+                console.log(' 4A: CADViewer Server listening at https://%s:%s', thishost, thisport);
+                config.ServerUrl = "https://"+thishost+":"+thisport;
+
+
+            }); // => console.log('3: CADViewer Server '+config.ServerUrl+' is listening on host: '+host+' and port:'+port+'!'));
+            else 
+            //var server =  https.createServer(options, app).listen(port, host, () => console.log('4: CADViewer Server '+config.ServerUrl+' is listening on host: '+host+' and port:'+port+'!'));
+                var server = https.createServer(options, app).listen(port, function(){
+                var thishost = server.address().address;
+                var thisport = server.address().port;
+                console.log(' 4B: CADViewer Server listening at https://%s:%s', thishost, thisport);
+
+                config.ServerUrl = "https://"+thishost+":"+thisport;
+
+
+
+
+            }); // => console.log('3: CADViewer Server '+config.ServerUrl+' is listening on host: '+host+' and port:'+port+'!'));
+
+
+
+        }
+
+
+
 }
 

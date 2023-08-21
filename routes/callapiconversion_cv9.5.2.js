@@ -8,9 +8,11 @@ var urlExists = require('url-exists');
 
 var fs = require('fs');   // 8.19.1
 
+// 9.5.2
+var response_serverUrl = "";
 
 
-var customendpointextension = require('./cvjs_customConversionEndpointExtension_cv9.2.1.js');
+var customendpointextension = require('./cvjs_customConversionEndpointExtension_cv9.5.2.js');
 
 var customConversionEndpointExtension = false;
 
@@ -146,11 +148,14 @@ var express = require('express'),
 
         // 8.33.1 
         var fullcallback = "";
+
+        // 9.5.2
+
         if (config.callbackMethod_gatewayUrl_flag){
             fullcallback =  config.callbackMethod_gatewayUrl +"/"+config.callbackMethod
         }
         else 
-            fullcallback = config.ServerUrl+"/"+config.callbackMethod
+            fullcallback = response_serverUrl+"/"+config.callbackMethod;
 
         SVG_callback(res, "", "0", outputFormat, contentLocation, fullcallback, tempFileName);
 
@@ -298,7 +303,7 @@ var express = require('express'),
             // 8.77.4
             var contentLocationCheck = true;
             if (config.contentLocationCheck != undefined) contentLocationCheck = config.contentLocationCheck;
-            if (config.cvjs_debug) console.log("8.77.4:  contentLocationCheck="+contentLocationCheck);
+            if (config.cvjs_debug) console.log(config.version+":  contentLocationCheck="+contentLocationCheck);
 
 
             // 6.8.65 we only substitute for the back-end, if front-end then user controlled
@@ -423,7 +428,7 @@ var express = require('express'),
                                                     fullcallback =  config.callbackMethod_gatewayUrl +"/"+config.callbackMethod
                                                 }
                                                 else 
-                                                    fullcallback = config.ServerUrl+"/"+config.callbackMethod
+                                                    fullcallback = response_serverUrl+"/"+config.callbackMethod;
 
 
                                                 LinkList2023_callback(res, outputFormat, contentLocation, fullcallback, tempFileName, splityflag);	                                        
@@ -437,7 +442,7 @@ var express = require('express'),
                                             fullcallback =  config.callbackMethod_gatewayUrl +"/"+config.callbackMethod
                                         }
                                         else 
-                                            fullcallback = config.ServerUrl+"/"+config.callbackMethod
+                                            fullcallback = response_serverUrl+"/"+config.callbackMethod;
                                                                                 
                                         LinkList2023_callback(res, outputFormat, contentLocation, fullcallback, tempFileName, splityflag);	                                        
                                         
@@ -528,7 +533,7 @@ var express = require('express'),
                                                         fullcallback =  config.callbackMethod_gatewayUrl +"/"+config.callbackMethod
                                                     }
                                                     else 
-                                                        fullcallback = config.ServerUrl+"/"+config.callbackMethod
+                                                        fullcallback = response_serverUrl+"/"+config.callbackMethod;
     
     
                                                     LinkList2023_callback(res, outputFormat, contentLocation, fullcallback, tempFileName, splityflag);	                                        
@@ -542,7 +547,7 @@ var express = require('express'),
                                                 fullcallback =  config.callbackMethod_gatewayUrl +"/"+config.callbackMethod
                                             }
                                             else 
-                                                fullcallback = config.ServerUrl+"/"+config.callbackMethod
+                                                fullcallback = response_serverUrl+"/"+config.callbackMethod;
                                                                                     
                                             LinkList2023_callback(res, outputFormat, contentLocation, fullcallback, tempFileName, splityflag);	                                        
                                             
@@ -653,7 +658,7 @@ var express = require('express'),
                                     fullcallback =  config.callbackMethod_gatewayUrl +"/"+config.callbackMethod
                                 }
                                 else 
-                                    fullcallback = config.ServerUrl+"/"+config.callbackMethod
+                                    fullcallback = response_serverUrl+"/"+config.callbackMethod;
 
 
                                 LinkList2023_callback(res, outputFormat, contentLocation, fullcallback, tempFileName, splityflag);	                                        
@@ -668,7 +673,7 @@ var express = require('express'),
                                 fullcallback =  config.callbackMethod_gatewayUrl +"/"+config.callbackMethod
                             }
                             else 
-                                fullcallback = config.ServerUrl+"/"+config.callbackMethod
+                                fullcallback = response_serverUrl+"/"+config.callbackMethod;
 
 
                         LinkList2023_callback(res, outputFormat, contentLocation, fullcallback, tempFileName, splityflag);	                                        
@@ -739,7 +744,7 @@ var express = require('express'),
                     fullcallback =  config.callbackMethod_gatewayUrl +"/"+config.callbackMethod
                 }
                 else 
-                    fullcallback = config.ServerUrl+"/"+config.callbackMethod
+                    fullcallback = response_serverUrl+"/"+config.callbackMethod;
 
 
 
@@ -755,7 +760,7 @@ var express = require('express'),
                     fullcallback =  config.callbackMethod_gatewayUrl +"/"+config.callbackMethod
                 }
                 else 
-                    fullcallback = config.ServerUrl+"/"+config.callbackMethod
+                    fullcallback = response_serverUrl+"/"+config.callbackMethod;
 
 
                 CADViewer_callback(res, stderr, err, outputFormat, contentLocation, fullcallback, tempFileName);	  
@@ -810,7 +815,7 @@ var express = require('express'),
                         fullcallback =  config.callbackMethod_gatewayUrl +"/"+config.callbackMethod
                     }
                     else 
-                        fullcallback = config.ServerUrl+"/"+config.callbackMethod
+                        fullcallback = response_serverUrl+"/"+config.callbackMethod;
 
                     var CVJSresponse = "{\"completedAction\":\"svg_creation\",\"errorCode\":\"E"+0+"\",\"converter\":\"AutoXchange AX2020\",\"version\":\"V1.00\",\"userLabel\":\"fromCADViewerJS\",\"tempFile\":\""+tempFileName+"."+outputFormat+"\",\"contentLocation\":\""+contentLocationOrg+"\",\"contentResponse\":\"stream\",\"contentStreamData\":\""+fullcallback+"?remainOnServer=1&fileTag="+tempFileName+"&Type=svg\"}";
                     if (config.cvjs_debug) console.log("response svg: "+CVJSresponse);
@@ -1003,7 +1008,7 @@ var express = require('express'),
                             fullcallback =  config.callbackMethod_gatewayUrl +"/"+config.callbackMethod
                         }
                         else 
-                            fullcallback = config.ServerUrl+"/"+config.callbackMethod
+                            fullcallback = response_serverUrl+"/"+config.callbackMethod;
 
 
                         console.log('ERROR httprequest('+contentLocation+")");
@@ -1025,7 +1030,7 @@ var express = require('express'),
                                 fullcallback =  config.callbackMethod_gatewayUrl +"/"+config.callbackMethod
                             }
                             else 
-                                fullcallback = config.ServerUrl+"/"+config.callbackMethod
+                                fullcallback = response_serverUrl+"/"+config.callbackMethod;
 
                             var CVJSresponse = "{\"completedAction\":\"svg_creation\",\"errorCode\":\"E"+0+"\",\"converter\":\"AutoXchange AX2020\",\"version\":\"V1.00\",\"userLabel\":\"fromCADViewerJS\",\"tempFile\":\""+tempFileName+"."+outputFormat+"\",\"contentLocation\":\""+contentLocationOrg+"\",\"contentResponse\":\"stream\",\"contentStreamData\":\""+fullcallback+"?remainOnServer=1&fileTag="+tempFileName+"&Type=svg\"}";
             
@@ -1068,7 +1073,7 @@ var express = require('express'),
                                     fullcallback =  config.callbackMethod_gatewayUrl +"/"+config.callbackMethod
                                 }
                                 else 
-                                    fullcallback = config.ServerUrl+"/"+config.callbackMethod
+                                    fullcallback = response_serverUrl+"/"+config.callbackMethod;
         
         
                                 console.log('ERROR httprequest('+contentLocation+")");
@@ -1091,7 +1096,7 @@ var express = require('express'),
                                         fullcallback =  config.callbackMethod_gatewayUrl +"/"+config.callbackMethod
                                     }
                                     else 
-                                        fullcallback = config.ServerUrl+"/"+config.callbackMethod
+                                        fullcallback = response_serverUrl+"/"+config.callbackMethod;
         
                                     var CVJSresponse = "{\"completedAction\":\"svg_creation\",\"errorCode\":\"E"+0+"\",\"converter\":\"AutoXchange AX2020\",\"version\":\"V1.00\",\"userLabel\":\"fromCADViewerJS\",\"tempFile\":\""+tempFileName+"."+outputFormat+"\",\"contentLocation\":\""+contentLocationOrg+"\",\"contentResponse\":\"stream\",\"contentStreamData\":\""+fullcallback+"?remainOnServer=1&fileTag="+tempFileName+"&Type=svg\"}";
                     
@@ -1118,7 +1123,7 @@ var express = require('express'),
                                 fullcallback =  config.callbackMethod_gatewayUrl +"/"+config.callbackMethod
                             }
                             else 
-                                fullcallback = config.ServerUrl+"/"+config.callbackMethod
+                                fullcallback = response_serverUrl+"/"+config.callbackMethod;
         
                             var CVJSresponse = "{\"completedAction\":\"svg_creation\",\"errorCode\":\"E"+0+"\",\"converter\":\"AutoXchange AX2020\",\"version\":\"V1.00\",\"userLabel\":\"fromCADViewerJS\",\"tempFile\":\""+tempFileName+"."+outputFormat+"\",\"contentLocation\":\""+contentLocationOrg+"\",\"contentResponse\":\"stream\",\"contentStreamData\":\""+fullcallback+"?remainOnServer=1&fileTag="+tempFileName+"&Type=svg\"}";
                             res.send(CVJSresponse);
@@ -1140,7 +1145,7 @@ var express = require('express'),
                             fullcallback =  config.callbackMethod_gatewayUrl +"/"+config.callbackMethod
                         }
                         else 
-                            fullcallback = config.ServerUrl+"/"+config.callbackMethod
+                            fullcallback = response_serverUrl+"/"+config.callbackMethod;
     
                         var CVJSresponse = "{\"completedAction\":\"svg_creation\",\"errorCode\":\"E"+0+"\",\"converter\":\"AutoXchange AX2020\",\"version\":\"V1.00\",\"userLabel\":\"fromCADViewerJS\",\"tempFile\":\""+tempFileName+"."+outputFormat+"\",\"contentLocation\":\""+contentLocationOrg+"\",\"contentResponse\":\"stream\",\"contentStreamData\":\""+fullcallback+"?remainOnServer=1&fileTag="+tempFileName+"&Type=svg\"}";
                         res.send(CVJSresponse);
@@ -1174,7 +1179,7 @@ var express = require('express'),
                 fullcallback =  config.callbackMethod_gatewayUrl +"/"+config.callbackMethod
             }
             else 
-                fullcallback = config.ServerUrl+"/"+config.callbackMethod
+                fullcallback = response_serverUrl+"/"+config.callbackMethod;
 
             var CVJSresponse = "{\"completedAction\":\"svg_creation\",\"errorCode\":\"E"+0+"\",\"converter\":\"AutoXchange AX2020\",\"version\":\"V1.00\",\"userLabel\":\"fromCADViewerJS\",\"tempFile\":\""+tempFileName+"."+outputFormat+"\",\"contentLocation\":\""+contentLocationOrg+"\",\"contentResponse\":\"stream\",\"contentStreamData\":\""+fullcallback+"?remainOnServer=1&fileTag="+tempFileName+"&Type=svg\"}";
             res.send(CVJSresponse);
@@ -1346,7 +1351,7 @@ var express = require('express'),
                 fullcallback =  config.callbackMethod_gatewayUrl +"/"+config.callbackMethod
             }
             else 
-                fullcallback = config.ServerUrl+"/"+config.callbackMethod
+                fullcallback = response_serverUrl+"/"+config.callbackMethod;
 
             SVG_callback(res, "", "", outputFormat, contentLocation, fullcallback, cvjs_returnfile_from_cache);	  
 
@@ -1630,14 +1635,34 @@ router.get('/callapiconversion', (req, res) => {
 
 
 
-
-
-
-
 router.post('/callapiconversion', (req, res) => {
 
 	try{
 	
+
+        // 9.5.2
+        var reqhost =  req.get('host'); 
+        if (config.ServerUrl.indexOf("::")>-1){ // we replace with request url, as we have multiple IP that we are listening on
+
+            console.log(config.version+" callingHost:"+reqhost+ "  config:"+config.ServerUrl);
+
+            if (config.https){
+                // 9.5.2 - set all server URL paths with new host and port
+                response_serverUrl = "https://"+reqhost;
+            }
+            else{
+                response_serverUrl = "http://"+reqhost;
+
+            }
+        }
+        else{
+            // we use config.ServerUrl as coded!
+            response_serverUrl = config.ServerUrl;
+        }
+
+        
+
+
         // 7.1.16
         //var origin = req.headers.origin;   - we cannot get the headers.origin , so we only allow from config
         if (config.ServerFrontEndUrlAsAllowedOriginOnly == true) {
