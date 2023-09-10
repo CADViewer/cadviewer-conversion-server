@@ -1,6 +1,6 @@
 {
   "name": "cadviewer-conversion-server",
-  "version": "9.4.1",
+  "version": "9.6.2",
   "description": "CADViewer NodeJS Server Encapsulation of CAD Converters",
   "main": "cadviewer_server.js",
   "scripts": {

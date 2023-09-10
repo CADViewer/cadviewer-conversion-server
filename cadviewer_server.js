@@ -1,4 +1,4 @@
-var version = "CADViewer Server v9.5.3";
+var version = "CADViewer Server v9.6.2";
 const express = require('express');
 const httprequest = require('request');
 const app = express();
@@ -48,7 +48,7 @@ var directloadcadviewer = require("./routes/directloadcadviewer_cv7.1.16.js");
 
 var directload2 = require("./routes/directload2_cv7.6.25.js");
 var uploadfile = require("./routes/uploadfile_cv6.8.83.js");
-var saveredline = require("./routes/saveredline_cv7.7.11.js");
+var saveredline = require("./routes/saveredline_cv9.6.1.js");
 var listdirectory = require("./routes/listdirectory_cv9.1.6.js");
 var listdirectoryredlines = require("./routes/listdirectoryredlines_cv9.1.5.js");
 var loadredline = require("./routes/loadredlines_cv7.1.17.js");
