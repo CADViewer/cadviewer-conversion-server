@@ -1,4 +1,4 @@
-var version = "CADViewer Server v9.6.2";
+var version = "CADViewer Server v9.7.1";
 const express = require('express');
 const httprequest = require('request');
 const app = express();
@@ -30,10 +30,10 @@ chrome://flags/#allow-insecure-localhost
 // 6.5.09  - DLL load
 //var ffi = require('ffi');
 
-var callapiconversion = require("./routes/callapiconversion_cv9.5.2.js");
+var callapiconversion = require("./routes/callapiconversion_cv9.7.1.js");
 var makesinglepagepdf = require("./routes/makesinglepagepdf_cv8.43.1.js");
 var copyfile = require("./routes/copyfile_cv7.1.17.js");
-var savefile = require("./routes/savefile_cv9.1.8.js");
+var savefile = require("./routes/savefile_cv9.7.1.js");
 var mergeemail = require("./routes/mergeemail_cv7.1.3.js");
 var appendfile = require("./routes/appendfile_cv7.1.16.js");
 var mergedwg = require("./routes/mergedwg_cv7.1.4.js");
@@ -41,7 +41,7 @@ var getCADViewerContent = require("./routes/getcadviewercontent_cv7.1.16.js");
 var returnpdfparams = require("./routes/returnpdfparams_cv7.1.16.js");
 var makethumbnails = require("./routes/makethumbnails_cv6.5.8.js");
 var temp_print = require("./routes/temp_print_cv7.1.16.js");
-var files = require("./routes/files_cv9.1.3.js");
+var files = require("./routes/files_cv9.7.1.js");
 var loadfile = require("./routes/loadfile_cv7.7.11.js");
 var directload = require("./routes/directload_cv7.1.16.js");
 var directloadcadviewer = require("./routes/directloadcadviewer_cv7.1.16.js");
@@ -124,8 +124,9 @@ if (config.autodetect_location){
 
         config.licenseLocation = config.ServerLocation + config.licenseLocation + config.converterpathLin;
     }
-    config.fileLocation = config.ServerLocation + config.fileLocation;
     config.fileLocationUrl = config.ServerUrl + config.fileLocation;
+    // 9.7.1
+    config.fileLocation = config.ServerLocation + config.fileLocation;
     config.xpathLocation = config.ServerLocation + config.xpathLocation;
 
 }
@@ -137,6 +138,7 @@ var globalCounter = 0;
 
 console.log("Version: "+version)
 console.log("ServerUrl: "+config.ServerUrl);
+console.log("fileLocationUrl: "+config.fileLocationUrl);
 console.log("ServerFrontEndUrl: "+config.ServerFrontEndUrl);
 console.log("Allowed Origin: either ServerFrontEndUrlAsAllowedOrigin (true) or * (false): "+config.ServerFrontEndUrlAsAllowedOriginOnly);
 console.log("Is https: "+config.https);
