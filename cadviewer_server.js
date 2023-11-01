@@ -52,8 +52,9 @@ var saveredline = require("./routes/saveredline_cv7.7.11.js");
 var listdirectory = require("./routes/listdirectory_cv9.1.6.js");
 var listdirectoryredlines = require("./routes/listdirectoryredlines_cv9.1.5.js");
 var loadredline = require("./routes/loadredlines_cv7.1.17.js");
-
-
+var listdwgdirectory = require("./routes/listdwgdirectory_cv9.5.2.js");
+var listdatabasedata = require("./routes/listdatabasedata_cv9.5.2.js");
+var authentification = require("./routes/authentification_cv9.5.2.js");
 var cvjs_debug = config.cvjs_debug;
 var port = config.ServerPort;  // 3000  or 4000
 
@@ -68,6 +69,9 @@ console.log("Platform: "+os.platform())
 if (config.autodetect_platform) {
     config.platform = os.platform();
     if (config.platform == "win32")  config.platform = "windows";
+}
+if (os.platform() == "darwin"){
+    config.platform = "linux";
 }
 
 // if autodetect location, all path are automatically created
@@ -169,26 +173,6 @@ console.log("Username/Password Authentication on fileload: "+config.fileLoad_Pas
 
 
 
-var mysqlconnectflag = false;
-
-if (mysqlconnectflag){
-
-// mysql connect to DB 
-var mysql = require('mysql');
-
-var con = mysql.createConnection({
-  host: config.mysqlHost,
-  user: config.mysqlUsername,
-  password: config.mysqlPassword
-});
-
-con.connect(function(err) {
-  if (err) throw err;
-  console.log("mySql - Connected!");
-});
-
-
-}
 
 
 
@@ -294,8 +278,10 @@ app.get('/favicon.ico', (req, res) => res.status(204));
 // LAST BRANCH
 // LOAD EVERYTHING UP!!
 
- app.get('/*', directload2);  // direct load all other 
-
+app.use('/database', listdatabasedata);
+app.use('/listdwgdirectory', listdwgdirectory);
+app.use('/auth', authentification);
+app.get('/*', directload2);  // direct load all other 
 
 
 

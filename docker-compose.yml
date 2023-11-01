@@ -1,0 +1,11 @@
+version: '3.2'
+
+services:
+
+  cadviewer_node:
+    build: .
+    restart: always
+    ports:
+      - 3005:3005
+    # volumes:
+    #   - ./:/usr/src/app

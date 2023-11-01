@@ -1,5 +1,5 @@
 {
-    "ServerPort" : 3000,
+    "ServerPort" : 3005,
     "ServerUrl" : "",
     "https" : false,
     "ServerFrontEndUrl" : "",
@@ -15,7 +15,7 @@
     "ServerLocation_windows" : "c:/nodejs/cadviewer-conversion-server/",
     "ServerLocation_linux" : "/opt/cadviewer-conversion-server/",
     "fileLocation" : "/converters/files/",
-    "fileLocationUrl" : "http://localhost:3000/converters/files/", 
+    "fileLocationUrl" : "http://localhost:3005/converters/files/", 
     "converterLocation" : "/converters/ax2024/",
     "converterpathWin": "windows/",
     "converterpathLin": "linux/",
@@ -38,15 +38,19 @@
 	"linklist2023_executable_windows" : "LinkList_2023_W64_23_08_26.exe",
 	"linklist2023_executable_linux" : "LinkList_2023_W64_23_08_26.exe",
     "custom_bearerAutentication" : "d5d483e8-2f8d-463e-cc01-f41a78b1d94c",
-    "mysqlHost" : "localhost",
+    "mysqlHost" : "host.docker.internal",
     "mysqlUsername" : "root",
-    "mysqlPassword" : "",
+    "mysqlPassword" : "root",
+    "mysqlDatabase" : "visualquery",
     "ContentSecurityPolicyReportOnly" : true,
     "ContentSecurityPolicy" : "default-src 'self'; font-src 'self'; img-src 'self' https://cadviewer.com data:; script-src 'self' 'nonce-INSERTNONCE'; style-src 'self' 'unsafe-inline'; frame-src 'self'",
     "fileLoad_PasswordAuthentication" : false,
     "fileLoad_UserName" : "myusername",
     "fileLoad_Password" : "mypassword",
     "contentLocationCheck" : true,
-    "version" : "v9.5.2"
+    "version" : "v9.5.2",
+    "folderLocation" : "/usr/src/app/tmp",
+    "jwtSecretKey" : "a45f6g7h8j9k0l193skdlmdj",
+    "bcryptSaltRounds" : 10
 }	
 	
