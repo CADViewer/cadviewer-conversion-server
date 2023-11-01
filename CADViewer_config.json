@@ -20,9 +20,9 @@
     "converterpathWin": "windows/",
     "converterpathLin": "linux/",
     "fontLocation" : "fonts/",
-    "ax2024_executable" : "AX2024_W64_24_07_123d.exe",
-    "ax2024_executable_windows" : "AX2024_W64_24_07_123d.exe",
-    "ax2024_executable_linux" : "ax2023_L64_23_12_123d",
+    "ax2024_executable" : "AX2024_W64_24_07_124b.exe",
+    "ax2024_executable_windows" : "AX2024_W64_24_07_124b.exe",
+    "ax2024_executable_linux" : "ax2023_L64_23_12_124b",
     "licenseLocation" : "/converters/ax2024/",
     "xpathLocation" : "/converters/xpath/",
     "temp_print_folder" : "/temp_print",
@@ -47,6 +47,6 @@
     "fileLoad_UserName" : "myusername",
     "fileLoad_Password" : "mypassword",
     "contentLocationCheck" : true,
-    "version" : "v9.7.7"
+    "version" : "v9.14.1"
 }	
 	

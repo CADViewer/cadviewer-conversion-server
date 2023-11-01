@@ -1,0 +1,19 @@
+{"AllObjects":[{"RedlineObjects":[]},{
+    
+    
+    
+    
+    
+    
+    "StickyNoteObjects":[
+        
+        
+        
+        
+        {"node":"SNOTE_1","outerhtml":"<g id='cv_SNOTE_1_group' transform='matrix(2.1479,0,0,2.1479,829.272,221.6297)' style='opacity: 1; fill-opacity: 0.8; stroke-opacity: 1;' fill='#e7e7e7' data-hasqtip='2' aria-describedby='qtip-2'><g stroke='#000000' id='cv_SNOTE_1' style='fill-opacity: 0.8; stroke-opacity: 1;'><path d='M0.01,0.01h20.0v20.0h-20.0v-20.0Z' stroke='#000000' style='stroke-width: 1;'></path><path d='M7,12h1.3M9.5,12h3.5M11.25,12v5M9.75,12v1.75M12.75,12v1.75M10.5,17h1.5M7,13.5h1.3M7,15.25h3M7,17.0h2.2' stroke='#000000' style='stroke-width: 0.5;'></path><text x='6' y='9' stroke='#000000' fill='#000000' style='font-size: 8px; font-style: italic; stroke-width: 0.3; fill-opacity: 1;'>#1</text></g></g>","name":"User_wqk3z",
+        
+        "id":1,"layer":"RedlineLayer","group":"RedlineLayer","text":"löklököl","userid":"user_id_wqk3z","currentPage":1,"date":"2023-10-22T12:54:29.865Z","linked":true,"transform":"T840.7626229364242,233.12036793115544S2.1479166666666667","drawingRotation":0},{
+            
+            
+            
+            "node":"SNOTE_2","outerhtml":"<g id='cv_SNOTE_2_group' transform='matrix(2.1479,0,0,2.1479,1429.9042,274.3168)' style='opacity: 1;' fill='#e7e7e7' data-hasqtip='4' aria-describedby='qtip-4'><g stroke='#000000' id='cv_SNOTE_2' style='fill-opacity: 0.8; stroke-opacity: 1;'><path d='M0.01,0.01h20.0v20.0h-20.0v-20.0Z' stroke='#000000' style='stroke-width: 1;'></path><path d='M7,12h1.3M9.5,12h3.5M11.25,12v5M9.75,12v1.75M12.75,12v1.75M10.5,17h1.5M7,13.5h1.3M7,15.25h3M7,17.0h2.2' stroke='#000000' style='stroke-width: 0.5;'></path><text x='6' y='9' stroke='#000000' fill='#000000' style='font-size: 8px; font-style: italic; stroke-width: 0.3; fill-opacity: 1;'>#2</text></g></g>","name":"User_wqk3z","id":2,"layer":"RedlineLayer","group":"RedlineLayer","text":"","userid":"user_id_wqk3z","currentPage":1,"date":"2023-10-22T12:54:55.191Z","linked":true,"transform":"T1441.3948674042854,285.8074069195643S2.1479166666666667","drawingRotation":0}]}]}
