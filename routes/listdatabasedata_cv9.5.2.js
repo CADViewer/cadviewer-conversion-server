@@ -16,7 +16,7 @@ router.get("/photos/:room_id", async (req, res) => {
 			const row = rows[i];
 			images.push({
 				id: row.id,
-				image_file_name: `/photos/${row.id}/${row.image_file_name}`,
+				image_file_name: `/photos/${row.id}/original/${row.image_file_name}`,
 				image_content_type: row.image_content_type,
 				image_file_size: row.image_file_size,
 				image_updated_at: row.image_updated_at,
