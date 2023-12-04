@@ -1,3 +1,0 @@
-caspe
-CH-YOGA3
-09 jun 2023 09:57:32

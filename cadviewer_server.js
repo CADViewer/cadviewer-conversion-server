@@ -1,4 +1,4 @@
-var version = "CADViewer Server v9.14.1";
+var version = "CADViewer Server v9.20.2";
 const express = require('express');
 const httprequest = require('request');
 const app = express();
@@ -30,7 +30,7 @@ chrome://flags/#allow-insecure-localhost
 // 6.5.09  - DLL load
 //var ffi = require('ffi');
 
-var callapiconversion = require("./routes/callapiconversion_cv9.7.7.js");
+var callapiconversion = require("./routes/callapiconversion_cv9.20.1.js");
 var makesinglepagepdf = require("./routes/makesinglepagepdf_cv8.43.1.js");
 var copyfile = require("./routes/copyfile_cv7.1.17.js");
 var savefile = require("./routes/savefile_cv9.7.1.js");
@@ -46,7 +46,7 @@ var loadfile = require("./routes/loadfile_cv7.7.11.js");
 var directload = require("./routes/directload_cv7.1.16.js");
 var directloadcadviewer = require("./routes/directloadcadviewer_cv7.1.16.js");
 
-var directload2 = require("./routes/directload2_cv7.6.25.js");
+var directload2 = require("./routes/directload2_cv9.20.1.js");
 var uploadfile = require("./routes/uploadfile_cv6.8.83.js");
 var saveredline = require("./routes/saveredline_cv9.6.1.js");
 var listdirectory = require("./routes/listdirectory_cv9.1.6.js");
