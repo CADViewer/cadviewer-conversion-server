@@ -12,7 +12,7 @@ var fs = require('fs');   // 8.19.1
 var response_serverUrl = "";
 
 
-var customendpointextension = require('./cvjs_customConversionEndpointExtension_cv9.20.1.js');
+var customendpointextension = require('./cvjs_customConversionEndpointExtension_cv9.23.1.js');
 
 var customConversionEndpointExtension = false;
 
@@ -714,6 +714,57 @@ var express = require('express'),
     function cvjs_buildcommandline_and_execute(outputFormat,contentLocation, parameters, res, writeFile, action, tempFileName){
 
         // building the command line
+
+
+        // 9.23.1
+
+        if (contentLocation.toLowerCase().indexOf(".svg")>0 
+            && ( contentLocation.toLowerCase().indexOf(".dwg")==-1 && contentLocation.toLowerCase().indexOf(".dxf")==-1 && contentLocation.toLowerCase().indexOf(".dwf")==-1)
+            && ( contentLocation.toLowerCase().indexOf(".dgn")==-1 && contentLocation.toLowerCase().indexOf(".pcf")==-1 && contentLocation.toLowerCase().indexOf(".pdf")==-1)
+            
+            ){
+
+                if (cvjs_debug) console.log("direct svg/svgz load "+contentLocation)
+
+                // if  conversion, svg_display, pdf_display  
+                if (action == "conversion" || action == "svg_creation" || action == "pdf_creation"){
+
+
+                    // 8.33.1 
+                    var fullcallback = "";
+                    if (config.callbackMethod_gatewayUrl_flag){
+                        fullcallback =  config.callbackMethod_gatewayUrl +"/"+config.callbackMethod
+                    }
+                    else 
+                        fullcallback = response_serverUrl+"/"+config.callbackMethod;
+
+
+
+                    // callback for custom creation with file ?
+                    ax2024_callback(res, "none", "0", outputFormat, contentLocation, fullcallback, tempFileName);	  
+                    return;
+
+                }
+
+                // if cadviewer                            
+                if (action == "cadviewer_display"){
+                    // callback for custom creation with file ?
+                    // 8.33.1 
+                    var fullcallback = "";
+                    if (config.callbackMethod_gatewayUrl_flag){
+                        fullcallback =  config.callbackMethod_gatewayUrl +"/"+config.callbackMethod
+                    }
+                    else 
+                        fullcallback = response_serverUrl+"/"+config.callbackMethod;
+                    CADViewer_callback(res, "none", "0", outputFormat, contentLocation, fullcallback, tempFileName);	  
+                    return;
+                }
+
+
+        }
+
+
+
         var commandline = config.converterLocation + config.ax2024_executable+" "+"-i=\""+contentLocation+"\" -o=\""+writeFile+"\" ";		
         commandline = commandline + parameters;		
         if (parameters.indexOf("lpath")>-1){}
@@ -729,8 +780,10 @@ var express = require('express'),
         else
             commandline = commandline + "-fpath=\""+config.fontLocation+"\" ";
         
-        if (cvjs_debug) console.log("callapiconversion commandline:"+commandline+"XXX");
+        if (cvjs_debug) console.log("callapiconversion commandline: "+commandline+"XXX");
         
+
+
         // execute ax2020 - AX2024
             
         const { exec } = require('child_process');

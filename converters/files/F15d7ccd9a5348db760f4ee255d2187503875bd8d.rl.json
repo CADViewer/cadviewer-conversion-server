@@ -1,0 +1,333 @@
+{
+"details": {
+	"Input File": "C:\nodejs\cadviewer-conversion-server\\converters\files\F15d7ccd9a5348db760f4ee255d2187503875bd8d.dwg",
+ 	"Room Layer": "RM_",
+	"Text Layer": "RM_TXT"
+ 	},
+"Linked": [
+ 	{
+		"Name": "127",
+		"Handle" : "1E07ED709",
+		"Area" : 25329,
+		"Real Name" : "127"
+	},
+ 	{
+		"Name": "126",
+		"Handle" : "1E07ED713",
+		"Area" : 33316,
+		"Real Name" : "126"
+	},
+ 	{
+		"Name": "124",
+		"Handle" : "1E07ED720",
+		"Area" : 10780,
+		"Real Name" : "124"
+	},
+ 	{
+		"Name": "125",
+		"Handle" : "1E07ED726",
+		"Area" : 10780,
+		"Real Name" : "125"
+	},
+ 	{
+		"Name": "122",
+		"Handle" : "1E07ED72C",
+		"Area" : 10780,
+		"Real Name" : "122"
+	},
+ 	{
+		"Name": "123",
+		"Handle" : "1E07ED732",
+		"Area" : 10780,
+		"Real Name" : "123"
+	},
+ 	{
+		"Name": "121",
+		"Handle" : "1E07ED738",
+		"Area" : 10780,
+		"Real Name" : "121"
+	},
+ 	{
+		"Name": "120",
+		"Handle" : "1E07ED73E",
+		"Area" : 10780,
+		"Real Name" : "120"
+	},
+ 	{
+		"Name": "112",
+		"Handle" : "1E07ED744",
+		"Area" : 10780,
+		"Real Name" : "112"
+	},
+ 	{
+		"Name": "111",
+		"Handle" : "1E07ED74A",
+		"Area" : 10780,
+		"Real Name" : "111"
+	},
+ 	{
+		"Name": "113",
+		"Handle" : "1E07ED750",
+		"Area" : 10780,
+		"Real Name" : "113"
+	},
+ 	{
+		"Name": "114",
+		"Handle" : "1E07ED757",
+		"Area" : 10780,
+		"Real Name" : "114"
+	},
+ 	{
+		"Name": "117",
+		"Handle" : "1E07ED75D",
+		"Area" : 8524,
+		"Real Name" : "117"
+	},
+ 	{
+		"Name": "119",
+		"Handle" : "1E07ED763",
+		"Area" : 35532,
+		"Real Name" : "119"
+	},
+ 	{
+		"Name": "118",
+		"Handle" : "1E07ED76F",
+		"Area" : 36291,
+		"Real Name" : "118"
+	},
+ 	{
+		"Name": "116",
+		"Handle" : "1E07ED77C",
+		"Area" : 18051,
+		"Real Name" : "116"
+	},
+ 	{
+		"Name": "115",
+		"Handle" : "1E07ED786",
+		"Area" : 18310,
+		"Real Name" : "115"
+	},
+ 	{
+		"Name": "110",
+		"Handle" : "1E07ED791",
+		"Area" : 36495,
+		"Real Name" : "110"
+	},
+ 	{
+		"Name": "109",
+		"Handle" : "1E07ED79D",
+		"Area" : 31421,
+		"Real Name" : "109"
+	},
+ 	{
+		"Name": "107",
+		"Handle" : "1E07ED7A9",
+		"Area" : 10780,
+		"Real Name" : "107"
+	},
+ 	{
+		"Name": "105",
+		"Handle" : "1E07ED7B5",
+		"Area" : 10780,
+		"Real Name" : "105"
+	},
+ 	{
+		"Name": "106",
+		"Handle" : "1E07ED7BB",
+		"Area" : 10780,
+		"Real Name" : "106"
+	},
+ 	{
+		"Name": "103",
+		"Handle" : "1E07ED7C1",
+		"Area" : 10780,
+		"Real Name" : "103"
+	},
+ 	{
+		"Name": "104",
+		"Handle" : "1E07ED7C7",
+		"Area" : 10780,
+		"Real Name" : "104"
+	},
+ 	{
+		"Name": "102",
+		"Handle" : "1E07ED7CD",
+		"Area" : 20182,
+		"Real Name" : "102"
+	},
+ 	{
+		"Name": "101",
+		"Handle" : "1E07ED7D6",
+		"Area" : 13487,
+		"Real Name" : "101"
+	},
+ 	{
+		"Name": "108",
+		"Handle" : "1E07ED80D",
+		"Area" : 10780,
+		"Real Name" : "108"
+	},
+ 	{
+		"Name": "158",
+		"Handle" : "FA942BAB82AE",
+		"Area" : 4950,
+		"Real Name" : "158"
+	},
+ 	{
+		"Name": "167",
+		"Handle" : "FA942BAB82AF",
+		"Area" : 7857,
+		"Real Name" : "167"
+	},
+ 	{
+		"Name": "169",
+		"Handle" : "FA942BAB82B0",
+		"Area" : 2577,
+		"Real Name" : "169"
+	},
+ 	{
+		"Name": "151",
+		"Handle" : "FA942BAB82B1",
+		"Area" : 3360,
+		"Real Name" : "151"
+	},
+ 	{
+		"Name": "172",
+		"Handle" : "FA942BAB82B2",
+		"Area" : 17360,
+		"Real Name" : "172"
+	},
+ 	{
+		"Name": "171",
+		"Handle" : "FA942BAB82B3",
+		"Area" : 22600,
+		"Real Name" : "171"
+	},
+ 	{
+		"Name": "170",
+		"Handle" : "FA942BAB82B4",
+		"Area" : 11012,
+		"Real Name" : "170"
+	},
+ 	{
+		"Name": "150",
+		"Handle" : "FA942BAB82B5",
+		"Area" : 21477,
+		"Real Name" : "150"
+	},
+ 	{
+		"Name": "168",
+		"Handle" : "FA942BAB832F",
+		"Area" : 96661,
+		"Real Name" : "168"
+	},
+ 	{
+		"Name": "153",
+		"Handle" : "FA942BAB8330",
+		"Area" : 0.00,
+		"Real Name" : "153"
+	},
+ 	{
+		"Name": "155",
+		"Handle" : "FA942BAB833B",
+		"Area" : 0.00,
+		"Real Name" : "155"
+	},
+ 	{
+		"Name": "SHAFT",
+		"Handle" : "FA942BAB8346",
+		"Area" : 0.00,
+		"Real Name" : "SHAFT"
+	},
+ 	{
+		"Name": "161",
+		"Handle" : "FA942BAB8353",
+		"Area" : 0.00,
+		"Real Name" : "161"
+	},
+ 	{
+		"Name": "162",
+		"Handle" : "FA942BAB835E",
+		"Area" : 0.00,
+		"Real Name" : "162"
+	},
+ 	{
+		"Name": "160",
+		"Handle" : "FA942BAB8369",
+		"Area" : 0.00,
+		"Real Name" : "160"
+	},
+ 	{
+		"Name": "156",
+		"Handle" : "FA942BAB8370",
+		"Area" : 0.00,
+		"Real Name" : "156"
+	},
+ 	{
+		"Name": "154",
+		"Handle" : "FA942BAB8377",
+		"Area" : 0.00,
+		"Real Name" : "154"
+	},
+ 	{
+		"Name": "157",
+		"Handle" : "FA942BAB8382",
+		"Area" : 1884,
+		"Real Name" : "157"
+	},
+ 	{
+		"Name": "163",
+		"Handle" : "FA942BAB8396",
+		"Area" : 21864,
+		"Real Name" : "163"
+	},
+ 	{
+		"Name": "164",
+		"Handle" : "FA942BAB8397",
+		"Area" : 2042,
+		"Real Name" : "164"
+	},
+ 	{
+		"Name": "152",
+		"Handle" : "FA942BAB8399",
+		"Area" : 3441,
+		"Real Name" : "152"
+	}
+     ],
+"Unlinked": 
+	[
+		"WKSTA-TECH",
+		"74.86",
+		"SERV",
+		"MEN",
+		"WOMEN",
+		"VERT",
+		"ELEV",
+		"PIPE",
+		"STAIR",
+		"CORRIDOR",
+		"LOBBY",
+		"MECH",
+		"159",
+		"OFF-EXEC",
+		"253.44",
+		"CONFERENCE",
+		"175.89",
+		"129",
+		"TELECOM",
+		"33.67",
+		"OFF-A",
+		"218.20",
+		"WKSTA-B",
+		"125.35",
+		"246.75",
+		"127.15",
+		"252.02",
+		"WKSTA-A",
+		"140.15",
+		"231.36",
+		"WKSTA-SEC",
+		"59.20",
+		"93.66"
+	]
+}
