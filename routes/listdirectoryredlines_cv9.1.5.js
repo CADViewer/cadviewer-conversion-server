@@ -98,6 +98,6 @@ router.post('/listdirectoryredlines', (req, res) => {
     
 
 
-    module.exports = router;
+module.exports = router;
     
     
