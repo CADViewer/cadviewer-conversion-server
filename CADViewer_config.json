@@ -20,9 +20,15 @@
     "converterpathWin": "windows/",
     "converterpathLin": "linux/",
     "fontLocation" : "fonts/",
+<<<<<<< HEAD
     "ax2024_executable" : "AX2024_W64_24_07_119.exe",
     "ax2024_executable_windows" : "AX2024_W64_24_07_119.exe",
     "ax2024_executable_linux" : "ax2023_L64_23_12_124b",
+=======
+    "ax2024_executable" : "AX2024_W64_24_07_127.exe",
+    "ax2024_executable_windows" : "AX2024_W64_24_07_127.exe",
+    "ax2024_executable_linux" : "ax2023_L64_23_12_127",
+>>>>>>> ec9be70ec8fabd30744e085c1f652440d2858bc2
     "licenseLocation" : "/converters/ax2024/",
     "xpathLocation" : "/converters/xpath/",
     "temp_print_folder" : "/temp_print",
@@ -48,7 +54,7 @@
     "fileLoad_UserName" : "myusername",
     "fileLoad_Password" : "mypassword",
     "contentLocationCheck" : true,
-    "version" : "v9.5.2",
+    "version" : "v9.31.1",
     "folderLocation" : "/home/kevin/cadviewer-conversion-server/tmp",
     "jsonPlansLocation" : "/home/kevin/cadviewer-conversion-server/tmp/plans_data/",
     "fileBlobLocation": "/home/kevin/cadviewer-conversion-server/tmp/files_blob/",

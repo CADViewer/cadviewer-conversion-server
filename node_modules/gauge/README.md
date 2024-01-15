@@ -16,9 +16,9 @@ setTimeout(() => { gauge.pulse(); gauge.show("working…", 0.99) }, 2000)
 setTimeout(() => gauge.hide(), 2300)
 ```
 
-See also the [demos](docs/demo.js):
+See also the [demos](demo.js):
 
-![](./docs/gauge-demo.gif)
+![](gauge-demo.gif)
 
 
 ### CHANGES FROM 1.x
