@@ -55,6 +55,7 @@ var loadredline = require("./routes/loadredlines_cv7.1.17.js");
 var listdwgdirectory = require("./routes/listdwgdirectory_cv9.5.2.js");
 var listdatabasedata = require("./routes/listdatabasedata_cv9.5.2.js");
 var authentification = require("./routes/authentification_cv9.5.2.js");
+var plans = require('./routes/plans_cv9.5.2.js');
 var cvjs_debug = config.cvjs_debug;
 var port = config.ServerPort;  // 3000  or 4000
 
@@ -283,6 +284,7 @@ app.get('/favicon.ico', (req, res) => res.status(204));
 app.use('/database', listdatabasedata);
 app.use('/listdwgdirectory', listdwgdirectory);
 app.use('/auth', authentification);
+app.use('/plans', plans)
 app.get('/*', directload2);  // direct load all other 
 
 

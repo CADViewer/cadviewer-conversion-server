@@ -1,5 +1,5 @@
 content/drawings/dwg
 tmp
 photos/
-node_modules
+node_modules/
 converters/files/*
