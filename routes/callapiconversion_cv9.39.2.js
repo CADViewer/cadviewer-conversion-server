@@ -11,10 +11,11 @@ var fs = require('fs');   // 8.19.1
 // 9.5.2
 var response_serverUrl = "";
 
-
-var customendpointextension = require('./cvjs_customConversionEndpointExtension_cv9.23.1.js');
+var customendpointextension = require('./cvjs_customConversionEndpointExtension_cv9.39.2.js');
 
 var customConversionEndpointExtension = false;
+var setPostFixServerToken = false;
+
 
 var contentLocationOrg = "";
 
@@ -29,6 +30,12 @@ var express = require('express'),
         
         if (contentLocation.lastIndexOf(".")>-1)
             fileFormat =contentLocation.toLowerCase().substring(contentLocation.lastIndexOf("."));   
+
+        // postfixservertoken      9.39.2
+        if (fileFormat.indexOf("?")>-1){
+            fileFormat = fileFormat.substring(0, fileFormat.indexOf("?"));
+        }
+
 
         if (cvjs_debug) console.log("get_file_format:  fileFormat "+fileFormat+"XXX");
 
@@ -1365,6 +1372,21 @@ var express = require('express'),
 
     function cvjs_processConversion_pdf_svg_cadviewerdisplay(cvjsRequestJSON, res, action){
 
+
+        try{
+            if (cvjsRequestJSON.setPostFixServerToken!=undefined && cvjsRequestJSON.setPostFixServerToken!=""){
+                setPostFixServerToken = cvjsRequestJSON.setPostFixServerToken;
+                // postfix the contentlocation with the sas token
+                if (setPostFixServerToken)
+                    cvjsRequestJSON.contentLocation = cvjsRequestJSON.contentLocation + config.custom_postFixServerToken;
+            }
+        }
+        catch(err){
+            console.log();
+        }
+        if(cvjs_debug) console.log("setPostFixServerToken="+setPostFixServerToken);
+
+
         // 
         contentLocationOrg = cvjsRequestJSON.contentLocation;
         contentLocationOrg = clean_contentLocation(contentLocationOrg);
@@ -1385,6 +1407,10 @@ var express = require('express'),
         var contentResponse= cvjsRequestJSON.contentResponse;
         var leaveStreamOnServer= cvjsRequestJSON.leaveStreamOnServer;
         */
+
+
+
+
 
         if(cvjs_debug) console.log("customEndpointExtension="+customConversionEndpointExtension);
         if (cvjs_debug) console.log("CALLAPI contentLocation: "+cvjsRequestJSON.contentLocation+"  compress:"+config.cvjs_svgz_compress);
