@@ -11,14 +11,14 @@ It contains all components to run on either a Windows server or a Linux Server.
 
 1: NodeJS script library for controlling CAD Conversions and communication with CADViewer  - in its preferred folder structure
 
-2: AutoXchange AX2024 Converter, LinkList2023 Converterand DWGMerge2023 Converter - in their preferred folder structure
+2: AutoXchange AX2024 Converter, LinkList2024 Converterand DWGMerge2024 Converter - in their preferred folder structure
 
 3: All structures for file-conversion, sample drawings, redlines, etc. 
 
 
 ## This package does not contain
 
-4: The converter folder structure contains a larger set of fonts, installed in /cadviewer/converters/ax2023/windows/fonts/, but a fuller set of fonts can be installed. 
+4: The converter folder structure contains a larger set of fonts, installed in /cadviewer/converters/ax2024/fonts/, but a fuller set of fonts can be installed. 
 
 Read the sections on installing and handling [Fonts](https://tailormade.com/ax2020techdocs/installation/fonts/) in [AutoXchange 2024TechDocs](https://tailormade.com/ax2020techdocs/) and [TroubleShooting](https://tailormade.com/ax2020techdocs/troubleshooting/).
 
@@ -53,6 +53,70 @@ Read the sections on installing and handling [Fonts](https://tailormade.com/ax20
 **NOTE:** Make sure the converter version number in CADViwer_config.json match the converters you install, and change any paths settings to correspond to your install folders.  
 
 **Run:** Run by using the *npm start* script or *node cadviewer_server* from the command line.
+
+
+## CADViewer_config.json
+
+The user controlled parameters in the configuration file ***[CADViewer_config.json](https://github.com/CADViewer/cadviewer-conversion-server/blob/master/CADViewer_config.json)*** has the following default settings:
+
+```json
+{
+    "ServerPort" : 3000,
+    "ServerUrl" : "http://localhost:3000/",
+    "https" : false,
+    "ServerFrontEndUrl" : "",
+    "ServerFrontEndUrlAsAllowedOriginOnly" : false,
+    "cvjs_svgz_compress" : true,
+    "cached_conversion" : false,
+    "remainOnServer" : true,
+    "cvjs_debug" : true,
+    "autodetect_platform" : true,
+    "platform" :"windows or linux",
+    "autodetect_location" : true,
+    "ServerLocation" : "c:/nodejs/cadviewer-conversion-server/",
+    "ServerLocation_windows" : "c:/nodejs/cadviewer-conversion-server/",
+    "ServerLocation_linux" : "/opt/cadviewer-conversion-server/",
+    "fileLocation" : "/converters/files/",
+    "fileLocationUrl" : "http://localhost:3005/converters/files/", 
+    "converterLocation" : "/converters/ax2024/",
+    "converterpathWin": "windows/",
+    "converterpathLin": "linux/",
+    "fontLocation" : "fonts/",
+    "ax2024_executable" : "AX2024_W64_24_07_128.exe",
+    "ax2024_executable_windows" : "AX2024_W64_24_07_128.exe",
+    "ax2024_executable_linux" : "ax2023_L64_23_12_128",
+    "licenseLocation" : "/converters/ax2024/",
+    "xpathLocation" : "/converters/xpath/",
+    "temp_print_folder" : "/temp_print",
+    "callbackMethod_gatewayUrl_flag" : false,
+    "callbackMethod_gatewayUrl" : "http://localhost:3000",
+    "callbackMethod" : "getcadviewercontent",
+    "dwgmergeLocation" : "/converters/dwgmerge2023",
+    "dwgmerge2023_executable" : "DwgMerge2023_W32_23_01_01.exe",
+    "dwgmerge2023_executable_windows" : "DwgMerge2023_W32_23_01_01.exe",
+    "dwgmerge2023_executable_linux" : "DwgMerge2023_W32_23_01_01.exe",
+    "linklistLocation" : "/converters/linklist2023/",
+    "linklist2023_executable" : "LinkList_2023_W64_23_08_26.exe",
+    "linklist2023_executable_windows" : "LinkList_2023_W64_23_08_26.exe",
+    "linklist2023_executable_linux" : "LinkList_2023_W64_23_08_26.exe",
+    "custom_bearerAutentication" : "d5d483e8-2f8d-463e-cc01-f41a78b1d94c",
+    "custom_postFixServerToken" : "?mysasToken",
+    "mysqlHost" : "host.docker.internal",
+    "mysqlUsername" : "root",
+    "mysqlPassword" : "root",
+    "mysqlDatabase" : "visualquery",
+    "ContentSecurityPolicyReportOnly" : true,
+    "ContentSecurityPolicy" : "default-src 'self'; font-src 'self'; img-src 'self' https://cadviewer.com data:; script-src 'self' 'nonce-INSERTNONCE'; style-src 'self' 'unsafe-inline'; frame-src 'self'",
+    "fileLoad_PasswordAuthentication" : false,
+    "fileLoad_UserName" : "myusername",
+    "fileLoad_Password" : "mypassword",
+    "contentLocationCheck" : true,
+    "version" : "v9.39.2",
+    "folderLocation" : "/nodejs/cadviewer-conversion-server/content/",
+    "jwtSecretKey" : "a45f6g7h8j9k0l193skdlmdj",
+    "bcryptSaltRounds" : 10
+}	
+```
 
 
 

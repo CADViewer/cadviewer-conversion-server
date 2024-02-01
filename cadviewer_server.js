@@ -1,4 +1,4 @@
-var version = "CADViewer Server v9.31.2";
+var version = "CADViewer Server v9.39.2";
 const express = require('express');
 const httprequest = require('request');
 const app = express();
@@ -29,22 +29,42 @@ chrome://flags/#allow-insecure-localhost
  
 // 6.5.09  - DLL load
 //var ffi = require('ffi');
+try{
+    var callapiconversion = require("./routes/callapiconversion_cv9.39.2.js");
+    var makesinglepagepdf = require("./routes/makesinglepagepdf_cv8.43.1.js");
+    var copyfile = require("./routes/copyfile_cv7.1.17.js");
+    var savefile = require("./routes/savefile_cv9.7.1.js");
+    var mergeemail = require("./routes/mergeemail_cv7.1.3.js");
+    var appendfile = require("./routes/appendfile_cv7.1.16.js");
+    var mergedwg = require("./routes/mergedwg_cv7.1.4.js");
+    var getCADViewerContent = require("./routes/getcadviewercontent_cv7.1.16.js");
+    var returnpdfparams = require("./routes/returnpdfparams_cv7.1.16.js");
+    var makethumbnails = require("./routes/makethumbnails_cv6.5.8.js");
+    var temp_print = require("./routes/temp_print_cv7.1.16.js");
+    var files = require("./routes/files_cv9.7.1.js");
+    var loadfile = require("./routes/loadfile_cv7.7.11.js");
+    var directload = require("./routes/directload_cv7.1.16.js");
+    var directloadcadviewer = require("./routes/directloadcadviewer_cv7.1.16.js");
+    
+    var directload2 = require("./routes/directload2_cv9.20.1.js");
+    var uploadfile = require("./routes/uploadfile_cv6.8.83.js");
+    var saveredline = require("./routes/saveredline_cv9.6.1.js");
+    var listdirectory = require("./routes/listdirectory_cv9.1.6.js");
+    var listdirectoryredlines = require("./routes/listdirectoryredlines_cv9.1.5.js");
+    var loadredline = require("./routes/loadredlines_cv7.1.17.js");
+    var listdwgdirectory = require("./routes/listdwgdirectory_cv9.5.2.js");
+    
 
-var callapiconversion = require("./routes/callapiconversion_cv9.23.1.js");
-var makesinglepagepdf = require("./routes/makesinglepagepdf_cv8.43.1.js");
-var copyfile = require("./routes/copyfile_cv7.1.17.js");
-var savefile = require("./routes/savefile_cv9.7.1.js");
-var mergeemail = require("./routes/mergeemail_cv7.1.3.js");
-var appendfile = require("./routes/appendfile_cv7.1.16.js");
-var mergedwg = require("./routes/mergedwg_cv7.1.4.js");
-var getCADViewerContent = require("./routes/getcadviewercontent_cv7.1.16.js");
-var returnpdfparams = require("./routes/returnpdfparams_cv7.1.16.js");
-var makethumbnails = require("./routes/makethumbnails_cv6.5.8.js");
-var temp_print = require("./routes/temp_print_cv7.1.16.js");
-var files = require("./routes/files_cv9.7.1.js");
-var loadfile = require("./routes/loadfile_cv7.7.11.js");
-var directload = require("./routes/directload_cv7.1.16.js");
-var directloadcadviewer = require("./routes/directloadcadviewer_cv7.1.16.js");
+}
+catch(err){
+
+    console.log("general route error:"+err);
+
+}
+
+
+
+
 
 var directload2 = require("./routes/directload2_cv9.20.1.js");
 var uploadfile = require("./routes/uploadfile_cv6.8.83.js");
