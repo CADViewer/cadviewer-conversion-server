@@ -57,7 +57,7 @@ Read the sections on installing and handling [Fonts](https://tailormade.com/ax20
 
 ## CADViewer_config.json
 
-The user controlled parameters in the configuration file ***[CADViewer_config.json](https://github.com/CADViewer/cadviewer-conversion-server/blob/master/CADViewer_config.json)*** are as follows:
+The user controlled parameters in the configuration file ***[CADViewer_config.json](https://github.com/CADViewer/cadviewer-conversion-server/blob/master/CADViewer_config.json)*** has the following default settings:
 
 ```json
 {
@@ -91,14 +91,14 @@ The user controlled parameters in the configuration file ***[CADViewer_config.js
     "callbackMethod_gatewayUrl_flag" : false,
     "callbackMethod_gatewayUrl" : "http://localhost:3000",
     "callbackMethod" : "getcadviewercontent",
-	"dwgmergeLocation" : "/converters/dwgmerge2023",
-	"dwgmerge2023_executable" : "DwgMerge2023_W32_23_01_01.exe",
-	"dwgmerge2023_executable_windows" : "DwgMerge2023_W32_23_01_01.exe",
-	"dwgmerge2023_executable_linux" : "DwgMerge2023_W32_23_01_01.exe",
-	"linklistLocation" : "/converters/linklist2023/",
-	"linklist2023_executable" : "LinkList_2023_W64_23_08_26.exe",
-	"linklist2023_executable_windows" : "LinkList_2023_W64_23_08_26.exe",
-	"linklist2023_executable_linux" : "LinkList_2023_W64_23_08_26.exe",
+    "dwgmergeLocation" : "/converters/dwgmerge2023",
+    "dwgmerge2023_executable" : "DwgMerge2023_W32_23_01_01.exe",
+    "dwgmerge2023_executable_windows" : "DwgMerge2023_W32_23_01_01.exe",
+    "dwgmerge2023_executable_linux" : "DwgMerge2023_W32_23_01_01.exe",
+    "linklistLocation" : "/converters/linklist2023/",
+    "linklist2023_executable" : "LinkList_2023_W64_23_08_26.exe",
+    "linklist2023_executable_windows" : "LinkList_2023_W64_23_08_26.exe",
+    "linklist2023_executable_linux" : "LinkList_2023_W64_23_08_26.exe",
     "custom_bearerAutentication" : "d5d483e8-2f8d-463e-cc01-f41a78b1d94c",
     "custom_postFixServerToken" : "?mysasToken",
     "mysqlHost" : "host.docker.internal",
