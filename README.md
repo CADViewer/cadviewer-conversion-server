@@ -11,14 +11,14 @@ It contains all components to run on either a Windows server or a Linux Server.
 
 1: NodeJS script library for controlling CAD Conversions and communication with CADViewer  - in its preferred folder structure
 
-2: AutoXchange AX2024 Converter, LinkList2023 Converterand DWGMerge2023 Converter - in their preferred folder structure
+2: AutoXchange AX2024 Converter, LinkList2024 Converterand DWGMerge2024 Converter - in their preferred folder structure
 
 3: All structures for file-conversion, sample drawings, redlines, etc. 
 
 
 ## This package does not contain
 
-4: The converter folder structure contains a larger set of fonts, installed in /cadviewer/converters/ax2023/windows/fonts/, but a fuller set of fonts can be installed. 
+4: The converter folder structure contains a larger set of fonts, installed in /cadviewer/converters/ax2024/fonts/, but a fuller set of fonts can be installed. 
 
 Read the sections on installing and handling [Fonts](https://tailormade.com/ax2020techdocs/installation/fonts/) in [AutoXchange 2024TechDocs](https://tailormade.com/ax2020techdocs/) and [TroubleShooting](https://tailormade.com/ax2020techdocs/troubleshooting/).
 
@@ -53,6 +53,16 @@ Read the sections on installing and handling [Fonts](https://tailormade.com/ax20
 **NOTE:** Make sure the converter version number in CADViwer_config.json match the converters you install, and change any paths settings to correspond to your install folders.  
 
 **Run:** Run by using the *npm start* script or *node cadviewer_server* from the command line.
+
+
+## CADViewer_config.json
+
+The user controlled parameters in the configuration file ***[CADViewer_config.json]()*** are as follows:
+
+```
+
+
+```
 
 
 
