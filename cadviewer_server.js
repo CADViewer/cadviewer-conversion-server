@@ -297,12 +297,12 @@ app.get('/favicon.ico', (req, res) => res.status(204));
 // LAST BRANCH
 // LOAD EVERYTHING UP!!
 
+app.use('/loadjsonpostfix', plans);
 app.use('/listdwgdirectory', listdwgdirectory);
 
 try{
     app.use('/database', listdatabasedata);
     app.use('/auth', authentification);
-    app.use('/plans', plans);
 
 }
 catch(db_auth_err){
