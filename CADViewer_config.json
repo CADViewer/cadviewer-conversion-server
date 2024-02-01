@@ -50,7 +50,7 @@
     "fileLoad_Password" : "mypassword",
     "contentLocationCheck" : true,
     "version" : "v9.39.2",
-    "folderLocation" : "/nodejs/cadviewer-conversion-server/content/custom/bpretail",
+    "folderLocation" : "/nodejs/cadviewer-conversion-server/content/",
     "jwtSecretKey" : "a45f6g7h8j9k0l193skdlmdj",
     "bcryptSaltRounds" : 10
 }	
