@@ -1,4 +1,4 @@
-var version = "CADViewer Server v9.39.2";
+var version = "CADViewer Server v9.40.2";
 const express = require('express');
 const httprequest = require('request');
 const app = express();
@@ -73,7 +73,7 @@ var listdirectory = require("./routes/listdirectory_cv9.1.6.js");
 var listdirectoryredlines = require("./routes/listdirectoryredlines_cv9.1.5.js");
 var loadredline = require("./routes/loadredlines_cv7.1.17.js");
 var listdwgdirectory = require("./routes/listdwgdirectory_cv9.5.2.js");
-var plans = require('./routes/plans_cv9.5.2.js');
+var plans = require('./routes/plans_cv9.40.2.js');
 
 var listdatabasedata ;
 var authentification ;

@@ -1912,6 +1912,16 @@ router.post('/callapiconversion', (req, res) => {
 		// CADViewer request 
 		var cvjsRequest = req.body.request;	
 		var cvjsRequestJSON = JSON.parse(cvjsRequest);
+
+
+        if (Array.isArray(cvjsRequestJSON)){
+
+            console.log("THIS IS AN ARRAY!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        }
+        else
+            console.log("THIS IS NOT AN ARRAY!!!!!!!!!!!!!!!!!!!!!!!!!!");
+
+
 		var action = cvjsRequestJSON.action;
         
         if (cvjs_debug) console.log("callapiconversion action="+action);
