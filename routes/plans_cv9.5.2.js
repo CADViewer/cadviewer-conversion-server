@@ -1,4 +1,5 @@
 const config = require("../CADViewer_config.json");
+const fetch = require('node-fetch');
 
 const express = require("express"),
     router = express.Router();
