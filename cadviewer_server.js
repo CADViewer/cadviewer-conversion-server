@@ -1,4 +1,4 @@
-var version = "CADViewer Server v9.45.1";
+var version = "CADViewer Server v9.45.2";
 const express = require('express');
 const httprequest = require('request');
 const app = express();
@@ -366,7 +366,7 @@ var hostpath = "";
 
 var numberslash =  host.split("/").length - 1; 
 
-if (numberslash>1){
+if (numberslash>0){
     var temphost = host;
     host = temphost.substring(0, temphost.indexOf("/"));
     hostpath = temphost.substring(temphost.indexOf("/")+1);
@@ -465,15 +465,13 @@ else{
     try{
 
         // https  - see config
+        
         const options = {
             key: fs.readFileSync('key.pem'),
             cert: fs.readFileSync('cert.pem'),
             path: hostpath,
             port: serverport
         };
-
-        https.createServer(options, app).listen(443);
-
 
 
         if( host != ""){   // host is set
