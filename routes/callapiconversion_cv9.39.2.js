@@ -1527,7 +1527,7 @@ var express = require('express'),
         // 8.77.4
         var contentLocationCheck = true;
         if (config.contentLocationCheck != undefined) contentLocationCheck = config.contentLocationCheck;
-        if (config.cvjs_debug) console.log("8.77.4:  contentLocationCheck="+contentLocationCheck);
+        if (config.cvjs_debug) console.log("9.45.2:  contentLocationCheck="+contentLocationCheck+" "+contentLocation+"  "+config.ServerUrl);
 
 
         // 6.8.65 we only substitute for the back-end, if front-end then user controlled
@@ -1868,6 +1868,10 @@ router.post('/callapiconversion', (req, res) => {
 
         // 9.5.2
         var reqhost =  req.get('host'); 
+
+        console.log(config.version+" callingHost:"+reqhost+ "  config:"+config.ServerUrl);
+
+
         if (config.ServerUrl.indexOf("::")>-1){ // we replace with request url, as we have multiple IP that we are listening on
 
             console.log(config.version+" callingHost:"+reqhost+ "  config:"+config.ServerUrl);

@@ -1,0 +1,444 @@
+.cadviewer-bootstrap {
+  /*!
+   * Generated using the Bootstrap Customizer (https://getbootstrap.com/docs/3.4/customize/)
+   */
+  /*!
+   * Bootstrap v3.4.1 (https://getbootstrap.com/)
+   * Copyright 2011-2019 Twitter, Inc.
+   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+   */
+  /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+}
+.cadviewer-bootstrap html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+.cadviewer-bootstrap body {
+  margin: 0;
+}
+.cadviewer-bootstrap article, .cadviewer-bootstrap aside, .cadviewer-bootstrap details, .cadviewer-bootstrap figcaption, .cadviewer-bootstrap figure, .cadviewer-bootstrap footer, .cadviewer-bootstrap header, .cadviewer-bootstrap hgroup, .cadviewer-bootstrap main, .cadviewer-bootstrap menu, .cadviewer-bootstrap nav, .cadviewer-bootstrap section, .cadviewer-bootstrap summary {
+  display: block;
+}
+.cadviewer-bootstrap audio, .cadviewer-bootstrap canvas, .cadviewer-bootstrap progress, .cadviewer-bootstrap video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+.cadviewer-bootstrap audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+.cadviewer-bootstrap [hidden], .cadviewer-bootstrap template {
+  display: none;
+}
+.cadviewer-bootstrap a {
+  background-color: transparent;
+}
+.cadviewer-bootstrap a:active, .cadviewer-bootstrap a:hover {
+  outline: 0;
+}
+.cadviewer-bootstrap abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+.cadviewer-bootstrap b, .cadviewer-bootstrap strong {
+  font-weight: bold;
+}
+.cadviewer-bootstrap dfn {
+  font-style: italic;
+}
+.cadviewer-bootstrap h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+.cadviewer-bootstrap mark {
+  background: #ff0;
+  color: #000;
+}
+.cadviewer-bootstrap small {
+  font-size: 80%;
+}
+.cadviewer-bootstrap sub, .cadviewer-bootstrap sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.cadviewer-bootstrap sup {
+  top: -0.5em;
+}
+.cadviewer-bootstrap sub {
+  bottom: -0.25em;
+}
+.cadviewer-bootstrap img {
+  border: 0;
+}
+.cadviewer-bootstrap svg:not(:root) {
+  overflow: hidden;
+}
+.cadviewer-bootstrap figure {
+  margin: 1em 40px;
+}
+.cadviewer-bootstrap hr {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+.cadviewer-bootstrap pre {
+  overflow: auto;
+}
+.cadviewer-bootstrap code, .cadviewer-bootstrap kbd, .cadviewer-bootstrap pre, .cadviewer-bootstrap samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+.cadviewer-bootstrap button, .cadviewer-bootstrap input, .cadviewer-bootstrap optgroup, .cadviewer-bootstrap select, .cadviewer-bootstrap textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  /* 8.45.2 */
+  /*8.45.2*/
+  border-radius: 0px !important;
+  border-width : 1px !important;
+  border-color: #000 !important;
+
+
+}
+.cadviewer-bootstrap button {
+  overflow: visible;
+}
+.cadviewer-bootstrap button, .cadviewer-bootstrap select {
+  text-transform: none;
+}
+.cadviewer-bootstrap button, .cadviewer-bootstrap html input[type="button"], .cadviewer-bootstrap input[type="reset"], .cadviewer-bootstrap input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+.cadviewer-bootstrap button[disabled], .cadviewer-bootstrap html input[disabled] {
+  cursor: default;
+}
+.cadviewer-bootstrap button::-moz-focus-inner, .cadviewer-bootstrap input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.cadviewer-bootstrap input {
+  line-height: 22px;
+  /*8.45.2*/
+  border-radius: 0px !important;
+  border-width : 1px !important;
+  border-color: #000 !important;
+}
+.cadviewer-bootstrap input[type="checkbox"], .cadviewer-bootstrap input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  border-radius: 0px;
+  height: 20px !important;
+}
+.cadviewer-bootstrap input[type="number"]::-webkit-inner-spin-button, .cadviewer-bootstrap input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+
+  border-radius: 3px;
+
+}
+.cadviewer-bootstrap input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.cadviewer-bootstrap input[type="search"]::-webkit-search-cancel-button, .cadviewer-bootstrap input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+.cadviewer-bootstrap fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+.cadviewer-bootstrap legend {
+  border: 0;
+  padding: 0;
+}
+.cadviewer-bootstrap textarea {
+  overflow: auto;
+}
+.cadviewer-bootstrap optgroup {
+  font-weight: bold;
+}
+.cadviewer-bootstrap table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.cadviewer-bootstrap td, .cadviewer-bootstrap th {
+  padding: 0;
+}
+.cadviewer-bootstrap * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.cadviewer-bootstrap *:before, .cadviewer-bootstrap *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.cadviewer-bootstrap html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.cadviewer-bootstrap input, .cadviewer-bootstrap button, .cadviewer-bootstrap select, .cadviewer-bootstrap textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+
+  /*8.45.2*/
+  border-radius: 0px !important;
+  border-width : 1px !important;
+  border-color: #000 !important;
+
+}
+.cadviewer-bootstrap a {
+  color: #337ab7;
+  text-decoration: none;
+}
+.cadviewer-bootstrap #floorPlan_svg a:hover, .cadviewer-bootstrap #floorPlan_svg a:focus {
+  color: #23527c;
+  text-decoration: underline;
+}
+.cadviewer-bootstrap a:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.cadviewer-bootstrap figure {
+  margin: 0;
+}
+.cadviewer-bootstrap img {
+  vertical-align: middle;
+}
+.cadviewer-bootstrap .img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.cadviewer-bootstrap .img-rounded {
+  border-radius: 6px;
+}
+.cadviewer-bootstrap .img-thumbnail {
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+.cadviewer-bootstrap .img-circle {
+  border-radius: 50%;
+}
+.cadviewer-bootstrap hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
+.cadviewer-bootstrap .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.cadviewer-bootstrap .sr-only-focusable:active, .cadviewer-bootstrap .sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+.cadviewer-bootstrap [role="button"] {
+  cursor: pointer;
+}
+.cadviewer-bootstrap .caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-top: 4px solid \9;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+.cadviewer-bootstrap .dropup, .cadviewer-bootstrap .dropdown {
+  position: relative;
+}
+.cadviewer-bootstrap .dropdown-toggle:focus {
+  outline: 0;
+}
+.cadviewer-bootstrap .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #ffffff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #cccccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+.cadviewer-bootstrap .dropdown-menu.pull-right {
+  right: 0;
+  left: auto;
+}
+.cadviewer-bootstrap .dropdown-menu .divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+.cadviewer-bootstrap .dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: #333333;
+  white-space: nowrap;
+}
+.cadviewer-bootstrap .dropdown-menu > li > a:hover, .cadviewer-bootstrap .dropdown-menu > li > a:focus {
+  color: #262626;
+  text-decoration: none;
+  background-color: #f5f5f5;
+}
+.cadviewer-bootstrap .dropdown-menu > .active > a, .cadviewer-bootstrap .dropdown-menu > .active > a:hover, .cadviewer-bootstrap .dropdown-menu > .active > a:focus {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #337ab7;
+  outline: 0;
+}
+.cadviewer-bootstrap .dropdown-menu > .disabled > a, .cadviewer-bootstrap .dropdown-menu > .disabled > a:hover, .cadviewer-bootstrap .dropdown-menu > .disabled > a:focus {
+  color: #777777;
+}
+.cadviewer-bootstrap .dropdown-menu > .disabled > a:hover, .cadviewer-bootstrap .dropdown-menu > .disabled > a:focus {
+  text-decoration: none;
+  cursor: not-allowed;
+  background-color: transparent;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.cadviewer-bootstrap .open > .dropdown-menu {
+  display: block;
+}
+.cadviewer-bootstrap .open > a {
+  outline: 0;
+}
+.cadviewer-bootstrap .dropdown-menu-right {
+  right: 0;
+  left: auto;
+}
+.cadviewer-bootstrap .dropdown-menu-left {
+  right: auto;
+  left: 0;
+}
+.cadviewer-bootstrap .dropdown-header {
+  display: block;
+  padding: 3px 20px;
+  font-size: 12px;
+  line-height: 1.42857143;
+  color: #777777;
+  white-space: nowrap;
+}
+.cadviewer-bootstrap .dropdown-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 990;
+}
+.cadviewer-bootstrap .pull-right > .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+.cadviewer-bootstrap .dropup .caret, .cadviewer-bootstrap .navbar-fixed-bottom .dropdown .caret {
+  content: "";
+  border-top: 0;
+  border-bottom: 4px dashed;
+  border-bottom: 4px solid \9;
+}
+.cadviewer-bootstrap .dropup .dropdown-menu, .cadviewer-bootstrap .navbar-fixed-bottom .dropdown .dropdown-menu {
+  top: auto;
+  bottom: 100%;
+  margin-bottom: 2px;
+}
+@media (min-width: 768px) {
+  .cadviewer-bootstrap .navbar-right .dropdown-menu {
+    right: 0;
+    left: auto;
+  }
+  .cadviewer-bootstrap .navbar-right .dropdown-menu-left {
+    right: auto;
+    left: 0;
+  }
+}
+.cadviewer-bootstrap .clearfix:before, .cadviewer-bootstrap .clearfix:after {
+  display: table;
+  content: " ";
+}
+.cadviewer-bootstrap .clearfix:after {
+  clear: both;
+}
+.cadviewer-bootstrap .center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.cadviewer-bootstrap .pull-right {
+  float: right !important;
+}
+.cadviewer-bootstrap .pull-left {
+  float: left !important;
+}
+.cadviewer-bootstrap .hide {
+  display: none !important;
+}
+.cadviewer-bootstrap .show {
+  display: block !important;
+}
+.cadviewer-bootstrap .invisible {
+  visibility: hidden;
+}
+.cadviewer-bootstrap .text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.cadviewer-bootstrap .hidden {
+  display: none !important;
+}
+.cadviewer-bootstrap .affix {
+  position: fixed;
+}
