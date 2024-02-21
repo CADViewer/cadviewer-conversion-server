@@ -1,6 +1,6 @@
 {
     "ServerPort" : 3000,
-    "ServerUrl" : "http://localhost:3000/",
+    "ServerUrl" : "http://localhost:3000",
     "https" : false,
     "ServerFrontEndUrl" : "",
     "ServerFrontEndUrlAsAllowedOriginOnly" : false,
@@ -50,7 +50,7 @@
     "fileLoad_UserName" : "myusername",
     "fileLoad_Password" : "mypassword",
     "contentLocationCheck" : true,
-    "version" : "v9.45.4",
+    "version" : "v9.46.4",
     "folderLocation" : "/nodejs/cadviewer-conversion-server/content/",
     "jwtSecretKey" : "a45f6g7h8j9k0l193skdlmdj",
     "bcryptSaltRounds" : 10,

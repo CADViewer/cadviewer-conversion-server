@@ -1,4 +1,4 @@
-var version = "CADViewer Server v9.45.4";
+var version = "CADViewer Server v9.46.4";
 const express = require('express');
 const httprequest = require('request');
 const app = express();
@@ -42,7 +42,7 @@ try{
     var makethumbnails = require("./routes/makethumbnails_cv6.5.8.js");
     var temp_print = require("./routes/temp_print_cv7.1.16.js");
     var files = require("./routes/files_cv9.7.1.js");
-    var loadfile = require("./routes/loadfile_cv7.7.11.js");
+    var loadfile = require("./routes/loadfile_cv9.46.4.js");
     var directload = require("./routes/directload_cv7.1.16.js");
     var directloadcadviewer = require("./routes/directloadcadviewer_cv7.1.16.js");
     
@@ -163,8 +163,8 @@ if (config.autodetect_location){
 
 
         config.converterLocation = config.ServerLocation + config.converterLocation + config.converterpathLin;
-        config.linklistLocation = config.ServerLocation + config.linklistLocation + config.converterpathWin;
-        config.dwgmergeLocation = config.ServerLocation + config.dwgmergeLocation + config.converterpathWin;
+        config.linklistLocation = config.ServerLocation + config.linklistLocation + config.converterpathLin;
+        config.dwgmergeLocation = config.ServerLocation + config.dwgmergeLocation + config.converterpathLin;
 
         config.licenseLocation = config.ServerLocation + config.licenseLocation + config.converterpathLin;
     }

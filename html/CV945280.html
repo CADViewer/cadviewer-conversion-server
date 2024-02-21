@@ -7,7 +7,7 @@
     <link rel="icon" href="https://cadviewer.com/images/cvlogo.png">
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="generator" content="TMS" />
-    <meta name="created" content="Feb, 20 Mar 2024 07:14:30 GMT" />
+    <meta name="created" content="Wed, 29 Mar 2023 07:14:30 GMT" />
     <meta name="description" content="Tailor Made Software  - CADViewer Online Sample " />
     <meta name="keywords" content="" />
 
@@ -56,17 +56,16 @@
 	<script src="/app/js/qrcode.min.js" type="text/javascript"></script> 
 
 	
-	<script type="text/javascript" nonce="INSERTNONCE">
+	<script type="text/javascript" nonce="KHGBfiOQL0gZOKwLSjiOog==">
 
 	
-
 	// Location of installation folders
-    var ServerBackEndUrl = window.location.protocol+"//"+window.location.hostname+":"+window.location.port;   // remove /
-    var ServerUrl = window.location.protocol+"//"+window.location.hostname+":"+window.location.port;
+    var ServerBackEndUrl = window.location.protocol+"//"+window.location.hostname+":"+window.location.port+"/";
+    var ServerUrl = window.location.protocol+"//"+window.location.hostname+":"+window.location.port+"/";
     
 	
-    var ServerBackEndUrl = "INSERTSERVERBACKEND";
-    var ServerUrl = "INSERTSERVERURL";
+    var ServerBackEndUrl = "http://127.0.0.1:3000/";
+    var ServerUrl = "http://127.0.0.1:3000/";
 	
 
 	
@@ -93,14 +92,7 @@
 		}
 
 
-		FileName="INSERTFILENAME";/*INSERT THE FILENAME*/ 
-
-
-		// 9.46.3      remove garbage
-		FileName = FileName.replaceAll("//", "/");
-		FileName = FileName.replaceAll(":/", "://");
-
-
+		FileName="http://localhost:3000//converters/files//F42a4e7ec9bfddd511ce1d7f9b92c9c9bb0162d68.svg";/*INSERT THE FILENAME*/ 
 		if (cvjs_debug) console.log("loading file:"+FileName);
 
 		cvjs_CADViewerPro(true);

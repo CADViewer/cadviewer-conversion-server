@@ -14,11 +14,11 @@ function loadFile(req,res){
         //var origin = req.headers.origin;   - we cannot get the headers.origin , so we only allow from config
         if (config.ServerFrontEndUrlAsAllowedOriginOnly == true) {
             res.setHeader('Access-Control-Allow-Origin', config.ServerFrontEndUrl);
-            if (cvjs_debug) console.log('Access-Control-Allow-Origin :'+config.ServerFrontEndUrl)
+//            if (cvjs_debug) console.log('Access-Control-Allow-Origin :'+config.ServerFrontEndUrl)
         }
         else{
             res.setHeader('Access-Control-Allow-Origin', '*');
-            if (cvjs_debug )console.log('Access-Control-Allow-Origin : *')
+//            if (cvjs_debug )console.log('Access-Control-Allow-Origin : *')
         }
 
 
@@ -26,7 +26,7 @@ function loadFile(req,res){
 		res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type'); // If needed
 		res.setHeader('Access-Control-Allow-Credentials', true); // If needed	
 		
-		if (config.cvjs_debug) console.log("get-post /loadfile");
+//		if (config.cvjs_debug) console.log("get-post /loadfile");
 
 		var inputFile = req.body.file;
 		
@@ -40,7 +40,6 @@ function loadFile(req,res){
 		}			
 
 
-		if (config.cvjs_debug) console.log('1: /loadfile: '+inputFile+"  loadtype= "+loadtype);
 	
         
 		inputFile = decodeURI(inputFile);
@@ -50,7 +49,10 @@ function loadFile(req,res){
         inputFile = inputFile.replaceAll("+", ' ');
 
 
-        console.log("inputFile="+inputFile);
+		if (config.cvjs_debug) console.log('1: /loadfile: '+inputFile+"  loadtype= "+loadtype);
+
+
+        //console.log("/loadfile:"+inputFile);
 	
 		if (inputFile.indexOf(config.ServerFrontEndUrl)==0 && (inputFile.indexOf(config.ServerUrl)!=0)){
             // the ServerFrontEndUrl is replaced with ServerLocation
@@ -81,7 +83,7 @@ function loadFile(req,res){
             }			
         }
     
-		if (config.cvjs_debug) console.log('2:  /loadfile: '+inputFile+"   ");
+//		if (config.cvjs_debug) console.log('2:  /loadfile: '+inputFile+"   ");
 
         var fs = require('fs');
 
@@ -179,7 +181,7 @@ function loadFile(req,res){
             else
                 res.setHeader('Content-Type', 'text/plain')
 
-            if (cvjs_debug) console.log("3:"+outputFormat);
+            //if (cvjs_debug) console.log("3:"+outputFormat);
 
             res.send(data);	
 

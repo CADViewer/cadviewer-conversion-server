@@ -195,7 +195,7 @@ var express = require('express'),
 
           // 6.8.89
           var remainOnServer = 0;
-          if (config.remainOnServer) remainOnServer = 1;
+          if (config.remainOnServer == true) remainOnServer = 1;
           if (customConversionEndpointExtension) remainOnServer = 1; // we keep on server for first load of endpoint
 
 
