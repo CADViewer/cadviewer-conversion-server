@@ -69,7 +69,15 @@
     var ServerUrl = "INSERTSERVERURL";
 	
 
-	
+	// 9.46.3      remove garbage
+	ServerBackEndUrl = ServerBackEndUrl.replaceAll("//", "/");
+	ServerBackEndUrl = ServerBackEndUrl.replaceAll(":/", "://");
+
+
+	ServerUrl = ServerUrl.replaceAll("//", "/");
+	ServerUrl = ServerUrl.replaceAll(":/", "://");
+
+
 	var ServerLocation = "";
 
 	// PATH and FILE to be loaded, can be in formats DWG, DXF, DWF, SVG , JS, DGN, PCF, JPG, GIF, PNG

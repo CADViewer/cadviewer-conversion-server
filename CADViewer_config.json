@@ -38,7 +38,7 @@
 	"linklist2023_executable_windows" : "LinkList_2024_W64_24_01_03.exe",
 	"linklist2023_executable_linux" : "LinkList_2024_L64_24_01_03",
     "custom_bearerAutentication" : "d5d483e8-2f8d-463e-cc01-f41a78b1d94c",
-    "custom_postFixServerToken" : "?dummy",
+    "custom_postFixServerToken" : "?sv=dummy&se=dummy",
     "setup_mysqlHost" : false,
     "mysqlHost" : "localhost",
     "mysqlUsername" : "root",
@@ -54,6 +54,6 @@
     "folderLocation" : "/nodejs/cadviewer-conversion-server/content/",
     "jwtSecretKey" : "a45f6g7h8j9k0l193skdlmdj",
     "bcryptSaltRounds" : 10,
-    "globalApplicationSasToken" : "?sv=2023-01-03&st=2024-01-16T20%3A40%3A47Z&se=2024-01-17T20%3A40%3A47Z&sr=b&sp=r&sig=g%2F80tHTqun%2FE8Bb9ltGt4HC5FaqlN2ZXuOn7F1hj5h8%3D"
+    "globalApplicationSasToken" : "?sv=dummy&se=dummy"
 }	
 	
