@@ -20,9 +20,9 @@
     "converterpathWin": "windows/",
     "converterpathLin": "linux/",
     "fontLocation" : "fonts/",
-    "ax2024_executable" : "AX2024_W64_24_07_129b.exe",
-    "ax2024_executable_windows" : "AX2024_W64_24_07_129b.exe",
-    "ax2024_executable_linux" : "ax2023_L64_23_12_129",
+    "ax2024_executable" : "AX2024_W64_24_07_130.exe",
+    "ax2024_executable_windows" : "AX2024_W64_24_07_130.exe",
+    "ax2024_executable_linux" : "ax2023_L64_23_12_130",
     "licenseLocation" : "/converters/ax2024/",
     "xpathLocation" : "/converters/xpath/",
     "temp_print_folder" : "/temp_print",
@@ -38,7 +38,7 @@
 	"linklist2023_executable_windows" : "LinkList_2024_W64_24_01_03.exe",
 	"linklist2023_executable_linux" : "LinkList_2024_L64_24_01_03",
     "custom_bearerAutentication" : "d5d483e8-2f8d-463e-cc01-f41a78b1d94c",
-    "custom_postFixServerToken" : "?sv=dummy&se=dummy",
+    "custom_postFixServerToken" : "?si=dummy&se=dummy",
     "setup_mysqlHost" : false,
     "mysqlHost" : "localhost",
     "mysqlUsername" : "root",
@@ -50,10 +50,10 @@
     "fileLoad_UserName" : "myusername",
     "fileLoad_Password" : "mypassword",
     "contentLocationCheck" : true,
-    "version" : "v9.46.4",
-    "folderLocation" : "/nodejs/cadviewer-conversion-server/content/",
+    "version" : "v9.47.12",
+    "folderLocation" : "/nodejs/cadviewer-conversion-server/content",
     "jwtSecretKey" : "a45f6g7h8j9k0l193skdlmdj",
     "bcryptSaltRounds" : 10,
-    "globalApplicationSasToken" : "?sv=dummy&se=dummy"
+    "globalApplicationSasToken" : "?si=dummy&se=dummy"
 }	
 	

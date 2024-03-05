@@ -1,4 +1,4 @@
-var version = "CADViewer Server v9.46.4";
+var version = "CADViewer Server v9.47.12";
 const express = require('express');
 const httprequest = require('request');
 const app = express();
@@ -7,6 +7,11 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const fs = require('fs');
 const os = require('os');
+
+//
+var cors = require('cors');
+app.use(cors())
+
 
 var config = require('./CADViewer_config.json');
 
@@ -73,7 +78,7 @@ var listdirectory = require("./routes/listdirectory_cv9.1.6.js");
 var listdirectoryredlines = require("./routes/listdirectoryredlines_cv9.1.5.js");
 var loadredline = require("./routes/loadredlines_cv7.1.17.js");
 var listdwgdirectory = require("./routes/listdwgdirectory_cv9.40.2.js");
-var plans = require('./routes/plans_cv9.40.2.js');
+var plans = require('./routes/plans_cv9.47.1.js');
 
 var listdatabasedata ;
 var authentification ;
@@ -279,8 +284,14 @@ if (true){
         inputFile = inputFile.replace(/%2F/g, '/');
         inputFile = inputFile.replace(/%20/g, ' ');
         
-            inputFile = config.ServerLocation + inputFile
-                
+        inputFile = config.ServerLocation + inputFile
+        
+        
+        // 9.47.6      remove garbage
+        inputFile = inputFile.replaceAll("//", "/");
+        //inputFile = inputFile.replaceAll(":/", "://");
+
+
             var fs = require('fs');
             fs.readFile( inputFile, 'utf8', function(err, data) {
                 if (err){

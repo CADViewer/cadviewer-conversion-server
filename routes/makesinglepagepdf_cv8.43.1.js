@@ -95,7 +95,7 @@ router.post('/makesinglepagepdf', (req, res) => {
                             // node couldn't execute the command
                             if (config.cvjs_debug) console.log("Error exec(): "+err);
                             // error handling, method response with error 
-                            res.send("error - makesinglepagepdf");  // no file
+                            res.send("error - makesinglepagepdf exec(): "+err);  // no file
 
                             //return;    7.1.3  , error handled by err, 
                           }
@@ -137,7 +137,7 @@ router.post('/makesinglepagepdf', (req, res) => {
     
         }
         catch (e) {
-            res.send("error - makesinglepagepdf");  // no file
+            res.send("error - makesinglepagepdf (e)"+e);  // no file
             if (config.cvjs_debug) console.log(e);
         }
     });
