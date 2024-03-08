@@ -11,7 +11,7 @@ var fs = require('fs');   // 8.19.1
 // 9.5.2
 var response_serverUrl = "";
 
-var customendpointextension = require('./cvjs_customConversionEndpointExtension_cv9.39.2.js');
+var customendpointextension = require('./cvjs_customConversionEndpointExtension_cv9.47.14.js');
 
 var customConversionEndpointExtension = false;
 var setPostFixServerToken = false;
@@ -359,9 +359,16 @@ var express = require('express'),
                 var fileFormat = ".none";	
                 fileFormat = get_file_format(contentLocation);
 
-                            
+
+                
+
+
                 var newcontentLocation = config.fileLocation + tempFileName + fileFormat;			
                 var fs = require('fs');
+
+
+                if (cvjs_debug) console.log("newcontentlocation BEFORE HTTP BRANCH "+newcontentLocation);
+
 
                 // 7.2.5  - add password check
                 if (config.fileLoad_PasswordAuthentication == true){
@@ -862,13 +869,21 @@ var express = require('express'),
 
     function cvjs_returnIfSVGhttp(contentLocation, tempFileName, res){   // 8.37.1
 
-            // 6.2.69 
             // if it is an SVG on the server then we simply echo it back up
-            if (contentLocation.indexOf("http:")==-1  && contentLocation.indexOf("https:")==-1){
+
+            //  how could this happen!!!
+//            if (contentLocation.indexOf("http:")==-1  && contentLocation.indexOf("https:")==-1){
+
+            // 9.47.14
+            if (contentLocation.indexOf("http:")==-1  || contentLocation.indexOf("https:")==-1){
                 var fileFormatFlag = contentLocation.toLowerCase().lastIndexOf(".svg");
-                if (cvjs_debug) console.log("fileFormatFlag: "+fileFormatFlag);
+                if (cvjs_debug) console.log("cvjs_returnIfSVGhttp()  fileFormatFlag: "+fileFormatFlag);
                 var fileFormat = ".none";			
     
+
+                // what if svgz ?
+
+
                 if (fileFormatFlag>-1){   // we have svg
                     fileFormat = ".svg";
     
@@ -1099,6 +1114,8 @@ var express = require('express'),
             }
 
 
+            if (config.cvjs_debug) console.log("Z2: hostname="+hostname);
+
             // 8.77.6
             var contentLocationCheck = true;
             if (config.contentLocationCheck != undefined) 
@@ -1114,9 +1131,18 @@ var express = require('express'),
                 hostname = contentLocation;
             }
 
+         
+            // 9.47.14
+            //if (setPostFixServerToken) 
+            // 9.47.14  - we set to check the content location, not the host
+            hostname = contentLocation;
 
+            if (config.cvjs_debug) console.log("Z2A: before urlExists hostname:"+hostname);
+
+            //urlExists(hostname, function(err, exists) {
             urlExists(hostname, function(err, exists) {
-                console.log(config.version+": exists= "+exists+"  "+hostname); // true 
+
+                console.log(config.version+": Z3: urlExists: exists= "+exists+"  "+hostname); // true 
 
                 if (exists)
                     httprequest(contentLocation).pipe(fs.createWriteStream(newcontentLocation))
@@ -1139,7 +1165,7 @@ var express = require('express'),
                     })
                     .on('finish', () => {
 
-                        console.log('Finish httprequest('+contentLocation+") newLocation = "+newcontentLocation);
+                        console.log('Finish httprequest('+contentLocation+") newLocation = "+newcontentLocation+" fileformat="+fileFormat);
 
                         // 9.20.1
                         if(!fs.existsSync(newcontentLocation)) {
@@ -1163,7 +1189,6 @@ var express = require('express'),
                                 return;
                             }
     
-
 
                             contentLocation = newcontentLocation;
                             // if SVG we simply tell the front to pick it up the file back up from its new location
@@ -1203,7 +1228,7 @@ var express = require('express'),
 
 
                     // 8.77.5
-                    console.log(config.version+' AX contentLocationCheck after UrlExits check:'+contentLocationCheck);
+                    console.log(config.version+' cvjs_downloadCADfromhttp_and_execute() contentLocationCheck after UrlExits check:'+contentLocationCheck);
 
                     // if no content location check, we pass over the standard file load process
                     if (!contentLocationCheck){
@@ -1256,12 +1281,12 @@ var express = require('express'),
                                         return;
                                     }
         
-
+                                    // 9.47.14
                                     contentLocation = newcontentLocation;
                                     // if SVG we simply tell the front to pick it up the file back up from its new location
                                     if ( fileFormat == ".svg"){
             
-                                        console.log(config.version+'AX httprequest OK, pick up svg contentLocationCheck after UrlExits check:'+config.contentLocationCheck);
+                                        console.log(config.version+' Z7: SVG cvjs_downloadCADfromhttp_and_execute() httprequest OK, pick up svg contentLocationCheck after UrlExits check:'+config.contentLocationCheck);
                                         
                                         // 8.33.1 
                                         var fullcallback = "";
@@ -1277,7 +1302,41 @@ var express = require('express'),
                                         // send callback message and terminate
                                         res.send(CVJSresponse);
                                         return;
-                                    }          
+                                    }   
+
+                                    
+
+                                    // 9.47.14
+                                    // if SVGZ we simply tell the front to pick it up the file back up from its new location
+                                    if ( fileFormat == ".svgz"){
+            
+                                        console.log(config.version+' Z8: SVGZcvjs_downloadCADfromhttp_and_execute() httprequest OK, pick up svg contentLocationCheck after UrlExits check:'+config.contentLocationCheck);
+                                        
+                                        // 8.33.1 
+                                        var fullcallback = "";
+                                        if (config.callbackMethod_gatewayUrl_flag){
+                                            fullcallback =  config.callbackMethod_gatewayUrl +"/"+config.callbackMethod
+                                        }
+                                        else 
+                                            fullcallback = response_serverUrl+"/"+config.callbackMethod;
+            
+                                        var CVJSresponse = "{\"completedAction\":\"svg_creation\",\"errorCode\":\"E"+0+"\",\"converter\":\"AutoXchange AX2020\",\"version\":\"V1.00\",\"userLabel\":\"fromCADViewerJS\",\"tempFile\":\""+tempFileName+"."+outputFormat+"\",\"contentLocation\":\""+contentLocationOrg+"\",\"contentResponse\":\"stream\",\"contentStreamData\":\""+fullcallback+"?remainOnServer=1&fileTag="+tempFileName+"&Type=svgz\"}";
+                        
+                                        if (config.cvjs_debug) console.log(CVJSresponse);
+                                        // send callback message and terminate
+                                        res.send(CVJSresponse);
+                                        return;
+                                    }   
+
+
+
+
+
+
+
+
+                                    
+                                    if (config.cvjs_debug) console.log("Z6: all other checks done: cvjs_buildcommandline_and_execute()")
                                     // execute
                                     cvjs_buildcommandline_and_execute(outputFormat,contentLocation, parameters, res, writeFile, action, tempFileName);
     
@@ -1294,7 +1353,7 @@ var express = require('express'),
                         catch(err_content){
                             console.log("error httprequest contentLocationCheck false:")+err_content;
 
-                            console.log('AX: location does not exist:'+contentLocation);
+                            console.log('Z4: cvjs_downloadCADfromhttp_and_execute(): location does not exist:'+contentLocation);
 
                             // 8.33.1 
                             var fullcallback = "";
@@ -1316,7 +1375,7 @@ var express = require('express'),
                     }
                     else{
 
-                        console.log('AX: location does not exist:'+contentLocation);
+                        console.log('Z5:  AX: location does not exist:'+contentLocation);
 
                         // 8.33.1 
                         var fullcallback = "";
@@ -1527,7 +1586,7 @@ var express = require('express'),
         // 8.77.4
         var contentLocationCheck = true;
         if (config.contentLocationCheck != undefined) contentLocationCheck = config.contentLocationCheck;
-        if (config.cvjs_debug) console.log("9.45.2:  contentLocationCheck="+contentLocationCheck+" "+contentLocation+"  "+config.ServerUrl);
+        if (config.cvjs_debug) console.log(config.version+":  contentLocationCheck="+contentLocationCheck+" "+contentLocation+"  "+config.ServerUrl);
 
 
         // 6.8.65 we only substitute for the back-end, if front-end then user controlled
@@ -1539,9 +1598,13 @@ var express = require('express'),
         if (config.cvjs_debug) console.log("callapiconversion  contentLocation:"+contentLocation+" frontEnd:"+config.ServerFrontEndUrl+"  ServerUrl:"+config.ServerUrl);
 
 
+        // 9.47.14 -this check is done in the conversion section
         // echo back SVG file if http/https
-        if (cvjs_returnIfSVGhttp(contentLocation, tempFileName, res)) return;
-        
+        //if (cvjs_debug) console.log("before cvjs_returnIfSVGhttp()");
+        //if (cvjs_returnIfSVGhttp(contentLocation, tempFileName, res)) return;
+        //if (cvjs_debug) console.log("after cvjs_returnIfSVGhttp() - standard PDF or CONVERSION process ");
+
+
         // in case of pdf creation, we make temp dir + filename similar to php setup
         // 6.1.25 / 25
         if (action == "pdf_creation"){
@@ -1585,6 +1648,8 @@ var express = require('express'),
         else{
             // 6.2.37 - If http file, then it must be downloaded to server	
             if (contentLocation.indexOf("http:")>-1  || contentLocation.indexOf("https:")>-1){  // download file
+
+                if (config.cvjs_debug) console.log("Z1:  before cvjs_downloadCADfromhttp_and_execute()");
                 cvjs_downloadCADfromhttp_and_execute(outputFormat,contentLocation, parameters, tempFileName, res, writeFile, action);                  
             }
             else{  // standard execution from CAD server repository

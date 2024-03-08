@@ -39,7 +39,8 @@ async function getResponse(proxyUrl) {
 	}
 
     const data = await response.json(); // Extracting data as a JSON Object from the response
-    // console.log("get response "+JSON.stringify(data));
+    //console.log("get response "+JSON.stringify(data));
+    console.log("plans_cv9.47.1.js - get response JSON loaded");
     return data;
 }
 
