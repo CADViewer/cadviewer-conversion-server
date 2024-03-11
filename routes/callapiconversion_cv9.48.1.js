@@ -11,7 +11,7 @@ var fs = require('fs');   // 8.19.1
 // 9.5.2
 var response_serverUrl = "";
 
-var customendpointextension = require('./cvjs_customConversionEndpointExtension_cv9.47.14.js');
+var customendpointextension = require('./cvjs_customConversionEndpointExtension_cv9.48.1.js');
 
 var customConversionEndpointExtension = false;
 var setPostFixServerToken = false;
@@ -1432,6 +1432,13 @@ var express = require('express'),
     function cvjs_processConversion_pdf_svg_cadviewerdisplay(cvjsRequestJSON, res, action){
 
 
+
+        // 9.48.1 we set the contentlocationOrg to the actual filename
+        contentLocationOrg = cvjsRequestJSON.contentLocation;
+        contentLocationOrg = clean_contentLocation(contentLocationOrg);
+        console.log("after clean: "+contentLocationOrg);
+
+
         try{
             if (cvjsRequestJSON.setPostFixServerToken!=undefined && cvjsRequestJSON.setPostFixServerToken!=""){
                 setPostFixServerToken = cvjsRequestJSON.setPostFixServerToken;
@@ -1447,9 +1454,6 @@ var express = require('express'),
 
 
         // 
-        contentLocationOrg = cvjsRequestJSON.contentLocation;
-        contentLocationOrg = clean_contentLocation(contentLocationOrg);
-        console.log("after clean: "+contentLocationOrg);
         var contentLocation = cvjsRequestJSON.contentLocation;
 
         customConversionEndpointExtension = cvjsRequestJSON.customConversionEndpointExtension;
