@@ -11,7 +11,7 @@ var fs = require('fs');   // 8.19.1
 // 9.5.2
 var response_serverUrl = "";
 
-var customendpointextension = require('./cvjs_customConversionEndpointExtension_cv9.48.1.js');
+var customendpointextension = require('./cvjs_customConversionEndpointExtension_cv9.48.2.js');
 
 var customConversionEndpointExtension = false;
 var setPostFixServerToken = false;
@@ -728,6 +728,25 @@ var express = require('express'),
     function cvjs_buildcommandline_and_execute(outputFormat,contentLocation, parameters, res, writeFile, action, tempFileName){
 
         // building the command line
+
+        var serverloc = config.ServerLocation;
+        if (serverloc.indexOf(":")>-1) serverloc = serverloc.substring(serverloc.indexOf(":")+1);
+
+
+        if (config.cvjs_debug) console.log("cvjs_buildcommandline_and_execute() "+contentLocation+" contentLocation.indexOf(config.ServerLocation)"+contentLocation.indexOf(serverloc)+"  "+serverloc+"  "+setPostFixServerToken);
+
+
+
+        // 9.48.2 if we have a server path, and we have concatenated a SAS token, then we remove, because we are on our own server
+        if ((contentLocation.indexOf(serverloc)>-1) && setPostFixServerToken){
+            contentLocation = contentLocationOrg;
+            if (config.cvjs_debug) console.log("cvjs_buildcommandline_and_execute() : contentLocation:"+contentLocation);
+
+        }
+    
+        // we strip out the 
+
+
 
 
         // 9.23.1
@@ -1470,8 +1489,6 @@ var express = require('express'),
         var contentResponse= cvjsRequestJSON.contentResponse;
         var leaveStreamOnServer= cvjsRequestJSON.leaveStreamOnServer;
         */
-
-
 
 
 
