@@ -1,6 +1,6 @@
 {
     "ServerPort" : 3000,
-    "ServerUrl" : "http://localhost:3000",
+    "ServerUrl" : "http://0.0.0.0:3000",
     "https" : false,
     "ServerFrontEndUrl" : "",
     "ServerFrontEndUrlAsAllowedOriginOnly" : false,

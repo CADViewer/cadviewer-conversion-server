@@ -1,11 +1,18 @@
 const fs = require("fs");
 const path = require("path");
-var config = require("../CADViewer_config.json");
+const config = require("../CADViewer_config.json");
+const verifyTokenOptional = require("../libs/jwt").verifyTokenOptional;
 
-var show_folders = false;
-var express = require("express"),
+const show_folders = false;
+const express = require("express"),
 	router = express.Router();
 
+
+// create a directory uploads in the root of the project if it doesn't exist
+const dir = './uploads';
+if (!fs.existsSync(dir)) {
+	fs.mkdirSync(dir);
+}
 
 const sortFoldersFirst = (a, b) => {
 	if (a.children && !b.children) {
@@ -50,12 +57,27 @@ const listFolderStructure = (directoryPath, indent = '') => {
 	return dirs.sort(sortFoldersFirst);
 }
 
-router.get("", (req, res) => {
+router.get("", verifyTokenOptional, (req, res) => {
 	const folderLocation = config.folderLocation;
 
     console.log("in listFolderStructure folderLocation="+folderLocation+" show_folders:"+show_folders+"cvhs_debug:"+config.cvjs_debug);
 
-	const dirs = listFolderStructure(folderLocation);
+	let dirs = listFolderStructure(folderLocation);
+	// load user data directory structure if user is logged in
+	if (req.user) {
+		const userDir = req.user.email.replace(/[@._]/g, '');
+		const userDirPath = `./uploads/${userDir}`;
+		if (fs.existsSync(userDirPath)) {
+			const userDirs = listFolderStructure(userDirPath);
+			dirs = [
+				{
+					own: true,
+					name: "MY FOLDER",
+					path: userDirPath,
+					children: userDirs,
+				}, ...dirs];
+		}
+	}
 	res.send(dirs);
 });
 

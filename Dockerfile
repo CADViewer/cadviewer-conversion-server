@@ -13,6 +13,6 @@ RUN npm i -g nodemon
 COPY . .
 
 RUN npm rebuild bcrypt --build-from-source
-EXPOSE 3005
+EXPOSE 3000
 
 CMD [ "npm", "start" ]

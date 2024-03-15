@@ -1,11 +1,35 @@
 version: '3.2'
 
+volumes:
+  db:
+
 services:
 
+  db:
+    image: mariadb:10.6
+    restart: always
+    command: --transaction-isolation=READ-COMMITTED --log-bin=binlog --binlog-format=ROW
+    volumes:
+      - db:/var/lib/mysql
+    environment:
+      - MARIADB_ROOT_PASSWORD=root
+      - MYSQL_PASSWORD=root
+      - MYSQL_DATABASE=visualquery
+      - MYSQL_USER=visualquery
+      - MARIADB_ALLOW_EMPTY_ROOT_PASSWORD=true
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8084:8080
+
   cadviewer_node:
+    platform: linux/amd64
     build: .
     restart: always
     ports:
-      - 3005:3005
-    # volumes:
-    #   - ./:/usr/src/app
+      - "3000:3000"
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules

@@ -3,3 +3,4 @@ tmp
 photos/
 node_modules/
 converters/files/*
+uploads/*

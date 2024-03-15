@@ -1,7 +1,9 @@
 var version = "CADViewer Server v9.48.2";
 const express = require('express');
+const cors = require('cors');
 const httprequest = require('request');
 const app = express();
+
 const bodyParser = require('body-parser');
 
 const path = require('path');
@@ -17,7 +19,7 @@ var config = require('./CADViewer_config.json');
 
 // serve static files  - pull /app/ content from /cadviewer folder
 app.use(express.static('cadviewer'))
-
+app.use(cors());
 
 const https = require('https');
 /* HOW TO GENERATE A TEST SSL CERTIFICATE FOR HTTPS
@@ -82,12 +84,13 @@ var plans = require('./routes/plans_cv9.47.1.js');
 
 var listdatabasedata ;
 var authentification ;
-
+var file_upload;
 
 try{
     if (config.setup_mysqlHost){
         listdatabasedata = require("./routes/listdatabasedata_cv9.24.1.js");
         authentification = require("./routes/authentification_cv9.5.2.js");
+        file_upload = require("./routes/file_upload_cv9.5.2.js");
     }
 }
 catch(db_err){
@@ -337,7 +340,7 @@ if (true){
         if (config.setup_mysqlHost){
             app.use('/database', listdatabasedata);
             app.use('/auth', authentification);
-
+            app.use('/upload', file_upload);
         }
 
 
