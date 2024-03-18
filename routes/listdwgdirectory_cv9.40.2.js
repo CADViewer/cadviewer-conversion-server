@@ -67,16 +67,17 @@ router.get("", verifyTokenOptional, (req, res) => {
 	if (req.user) {
 		const userDir = req.user.email.replace(/[@._]/g, '');
 		const userDirPath = `./uploads/${userDir}`;
-		if (fs.existsSync(userDirPath)) {
-			const userDirs = listFolderStructure(userDirPath);
-			dirs = [
-				{
-					own: true,
-					name: "MY FOLDER",
-					path: userDirPath,
-					children: userDirs,
-				}, ...dirs];
+		if (!fs.existsSync(userDirPath)) {
+			fs.mkdirSync(userDirPath);
 		}
+		const userDirs = listFolderStructure(userDirPath);
+		dirs = [
+			{
+				own: true,
+				name: "MY FOLDER",
+				path: userDirPath,
+				children: userDirs,
+			}, ...dirs];
 	}
 	res.send(dirs);
 });
