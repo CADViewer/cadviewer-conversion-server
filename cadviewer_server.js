@@ -1,4 +1,4 @@
-var version = "CADViewer Server v9.49.2";
+var version = "CADViewer Server v9.49.4";
 const express = require('express');
 const cors = require('cors');
 const httprequest = require('request');
