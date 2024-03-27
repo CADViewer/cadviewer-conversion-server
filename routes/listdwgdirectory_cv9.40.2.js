@@ -6,6 +6,8 @@ const verifyTokenOptional = require("../libs/jwt").verifyTokenOptional;
 const show_folders = false;
 const express = require("express"),
 	router = express.Router();
+const conn = require("../libs/mysql");
+const {randomUUID} = require("crypto");
 
 
 // create a directory uploads in the root of the project if it doesn't exist
@@ -57,7 +59,7 @@ const listFolderStructure = (directoryPath, indent = '') => {
 	return dirs.sort(sortFoldersFirst);
 }
 
-router.get("", verifyTokenOptional, (req, res) => {
+router.get("", verifyTokenOptional, async (req, res) => {
 	const folderLocation = config.folderLocation;
 
     console.log("in listFolderStructure folderLocation="+folderLocation+" show_folders:"+show_folders+"cvhs_debug:"+config.cvjs_debug);
@@ -65,8 +67,38 @@ router.get("", verifyTokenOptional, (req, res) => {
 	let dirs = listFolderStructure(folderLocation);
 	// load user data directory structure if user is logged in
 	if (req.user) {
-		const userDir = req.user.email.replace(/[@._]/g, '');
-		const userDirPath = `./uploads/${userDir}`;
+
+		let existingUser;
+		try {
+			const [rows] = await conn.promise().execute('SELECT * FROM `users` WHERE `email` = ?', [req.user.email]);
+			if (rows.length > 0) {
+				existingUser = rows[0];
+			}
+		} catch (err) {
+			console.log({err});
+			res.status(500).json({"error": "Error! Something went wrong."});
+			return;
+		}
+
+		if (!existingUser) {
+			res.status(401).json({"error": "Invalid user"});
+			return;
+		}
+
+		// if user not have folder_name, create it
+		let folder_name = existingUser.folder_name;
+		if (!folder_name) {
+			folder_name = randomUUID();
+			try {
+				await conn.promise().execute('UPDATE `users` SET `folder_name` = ? WHERE `email` = ?', [folder_name, req.user.email]);
+			} catch (err) {
+				console.log({err});
+				res.status(500).json({"error": "Error! Something went wrong."});
+				return;
+			}
+		}
+
+		const userDirPath = `./uploads/${folder_name}`;
 		if (!fs.existsSync(userDirPath)) {
 			fs.mkdirSync(userDirPath);
 		}

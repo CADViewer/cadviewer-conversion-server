@@ -11,7 +11,6 @@ const fs = require('fs');
 const os = require('os');
 
 //
-var cors = require('cors');
 app.use(cors())
 
 

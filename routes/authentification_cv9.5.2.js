@@ -8,6 +8,7 @@ const express = require("express"),
 
 router.post("/login", async (req, res, next) => {
 	let { email, password } = req.body;
+
   console.log({email, password})
   let existingUser;
   try {
@@ -60,7 +61,8 @@ router.post("/signup", async (req, res, next) => {
   }
   const crypted_password = await bcrypt.hash(password, 10);
   
-  
+  // generate a user folder name
+
   
   try {
     const [response] = await conn.promise().execute('INSERT INTO `users` (`username`, `email`, `crypted_password`) VALUES (?, ?, ?)', [username, email, crypted_password]);

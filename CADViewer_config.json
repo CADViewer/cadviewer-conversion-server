@@ -40,10 +40,10 @@
     "custom_bearerAutentication" : "d5d483e8-2f8d-463e-cc01-f41a78b1d94c",
     "custom_postFixServerToken" : "?si=test&spr=https&sv=test",
     "setup_mysqlHost" : true,
-    "mysqlHost" : "localhost",
-    "mysqlUsername" : "root",
-    "mysqlPassword" : "",
-    "mysqlDatabase" : "vizquery",
+    "mysqlHost" : "db",
+    "mysqlUsername": "root",
+    "mysqlPassword" : "root",
+    "mysqlDatabase" : "visualquery",
     "ContentSecurityPolicyReportOnly" : true,
     "ContentSecurityPolicy" : "default-src 'self'; font-src 'self'; img-src 'self' https://cadviewer.com data:; script-src 'self' 'nonce-INSERTNONCE'; style-src 'self' 'unsafe-inline'; frame-src 'self'",
     "fileLoad_PasswordAuthentication" : false,
@@ -54,6 +54,8 @@
     "folderLocation" : "/nodejs/cadviewer-conversion-server/content",
     "jwtSecretKey" : "a45f6g7h8j9k0l193skdlmdj",
     "bcryptSaltRounds" : 10,
-    "globalApplicationSasToken" : "?si=test&spr=https&sv=test"
+    "globalApplicationSasToken" : "?si=test&spr=https&sv=test",
+    "userFolderMaximumFiles" : 10,
+    "userFolderMaximumSizeInMB" : 100
 }	
 	
