@@ -11,7 +11,7 @@ var fs = require('fs');   // 8.19.1
 // 9.5.2
 var response_serverUrl = "";
 
-var customendpointextension = require('./cvjs_customConversionEndpointExtension_cv9.49.2.js');
+var customendpointextension = require('./cvjs_customConversionEndpointExtension_cv9.49.5.js');
 
 var customConversionEndpointExtension = false;
 var setPostFixServerToken = false;
@@ -1188,6 +1188,8 @@ var express = require('express'),
             // 9.47.14
             //if (setPostFixServerToken) 
             // 9.47.14  - we set to check the content location, not the host
+
+            // 9.49.5
             hostname = contentLocation;
 
             if (config.cvjs_debug) console.log("Z2A: before urlExists hostname:"+hostname);
@@ -1196,6 +1198,10 @@ var express = require('express'),
             urlExists(hostname, function(err, exists) {
 
                 console.log(config.version+": Z3: urlExists: exists= "+exists+"  "+hostname); // true 
+
+
+                //exists = true;  // 9.49.5
+
 
                 if (exists)
                     httprequest(contentLocation).pipe(fs.createWriteStream(newcontentLocation))
@@ -1485,11 +1491,13 @@ var express = require('express'),
     function cvjs_processConversion_pdf_svg_cadviewerdisplay(cvjsRequestJSON, res, action){
 
 
+        if (config.cvjs_debug) console.log("before clean: "+contentLocationOrg);
 
         // 9.48.1 we set the contentlocationOrg to the actual filename
         contentLocationOrg = cvjsRequestJSON.contentLocation;
         contentLocationOrg = clean_contentLocation(contentLocationOrg);
-        console.log("after clean: "+contentLocationOrg);
+
+        if (config.cvjs_debug) console.log("after clean: "+contentLocationOrg);
 
 
         try{
@@ -1650,6 +1658,27 @@ var express = require('express'),
             contentLocation = config.ServerLocation + contentLocation.substring(config.ServerUrl.length);
         }			
         
+        // 9.49.5   - adjust for localhost/ 127.0.0.1 
+
+        if (contentLocation.indexOf("http://localhost:"+config.ServerPort)>-1 || contentLocation.indexOf("http://127.0.0.1:"+config.ServerPort)>-1){
+
+            var str1 = "http://localhost:"+config.ServerPort;
+            var str2 = "http://127.0.0.1:"+config.ServerPort;
+
+
+            if (contentLocation.indexOf("http://localhost:"+config.ServerPort)>-1){
+                contentLocation = config.ServerLocation + contentLocation.substring(str1.length);            
+            }
+            
+            if (contentLocation.indexOf("http://127.0.0.1:"+config.ServerPort)>-1){
+                contentLocation = config.ServerLocation + contentLocation.substring(str2.length);            
+            }
+
+        }
+
+
+
+
         if (config.cvjs_debug) console.log("callapiconversion  contentLocation:"+contentLocation+" frontEnd:"+config.ServerFrontEndUrl+"  ServerUrl:"+config.ServerUrl);
 
 
