@@ -56,7 +56,7 @@
     "userFolderMaximumFiles" : 10,
     "userFolderMaximumSizeInMB" : 100,
     "globalApplicationSasToken" : "?si=testread1&spr=https&sv=2022-11-02&sr=c&sig=AGPx54rizyMyd6EAtEk5lG4AZgoo8UuzIgxBVHR3QoU%3D",
-    "globalBearerAutentication" : true,
+    "globalBearerAutentication" : false,
     "globalBearerAutenticationToken" : "t-7614f875-8423-4f20-a674-d7cf3096290e"
 }
 	
