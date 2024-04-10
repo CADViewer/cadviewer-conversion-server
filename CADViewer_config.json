@@ -1,6 +1,6 @@
 {
     "ServerPort" : 3000,
-    "ServerUrl" : "http://0.0.0.0:3000",
+    "ServerUrl" : "http://localhost:3000",
     "https" : false,
     "ServerFrontEndUrl" : "",
     "ServerFrontEndUrlAsAllowedOriginOnly" : false,
@@ -20,8 +20,8 @@
     "converterpathWin": "windows/",
     "converterpathLin": "linux/",
     "fontLocation" : "fonts/",
-    "ax2024_executable" : "AX2025_W64_25_01_132.exe",
-    "ax2024_executable_windows" : "AX2025_W64_25_01_132.exe",
+    "ax2024_executable" : "AX2025_W64_25_01_133.exe",
+    "ax2024_executable_windows" : "AX2025_W64_25_01_133.exe",
     "ax2024_executable_linux" : "ax2023_L64_23_12_132",
     "licenseLocation" : "/converters/ax2024/",
     "xpathLocation" : "/converters/xpath/",
@@ -38,7 +38,6 @@
 	"linklist2023_executable_windows" : "LinkList_2024_W64_24_01_03.exe",
 	"linklist2023_executable_linux" : "LinkList_2024_L64_24_01_03",
     "custom_bearerAutentication" : "d5d483e8-2f8d-463e-cc01-f41a78b1d94c",
-    "custom_postFixServerToken" : "?si=testread1&spr=https&sv=2022-11-02&sr=c&sig=AGPx54rizyMyd6EAtEk5lG4AZgoo8UuzIgxBVHR3QoU%3D",
     "setup_mysqlHost" : true,
     "mysqlHost" : "localhost",
     "mysqlUsername" : "root",
@@ -50,12 +49,14 @@
     "fileLoad_UserName" : "myusername",
     "fileLoad_Password" : "mypassword",
     "contentLocationCheck" : true,
-    "version" : "v9.49.5",
+    "version" : "v9.50.1",
     "folderLocation" : "/nodejs/cadviewer-conversion-server/content/",
     "jwtSecretKey" : "a45f6g7h8j9k0l193skdlmdj",
     "bcryptSaltRounds" : 10,
     "userFolderMaximumFiles" : 10,
     "userFolderMaximumSizeInMB" : 100,
-    "globalApplicationSasToken" : "?si=testread1&spr=https&sv=2022-11-02&sr=c&sig=AGPx54rizyMyd6EAtEk5lG4AZgoo8UuzIgxBVHR3QoU%3D"
+    "globalApplicationSasToken" : "?si=testread1&spr=https&sv=2022-11-02&sr=c&sig=AGPx54rizyMyd6EAtEk5lG4AZgoo8UuzIgxBVHR3QoU%3D",
+    "globalBearerAutentication" : true,
+    "globalBearerAutenticationToken" : "t-7614f875-8423-4f20-a674-d7cf3096290e"
 }
 	

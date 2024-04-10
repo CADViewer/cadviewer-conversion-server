@@ -5,12 +5,44 @@ const express = require("express"),
 router = express.Router();
 
 const https = require('https');
+const { get } = require("request");
 
 
 // create post endpoint proxy that will fetch GET response from the url pass trough the request body
 router.post("/proxy", async (req, res) => {
     console.log("/proxy call:");
     console.log({body: req.body});
+
+    var token = getToken(req);
+
+    console.log("/proxy call: getToken: "+token);
+
+    if (!config.globalBearerAutentication){            
+        console.log("Authorization token is not applied, so this is OK");
+        //console.log("Authorization token is required");
+        //res.send("Authorization token is required");
+        //return;
+    }
+    else{  // Authorization token is applied, so we can check the token here
+        console.log("Authorization token is applied");
+        // 9.50.1
+
+        console.log(token, config.globalBearerAutenticationToken);
+
+        if (token==config.globalBearerAutenticationToken){
+            console.log("Authorization token is OK");
+        }
+        else{
+            console.log("Authorization token is reqired or incorrect");
+            throw new Error("Authorization token is required or incorrect");
+        }
+    }
+
+
+
+
+
+
     const url = req.body.url;
     const globalApplicationSasToken = config.globalApplicationSasToken;
     const proxyUrl = url + globalApplicationSasToken;
@@ -21,6 +53,20 @@ router.post("/proxy", async (req, res) => {
     res.status(200).json(response);
 
 });
+
+
+
+// 9.50.1
+function getToken(req) {
+    if (
+        req.headers.authorization &&
+        req.headers.authorization.split(" ")[0] === "Bearer"
+    ) {
+        return req.headers.authorization.split(" ")[1];
+    } 
+    return null;
+    }
+    
 
 
 async function getResponse(proxyUrl) {

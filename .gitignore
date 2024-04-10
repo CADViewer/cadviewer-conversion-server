@@ -1,6 +1,7 @@
-content/drawings/dwg
+content/custom/*
 tmp
 photos/
 node_modules/
 converters/files/*
 uploads/*
+node-ffi

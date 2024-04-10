@@ -11,7 +11,7 @@ var fs = require('fs');   // 8.19.1
 // 9.5.2
 var response_serverUrl = "";
 
-var customendpointextension = require('./cvjs_customConversionEndpointExtension_cv9.49.5.js');
+var customendpointextension = require('./cvjs_customConversionEndpointExtension_cv9.50.1.js');
 
 var customConversionEndpointExtension = false;
 var setPostFixServerToken = false;
@@ -347,7 +347,7 @@ var express = require('express'),
             var writeFile  = config.fileLocation + tempFileName + "." + outputFormat;           
             
             if (cvjs_debug) console.log("writeFile="+writeFile);
-            if (cvjs_debug) console.log("BEFORE HTTP BRANCH "+contentLocation);
+            if (cvjs_debug) console.log("linklist BEFORE HTTP BRANCH "+contentLocation);
 
             
             // 6.2.37 - If http file, then it must be downloaded to server	
@@ -742,8 +742,8 @@ var express = require('express'),
 
             // 9.49.1
 
-            if (contentLocation.indexOf(config.custom_postFixServerToken)>-1)
-                contentLocation = contentLocation.substring(0, contentLocation.indexOf(config.custom_postFixServerToken));
+            if (contentLocation.indexOf(config.globalApplicationSasToken)>-1)
+                contentLocation = contentLocation.substring(0, contentLocation.indexOf(config.globalApplicationSasToken));
 
             //contentLocation = contentLocationOrg;
             if (config.cvjs_debug) console.log("cvjs_buildcommandline_and_execute() : contentLocation:"+contentLocation);
@@ -776,6 +776,17 @@ var express = require('express'),
                     }
                     else 
                         fullcallback = response_serverUrl+"/"+config.callbackMethod;
+
+                        // 9.50.1
+                    // we need to copy the file to the temp folder
+                    var fs = require('fs');
+                    fs.copyFile( contentLocation, writeFile, function(err, data) {
+                        if (err){   
+                            if (config.cvjs_debug) console.log(err);
+                        }   
+                        else                                                
+                            if (config.cvjs_debug) console.log("file copied!");
+                    });
 
 
 
@@ -1505,7 +1516,7 @@ var express = require('express'),
                 setPostFixServerToken = cvjsRequestJSON.setPostFixServerToken;
                 // postfix the contentlocation with the sas token
                 if (setPostFixServerToken)
-                    cvjsRequestJSON.contentLocation = cvjsRequestJSON.contentLocation + config.custom_postFixServerToken;
+                    cvjsRequestJSON.contentLocation = cvjsRequestJSON.contentLocation + config.globalApplicationSasToken;
             }
         }
         catch(err){
@@ -1656,6 +1667,12 @@ var express = require('express'),
         if (contentLocation.indexOf(config.ServerUrl)==0   && contentLocationCheck){
             // the ServerUrl is replaced with ServerLocation
             contentLocation = config.ServerLocation + contentLocation.substring(config.ServerUrl.length);
+            // 9.50.1
+            if (contentLocation.indexOf("?")>-1){
+                contentLocation = contentLocation.substring(0, contentLocation.indexOf("?"));
+            }
+
+
         }			
         
         // 9.49.5   - adjust for localhost/ 127.0.0.1 
@@ -1668,15 +1685,22 @@ var express = require('express'),
 
             if (contentLocation.indexOf("http://localhost:"+config.ServerPort)>-1){
                 contentLocation = config.ServerLocation + contentLocation.substring(str1.length);            
+                // 9.50.1
+                if (contentLocation.indexOf("?")>-1){
+                    contentLocation = contentLocation.substring(0, contentLocation.indexOf("?"));
+                }
+    
             }
             
             if (contentLocation.indexOf("http://127.0.0.1:"+config.ServerPort)>-1){
                 contentLocation = config.ServerLocation + contentLocation.substring(str2.length);            
+                // 9.50.1
+                if (contentLocation.indexOf("?")>-1){
+                    contentLocation = contentLocation.substring(0, contentLocation.indexOf("?"));
+                }
             }
 
         }
-
-
 
 
         if (config.cvjs_debug) console.log("callapiconversion  contentLocation:"+contentLocation+" frontEnd:"+config.ServerFrontEndUrl+"  ServerUrl:"+config.ServerUrl);
@@ -1710,7 +1734,7 @@ var express = require('express'),
         
         // end 	
         if (cvjs_debug) console.log("writeFile="+writeFile);
-        if (cvjs_debug) console.log("BEFORE HTTP BRANCH "+contentLocation);
+        if (cvjs_debug) console.log("axprocessing BEFORE HTTP BRANCH "+contentLocation);
 
         // 8.19.1  8.19.3
         if (cvjs_check_file_cache(outputFormat,contentLocation, parameters, tempFileName, res, writeFile, action, fileFormat, paramName, paramValue, FileStamp)){
@@ -1737,6 +1761,7 @@ var express = require('express'),
                 cvjs_downloadCADfromhttp_and_execute(outputFormat,contentLocation, parameters, tempFileName, res, writeFile, action);                  
             }
             else{  // standard execution from CAD server repository
+                if (config.cvjs_debug) console.log("Z1:  cvjs_buildcommandline_and_execute()");
                 // building the command line
                 cvjs_buildcommandline_and_execute(outputFormat,contentLocation, parameters, res, writeFile, action, tempFileName);
             }
@@ -1991,6 +2016,18 @@ var express = require('express'),
 
 
 
+// 9.50.1
+
+function getToken(req) {
+if (
+    req.headers.authorization &&
+    req.headers.authorization.split(" ")[0] === "Bearer"
+) {
+    return req.headers.authorization.split(" ")[1];
+} 
+return null;
+}
+
 
 
 
@@ -2009,11 +2046,50 @@ router.get('/callapiconversion', (req, res) => {
 
 
 
+// 9.50.1
+
 
 router.post('/callapiconversion', (req, res) => {
 
 	try{
 	
+        // 9.50.1
+
+        const token = getToken(req);
+        if (config.cvjs_debug) console.log("TOKEN TOKEN TOKEN token:"+token);
+
+        if (!config.globalBearerAutentication){            
+                console.log("Authorization token is not applied, so this is OK");
+            //console.log("Authorization token is required");
+            //res.send("Authorization token is required");
+            //return;
+        }
+        else{  // Authorization token is applied, so we can check the token here
+            console.log("Authorization token is applied");
+            // 9.50.1
+            if (token==config.globalBearerAutenticationToken){
+                console.log("Authorization token is OK");
+            }
+            else{
+                throw new Error("Authorization token is required or incorrect");
+            }
+        }
+    
+        /*    we can choose to use JWT token verification here or abort the call
+
+        if (!token) {
+          throw new Error("Authorization token is required");
+        } 
+
+        jwt.verify(token, secret, function (err, decoded) {
+          if (err) {
+            throw new Error("Error : " + err);
+          }
+          console.log(decoded);
+        });
+        */
+
+
 
         // 9.5.2
         var reqhost =  req.get('host'); 
