@@ -1,4 +1,4 @@
-var version = "CADViewer Server v9.50.1";
+var version = "CADViewer Server v9.61.1";
 const express = require('express');
 const cors = require('cors');
 const httprequest = require('request');
@@ -37,7 +37,7 @@ chrome://flags/#allow-insecure-localhost
 // 6.5.09  - DLL load
 //var ffi = require('ffi');
 try{
-    var callapiconversion = require("./routes/callapiconversion_cv9.50.1.js");
+    var callapiconversion = require("./routes/callapiconversion_cv9.61.1.js");
     var makesinglepagepdf = require("./routes/makesinglepagepdf_cv8.43.1.js");
     var copyfile = require("./routes/copyfile_cv7.1.17.js");
     var savefile = require("./routes/savefile_cv9.7.1.js");
@@ -49,7 +49,7 @@ try{
     var makethumbnails = require("./routes/makethumbnails_cv6.5.8.js");
     var temp_print = require("./routes/temp_print_cv7.1.16.js");
     var files = require("./routes/files_cv9.7.1.js");
-    var loadfile = require("./routes/loadfile_cv9.46.4.js");
+    var loadfile = require("./routes/loadfile_cv9.56.2.js");
     var directload = require("./routes/directload_cv7.1.16.js");
     var directloadcadviewer = require("./routes/directloadcadviewer_cv7.1.16.js");
     
@@ -79,7 +79,7 @@ var listdirectoryredlines = require("./routes/listdirectoryredlines_cv9.1.5.js")
 var loadredline = require("./routes/loadredlines_cv7.1.17.js");
 
 var listdwgdirectory = require("./routes/listdwgdirectory_cv9.40.2.js");
-var plans = require('./routes/plans_cv9.50.1.js');
+var plans = require('./routes/plans_cv9.55.1.js');
 
 var listdatabasedata ;
 var authentification ;
@@ -414,7 +414,12 @@ if (true){
             
                         //app.listen(host, () => console.log('1: CADViewer Server '+config.ServerUrl+' is listening on host: '+host+' and port:'+port+'!'));
                     }
-                    else 
+                    else {
+
+
+                            console.log(' 1B: host, port:'+host+"  "+serverport);
+
+
                         var server = app.listen(serverport, host, function () {
                             var thishost = server.address().address;
                             var thisport = server.address().port;
@@ -425,14 +430,14 @@ if (true){
             
                             // in this case we assume all ports and host address are preset
                             console.log('config.callbackMethod:'+ config.callbackMethod);    
+                            
                             config.ServerUrl = "http://"+thishost+":"+thisport;
-
                             config.ServerPort = thisport;
 
 
                         
                         });
-            
+                    }
             
             
             
@@ -488,8 +493,8 @@ if (true){
                 // https  - see config
                 
                 const options = {
-                    key: fs.readFileSync('key.pem'),
-                    cert: fs.readFileSync('cert.pem'),
+                    key:  fs.readFileSync(path.join(__dirname, 'cert' , 'key.pem')),
+                    cert: fs.readFileSync(path.join(__dirname, 'cert', 'cert.pem')),
                     path: hostpath,
                     port: serverport
                 };
