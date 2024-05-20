@@ -11,7 +11,7 @@ var fs = require('fs');   // 8.19.1
 // 9.5.2
 var response_serverUrl = "";
 
-var customendpointextension = require('./cvjs_customConversionEndpointExtension_cv9.61.1.js');
+var customendpointextension = require('./cvjs_customConversionEndpointExtension_cv9.62.8.js');
 
 var customConversionEndpointExtension = false;
 var setPostFixServerToken = false;
@@ -997,6 +997,9 @@ var express = require('express'),
 
 
     function cvjs_getOutputFormat(cvjsRequestJSON, paramName, paramValue){
+
+        // 9.62.8
+        var outputFormat = "svg";
 
 
         // 9.7.7

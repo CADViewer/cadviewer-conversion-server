@@ -49,7 +49,7 @@
     "fileLoad_UserName" : "myusername",
     "fileLoad_Password" : "mypassword",
     "contentLocationCheck" : true,
-    "version" : "v9.62.7",
+    "version" : "v9.62.8",
     "folderLocation" : "/nodejs/cadviewer-conversion-server/content/",
     "jwtSecretKey" : "a45f6g7h8j9k0l193skdlmdj",
     "bcryptSaltRounds" : 10,
