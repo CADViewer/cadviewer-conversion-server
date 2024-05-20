@@ -1,4 +1,4 @@
-var version = "CADViewer Server v9.62.8";
+var version = "CADViewer Server v9.62.9";
 const express = require('express');
 const cors = require('cors');
 const httprequest = require('request');
@@ -159,8 +159,10 @@ if (config.autodetect_location){
         config.dwgmergeLocation = config.ServerLocation + config.dwgmergeLocation + config.converterpathWin;
 
         config.licenseLocation = config.ServerLocation + config.licenseLocation + config.converterpathWin;
+        config.folderLocation = config.folderLocation_windows;
+
     }
-    else{
+    else{   // linux
         config.ax2024_executable = config.ax2024_executable_linux;
         config.linklist2023_executable = config.linklist2023_executable_linux;
         config.dwgmerge2023_executable = config.dwgmerge2023_executable_linux;
@@ -174,6 +176,8 @@ if (config.autodetect_location){
         config.dwgmergeLocation = config.ServerLocation + config.dwgmergeLocation + config.converterpathLin;
 
         config.licenseLocation = config.ServerLocation + config.licenseLocation + config.converterpathLin;
+        config.folderLocation = config.folderLocation_linux;
+
     }
     config.fileLocationUrl = config.ServerUrl + config.fileLocation;
     // 9.7.1
