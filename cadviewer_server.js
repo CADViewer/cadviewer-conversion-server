@@ -213,7 +213,8 @@ console.log("Platform (computed): "+os.platform());
 console.log("autodetect_platform: "+config.autodetect_platform); 
 console.log("Platform (autodetect or from config): "+config.platform); 
 console.log("autodetect_location: "+config.autodetect_location); 
-console.log("ServerLocation (autodetect or from config): "+config.ServerLocation); 
+console.log("ServerLocation (autodetect or from config): "+config.ServerLocation);
+console.log("folderLocation: "+config.folderLocation);
 
 
 
