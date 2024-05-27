@@ -11,7 +11,7 @@ var fs = require('fs');   // 8.19.1
 // 9.5.2
 var response_serverUrl = "";
 
-var customendpointextension = require('./cvjs_customConversionEndpointExtension_cv9.62.8.js');
+var customendpointextension = require('./cvjs_customConversionEndpointExtension_cv9.64.3.js');
 
 var customConversionEndpointExtension = false;
 var setPostFixServerToken = false;
@@ -1598,6 +1598,14 @@ var express = require('express'),
             FileStamp = cvjsRequestJSON.fileStamp;
         }
 
+        // 9.64.3
+        var FileStampCompare = "none"
+        if (cvjsRequestJSON.fileStampCompare != undefined){
+            FileStampCompare = cvjsRequestJSON.fileStampCompare;
+        }
+
+
+        if (config.cvjs_debug) console.log("1: FILESTAMP - FILESTAMPCOMPARE: "+FileStamp+"  "+FileStampCompare);
 
 
         /*  external https load test - block out
@@ -1659,8 +1667,12 @@ var express = require('express'),
 
                                 console.log('F COMPARE file created! at'+cvjs_comparehttp_serverlocation);
     
+
+                                if (config.cvjs_debug) console.log("2: FILESTAMP - FILESTAMPCOMPARE: "+FileStamp+"  "+FileStampCompare);
+
+
                                 // standard CADViewer processing
-                                cvjs_standard_CV_AX_processing(outputFormat,contentLocation, parameters, tempFileName, res, writeFile, action, fileFormat, paramName, paramValue, FileStamp);  // 8.19.1
+                                cvjs_standard_CV_AX_processing(outputFormat,contentLocation, parameters, tempFileName, res, writeFile, action, fileFormat, paramName, paramValue, FileStamp, FileStampCompare);  // 8.19.1
     
                                 
                             }
@@ -1672,14 +1684,23 @@ var express = require('express'),
             }
             else{
             // standard CADViewer processing
-            cvjs_standard_CV_AX_processing(outputFormat,contentLocation, parameters, tempFileName, res, writeFile, action, fileFormat, paramName, paramValue, FileStamp);  // 8.19.1
+
+            if (config.cvjs_debug) console.log("3: FILESTAMP - FILESTAMPCOMPARE: "+FileStamp+"  "+FileStampCompare);
+
+
+            cvjs_standard_CV_AX_processing(outputFormat,contentLocation, parameters, tempFileName, res, writeFile, action, fileFormat, paramName, paramValue, FileStamp, FileStampCompare);  // 8.19.1
             }
         }
 
     }
 
 
-    function cvjs_standard_CV_AX_processing(outputFormat,contentLocation, parameters, tempFileName, res, writeFile, action, fileFormat, paramName, paramValue, FileStamp){
+    function cvjs_standard_CV_AX_processing(outputFormat,contentLocation, parameters, tempFileName, res, writeFile, action, fileFormat, paramName, paramValue, FileStamp, FileStampCompare){
+
+
+
+
+        if (config.cvjs_debug) console.log("4: FILESTAMP - FILESTAMPCOMPARE: "+FileStamp+"  "+FileStampCompare);
 
 
         // 8.77.4
@@ -1761,8 +1782,13 @@ var express = require('express'),
         if (cvjs_debug) console.log("writeFile="+writeFile);
         if (cvjs_debug) console.log("axprocessing BEFORE HTTP BRANCH "+contentLocation);
 
+
+        if (config.cvjs_debug) console.log("5: FILESTAMP - FILESTAMPCOMPARE: "+FileStamp+"  "+FileStampCompare);
+
+
         // 8.19.1  8.19.3
-        if (cvjs_check_file_cache(outputFormat,contentLocation, parameters, tempFileName, res, writeFile, action, fileFormat, paramName, paramValue, FileStamp)){
+        if (cvjs_check_file_cache(outputFormat,contentLocation, parameters, tempFileName, res, writeFile, action, fileFormat, paramName, paramValue, FileStamp, FileStampCompare)){
+
 
             // send back the cache
             console.log("SVG pure callback cache");
@@ -1798,9 +1824,14 @@ var express = require('express'),
     // 8.19.1
 
     var cvjs_returnfile_from_cache = "none";
-    function cvjs_check_file_cache(outputFormat,contentLocation, parameters, tempFileName, res, writeFile, action, fileFormat, paramName, paramValue, FileStamp){
+    function cvjs_check_file_cache(outputFormat,contentLocation, parameters, tempFileName, res, writeFile, action, fileFormat, paramName, paramValue, FileStamp, FileStampCompare){
 
         console.log("config.cached_conversion:"+config.cached_conversion);
+
+
+        if (config.cvjs_debug) console.log("7: FILESTAMP - FILESTAMPCOMPARE: "+FileStamp+"  "+FileStampCompare);
+
+
 
         // cache conversion disabled
         if (!config.cached_conversion) return false;
@@ -1939,7 +1970,13 @@ var express = require('express'),
         //                console.log(" here "+JSONstructure.cachedfiles[i].fileName);
                         //console.log("filecreatestamp:"+myobject.filecreatestamp);
                         //console.log("before parameter loop")
-                        mynewobject = myobject.parameters;                                     
+                        mynewobject = myobject.parameters;     
+                        
+                        
+                        // 9.64.3  - we identify parmeter compare
+                        var iscompare = false;
+                        var paramcheck4 = true;
+
                             for (var i=1; i<paramName.length; i++){
                                 // f= is index 0
                                 //console.log(i+" paramName_current:"+paramName[i]);
@@ -1948,9 +1985,15 @@ var express = require('express'),
                                 for (var j=0; j<mynewobject.length; j++){
                                     if (mynewobject[j].paramName!="f"){
                                         //console.log(j+" paramName:"+mynewobject[j].paramName);
-                                        //console.log(j+" paramValue:"+mynewobject[j].paramValue);                    
+                                        //console.log(j+" paramValue:"+mynewobject[j].paramValue);  
+                                    
                                         if (paramName[i] == mynewobject[j].paramName){
                                             //console.log("paramName match!")
+
+                                            if (paramName[i] == "compare") iscompare = true;
+
+
+
                                             if (paramValue[i] == mynewobject[j].paramValue){            
                                                 console.log("paramname and Value match");
                                                 console.log(i+ "  "+paramName[i]+ "   "+paramValue[i]);
@@ -1973,13 +2016,34 @@ var express = require('express'),
                             console.log("paramcheck2="+paramcheck2+"   "+(mynewobject.length -1) + "   " + (paramName.length - 1));
                             console.log("paramcheck3="+paramcheck3);
                             
-                            if (paramcheck && paramcheck2 && paramcheck3){
+
+                            // 9.64.3
+                            if (iscompare){
+                                // let us check if the datestamp on the compare file is the same as the one we have passed over previously
+
+                                if (cvjs_debug) console.log("pre paramcheck4="+paramcheck4);
+                                if (cvjs_debug) console.log("myobject.filecreatestampCompare="+myobject.filecreatestampCompare+" FileStampCompare: "+FileStampCompare);
+                                if (myobject.filecreatestampCompare != FileStampCompare) 
+                                    paramcheck4 = false;
+                                else
+                                    paramcheck4 = true;
+
+
+                                if (cvjs_debug) console.log("paramcheck4="+paramcheck4);
+
+
+                            }
+
+
+                            // 9.64.3
+
+                            if (paramcheck && paramcheck2 && paramcheck3 && paramcheck4){
                                 continueflag = false;
                                 callback = true; 
                                 cvjs_returnfile_from_cache = myobject.fileName;
                                 if (cvjs_returnfile_from_cache.indexOf(".svg")>-1) 
                                     cvjs_returnfile_from_cache = cvjs_returnfile_from_cache.substring(0, cvjs_returnfile_from_cache.indexOf(".svg"))
-                                console.log("paramcheck x 3 all clear cvjs_returnfile_from_cache="+cvjs_returnfile_from_cache);
+                                console.log("paramcheck x 4 - all clear cvjs_returnfile_from_cache="+cvjs_returnfile_from_cache);
                             }
                     }                                                                            
                 }
@@ -2002,6 +2066,16 @@ var express = require('express'),
             JSONstructure.cachedfiles[i] = {};
             JSONstructure.cachedfiles[i].fileName = tempFileName;
             JSONstructure.cachedfiles[i].filecreatestamp = "date_f1";
+
+
+
+            if (config.cvjs_debug) console.log("8: FILESTAMP - FILESTAMPCOMPARE: "+FileStamp+"  "+FileStampCompare);
+
+
+
+            // 9.64.3
+            JSONstructure.cachedfiles[i].filecreatestampCompare = FileStampCompare;
+
 
             var myObject = [];
             for (var k=0; k<paramName.length; k++){   // we do not check first index
