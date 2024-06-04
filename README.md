@@ -59,6 +59,19 @@ Read the sections on installing and handling [Fonts](https://tailormade.com/ax20
 **Run:** Run by using the *npm start* script or *node cadviewer_server* from the command line.
 
 
+
+## Docker installation
+
+The installation provides a template ***Dockerfile*** and ***docker-compose-yml***, which can be updated according to platform. When running under Docker the internal url is ***0.0.0.0***, and therefore the following fields in the ***CADViewer_config.json*** needs to be configured, note that ***callbackMethod_gatewayUrl*** is the external url when calling the container, which also needs to be updated appropriately:
+
+```json
+"ServerUrl" : "http://0.0.0.0:3000"
+"fileLocationUrl" : "http://0.0.0.0:3000/converters/files/"
+"callbackMethod_gatewayUrl_flag" : true
+"callbackMethod_gatewayUrl" : "http://localhost:3000"
+```
+
+
 ## CADViewer_config.json
 
 The user controlled parameters in the configuration file ***[CADViewer_config.json](https://github.com/CADViewer/cadviewer-conversion-server/blob/master/CADViewer_config.json)*** has the following default settings:
@@ -128,18 +141,6 @@ The user controlled parameters in the configuration file ***[CADViewer_config.js
     "globalBearerAutenticationToken" : "t-7614f875-8423-4f20-a674-d7cf3096290e"
 }
 ```
-
-## Docker installation
-
-The installation provides a template ***Dockerfile*** and ***docker-compose-yml***, which can be updated according to platform. When running under Docker the internal url is ***0.0.0.0***, and therefore the following fields in the ***CADViewer_config.json*** needs to be configured, note that ***callbackMethod_gatewayUrl*** is the external url when calling the container, which also needs to be updated appropriately:
-
-```json
-"ServerUrl" : "http://0.0.0.0:3000"
-"fileLocationUrl" : "http://0.0.0.0:3000/converters/files/"
-"callbackMethod_gatewayUrl_flag" : true
-"callbackMethod_gatewayUrl" : "http://localhost:3000"
-```
-
 
 
 ## General Documentation 
