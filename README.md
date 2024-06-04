@@ -64,60 +64,78 @@ The user controlled parameters in the configuration file ***[CADViewer_config.js
 ```json
 {
     "ServerPort" : 3000,
-    "ServerUrl" : "http://localhost:3000/",
+    "ServerUrl" : "http://localhost:3000",
     "https" : false,
     "ServerFrontEndUrl" : "",
     "ServerFrontEndUrlAsAllowedOriginOnly" : false,
-    "cvjs_svgz_compress" : true,
+    "cvjs_svgz_compress" : false,
     "cached_conversion" : false,
     "remainOnServer" : true,
     "cvjs_debug" : true,
     "autodetect_platform" : true,
     "platform" :"windows or linux",
     "autodetect_location" : true,
-    "ServerLocation" : "c:/nodejs/cadviewer-conversion-server/",
-    "ServerLocation_windows" : "c:/nodejs/cadviewer-conversion-server/",
+    "ServerLocation" : "/nodejs/cadviewer-conversion-server/",
+    "ServerLocation_windows" : "/nodejs/cadviewer-conversion-server/",
     "ServerLocation_linux" : "/opt/cadviewer-conversion-server/",
     "fileLocation" : "/converters/files/",
-    "fileLocationUrl" : "http://localhost:3005/converters/files/", 
+    "fileLocationUrl" : "http://localhost:3000/converters/files/", 
     "converterLocation" : "/converters/ax2024/",
     "converterpathWin": "windows/",
     "converterpathLin": "linux/",
     "fontLocation" : "fonts/",
-    "ax2024_executable" : "AX2024_W64_24_07_128.exe",
-    "ax2024_executable_windows" : "AX2024_W64_24_07_128.exe",
-    "ax2024_executable_linux" : "ax2023_L64_23_12_128",
+    "ax2024_executable" : "AX2025_W64_25_04_135a.exe",
+    "ax2024_executable_windows" : "AX2025_W64_25_04_135a.exe",
+    "ax2024_executable_linux" : "ax2023_L64_23_12_134",
     "licenseLocation" : "/converters/ax2024/",
     "xpathLocation" : "/converters/xpath/",
     "temp_print_folder" : "/temp_print",
     "callbackMethod_gatewayUrl_flag" : false,
     "callbackMethod_gatewayUrl" : "http://localhost:3000",
     "callbackMethod" : "getcadviewercontent",
-    "dwgmergeLocation" : "/converters/dwgmerge2023",
-    "dwgmerge2023_executable" : "DwgMerge2023_W32_23_01_01.exe",
-    "dwgmerge2023_executable_windows" : "DwgMerge2023_W32_23_01_01.exe",
-    "dwgmerge2023_executable_linux" : "DwgMerge2023_W32_23_01_01.exe",
-    "linklistLocation" : "/converters/linklist2023/",
-    "linklist2023_executable" : "LinkList_2023_W64_23_08_26.exe",
-    "linklist2023_executable_windows" : "LinkList_2023_W64_23_08_26.exe",
-    "linklist2023_executable_linux" : "LinkList_2023_W64_23_08_26.exe",
+	"dwgmergeLocation" : "/converters/dwgmerge2024",
+	"dwgmerge2023_executable" : "DwgMerge2023_W32_23_01_01.exe",
+	"dwgmerge2023_executable_windows" : "DwgMerge2023_W32_23_01_01.exe",
+	"dwgmerge2023_executable_linux" : "DwgMerge_2023_L64_23_12_03",
+	"linklistLocation" : "/converters/linklist2024/",
+	"linklist2023_executable" : "LinkList_2024_W64_24_01_03.exe",
+	"linklist2023_executable_windows" : "LinkList_2024_W64_24_01_03.exe",
+	"linklist2023_executable_linux" : "LinkList_2024_L64_24_01_03",
     "custom_bearerAutentication" : "d5d483e8-2f8d-463e-cc01-f41a78b1d94c",
-    "custom_postFixServerToken" : "?mysasToken",
-    "mysqlHost" : "host.docker.internal",
+    "setup_mysqlHost" : true,
+    "mysqlHost" : "localhost",
     "mysqlUsername" : "root",
-    "mysqlPassword" : "root",
-    "mysqlDatabase" : "visualquery",
+    "mysqlPassword" : "",
+    "mysqlDatabase" : "vizquery",
     "ContentSecurityPolicyReportOnly" : true,
     "ContentSecurityPolicy" : "default-src 'self'; font-src 'self'; img-src 'self' https://cadviewer.com data:; script-src 'self' 'nonce-INSERTNONCE'; style-src 'self' 'unsafe-inline'; frame-src 'self'",
     "fileLoad_PasswordAuthentication" : false,
     "fileLoad_UserName" : "myusername",
     "fileLoad_Password" : "mypassword",
     "contentLocationCheck" : true,
-    "version" : "v9.39.2",
+    "version" : "v9.64.3",
     "folderLocation" : "/nodejs/cadviewer-conversion-server/content/",
+    "folderLocation_windows" : "/nodejs/cadviewer-conversion-server/content/",
+    "folderLocation_linux" : "/opt/cadviewer-conversion-server/content/",
     "jwtSecretKey" : "a45f6g7h8j9k0l193skdlmdj",
-    "bcryptSaltRounds" : 10
-}	
+    "bcryptSaltRounds" : 10,
+    "userFolderMaximumFiles" : 10,
+    "userFolderMaximumSizeInMB" : 100,
+    "globalApplicationSasToken" : "?si=testread1&spr=https&sv=2022-11-02&sr=c&sig=xx",
+    "globalBearerAutentication" : false,
+    "globalBearerAutenticationToken" : "t-7614f875-8423-4f20-a674-d7cf3096290e"
+}
+```
+
+## Docker installation
+
+The installation provides a template ***Dockerfile*** and ***docker-compose-yml***, which can be updated according to platform. When running under Docker the internal url is ***0.0.0.0***, and therefore the following fields in the ***CADViewer_config.json*** needs to be configured, note that ***callbackMethod_gatewayUrl*** is the external url when calling the container, which also needs to be updated appropriately:
+
+```json
+"ServerUrl" : "http://0.0.0.0:3000"
+"fileLocationUrl" : "http://0.0.0.0:3000/converters/files/"
+"callbackMethod_gatewayUrl_flag" : true
+"callbackMethod_gatewayUrl" : "http://localhost:3000"
 ```
 
 
@@ -132,7 +150,7 @@ The user controlled parameters in the configuration file ***[CADViewer_config.js
 
 This repository should contain the latest converters, but in case you need to update any of the back-end converters please follow: 
 
-* [Download **AutoXchange**](/download/) (and other converters), install (unzip) AX2024 in **/converters/ax2024/windows** or **/converters/ax2024/linux** or in the designated folder structure.
+* [Download **AutoXchange**](/download/) (and other converters), install (unzip) AX2025 in **/converters/ax2024/windows** or **/converters/ax2024/linux** or in the designated folder structure.
 
 * Read the sections on installing and handling [Fonts](https://tailormade.com/ax2020techdocs/installation/fonts/) in [AutoXchange 2024 TechDocs](https://tailormade.com/ax2020techdocs/) and [TroubleShooting](https://tailormade.com/ax2020techdocs/troubleshooting/).
 
