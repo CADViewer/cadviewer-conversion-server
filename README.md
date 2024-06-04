@@ -8,7 +8,7 @@ The repository contains a full setup including converters and NodeJS controlling
 
 It contains all components to run on either a Windows server or a Linux Server.
 
-***NOTE:*** The CAD converters are of such as size that ***Git LFS*** is used, therefore prior to making a **git pull**, you must first install Git LFS: **sudo apt-get install git-lfs** and **git lfs install** .
+***NOTE:*** The CAD converters are of such as size that ***[Git LFS](https://git-lfs.com/)*** is used, therefore prior to making a **git pull**, you must first install Git LFS: **sudo apt-get install git-lfs** and **git lfs install** .
 
 
 ## This package contains
