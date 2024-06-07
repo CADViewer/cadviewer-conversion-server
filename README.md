@@ -70,6 +70,11 @@ The installation provides a template ***Dockerfile*** and ***docker-compose-yml*
 "callbackMethod_gatewayUrl_flag" : true
 "callbackMethod_gatewayUrl" : "http://localhost:3000"
 ```
+All these modifications are already in the file ***CADViewer_config-docker.json***, so therefore simply copy the Docker template file ***CADViewer_config-docker.json*** to ***CADViewer_config.json*** , and then execute:  ***docker compose up***.
+
+The config file file ***CADViewer_config-windows-linux.json*** is a copy of the standard config file ***CADViewer_config.json***.
+
+
 
 
 ## CADViewer_config.json
