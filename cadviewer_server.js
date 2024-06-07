@@ -1,4 +1,4 @@
-var version = "CADViewer Server v9.64.3";
+var version = "CADViewer Server v9.71.1";
 const express = require('express');
 const cors = require('cors');
 const httprequest = require('request');
@@ -38,7 +38,7 @@ chrome://flags/#allow-insecure-localhost
 //var ffi = require('ffi');
 try{
     var callapiconversion = require("./routes/callapiconversion_cv9.64.3.js");
-    var makesinglepagepdf = require("./routes/makesinglepagepdf_cv8.43.1.js");
+    var makesinglepagepdf = require("./routes/makesinglepagepdf_cv9.71.1.js");
     var copyfile = require("./routes/copyfile_cv7.1.17.js");
     var savefile = require("./routes/savefile_cv9.7.1.js");
     var mergeemail = require("./routes/mergeemail_cv7.1.3.js");

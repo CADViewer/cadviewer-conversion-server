@@ -117,7 +117,17 @@ router.post('/makesinglepagepdf', (req, res) => {
                                         else
                                             fLocation = config.fileLocation;
 
-                                        var fileLink = config.ServerUrl+"/files?file="+fLocation + "/" + fileName + '.pdf'
+                                        // 9.71.1
+                                        var fileLink = "";
+                                        config.ServerUrl+"/files?file="+fLocation + "/" + fileName + '.pdf'
+                                        // 9.71.1
+                                        if (config.callbackMethod_gatewayUrl_flag)
+                                            fileLink =config.callbackMethod_gatewayUrl+"/files?file="+fLocation + "/" + fileName + '.pdf'
+                                        else
+                                            fileLink =config.ServerUrl+"/files?file="+fLocation + "/" + fileName + '.pdf'
+
+
+
 
                                         res.send(fileLink);
                                         //res.send(encodeURI(fileLink));
