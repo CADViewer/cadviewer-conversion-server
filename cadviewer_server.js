@@ -1,4 +1,4 @@
-var version = "CADViewer Server v9.50.1";
+var version = "CADViewer Server v9.71.1";
 const express = require('express');
 const cors = require('cors');
 const httprequest = require('request');
@@ -37,8 +37,8 @@ chrome://flags/#allow-insecure-localhost
 // 6.5.09  - DLL load
 //var ffi = require('ffi');
 try{
-    var callapiconversion = require("./routes/callapiconversion_cv9.50.1.js");
-    var makesinglepagepdf = require("./routes/makesinglepagepdf_cv8.43.1.js");
+    var callapiconversion = require("./routes/callapiconversion_cv9.64.3.js");
+    var makesinglepagepdf = require("./routes/makesinglepagepdf_cv9.71.1.js");
     var copyfile = require("./routes/copyfile_cv7.1.17.js");
     var savefile = require("./routes/savefile_cv9.7.1.js");
     var mergeemail = require("./routes/mergeemail_cv7.1.3.js");
@@ -49,7 +49,7 @@ try{
     var makethumbnails = require("./routes/makethumbnails_cv6.5.8.js");
     var temp_print = require("./routes/temp_print_cv7.1.16.js");
     var files = require("./routes/files_cv9.7.1.js");
-    var loadfile = require("./routes/loadfile_cv9.46.4.js");
+    var loadfile = require("./routes/loadfile_cv9.56.2.js");
     var directload = require("./routes/directload_cv7.1.16.js");
     var directloadcadviewer = require("./routes/directloadcadviewer_cv7.1.16.js");
     
@@ -160,8 +160,10 @@ if (config.autodetect_location){
         config.dwgmergeLocation = config.ServerLocation + config.dwgmergeLocation + config.converterpathWin;
 
         config.licenseLocation = config.ServerLocation + config.licenseLocation + config.converterpathWin;
+        config.folderLocation = config.folderLocation_windows;
+
     }
-    else{
+    else{   // linux
         config.ax2024_executable = config.ax2024_executable_linux;
         config.linklist2023_executable = config.linklist2023_executable_linux;
         config.dwgmerge2023_executable = config.dwgmerge2023_executable_linux;
@@ -175,6 +177,8 @@ if (config.autodetect_location){
         config.dwgmergeLocation = config.ServerLocation + config.dwgmergeLocation + config.converterpathLin;
 
         config.licenseLocation = config.ServerLocation + config.licenseLocation + config.converterpathLin;
+        config.folderLocation = config.folderLocation_linux;
+
     }
     config.fileLocationUrl = config.ServerUrl + config.fileLocation;
     // 9.7.1
@@ -210,7 +214,8 @@ console.log("Platform (computed): "+os.platform());
 console.log("autodetect_platform: "+config.autodetect_platform); 
 console.log("Platform (autodetect or from config): "+config.platform); 
 console.log("autodetect_location: "+config.autodetect_location); 
-console.log("ServerLocation (autodetect or from config): "+config.ServerLocation); 
+console.log("ServerLocation (autodetect or from config): "+config.ServerLocation);
+console.log("folderLocation: "+config.folderLocation);
 
 
 
@@ -416,7 +421,12 @@ if (true){
             
                         //app.listen(host, () => console.log('1: CADViewer Server '+config.ServerUrl+' is listening on host: '+host+' and port:'+port+'!'));
                     }
-                    else 
+                    else {
+
+
+                            console.log(' 1B: host, port:'+host+"  "+serverport);
+
+
                         var server = app.listen(serverport, host, function () {
                             var thishost = server.address().address;
                             var thisport = server.address().port;
@@ -427,14 +437,14 @@ if (true){
             
                             // in this case we assume all ports and host address are preset
                             console.log('config.callbackMethod:'+ config.callbackMethod);    
+                            
                             config.ServerUrl = "http://"+thishost+":"+thisport;
-
                             config.ServerPort = thisport;
 
 
                         
                         });
-            
+                    }
             
             
             
@@ -490,8 +500,8 @@ if (true){
                 // https  - see config
                 
                 const options = {
-                    key: fs.readFileSync('key.pem'),
-                    cert: fs.readFileSync('cert.pem'),
+                    key:  fs.readFileSync(path.join(__dirname, 'cert' , 'key.pem')),
+                    cert: fs.readFileSync(path.join(__dirname, 'cert', 'cert.pem')),
                     path: hostpath,
                     port: serverport
                 };

@@ -4,13 +4,13 @@ var cvjs_insertImageObjects = {
 						id: "1",
 						layer: "objectLayer",
 						group: "unassigned",
-						username: "Test User1",
-						userid: "cc_user_01",
+						username: "Bob Smith",
+						userid: "user_1",
 						currentPage: 1,
-						imageObject: "building.png",
+						imageObject: "",
 						imageHeight: "450",
 						imageWidth: "600",
-						transform: "t1514.9822086700906,377.29810820688647S2.1037833658854166"
+						transform: "T445.999008368168,176.54987510103908S2.3996833333333334"
 					}
 }
 

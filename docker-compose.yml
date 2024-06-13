@@ -25,7 +25,6 @@ services:
       - 8084:8080
 
   cadviewer_node:
-    platform: linux/amd64
     build: .
     restart: always
     ports:

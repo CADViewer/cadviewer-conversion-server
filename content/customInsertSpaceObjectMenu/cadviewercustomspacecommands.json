@@ -72,14 +72,9 @@
                     }
                     ,
                     {
-                        "commandName" : "RefugePoint",
-                        "imageLocation" : "/images/refuge_point.png",
-                        "toolTip" : "Insert Refuge Point object "
-                    },
-                    {
-                        "commandName" : "Marker",
-                        "imageLocation" : "/images/pin_02.svg",
-                        "toolTip" : "Insert marker object "
+                        "commandName" : "Ventilation",
+                        "imageLocation" : "/images/ventilation-fan-blower-icon.svg",
+                        "toolTip" : "Insert Ventilation Symbol "
                     }
 
                 ]
