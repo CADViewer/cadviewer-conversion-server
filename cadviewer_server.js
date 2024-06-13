@@ -79,7 +79,8 @@ var listdirectoryredlines = require("./routes/listdirectoryredlines_cv9.1.5.js")
 var loadredline = require("./routes/loadredlines_cv7.1.17.js");
 
 var listdwgdirectory = require("./routes/listdwgdirectory_cv9.40.2.js");
-var plans = require('./routes/plans_cv9.55.1.js');
+var plans = require('./routes/plans_cv9.50.1.js');
+var licences = require('./routes/licence_cv9.50.1.js');
 
 var listdatabasedata ;
 var authentification ;
@@ -338,6 +339,7 @@ if (true){
 
     app.use('/loadjsonpostfix', plans);
     app.use('/listdwgdirectory', listdwgdirectory);
+    app.use('/licences', licences)
 
     try{
 
