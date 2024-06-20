@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAD Viewer - License Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 10px;
+        }
+
+        header .logo {
+            width: 200px;
+        }
+
+        header h1 {
+            flex: 1;
+            text-align: center;
+        }
+
+        header .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #003d80;
+        }
+
+        .license-info, .update-section {
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .update-section textarea {
+            width: calc(100% - 20px);
+            display: block;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #eaeaea;
+            border-radius: 5px;
+            resize: none;
+        }
+
+        .drop-area {
+            padding: 50px;
+            border: 2px dashed #eaeaea;
+            border-radius: 5px;
+            text-align: center;
+            background-color: #f9f9f9;
+            margin-bottom: 10px;
+        }
+
+        .drop-area p {
+            color: #999;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <img src="https://www.tailormade.com/images/cadviewer/tmslogo.gif" alt="Tailormade Logo" class="logo">
+        <h1>License Keys: CADViewer Conversion Server / TailorMade REST-API Conversion Server</h1>
+        <img src="https://www.cadviewer.com/images/cadviewer/cv-logo-smaller.png" alt="Cadviewer Logo" class="logo">
+    </header>
+
+    <section class="license-info">
+        <h2>Licence</h2>
+        <p>Get licence information and server details.</p>
+        <pre id="licence-detail">
+        </pre>
+        <button onclick="checkLicense()" class="btn">Check licence</button>
+    </section>
+
+    <section class="update-section">
+        <h2><label for="cvjs-licence">Update CVJS licence content</label></h2>
+        <textarea rows="5" id="cvjs-licence"></textarea>
+        <button class="btn" onclick="applyCvjsLicense()">Apply cvjs licence</button>
+    </section>
+
+    <section class="update-section">
+        <h2>Update AutoXchange licence</h2>
+        <div class="drop-area" id="autoXchange">
+            <p>Drop your axlic.key here</p>
+        </div>
+        <button class="btn" id="uploadAutoXchange">Upload</button>
+    </section>
+
+    <section class="update-section">
+        <h2>Update Linklist licence</h2>
+        <div class="drop-area" id="linklist">
+            <p>Drop your dlj_lic.key here</p>
+        </div>
+        <button class="btn" id="uploadLinklist">Upload</button>
+    </section>
+
+    <section class="update-section">
+        <h2>Update Dwgmerge licence</h2>
+        <div class="drop-area" id="dwgmerge">
+            <p>Drop your lj_lic.key here</p>
+        </div>
+        <button class="btn" id="uploadDwgmerge">Upload</button>
+    </section>
+</div>
+<script>
+    async function checkLicense() {
+        try {
+            const response = await fetch('/licences/verify', {
+                method: 'GET',
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                document.getElementById('licence-detail').innerText = data.stdout;
+                document.getElementById('cvjs-licence').value = data.cvjs;
+            } else {
+                alert('Failed to retrieve license information.');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('An error occurred while checking the license.');
+        }
+    }
+
+    // on document load
+    document.addEventListener('DOMContentLoaded', () => {
+        checkLicense();
+    });
+
+    async function applyCvjsLicense() {
+        try {
+            const licenseContent = document.getElementById('cvjs-licence').value;
+            if (!licenseContent) {
+                alert('Please provide the CVJS license content.');
+                return;
+            }
+            const response = await fetch('/licences/cvjs/applylicense', {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ cvjs: licenseContent }),
+            });
+
+            if (response.ok) {
+                alert('CVJS license applied successfully.');
+            } else {
+                alert('Failed to apply CVJS license.');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('An error occurred while applying the CVJS license.');
+        }
+    }
+
+    async function uploadLicense(file, path, dropzoneId) {
+
+        if (file) {
+            const formData = new FormData();
+            formData.append('file', file);
+
+            try {
+                const response = await fetch(path, {
+                    method: 'POST',
+                    body: formData,
+                });
+
+                if (response.ok) {
+                    alert('License uploaded successfully.');
+                    document.getElementById(dropzoneId).querySelector('p').textContent = 'Licence key file uploaded';
+                    document.getElementById(dropzoneId).style.backgroundColor = '#f6fff6';
+                    await checkLicense();
+                } else {
+                    alert('Failed to upload the license.');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred while uploading the license.');
+            }
+        }
+    }
+
+
+    const files = {
+        "autoXchange": null,
+        "linklist": null,
+        "dwgmerge": null
+    }
+
+    document.getElementById('uploadAutoXchange').addEventListener('click', () => {
+        if (!files.autoXchange) {
+            alert('Please select a file to upload.');
+            return;
+        }
+        uploadLicense(files.autoXchange, '/licences/autoxchange/applylicense', 'autoXchange');
+    });
+
+    document.getElementById('uploadLinklist').addEventListener('click', () => {
+        if (!files.linklist) {
+            alert('Please select a file to upload.');
+            return;
+        }
+        uploadLicense(files.linklist, '/licences/linklist/applylicense', 'linklist');
+    });
+
+    document.getElementById('uploadDwgmerge').addEventListener('click', () => {
+        if (!files.dwgmerge) {
+            alert('Please select a file to upload.');
+            return;
+        }
+        uploadLicense(files.dwgmerge, '/licences/dwgmerge/applylicense', 'dwgmerge');
+    });
+
+    document.querySelectorAll('.drop-area').forEach(dropzone => {
+        const dropzoneId = dropzone.id;
+
+        const validateFileName = {
+            "autoXchange": "axlic.key",
+            "linklist": "ll_lic.key",
+            "dwgmerge": "dl_lic.key"
+        }
+
+        // Handle drag and drop events
+        dropzone.addEventListener('dragover', (event) => {
+            event.preventDefault();
+            dropzone.style.backgroundColor = '#f5f5f5';
+        });
+
+        dropzone.addEventListener('dragleave', () => {
+            dropzone.style.backgroundColor = '#f9f9f9';
+        });
+
+        dropzone.addEventListener('drop', (event) => {
+            event.preventDefault();
+            const file = event.dataTransfer.files[0];
+            if (file.name !== validateFileName[dropzoneId]) {
+                alert(`Invalid file. Please upload ${validateFileName[dropzoneId]} file.`);
+                return;
+            }
+            files[dropzoneId] = file;
+            dropzone.style.backgroundColor = '#f6fff6';
+            dropzone.querySelector('p').textContent = 'Licence key file dropped';
+        });
+
+        // Handle click event
+        let isClicking = false;
+
+        dropzone.addEventListener('click', () => {
+            if (!isClicking) {
+                isClicking = true;
+                // Simulate file input click
+                const fileInput = document.createElement('input');
+                fileInput.type = 'file';
+                fileInput.multiple = false;
+                fileInput.style.display = 'none';
+
+                fileInput.onchange = (event) => {
+                    const file = event.target.files[0];
+                    if (file.name !== validateFileName[dropzoneId]) {
+                        alert(`Invalid file. Please upload ${validateFileName[dropzoneId]} file.`);
+                        return;
+                    } else {
+                        dropzone.style.backgroundColor = '#f6fff6';
+                        dropzone.querySelector('p').textContent = 'Licence key file selected';
+                    }
+                    files[dropzoneId] = file;
+                };
+
+                dropzone.appendChild(fileInput);
+                fileInput.click();
+                dropzone.removeChild(fileInput);
+                isClicking = false;
+            }
+        });
+    });
+</script>
+</body>
+</html>

@@ -23,6 +23,11 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
+// get endpoint that return html page with form to upload license file
+router.get("", async (req, res) => {
+    res.sendFile(path.join(path.dirname(require.main.filename), 'cadviewer/app/licence.html'));
+});
+
 router.get("/verify", async (req, res) => {
 
     const converterLocation = config.converterLocation.replaceAll("//", "/");
