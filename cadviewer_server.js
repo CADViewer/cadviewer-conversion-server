@@ -335,6 +335,7 @@ if (true){
     app.use('/loadjsonpostfix', plans);
     app.use('/listdwgdirectory', listdwgdirectory);
     app.use('/licences', licences)
+    app.use('/licenses', licences)
 
     try{
 

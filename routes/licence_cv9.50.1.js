@@ -31,7 +31,7 @@ router.get("", async (req, res) => {
 router.get("/verify", async (req, res) => {
 
     const converterLocation = config.converterLocation.replaceAll("//", "/");
-    const script =  `${converterLocation}${config.ax2024_executable} -verify`;
+    const script =  `${converterLocation}${config.ax2024_executable} -verify -lpath=${converterLocation}`;
     const { exec } = require('child_process');
     fs.readFile(path.join(path.dirname(require.main.filename), 'cadviewer/app/js/cvlicense.js'), 'utf8', (err, data) => {
         const regex = /cvKey:\s*"([^']+)"/;
@@ -77,7 +77,7 @@ router.post("/autoxchange/applylicense", upload.single('file'), async (req, res)
     const licenseLocation = config.licenseLocation.replaceAll("//", "/");
     const converterLocation = config.converterLocation.replaceAll("//", "/");
 
-    const script =  `${converterLocation}${config.ax2024_executable} -verify`;
+    const script =  `${converterLocation}${config.ax2024_executable} -verify -lpath=${converterLocation}`;
     if (req.file) {
         const path = `${licenseLocation}/axlic.key`;
         fs.renameSync(req.file.path, path);
@@ -98,7 +98,7 @@ router.post("/linklist/applylicense", upload.single('file'), async (req, res) =>
     const licenseLocation = config.linklistLocation.replaceAll("//", "/");
     const converterLocation = config.converterLocation.replaceAll("//", "/");
 
-    const script =  `${converterLocation}${config.ax2024_executable} -verify`;
+    const script =  `${converterLocation}${config.ax2024_executable} -verify -lpath=${converterLocation}`;
     if (req.file) {
         const path = `${licenseLocation}/ll_lic.key`;
         fs.renameSync(req.file.path, path);
@@ -117,7 +117,7 @@ router.post("/dwgmerge/applylicense", upload.single('file'), async (req, res) =>
     const licenseLocation = config.dwgmergeLocation.replaceAll("//", "/");
     const converterLocation = config.converterLocation.replaceAll("//", "/");
 
-    const script =  `${converterLocation}${config.ax2024_executable} -verify`;
+    const script =  `${converterLocation}${config.ax2024_executable} -verify -lpath=${converterLocation}`;
     if (req.file) {
         const path = `${licenseLocation}/dl_lic.key`;
         fs.renameSync(req.file.path, path);
