@@ -1,6 +1,6 @@
 {
     "ServerPort" : 3000,
-    "ServerUrl" : "http://0.0.0.0:3000",
+    "ServerUrl" : "http://localhost:3000",
     "https" : false,
     "ServerFrontEndUrl" : "",
     "ServerFrontEndUrlAsAllowedOriginOnly" : false,
@@ -20,8 +20,8 @@
     "converterpathWin": "windows/",
     "converterpathLin": "linux/",
     "fontLocation" : "fonts/",
-    "ax2024_executable" : "AX2025_W64_25_04_135a.exe",
-    "ax2024_executable_windows" : "AX2025_W64_25_04_135a.exe",
+    "ax2024_executable" : "AX2025_W64_25_04_138.exe",
+    "ax2024_executable_windows" : "AX2025_W64_25_04_138.exe",
     "ax2024_executable_linux" : "ax2023_L64_23_12_134",
     "licenseLocation" : "/converters/ax2024/",
     "xpathLocation" : "/converters/xpath/",
