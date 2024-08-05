@@ -1,4 +1,4 @@
-var version = "CADViewer Server v9.71.1";
+var version = "CADViewer Server v9.87.1";
 const express = require('express');
 const cors = require('cors');
 const httprequest = require('request');
@@ -37,29 +37,29 @@ chrome://flags/#allow-insecure-localhost
 // 6.5.09  - DLL load
 //var ffi = require('ffi');
 try{
-    var callapiconversion = require("./routes/callapiconversion_cv9.64.3.js");
-    var makesinglepagepdf = require("./routes/makesinglepagepdf_cv9.71.1.js");
-    var copyfile = require("./routes/copyfile_cv7.1.17.js");
-    var savefile = require("./routes/savefile_cv9.7.1.js");
-    var mergeemail = require("./routes/mergeemail_cv7.1.3.js");
-    var appendfile = require("./routes/appendfile_cv7.1.16.js");
-    var mergedwg = require("./routes/mergedwg_cv7.1.4.js");
-    var getCADViewerContent = require("./routes/getcadviewercontent_cv9.46.4.js");
-    var returnpdfparams = require("./routes/returnpdfparams_cv7.1.16.js");
-    var makethumbnails = require("./routes/makethumbnails_cv6.5.8.js");
-    var temp_print = require("./routes/temp_print_cv7.1.16.js");
-    var files = require("./routes/files_cv9.7.1.js");
-    var loadfile = require("./routes/loadfile_cv9.56.2.js");
-    var directload = require("./routes/directload_cv7.1.16.js");
-    var directloadcadviewer = require("./routes/directloadcadviewer_cv7.1.16.js");
+    var callapiconversion = require("./routes/callapiconversion.js");
+    var makesinglepagepdf = require("./routes/makesinglepagepdf.js");
+    var copyfile = require("./routes/copyfile.js");
+    var savefile = require("./routes/savefile.js");
+    var mergeemail = require("./routes/mergeemail.js");
+    var appendfile = require("./routes/appendfile.js");
+    var mergedwg = require("./routes/mergedwg.js");
+    var getCADViewerContent = require("./routes/getcadviewercontent.js");
+    var returnpdfparams = require("./routes/returnpdfparams.js");
+    var makethumbnails = require("./routes/makethumbnails.js");
+    var temp_print = require("./routes/temp_print.js");
+    var files = require("./routes/files.js");
+    var loadfile = require("./routes/loadfile.js");
+    var directload = require("./routes/directload.js");
+    var directloadcadviewer = require("./routes/directloadcadviewer.js");
     
-    var directload2 = require("./routes/directload2_cv9.20.1.js");
-    var uploadfile = require("./routes/uploadfile_cv6.8.83.js");
-    var saveredline = require("./routes/saveredline_cv9.6.1.js");
-    var listdirectory = require("./routes/listdirectory_cv9.1.6.js");
-    var listdirectoryredlines = require("./routes/listdirectoryredlines_cv9.1.5.js");
-    var loadredline = require("./routes/loadredlines_cv7.1.17.js");
-    var listdwgdirectory = require("./routes/listdwgdirectory_cv9.40.2.js");
+    var directload2 = require("./routes/directload2.js");
+    var uploadfile = require("./routes/uploadfile.js");
+    var saveredline = require("./routes/saveredline.js");
+    var listdirectory = require("./routes/listdirectory.js");
+    var listdirectoryredlines = require("./routes/listdirectoryredlines.js");
+    var loadredline = require("./routes/loadredlines.js");
+    var listdwgdirectory = require("./routes/listdwgdirectory.js");
     
 
 }
@@ -71,16 +71,16 @@ catch(err){
 
 
 
-var directload2 = require("./routes/directload2_cv9.20.1.js");
-var uploadfile = require("./routes/uploadfile_cv6.8.83.js");
-var saveredline = require("./routes/saveredline_cv9.6.1.js");
-var listdirectory = require("./routes/listdirectory_cv9.1.6.js");
-var listdirectoryredlines = require("./routes/listdirectoryredlines_cv9.1.5.js");
-var loadredline = require("./routes/loadredlines_cv7.1.17.js");
+var directload2 = require("./routes/directload2.js");
+var uploadfile = require("./routes/uploadfile.js");
+var saveredline = require("./routes/saveredline.js");
+var listdirectory = require("./routes/listdirectory.js");
+var listdirectoryredlines = require("./routes/listdirectoryredlines.js");
+var loadredline = require("./routes/loadredlines.js");
 
-var listdwgdirectory = require("./routes/listdwgdirectory_cv9.40.2.js");
-var plans = require('./routes/plans_cv9.50.1.js');
-var licences = require('./routes/licence_cv9.50.1.js');
+var listdwgdirectory = require("./routes/listdwgdirectory.js");
+var plans = require('./routes/plans.js');
+var licences = require('./routes/licence.js');
 
 var listdatabasedata ;
 var authentification ;
@@ -88,9 +88,9 @@ var file_upload;
 
 try{
     if (config.setup_mysqlHost){
-        listdatabasedata = require("./routes/listdatabasedata_cv9.24.1.js");
-        authentification = require("./routes/authentification_cv9.5.2.js");
-        file_upload = require("./routes/file_upload_cv9.5.2.js");
+        listdatabasedata = require("./routes/listdatabasedata.js");
+        authentification = require("./routes/authentification.js");
+        file_upload = require("./routes/file_upload.js");
     }
 }
 catch(db_err){
