@@ -20,8 +20,8 @@
     "converterpathWin": "windows/",
     "converterpathLin": "linux/",
     "fontLocation" : "fonts/",
-    "ax2024_executable" : "AX2025_W64_25_04_140.exe",
-    "ax2024_executable_windows" : "AX2025_W64_25_01_136.exe",
+    "ax2024_executable" : "AX2024_W64_25_04_140c.exe",
+    "ax2024_executable_windows" : "AX2024_W64_25_04_140c.exe",
     "ax2024_executable_linux" : "ax2023_L64_23_12_140",
     "licenseLocation" : "/converters/ax2024/",
     "xpathLocation" : "/converters/xpath/",
@@ -57,7 +57,7 @@
     "bcryptSaltRounds" : 10,
     "userFolderMaximumFiles" : 10,
     "userFolderMaximumSizeInMB" : 100,
-    "globalApplicationSasToken" : "?si=testread1&spr=https&sv=2022-11-02&sr=c&sig=AGPx54rizyMyd6EAtEk5lG4AZgoo8UuzIgxBVHR3QoU%3D",
+    "globalApplicationSasToken" : "?si=testread1&spr=https&sv=2022-11-02&sr=c&sig=A",
     "globalBearerAutentication" : false,
     "globalBearerAutenticationToken" : "t-7614f875-8423-4f20-a674-d7cf3096290e"
 }
