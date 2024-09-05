@@ -46,6 +46,7 @@ const listFolderStructure = (directoryPath, indent = '') => {
 				size: stats.size,
 				created: stats.birthtime,
 				modified: stats.mtime,
+				isFolder: true,
 				children: sub_dirs,
 			})
 		} else {
@@ -55,6 +56,7 @@ const listFolderStructure = (directoryPath, indent = '') => {
 				size: stats.size,
 				created: stats.birthtime,
 				modified: stats.mtime,
+				isFolder: false,
 			})
 			if(config.cvjs_debug&& show_folders) console.log(`${indent}├── ${file}`);
 		}
@@ -105,12 +107,16 @@ router.get("", verifyTokenOptional, async (req, res) => {
 		if (!fs.existsSync(userDirPath)) {
 			fs.mkdirSync(userDirPath);
 		}
-		const userDirs = listFolderStructure(userDirPath);
+		// get absolute path
+		const userDirPathAbs = path.resolve(userDirPath);
+
+		const userDirs = listFolderStructure(userDirPathAbs);
 		dirs = [
 			{
 				own: true,
 				name: "MY FOLDER",
 				path: userDirPath,
+				isFolder: true,
 				children: userDirs,
 			}, ...dirs];
 	}

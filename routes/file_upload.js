@@ -17,6 +17,7 @@ if (!fs.existsSync(dir)) {
 
 const express = require("express"),
 	router = express.Router();
+const config = require("../CADViewer_config.json");
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -28,8 +29,25 @@ const upload = multer({ storage: storage });
 
 router.post('/files', upload.array('files'), verifyToken, async (req, res, next) => {
     const files = req.files;
+    const { global, path } = req.body;
+    const folderLocation = config.folderLocation;
+
+    console.log({global})
     console.log(files);
     console.log({user: req.user});
+
+    if (global) {
+
+        files.forEach(file => {
+            fs.renameSync(file.path, `${path || folderLocation}/${file.originalname}`);
+        });
+
+        res.send({files: files.map(file => ({
+                ...file,
+                path: `${path || folderLocation}/${file.originalname}`
+            }))});
+        return;
+    }
 
     let existingUser;
     try {
@@ -99,5 +117,41 @@ router.post('/files', upload.array('files'), verifyToken, async (req, res, next)
         path: `${userDirPath}/${file.originalname}`
     }))});
 })
+
+// post endpoint for create folder (folder_name) inside directory (path)
+router.post('/folder', verifyToken, async (req, res) => {
+    const { path, folder_name } = req.body;
+    const folderLocation = config.folderLocation;
+
+    console.log({path, folder_name})
+
+    if (!path) {
+        return res.status(400).json({error: 'Path is required'});
+    }
+
+    if (!folder_name) {
+        return res.status(400).json({error: 'Folder name is required'});
+    }
+
+    const userDirPath = `${path}/${folder_name}`;
+    if (!fs.existsSync(userDirPath)) {
+        fs.mkdirSync(userDirPath);
+    }
+
+    res.send({path: userDirPath});
+})
+
+// endpoint for remove file and folder
+router.delete('/remove', verifyToken, async (req, res) => {
+    const { isFolder, path } = req.body;
+
+    if (!isFolder) {
+        fs.unlinkSync(path);
+    } else {
+        fs.rmdirSync(path, { recursive: true });
+    }
+
+    res.send({success: true});
+});
 
 module.exports = router;

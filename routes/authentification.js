@@ -33,7 +33,7 @@ router.post("/login", async (req, res, next) => {
   console.log({email, password})
   let existingUser;
   try {
-    const [rows] = await conn.promise().execute('SELECT * FROM `users` WHERE `email` = ?', [email]);
+    const [rows] = await conn.promise().execute('SELECT * FROM `users` WHERE `is_enabled` = 1 AND `email` = ?', [email]);
     if (rows.length > 0) {
       existingUser = rows[0];
     }
@@ -71,6 +71,8 @@ router.post("/login", async (req, res, next) => {
         last_name: existingUser.last_name,
         email: existingUser.email,
         avatar_url: existingUser.avatar_url,
+        id: existingUser.id,
+        role: existingUser.role,
         token: token,
       },
     });
@@ -89,7 +91,7 @@ router.post("/signup", async (req, res, next) => {
 
   
   try {
-    const [response] = await conn.promise().execute('INSERT INTO `users` (`username`, `email`, `crypted_password`) VALUES (?, ?, ?)', [username, email, crypted_password]);
+    const [response] = await conn.promise().execute('INSERT INTO `users` (`username`, `email`, `crypted_password`, `role`, `is_enabled`) VALUES (?, ?, ?, ?, 1)', [username, email, crypted_password, 'user']);
     if (response.insertId) {
       const [rows] = await conn.promise().execute('SELECT * FROM `users` WHERE `id` = ?', [response.insertId]);
       if (rows.length > 0) {

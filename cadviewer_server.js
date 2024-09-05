@@ -19,7 +19,10 @@ var config = require('./CADViewer_config.json');
 
 // serve static files  - pull /app/ content from /cadviewer folder
 app.use(express.static('cadviewer'))
-app.use(cors());
+app.use(cors({
+    "origin": "*",
+    "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+}));
 
 const https = require('https');
 /* HOW TO GENERATE A TEST SSL CERTIFICATE FOR HTTPS
@@ -84,12 +87,14 @@ var licences = require('./routes/licence.js');
 
 var listdatabasedata ;
 var authentification ;
+var users;
 var file_upload;
 
 try{
     if (config.setup_mysqlHost){
         listdatabasedata = require("./routes/listdatabasedata.js");
         authentification = require("./routes/authentification.js");
+        users = require("./routes/users.js");
         file_upload = require("./routes/file_upload.js");
     }
 }
@@ -239,7 +244,7 @@ if (true){
     app.use(function(req, res, next) {
 
       res.header("Access-Control-Allow-Origin", "*"); // update to match the domain you will make the request from
-      res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+      // res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
       
       if (cvjs_debug) console.log(version+": incoming request: req.path:"+req.path);
 
@@ -347,6 +352,7 @@ if (true){
         if (config.setup_mysqlHost){
             app.use('/database', listdatabasedata);
             app.use('/auth', authentification);
+            app.use('/users', users);
             app.use('/upload', file_upload);
         }
 
