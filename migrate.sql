@@ -1,3 +1,5 @@
+ALTER TABLE `users` ADD `folder_name` text NULL;
+
 ALTER TABLE `users`
 ADD `first_name` varchar(50) COLLATE 'latin1_swedish_ci' NULL,
 ADD `last_name` varchar(50) COLLATE 'latin1_swedish_ci' NULL AFTER `first_name`;
