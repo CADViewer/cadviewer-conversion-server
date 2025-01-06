@@ -1,6 +1,9 @@
-converters/ax2024/windows/*.exe filter=lfs diff=lfs merge=lfs -text
-converters/ax2024/fonts/*.TTC filter=lfs diff=lfs merge=lfs -text
-converters/ax2024/fonts/*.TTF filter=lfs diff=lfs merge=lfs -text
-converters/ax2024/linux/* filter=lfs diff=lfs merge=lfs -text
-converters/ax2024/linux/ax2025_L64_25_07_141 filter=lfs diff=lfs merge=lfs -text
-converters/ax2024/linux/AxCopy_L64_01_00_02 filter=lfs diff=lfs merge=lfs -text
+converters/autoxchange/windows/*.exe filter=lfs diff=lfs merge=lfs -text
+converters/autoxchange/fonts/*.TTC filter=lfs diff=lfs merge=lfs -text
+converters/autoxchange/fonts/*.TTF filter=lfs diff=lfs merge=lfs -text
+converters/autoxchange/fonts/*.ttc filter=lfs diff=lfs merge=lfs -text
+converters/autoxchange/fonts/*.ttf filter=lfs diff=lfs merge=lfs -text
+converters/autoxchange/linux/* filter=lfs diff=lfs merge=lfs -text
+converters/autoxchange/linux/ax2025_L64_25_07_144 filter=lfs diff=lfs merge=lfs -text
+converters/autoxchange/linux/AxCopy_L64_01_00_02 filter=lfs diff=lfs merge=lfs -text
+converters/autoxchange/**/* filter=lfs diff=lfs merge=lfs -text

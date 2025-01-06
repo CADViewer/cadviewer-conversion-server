@@ -5,3 +5,10 @@ node_modules/
 converters/files/*
 uploads/*
 node-ffi
+call-Api_Conversion_log.log
+node_modules/*
+.idea/*
+html/CV*.html
+dist/*
+logs/*
+cadviewer/settings/rest-api-parameters.json

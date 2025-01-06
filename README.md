@@ -22,7 +22,7 @@ It contains all components to run on either a Windows server or a Linux Server.
 
 ## This package does not contain
 
-4: The converter folder structure contains a larger set of fonts, installed in /cadviewer/converters/ax2024/fonts/, but a fuller set of fonts can be installed. 
+4: The converter folder structure contains a larger set of fonts, installed in /cadviewer/converters/autoxchange/fonts/, but a fuller set of fonts can be installed. 
 
 Read the sections on installing and handling [Fonts](https://tailormade.com/ax2020techdocs/installation/fonts/) in [AutoXchange 2024TechDocs](https://tailormade.com/ax2020techdocs/) and [TroubleShooting](https://tailormade.com/ax2020techdocs/troubleshooting/).
 
@@ -32,7 +32,7 @@ Read the sections on installing and handling [Fonts](https://tailormade.com/ax20
 
 1. The ***CADViewer_config.json*** contains all settings for running under Windows and Linux.
 
-2. In the ***CADViewer_config.json*** the default settings of the variable ***autodetect_platform*** is ***true*** and the variable ***autodetect_location*** is  ***true***. With these settings running **cadviewer_server** will automatically set up all folder paths for conversions when running on either Windows or Linux. 
+2. In the ***CADViewer_config.json*** the default settings of the variable ***autodetect_platform*** is ***true*** and the variable ***autodetect_location*** is  ***true***. With these settings running **app** will automatically set up all folder paths for conversions when running on either Windows or Linux. 
 
 3. If a user sets ***autodetect_platform*** to ***false*** and the variable ***autodetect_location*** to  ***false***, all paths in **CADViewer_config.json** MUST correspond to the actual server setting. 
 
@@ -44,7 +44,7 @@ Read the sections on installing and handling [Fonts](https://tailormade.com/ax20
    
     5B: Ensure the folder with temporary files ***/converters/files*** has full read and write permissions. 
 
-6. Run by using the *npm start* script or *node cadviewer_server* from the command line.
+6. Run by using the *npm start* script or *node app* from the command line.
  
 
 7: The CAD converter [AutoXchange 2025](https://cadviewer.com/alldownloads/autoxchange), - and other converters -, needs to be installed and referenced through the configuration file. The converters typically are in the /cadviewer-conversion-server/converters/ folder structure and comes pre-installed with this package. If using ***autodetect_*** under **2.** above, then paths will be set up automatically 
@@ -56,7 +56,7 @@ Read the sections on installing and handling [Fonts](https://tailormade.com/ax20
 
 **NOTE:** Make sure the converter version number in CADViwer_config.json match the converters you install, and change any paths settings to correspond to your install folders.  
 
-**Run:** Run by using the *npm start* script or *node cadviewer_server* from the command line.
+**Run:** Run by using the *npm start* script or *node app* from the command line.
 
 
 
@@ -100,27 +100,27 @@ The user controlled parameters in the configuration file ***[CADViewer_config.js
     "ServerLocation_linux" : "/opt/cadviewer-conversion-server/",
     "fileLocation" : "/converters/files/",
     "fileLocationUrl" : "http://localhost:3000/converters/files/", 
-    "converterLocation" : "/converters/ax2024/",
+    "converterLocation" : "/converters/autoxchange/",
     "converterpathWin": "windows/",
     "converterpathLin": "linux/",
     "fontLocation" : "fonts/",
-    "ax2024_executable" : "AX2025_W64_25_04_135a.exe",
-    "ax2024_executable_windows" : "AX2025_W64_25_04_135a.exe",
-    "ax2024_executable_linux" : "ax2023_L64_23_12_134",
-    "licenseLocation" : "/converters/ax2024/",
+    "autoxchange_executable" : "AX2025_W64_25_04_135a.exe",
+    "autoxchange_executable_windows" : "AX2025_W64_25_04_135a.exe",
+    "autoxchange_executable_linux" : "ax2023_L64_23_12_134",
+    "licenseLocation" : "/converters/autoxchange/",
     "xpathLocation" : "/converters/xpath/",
     "temp_print_folder" : "/temp_print",
     "callbackMethod_gatewayUrl_flag" : false,
     "callbackMethod_gatewayUrl" : "http://localhost:3000",
     "callbackMethod" : "getcadviewercontent",
-	"dwgmergeLocation" : "/converters/dwgmerge2024",
-	"dwgmerge2023_executable" : "DwgMerge2023_W32_23_01_01.exe",
-	"dwgmerge2023_executable_windows" : "DwgMerge2023_W32_23_01_01.exe",
-	"dwgmerge2023_executable_linux" : "DwgMerge_2023_L64_23_12_03",
-	"linklistLocation" : "/converters/linklist2024/",
-	"linklist2023_executable" : "LinkList_2024_W64_24_01_03.exe",
-	"linklist2023_executable_windows" : "LinkList_2024_W64_24_01_03.exe",
-	"linklist2023_executable_linux" : "LinkList_2024_L64_24_01_03",
+	"dwgmergeLocation" : "/converters/dwgmerge",
+	"dwgmerge_executable" : "DwgMerge2023_W32_23_01_01.exe",
+	"dwgmerge_executable_windows" : "DwgMerge2023_W32_23_01_01.exe",
+	"dwgmerge_executable_linux" : "DwgMerge_2023_L64_23_12_03",
+	"linklistLocation" : "/converters/linklist/",
+	"linklist_executable" : "LinkList_2024_W64_24_01_03.exe",
+	"linklist_executable_windows" : "LinkList_2024_W64_24_01_03.exe",
+	"linklist_executable_linux" : "LinkList_2024_L64_24_01_03",
     "custom_bearerAutentication" : "d5d483e8-2f8d-463e-cc01-f41a78b1d94c",
     "setup_mysqlHost" : true,
     "mysqlHost" : "localhost",
@@ -158,7 +158,7 @@ The user controlled parameters in the configuration file ***[CADViewer_config.js
 
 This repository should contain the latest converters, but in case you need to update any of the back-end converters please follow: 
 
-* [Download **AutoXchange**](/download/) (and other converters), install (unzip) AX2025 in **/converters/ax2024/windows** or **/converters/ax2024/linux** or in the designated folder structure.
+* [Download **AutoXchange**](/download/) (and other converters), install (unzip) AX2025 in **/converters/autoxchange/windows** or **/converters/autoxchange/linux** or in the designated folder structure.
 
 * Read the sections on installing and handling [Fonts](https://tailormade.com/ax2020techdocs/installation/fonts/) in [AutoXchange 2024 TechDocs](https://tailormade.com/ax2020techdocs/) and [TroubleShooting](https://tailormade.com/ax2020techdocs/troubleshooting/).
 

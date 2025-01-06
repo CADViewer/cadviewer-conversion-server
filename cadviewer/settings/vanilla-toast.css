@@ -1,0 +1,48 @@
+#vanilla-toast-container {
+  text-align: center;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  position: fixed;
+}
+
+#vanilla-toast {
+  display: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+
+  background: rgba(0, 0, 0, 0.76);
+  color: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+}
+
+#vanilla-toast-text {
+  display: inline;
+}
+
+#vanilla-toast-close-button {
+  display: none;
+  margin-left: 15px;
+  font-size: 15px;
+}
+
+#vanilla-toast.success {
+  background: rgba(92, 184, 92, 0.76);
+}
+
+#vanilla-toast.info {
+  background: rgba(91, 192, 222, 0.76);
+}
+
+#vanilla-toast.warning {
+  background: rgba(236, 151, 31, 0.76);
+}
+
+#vanilla-toast.error {
+  background: rgba(201, 48, 44, 0.76);
+}

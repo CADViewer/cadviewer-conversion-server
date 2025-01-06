@@ -26,6 +26,8 @@ services:
 
   cadviewer_node:
     build: .
+#    platform: linux/arm64/v8
+    platform: linux/amd64
     restart: always
     ports:
       - "3000:3000"
