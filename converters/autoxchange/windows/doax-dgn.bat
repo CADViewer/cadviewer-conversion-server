@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3f8a3ebbd9d4cb953ea89e8490d7c6c5c3cfb1c95396fb7bd910902cb0d240aa
-size 427
+set exelatest=c:\ax2023\AX2023
+call :treeProcess
+exit /b
+
+:treeProcess
+for %%f in (*.dgn) do call :processFile "%%f"
+for /D %%d in (*) do (
+    cd %%d
+    call :treeProcess
+    cd ..
+)
+exit /b
+
+:processFile
+set fName=%1%
+for /f "useback tokens=*" %%a in ('%fName%') do set fName=%%~a
+set svgName=%fName:.dgn=.pdf%
+%exelatest% "%fName%"  "%svgName%"  -pdf -xpath="C:\batch\ax2023\files" -fontpath="C:\batch\ax2023\fonts"
+exit /b

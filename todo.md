@@ -6,9 +6,7 @@
 - [x] In the Rest api page move the download/display button to top (after clear) and gray out the button if the request is not yet executed
 - [x] In the folders menu, add the listing of the files in the folder, with custom actions (rest api actions (5), different kind of conversion, delete, update, upload, ...), add the settings for the folder that can be browsed
 - [x] When set autodetect_location to true then fill this 3 params:
-"ServerLocation": "/reactjs/cadviewer-conversion-server-nextgen/", 
-"ServerLocation_windows": "/reactjs/cadviewer-conversion-server-nextgen/",
-"ServerLocation_linux": "/reactjs/cadviewer-conversion-server-nextgen/",
+"ServerLocation": "/reactjs/cadviewer-conversion-server-nextgen/",
 - [x] Add homepage when open conversion server directly (index with redirect)
 - [x] Add storage to the parameters (json file)
 - [x] Implement save and execute for the modal when come from the folders page

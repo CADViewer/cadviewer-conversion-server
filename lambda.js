@@ -165,7 +165,6 @@ if (config.autodetect_location){
         config.dwgmergeLocation = config.ServerLocation + config.dwgmergeLocation + config.converterpathWin;
 
         config.licenseLocation = config.ServerLocation + config.licenseLocation + config.converterpathWin;
-        config.folderLocation = config.folderLocation_windows;
 
     }
     else{   // linux
@@ -182,7 +181,6 @@ if (config.autodetect_location){
         config.dwgmergeLocation = config.ServerLocation + config.dwgmergeLocation + config.converterpathLin;
 
         config.licenseLocation = config.ServerLocation + config.licenseLocation + config.converterpathLin;
-        config.folderLocation = config.folderLocation_linux;
 
     }
     config.fileLocationUrl = config.ServerUrl + config.fileLocation;
