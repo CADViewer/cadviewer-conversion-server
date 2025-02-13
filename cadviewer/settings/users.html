@@ -1,486 +1,1153 @@
 <!DOCTYPE html>
 <html lang="fr" class="h-full">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CADViewer - Conversion server settings</title>
-        <!-- Inclusion du CDN Tailwind CSS -->
-<!--        <link href="https://cdn.tailwindcss.com/" rel="stylesheet">-->
-        <script src="/settings/tailwind.js"></script>
-        <!--Favicon-->
-        <link rel="shortcut icon" href="https://www.cadviewer.com/images/favicon.png" type="image/x-icon">
-        <link rel="icon" href="https://www.cadviewer.com/images/favicon.png" type="image/x-icon">
-        <link rel="stylesheet" href="/settings/style.css">
-        <script src="/settings/vanilla-toast.js"></script>
-        <link rel="stylesheet" href="/settings/vanilla-toast.css">
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CADViewer - Conversion server settings</title>
+    <!-- Inclusion du CDN Tailwind CSS -->
+    <!--        <link href="https://cdn.tailwindcss.com/" rel="stylesheet">-->
+    <script src="/settings/tailwind.js"></script>
+    <script src="/settings/cache-stats.js"></script>
+    <!--Favicon-->
+    <link
+      rel="shortcut icon"
+      href="https://www.cadviewer.com/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="https://www.cadviewer.com/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/settings/style.css" />
+    <script src="/settings/vanilla-toast.js"></script>
+    <link rel="stylesheet" href="/settings/vanilla-toast.css" />
+  </head>
 
-    <body class="h-full">
-        <div>
-            <!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
-            <div class="relative z-50 lg:hidden" role="dialog" aria-modal="true">
+  <body class="h-full">
+    <div>
+      <!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
+      <div class="relative z-50 lg:hidden" role="dialog" aria-modal="true">
+        <div class="fixed inset-0 bg-gray-900/80" aria-hidden="true"></div>
 
-                <div class="fixed inset-0 bg-gray-900/80" aria-hidden="true"></div>
-
-                <div class="fixed inset-0 flex">
-                    <div class="relative mr-16 flex w-full max-w-xs flex-1">
-                        <div class="absolute left-full top-0 flex w-16 justify-center pt-5">
-                            <button type="button" class="-m-2.5 p-2.5">
-                                <span class="sr-only">Close sidebar</span>
-                                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                                </svg>
-                            </button>
-                        </div>
-
-                        <!-- Sidebar component, swap this element with another sidebar if you like -->
-                        <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-white px-6 pb-4 h-full">
-                            <div class="flex h-16 shrink-0 items-center">
-                                <img class="h-8 w-auto" src="https://www.cadviewer.com/images/cadviewer/cv-logo-smaller.png" alt="Your Company">
-                            </div>
-                            <nav class="flex flex-1 flex-col">
-                                <ul role="list" class="flex flex-1 flex-col gap-y-7">
-                                    <li>
-                                        <ul role="list" class="-mx-2 space-y-1">
-                                            <li>
-                                                <!-- Current: "bg-gray-50 text-orange-600", Default: "text-gray-700 hover:text-orange-600 hover:bg-gray-50" -->
-                                                <a href="/settings" class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600">
-                                                    <svg class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-                                                    </svg>
-                                                    Dashboard
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="/settings/users" class="group flex gap-x-3 rounded-md bg-gray-50 p-2 text-sm font-semibold leading-6 text-orange-600">
-                                                    <svg class="h-6 w-6 shrink-0 text-orange-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
-                                                    </svg>
-                                                    Users
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="/settings/folders" class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600">
-                                                    <svg class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
-                                                    </svg>
-                                                    Folders
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="/settings/licences" class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600">
-                                                    <svg class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
-                                                    </svg>
-                                                    Licences
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="/settings/logs" class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z" />
-                                                    </svg>
-                                                    Logs
-                                                </a>
-                                            </li>
-
-                                            <li>
-                                                <a href="/settings/restapi-test" class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 14.25h13.5m-13.5 0a3 3 0 0 1-3-3m3 3a3 3 0 1 0 0 6h13.5a3 3 0 1 0 0-6m-16.5-3a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3m-19.5 0a4.5 4.5 0 0 1 .9-2.7L5.737 5.1a3.375 3.375 0 0 1 2.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 0 1 .9 2.7m0 0a3 3 0 0 1-3 3m0 3h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Zm-3 6h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Z" />
-                                                    </svg>
-                                                    Rest API Test
-                                                </a>
-                                            </li>
-
-                                            <li>
-                                                <a href="/settings/config" class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z" />
-                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                                                    </svg>
-                                                    Config
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="/settings/doctor" class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600">
-                                                    <svg class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z" />
-                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z" />
-                                                    </svg>
-                                                    CADViewer Doctor
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <div class="text-xs font-semibold leading-6 text-gray-400">Useful Links</div>
-                                        <ul role="list" class="-mx-2 mt-2 space-y-1">
-                                            <li>
-                                                <!-- Current: "bg-gray-50 text-orange-600", Default: "text-gray-700 hover:text-orange-600 hover:bg-gray-50" -->
-                                                <a href="https://www.cadviewer.com/" target="_blank" class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600">
-                                                    <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-white text-[0.625rem] font-medium text-gray-400 group-hover:border-orange-600 group-hover:text-orange-600">C</span>
-                                                    <span class="truncate">CADViewer</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.tailormade.com/" target="_blank" class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600">
-                                                    <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-white text-[0.625rem] font-medium text-gray-400 group-hover:border-orange-600 group-hover:text-orange-600">T</span>
-                                                    <span class="truncate">Tailormade</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://store.cadviewer.com/" target="_blank" class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600">
-                                                    <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-white text-[0.625rem] font-medium text-gray-400 group-hover:border-orange-600 group-hover:text-orange-600">S</span>
-                                                    <span class="truncate">CADViewer Store</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </nav>
-                            <div class="mt-auto">
-                                <div class="bg-gray-100 rounded-lg p-3 shadow-sm">
-                                    <div class="text-sm text-gray-600 font-medium">Version</div>
-                                    <div class="text-base text-gray-800">{version}</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="fixed inset-0 flex">
+          <div class="relative mr-16 flex w-full max-w-xs flex-1">
+            <div class="absolute left-full top-0 flex w-16 justify-center pt-5">
+              <button type="button" class="-m-2.5 p-2.5">
+                <span class="sr-only">Close sidebar</span>
+                <svg
+                  class="h-6 w-6 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  data-slot="icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18 18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
             </div>
 
-            <!-- Static sidebar for desktop -->
-            <div class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
-                <!-- Sidebar component, swap this element with another sidebar if you like -->
-                <div class="flex grow flex-col gap-y-5 overflow-y-auto border-r border-gray-200 bg-white px-6 h-full pb-4">
-                    <div class="flex h-16 shrink-0 items-center">
-                        <img class="h-12 w-auto" src="https://www.cadviewer.com/images/cadviewer/cv-logo-smaller.png" alt="CADViewer">
-                    </div>
-                    <nav class="flex flex-1 flex-col">
-                        <ul role="list" class="flex flex-1 flex-col gap-y-7">
-                            <li>
-                                <ul role="list" class="-mx-2 space-y-1">
-                                    <li>
-                                        <!-- Current: "bg-gray-50 text-orange-600", Default: "text-gray-700 hover:text-orange-600 hover:bg-gray-50" -->
-                                        <a href="/settings" class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600">
-                                            <svg class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-                                            </svg>
-                                            Dashboard
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/settings/users" class="group flex gap-x-3 rounded-md bg-gray-50 p-2 text-sm font-semibold leading-6 text-orange-600">
-                                            <svg class="h-6 w-6 shrink-0 text-orange-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
-                                            </svg>
-                                            Users
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/settings/folders" class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600">
-                                            <svg class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
-                                            </svg>
-                                            Folders
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/settings/licences" class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600">
-                                            <svg class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
-                                            </svg>
-                                            Licences
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/settings/logs" class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z" />
-                                            </svg>
-                                            Logs
-                                        </a>
-                                    </li>
+            <!-- Sidebar component, swap this element with another sidebar if you like -->
+            <div
+              class="flex grow flex-col gap-y-5 overflow-y-auto bg-white px-6 pb-4 h-full"
+            >
+              <div class="flex h-16 shrink-0 items-center">
+                <img
+                  class="h-8 w-auto"
+                  src="https://www.cadviewer.com/images/cadviewer/cv-logo-smaller.png"
+                  alt="Your Company"
+                />
+              </div>
+              <nav class="flex flex-1 flex-col">
+                <ul role="list" class="flex flex-1 flex-col gap-y-7">
+                  <li>
+                    <ul role="list" class="-mx-2 space-y-1">
+                      <li>
+                        <!-- Current: "bg-gray-50 text-orange-600", Default: "text-gray-700 hover:text-orange-600 hover:bg-gray-50" -->
+                        <a
+                          href="/settings"
+                          class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                        >
+                          <svg
+                            class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            data-slot="icon"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                            />
+                          </svg>
+                          Dashboard
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/settings/users"
+                          class="group flex gap-x-3 rounded-md bg-gray-50 p-2 text-sm font-semibold leading-6 text-orange-600"
+                        >
+                          <svg
+                            class="h-6 w-6 shrink-0 text-orange-600"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            data-slot="icon"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"
+                            />
+                          </svg>
+                          Users
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/settings/folders"
+                          class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                        >
+                          <svg
+                            class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            data-slot="icon"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z"
+                            />
+                          </svg>
+                          Folders
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/settings/licences"
+                          class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                        >
+                          <svg
+                            class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            data-slot="icon"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"
+                            />
+                          </svg>
+                          Licences
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/settings/logs"
+                          class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z"
+                            />
+                          </svg>
+                          Logs
+                        </a>
+                      </li>
 
-                                    <li>
-                                        <a href="/settings/restapi-test" class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 14.25h13.5m-13.5 0a3 3 0 0 1-3-3m3 3a3 3 0 1 0 0 6h13.5a3 3 0 1 0 0-6m-16.5-3a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3m-19.5 0a4.5 4.5 0 0 1 .9-2.7L5.737 5.1a3.375 3.375 0 0 1 2.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 0 1 .9 2.7m0 0a3 3 0 0 1-3 3m0 3h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Zm-3 6h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Z" />
-                                            </svg>
-                                            Rest API Test
-                                        </a>
-                                    </li>
+                      <li>
+                        <a
+                          href="/settings/restapi-test"
+                          class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M5.25 14.25h13.5m-13.5 0a3 3 0 0 1-3-3m3 3a3 3 0 1 0 0 6h13.5a3 3 0 1 0 0-6m-16.5-3a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3m-19.5 0a4.5 4.5 0 0 1 .9-2.7L5.737 5.1a3.375 3.375 0 0 1 2.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 0 1 .9 2.7m0 0a3 3 0 0 1-3 3m0 3h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Zm-3 6h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Z"
+                            />
+                          </svg>
+                          Rest API Test
+                        </a>
+                      </li>
 
-                                    <li>
-                                        <a href="/settings/config" class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z" />
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                                            </svg>
-                                            Config
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/settings/doctor" class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600">
-                                            <svg class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z" />
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z" />
-                                            </svg>
-                                            CADViewer Doctor
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div class="text-xs font-semibold leading-6 text-gray-400">Useful Links</div>
-                                <ul role="list" class="-mx-2 mt-2 space-y-1">
-                                    <li>
-                                        <!-- Current: "bg-gray-50 text-orange-600", Default: "text-gray-700 hover:text-orange-600 hover:bg-gray-50" -->
-                                        <a href="https://www.cadviewer.com/" target="_blank" class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600">
-                                            <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-white text-[0.625rem] font-medium text-gray-400 group-hover:border-orange-600 group-hover:text-orange-600">C</span>
-                                            <span class="truncate">CADViewer</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.tailormade.com/" target="_blank" class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600">
-                                            <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-white text-[0.625rem] font-medium text-gray-400 group-hover:border-orange-600 group-hover:text-orange-600">T</span>
-                                            <span class="truncate">Tailormade</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://store.cadviewer.com/" target="_blank" class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600">
-                                            <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-white text-[0.625rem] font-medium text-gray-400 group-hover:border-orange-600 group-hover:text-orange-600">S</span>
-                                            <span class="truncate">CADViewer Store</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-
-                    <div class="mt-auto">
-                        <div class="bg-gray-100 rounded-lg p-3 shadow-sm">
-                            <div class="text-sm text-gray-600 font-medium">Version</div>
-                            <div class="text-base text-gray-800">{version}</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="lg:pl-72">
-                <div class="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4 bg-white px-4 sm:gap-x-6 sm:px-6 lg:px-8">
-                    <button type="button" class="-m-2.5 p-2.5 text-gray-700 lg:hidden">
-                        <span class="sr-only">Open sidebar</span>
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>
-                    </button>
-
-                    <!-- Separator -->
-                    <div class="h-6 w-px bg-gray-200 lg:hidden" aria-hidden="true"></div>
-                    <div class="sm:flex sm:items-center sm:justify-between w-full">
-                        <h1 class="text-xl font-semibold leading-6 text-gray-900">Users</h1>
-                        <div class="mt-3 flex sm:ml-4 sm:mt-0">
-                            <button type="button" id="new-user" class="ml-3 inline-flex items-center rounded-md bg-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600">New User</button>
-                        </div>
-                    </div>
-                </div>
-
-                <main class="py-2 px-4 sm:px-6 lg:px-8">
-                    <ul role="list" id="user-list" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4">
+                      <li>
+                        <a
+                          href="/settings/config"
+                          class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z"
+                            />
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                            />
+                          </svg>
+                          Config
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/settings/doctor"
+                          class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                        >
+                          <svg
+                            class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            data-slot="icon"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z"
+                            />
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z"
+                            />
+                          </svg>
+                          CADViewer Doctor
+                        </a>
+                      </li>
                     </ul>
-                </main>
-            </div>
-        </div>
-        <div id="modal" class="relative hidden" style="z-index: 500" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-            <div id="modal-backdrop" class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
-            <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
-                <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-                    <div id="modal-panel" class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
-                        <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
-                            <div class="sm:flex sm:items-start">
-                                <div class="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-orange-100 sm:mx-0 sm:h-10 sm:w-10">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-orange-600">
-                                        <path d="M4.5 6.375a4.125 4.125 0 1 1 8.25 0 4.125 4.125 0 0 1-8.25 0ZM14.25 8.625a3.375 3.375 0 1 1 6.75 0 3.375 3.375 0 0 1-6.75 0ZM1.5 19.125a7.125 7.125 0 0 1 14.25 0v.003l-.001.119a.75.75 0 0 1-.363.63 13.067 13.067 0 0 1-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 0 1-.364-.63l-.001-.122ZM17.25 19.128l-.001.144a2.25 2.25 0 0 1-.233.96 10.088 10.088 0 0 0 5.06-1.01.75.75 0 0 0 .42-.643 4.875 4.875 0 0 0-6.957-4.611 8.586 8.586 0 0 1 1.71 5.157v.003Z" />
-                                    </svg>
-                                </div>
-                                <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left w-full">
-                                    <div>
-                                        <h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title">Add new User</h3>
-<!--                                        span for user folder uuid -->
-                                        <span id="user-folder-uuid" class="hidden text-gray-400 text-xs font-medium leading-4">Folder UUID</span>
-                                    </div>
-                                    <input type="hidden" name="user-id" id="user-id">
-                                    <div class="mt-2">
-                                        <div class="flex gap-2 mt-2">
-<!--                                            custom input file picker-->
-                                                <div class="w-full">
-                                                    <label for="avatar" class="block text-sm font-medium leading-6 text-gray-900">Avatar</label>
-                                                    <label class="mt-2 w-full">
-                                                        <input type="file" name="avatar" id="avatar" class="hidden">
-                                                        <img  id="avatar-preview" class="h-14 w-14 shrink-0 rounded-full bg-gray-300 cursor-pointer" src="/cadviewer/settings/default.png" alt="">
-                                                    </label>
-                                                </div>
-                                        </div>
-                                        <div class="flex gap-2 mt-2">
-                                            <div class="w-full">
-                                                <label for="firstname" class="block text-sm font-medium leading-6 text-gray-900">Firstname</label>
-                                                <div class="mt-2 w-full">
-                                                    <input type="text" name="firstname" id="firstname" class="block w-full rounded-md border-0 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6" placeholder="">
-                                                </div>
-                                            </div>
-                                            <div class="w-full">
-                                                <label for="lastname" class="block text-sm font-medium leading-6 text-gray-900">Lastname</label>
-                                                <div class="mt-2 w-full">
-                                                    <input type="text" name="lastname" id="lastname" class="block w-full rounded-md border-0 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6" placeholder="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-full mt-2">
-                                            <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Username</label>
-                                            <div class="mt-2 w-full">
-                                                <input type="text" name="username" id="username" class="block w-full rounded-md border-0 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6" placeholder="">
-                                            </div>
-                                        </div>
-                                        <div class="w-full mt-2">
-                                            <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email</label>
-                                            <div class="mt-2 w-full">
-                                                <input type="email" name="email" id="email" class="block w-full rounded-md border-0 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6" placeholder="">
-                                            </div>
-                                        </div>
-                                        <fieldset class="mt-2">
-                                            <legend class="block text-sm font-medium leading-6 text-gray-900">Role</legend>
-                                            <div class="mt-2 space-y-6 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
-                                                <div class="flex items-center">
-                                                    <input id="member" name="role" type="radio" checked class="relative h-4 w-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white checked:border-orange-600 checked:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden [&:not(:checked)]:before:hidden">
-                                                    <label for="member" class="ml-3 block text-sm/6 font-medium text-gray-900">Member</label>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <input id="admin" name="role" type="radio" class="relative h-4 w-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white checked:border-orange-600 checked:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden [&:not(:checked)]:before:hidden">
-                                                    <label for="admin" class="ml-3 block text-sm/6 font-medium text-gray-900">Administrator</label>
-                                                </div>
-                                            </div>
-                                        </fieldset>
-                                        <fieldset class="mt-2">
-                                            <legend class="block text-sm font-medium leading-6 text-gray-900">Status</legend>
-                                            <div class="mt-2 space-y-6 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
-                                                <div class="flex items-center">
-                                                    <input id="active" name="status" type="radio" checked class="relative h-4 w-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white checked:border-orange-600 checked:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden [&:not(:checked)]:before:hidden">
-                                                    <label for="active" class="ml-3 block text-sm/6 font-medium text-gray-900">Active</label>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <input id="not_active" name="status" type="radio" class="relative h-4 w-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white checked:border-orange-600 checked:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden [&:not(:checked)]:before:hidden">
-                                                    <label for="not_active" class="ml-3 block text-sm/6 font-medium text-gray-900">Not active</label>
-                                                </div>
-                                            </div>
-                                        </fieldset>
-                                        <div class="w-full mt-2">
-                                            <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Password</label>
-                                            <div class="mt-2 w-full">
-                                                <input type="password" name="password" id="password" class="block w-full rounded-md border-0 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6" placeholder="*******">
-                                            </div>
-                                        </div>
-                                        <div class="w-full mt-2">
-                                            <label for="confirm-password" class="block text-sm font-medium leading-6 text-gray-900">Confirm Password</label>
-                                            <div class="mt-2 w-full">
-                                                <input type="password" name="confirm-password" id="confirm-password" class="block w-full rounded-md border-0 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6" placeholder="*******">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
-
-                            <button type="button" id="modal-button-save" class="inline-flex w-full justify-center rounded-md bg-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 sm:ml-3 sm:w-auto">Save</button>
-                            <button type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto" onclick="closeModal()">Cancel</button>
-                            <div class="flex-1"></div>
-                            <button id="flush-user-folder" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold shadow-sm ring-1 ring-inset ring-red-500 hover:bg-gray-50 sm:mt-0 sm:w-auto text-red-500 flex hidden" >
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5">
-                                    <path fill-rule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z" clip-rule="evenodd" />
-                                </svg>
-                                Flush user folder
-                            </button>
-                        </div>
+                  </li>
+                  <li>
+                    <div class="text-xs font-semibold leading-6 text-gray-400">
+                      Useful Links
                     </div>
-                </div>
-            </div>
-        </div>
-        <div id="confirm-delete-modal" class="hidden relative" style="z-index: 500" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-            <div id="confirm-delete-modal-backdrop" class="opacity-0 fixed inset-0 bg-gray-500/75 transition-opacity" aria-hidden="true"></div>
-
-            <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
-                <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-                    <div id="confirm-delete-modal-panel" class="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95 relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
-                        <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
-                            <div class="sm:flex sm:items-start">
-                                <div class="mx-auto flex size-12 shrink-0 items-center justify-center rounded-full bg-red-100 sm:mx-0 sm:size-10">
-                                    <svg class="size-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
-                                    </svg>
-                                </div>
-                                <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
-                                    <h3 class="text-base font-semibold text-gray-900" id="confirm-delete-modal-title">Deactivate account</h3>
-                                    <div class="mt-2">
-                                        <input type="hidden" id="delete-user-id" name="delete-user-id" value="">
-                                        <p class="text-sm text-gray-500">Are you sure you want to delete this account? All the data associate will be permanently removed. This action cannot be undone.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
-                            <button onclick="deleteUserConfirm()" type="button" class="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto">Delete</button>
-                            <button onclick="closeConfirmDeleteModal()" type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto">Cancel</button>
-                        </div>
+                    <ul role="list" class="-mx-2 mt-2 space-y-1">
+                      <li>
+                        <!-- Current: "bg-gray-50 text-orange-600", Default: "text-gray-700 hover:text-orange-600 hover:bg-gray-50" -->
+                        <a
+                          href="https://www.cadviewer.com/"
+                          target="_blank"
+                          class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                        >
+                          <span
+                            class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-white text-[0.625rem] font-medium text-gray-400 group-hover:border-orange-600 group-hover:text-orange-600"
+                            >C</span
+                          >
+                          <span class="truncate">CADViewer</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.tailormade.com/"
+                          target="_blank"
+                          class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                        >
+                          <span
+                            class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-white text-[0.625rem] font-medium text-gray-400 group-hover:border-orange-600 group-hover:text-orange-600"
+                            >T</span
+                          >
+                          <span class="truncate">Tailormade</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://store.cadviewer.com/"
+                          target="_blank"
+                          class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                        >
+                          <span
+                            class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-white text-[0.625rem] font-medium text-gray-400 group-hover:border-orange-600 group-hover:text-orange-600"
+                            >S</span
+                          >
+                          <span class="truncate">CADViewer Store</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+              <div class="mt-auto">
+                <div class="bg-gray-100 rounded-lg p-3 shadow-sm mb-3">
+                  <div class="flex justify-between items-center mb-2">
+                    <div class="text-sm text-gray-600 font-medium">
+                      Conversion Cache
                     </div>
+                    <button
+                      onclick="flushCache()"
+                      class="text-xs bg-orange-600 text-white px-2 py-1 rounded hover:bg-orange-500"
+                    >
+                      Flush Cache
+                    </button>
+                  </div>
+                  <div class="space-y-1">
+                    <div class="flex justify-between items-center">
+                      <span class="text-sm text-gray-500">Files:</span>
+                      <span class="text-sm text-gray-800 cache-file-count"
+                        >-</span
+                      >
+                    </div>
+                    <div class="flex justify-between items-center">
+                      <span class="text-sm text-gray-500">Size:</span>
+                      <span class="text-sm text-gray-800 cache-size">-</span>
+                    </div>
+                  </div>
                 </div>
+                <div class="bg-gray-100 rounded-lg p-3 shadow-sm">
+                  <div class="text-sm text-gray-600 font-medium">Version</div>
+                  <div class="text-base text-gray-800">{version}</div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <script>
+      </div>
 
-            let users = [];
+      <!-- Static sidebar for desktop -->
+      <div
+        class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col"
+      >
+        <!-- Sidebar component, swap this element with another sidebar if you like -->
+        <div
+          class="flex grow flex-col gap-y-5 overflow-y-auto border-r border-gray-200 bg-white px-6 h-full pb-4"
+        >
+          <div class="flex h-16 shrink-0 items-center">
+            <img
+              class="h-12 w-auto"
+              src="https://www.cadviewer.com/images/cadviewer/cv-logo-smaller.png"
+              alt="CADViewer"
+            />
+          </div>
+          <nav class="flex flex-1 flex-col">
+            <ul role="list" class="flex flex-1 flex-col gap-y-7">
+              <li>
+                <ul role="list" class="-mx-2 space-y-1">
+                  <li>
+                    <!-- Current: "bg-gray-50 text-orange-600", Default: "text-gray-700 hover:text-orange-600 hover:bg-gray-50" -->
+                    <a
+                      href="/settings"
+                      class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                    >
+                      <svg
+                        class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                        />
+                      </svg>
+                      Dashboard
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/settings/users"
+                      class="group flex gap-x-3 rounded-md bg-gray-50 p-2 text-sm font-semibold leading-6 text-orange-600"
+                    >
+                      <svg
+                        class="h-6 w-6 shrink-0 text-orange-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"
+                        />
+                      </svg>
+                      Users
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/settings/folders"
+                      class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                    >
+                      <svg
+                        class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z"
+                        />
+                      </svg>
+                      Folders
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/settings/licences"
+                      class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                    >
+                      <svg
+                        class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"
+                        />
+                      </svg>
+                      Licences
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/settings/logs"
+                      class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z"
+                        />
+                      </svg>
+                      Logs
+                    </a>
+                  </li>
 
-            async function getUsersList() {
-                try {
-                    const response = await fetch('/settings/users/list', {
-                        method: 'POST',
-                    });
+                  <li>
+                    <a
+                      href="/settings/restapi-test"
+                      class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M5.25 14.25h13.5m-13.5 0a3 3 0 0 1-3-3m3 3a3 3 0 1 0 0 6h13.5a3 3 0 1 0 0-6m-16.5-3a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3m-19.5 0a4.5 4.5 0 0 1 .9-2.7L5.737 5.1a3.375 3.375 0 0 1 2.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 0 1 .9 2.7m0 0a3 3 0 0 1-3 3m0 3h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Zm-3 6h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Z"
+                        />
+                      </svg>
+                      Rest API Test
+                    </a>
+                  </li>
 
-                    if (response.ok) {
-                        const { data } = await response.json();
-                        users = data;
-                        renderUsers();
-                        return data;
-                    } else {
-                        vanillaToast.error('Failed to retrieve users list.', {duration: 5000 });
-                    }
-                } catch (error) {
-                    console.error('Error:', error);
-                    vanillaToast.error('An error occurred while getting users list.', {duration: 5000 });
-                }
-            }
+                  <li>
+                    <a
+                      href="/settings/config"
+                      class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z"
+                        />
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                        />
+                      </svg>
+                      Config
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/settings/doctor"
+                      class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                    >
+                      <svg
+                        class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z"
+                        />
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z"
+                        />
+                      </svg>
+                      CADViewer Doctor
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="text-xs font-semibold leading-6 text-gray-400">
+                  Useful Links
+                </div>
+                <ul role="list" class="-mx-2 mt-2 space-y-1">
+                  <li>
+                    <!-- Current: "bg-gray-50 text-orange-600", Default: "text-gray-700 hover:text-orange-600 hover:bg-gray-50" -->
+                    <a
+                      href="https://www.cadviewer.com/"
+                      target="_blank"
+                      class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                    >
+                      <span
+                        class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-white text-[0.625rem] font-medium text-gray-400 group-hover:border-orange-600 group-hover:text-orange-600"
+                        >C</span
+                      >
+                      <span class="truncate">CADViewer</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.tailormade.com/"
+                      target="_blank"
+                      class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                    >
+                      <span
+                        class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-white text-[0.625rem] font-medium text-gray-400 group-hover:border-orange-600 group-hover:text-orange-600"
+                        >T</span
+                      >
+                      <span class="truncate">Tailormade</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://store.cadviewer.com/"
+                      target="_blank"
+                      class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                    >
+                      <span
+                        class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-white text-[0.625rem] font-medium text-gray-400 group-hover:border-orange-600 group-hover:text-orange-600"
+                        >S</span
+                      >
+                      <span class="truncate">CADViewer Store</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
 
-            function renderUsers() {
-                let userListInnerHTML = "";
-                users.forEach((user) => {
-                    userListInnerHTML += `
+          <div class="mt-auto">
+            <div class="bg-gray-100 rounded-lg p-3 shadow-sm mb-3">
+              <div class="flex justify-between items-center mb-2">
+                <div class="text-sm text-gray-600 font-medium">
+                  Conversion Cache
+                </div>
+                <button
+                  onclick="flushCache()"
+                  class="text-xs bg-orange-600 text-white px-2 py-1 rounded hover:bg-orange-500"
+                >
+                  Flush Cache
+                </button>
+              </div>
+              <div class="space-y-1">
+                <div class="flex justify-between items-center">
+                  <span class="text-sm text-gray-500">Files:</span>
+                  <span class="text-sm text-gray-800 cache-file-count">-</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-sm text-gray-500">Size:</span>
+                  <span class="text-sm text-gray-800 cache-size">-</span>
+                </div>
+              </div>
+            </div>
+            <div class="bg-gray-100 rounded-lg p-3 shadow-sm">
+              <div class="text-sm text-gray-600 font-medium">Version</div>
+              <div class="text-base text-gray-800">{version}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:pl-72">
+        <div
+          class="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4 bg-white px-4 sm:gap-x-6 sm:px-6 lg:px-8"
+        >
+          <button type="button" class="-m-2.5 p-2.5 text-gray-700 lg:hidden">
+            <span class="sr-only">Open sidebar</span>
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+              data-slot="icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+
+          <!-- Separator -->
+          <div class="h-6 w-px bg-gray-200 lg:hidden" aria-hidden="true"></div>
+          <div class="sm:flex sm:items-center sm:justify-between w-full">
+            <h1 class="text-xl font-semibold leading-6 text-gray-900">Users</h1>
+            <div class="mt-3 flex sm:ml-4 sm:mt-0">
+              <button
+                type="button"
+                id="new-user"
+                class="ml-3 inline-flex items-center rounded-md bg-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600"
+              >
+                New User
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <main class="py-2 px-4 sm:px-6 lg:px-8">
+          <ul
+            role="list"
+            id="user-list"
+            class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4"
+          ></ul>
+        </main>
+      </div>
+    </div>
+    <div
+      id="modal"
+      class="relative hidden"
+      style="z-index: 500"
+      aria-labelledby="modal-title"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div
+        id="modal-backdrop"
+        class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+        aria-hidden="true"
+      ></div>
+      <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+        <div
+          class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0"
+        >
+          <div
+            id="modal-panel"
+            class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg"
+          >
+            <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+              <div class="sm:flex sm:items-start">
+                <div
+                  class="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-orange-100 sm:mx-0 sm:h-10 sm:w-10"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="h-6 w-6 text-orange-600"
+                  >
+                    <path
+                      d="M4.5 6.375a4.125 4.125 0 1 1 8.25 0 4.125 4.125 0 0 1-8.25 0ZM14.25 8.625a3.375 3.375 0 1 1 6.75 0 3.375 3.375 0 0 1-6.75 0ZM1.5 19.125a7.125 7.125 0 0 1 14.25 0v.003l-.001.119a.75.75 0 0 1-.363.63 13.067 13.067 0 0 1-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 0 1-.364-.63l-.001-.122ZM17.25 19.128l-.001.144a2.25 2.25 0 0 1-.233.96 10.088 10.088 0 0 0 5.06-1.01.75.75 0 0 0 .42-.643 4.875 4.875 0 0 0-6.957-4.611 8.586 8.586 0 0 1 1.71 5.157v.003Z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left w-full"
+                >
+                  <div>
+                    <h3
+                      class="text-base font-semibold leading-6 text-gray-900"
+                      id="modal-title"
+                    >
+                      Add new User
+                    </h3>
+                    <!--                                        span for user folder uuid -->
+                    <span
+                      id="user-folder-uuid"
+                      class="hidden text-gray-400 text-xs font-medium leading-4"
+                      >Folder UUID</span
+                    >
+                  </div>
+                  <input type="hidden" name="user-id" id="user-id" />
+                  <div class="mt-2">
+                    <div class="flex gap-2 mt-2">
+                      <!--                                            custom input file picker-->
+                      <div class="w-full">
+                        <label
+                          for="avatar"
+                          class="block text-sm font-medium leading-6 text-gray-900"
+                          >Avatar</label
+                        >
+                        <label class="mt-2 w-full">
+                          <input
+                            type="file"
+                            name="avatar"
+                            id="avatar"
+                            class="hidden"
+                          />
+                          <img
+                            id="avatar-preview"
+                            class="h-14 w-14 shrink-0 rounded-full bg-gray-300 cursor-pointer"
+                            src="/cadviewer/settings/default.png"
+                            alt=""
+                          />
+                        </label>
+                      </div>
+                    </div>
+                    <div class="flex gap-2 mt-2">
+                      <div class="w-full">
+                        <label
+                          for="firstname"
+                          class="block text-sm font-medium leading-6 text-gray-900"
+                          >Firstname</label
+                        >
+                        <div class="mt-2 w-full">
+                          <input
+                            type="text"
+                            name="firstname"
+                            id="firstname"
+                            class="block w-full rounded-md border-0 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6"
+                            placeholder=""
+                          />
+                        </div>
+                      </div>
+                      <div class="w-full">
+                        <label
+                          for="lastname"
+                          class="block text-sm font-medium leading-6 text-gray-900"
+                          >Lastname</label
+                        >
+                        <div class="mt-2 w-full">
+                          <input
+                            type="text"
+                            name="lastname"
+                            id="lastname"
+                            class="block w-full rounded-md border-0 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6"
+                            placeholder=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-full mt-2">
+                      <label
+                        for="username"
+                        class="block text-sm font-medium leading-6 text-gray-900"
+                        >Username</label
+                      >
+                      <div class="mt-2 w-full">
+                        <input
+                          type="text"
+                          name="username"
+                          id="username"
+                          class="block w-full rounded-md border-0 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6"
+                          placeholder=""
+                        />
+                      </div>
+                    </div>
+                    <div class="w-full mt-2">
+                      <label
+                        for="email"
+                        class="block text-sm font-medium leading-6 text-gray-900"
+                        >Email</label
+                      >
+                      <div class="mt-2 w-full">
+                        <input
+                          type="email"
+                          name="email"
+                          id="email"
+                          class="block w-full rounded-md border-0 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6"
+                          placeholder=""
+                        />
+                      </div>
+                    </div>
+                    <fieldset class="mt-2">
+                      <legend
+                        class="block text-sm font-medium leading-6 text-gray-900"
+                      >
+                        Role
+                      </legend>
+                      <div
+                        class="mt-2 space-y-6 sm:flex sm:items-center sm:space-x-10 sm:space-y-0"
+                      >
+                        <div class="flex items-center">
+                          <input
+                            id="member"
+                            name="role"
+                            type="radio"
+                            checked
+                            class="relative h-4 w-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white checked:border-orange-600 checked:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden [&:not(:checked)]:before:hidden"
+                          />
+                          <label
+                            for="member"
+                            class="ml-3 block text-sm/6 font-medium text-gray-900"
+                            >Member</label
+                          >
+                        </div>
+                        <div class="flex items-center">
+                          <input
+                            id="admin"
+                            name="role"
+                            type="radio"
+                            class="relative h-4 w-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white checked:border-orange-600 checked:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden [&:not(:checked)]:before:hidden"
+                          />
+                          <label
+                            for="admin"
+                            class="ml-3 block text-sm/6 font-medium text-gray-900"
+                            >Administrator</label
+                          >
+                        </div>
+                      </div>
+                    </fieldset>
+                    <fieldset class="mt-2">
+                      <legend
+                        class="block text-sm font-medium leading-6 text-gray-900"
+                      >
+                        Status
+                      </legend>
+                      <div
+                        class="mt-2 space-y-6 sm:flex sm:items-center sm:space-x-10 sm:space-y-0"
+                      >
+                        <div class="flex items-center">
+                          <input
+                            id="active"
+                            name="status"
+                            type="radio"
+                            checked
+                            class="relative h-4 w-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white checked:border-orange-600 checked:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden [&:not(:checked)]:before:hidden"
+                          />
+                          <label
+                            for="active"
+                            class="ml-3 block text-sm/6 font-medium text-gray-900"
+                            >Active</label
+                          >
+                        </div>
+                        <div class="flex items-center">
+                          <input
+                            id="not_active"
+                            name="status"
+                            type="radio"
+                            class="relative h-4 w-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white checked:border-orange-600 checked:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden [&:not(:checked)]:before:hidden"
+                          />
+                          <label
+                            for="not_active"
+                            class="ml-3 block text-sm/6 font-medium text-gray-900"
+                            >Not active</label
+                          >
+                        </div>
+                      </div>
+                    </fieldset>
+                    <div class="w-full mt-2">
+                      <label
+                        for="password"
+                        class="block text-sm font-medium leading-6 text-gray-900"
+                        >Password</label
+                      >
+                      <div class="mt-2 w-full">
+                        <input
+                          type="password"
+                          name="password"
+                          id="password"
+                          class="block w-full rounded-md border-0 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6"
+                          placeholder="*******"
+                        />
+                      </div>
+                    </div>
+                    <div class="w-full mt-2">
+                      <label
+                        for="confirm-password"
+                        class="block text-sm font-medium leading-6 text-gray-900"
+                        >Confirm Password</label
+                      >
+                      <div class="mt-2 w-full">
+                        <input
+                          type="password"
+                          name="confirm-password"
+                          id="confirm-password"
+                          class="block w-full rounded-md border-0 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6"
+                          placeholder="*******"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6"
+            >
+              <button
+                type="button"
+                id="modal-button-save"
+                class="inline-flex w-full justify-center rounded-md bg-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 sm:ml-3 sm:w-auto"
+              >
+                Save
+              </button>
+              <button
+                type="button"
+                class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto"
+                onclick="closeModal()"
+              >
+                Cancel
+              </button>
+              <div class="flex-1"></div>
+              <button
+                id="flush-user-folder"
+                class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold shadow-sm ring-1 ring-inset ring-red-500 hover:bg-gray-50 sm:mt-0 sm:w-auto text-red-500 flex hidden"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="h-5 w-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Flush user folder
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="confirm-delete-modal"
+      class="hidden relative"
+      style="z-index: 500"
+      aria-labelledby="modal-title"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div
+        id="confirm-delete-modal-backdrop"
+        class="opacity-0 fixed inset-0 bg-gray-500/75 transition-opacity"
+        aria-hidden="true"
+      ></div>
+
+      <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+        <div
+          class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0"
+        >
+          <div
+            id="confirm-delete-modal-panel"
+            class="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95 relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg"
+          >
+            <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+              <div class="sm:flex sm:items-start">
+                <div
+                  class="mx-auto flex size-12 shrink-0 items-center justify-center rounded-full bg-red-100 sm:mx-0 sm:size-10"
+                >
+                  <svg
+                    class="size-6 text-red-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    data-slot="icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"
+                    />
+                  </svg>
+                </div>
+                <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
+                  <h3
+                    class="text-base font-semibold text-gray-900"
+                    id="confirm-delete-modal-title"
+                  >
+                    Deactivate account
+                  </h3>
+                  <div class="mt-2">
+                    <input
+                      type="hidden"
+                      id="delete-user-id"
+                      name="delete-user-id"
+                      value=""
+                    />
+                    <p class="text-sm text-gray-500">
+                      Are you sure you want to delete this account? All the data
+                      associate will be permanently removed. This action cannot
+                      be undone.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6"
+            >
+              <button
+                onclick="deleteUserConfirm()"
+                type="button"
+                class="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto"
+              >
+                Delete
+              </button>
+              <button
+                onclick="closeConfirmDeleteModal()"
+                type="button"
+                class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let users = [];
+
+      async function getUsersList() {
+        try {
+          const response = await fetch("/settings/users/list", {
+            method: "POST",
+          });
+
+          if (response.ok) {
+            const { data } = await response.json();
+            users = data;
+            renderUsers();
+            return data;
+          } else {
+            vanillaToast.error("Failed to retrieve users list.", {
+              duration: 5000,
+            });
+          }
+        } catch (error) {
+          console.error("Error:", error);
+          vanillaToast.error("An error occurred while getting users list.", {
+            duration: 5000,
+          });
+        }
+      }
+
+      function renderUsers() {
+        let userListInnerHTML = "";
+        users.forEach((user) => {
+          userListInnerHTML += `
                         <li class="col-span-1 divide-y divide-gray-200 rounded-lg bg-white shadow">
                                 <div class="flex w-full items-center justify-between space-x-6 p-6">
                                     <div class="flex-1 truncate">
                                         <div class="flex items-center space-x-3">
-                                            <h3 class="truncate text-sm font-medium text-gray-900">${user.first_name ?? ""} ${user.last_name ?? ""}</h3>
-                                            <span class="inline-flex shrink-0 items-center rounded-full px-1.5 py-0.5 text-xs font-medium ring-1 ring-inset ${user.is_enabled ? 'bg-green-50 text-green-700 ring-green-600' : 'bg-red-50 text-red-700 ring-red-600'}">${user.is_enabled === 1 ? "Active" : "Not active"}</span>
+                                            <h3 class="truncate text-sm font-medium text-gray-900">${
+                                              user.first_name ?? ""
+                                            } ${user.last_name ?? ""}</h3>
+                                            <span class="inline-flex shrink-0 items-center rounded-full px-1.5 py-0.5 text-xs font-medium ring-1 ring-inset ${
+                                              user.is_enabled
+                                                ? "bg-green-50 text-green-700 ring-green-600"
+                                                : "bg-red-50 text-red-700 ring-red-600"
+                                            }">${
+            user.is_enabled === 1 ? "Active" : "Not active"
+          }</span>
                                         </div>
-                                        <p class="mt-1 truncate text-sm text-gray-500">${user.email}</p>
-                                        <p class="mt-1 truncate text-sm text-gray-500"><span class="inline-flex shrink-0 items-center rounded-full bg-gray-50 px-1.5 py-0.5 text-xs font-medium text-gray-700 ring-1 ring-inset ring-gray-600">${user.role === "admin" ? "Administrator" : "Member"}</span> ${user.username}</p>
+                                        <p class="mt-1 truncate text-sm text-gray-500">${
+                                          user.email
+                                        }</p>
+                                        <p class="mt-1 truncate text-sm text-gray-500"><span class="inline-flex shrink-0 items-center rounded-full bg-gray-50 px-1.5 py-0.5 text-xs font-medium text-gray-700 ring-1 ring-inset ring-gray-600">${
+                                          user.role === "admin"
+                                            ? "Administrator"
+                                            : "Member"
+                                        }</span> ${user.username}</p>
                                     </div>
-                                    <img class="h-10 w-10 shrink-0 rounded-full bg-gray-300" src="${user.avatar_url ?? window.location.origin+'/cadviewer/settings/default.png'}" alt="">
+                                    <img class="h-10 w-10 shrink-0 rounded-full bg-gray-300" src="${
+                                      user.avatar_url ??
+                                      window.location.origin +
+                                        "/cadviewer/settings/default.png"
+                                    }" alt="">
                                 </div>
                                 <div>
                                     <div class="-mt-px flex divide-x divide-gray-200">
                                         <div class="flex w-0 flex-1">
-                                            <button onclick="editUser(${user.id})" class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-sm font-semibold text-gray-900">
+                                            <button onclick="editUser(${
+                                              user.id
+                                            })" class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-sm font-semibold text-gray-900">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 text-gray-400">
                                                     <path d="M21.731 2.269a2.625 2.625 0 0 0-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 0 0 0-3.712ZM19.513 8.199l-3.712-3.712-12.15 12.15a5.25 5.25 0 0 0-1.32 2.214l-.8 2.685a.75.75 0 0 0 .933.933l2.685-.8a5.25 5.25 0 0 0 2.214-1.32L19.513 8.2Z" />
                                                 </svg>
@@ -488,7 +1155,9 @@
                                             </a>
                                         </div>
                                         <div class="-ml-px flex w-0 flex-1">
-                                            <button onclick="deleteUser(${user.id})" class="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-transparent py-4 text-sm font-semibold text-gray-900">
+                                            <button onclick="deleteUser(${
+                                              user.id
+                                            })" class="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-transparent py-4 text-sm font-semibold text-gray-900">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 text-gray-400">
                                                     <path fill-rule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z" clip-rule="evenodd" />
                                                 </svg>
@@ -498,220 +1167,314 @@
                                     </div>
                                 </div>
                             </li>
-                    `
+                    `;
+        });
+
+        document.getElementById("user-list").innerHTML = userListInnerHTML;
+      }
+
+      function editUser(userId) {
+        const user = users.find((user) => user.id === userId);
+        document.getElementById("firstname").value = user.first_name;
+        document.getElementById("lastname").value = user.last_name;
+        document.getElementById("username").value = user.username;
+        document.getElementById("email").value = user.email;
+        document.getElementById("member").checked = user.role === "user";
+        document.getElementById("admin").checked = user.role === "admin";
+        document.getElementById("active").checked = user.is_enabled === 1;
+        document.getElementById("not_active").checked = user.is_enabled === 0;
+        document.getElementById("password").value = "";
+        document.getElementById("confirm-password").value = "";
+        document.getElementById("flush-user-folder").classList.remove("hidden");
+        document.getElementById("user-folder-uuid").classList.remove("hidden");
+        document.getElementById(
+          "user-folder-uuid"
+        ).innerText = `> uploads/${user.folder_name}`;
+        document.getElementById("avatar-preview").src =
+          user.avatar_url ??
+          window.location.origin + "/cadviewer/settings/default.png";
+        openModal("Edit User");
+        document.getElementById("user-id").value = userId;
+      }
+
+      function openModal(title) {
+        document.getElementById("modal-title").innerText = title;
+        document.body.classList.add("overflow-hidden");
+        document.querySelector("html").classList.add("overflow-hidden");
+        document.querySelector("body").classList.add("overflow-hidden");
+        document.getElementById("modal").classList.remove("hidden");
+        document.getElementById("modal-backdrop").classList.remove("opacity-0");
+        document.getElementById("modal-backdrop").classList.add("opacity-100");
+        document
+          .getElementById("modal-panel")
+          .classList.remove(
+            "opacity-0",
+            "translate-y-4",
+            "sm:translate-y-0",
+            "sm:scale-95"
+          );
+        document
+          .getElementById("modal-panel")
+          .classList.add("opacity-100", "translate-y-0", "sm:scale-100");
+        // watch on change avatar
+        document
+          .getElementById("avatar")
+          .addEventListener("change", (event) => {
+            const file = event.target.files[0];
+            const reader = new FileReader();
+            reader.onload = function (e) {
+              document.getElementById("avatar-preview").src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+          });
+      }
+
+      function closeModal() {
+        document.body.classList.remove("overflow-hidden");
+        document.querySelector("html").classList.remove("overflow-hidden");
+        document.querySelector("body").classList.remove("overflow-hidden");
+        document.getElementById("modal").classList.add("hidden");
+        document
+          .getElementById("modal-backdrop")
+          .classList.remove("opacity-100");
+        document.getElementById("modal-backdrop").classList.add("opacity-0");
+        document
+          .getElementById("modal-panel")
+          .classList.remove("opacity-100", "translate-y-0", "sm:scale-100");
+        document
+          .getElementById("modal-panel")
+          .classList.add(
+            "opacity-0",
+            "translate-y-4",
+            "sm:translate-y-0",
+            "sm:scale-95"
+          );
+      }
+
+      function deleteUser(userId) {
+        const user = users.find((user) => user.id === userId);
+
+        document.getElementById("delete-user-id").value = userId;
+        document.getElementById("confirm-delete-modal-title").innerText =
+          `Delete account ${user.first_name || user.last_name ? "of" : ""} ${
+            user.first_name ?? ""
+          } ${user.last_name ?? ""}`.trim();
+        document.body.classList.add("overflow-hidden");
+        document.querySelector("html").classList.add("overflow-hidden");
+        document.querySelector("body").classList.add("overflow-hidden");
+        document
+          .getElementById("confirm-delete-modal")
+          .classList.remove("hidden");
+        document
+          .getElementById("confirm-delete-modal-backdrop")
+          .classList.remove("opacity-0");
+        document
+          .getElementById("confirm-delete-modal-backdrop")
+          .classList.add("opacity-100");
+        document
+          .getElementById("confirm-delete-modal-panel")
+          .classList.remove(
+            "opacity-0",
+            "translate-y-4",
+            "sm:translate-y-0",
+            "sm:scale-95"
+          );
+        document
+          .getElementById("confirm-delete-modal-panel")
+          .classList.add("opacity-100", "translate-y-0", "sm:scale-100");
+      }
+
+      function deleteUserConfirm() {
+        const userId = document.getElementById("delete-user-id").value;
+        fetch(`/settings/users/${userId}`, {
+          method: "DELETE",
+        })
+          .then(async (response) => {
+            if (response.ok) {
+              closeConfirmDeleteModal();
+              vanillaToast.success("User deleted successfully.", {
+                duration: 5000,
+              });
+              await getUsersList();
+            } else {
+              const data = await response.json();
+              if (data.error) {
+                vanillaToast.warning(data.error, { duration: 5000 });
+              } else {
+                vanillaToast.error("Failed to delete user.", {
+                  duration: 5000,
                 });
-
-                document.getElementById('user-list').innerHTML = userListInnerHTML;
+              }
             }
-
-            function editUser(userId) {
-                const user = users.find(user => user.id === userId);
-                document.getElementById('firstname').value = user.first_name;
-                document.getElementById('lastname').value = user.last_name;
-                document.getElementById('username').value = user.username;
-                document.getElementById('email').value = user.email;
-                document.getElementById('member').checked = user.role === "user";
-                document.getElementById('admin').checked = user.role === "admin";
-                document.getElementById('active').checked = user.is_enabled === 1;
-                document.getElementById('not_active').checked = user.is_enabled === 0;
-                document.getElementById('password').value = "";
-                document.getElementById('confirm-password').value = "";
-                document.getElementById('flush-user-folder').classList.remove('hidden');
-                document.getElementById('user-folder-uuid').classList.remove('hidden');
-                document.getElementById('user-folder-uuid').innerText = `> uploads/${user.folder_name}`;
-                document.getElementById('avatar-preview').src = user.avatar_url ?? window.location.origin+'/cadviewer/settings/default.png';
-                openModal('Edit User');
-                document.getElementById('user-id').value = userId;
-            }
-
-            function openModal(title) {
-                document.getElementById('modal-title').innerText = title;
-                document.body.classList.add('overflow-hidden');
-                document.querySelector('html').classList.add('overflow-hidden');
-                document.querySelector('body').classList.add('overflow-hidden');
-                document.getElementById('modal').classList.remove('hidden');
-                document.getElementById('modal-backdrop').classList.remove('opacity-0');
-                document.getElementById('modal-backdrop').classList.add('opacity-100');
-                document.getElementById('modal-panel').classList.remove('opacity-0', 'translate-y-4', 'sm:translate-y-0', 'sm:scale-95');
-                document.getElementById('modal-panel').classList.add('opacity-100', 'translate-y-0', 'sm:scale-100');
-                // watch on change avatar
-                document.getElementById('avatar').addEventListener('change', (event) => {
-                    const file = event.target.files[0];
-                    const reader = new FileReader();
-                    reader.onload = function(e) {
-                        document.getElementById('avatar-preview').src = e.target.result;
-                    }
-                    reader.readAsDataURL(file);
-                });
-            }
-
-
-            function closeModal() {
-                document.body.classList.remove('overflow-hidden');
-                document.querySelector('html').classList.remove('overflow-hidden');
-                document.querySelector('body').classList.remove('overflow-hidden');
-                document.getElementById('modal').classList.add('hidden');
-                document.getElementById('modal-backdrop').classList.remove('opacity-100');
-                document.getElementById('modal-backdrop').classList.add('opacity-0');
-                document.getElementById('modal-panel').classList.remove('opacity-100', 'translate-y-0', 'sm:scale-100');
-                document.getElementById('modal-panel').classList.add('opacity-0', 'translate-y-4', 'sm:translate-y-0', 'sm:scale-95');
-            }
-
-            function deleteUser(userId) {
-                const user = users.find(user => user.id === userId);
-
-                document.getElementById('delete-user-id').value = userId;
-                document.getElementById('confirm-delete-modal-title').innerText = `Delete account ${user.first_name || user.last_name ? 'of' : ''} ${user.first_name ?? ""} ${user.last_name ?? ""}`.trim();
-                document.body.classList.add('overflow-hidden');
-                document.querySelector('html').classList.add('overflow-hidden');
-                document.querySelector('body').classList.add('overflow-hidden');
-                document.getElementById('confirm-delete-modal').classList.remove('hidden');
-                document.getElementById('confirm-delete-modal-backdrop').classList.remove('opacity-0');
-                document.getElementById('confirm-delete-modal-backdrop').classList.add('opacity-100');
-                document.getElementById('confirm-delete-modal-panel').classList.remove('opacity-0', 'translate-y-4', 'sm:translate-y-0', 'sm:scale-95');
-                document.getElementById('confirm-delete-modal-panel').classList.add('opacity-100', 'translate-y-0', 'sm:scale-100');
-            }
-
-            function deleteUserConfirm() {
-                const userId = document.getElementById('delete-user-id').value;
-                fetch(`/settings/users/${userId}`, {
-                    method: 'DELETE',
-                }).then(async (response) => {
-                    if (response.ok) {
-                        closeConfirmDeleteModal();
-                        vanillaToast.success('User deleted successfully.', {duration: 5000 });
-                        await getUsersList();
-                    } else {
-                        const data = await response.json();
-                        if (data.error) {
-                            vanillaToast.warning(data.error, {duration: 5000 });
-                        } else {
-                            vanillaToast.error('Failed to delete user.', {duration: 5000 });
-                        }
-                    }
-                }).catch((error) => {
-                    console.error('Error:', error);
-                    vanillaToast.error('An error occurred while deleting user.', {duration: 5000 });
-                });
-            }
-
-            function closeConfirmDeleteModal() {
-                document.body.classList.remove('overflow-hidden');
-                document.querySelector('html').classList.remove('overflow-hidden');
-                document.querySelector('body').classList.remove('overflow-hidden');
-                document.getElementById('confirm-delete-modal').classList.add('hidden');
-                document.getElementById('confirm-delete-modal-backdrop').classList.remove('opacity-100');
-                document.getElementById('confirm-delete-modal-backdrop').classList.add('opacity-0');
-                document.getElementById('confirm-delete-modal-panel').classList.remove('opacity-100', 'translate-y-0', 'sm:scale-100');
-                document.getElementById('confirm-delete-modal-panel').classList.add('opacity-0', 'translate-y-4', 'sm:translate-y-0', 'sm:scale-95');
-            }
-
-            document.getElementById('new-user').addEventListener('click', () => {
-                document.getElementById('firstname').value = "";
-                document.getElementById('lastname').value = "";
-                document.getElementById('username').value = "";
-                document.getElementById('email').value = "";
-                document.getElementById('member').checked = true;
-                document.getElementById('active').checked = true;
-                document.getElementById('password').value = "";
-                document.getElementById('confirm-password').value = "";
-                document.getElementById('user-id').value = "";
-                document.getElementById('flush-user-folder').classList.add('hidden');
-                document.getElementById('user-folder-uuid').classList.add('hidden');
-                openModal('Add new User');
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+            vanillaToast.error("An error occurred while deleting user.", {
+              duration: 5000,
             });
+          });
+      }
 
-            async function saveUser(user) {
-                // disable button
+      function closeConfirmDeleteModal() {
+        document.body.classList.remove("overflow-hidden");
+        document.querySelector("html").classList.remove("overflow-hidden");
+        document.querySelector("body").classList.remove("overflow-hidden");
+        document.getElementById("confirm-delete-modal").classList.add("hidden");
+        document
+          .getElementById("confirm-delete-modal-backdrop")
+          .classList.remove("opacity-100");
+        document
+          .getElementById("confirm-delete-modal-backdrop")
+          .classList.add("opacity-0");
+        document
+          .getElementById("confirm-delete-modal-panel")
+          .classList.remove("opacity-100", "translate-y-0", "sm:scale-100");
+        document
+          .getElementById("confirm-delete-modal-panel")
+          .classList.add(
+            "opacity-0",
+            "translate-y-4",
+            "sm:translate-y-0",
+            "sm:scale-95"
+          );
+      }
 
-                document.getElementById('modal-button-save').disabled = true;
-                // convert to form data
-                const formData = new FormData();
-                if (user.id) {
-                    formData.append('id', user.id);
-                }
-                formData.append('first_name', user.first_name);
-                formData.append('last_name', user.last_name);
-                formData.append('username', user.username);
-                formData.append('email', user.email);
-                formData.append('role', user.role);
-                formData.append('is_enabled', user.is_enabled);
-                formData.append('password', user.password);
-                formData.append('avatar', document.getElementById('avatar').files[0]);
+      document.getElementById("new-user").addEventListener("click", () => {
+        document.getElementById("firstname").value = "";
+        document.getElementById("lastname").value = "";
+        document.getElementById("username").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("member").checked = true;
+        document.getElementById("active").checked = true;
+        document.getElementById("password").value = "";
+        document.getElementById("confirm-password").value = "";
+        document.getElementById("user-id").value = "";
+        document.getElementById("flush-user-folder").classList.add("hidden");
+        document.getElementById("user-folder-uuid").classList.add("hidden");
+        openModal("Add new User");
+      });
 
-                try {
-                    const response = await fetch('/settings/users', {
-                        method: 'POST',
-                        body: formData,
-                    });
-                    data = await response.json();
-                    if (response.status === 200) {
-                        closeModal();
-                        vanillaToast.success(user.id ? 'User updated successfully.' : 'User added successfully.', {duration: 5000 });
-                        await getUsersList();
-                    } else {
-                        if (data.error) {
-                            vanillaToast.warning(data.error, {duration: 5000 });
-                        } else {
-                            vanillaToast.error(data.id ? 'Failed to update user.' : 'Failed to add user.', {duration: 5000});
-                        }
-                    }
-                } catch (error) {
-                    console.error('Error:', error);
-                    vanillaToast.error(data.id ? 'An error occurred while updating user.' : 'An error occurred while adding user.', {duration: 5000 });
-                } finally {
-                    // enable button
-                    document.getElementById('modal-button-save').disabled = false;
-                }
+      async function saveUser(user) {
+        // disable button
+
+        document.getElementById("modal-button-save").disabled = true;
+        // convert to form data
+        const formData = new FormData();
+        if (user.id) {
+          formData.append("id", user.id);
+        }
+        formData.append("first_name", user.first_name);
+        formData.append("last_name", user.last_name);
+        formData.append("username", user.username);
+        formData.append("email", user.email);
+        formData.append("role", user.role);
+        formData.append("is_enabled", user.is_enabled);
+        formData.append("password", user.password);
+        formData.append("avatar", document.getElementById("avatar").files[0]);
+
+        try {
+          const response = await fetch("/settings/users", {
+            method: "POST",
+            body: formData,
+          });
+          data = await response.json();
+          if (response.status === 200) {
+            closeModal();
+            vanillaToast.success(
+              user.id
+                ? "User updated successfully."
+                : "User added successfully.",
+              { duration: 5000 }
+            );
+            await getUsersList();
+          } else {
+            if (data.error) {
+              vanillaToast.warning(data.error, { duration: 5000 });
+            } else {
+              vanillaToast.error(
+                data.id ? "Failed to update user." : "Failed to add user.",
+                { duration: 5000 }
+              );
             }
+          }
+        } catch (error) {
+          console.error("Error:", error);
+          vanillaToast.error(
+            data.id
+              ? "An error occurred while updating user."
+              : "An error occurred while adding user.",
+            { duration: 5000 }
+          );
+        } finally {
+          // enable button
+          document.getElementById("modal-button-save").disabled = false;
+        }
+      }
 
-            document.addEventListener('DOMContentLoaded', () => {
-                getUsersList();
+      document.addEventListener("DOMContentLoaded", () => {
+        getUsersList();
 
-                document.getElementById('modal-button-save').addEventListener('click', () => {
-                    if (document.getElementById('password').value !== document.getElementById('confirm-password').value) {
-                        vanillaToast.warning('Passwords do not match.', {duration: 5000 });
-                        return;
-                    }
-                    const data = {
-                        id: document.getElementById('user-id').value ? parseInt(document.getElementById('user-id').value) : undefined,
-                        first_name: document.getElementById('firstname').value,
-                        last_name: document.getElementById('lastname').value,
-                        username: document.getElementById('username').value,
-                        email: document.getElementById('email').value,
-                        role: document.getElementById('admin').checked ? "admin" : "user",
-                        is_enabled: document.getElementById('active').checked ? 1 : 0,
-                        password: document.getElementById('password').value,
-                    };
-                    saveUser(data);
-                });
-                document.getElementById('flush-user-folder').addEventListener('click', async () => {
-                    /*
+        document
+          .getElementById("modal-button-save")
+          .addEventListener("click", () => {
+            if (
+              document.getElementById("password").value !==
+              document.getElementById("confirm-password").value
+            ) {
+              vanillaToast.warning("Passwords do not match.", {
+                duration: 5000,
+              });
+              return;
+            }
+            const data = {
+              id: document.getElementById("user-id").value
+                ? parseInt(document.getElementById("user-id").value)
+                : undefined,
+              first_name: document.getElementById("firstname").value,
+              last_name: document.getElementById("lastname").value,
+              username: document.getElementById("username").value,
+              email: document.getElementById("email").value,
+              role: document.getElementById("admin").checked ? "admin" : "user",
+              is_enabled: document.getElementById("active").checked ? 1 : 0,
+              password: document.getElementById("password").value,
+            };
+            saveUser(data);
+          });
+        document
+          .getElementById("flush-user-folder")
+          .addEventListener("click", async () => {
+            /*
                         router.delete("/users/flush-dir", async (req, res) => {
                         const { userId } = req.body;
                      */
-                    try {
-                        const response = await fetch('/settings/users/flush-dir', {
-                            method: 'DELETE',
-                            headers: {
-                                'Content-Type': 'application/json',
-                            },
-                            body: JSON.stringify({userId: parseInt(document.getElementById('user-id').value)}),
-                        });
-                        if (response.status === 200) {
-                            vanillaToast.success('User folder flushed successfully.', {duration: 5000 });
-                        } else {
-                            vanillaToast.error('Failed to flush user folder.', {duration: 5000 });
-                        }
-                    } catch (error) {
-                        console.error('Error:', error);
-                        vanillaToast.error('An error occurred while flushing user folder.', {duration: 5000 });
-                    }
-                })
-            });
-
-
-        </script>
-    </body>
-
+            try {
+              const response = await fetch("/settings/users/flush-dir", {
+                method: "DELETE",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                  userId: parseInt(document.getElementById("user-id").value),
+                }),
+              });
+              if (response.status === 200) {
+                vanillaToast.success("User folder flushed successfully.", {
+                  duration: 5000,
+                });
+              } else {
+                vanillaToast.error("Failed to flush user folder.", {
+                  duration: 5000,
+                });
+              }
+            } catch (error) {
+              console.error("Error:", error);
+              vanillaToast.error(
+                "An error occurred while flushing user folder.",
+                { duration: 5000 }
+              );
+            }
+          });
+      });
+    </script>
+  </body>
 </html>

@@ -1,41 +1,25 @@
-# Use Ubuntu 22.04 as the base image
-FROM ubuntu:22.04
+# Use the official Node.js 16 image based on Debian
+FROM node:16-bullseye
 
-# Set environment variable for non-interactive installation
-ENV DEBIAN_FRONTEND=noninteractive
+# Set environment variable
 ENV RUNING_IN_DOCKER=true
-
-# Install necessary dependencies
-RUN apt-get update && apt-get install -y \
-    curl \
-    gnupg \
-    build-essential \
-    python3 \
-    && rm -rf /var/lib/apt/lists/*
-
-# Install Node.js 16.x
-RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash - \
-    && apt-get install -y nodejs
 
 # Create app directory
 WORKDIR /nodejs/cadviewer-conversion-server/
 
-# Install nodemon globally
-RUN npm i -g nodemon yarn
-
-# Install app dependencies
+# Copy dependency files
 COPY package*.json ./
 COPY yarn.lock ./
 RUN yarn
 
-# Copy the application code
+# Copy application code
 COPY . .
 
-# Rebuild bcrypt with the necessary tools installed
+# Rebuild bcrypt with required tools
 RUN npm rebuild bcrypt --build-from-source
 
-# Expose the necessary port
+# Expose required port
 EXPOSE 3000
 
-# Command to run the app
+# Command to start the application
 CMD [ "npm", "start" ]
