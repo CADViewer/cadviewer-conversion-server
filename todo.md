@@ -18,4 +18,6 @@
 - [x] Execute directly should get the store parameters from the settings backend 
 - [x] Add global variable version and display it on the left bottom of the navigation sidebar
 - [x] Change reference of `config.version` to the new global version variable
-- [ ]
+- [ ] Todo add new config file for file action name, title action and description
+- [ ] create config class that will remain update when the config file is updated
+- 

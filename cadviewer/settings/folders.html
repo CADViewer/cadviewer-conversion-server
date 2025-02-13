@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CADViewer - Conversion server settings</title>
     <!-- Inclusion du CDN Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/settings/tailwind.js"></script>
     <!--Favicon-->
     <link rel="shortcut icon" href="https://www.cadviewer.com/images/favicon.png" type="image/x-icon">
     <link rel="icon" href="https://www.cadviewer.com/images/favicon.png" type="image/x-icon">
@@ -48,7 +48,7 @@
                                             <svg class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                                             </svg>
-                                            Home
+                                            Dashboard
                                         </a>
                                     </li>
                                     <li>
@@ -167,7 +167,7 @@
                                     <svg class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                                     </svg>
-                                    Home
+                                    Dashboard
                                 </a>
                             </li>
                             <li>
@@ -521,6 +521,8 @@
                 }
                 renderBreadcrumb();
                 return data;
+            }  else if (response.status === 404) {
+                vanillaToast.warning('Base folder not exists, please verify your configuration.', {duration: 5000 });
             } else {
                 vanillaToast.error('Failed to retrieve folders list.', {duration: 5000 });
             }
@@ -549,12 +551,20 @@
             return tifIcon;
         else if (filename.toLocaleLowerCase().endsWith('.pdf'))
             return pdfIcon;
-        else if (filename.toLocaleLowerCase().endsWith('.svg'))
+        else if (filename.toLocaleLowerCase().endsWith('.svg') || filename.toLocaleLowerCase().endsWith('.svgz'))
             return svgIcon;
-        else if (filename.toLocaleLowerCase().endsWith('.png') || filename.toLocaleLowerCase().endsWith('.jpg') || filename.toLocaleLowerCase().endsWith('.jpeg') || filename.toLocaleLowerCase().endsWith('.gif') || filename.toLocaleLowerCase().endsWith('.bmp'))
-            return imgIcon;
+        else if (filename.toLocaleLowerCase().endsWith('.gif'))
+            return gifIcon;
+        else if (filename.toLocaleLowerCase().endsWith('.jpg') || filename.toLocaleLowerCase().endsWith('.jpeg'))
+            return jpgIcon;
+        else if (filename.toLocaleLowerCase().endsWith('.png'))
+            return pngIcon;
+        else if (filename.toLocaleLowerCase().endsWith('.bmp'))
+            return bmpIcon;
         else if (filename.toLocaleLowerCase().endsWith('.xls') || filename.toLocaleLowerCase().endsWith('.xlsx') || filename.toLocaleLowerCase().endsWith('.csv'))
             return csvIcon;
+        else if (filename.toLocaleLowerCase().endsWith('.pcf'))
+            return pcfIcon;
         else
             return unkownIcon;
     }
@@ -614,9 +624,11 @@
         }
 
         function  renderFolderFile(folder, index) {
+            folder.normalName = folder.name;
             folder.name = folder.name.toLocaleLowerCase();
+            // Todo add new config file for file action name, title action and description
             const folderInnerHTML = `
-                <div onclick="${folder.isFolder ? `openFolder('${folder.name}', ${index}, '${folder.path}')` : null}" class="relative rounded-lg border border-muted bg-gray-0 shadow-sm transition-all ${folder.isFolder ? 'hover:-translate-y-1 hover:shadow-lg cursor-pointer' : ''} dark:bg-gray-50 p-4">
+                <div onclick="${folder.isFolder ? `openFolder('${folder.normalName}', ${index}, '${folder.path}')` : null}" class="relative rounded-lg border border-muted bg-gray-0 shadow-sm transition-all ${folder.isFolder ? 'hover:-translate-y-1 hover:shadow-lg cursor-pointer' : ''} dark:bg-gray-50 p-4">
                     <div class="w-full flex justify-between">
                         <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gray-100">
                             <figure class="h-10 w-10 flex justify-center items-center">
@@ -636,20 +648,20 @@
                               ${
     !folder.isFolder ? `
                                   <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                                    ${(folder.name.endsWith('.dwg') || folder.name.endsWith('.dxf') || folder.name.endsWith('.dwf') || folder.name.endsWith('.dgn') || folder.name.endsWith('.tiff') || folder.name.endsWith('.tif') || folder.name.endsWith('.svg')) ?
+                                    ${(folder.name.endsWith('.dwg') || folder.name.endsWith('.dxf') || folder.name.endsWith('.dwf') || folder.name.endsWith('.dgn') || folder.name.endsWith('.tiff') || folder.name.endsWith('.tif') || folder.name.endsWith('.svg') || folder.name.endsWith('.svgz')) ?
         `<a href="#" onclick="restApiActionClick('${folder.name}', '${folder.path}', 'jsonDataExtraction')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">JSON Data Extraction</a>` : ''
     }
                                     ${(folder.name.endsWith('.dwg') || folder.name.endsWith('.dxf') || folder.name.endsWith('.dwf')) || folder.name.endsWith('.dgn') || folder.name.endsWith('.tiff') || folder.name.endsWith('.tif') ?
-        `<a href="#" onclick="restApiActionClick('${folder.name}', '${folder.path}', 'dwgToSvg')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">DWG to SVG Conversion</a>` : ''
+        `<a href="#" onclick="restApiActionClick('${folder.name}', '${folder.path}', 'dwgToSvg')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Conversion to SVG</a>` : ''
     }
-                                    ${(folder.name.endsWith('.dwg') || folder.name.endsWith('.dxf') || folder.name.endsWith('.dwf') || folder.name.endsWith('.dgn') || folder.name.endsWith('.tiff') || folder.name.endsWith('.tif') || folder.name.endsWith('.svg')) ?
-        `<a href="#" onclick="restApiActionClick('${folder.name}', '${folder.path}', 'dwgToPdf')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">DWG to PDF Conversion</a>` : ''
+                                    ${(folder.name.endsWith('.dwg') || folder.name.endsWith('.dxf') || folder.name.endsWith('.dwf') || folder.name.endsWith('.dgn') || folder.name.endsWith('.tiff') || folder.name.endsWith('.tif') || folder.name.endsWith('.svg') || folder.name.endsWith('.svgz')) ?
+        `<a href="#" onclick="restApiActionClick('${folder.name}', '${folder.path}', 'dwgToPdf')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Conversion to PDF</a>` : ''
     }
-                                    ${(folder.name.endsWith('.dwg') || folder.name.endsWith('.dxf') || folder.name.endsWith('.dwf') || folder.name.endsWith('.dgn') || folder.name.endsWith('.tiff') || folder.name.endsWith('.tif') || folder.name.endsWith('.svg')) ?
-        `<a href="#" onclick="restApiActionClick('${folder.name}', '${folder.path}', 'displayDwg')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Display  DWG</a>` : ''
+                                    ${(folder.name.endsWith('.dwg') || folder.name.endsWith('.dxf') || folder.name.endsWith('.dwf') || folder.name.endsWith('.dgn') || folder.name.endsWith('.tiff') || folder.name.endsWith('.tif') || folder.name.endsWith('.svg') || folder.name.endsWith('.svgz')) ?
+        `<a href="#" onclick="restApiActionClick('${folder.name}', '${folder.path}', 'displayDwg')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Display in CADViewer</a>` : ''
     }
-                                    ${(folder.name.endsWith('.dwg') || folder.name.endsWith('.dxf') || folder.name.endsWith('.dwf') || folder.name.endsWith('.dgn') || folder.name.endsWith('.tiff') || folder.name.endsWith('.tif') || folder.name.endsWith('.svg')) ?
-        `<a href="#" onclick="restApiActionClick('${folder.name}', '${folder.path}', 'dwgToMultiple')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">DWG file in multiple files</a>` : ''
+                                    ${(folder.name.endsWith('.dwg') || folder.name.endsWith('.dxf') || folder.name.endsWith('.dwf') || folder.name.endsWith('.dgn') || folder.name.endsWith('.tiff') || folder.name.endsWith('.tif') || folder.name.endsWith('.svg') || folder.name.endsWith('.svgz')) ?
+        `<a href="#" onclick="restApiActionClick('${folder.name}', '${folder.path}', 'dwgToMultiple')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Split DWG ModelSpace</a>` : ''
     }
                                     <a href="#" onclick="downloadFile('${folder.path}')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Download</a>
                                     <a href="#" onclick="openModal(event, '${folder.path}', false)" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Rename</a>
@@ -666,7 +678,7 @@
                         </div>
                     </div>
                     <div class="">
-                        <h3 class="text-gray-900 font-bold text-base mb-2 break-all">${folder.name}</h3>
+                        <h3 class="text-gray-900 font-bold text-base mb-2 break-all">${folder.normalName}</h3>
                         <p class="text-gray-700 text-base">
                             ${folder.isFolder ? `${folder.formatedSize} • ${folder.sub_dirs.length} files/dirs` : `${folder.formatedSize}`}
                         </p>
@@ -1299,16 +1311,16 @@
                 title = 'JSON Data Extraction';
                 break;
             case 'dwgToSvg':
-                title = 'DWG to SVG Conversion';
+                title = 'Conversion to SVG';
                 break;
             case 'dwgToPdf':
-                title = 'DWG to PDF Conversion';
+                title = 'Conversion to PDF';
                 break;
             case 'displayDwg':
-                title = 'Display DWG';
+                title = 'Display in CADViewer';
                 break;
             case 'dwgToMultiple':
-                title = 'DWG file in multiple files';
+                title = 'Split Modelspace in multiple files';
                 break;
             default:
                 title = 'Action';
@@ -1321,13 +1333,13 @@
                 description = 'Test POST Conversion Server - JSON Data Extraction';
                 break;
             case 'dwgToSvg':
-                description = 'Test POST Conversion Server - DWG to SVG Conversion';
+                description = 'Test POST Conversion Server - Conversion to SVG';
                 break;
             case 'dwgToPdf':
-                description = 'Test POST Conversion Server - DWG to PDF Conversion';
+                description = 'Test POST Conversion Server - Conversion to PDF';
                 break;
             case 'displayDwg':
-                description = 'CADViewer Display of DWG';
+                description = 'CADViewer Display';
                 break;
             case 'dwgToMultiple':
                 description = 'Splitting of modelspace DWG file in multiple files';

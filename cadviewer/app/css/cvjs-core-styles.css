@@ -1837,7 +1837,7 @@ input[type=button_layer] {
 
     position: absolute;
     top: 28px;
-    left: 100px;
+    left: 110px;
     width: 80px;
     text-indent: 1px;
     text-align:center;
@@ -2400,7 +2400,7 @@ input[type=button_layer] {
     position: relative;
     top: 5px !important;
     left: 20 !important;
-    width: 100px !important;
+    width: 115px !important;
     height: 20px !important;
     min-height: 20px !important;
     border:solid 1px #ccc;
@@ -2421,7 +2421,7 @@ input[type=button_layer] {
     position: relative;
     top: 5px !important;
     left: 100 !important;
-    width: 100px !important;
+    width: 115px !important;
     height: 20px !important;
     min-height: 20px !important;
     border:solid 1px #ccc;
@@ -2443,7 +2443,7 @@ input[type=button_layer] {
     position: relative;
     top: 5px !important;
     left: 160 !important;
-    width: 100px !important;
+    width: 115px !important;
     height: 20px !important;
     min-height: 20px !important;
     border:solid 1px #ccc;
@@ -2494,7 +2494,7 @@ input[type=button_layer] {
     /*position: absolute !important;*/
     top: 20 !important;
     left: 300 !important; 
-	width: 110px;
+	width: 140px;
 	height: 24px !important;
 	min-height: 24px !important;
 	padding: 1px;
@@ -2572,7 +2572,7 @@ input[type=button_layer] {
 
 #cvjs_layer_sort_button_space{
 
-	width: 110px;
+	width: 140px;
 	height: 22px; 
 	padding: 1px;
     	top: 3px;
@@ -2617,7 +2617,7 @@ input[type=button_layer] {
 
 #cvjs_pagechange_sort_button{
 	cursor: pointer;
-	width: 110px;
+	width: 140px;
 	height: 22px; 
 	padding: 1px;
     	top: 3px;
@@ -3476,7 +3476,7 @@ table.calibrateModalTable td {
 #cvjs_unitForScale{
     position:absolute;
     top: 34px;
-    left: 64px;
+    left: 80px;
  	width: 100px; 
  	height: 22px !important;
     min-height: 22px !important;

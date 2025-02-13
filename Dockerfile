@@ -3,6 +3,7 @@ FROM ubuntu:22.04
 
 # Set environment variable for non-interactive installation
 ENV DEBIAN_FRONTEND=noninteractive
+ENV RUNING_IN_DOCKER=true
 
 # Install necessary dependencies
 RUN apt-get update && apt-get install -y \
