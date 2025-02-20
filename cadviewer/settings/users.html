@@ -1239,6 +1239,7 @@
         document.getElementById("avatar-preview").src =
           user.avatar_url ??
           window.location.origin + "/cadviewer/settings/default.png";
+        document.getElementById("avatar").value = "";
         openModal("Edit User");
         document.getElementById("user-id").value = userId;
       }
@@ -1397,6 +1398,9 @@
         document.getElementById("user-id").value = "";
         document.getElementById("flush-user-folder").classList.add("hidden");
         document.getElementById("user-folder-uuid").classList.add("hidden");
+        document.getElementById("avatar-preview").src =
+          window.location.origin + "/cadviewer/settings/default.png";
+        document.getElementById("avatar").value = "";
         openModal("Add new User");
       });
 

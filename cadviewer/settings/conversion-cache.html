@@ -680,9 +680,31 @@
 
           <!-- Separator -->
           <div class="h-6 w-px bg-gray-200 lg:hidden" aria-hidden="true"></div>
-          <h1 class="text-xl font-semibold leading-6 text-gray-900">
-            Conversion Cache
-          </h1>
+          <div class="flex items-center gap-x-4 justify-between w-full">
+            <h1 class="text-xl font-semibold leading-6 text-gray-900">
+              Conversion Cache
+            </h1>
+            <button
+              onclick="fetchCachedFiles(1)"
+              class="flex items-center gap-x-1.5 rounded-md bg-white px-3 py-2 border border-orange-600 text-sm font-semibold text-orange-600 shadow-sm ring-1 ring-inset ring-orange-600 hover:bg-gray-50"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-5 w-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
+                />
+              </svg>
+              Refresh Conversion Cache
+            </button>
+          </div>
         </div>
 
         <main class="px-4 sm:px-6 lg:px-8">
@@ -694,43 +716,54 @@
             ></ul>
 
             <!-- Ajout des contrôles de pagination -->
-            <div
-              class="mt-4 flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6"
+            <nav
+              id="pagination-container"
+              class="items-center justify-between border-t border-gray-200 px-4 sm:px-0 hidden mt-8"
             >
-              <div class="flex flex-1 justify-between sm:hidden">
-                <button
-                  onclick="changePage(currentPage - 1, totalPages)"
-                  class="relative inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
+              <div class="-mt-px flex w-0 flex-1">
+                <span
+                  onclick="fetchCachedFiles(currentPage - 1)"
+                  class="cursor-pointer inline-flex items-center border-t-2 border-transparent pr-1 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
                 >
-                  Précédent
-                </button>
-                <button
-                  onclick="changePage(currentPage + 1, totalPages)"
-                  class="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
+                  <svg
+                    class="mr-3 size-5 text-gray-400"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                    data-slot="icon"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a.75.75 0 0 1-.75.75H4.66l2.1 1.95a.75.75 0 1 1-1.02 1.1l-3.5-3.25a.75.75 0 0 1 0-1.1l3.5-3.25a.75.75 0 1 1 1.02 1.1l-2.1 1.95h12.59A.75.75 0 0 1 18 10Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Previous
+                </span>
+              </div>
+              <div class="hidden md:-mt-px md:flex" id="pagination"></div>
+              <div class="-mt-px flex w-0 flex-1 justify-end">
+                <span
+                  onclick="fetchCachedFiles(currentPage + 1)"
+                  class="cursor-pointer inline-flex items-center border-t-2 border-transparent pl-1 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
                 >
-                  Suivant
-                </button>
+                  Next
+                  <svg
+                    class="ml-3 size-5 text-gray-400"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                    data-slot="icon"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 10a.75.75 0 0 1 .75-.75h12.59l-2.1-1.95a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 3.25a.75.75 0 1 1-1.02-1.1l2.1-1.95H2.75A.75.75 0 0 1 2 10Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </span>
               </div>
-              <div
-                class="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between"
-              >
-                <div>
-                  <p class="text-sm text-gray-700">
-                    Displaying
-                    <span class="font-medium" id="start-item">-</span> to
-                    <span class="font-medium" id="end-item">-</span> of
-                    <span class="font-medium" id="total-items">-</span> files
-                  </p>
-                </div>
-                <div>
-                  <nav
-                    class="isolate inline-flex -space-x-px rounded-md shadow-sm"
-                    aria-label="Pagination"
-                    id="pagination-container"
-                  ></nav>
-                </div>
-              </div>
-            </div>
+            </nav>
           </div>
         </main>
       </div>
@@ -748,6 +781,7 @@
           );
           const data = await response.json();
           renderCachedFiles(data.files);
+          currentPage = data.pagination.currentPage;
           updatePagination(data.pagination);
         } catch (error) {
           console.error("Error fetching cached files:", error);
@@ -760,79 +794,68 @@
         }
       };
 
-      const updatePagination = (pagination) => {
-        const { total, totalPages, currentPage, limit } = pagination;
-        const startItem = (currentPage - 1) * limit + 1;
-        const endItem = Math.min(currentPage * limit, total);
+      const updatePagination = ({ total, totalPages, currentPage, limit }) => {
+        // render pagination
+        const pagination = document.getElementById("pagination");
+        pagination.innerHTML = "";
 
-        document.getElementById("start-item").textContent = startItem;
-        document.getElementById("end-item").textContent = endItem;
-        document.getElementById("total-items").textContent = total;
-
-        const paginationContainer = document.getElementById(
-          "pagination-container"
-        );
-        let paginationHTML = "";
-
-        // Bouton précédent
-        paginationHTML += `
-          <button onclick="changePage(${
-            currentPage - 1
-          })" class="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 ${
-          currentPage === 1 ? "opacity-50 cursor-not-allowed" : ""
-        }" ${currentPage === 1 ? "disabled" : ""}>
-            <span class="sr-only">Précédent</span>
-            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd" />
-            </svg>
-          </button>
-        `;
-
-        // Pages
-        for (let i = 1; i <= totalPages; i++) {
-          if (
-            i === 1 ||
-            i === totalPages ||
-            (i >= currentPage - 2 && i <= currentPage + 2)
-          ) {
-            paginationHTML += `
-              <button onclick="changePage(${i}, ${totalPages})" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold ${
-              currentPage === i ? "bg-orange-600 text-white" : "text-gray-900"
-            } ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
-                ${i}
-              </button>
-            `;
-          } else if (i === currentPage - 3 || i === currentPage + 3) {
-            paginationHTML += `
-              <span class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-700 ring-1 ring-inset ring-gray-300">
-                ...
-              </span>
-            `;
+        const createPageLink = (i, currentPage) => {
+          const a = document.createElement("span");
+          a.href = "#";
+          a.textContent = i;
+          a.onclick = () => fetchCachedFiles(i);
+          if (`${i}` === `${currentPage}`) {
+            a.classList =
+              "inline-flex items-center border-t-2 border-orange-500 px-4 pt-4 text-sm font-medium text-orange-600";
+          } else {
+            a.classList =
+              "cursor-pointer inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700";
           }
+          return a;
+        };
+
+        const createEllipsis = () => {
+          const span = document.createElement("span");
+          span.textContent = "...";
+          span.classList =
+            "inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500";
+          return span;
+        };
+
+        // Always show first page
+        pagination.appendChild(createPageLink(1, currentPage));
+
+        if (totalPages <= 8) {
+          // Show all pages if 8 or fewer
+          for (let i = 2; i <= totalPages; i++) {
+            pagination.appendChild(createPageLink(i, currentPage));
+          }
+        } else {
+          // Show limited pages with ellipsis
+          if (currentPage > 4) {
+            pagination.appendChild(createEllipsis());
+          }
+
+          // Show pages around current page
+          for (
+            let i = Math.max(2, currentPage - 2);
+            i <= Math.min(page + 2, totalPages - 1);
+            i++
+          ) {
+            pagination.appendChild(createPageLink(i, currentPage));
+          }
+
+          if (currentPage < totalPages - 3) {
+            pagination.appendChild(createEllipsis());
+          }
+
+          // Always show last page
+          pagination.appendChild(createPageLink(totalPages, currentPage));
         }
-
-        // Bouton suivant
-        paginationHTML += `
-          <button onclick="changePage(${
-            currentPage + 1
-          }, ${totalPages})" class="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 ${
-          currentPage === totalPages ? "opacity-50 cursor-not-allowed" : ""
-        }" ${currentPage === totalPages ? "disabled" : ""}>
-            <span class="sr-only">Suivant</span>
-            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
-            </svg>
-          </button>
-        `;
-
-        paginationContainer.innerHTML = paginationHTML;
-      };
-
-      const changePage = (newPage, totalPages) => {
-        alert(totalPages);
-        if (newPage < 1 || newPage > totalPages) return;
-        currentPage = newPage;
-        fetchCachedFiles(currentPage);
+        document
+          .getElementById("pagination-container")
+          .classList.remove("hidden");
+        document.getElementById("pagination-container").classList.add("flex");
       };
 
       const formatDate = (dateString) => {
@@ -885,6 +908,8 @@
         } else if (action === "Display of DWG") {
           return dwgIcon;
         } else if (action === "Cache conversion") {
+          return jsonIcon;
+        } else if (action === "RL/TL Processing") {
           return jsonIcon;
         }
       };
