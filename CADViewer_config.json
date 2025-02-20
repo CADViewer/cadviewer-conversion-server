@@ -38,7 +38,7 @@
     "mysqlHost": "localhost",
     "mysqlUsername": "root",
     "mysqlPassword": "",
-    "mysqlDatabase": "vizquery",
+    "mysqlDatabase": "vizquery_demo",
     "callbackMethod_gatewayUrl_flag": false,
     "callbackMethod_gatewayUrl": "http://localhost:3000",
     "callbackMethod": "getcadviewercontent",
