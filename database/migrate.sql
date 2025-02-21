@@ -10,3 +10,6 @@ ALTER TABLE `users`
 ADD `role` varchar(10) COLLATE 'latin1_swedish_ci' NOT NULL DEFAULT 'user';
 ALTER TABLE `users`
 ADD `is_enabled` tinyint NOT NULL DEFAULT '1';
+
+ALTER TABLE `users`
+ADD `validation_token` text NULL;
