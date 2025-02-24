@@ -4,7 +4,7 @@
     "https": false,
     "ServerFrontEndUrl": "",
     "ServerFrontEndUrlAsAllowedOriginOnly": false,
-    "ServerLocation": "C:/nodejs/cadviewer-conversion-server-nextgen/",
+    "ServerLocation": "C:/reactjs/cadviewer-conversion-server-nextgen/",
     "folderLocation": "/reactjs/cadviewer-conversion-server-nextgen/content",
     "folderLocationDemoUser": "/reactjs/cadviewer-conversion-server-nextgen/content/demo_user",
     "cvjs_svgz_compress": true,
