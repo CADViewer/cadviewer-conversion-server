@@ -57,5 +57,12 @@
     "settingsUserBasicAuth": "admin",
     "settingsPasswordBasicAuth": "admin",
     "userFolderMaximumFiles": "3",
-    "userFolderMaximumSizeInMB": "10"
+    "userFolderMaximumSizeInMB": "10",
+    "enableEmailVerification": true,
+    "smtpHost": "localhost",
+    "smtpPort": 1025,
+    "smtpUser": "cadviewer",
+    "smtpPassword": "cadviewer",
+    "smtpFrom": "conversion@cadviewer.com",
+    "frontendUrl": "http://localhost:3001"
 }
