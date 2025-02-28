@@ -13,3 +13,12 @@ ADD `is_enabled` tinyint NOT NULL DEFAULT '1';
 
 ALTER TABLE `users`
 ADD `validation_token` text NULL;
+
+-- Database migration change on 25/02/2025
+
+ALTER TABLE `users`
+ADD `created_at` datetime NULL DEFAULT CURRENT_TIMESTAMP,
+ADD `updated_at` datetime NULL ON UPDATE CURRENT_TIMESTAMP AFTER `created_at`;
+
+-- update all users created_at and updated_at to current timestamp
+UPDATE `users` SET `created_at` = NOW(), `updated_at` = NOW();

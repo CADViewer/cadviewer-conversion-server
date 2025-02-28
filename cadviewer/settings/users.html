@@ -1177,7 +1177,9 @@
                                           user.email
                                         }</p>
                                         <p class="mt-1 truncate text-sm text-gray-500"><span class="inline-flex shrink-0 items-center rounded-full bg-gray-50 px-1.5 py-0.5 text-xs font-medium text-gray-700 ring-1 ring-inset ring-gray-600">${
-                                          user.role === "admin"
+                                          user.role === "demo_user"
+                                            ? "Demo User"
+                                            : user.role === "admin"
                                             ? "Administrator"
                                             : "Member"
                                         }</span> ${user.username}</p>
