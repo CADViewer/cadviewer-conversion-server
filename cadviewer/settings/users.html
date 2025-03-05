@@ -897,6 +897,19 @@
                       >
                         <div class="flex items-center">
                           <input
+                            id="demo_user"
+                            name="role"
+                            type="radio"
+                            class="relative h-4 w-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white checked:border-orange-600 checked:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden [&:not(:checked)]:before:hidden"
+                          />
+                          <label
+                            for="demo_user"
+                            class="ml-3 block text-sm/6 font-medium text-gray-900"
+                            >Demo User</label
+                          >
+                        </div>
+                        <div class="flex items-center">
+                          <input
                             id="member"
                             name="role"
                             type="radio"
@@ -1228,6 +1241,8 @@
         document.getElementById("username").value = user.username;
         document.getElementById("email").value = user.email;
         document.getElementById("member").checked = user.role === "user";
+        document.getElementById("demo_user").checked =
+          user.role === "demo_user";
         document.getElementById("admin").checked = user.role === "admin";
         document.getElementById("active").checked = user.is_enabled === 1;
         document.getElementById("not_active").checked = user.is_enabled === 0;
@@ -1394,6 +1409,8 @@
         document.getElementById("username").value = "";
         document.getElementById("email").value = "";
         document.getElementById("member").checked = true;
+        document.getElementById("demo_user").checked = false;
+        document.getElementById("admin").checked = false;
         document.getElementById("active").checked = true;
         document.getElementById("password").value = "";
         document.getElementById("confirm-password").value = "";
@@ -1486,7 +1503,11 @@
               last_name: document.getElementById("lastname").value,
               username: document.getElementById("username").value,
               email: document.getElementById("email").value,
-              role: document.getElementById("admin").checked ? "admin" : "user",
+              role: document.getElementById("admin").checked
+                ? "admin"
+                : document.getElementById("demo_user").checked
+                ? "demo_user"
+                : "user",
               is_enabled: document.getElementById("active").checked ? 1 : 0,
               password: document.getElementById("password").value,
             };
