@@ -1018,7 +1018,9 @@
                       role="menuitem"
                       tabindex="-1"
                       onclick="viewFile('${format.id}', '${format.name}')"
-                    >Display ${format.name}<span class="sr-only">, File(s)</span></a>
+                    >Display ${format.name} ${
+                       format.id.includes(".rl.json") ? " RL" : ""
+                     } <span class="sr-only">, File(s)</span></a>
                  `
                    )
                    .join("")}
@@ -1045,13 +1047,23 @@
                 </dd>
               </div>
               <div class="flex justify-between gap-x-2 py-2">
-                <dt class="text-gray-500">Available Files</dt>
+                <dt class="text-gray-500">Files</dt>
                 <dd class="flex gap-2">
                   ${file.availableFormats
                     .map(
                       (format) => `
-                    <span onclick="viewFile('${format.id}', '${format.name}')" class="rounded-md bg-${format.color}-50 px-2 py-1 text-xs font-medium text-${format.color}-700 ring-1 ring-inset ring-${format.color}-600/10 cursor-pointer">
-                      ${format.name}
+                    <span onclick="viewFile('${format.id}', '${
+                        format.name
+                      }')" class="rounded-md bg-${
+                        format.color
+                      }-50 px-2 py-1 text-xs font-medium text-${
+                        format.color
+                      }-700 ring-1 ring-inset ring-${
+                        format.color
+                      }-600/10 cursor-pointer">
+                      ${format.name} ${
+                        format.id.includes(".rl.json") ? " RL" : ""
+                      }
                     </span>
                   `
                     )
@@ -1072,7 +1084,7 @@
         if (fileType === "SVG" || fileType === "SVGZ") {
           // open the file in a modal
           openModal(
-            fileType + " File",
+            fileType + " File" + `: ${fileId}`,
             `<img src="/settings/cache/files/${fileId}" alt="SVG File" />`
           );
         } else if (fileType === "CSV") {
@@ -1080,7 +1092,7 @@
           const response = await fetch(`/settings/cache/csv/${fileId}`);
           const data = await response.json();
           openModal(
-            "CSV File",
+            "CSV File" + `: ${fileId}`,
             `<table class="w-full border-collapse border border-gray-200">${data
               .map(
                 (row, rowIndex) =>
@@ -1098,14 +1110,23 @@
         } else if (fileType === "PDF") {
           // display with iframe
           openModal(
-            "PDF File",
+            "PDF File" + `: ${fileId}`,
             `<iframe src="/settings/cache/files/${fileId}" class="w-full h-full min-h-[80vh]"></iframe>`
           );
         } else if (fileType === "JSON") {
           // display with iframe
           const response = await fetch(`/settings/cache/files/${fileId}`);
-          const data = await response.json();
-          openModal("JSON File", `<pre>${JSON.stringify(data, null, 2)}</pre>`);
+          const data = await response.text();
+          try {
+            const jsonData = JSON.parse(data);
+            openModal(
+              "JSON File" + `: ${fileId}`,
+              `<pre>${JSON.stringify(jsonData, null, 2)}</pre>`
+            );
+          } catch (error) {
+            console.error("Error parsing JSON:", error);
+            openModal("JSON File" + `: ${fileId}`, `<pre>${data}</pre>`);
+          }
         }
       };
 
@@ -1152,7 +1173,7 @@
             vanillaToast.success("File deleted successfully.", {
               duration: 5000,
             });
-            await fetchCachedFiles(); // Rafraîchir la liste
+            await fetchCachedFiles(1); // Rafraîchir la liste
           } else {
             vanillaToast.error("Failed to delete file.", {
               duration: 5000,
