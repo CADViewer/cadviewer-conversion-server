@@ -15,6 +15,11 @@ RUN yarn
 # Copy application code
 COPY . .
 
+# Make files in converters/autoxchange/linux executable
+RUN find converters/autoxchange/linux/ -type f -name "ax*" -o -name "Ax*" | xargs chmod +x && \
+    find converters/linklist/linux/ -type f -name "LinkList*" | xargs chmod +x && \
+    find converters/dwgmerge/linux/ -type f -name "DwgMerge*" | xargs chmod +x
+
 # Rebuild bcrypt with required tools
 RUN npm rebuild bcrypt --build-from-source
 
