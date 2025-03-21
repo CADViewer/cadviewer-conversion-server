@@ -1170,6 +1170,7 @@
               duration: 5000,
             });
             await fetchCachedFiles(1); // Rafraîchir la liste
+            getCacheStats();
           } else {
             vanillaToast.error("Failed to delete file.", {
               duration: 5000,

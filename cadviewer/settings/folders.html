@@ -1385,7 +1385,7 @@
                     : null
                 }" class="relative rounded-lg border border-muted bg-gray-0 shadow-sm transition-all ${
             folder.isFolder
-              ? "hover:-translate-y-1 hover:shadow-lg cursor-pointer"
+              ? "hover:-translate-y-1 hover:shadow-lg cursor-pointer folderActionParentBlock"
               : ""
           } dark:bg-gray-50 p-4">
                     <div class="w-full flex justify-between">
@@ -1466,13 +1466,13 @@
                                         ? `<a href="#" onclick="restApiActionClick('${folder.name}', '${folder.path}', 'dwgToMultiple')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Split DWG ModelSpace</a>`
                                         : ""
                                     }
-                                    <a href="#" onclick="downloadFile('${
+                                    <a href="#" onclick="downloadFile(event, '${
                                       folder.path
                                     }')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Download</a>
                                     <a href="#" onclick="openModal(event, '${
                                       folder.path
                                     }', false)" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Rename</a>
-                                    <a href="#" onclick="deleteFileFolder('${
+                                    <a href="#" onclick="deleteFileFolder(event, '${
                                       folder.path
                                     }')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Delete</a>
                                   </div>
@@ -1480,7 +1480,7 @@
                                   : `
                                   <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                                     <a href="#" onclick="openModal(event, '${folder.path}', true)" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Rename</a>
-                                    <a href="#" onclick="deleteFileFolder('${folder.path}')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Delete</a>
+                                    <a href="#" onclick="deleteFileFolder(event, '${folder.path}')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Delete</a>
                                   </div>
                                 `
                               }
@@ -1524,6 +1524,14 @@
             event.stopPropagation();
             block.querySelector(".hidden").classList.toggle("hidden");
             document.querySelector("#backdrop").classList.remove("hidden");
+            document
+              .querySelectorAll(".folderActionParentBlock")
+              .forEach((block) => {
+                block.classList.remove(
+                  "hover:-translate-y-1",
+                  "hover:shadow-lg"
+                );
+              });
           });
         });
       }
@@ -1533,9 +1541,16 @@
         document.querySelectorAll(".fileActionBlock>div").forEach((block) => {
           block.classList.add("hidden");
         });
+        document
+          .querySelectorAll(".folderActionParentBlock")
+          .forEach((block) => {
+            block.classList.add("hover:-translate-y-1", "hover:shadow-lg");
+          });
       }
 
-      function deleteFileFolder(path) {
+      function deleteFileFolder(event, path) {
+        event.preventDefault();
+        event.stopPropagation();
         closeBackdrop();
         // delete file/folder from post endpoint "/folders/delete"
         fetch("/settings/folders/delete", {
@@ -1561,7 +1576,9 @@
           });
       }
 
-      function downloadFile(path) {
+      function downloadFile(event, path) {
+        event.preventDefault();
+        event.stopPropagation();
         closeBackdrop();
         // download file from post endpoint "/folders/download"
         fetch("/settings/folders/download", {
