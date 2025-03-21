@@ -20,6 +20,10 @@ RUN find converters/autoxchange/linux/ -type f -name "ax*" -o -name "Ax*" | xarg
     find converters/linklist/linux/ -type f -name "LinkList*" | xargs chmod +x && \
     find converters/dwgmerge/linux/ -type f -name "DwgMerge*" | xargs chmod +x
 
+# Copy font (end with .ttf or .TTF) present inside converters/autoxchange/fonts/ into /usr/share/fonts
+RUN find converters/autoxchange/fonts/ -type f -name "*.ttf" -o -name "*.TTF" | xargs -I {} cp {} /usr/share/fonts/
+RUN fc-cache
+
 # Rebuild bcrypt with required tools
 RUN npm rebuild bcrypt --build-from-source
 
