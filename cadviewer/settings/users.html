@@ -780,7 +780,7 @@
                 <div
                   class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left w-full"
                 >
-                  <div>
+                  <div class="flex flex-col gap-2">
                     <h3
                       class="text-base font-semibold leading-6 text-gray-900"
                       id="modal-title"
@@ -792,6 +792,12 @@
                       id="user-folder-uuid"
                       class="hidden text-gray-400 text-xs font-medium leading-4"
                       >Folder UUID</span
+                    >
+                    <!-- Registration date -->
+                    <span
+                      id="registration-date"
+                      class="hidden text-gray-400 text-xs font-medium leading-4"
+                      >Registration Date</span
                     >
                   </div>
                   <input type="hidden" name="user-id" id="user-id" />
@@ -1253,6 +1259,12 @@
         document.getElementById(
           "user-folder-uuid"
         ).innerText = `> uploads/${user.folder_name}`;
+        document.getElementById("registration-date").classList.remove("hidden");
+        document.getElementById(
+          "registration-date"
+        ).innerText = `Registration date: ${new Date(
+          user.created_at
+        ).toLocaleString("en-US")}`;
         document.getElementById("avatar-preview").src =
           user.avatar_url ??
           window.location.origin + "/cadviewer/settings/default.png";
@@ -1417,6 +1429,7 @@
         document.getElementById("user-id").value = "";
         document.getElementById("flush-user-folder").classList.add("hidden");
         document.getElementById("user-folder-uuid").classList.add("hidden");
+        document.getElementById("registration-date").classList.add("hidden");
         document.getElementById("avatar-preview").src =
           window.location.origin + "/cadviewer/settings/default.png";
         document.getElementById("avatar").value = "";

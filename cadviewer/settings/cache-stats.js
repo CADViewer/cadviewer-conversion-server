@@ -28,6 +28,8 @@ async function flushCache() {
 
     if (response.ok) {
       vanillaToast.success("Cache flushed successfully.", { duration: 5000 });
+      // reload the page
+      location.reload();
       getCacheStats(); // Refresh stats
     } else {
       vanillaToast.error("Failed to flush cache.", { duration: 5000 });
