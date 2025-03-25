@@ -16,7 +16,7 @@
     "autodetect_location": true,
     "autoxchange_executable": "AX2025_W64_25_11_149b.exe",
     "autoxchange_executable_windows": "AX2025_W64_25_11_149b.exe",
-    "autoxchange_executable_linux": "ax2025_L64_25_11_149a",
+    "autoxchange_executable_linux": "ax2025_L64_25_11_149d",
     "licenseLocation": "/converters/autoxchange/",
     "xpathLocation": "/converters/xpath/",
     "fileLocation": "/converters/files/",
