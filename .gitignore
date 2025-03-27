@@ -19,3 +19,4 @@ cadviewer/settings/requests-per-minute.json
 cadviewer/settings/requests-callapiconversion-monitoring.json
 cadviewer/settings/converter-files-analysis.json
 .DS_Store
+exports/*
