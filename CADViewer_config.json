@@ -66,5 +66,6 @@
     "smtpFrom": "conversion@cadviewer.com",
     "frontendUrl": "http://localhost:3001",
     "demoUserRetentionDays": 7,
-    "demoUserRetentionDaysAlertBeforeDeletion": 2
+    "demoUserRetentionDaysAlertBeforeDeletion": 2,
+    "usersExportFrequency": "monthly"
 }

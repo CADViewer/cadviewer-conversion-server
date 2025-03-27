@@ -1013,7 +1013,7 @@
         })
           .then((response) => response.json())
           .then((data) => {
-            const frequency = data.config.googleAdsExportFrequency || "monthly";
+            const frequency = data.config.usersExportFrequency || "monthly";
             document.getElementById("export_frequency").value = frequency;
             document.getElementById("nextExportDate").textContent = frequency === "monthly" ? "1st of next month, at 2:00 AM" : "1st and 15th of each month, at 2:00 AM";
           })
@@ -1031,7 +1031,7 @@
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            key: "googleAdsExportFrequency",
+            key: "usersExportFrequency",
             value: frequency,
           }),
         })
