@@ -56,7 +56,11 @@ Read the sections on installing and handling [Fonts](https://tailormade.com/ax20
 
 **NOTE:** Make sure the converter version number in CADViwer_config.json match the converters you install, and change any paths settings to correspond to your install folders.  
 
+**NOTE:** If having issues with packages during installation, remove the ***nodes_modules*** folder and reinstall using: ***npm install --legacy-peer-deps***
+
 **Run:** Run by using the *npm start* script or *node cadviewer_server* from the command line.
+
+
 
 
 
