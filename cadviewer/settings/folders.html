@@ -1258,10 +1258,10 @@
               </div>
             </div>
             <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
-              <button type="button" onclick="executeVizQuery()" class="inline-flex w-full justify-center rounded-md bg-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 sm:ml-3 sm:w-auto">
-                Execute
+              <button type="button" onclick="executeVizQuery()" id="vizquery-execute-btn" class="inline-flex items-center justify-center w-full rounded-md bg-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 sm:ml-3 sm:w-auto">
+                <span>Execute</span>
               </button>
-              <button type="button" onclick="closeModalVizquery()" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto">
+              <button type="button" onclick="closeModalVizquery()" id="vizquery-cancel-btn" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto">
                 Cancel
               </button>
             </div>
@@ -1557,7 +1557,7 @@
                                     }
                                     ${
                                       folder.name.endsWith(".dwg")
-                                        ? `<a href="#" onclick="openVizQueryModal('${folder.name}', '${folder.path}')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Batch process VizQuery</a>`
+                                        ? `<a href="#" onclick="openVizQueryModal('${folder.normalName}', '${folder.path}')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Batch process VizQuery</a>`
                                         : ""
                                     }
                                     <a href="#" onclick="downloadFile(event, '${
@@ -2643,17 +2643,32 @@
       async function openVizQueryModal(filename, path) {
         closeBackdrop();
         
+        // reset cancel and execute button
+        document.getElementById('vizquery-cancel-btn').disabled = false;
+        document.getElementById('vizquery-execute-btn').disabled = false;
+        document.getElementById('vizquery-execute-btn').innerHTML = '<span>Execute</span>';
+
         // Prepare default VizQuery parameters
         const jsonData = {
+          filename: filename,
           action: {
             initialization: true,
-            update: true,
-            extraction: true,
+            update: false,
+            extraction: false,
             createDrawing: false
           },
           jsonConfigFilename: filename.replace('.dwg', '.json'),
           contentLocation: path
         };
+        
+        // Update modal title based on the selected file
+        const modalTitle = document.getElementById('modal-vizquery-title');
+        if (modalTitle) {
+          modalTitle.textContent = `Batch process VizQuery - ${filename}`;
+        }
+
+        // Create base filename without extension
+        const baseName = filename.replace('.dwg', '');
         
         document.getElementById("vizquery-params").value = JSON.stringify(jsonData, null, 2);
         
@@ -2661,43 +2676,113 @@
         const modalFormInnerHTML = `
         <div id="vizquery-options">
           <div class="mb-4">
-            <div class="mb-2 font-medium text-gray-700">Process Options</div>
-            <div class="space-y-2">
-              <div class="flex items-center">
-                <input type="checkbox" id="initialization" name="initialization" checked class="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded accent-orange-600">
-                <label for="initialization" class="ml-2 block text-sm text-gray-900">Initialization</label>
+            <div class="mb-2 font-medium text-gray-700">Source file: <span class="text-orange-600">${filename}</span></div>
+            <div class="space-y-4">
+              <!-- Initialization Section -->
+              <div id="initialization-section" class="border border-gray-200 rounded-md p-3">
+                <div class="flex items-center mb-2">
+                  <input type="checkbox" id="initialization" name="initialization" checked class="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded accent-orange-600">
+                  <label for="initialization" class="ml-2 block text-sm font-medium text-gray-900">Initialization</label>
+                </div>
+                <div class="pl-6 space-y-3 initialization-options">
+                  <div>
+                    <label for="init-output-filename" class="block text-sm font-medium text-gray-700">Output Filename</label>
+                    <input type="text" id="init-output-filename" name="init-output-filename" value="${baseName}-temp-name.dwg" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-1 px-2 text-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500">
+                  </div>
+                  <div>
+                    <div class="flex justify-between items-center">
+                      <label for="init-config-filename" class="block text-sm font-medium text-gray-700">Configuration Filename</label>
+                      <div id="init-config-actions" class="hidden">
+                        <button type="button" class="text-xs text-blue-600 hover:text-blue-800 mx-1 view-config" data-target="init">View</button>/
+                        <button type="button" class="text-xs text-green-600 hover:text-green-800 mx-1 edit-config" data-target="init">Edit</button>/
+                        <button type="button" class="text-xs text-red-600 hover:text-red-800 mx-1 save-config" data-target="init">Save</button>
+                      </div>
+                    </div>
+                    <div class="flex mt-1">
+                      <input type="text" id="init-config-filename" name="init-config-filename" value="${baseName}-init.json" class="block w-full border border-gray-300 rounded-l-md shadow-sm py-1 px-2 text-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500">
+                      <label for="init-config-file" class="cursor-pointer inline-flex items-center px-3 py-1 border border-l-0 border-gray-300 shadow-sm text-sm font-medium rounded-r-md text-white bg-orange-600 hover:bg-orange-700 focus:outline-none">
+                        Load
+                        <input type="file" id="init-config-file" name="init-config-file" accept=".json" class="sr-only config-file-input" data-target="init">
+                      </label>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="update" name="update" checked class="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded accent-orange-600">
-                <label for="update" class="ml-2 block text-sm text-gray-900">Update</label>
+              
+              <!-- Update Section -->
+              <div id="update-section" class="border border-gray-200 rounded-md p-3">
+                <div class="flex items-center mb-2">
+                  <input type="checkbox" id="update" name="update" class="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded accent-orange-600">
+                  <label for="update" class="ml-2 block text-sm font-medium text-gray-900">Update</label>
+                </div>
+                <div class="pl-6 space-y-3 update-options hidden">
+                  <div>
+                    <label for="update-output-filename" class="block text-sm font-medium text-gray-700">Output Filename</label>
+                    <input type="text" id="update-output-filename" name="update-output-filename" value="${baseName}-new.dwg" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-1 px-2 text-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500">
+                  </div>
+                  <div>
+                    <div class="flex justify-between items-center">
+                      <label for="update-config-filename" class="block text-sm font-medium text-gray-700">Configuration Filename</label>
+                      <div id="update-config-actions" class="hidden">
+                        <button type="button" class="text-xs text-blue-600 hover:text-blue-800 mx-1 view-config" data-target="update">View</button>/
+                        <button type="button" class="text-xs text-green-600 hover:text-green-800 mx-1 edit-config" data-target="update">Edit</button>/
+                        <button type="button" class="text-xs text-red-600 hover:text-red-800 mx-1 save-config" data-target="update">Save</button>
+                      </div>
+                    </div>
+                    <div class="flex mt-1">
+                      <input type="text" id="update-config-filename" name="update-config-filename" value="${baseName}-changes.json" class="block w-full border border-gray-300 rounded-l-md shadow-sm py-1 px-2 text-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500">
+                      <label for="update-config-file" class="cursor-pointer inline-flex items-center px-3 py-1 border border-l-0 border-gray-300 shadow-sm text-sm font-medium rounded-r-md text-white bg-orange-600 hover:bg-orange-700 focus:outline-none">
+                        Load
+                        <input type="file" id="update-config-file" name="update-config-file" accept=".json" class="sr-only config-file-input" data-target="update">
+                      </label>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="extraction" name="extraction" checked class="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded accent-orange-600">
-                <label for="extraction" class="ml-2 block text-sm text-gray-900">Extraction</label>
+              
+              <!-- Extraction Section -->
+              <div id="extraction-section" class="border border-gray-200 rounded-md p-3">
+                <div class="flex items-center mb-2">
+                  <input type="checkbox" id="extraction" name="extraction" class="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded accent-orange-600">
+                  <label for="extraction" class="ml-2 block text-sm font-medium text-gray-900">Extraction</label>
+                </div>
+                <div class="pl-6 space-y-3 extraction-options hidden">
+                  <div>
+                    <label for="extract-output-filename" class="block text-sm font-medium text-gray-700">Output Filename</label>
+                    <input type="text" id="extract-output-filename" name="extract-output-filename" value="${baseName}.json" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-1 px-2 text-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500">
+                  </div>
+                  <div>
+                    <div class="flex justify-between items-center">
+                      <label for="extract-config-filename" class="block text-sm font-medium text-gray-700">Configuration Filename</label>
+                      <div id="extract-config-actions" class="hidden">
+                        <button type="button" class="text-xs text-blue-600 hover:text-blue-800 mx-1 view-config" data-target="extract">View</button>/
+                        <button type="button" class="text-xs text-green-600 hover:text-green-800 mx-1 edit-config" data-target="extract">Edit</button>/
+                        <button type="button" class="text-xs text-red-600 hover:text-red-800 mx-1 save-config" data-target="extract">Save</button>
+                      </div>
+                    </div>
+                    <div class="flex mt-1">
+                      <input type="text" id="extract-config-filename" name="extract-config-filename" value="${baseName}-extract.json" class="block w-full border border-gray-300 rounded-l-md shadow-sm py-1 px-2 text-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500">
+                      <label for="extract-config-file" class="cursor-pointer inline-flex items-center px-3 py-1 border border-l-0 border-gray-300 shadow-sm text-sm font-medium rounded-r-md text-white bg-orange-600 hover:bg-orange-700 focus:outline-none">
+                        Load
+                        <input type="file" id="extract-config-file" name="extract-config-file" accept=".json" class="sr-only config-file-input" data-target="extract">
+                      </label>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="create-drawing" name="create-drawing" checked class="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded accent-orange-600">
-                <label for="create-drawing" class="ml-2 block text-sm text-gray-900">Create Drawing</label>
-              </div>
-            </div>
-          </div>
-          <div class="mt-6 border-t border-gray-200 pt-4">
-            <div class="flex space-x-4 mb-4">
-              <button type="button" id="tab-filename" class="px-3 py-2 text-sm font-medium rounded-md bg-orange-600 text-white">JSON Filename</button>
-              <button type="button" id="tab-upload" class="px-3 py-2 text-sm font-medium rounded-md text-gray-700 bg-gray-100">Load JSON File</button>
-            </div>
-            
-            <div id="filename-section">
-              <div class="mb-4">
-                <label for="config-filename" class="block text-sm font-medium text-gray-700">Configuration Filename</label>
-                <input type="text" id="config-filename" name="config-filename" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm">
-              </div>
-            </div>
-            
-            <div id="upload-section" class="hidden">
-              <div class="mb-4">
-                <label for="config-file" class="block text-sm font-medium text-gray-700">Upload JSON File</label>
-                <input type="file" accept=".json" id="config-file" name="config-file" class="mt-1 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-medium file:bg-orange-50 file:text-orange-700 hover:file:bg-orange-100">
+              
+              <!-- Create Drawing Section -->
+              <div id="create-drawing-section" class="border border-gray-200 rounded-md p-3">
+                <div class="flex items-center mb-2">
+                  <input type="checkbox" id="create-drawing" name="create-drawing" class="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded accent-orange-600">
+                  <label for="create-drawing" class="ml-2 block text-sm font-medium text-gray-900">Create Drawing</label>
+                </div>
+                <div class="pl-6 space-y-3 create-drawing-options hidden">
+                  <div>
+                    <label for="drawing-output-filename" class="block text-sm font-medium text-gray-700">Output Filename</label>
+                    <input type="text" id="drawing-output-filename" name="drawing-output-filename" value="${baseName}.svg" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-1 px-2 text-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500">
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -2706,44 +2791,146 @@
         
         document.getElementById("modal-form-vizquery").innerHTML = modalFormInnerHTML;
         
-        document.getElementById('tab-filename').addEventListener('click', function() {
-          document.getElementById('filename-section').classList.remove('hidden');
-          document.getElementById('upload-section').classList.add('hidden');
-          this.classList.add('bg-orange-600', 'text-white');
-          this.classList.remove('text-gray-700', 'bg-gray-100');
-          document.getElementById('tab-upload').classList.add('text-gray-700', 'bg-gray-100');
-          document.getElementById('tab-upload').classList.remove('bg-orange-600', 'text-white');
-        });
-        
-        document.getElementById('tab-upload').addEventListener('click', function() {
-          document.getElementById('upload-section').classList.remove('hidden');
-          document.getElementById('filename-section').classList.add('hidden');
-          this.classList.add('bg-orange-600', 'text-white');
-          this.classList.remove('text-gray-700', 'bg-gray-100');
-          document.getElementById('tab-filename').classList.add('text-gray-700', 'bg-gray-100');
-          document.getElementById('tab-filename').classList.remove('bg-orange-600', 'text-white');
-        });
-        
-        // Add event listener for file upload
-        document.getElementById('config-file').addEventListener('change', function(event) {
-          const file = event.target.files[0];
-          if (file) {
-            // Set the filename in the filename field
-            document.getElementById('config-filename').value = file.name;
+        // Add event listeners for process option checkboxes
+        document.getElementById('initialization').addEventListener('change', function() {
+          const optionsDiv = document.querySelector('.initialization-options');
+          const extractionCheckbox = document.getElementById('extraction');
+          
+          if (this.checked) {
+            optionsDiv.classList.remove('hidden');
             
-            // Read the file content
-            const reader = new FileReader();
-            reader.onload = function(e) {
-              // Store the file content in a data attribute for later use
-              document.getElementById('config-file').setAttribute('data-file-content', e.target.result);
-            };
-            reader.readAsText(file);
+            // If initialization is checked, uncheck and disable extraction
+            if (extractionCheckbox.checked) {
+              extractionCheckbox.checked = false;
+              document.querySelector('.extraction-options').classList.add('hidden');
+            }
+            extractionCheckbox.disabled = true;
+            extractionCheckbox.parentElement.classList.add('opacity-50');
+          } else {
+            optionsDiv.classList.add('hidden');
+            
+            // If initialization is unchecked, enable extraction
+            extractionCheckbox.disabled = false;
+            extractionCheckbox.parentElement.classList.remove('opacity-50');
           }
         });
         
-        // Set initial values
-        document.getElementById("config-filename").value = jsonData.jsonConfigFilename;
+        document.getElementById('update').addEventListener('change', function() {
+          const optionsDiv = document.querySelector('.update-options');
+          if (this.checked) {
+            optionsDiv.classList.remove('hidden');
+          } else {
+            optionsDiv.classList.add('hidden');
+          }
+        });
         
+        document.getElementById('extraction').addEventListener('change', function() {
+          const optionsDiv = document.querySelector('.extraction-options');
+          const initializationCheckbox = document.getElementById('initialization');
+          
+          if (this.checked) {
+            optionsDiv.classList.remove('hidden');
+            
+            // If extraction is checked, uncheck initialization
+            if (initializationCheckbox.checked) {
+              initializationCheckbox.checked = false;
+              document.querySelector('.initialization-options').classList.add('hidden');
+            }
+          } else {
+            optionsDiv.classList.add('hidden');
+          }
+        });
+        
+        document.getElementById('create-drawing').addEventListener('change', function() {
+          const optionsDiv = document.querySelector('.create-drawing-options');
+          if (this.checked) {
+            optionsDiv.classList.remove('hidden');
+          } else {
+            optionsDiv.classList.add('hidden');
+          }
+        });
+        
+        // Initial setup for initialization/extraction exclusivity
+        if (document.getElementById('initialization').checked) {
+          const extractionCheckbox = document.getElementById('extraction');
+          extractionCheckbox.disabled = true;
+          extractionCheckbox.parentElement.classList.add('opacity-50');
+        }
+        
+        // Add event listeners for file uploads
+        document.querySelectorAll('.config-file-input').forEach(fileInput => {
+          fileInput.addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            const target = this.getAttribute('data-target');
+            
+            if (file) {
+              // Set the filename in the filename field
+              document.getElementById(`${target}-config-filename`).value = file.name;
+              
+              // Show the action buttons
+              document.getElementById(`${target}-config-actions`).classList.remove('hidden');
+              
+              // Read the file content
+              const reader = new FileReader();
+              reader.onload = function(e) {
+                // Store the file content in a data attribute for later use
+                fileInput.setAttribute('data-file-content', e.target.result);
+              };
+              reader.readAsText(file);
+            }
+          });
+        });
+        
+        // Add event listeners for View/Edit/Save buttons
+        document.querySelectorAll('.view-config').forEach(button => {
+          button.addEventListener('click', function() {
+            const target = this.getAttribute('data-target');
+            const fileInput = document.getElementById(`${target}-config-file`);
+            const fileContent = fileInput.getAttribute('data-file-content');
+            
+            if (fileContent) {
+              const filename = document.getElementById(`${target}-config-filename`).value;
+              // Open in modal for viewing
+              openModalConfig(`View Configuration - ${filename}`, fileContent, 'view', target);
+            }
+          });
+        });
+        
+        document.querySelectorAll('.edit-config').forEach(button => {
+          button.addEventListener('click', function() {
+            const target = this.getAttribute('data-target');
+            const fileInput = document.getElementById(`${target}-config-file`);
+            const fileContent = fileInput.getAttribute('data-file-content');
+            
+            if (fileContent) {
+              const filename = document.getElementById(`${target}-config-filename`).value;
+              // Open in modal for editing
+              openModalConfig(`Edit Configuration - ${filename}`, fileContent, 'edit', target);
+            }
+          });
+        });
+        
+        document.querySelectorAll('.save-config').forEach(button => {
+          button.addEventListener('click', async function() {
+            const target = this.getAttribute('data-target');
+            const fileInput = document.getElementById(`${target}-config-file`);
+            const fileContent = fileInput.getAttribute('data-file-content');
+            
+            if (fileContent) {
+              const filename = document.getElementById(`${target}-config-filename`).value;
+              try {
+                await uploadConfigFile(filename, jsonData.contentLocation, fileContent);
+                vanillaToast.success(`Configuration file ${filename} saved successfully`, {
+                  duration: 3000,
+                });
+              } catch (error) {
+                vanillaToast.error(`Failed to save configuration file: ${error}`, {
+                  duration: 3000,
+                });
+              }
+            }
+          });
+        });
         // Open modal
         openModalVizquery();
       }
@@ -2774,44 +2961,73 @@
       
       async function executeVizQuery() {
         try {
+          // Disable the buttons and show loader
+          const executeBtn = document.getElementById('vizquery-execute-btn');
+          const cancelBtn = document.getElementById('vizquery-cancel-btn');
+          
+          executeBtn.disabled = true;
+          cancelBtn.disabled = true;
+          
+          // Add loader to execute button
+          executeBtn.innerHTML = `
+            <svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+            <span>Processing...</span>
+          `;
+          
           // Update parameters from form
           const jsonData = JSON.parse(document.getElementById("vizquery-params").value);
           
-          if (document.getElementById("initialization").checked) {
-            jsonData.action.initialization = true;
-          } else {
-            jsonData.action.initialization = false;
-          }
-          if (document.getElementById("update").checked) {
-            jsonData.action.update = true;
-          } else {
-            jsonData.action.update = false;
-          }
-          if (document.getElementById("extraction").checked) {
-            jsonData.action.extraction = true;
-          } else {
-            jsonData.action.extraction = false;
-          }
-          if (document.getElementById("create-drawing").checked) {
-            jsonData.action.createDrawing = true;
-          } else {
-            jsonData.action.createDrawing = false;
-          }
+          // Update action flags based on checkboxes
+          jsonData.action.initialization = document.getElementById("initialization").checked;
+          jsonData.action.update = document.getElementById("update").checked;
+          jsonData.action.extraction = document.getElementById("extraction").checked;
+          jsonData.action.createDrawing = document.getElementById("create-drawing").checked;
           
-          jsonData.jsonConfigFilename = document.getElementById("config-filename").value;
-          document.getElementById("vizquery-params").value = JSON.stringify(jsonData, null, 2);
-          
-          // Check if we have a file uploaded
-          const fileInput = document.getElementById('config-file');
-          const fileContent = fileInput.getAttribute('data-file-content');
-          
-          if (fileContent) {
-            // Send the file content to the server
-            const uploaded = await uploadConfigFile(jsonData.jsonConfigFilename, jsonData.contentLocation, fileContent);
-            if (!uploaded) {
-              return; // Stop if upload failed
+          // Get the file names for each process
+          if (jsonData.action.initialization) {
+            jsonData.initOutputFilename = document.getElementById("init-output-filename").value;
+            jsonData.initConfigFilename = document.getElementById("init-config-filename").value;
+            
+            // Upload configuration file if one was loaded
+            const initFileInput = document.getElementById('init-config-file');
+            const initFileContent = initFileInput.getAttribute('data-file-content');
+            if (initFileContent) {
+              await uploadConfigFile(jsonData.initConfigFilename, jsonData.contentLocation, initFileContent);
             }
           }
+          
+          if (jsonData.action.update) {
+            jsonData.updateOutputFilename = document.getElementById("update-output-filename").value;
+            jsonData.updateConfigFilename = document.getElementById("update-config-filename").value;
+            
+            // Upload configuration file if one was loaded
+            const updateFileInput = document.getElementById('update-config-file');
+            const updateFileContent = updateFileInput.getAttribute('data-file-content');
+            if (updateFileContent) {
+              await uploadConfigFile(jsonData.updateConfigFilename, jsonData.contentLocation, updateFileContent);
+            }
+          }
+          
+          if (jsonData.action.extraction) {
+            jsonData.extractOutputFilename = document.getElementById("extract-output-filename").value;
+            jsonData.extractConfigFilename = document.getElementById("extract-config-filename").value;
+            
+            // Upload configuration file if one was loaded
+            const extractFileInput = document.getElementById('extract-config-file');
+            const extractFileContent = extractFileInput.getAttribute('data-file-content');
+            if (extractFileContent) {
+              await uploadConfigFile(jsonData.extractConfigFilename, jsonData.contentLocation, extractFileContent);
+            }
+          }
+          
+          if (jsonData.action.createDrawing) {
+            jsonData.drawingOutputFilename = document.getElementById("drawing-output-filename").value;
+          }
+          
+          document.getElementById("vizquery-params").value = JSON.stringify(jsonData, null, 2);
           
           // Execute VizQuery process
           const response = await call_vizquery(jsonData);
@@ -2827,12 +3043,25 @@
             // Close modal
             closeModalVizquery();
           } else {
-            vanillaToast.error("Failed to execute VizQuery process", {
+            // Reset button states
+            executeBtn.disabled = false;
+            cancelBtn.disabled = false;
+            executeBtn.innerHTML = '<span>Execute</span>';
+            
+            vanillaToast.error(response.error || "Failed to execute VizQuery process", {
               duration: 5000,
             });
           }
         } catch (error) {
           console.error("Error executing VizQuery:", error);
+          
+          // Reset button states
+          const executeBtn = document.getElementById('vizquery-execute-btn');
+          const cancelBtn = document.getElementById('vizquery-cancel-btn');
+          executeBtn.disabled = false;
+          cancelBtn.disabled = false;
+          executeBtn.innerHTML = '<span>Execute</span>';
+          
           vanillaToast.error("An error occurred while executing VizQuery", {
             duration: 5000,
           });
@@ -2895,6 +3124,105 @@
           console.error("Error calling VizQuery API:", error);
           throw error;
         }
+      }
+    </script>
+    
+    <!-- Modal for View/Edit Config -->
+    <div id="modal-config" class="fixed z-50 inset-0 overflow-y-auto hidden" style="z-index: 1000;" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+      <div id="modal-config-backdrop" class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity opacity-0"></div>
+      <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+        <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+        <div id="modal-config-panel" class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-3xl w-full opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95">
+          <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+            <div class="flex justify-between items-center pb-3 border-b border-gray-200">
+              <h3 id="modal-config-title" class="text-lg leading-6 font-medium text-gray-900"></h3>
+              <button type="button" onclick="closeModalConfig()" class="bg-white rounded-md text-gray-400 hover:text-gray-500 focus:outline-none">
+                <span class="sr-only">Close</span>
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-4">
+              <div id="modal-config-mode-view" class="hidden">
+                <pre id="config-view-content" class="bg-gray-50 p-4 rounded-md overflow-auto max-h-96 text-sm"></pre>
+              </div>
+              <div id="modal-config-mode-edit" class="hidden">
+                <textarea id="config-edit-content" class="w-full h-96 font-mono text-sm p-4 border border-gray-300 rounded-md"></textarea>
+                <div class="flex justify-end mt-4">
+                  <button type="button" id="config-save-btn" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700 focus:outline-none">
+                    Save Changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function openModalConfig(title, content, mode, target) {
+        // Set modal title
+        document.getElementById('modal-config-title').textContent = title;
+        
+        // Set content based on mode
+        if (mode === 'view') {
+          document.getElementById('config-view-content').textContent = content;
+          document.getElementById('modal-config-mode-view').classList.remove('hidden');
+          document.getElementById('modal-config-mode-edit').classList.add('hidden');
+        } else if (mode === 'edit') {
+          document.getElementById('config-edit-content').value = content;
+          document.getElementById('modal-config-mode-view').classList.add('hidden');
+          document.getElementById('modal-config-mode-edit').classList.remove('hidden');
+          
+          // Add event listener for save button
+          const saveBtn = document.getElementById('config-save-btn');
+          saveBtn.onclick = function() {
+            const updatedContent = document.getElementById('config-edit-content').value;
+            try {
+              // Validate JSON
+              JSON.parse(updatedContent);
+              
+              // Update file content
+              const fileInput = document.getElementById(`${target}-config-file`);
+              fileInput.setAttribute('data-file-content', updatedContent);
+              
+              vanillaToast.success("Changes saved to memory. Click 'Save' button to save to server.", {
+                duration: 3000,
+              });
+              
+              closeModalConfig();
+            } catch (error) {
+              vanillaToast.error(`Invalid JSON: ${error.message}`, {
+                duration: 5000,
+              });
+            }
+          };
+        }
+        
+        // Show modal
+        document.body.classList.add("overflow-hidden");
+        document.querySelector("html").classList.add("overflow-hidden");
+        document.querySelector("body").classList.add("overflow-hidden");
+        document.getElementById("modal-config").classList.remove("hidden");
+        document.getElementById("modal-config-backdrop").classList.remove("opacity-0");
+        document.getElementById("modal-config-backdrop").classList.add("opacity-100");
+        document.getElementById("modal-config-panel").classList.remove("opacity-0", "translate-y-4", "sm:translate-y-0", "sm:scale-95");
+        document.getElementById("modal-config-panel").classList.add("opacity-100", "translate-y-0", "sm:scale-100");
+      }
+      
+      function closeModalConfig() {
+        document.body.classList.remove("overflow-hidden");
+        document.querySelector("html").classList.remove("overflow-hidden");
+        document.querySelector("body").classList.remove("overflow-hidden");
+        document.getElementById("modal-config-backdrop").classList.remove("opacity-100");
+        document.getElementById("modal-config-backdrop").classList.add("opacity-0");
+        document.getElementById("modal-config-panel").classList.remove("opacity-100", "translate-y-0", "sm:scale-100");
+        document.getElementById("modal-config-panel").classList.add("opacity-0", "translate-y-4", "sm:translate-y-0", "sm:scale-95");
+        setTimeout(() => {
+          document.getElementById("modal-config").classList.add("hidden");
+        }, 300);
       }
     </script>
   </body>
