@@ -4,5 +4,4 @@ converters/autoxchange/fonts/*.TTF filter=lfs diff=lfs merge=lfs -text
 converters/autoxchange/fonts/*.ttc filter=lfs diff=lfs merge=lfs -text
 converters/autoxchange/fonts/*.ttf filter=lfs diff=lfs merge=lfs -text
 converters/autoxchange/linux/* filter=lfs diff=lfs merge=lfs -text
-converters/autoxchange/linux/ax2025_L64_25_11_146 filter=lfs diff=lfs merge=lfs -text
 converters/autoxchange/linux/AxCopy_L64_01_00_02 filter=lfs diff=lfs merge=lfs -text
