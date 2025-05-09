@@ -6,11 +6,11 @@ var cvjs_insertImageObjects = {
 						"group": "unassigned",
 						"username": "Generic User 01",
 						"userid": "user_1",
-						"currentPage": 1,
-						"imageObject": "",
-						"imageHeight": "450",
-						"imageWidth": "600",
-						"transform": "T1217.0331048188878,416.6497438041117S3.11225"
+						"currentPage": 2,
+						"imageObject": "5493548069_b46931d6d7.jpg",
+						"imageHeight": "601",
+						"imageWidth": "423.6",
+						"transform": "T-94.36148325724066,47.79401313198318S2.9446"
 					}
 						,
 					"OBJECT_2": {
@@ -20,11 +20,11 @@ var cvjs_insertImageObjects = {
 						"group": "unassigned",
 						"username": "Generic User 01",
 						"userid": "user_1",
-						"currentPage": 1,
-						"imageObject": "",
-						"imageHeight": "450",
+						"currentPage": 2,
+						"imageObject": "090217pf.gif",
+						"imageHeight": "315.09395973154363",
 						"imageWidth": "600",
-						"transform": "T1459.6835948127407,487.18015289565835S3.11225"
+						"transform": "T102.87965791157855,43.20700984898738S2.9446"
 					}
 						,
 					"OBJECT_3": {
@@ -34,11 +34,25 @@ var cvjs_insertImageObjects = {
 						"group": "unassigned",
 						"username": "Generic User 01",
 						"userid": "user_1",
-						"currentPage": 1,
-						"imageObject": "cad_addwords_01b_1200x628.png",
-						"imageHeight": "450",
+						"currentPage": 2,
+						"imageObject": "1269361219-fruitsmoothie.jpg",
+						"imageHeight": "409.57142857142856",
 						"imageWidth": "600",
-						"transform": "T738.9910687742366,269.8899285926776S3.11225"
+						"transform": "T1511.0896657912876,70.72902954696215S2.9446"
+					}
+						,
+					"OBJECT_5": {
+						"name": "object5",
+						"id": "5",
+						"layer": "objectLayer",
+						"group": "unassigned",
+						"username": "Generic User 01",
+						"userid": "user_1",
+						"currentPage": 2,
+						"imageObject": "sink1.jpg",
+						"imageHeight": "400.6",
+						"imageWidth": "600",
+						"transform": "T864.3222028888806,238.1546493763087S2.9446"
 					}
 }
 
