@@ -1266,6 +1266,16 @@
                             </svg>
                             Flush folder
                           </button>
+                          <button 
+                            id="detail-extend-demo" 
+                            onclick="extendDemoPeriodFromDetails()" 
+                            class="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-600/20 hover:bg-blue-100 hidden"
+                          >
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 mr-1">
+                              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clip-rule="evenodd" />
+                            </svg>
+                            Extend demo period
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -1771,9 +1781,16 @@
         document.getElementById("detail-username").textContent = user.username;
         document.getElementById("detail-email").textContent = user.email || "-";
 
+        document.getElementById("detail-extend-demo").classList.add("hidden");
+
         // Role information
         let roleText = "";
-        if (user.role === "demo_user") roleText = "Demo User";
+        if (user.role === "demo_user") { 
+          roleText = "Demo User";
+          if (user.is_enabled === 0) {
+            document.getElementById("detail-extend-demo").classList.remove("hidden");
+          }
+        }
         else if (user.role === "admin") roleText = "Administrator";
         else roleText = "Member";
         document.getElementById("detail-role").textContent = roleText;
@@ -1917,6 +1934,43 @@
           .catch((error) => {
             console.error("Error:", error);
             vanillaToast.error("An error occurred while flushing user folder.", {
+              duration: 5000,
+            });
+          });
+      }
+
+      function extendDemoPeriodFromDetails() {
+        const userId = document.getElementById("user-id").value;
+        fetch(`/settings/users/extend-demo`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            userId: userId,
+          }),
+        })
+          .then(async (response) => {
+            if (response.ok) {
+              vanillaToast.success("Demo period extended by 7 days.", {
+                duration: 5000,
+              });
+              await getUsersList();
+              closeUserDetailsModal();
+            } else {
+              const data = await response.json();
+              if (data.error) {
+                vanillaToast.warning(data.error, { duration: 5000 });
+              } else {
+                vanillaToast.error("Failed to extend demo period.", {
+                  duration: 5000,
+                });
+              }
+            }
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+            vanillaToast.error("An error occurred while extending demo period.", {
               duration: 5000,
             });
           });

@@ -1039,10 +1039,10 @@
               </div>
               <div class="mt-4 text-center sm:mt-0 sm:text-left w-full">
                 <div class="mt-2">
-                  <div class="w-full bg-gray-100 p-2">
+                  <div class="w-full bg-gray-50 p-2 rounded-lg">
                     <div
                       id="dropzone"
-                      class="w-full max-w-xl mx-auto p-8 border-4 border-dashed border-gray-300 rounded-lg text-center transition-all duration-300 hover:border-orange-500"
+                      class="w-full max-w-xl mx-auto p-8 border-2 border-dashed border-gray-300 rounded-lg text-center transition-all duration-300 hover:border-orange-500"
                     >
                       <input
                         type="file"
@@ -1051,41 +1051,53 @@
                         class="hidden"
                       />
                       <div id="dropText" class="text-gray-500">
-                        <p class="text-xl mb-4">Drag and Drop Files Here</p>
-                        <p class="text-sm mb-4">or</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                        </svg>
+                        <p class="mt-1 text-sm font-medium text-gray-900">Drag and drop files here</p>
+                        <p class="mt-1 text-xs text-gray-500">or</p>
                         <button
                           id="browseBtn"
-                          class="px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-600"
+                          class="mt-2 inline-flex items-center px-3 py-2 border border-transparent shadow-sm text-sm leading-4 font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700 focus:outline-none"
                         >
-                          Browse Files
+                          <svg class="-ml-0.5 mr-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13" />
+                          </svg>
+                          Browse
                         </button>
                       </div>
-                      <div
-                        id="fileList"
-                        class="mt-4 grid grid-cols-3 gap-2"
-                      ></div>
-                      <div id="uploadStatus" class="mt-4 text-center"></div>
+                    </div>
+                  </div>
+                  
+                  <div id="upload-queue" class="mt-4 space-y-2 max-h-60 overflow-y-auto">
+                    <!-- Upload items will be added here dynamically -->
+                  </div>
+                  
+                  <div id="upload-stats" class="mt-4 flex justify-between text-sm text-gray-500 hidden">
+                    <div>
+                      <span id="upload-completed">0</span>/<span id="upload-total">0</span> completed
+                    </div>
+                    <div>
+                      <span id="upload-progress">0%</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div
-              class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6"
-            >
+            <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
               <button
                 type="button"
-                id="uploadBtn"
+                id="uploadAllBtn"
                 class="inline-flex w-full justify-center rounded-md bg-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 sm:ml-3 sm:w-auto hidden"
               >
-                Upload
+                Upload all
               </button>
               <button
                 type="button"
                 class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto"
                 onclick="closeModalUpload()"
               >
-                Cancel
+                Close
               </button>
             </div>
           </div>
@@ -1479,7 +1491,7 @@
           } dark:bg-gray-50 p-4">
                     <div class="w-full flex justify-between">
                         <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gray-100">
-                            <figure class="h-10 w-10 flex justify-center items-center">
+                            <figure class="h-10 w-10 flex justify-center items-center overflow-hidden">
                                 ${evaluateIcon(folder.name, folder.isFolder)}
                             </figure>
                         </div>
@@ -1709,6 +1721,12 @@
       }
 
       function closeModalUpload() {
+        // Clear the upload queue
+        document.getElementById("upload-queue").innerHTML = "";
+        document.getElementById("upload-stats").classList.add("hidden");
+        document.getElementById("dropText").classList.remove("hidden");
+        document.getElementById("uploadAllBtn").classList.add("hidden");
+
         document.body.classList.remove("overflow-hidden");
         document.querySelector("html").classList.remove("overflow-hidden");
         document.querySelector("body").classList.remove("overflow-hidden");
@@ -1779,37 +1797,81 @@
       }
 
       function openModalUpload() {
-        // Initialize the dropzone
-        const dropzone = new FileDropzone({
-          path: breadcrumbs
-            .map((breadcrumb, index) => (index === 0 ? "/" : breadcrumb.name))
-            .join("/"),
-          maxFiles: 5,
-          maxFileSize: 10 * 1024 * 1024, // 10MB
-          allowedTypes: ["image/*", "application/pdf", "*"],
-        });
+        // Fetch upload configuration from server
+        fetch("/settings/folders/upload-config")
+          .then(response => response.json())
+          .then(config => {
+            // Initialize the dropzone with server configurations
+            const dropzone = new FileDropzone({
+              path: breadcrumbs
+                .map((breadcrumb, index) => (index === 0 ? "/" : breadcrumb.name))
+                .join("/"),
+              maxFileSize: config.maxFileSize,
+              allowedTypes: ["*"], // Allow all file types
+              maxConcurrentUploads: config.maxConcurrentUploads,
+              maxFiles: config.maxFiles
+            });
 
-        document.body.classList.add("overflow-hidden");
-        document.querySelector("html").classList.add("overflow-hidden");
-        document.querySelector("body").classList.add("overflow-hidden");
-        document.getElementById("modal-upload").classList.remove("hidden");
-        document
-          .getElementById("modal-upload-backdrop")
-          .classList.remove("opacity-0");
-        document
-          .getElementById("modal-upload-backdrop")
-          .classList.add("opacity-100");
-        document
-          .getElementById("modal-upload-panel")
-          .classList.remove(
-            "opacity-0",
-            "translate-y-4",
-            "sm:translate-y-0",
-            "sm:scale-95"
-          );
-        document
-          .getElementById("modal-upload-panel")
-          .classList.add("opacity-100", "translate-y-0", "sm:scale-100");
+            document.body.classList.add("overflow-hidden");
+            document.querySelector("html").classList.add("overflow-hidden");
+            document.querySelector("body").classList.add("overflow-hidden");
+            document.getElementById("modal-upload").classList.remove("hidden");
+            document
+              .getElementById("modal-upload-backdrop")
+              .classList.remove("opacity-0");
+            document
+              .getElementById("modal-upload-backdrop")
+              .classList.add("opacity-100");
+            document
+              .getElementById("modal-upload-panel")
+              .classList.remove(
+                "opacity-0",
+                "translate-y-4",
+                "sm:translate-y-0",
+                "sm:scale-95"
+              );
+            document
+              .getElementById("modal-upload-panel")
+              .classList.add("opacity-100", "translate-y-0", "sm:scale-100");
+          })
+          .catch(error => {
+            console.error("Error fetching upload configuration:", error);
+            vanillaToast.error("Failed to load upload configuration.", { duration: 3000 });
+            
+            // Fallback to default values
+            const dropzone = new FileDropzone({
+              path: breadcrumbs
+                .map((breadcrumb, index) => (index === 0 ? "/" : breadcrumb.name))
+                .join("/"),
+              maxFileSize: 50 * 1024 * 1024, // 50MB
+              allowedTypes: ["*"], // Allow all file types
+              maxConcurrentUploads: 3,
+              maxFiles: 10
+            });
+            
+            // Show modal
+            document.body.classList.add("overflow-hidden");
+            document.querySelector("html").classList.add("overflow-hidden");
+            document.querySelector("body").classList.add("overflow-hidden");
+            document.getElementById("modal-upload").classList.remove("hidden");
+            document
+              .getElementById("modal-upload-backdrop")
+              .classList.remove("opacity-0");
+            document
+              .getElementById("modal-upload-backdrop")
+              .classList.add("opacity-100");
+            document
+              .getElementById("modal-upload-panel")
+              .classList.remove(
+                "opacity-0",
+                "translate-y-4",
+                "sm:translate-y-0",
+                "sm:scale-95"
+              );
+            document
+              .getElementById("modal-upload-panel")
+              .classList.add("opacity-100", "translate-y-0", "sm:scale-100");
+          });
       }
 
       function openModalNewFolder() {
@@ -1959,20 +2021,24 @@
           this.fileInput = document.getElementById("fileInput");
           this.browseBtn = document.getElementById("browseBtn");
           this.dropText = document.getElementById("dropText");
-          this.fileList = document.getElementById("fileList");
-          this.uploadBtn = document.getElementById("uploadBtn");
-          this.uploadStatus = document.getElementById("uploadStatus");
+          this.uploadQueue = document.getElementById("upload-queue");
+          this.uploadStats = document.getElementById("upload-stats");
+          this.uploadAllBtn = document.getElementById("uploadAllBtn");
+          this.uploadCompletedCount = document.getElementById("upload-completed");
+          this.uploadTotalCount = document.getElementById("upload-total");
+          this.uploadProgressPercent = document.getElementById("upload-progress");
 
           this.path = options.path || "/";
-          this.apiUrl = options.apiUrl || "/settings/folders/upload"; // Default upload endpoint
+          this.apiUrl = options.apiUrl || "/settings/folders/upload";
+          this.maxFileSize = options.maxFileSize || 50 * 1024 * 1024; // 50MB default
+          this.allowedTypes = options.allowedTypes || ["*"];
+          this.maxConcurrentUploads = options.maxConcurrentUploads || 3;
           this.maxFiles = options.maxFiles || 10;
-          this.maxFileSize = options.maxFileSize || 5 * 1024 * 1024; // 5MB default
-          this.allowedTypes = options.allowedTypes || [
-            "image/*",
-            "application/pdf",
-          ];
 
           this.files = [];
+          this.activeUploads = 0;
+          this.completedUploads = 0;
+          
           this.initEventListeners();
         }
 
@@ -2008,8 +2074,10 @@
             this.handleFiles.bind(this)
           );
 
-          // Upload button
-          this.uploadBtn.addEventListener("click", this.uploadFiles.bind(this));
+          // Upload all button
+          this.uploadAllBtn.addEventListener("click", () => {
+            this.startAllUploads();
+          });
         }
 
         preventDefaults(e) {
@@ -2034,137 +2102,381 @@
         handleFiles(e) {
           const selectedFiles = e.target.files;
           this.addFiles(selectedFiles);
+          // Reset file input to allow selecting the same file again
+          this.fileInput.value = "";
         }
 
         addFiles(newFiles) {
           const filesArray = Array.from(newFiles);
-          const validFiles = filesArray.filter((file) =>
-            this.validateFile(file)
-          );
-
+          
+          // Check if adding these files would exceed the maximum
+          if (this.files.length >= this.maxFiles) {
+            vanillaToast.warning(`Maximum number of files (${this.maxFiles}) reached.`, { duration: 3000 });
+            return;
+          }
+          
+          // Calculate how many more files we can add
           const remainingSlots = this.maxFiles - this.files.length;
-          const filesToAdd = validFiles.slice(0, remainingSlots);
-
-          this.files.push(...filesToAdd);
-          this.updateFileList();
+          const filesToProcess = filesArray.slice(0, remainingSlots);
+          
+          if (filesToProcess.length < filesArray.length) {
+            vanillaToast.warning(`Only ${remainingSlots} more files can be added. Maximum is ${this.maxFiles}.`, { duration: 3000 });
+          }
+          
+          for (const file of filesToProcess) {
+            if (this.validateFile(file)) {
+              const fileId = `file-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+              const fileObj = {
+                id: fileId,
+                file: file,
+                status: 'pending', // pending, uploading, completed, error
+                progress: 0,
+                error: null
+              };
+              
+              this.files.push(fileObj);
+              this.createFileItem(fileObj);
+            }
+          }
+          
+          this.updateStats();
+          this.showHideUploadAllButton();
         }
 
         validateFile(file) {
-          const validType = this.allowedTypes.some((type) =>
-            file.type.match(new RegExp(type.replace("*", ".*")))
-          );
+          // Check file type if restrictions exist
+          if (this.allowedTypes[0] !== "*") {
+            const isValidType = this.allowedTypes.some((type) => {
+              if (type.endsWith("/*")) {
+                // Handle mime type patterns like "image/*"
+                const mainType = type.split("/")[0];
+                return file.type.startsWith(mainType + "/");
+              }
+              return file.type === type;
+            });
 
-          if (!validType) {
-            alert(`Invalid file type: ${file.name}`);
+            if (!isValidType) {
+              vanillaToast.warning(`File type not allowed: ${file.name}`, { duration: 3000 });
+              return false;
+            }
+          }
+
+          // Check file size
+          if (file.size > this.maxFileSize) {
+            vanillaToast.warning(`File too large: ${file.name} (Max: ${this.formatSize(this.maxFileSize)})`, { duration: 3000 });
             return false;
           }
 
-          if (file.size > this.maxFileSize) {
-            alert(`File too large: ${file.name}`);
+          // Check if file is already in queue
+          if (this.files.some(f => f.file.name === file.name && f.file.size === file.size)) {
+            vanillaToast.warning(`File already in queue: ${file.name}`, { duration: 3000 });
             return false;
           }
 
           return true;
         }
 
-        updateFileList() {
-          this.fileList.innerHTML = "";
-          this.files.forEach((file, index) => {
-            const fileElement = document.createElement("div");
-            fileElement.classList.add(
-              "bg-white",
-              "p-2",
-              "rounded",
-              "shadow",
-              "flex",
-              "items-center",
-              "justify-between"
-            );
-
-            const fileName = document.createElement("span");
-            fileName.textContent = file.name;
-            fileName.classList.add("text-sm", "truncate", "mr-2");
-
-            const removeBtn = document.createElement("button");
-            removeBtn.textContent = "✕";
-            removeBtn.classList.add(
-              "text-red-500",
-              "hover:text-red-700",
-              "font-bold",
-              "text-sm",
-              "px-1"
-            );
-            removeBtn.addEventListener("click", () => {
-              this.removeFile(index);
-            });
-
-            fileElement.appendChild(fileName);
-            fileElement.appendChild(removeBtn);
-            this.fileList.appendChild(fileElement);
-          });
-
-          // Update or hide dropText and show/hide upload button
-          this.dropText.style.display =
-            this.files.length > 0 ? "none" : "block";
-          this.uploadBtn.style.display =
-            this.files.length > 0 ? "block" : "none";
+        formatSize(bytes) {
+          if (bytes === 0) return '0 Bytes';
+          const k = 1024;
+          const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+          const i = Math.floor(Math.log(bytes) / Math.log(k));
+          return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
         }
 
-        removeFile(index) {
-          this.files.splice(index, 1);
-          this.updateFileList();
-          this.fileInput.value = ""; // Reset file input
+        createFileItem(fileObj) {
+          const { id, file, status } = fileObj;
+          
+          const fileItem = document.createElement('div');
+          fileItem.id = id;
+          fileItem.className = 'bg-white rounded-lg shadow-sm border border-gray-200 p-3 relative';
+          
+          // Get appropriate icon based on file type
+          let fileIcon = this.getFileIcon(file.name);
+          
+          fileItem.innerHTML = `
+            <div class="flex items-start">
+              <div class="flex-shrink-0 text-gray-400">
+                ${fileIcon}
+              </div>
+              <div class="ml-3 flex-1">
+                <div class="flex items-center justify-between">
+                  <p class="text-sm font-medium text-gray-900 truncate" title="${file.name}">${file.name}</p>
+                  <div class="flex items-center">
+                    <span class="text-xs text-gray-500">${this.formatSize(file.size)}</span>
+                    <button type="button" class="remove-file ml-2 text-gray-400 hover:text-red-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="mt-1 relative">
+                  <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                    <div class="file-progress h-full bg-orange-600 rounded-full" style="width: 0%"></div>
+                  </div>
+                </div>
+                <div class="mt-1 flex items-center justify-between">
+                  <div class="file-status text-xs ${status === 'pending' ? 'text-gray-500' : 'text-orange-600'}">
+                    ${this.getStatusText(status)}
+                  </div>
+                  <div class="file-actions">
+                    <button type="button" class="upload-file text-xs bg-orange-600 text-white px-2 py-1 rounded hover:bg-orange-500">
+                      Upload
+                    </button>
+                    <button type="button" class="retry-upload text-xs bg-orange-600 text-white px-2 py-1 rounded hover:bg-orange-500 hidden">
+                      Retry
+                    </button>
+                  </div>
+                </div>
+                <div class="file-error mt-1 text-xs text-red-500 hidden"></div>
+              </div>
+            </div>
+          `;
+          
+          // Add event listeners
+          const removeBtn = fileItem.querySelector('.remove-file');
+          removeBtn.addEventListener('click', () => this.removeFile(id));
+          
+          const uploadBtn = fileItem.querySelector('.upload-file');
+          uploadBtn.addEventListener('click', () => this.uploadFile(id));
+          
+          const retryBtn = fileItem.querySelector('.retry-upload');
+          retryBtn.addEventListener('click', () => this.retryUpload(id));
+          
+          this.uploadQueue.appendChild(fileItem);
+        }
+        
+        getFileIcon(filename) {
+          // Simple function to determine icon based on file extension
+          const ext = filename.split('.').pop().toLowerCase();
+          
+          if (['jpg', 'jpeg', 'png', 'gif', 'bmp'].includes(ext)) {
+            return `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>`;
+          } else if (['pdf'].includes(ext)) {
+            return `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+            </svg>`;
+          } else if (['dwg', 'dxf', 'dwf', 'dgn'].includes(ext)) {
+            return `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>`;
+          } else {
+            return `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+            </svg>`;
+          }
+        }
+        
+        getStatusText(status) {
+          switch (status) {
+            case 'pending': return 'Waiting';
+            case 'uploading': return 'Uploading...';
+            case 'completed': return 'Completed';
+            case 'error': return 'Error';
+            default: return status;
+          }
         }
 
-        // Optional method to get files for upload
-        getFiles() {
-          return this.files;
+        removeFile(id) {
+          const index = this.files.findIndex(file => file.id === id);
+          
+          if (index !== -1) {
+            // If file is uploading, we can't remove it
+            if (this.files[index].status === 'uploading') {
+              vanillaToast.info("Impossible to remove a file that is being uploaded.", { duration: 3000 });
+              return;
+            }
+            
+            this.files.splice(index, 1);
+            
+            // Remove from DOM
+            const fileItem = document.getElementById(id);
+            if (fileItem) {
+              fileItem.remove();
+            }
+            
+            this.updateStats();
+            this.showHideUploadAllButton();
+            
+            // If there was a completed upload, check if we can start more
+            if (this.activeUploads < this.maxConcurrentUploads) {
+              this.processNextInQueue();
+            }
+          }
         }
 
-        async uploadFiles() {
-          // Disable upload button during upload
-          this.uploadBtn.disabled = true;
-          this.uploadBtn.textContent = "Uploading...";
-          this.uploadStatus.textContent = "";
+        updateStats() {
+          const total = this.files.length;
+          const completed = this.files.filter(file => file.status === 'completed').length;
+          const progress = total ? Math.round((completed / total) * 100) : 0;
+          
+          this.uploadCompletedCount.textContent = completed;
+          this.uploadTotalCount.textContent = total;
+          this.uploadProgressPercent.textContent = `${progress}%`;
+          
+          if (total > 0) {
+            this.uploadStats.classList.remove('hidden');
+          } else {
+            this.uploadStats.classList.add('hidden');
+          }
+        }
 
+        showHideUploadAllButton() {
+          const hasPendingFiles = this.files.some(file => file.status === 'pending' || file.status === 'error');
+          
+          if (hasPendingFiles) {
+            this.uploadAllBtn.classList.remove('hidden');
+          } else {
+            this.uploadAllBtn.classList.add('hidden');
+          }
+          
+          // If we have files, hide the dropzone text
+          if (this.files.length > 0) {
+            this.dropText.classList.add('hidden');
+          } else {
+            this.dropText.classList.remove('hidden');
+          }
+        }
+
+        startAllUploads() {
+          for (const fileObj of this.files) {
+            if (fileObj.status === 'pending' || fileObj.status === 'error') {
+              this.uploadFile(fileObj.id);
+            }
+          }
+        }
+
+        uploadFile(id) {
+          const fileObj = this.files.find(file => file.id === id);
+          
+          if (!fileObj || fileObj.status === 'uploading' || fileObj.status === 'completed') {
+            return;
+          }
+          
+          // If we're already at max concurrent uploads, queue this file
+          if (this.activeUploads >= this.maxConcurrentUploads) {
+            return;
+          }
+          
+          this.activeUploads++;
+          
+          // Update UI state
+          const fileItem = document.getElementById(id);
+          const statusElem = fileItem.querySelector('.file-status');
+          const progressElem = fileItem.querySelector('.file-progress');
+          const uploadBtn = fileItem.querySelector('.upload-file');
+          const retryBtn = fileItem.querySelector('.retry-upload');
+          const errorElem = fileItem.querySelector('.file-error');
+          
+          // Reset error state if retrying
+          errorElem.classList.add('hidden');
+          errorElem.textContent = '';
+          
+          // Update status
+          fileObj.status = 'uploading';
+          fileObj.progress = 0;
+          
+          statusElem.textContent = this.getStatusText(fileObj.status);
+          statusElem.classList.remove('text-gray-500', 'text-red-500');
+          statusElem.classList.add('text-orange-600');
+          
+          // Hide both buttons during upload
+          uploadBtn.classList.add('hidden');
+          retryBtn.classList.add('hidden');
+          
           // Create FormData
           const formData = new FormData();
           formData.append("path", this.path);
-          this.files.forEach((file, index) => {
-            formData.append("files", file, file.name);
-          });
-
-          try {
-            const response = await fetch(this.apiUrl, {
-              method: "POST",
-              body: formData,
-              // Note: Do not set Content-Type header, let browser set it automatically
-            });
-
-            if (!response.ok) {
-              throw new Error(`HTTP error! status: ${response.status}`);
+          formData.append("files", fileObj.file, fileObj.file.name);
+          
+          // Track upload progress
+          const xhr = new XMLHttpRequest();
+          
+          xhr.open("POST", this.apiUrl, true);
+          
+          xhr.upload.onprogress = (e) => {
+            if (e.lengthComputable) {
+              const percentComplete = Math.round((e.loaded / e.total) * 100);
+              fileObj.progress = percentComplete;
+              progressElem.style.width = `${percentComplete}%`;
             }
+          };
+          
+          xhr.onload = () => {
+            if (xhr.status >= 200 && xhr.status < 300) {
+              // Success
+              fileObj.status = 'completed';
+              fileObj.progress = 100;
+              progressElem.style.width = '100%';
+              statusElem.textContent = this.getStatusText(fileObj.status);
+              statusElem.classList.remove('text-orange-600');
+              statusElem.classList.add('text-green-600');
+              
+              this.completedUploads++;
+            } else {
+              // Error
+              fileObj.status = 'error';
+              fileObj.error = `Erreur ${xhr.status}: ${xhr.statusText}`;
+              statusElem.textContent = this.getStatusText(fileObj.status);
+              statusElem.classList.remove('text-orange-600');
+              statusElem.classList.add('text-red-500');
+              
+              errorElem.textContent = fileObj.error;
+              errorElem.classList.remove('hidden');
+              
+              retryBtn.classList.remove('hidden');
+            }
+            
+            // Update stats and start next upload
+            this.activeUploads--;
+            this.updateStats();
+            this.showHideUploadAllButton();
+            this.processNextInQueue();
+            
+            // If this was the last file, refresh folder list
+            if (this.files.every(f => f.status === 'completed')) {
+              getFoldersList();
+              vanillaToast.success("All files have been uploaded successfully.", { duration: 3000 });
+            }
+          };
+          
+          xhr.onerror = () => {
+            // Network error
+            fileObj.status = 'error';
+            fileObj.error = "Network error during upload.";
+            statusElem.textContent = this.getStatusText(fileObj.status);
+            statusElem.classList.remove('text-orange-600');
+            statusElem.classList.add('text-red-500');
+            
+            errorElem.textContent = fileObj.error;
+            errorElem.classList.remove('hidden');
+            
+            retryBtn.classList.remove('hidden');
+            
+            this.activeUploads--;
+            this.updateStats();
+            this.showHideUploadAllButton();
+            this.processNextInQueue();
+          };
+          
+          xhr.send(formData);
+        }
 
-            const result = await response.json();
+        retryUpload(id) {
+          this.uploadFile(id);
+        }
 
-            // Success handling
-            this.uploadStatus.textContent = "Upload Successful!";
-            this.uploadStatus.classList.add("text-green-600");
-
-            // Optional: clear files after successful upload
-            this.files = [];
-            this.updateFileList();
-            closeModalUpload();
-            await getFoldersList();
-          } catch (error) {
-            // Error handling
-            console.error("Upload failed:", error);
-            this.uploadStatus.textContent = `Upload Failed: ${error.message}`;
-            this.uploadStatus.classList.add("text-red-600");
-          } finally {
-            // Re-enable upload button
-            this.uploadBtn.disabled = false;
-            this.uploadBtn.textContent = "Upload Files";
+        processNextInQueue() {
+          // If we have capacity and pending files, start uploading
+          if (this.activeUploads < this.maxConcurrentUploads) {
+            // Find next pending file
+            const nextFile = this.files.find(file => file.status === 'pending');
+            if (nextFile) {
+              this.uploadFile(nextFile.id);
+            }
           }
         }
       }

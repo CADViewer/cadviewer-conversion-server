@@ -69,5 +69,8 @@
     "demoUserRetentionDaysAlertBeforeDeletion": 2,
     "recaptchaSecretKey": "6Le297AZAAAAAD_GfPzOVgiEKc7Bn1EtDaoaScK-",
     "recaptchaEnabled": true,
-    "usersExportFrequency": "monthly"
+    "usersExportFrequency": "monthly",
+    "maxUploadFileSize": 50,
+    "maxConcurrentUploads": 3,
+    "maxUploadFiles": 100
 }
