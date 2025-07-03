@@ -1,9 +1,21 @@
-version: '3.2'
+version: "3.2"
 
 volumes:
   db:
 
 services:
+  maildev:
+    image: maildev/maildev
+    restart: always
+    environment:
+      - TZ=Europe/Berlin
+      - MAILDEV_WEB_PORT=1080
+      - MAILDEV_SMTP_PORT=1025
+      - MAILDEV_SMTP_USER=cadviewer
+      - MAILDEV_SMTP_PASSWORD=cadviewer
+    ports:
+      - "1080:1080"
+      - "8025:1025"
 
   db:
     image: mariadb:10.6
@@ -26,6 +38,8 @@ services:
 
   cadviewer_node:
     build: .
+    #    platform: linux/arm64/v8
+    platform: linux/amd64
     restart: always
     ports:
       - "3000:3000"

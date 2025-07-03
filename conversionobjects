@@ -1,0 +1,59 @@
+initializeFloorplan(
+    "/nodejs/cadviewer-conversion-server/content/vizquery_demo/dwg/retail/L03-08.dwg",
+    "/nodejs/cadviewer-conversion-server/content/vizquery_demo/dwg/retail/L03-08-new.dwg",
+    {
+      cde: "/nodejs/cadviewer-conversion-server/content/vizquery_demo/dwg/retail/L03-init.json",
+      
+    }
+  );
+  // fpath, lpath, xpath needs to be set based on the configuration file
+
+  // xpath points to the path of the -i= file
+  
+
+
+// need to copy L03-08-new.dwg to l03-08-temp-name.dwg
+  updateFloorplan(
+    "/nodejs/cadviewer-conversion-server/content/vizquery_demo/dwg/retail/L03-08-temp-name.dwg",
+    "/nodejs/cadviewer-conversion-server/content/vizquery_demo/dwg/retail/L03-08-new.dwg",
+    {
+      du2: "/nodejs/cadviewer-conversion-server/content/vizquery_demo/dwg/retail/L03-changes.json",
+      
+    }
+  );
+
+  // fpath, lpath, xpath needs to be set based on the configuration file
+
+
+extractFloorplan(
+    "/nodejs/cadviewer-conversion-server/content/vizquery_demo/dwg/retail/L03-08-new.dwg",
+    "/nodejs/cadviewer-conversion-server/content/vizquery_demo/json/property/retail/L03-08-new.json",
+    {
+      dx2: "",
+      
+    }
+  );
+
+
+  dwgToSvg(
+    "/nodejs/cadviewer-conversion-server/content/vizquery_demo/dwg/retail/L03-08-new.dwg",
+    "/nodejs/cadviewer-conversion-server/content/vizquery_demo/svg/retail/L03-08-new.svg",
+    {
+      f: "svg",
+      last: "",
+      extents: "",
+      rl: "VizQuery_Space",
+      tl: "VizQuery_ID",
+    }
+  );
+  
+    // fpath, lpath, xpath needs to be set based on the configuration file
+  
+  
+
+
+
+
+
+
+

@@ -1,40 +1,34 @@
-# Use Ubuntu 22.04 as the base image
-FROM ubuntu:22.04
+# Use the official Node.js 20 image based on Debian
+FROM node:20-bullseye
 
-# Set environment variable for non-interactive installation
-ENV DEBIAN_FRONTEND=noninteractive
-
-# Install necessary dependencies
-RUN apt-get update && apt-get install -y \
-    curl \
-    gnupg \
-    build-essential \
-    python3 \
-    && rm -rf /var/lib/apt/lists/*
-
-# Install Node.js 16.x
-RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash - \
-    && apt-get install -y nodejs
+# Set environment variable
+ENV RUNING_IN_DOCKER=true
 
 # Create app directory
 WORKDIR /nodejs/cadviewer-conversion-server/
 
-# Install nodemon globally
-RUN npm i -g nodemon yarn
-
-# Install app dependencies
+# Copy dependency files
 COPY package*.json ./
-COPY yarn.lock ./
+COPY yarn.lock ./cl
 RUN yarn
 
-# Copy the application code
+# Copy application code
 COPY . .
 
-# Rebuild bcrypt with the necessary tools installed
+# Make files in converters/autoxchange/linux executable
+RUN find converters/autoxchange/linux/ -type f -name "ax*" -o -name "Ax*" | xargs chmod +x && \
+    find converters/linklist/linux/ -type f -name "LinkList*" | xargs chmod +x && \
+    find converters/dwgmerge/linux/ -type f -name "DwgMerge*" | xargs chmod +x
+
+# Copy font (end with .ttf or .TTF) present inside converters/autoxchange/fonts/ into /usr/share/fonts
+RUN find converters/autoxchange/fonts/ -type f -name "*.ttf" -o -name "*.TTF" -o -name "*.ttc" -o -name "*.TTC" | xargs -I {} cp {} /usr/share/fonts/
+RUN fc-cache
+
+# Rebuild bcrypt with required tools
 RUN npm rebuild bcrypt --build-from-source
 
-# Expose the necessary port
+# Expose required port
 EXPOSE 3000
 
-# Command to run the app
+# Command to start the application
 CMD [ "npm", "start" ]

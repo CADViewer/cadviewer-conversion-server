@@ -1,0 +1,100 @@
+{
+  "Areas": [
+    {
+      "Areas": [
+        {
+          "ColorCode": 5,
+          "Layer": "VIEW-EXPIRATIONS-LEASE-PLAN"
+        }
+      ],
+      "RoomId": "2706A",
+      "Text": [
+        {
+          "Layer": "VizQuery_Area",
+          "Value": "789 SF"
+        },
+        {
+          "Layer": "VizQuery_Name",
+          "Value": "CINNABON"
+        },
+        {
+          "Layer": "VizQuery_Costs",
+          "Value": "6.84 % 932"
+        },
+        {
+          "Layer": "VizQuery_Sales",
+          "Value": "$ 8,113K 932"
+        }
+      ]
+    },
+    {
+      "Areas": [
+        {
+          "ColorCode": 3,
+          "Layer": "VIEW-BUDGET-PLAN"
+        },
+        {
+          "ColorCode": 4,
+          "Layer": "VIEW-DEEP-DIVE-LEASE-PLAN"
+        },
+        {
+          "ColorCode": 5,
+          "Layer": "VIEW-STANDARD-PLAN"
+        },
+        {
+          "ColorCode": 3,
+          "Layer": "VIEW-STATUS-PLAN"
+        },
+        {
+          "ColorCode": 3,
+          "Layer": "VIEW-EXPIRATIONS-LEASE-PLAN"
+        }
+      ],
+      "RoomId": "2007",
+      "Text": [
+        {
+          "Layer": "VizQuery_Name",
+          "Value": "LULULEMON ATHLETICA"
+        },
+        {
+          "Layer": "VizQuery_Costs",
+          "Value": "5.82 %"
+        },
+        {
+          "Layer": "VizQuery_Area",
+          "Value": "3,000 SF"
+        },
+        {
+          "Layer": "VizQuery_Sales",
+          "Value": "$ 6,157K"
+        }
+      ]
+    }
+  ],
+  "Parameters": {
+    "DrawingName": "L03",
+    "at": [
+      "VizQuery_Name",
+      "VizQuery_Area",
+      "VizQuery_Sales",
+      "VizQuery_Costs"
+    ],
+    "ht": [
+      "VIEW-BUDGET-PLAN",
+      "VIEW-DEEP-DIVE-LEASE-PLAN",
+      "VIEW-EXPIRATIONS-LEASE-PLAN",
+      "VIEW-KIOSK-STANDARD-PLAN",
+      "VIEW-OCCUPANCY-COST-PLAN",
+      "VIEW-SALES-PRODUCTIVITY-PLAN",
+      "VIEW-STANDARD-PLAN",
+      "VIEW-STATUS-PLAN",
+      "VIEW-TOTAL-RENT-PSF-PLAN"
+    ],
+    "rl": [
+      "VizQuery_Space"
+    ],
+    "tl": [
+      "Vizquery_ID"
+    ]
+  }
+}

@@ -1,0 +1,1414 @@
+{
+   [
+      {
+         "Token": "I",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Input File"
+      },
+      {
+         "Token": "O",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Output File"
+      },
+      {
+         "Token": "ID",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Input Directory"
+      },
+      {
+         "Token": "OD",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Output Directory"
+      },
+      {
+         "Token": "SUB",
+         "Type": "Integer/String",
+         "Limit": "   ",
+         "Comment": "Process SubDirectories  (0:No (Default)  1:Yes)"
+      },
+      {
+         "Token": "XPATH",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "XRef Path"
+      },
+      {
+         "Token": "LOG",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Creates a log file and defines the name"
+      },
+      {
+         "Token": "LPATH",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Location (Directory only) of the license file"
+      },
+      {
+         "Token": "LICPATH",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Alias for lpath"
+      },
+      {
+         "Token": "LICENSEPATH",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Alias for lpath"
+      },
+      {
+         "Token": "FONTPATH",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Path to check for SHX and TTF Font Files"
+      },
+      {
+         "Token": "XP",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Alias for XPATH"
+      },
+      {
+         "Token": "LT",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Layer Table File Name"
+      },
+      {
+         "Token": "LAYERS_OFF",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Turn a given layer(s) off, all others on"
+      },
+      {
+         "Token": "LAYER_OFF",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Alias for LAYERS_OFF"
+      },
+      {
+         "Token": "LOFF",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Alias for LAYERS_OFF"
+      },
+      {
+         "Token": "PARTIAL_OFF",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Turn a given layer off"
+      },
+      {
+         "Token": "PART_OFF",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Alias for PARTIAL_OFF"
+      },
+      {
+         "Token": "PARTOFF",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Alias for PARTIAL_OFF"
+      },
+      {
+         "Token": "LAYERS_ON",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Turn a given layer(s) on, all others off"
+      },
+      {
+         "Token": "LAYER_ON",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Alias for LAYERS_ON"
+      },
+      {
+         "Token": "LON",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Alias for LAYERS_ON"
+      },
+      {
+         "Token": "PARTIAL_ON",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Turn a given layer on"
+      },
+      {
+         "Token": "PART_ON",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Alias for PARTIAL_ON"
+      },
+      {
+         "Token": "PARTON",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Alias for PARTIAL_ON"
+      },
+      {
+         "Token": "CW",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Color to Width Mapping File Name"
+      },
+      {
+         "Token": "LANG",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Default Language for Unicode Text"
+      },
+      {
+         "Token": "B",
+         "Type": "Integer",
+         "Limit": "   ",
+         "Comment": "Background  (0:Black   255:White - Default    254:Grey)"
+      },
+      {
+         "Token": "BW",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Force to Black & White "
+      },
+      {
+         "Token": "BAC",
+         "Type": "Integer",
+         "Limit": "   ",
+         "Comment": "Alias for Background"
+      },
+      {
+         "Token": "BGD",
+         "Type": "Integer",
+         "Limit": "   ",
+         "Comment": "Alias for Background"
+      },
+      {
+         "Token": "BLACK",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for Background  (-B=0)"
+      },
+      {
+         "Token": "WHITE",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for Background  (-B=255)"
+      },
+      {
+         "Token": "GREY",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for Background  (-B=254)"
+      },
+      {
+         "Token": "MONO",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for Force to Black & White"
+      },
+      {
+         "Token": "GREYSCALE",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Drawing in greyscale (color)"
+      },
+      {
+         "Token": "EN",
+         "Type": "Integer",
+         "Limit": "   ",
+         "Comment": "Encoding (1:Text  2:Binary  3:Compressed)"
+      },
+      {
+         "Token": "ASC[II]",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for Text Encoding (-EN=1)"
+      },
+      {
+         "Token": "TEX[T]",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for Text Encoding (-EN=1)"
+      },
+      {
+         "Token": "BIN[ARY]",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for Binary Encoding (-EN=2)"
+      },
+      {
+         "Token": "COM[PRESSED]",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for Compressed Binary Encoding (-EN=3)"
+      },
+      {
+         "Token": "MA",
+         "Type": "Integer",
+         "Limit": "   ",
+         "Comment": "Include Margin    (0:No   1:Yes - Default)"
+      },
+      {
+         "Token": " ",
+         "Type": "   ",
+         "Limit": "   ",
+         "Comment": "For raster output, margin value is pixel width"
+      },
+      {
+         "Token": "PREC",
+         "Type": "Integer",
+         "Limit": "   ",
+         "Comment": "Number of Decimals of Precision (1:Default)"
+      },
+      {
+         "Token": "LOW",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for Number of Decimals of Precision (-PP=0)"
+      },
+      {
+         "Token": "MEDIUM",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for Number of Decimals of Precision (-PP=1)"
+      },
+      {
+         "Token": "HIGH",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for Number of Decimals of Precision (-PP=2)"
+      },
+      {
+         "Token": "DRAWSZ",
+         "Type": "Integer",
+         "Limit": "   ",
+         "Comment": "Drawing Size Mode (0: ANSI   1: DIN  2: PTS)"
+      },
+      {
+         "Token": "ANSI",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for ANSI Drawing Size Mode (-DRAWSZ=0)"
+      },
+      {
+         "Token": "DIN",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for DIN Drawing Size Mode (-DRAWSZ=1)"
+      },
+      {
+         "Token": "PTS",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for Drawing Size Mode in Points (-DRAWSZ=2)"
+      },
+      {
+         "Token": "LIST",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "List View Mode"
+      },
+      {
+         "Token": "A",
+         "Type": "Integer",
+         "Limit": "   ",
+         "Comment": "ANSI Drawing Size"
+      },
+      {
+         "Token": "U[S]",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "ANSI Drawing Size"
+      },
+      {
+         "Token": "U[S]A",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "ANSI A Drawing Size"
+      },
+      {
+         "Token": "U[S]B",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "ANSI B Drawing Size"
+      },
+      {
+         "Token": "U[S]C",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "ANSI C Drawing Size"
+      },
+      {
+         "Token": "U[S]D",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "ANSI D Drawing Size"
+      },
+      {
+         "Token": "U[S]E",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "ANSI E Drawing Size"
+      },
+      {
+         "Token": "A0",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "DIN A0 Drawing Size"
+      },
+      {
+         "Token": "A1",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "DIN A1 Drawing Size"
+      },
+      {
+         "Token": "A2",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "DIN A2 Drawing Size"
+      },
+      {
+         "Token": "A3",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "DIN A3 Drawing Size"
+      },
+      {
+         "Token": "A4",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "DIN A4 Drawing Size"
+      },
+      {
+         "Token": "A5",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "DIN A5 Drawing Size"
+      },
+      {
+         "Token": "F",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Output Format"
+      },
+      {
+         "Token": "F=?",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "List Output Formats"
+      },
+      {
+         "Token": "CADKEY",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for CADKEY Output (-F=CADKEY)"
+      },
+      {
+         "Token": "CGM",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for CGM Output (-F=CGM)"
+      },
+      {
+         "Token": "DXF",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for DXF Output (-F=DXF)"
+      },
+      {
+         "Token": "DXFB",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for Binary DXF Output (-F=DXFB)"
+      },
+      {
+         "Token": "DWF",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for DWF Output (-F=DWF)"
+      },
+      {
+         "Token": "DWG",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for DWG Output (-F=DWG)"
+      },
+      {
+         "Token": "EPS",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for EPS Output (-F=EPS)"
+      },
+      {
+         "Token": "HPGL",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for HPGL Output (-F=HPGL)"
+      },
+      {
+         "Token": "PLT",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for HPGL Output (-F=HPGL)"
+      },
+      {
+         "Token": "PGL",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for HPGL Output (-F=HPGL)"
+      },
+      {
+         "Token": "HPP",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for HPGL Output (-F=HPGL)"
+      },
+      {
+         "Token": "HPGL2",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for HPGL/2 Output (-F=HPGL2)"
+      },
+      {
+         "Token": "HP2",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for HPGL/2 Output (-F=HPGL2)"
+      },
+      {
+         "Token": "HGL",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for HPGL/2 Output (-F=HPGL2)"
+      },
+      {
+         "Token": "IGES",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for IGES Output (-F=IGES)"
+      },
+      {
+         "Token": "IGS",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for IGES Output (-F=IGES)"
+      },
+      {
+         "Token": "JS",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for JS Output (-F=JS)"
+      },
+      {
+         "Token": "PDF",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for PDF Output (-F=PDF)"
+      },
+      {
+         "Token": "PS",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for PS Output (-F=PS)"
+      },
+      {
+         "Token": "SVF",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for SVF Output (-F=SVF)"
+      },
+      {
+         "Token": "SVG",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for SVG Output (-F=SVG)"
+      },
+      {
+         "Token": "TXT",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for TEXT Output (-F=TEXT)"
+      },
+      {
+         "Token": "TEXT",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for TEXT Output (-F=TEXT)"
+      },
+      {
+         "Token": "WMF",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for WMF Output (-F=WMF)"
+      },
+      {
+         "Token": "JPG",
+         "Type": "None",
+         "Limit": "*R",
+         "Comment": "Alias for JPEG Output (-F=JPG)"
+      },
+      {
+         "Token": "JPEG",
+         "Type": "None",
+         "Limit": "*R",
+         "Comment": "Alias for JPEG Output (-F=JPG)"
+      },
+      {
+         "Token": "JPG0",
+         "Type": "None",
+         "Limit": "*R",
+         "Comment": "Alias for Low Quality JPEG Output (-F=JPG, -RQL=2)"
+      },
+      {
+         "Token": "TIF",
+         "Type": "None",
+         "Limit": "*R",
+         "Comment": "Alias for TIFF Output (-F=TIFF)"
+      },
+      {
+         "Token": "TIFF",
+         "Type": "None",
+         "Limit": "*R",
+         "Comment": "Alias for TIFF Output (-F=TIFF)"
+      },
+      {
+         "Token": "CCITT",
+         "Type": "None",
+         "Limit": "*R",
+         "Comment": "Alias for CCITT [TIFF Group IV] Output (-F=CCITT)"
+      },
+      {
+         "Token": "RPDF",
+         "Type": "None",
+         "Limit": "*R",
+         "Comment": "Alias for Raster PDF Output (-F=RPDF)"
+      },
+      {
+         "Token": "GIF",
+         "Type": "None",
+         "Limit": "*R",
+         "Comment": "Alias for GIF Output (-F=GIF)"
+      },
+      {
+         "Token": "PNG",
+         "Type": "None",
+         "Limit": "*R",
+         "Comment": "Alias for PNG Output (-F=PNG)"
+      },
+      {
+         "Token": "JSR",
+         "Type": "None",
+         "Limit": "*R",
+         "Comment": "Alias for Raster-based Javascript Output (-F=JSR)"
+      },
+      {
+         "Token": "SP",
+         "Type": "Integer",
+         "Limit": "   ",
+         "Comment": "Space Mode (0:Last Saved View  1:ModelSpace (Default))"
+      },
+      {
+         "Token": "  ",
+         "Type": "   ",
+         "Limit": "   ",
+         "Comment": "            2:Paperspace)"
+      },
+      {
+         "Token": "VN",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Select View Name"
+      },
+      {
+         "Token": "VIEW",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Select View Name"
+      },
+      {
+         "Token": "LAY[OUT]",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Layout to convert"
+      },
+      {
+         "Token": "EXT[ENTS]",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Zoom to Extents"
+      },
+      {
+         "Token": "NOEXTENTS",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Do not zoom to extents"
+      },
+      {
+         "Token": "HI[GH]RES",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "High Precision Output (PDF or DWF)"
+      },
+      {
+         "Token": "HP",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for High Precision Output"
+      },
+      {
+         "Token": "WIDTH",
+         "Type": "Integer",
+         "Limit": "   ",
+         "Comment": "Sets Drawing Width"
+      },
+      {
+         "Token": "HEIGHT",
+         "Type": "Integer",
+         "Limit": "   ",
+         "Comment": "Sets Drawing Height"
+      },
+      {
+         "Token": "SIZE",
+         "Type": "Integer",
+         "Limit": "   ",
+         "Comment": "Sets Drawing Height and Width"
+      },
+      {
+         "Token": "VN=*ALL*",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Convert all views"
+      },
+      {
+         "Token": "VN=*BASIC*",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Convert Modelspace and all layouts"
+      },
+      {
+         "Token": "VN=*NOLAST*",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Convert all views except Last Saved View"
+      },
+      {
+         "Token": "VN=*ALLPAPER*",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Convert paperspace and all layouts"
+      },
+      {
+         "Token": "VN=*ALLMODEL*",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Convert modelspace and all views"
+      },
+      {
+         "Token": "VN=*VIEWSONLY*",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Only convert all views (no modelspace view)"
+      },
+      {
+         "Token": "VN=*LAYOUTSONLY*",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Only convert all layouts (no paperspace view)"
+      },
+      {
+         "Token": "ALL",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for VN=*ALL*"
+      },
+      {
+         "Token": "NOLAST",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for VN=*NOLAST*"
+      },
+      {
+         "Token": "VIEW=?",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "List View Names"
+      },
+      {
+         "Token": "LAST",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for Last Save View (-SP=0)"
+      },
+      {
+         "Token": "MODEL",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for Space Mode (-SP=1)"
+      },
+      {
+         "Token": "PAPER",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for Space Mode (-SP=2)"
+      },
+      {
+         "Token": "BASIC",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for VN=*BASIC*"
+      },
+      {
+         "Token": "ALLPAPER",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for VN=*ALLPAPER*"
+      },
+      {
+         "Token": "ALLMODEL",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for VN=*ALLMODEL*"
+      },
+      {
+         "Token": "VIEWSONLY",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for VN=*VIEWSONLY*"
+      },
+      {
+         "Token": "LAYOUTSONLY",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for VN=*LAYOUTSONLY*"
+      },
+      {
+         "Token": "ORNT",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Orientation (-1: Calculate  0: Portrait  1: Landscape)"
+      },
+      {
+         "Token": "LANDSCAPE",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for Landscape Orientation (-ORNT=1)"
+      },
+      {
+         "Token": "PORTRAIT",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for Portrait Orientation (-ORNT=0)"
+      },
+      {
+         "Token": "R",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for Orientation"
+      },
+      {
+         "Token": "RO[T]",
+         "Type": "Integer",
+         "Limit": "   ",
+         "Comment": "Rotation (0/90/180/270 - HPGL and PDF only)"
+      },
+      {
+         "Token": "AU[TOTRIM]",
+         "Type": "None",
+         "Limit": "*R ",
+         "Comment": "Trim Whitespace from Raster Image"
+      },
+      {
+         "Token": "RCC",
+         "Type": "Integer",
+         "Limit": "*R ",
+         "Comment": "CCITT Compression (0:Group III 1D; 2:Group IV"
+      },
+      {
+         "Token": "RFC",
+         "Type": "Integer",
+         "Limit": "*R ",
+         "Comment": "Fax Compression (0:Group III 1D; 2:Group IV"
+      },
+      {
+         "Token": "RWD",
+         "Type": "Integer",
+         "Limit": "*R ",
+         "Comment": "Sets Raster Image Width"
+      },
+      {
+         "Token": "RHT",
+         "Type": "Integer",
+         "Limit": "*R ",
+         "Comment": "Sets Raster Image Height"
+      },
+      {
+         "Token": "RSZ",
+         "Type": "Integer",
+         "Limit": "*R ",
+         "Comment": "Sets Raster Image Height and Width"
+      },
+      {
+         "Token": "RQL",
+         "Type": "Integer",
+         "Limit": "*R ",
+         "Comment": "JPEG Quality  0:Coarse  100:Lossless"
+      },
+      {
+         "Token": "RBP",
+         "Type": "Integer",
+         "Limit": "*R ",
+         "Comment": "Bits Per Pixel (1,2,4,8,16,24,32)"
+      },
+      {
+         "Token": "RBE",
+         "Type": "Integer",
+         "Limit": "*R ",
+         "Comment": "English Mode Divisor"
+      },
+      {
+         "Token": "RTE",
+         "Type": "Integer",
+         "Limit": "*R ",
+         "Comment": "English Mode Numerator"
+      },
+      {
+         "Token": "RDM",
+         "Type": "None",
+         "Limit": "*R ",
+         "Comment": "DPI Mode"
+      },
+      {
+         "Token": "REM",
+         "Type": "None",
+         "Limit": "*R ",
+         "Comment": "English Mode"
+      },
+      {
+         "Token": "RMM",
+         "Type": "None",
+         "Limit": "*R ",
+         "Comment": "Metric Mode"
+      },
+      {
+         "Token": "RMT",
+         "Type": "Integer",
+         "Limit": "*R ",
+         "Comment": "Metric Unit"
+      },
+      {
+         "Token": "RTF",
+         "Type": "None",
+         "Limit": "*R ",
+         "Comment": "TIFF Format"
+      },
+      {
+         "Token": "RDPI",
+         "Type": "Integer",
+         "Limit": "*R ",
+         "Comment": "Force Dots Per Inch for Output Size"
+      },
+      {
+         "Token": "DPI",
+         "Type": "Integer",
+         "Limit": "*R ",
+         "Comment": "Force Dots Per Inch for Output Size"
+      },
+      {
+         "Token": "SH",
+         "Type": "Double",
+         "Limit": "*R ",
+         "Comment": "Sharpen Raster Output"
+      },
+      {
+         "Token": "UN",
+         "Type": "Integer",
+         "Limit": "   ",
+         "Comment": "Input file units (1:Inch 2:Feet 3:Yards 4:Miles"
+      },
+      {
+         "Token": "  ",
+         "Type": "   ",
+         "Limit": "   ",
+         "Comment": "                  5:MM  6:CM  7:Metres)"
+      },
+      {
+         "Token": "INCH[ES]",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for input file units in inches (-UN=1)"
+      },
+      {
+         "Token": "FEET",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for input file units in feet (-UN=2)"
+      },
+      {
+         "Token": "FOOT",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for input file units in feet (-UN=2)"
+      },
+      {
+         "Token": "YARD[S]",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for input file units in yards (-UN=3)"
+      },
+      {
+         "Token": "MILE[S]",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for input file units in miles (-UN=4)"
+      },
+      {
+         "Token": "MM",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for input file units in millimeters (-UN=5)"
+      },
+      {
+         "Token": "CM",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for input file units in centimeters (-UN=6)"
+      },
+      {
+         "Token": "METER[S]",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for input file units in metres (-UN=7)"
+      },
+      {
+         "Token": "METRE[S]",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for input file units in metres (-UN=7)"
+      },
+      {
+         "Token": "DENY",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Prevent PDF actions (Can be seperated by commas)"
+      },
+      {
+         "Token": "DENY=Ed",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Prevent PDF Editing"
+      },
+      {
+         "Token": "DENY=Co",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Prevent PDF Copying"
+      },
+      {
+         "Token": "DENY=Pr",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Prevent PDF Printing"
+      },
+      {
+         "Token": "DENY=An",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Prevent PDF Annotation"
+      },
+      {
+         "Token": "DENY=As",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Prevent PDF Assembly"
+      },
+      {
+         "Token": "DENY=Hi",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Prevent PDF HiRes Printing"
+      },
+      {
+         "Token": "DENY=Op",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Prevent PDF Document Open"
+      },
+      {
+         "Token": "DENY=Se",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Prevent PDF Document Security"
+      },
+      {
+         "Token": "DENY=Fi",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Prevent PDF Form Filling"
+      },
+      {
+         "Token": "DENY=Ac",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Prevent PDF Access Support"
+      },
+      {
+         "Token": "AUTHOR",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "PDF Document Author"
+      },
+      {
+         "Token": "SUBJECT",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "PDF Document Subject"
+      },
+      {
+         "Token": "KEYWORDS",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "PDF Document Keywords"
+      },
+      {
+         "Token": "TITLE",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "PDF Document Title"
+      },
+      {
+         "Token": "UP",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "PDF User Password"
+      },
+      {
+         "Token": "MP",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "PDF Master Password"
+      },
+      {
+         "Token": "BLDG",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Building Name"
+      },
+      {
+         "Token": "BUILDING",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Building Name"
+      },
+      {
+         "Token": "FL[OO]R",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Floor Name"
+      },
+      {
+         "Token": "THUMBSIZE",
+         "Type": "Integer",
+         "Limit": "   ",
+         "Comment": "Threshold to be included in Thumbnail file"
+      },
+      {
+         "Token": "LWMIN",
+         "Type": "Double",
+         "Limit": "   ",
+         "Comment": "LineWeight Minimum for normal entities"
+      },
+      {
+         "Token": "LWTMIN",
+         "Type": "Double",
+         "Limit": "   ",
+         "Comment": "LineWeight Minimum for Thumbnail file"
+      },
+      {
+         "Token": "TL",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Text Layers for VQ Evaluation"
+      },
+      {
+         "Token": "RL",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Room/Area Layers for VQ Evaluation"
+      },
+      {
+         "Token": "RA",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Room Attribute Layers for VQ Evaluation"
+      },
+      {
+         "Token": "SHORT",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Perform specialized processing [user specific]"
+      },
+      {
+         "Token": "STROKE",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Stroke out text"
+      },
+      {
+         "Token": "ST",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Alias for Stroke Text"
+      },
+      {
+         "Token": "FONT",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Default Font"
+      },
+      {
+         "Token": "DF",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Alias for Default Font"
+      },
+      {
+         "Token": "ITALIC",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Default Italic Font"
+      },
+      {
+         "Token": "DI",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Alias for Default Italic Font"
+      },
+      {
+         "Token": "LS",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Line Spacing"
+      },
+      {
+         "Token": "CTB",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Name for CTB file"
+      },
+      {
+         "Token": "LTB",
+         "Type": "Double",
+         "Limit": "   ",
+         "Comment": "Line Type Divisor"
+      },
+      {
+         "Token": "MD",
+         "Type": "Double",
+         "Limit": "   ",
+         "Comment": "Maximum Dash Size"
+      },
+      {
+         "Token": "MG",
+         "Type": "Double",
+         "Limit": "   ",
+         "Comment": "Maximum Gap Size"
+      },
+      {
+         "Token": "ML",
+         "Type": "Double",
+         "Limit": "   ",
+         "Comment": "Minimum Line Width"
+      },
+      {
+         "Token": "LW",
+         "Type": "Double",
+         "Limit": "   ",
+         "Comment": "Line Width Scale"
+      },
+      {
+         "Token": "PW",
+         "Type": "Double",
+         "Limit": "   ",
+         "Comment": "Pen Width Scale"
+      },
+      {
+         "Token": "HS",
+         "Type": "Double",
+         "Limit": "   ",
+         "Comment": "Hatch Scale"
+      },
+      {
+         "Token": "HATCHSCALE",
+         "Type": "Double",
+         "Limit": "   ",
+         "Comment": "Hatch Scale"
+      },
+      {
+         "Token": "STAMP",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Name for Stamp file"
+      },
+      {
+         "Token": "STSZ",
+         "Type": "Integer",
+         "Limit": "   ",
+         "Comment": "Stamp size"
+      },
+      {
+         "Token": "STX",
+         "Type": "Integer",
+         "Limit": "   ",
+         "Comment": "Stamp horizontal location"
+      },
+      {
+         "Token": "STY",
+         "Type": "Integer",
+         "Limit": "   ",
+         "Comment": "Stamp vertical location"
+      },
+      {
+         "Token": "HATCH",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Default Hatch"
+      },
+      {
+         "Token": "IP",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Ignore Points"
+      },
+      {
+         "Token": "DG",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Process Groups"
+      },
+      {
+         "Token": "BL",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Break By Layer"
+      },
+      {
+         "Token": "MA[RGIN]",
+         "Type": "Integer",
+         "Limit": "   ",
+         "Comment": "Margin"
+      },
+      {
+         "Token": "TS",
+         "Type": "Integer",
+         "Limit": "   ",
+         "Comment": "Thumb Size"
+      },
+      {
+         "Token": "OM",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Overwrite Mode"
+      },
+      {
+         "Token": "Q[UIET]",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Quiet Mode (No Messages)"
+      },
+      {
+         "Token": "TOL",
+         "Type": "Double",
+         "Limit": "   ",
+         "Comment": "Tolerance"
+      },
+      {
+         "Token": "VER",
+         "Type": "Integer",
+         "Limit": "   ",
+         "Comment": "Version"
+      },
+      {
+         "Token": "WM_CON[TENTS]",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Watermark Text"
+      },
+      {
+         "Token": "WM_SIZE",
+         "Type": "Integer",
+         "Limit": "   ",
+         "Comment": "Watermark Size"
+      },
+      {
+         "Token": "WM_HEIGHT",
+         "Type": "Integer",
+         "Limit": "   ",
+         "Comment": "Watermark Size (Alias of WM_SIZE)"
+      },
+      {
+         "Token": "WM_COL[OUR]",
+         "Type": "Integer",
+         "Limit": "   ",
+         "Comment": "Watermark Color Index"
+      },
+      {
+         "Token": "WM_RGB",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Watermark Color via RGB"
+      },
+      {
+         "Token": "WM_X",
+         "Type": "Integer",
+         "Limit": "   ",
+         "Comment": "Watermark X Positiion"
+      },
+      {
+         "Token": "WM_Y",
+         "Type": "Integer",
+         "Limit": "   ",
+         "Comment": "Watermark Y Position"
+      },
+      {
+         "Token": "WM_ANC[HOR]",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Watermark Anchor Handle"
+      },
+      {
+         "Token": "WM_LAY[OUT]",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Watermark Layout"
+      },
+      {
+         "Token": "WM_TEXTSTYLE",
+         "Type": "String",
+         "Limit": "   ",
+         "Comment": "Watermark Text Style"
+      },
+      {
+         "Token": "WM_ANGLE",
+         "Type": "Double, String",
+         "Limit": "   ",
+         "Comment": "Watermark Angle in Radians (Degrees if 'd' at end of string)"
+      },
+      {
+         "Token": "HIS[TORY]",
+         "Type": "None",
+         "Limit": "   ",
+         "Comment": "Program History"
+      },
+      {
+         "Token": "Z",
+         "Type": "   ",
+         "Limit": "   ",
+         "Comment": "Reset All Parameters"
+      }
+   ]
+}

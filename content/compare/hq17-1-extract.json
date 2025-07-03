@@ -1,0 +1,24 @@
+{
+  "Parameters": {
+    "DrawingName": "L03",
+    "at": [
+      "VizQuery_Name",
+      "VizQuery_Area",
+      "VizQuery_Sales",
+      "VizQuery_Costs"
+    ],
+    "ht": [
+      "VIEW-BUDGET-PLAN",
+      "VIEW-DEEP-DIVE-LEASE-PLAN",
+      "VIEW-EXPIRATIONS-LEASE-PLAN",
+      "VIEW-KIOSK-STANDARD-PLAN",
+      "VIEW-OCCUPANCY-COST-PLAN",
+      "VIEW-SALES-PRODUCTIVITY-PLAN",
+      "VIEW-STANDARD-PLAN",
+      "VIEW-STATUS-PLAN",
+      "VIEW-TOTAL-RENT-PSF-PLAN"
+    ],
+    "rl": ["VizQuery_Space"],
+    "tl": ["Vizquery_ID"]
+  }
+}

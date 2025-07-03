@@ -510,7 +510,7 @@ map area{
 	 border : 1px solid gray;
 	 background-color : #fff;
 	 color:#333;
-	 z-index: 100000000;
+	 z-index: 10000;
 	 
      	 border-radius: 10px;
      	 border: 2px solid #19A5DE;
@@ -1837,7 +1837,7 @@ input[type=button_layer] {
 
     position: absolute;
     top: 28px;
-    left: 100px;
+    left: 110px;
     width: 80px;
     text-indent: 1px;
     text-align:center;
@@ -2400,7 +2400,7 @@ input[type=button_layer] {
     position: relative;
     top: 5px !important;
     left: 20 !important;
-    width: 100px !important;
+    width: 115px !important;
     height: 20px !important;
     min-height: 20px !important;
     border:solid 1px #ccc;
@@ -2421,7 +2421,7 @@ input[type=button_layer] {
     position: relative;
     top: 5px !important;
     left: 100 !important;
-    width: 100px !important;
+    width: 115px !important;
     height: 20px !important;
     min-height: 20px !important;
     border:solid 1px #ccc;
@@ -2443,7 +2443,7 @@ input[type=button_layer] {
     position: relative;
     top: 5px !important;
     left: 160 !important;
-    width: 100px !important;
+    width: 115px !important;
     height: 20px !important;
     min-height: 20px !important;
     border:solid 1px #ccc;
@@ -2494,7 +2494,7 @@ input[type=button_layer] {
     /*position: absolute !important;*/
     top: 20 !important;
     left: 300 !important; 
-	width: 110px;
+	width: 140px;
 	height: 24px !important;
 	min-height: 24px !important;
 	padding: 1px;
@@ -2505,7 +2505,7 @@ input[type=button_layer] {
 	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
 	text-decoration: none;
 	font-weight: bold;
-	color:#FFF;
+	color:#444;
 	font-size: 12px;
 	line-height: 1;
 }
@@ -2516,7 +2516,7 @@ input[type=button_layer] {
     border-radius: 6px;
     border:none;
     display:inline-block;
-    color:#fff;
+	color:#444;
     text-decoration: none;
     background-color: #28a8e0;
     height:30px;
@@ -2572,7 +2572,7 @@ input[type=button_layer] {
 
 #cvjs_layer_sort_button_space{
 
-	width: 110px;
+	width: 140px;
 	height: 22px; 
 	padding: 1px;
     	top: 3px;
@@ -2617,7 +2617,7 @@ input[type=button_layer] {
 
 #cvjs_pagechange_sort_button{
 	cursor: pointer;
-	width: 110px;
+	width: 140px;
 	height: 22px; 
 	padding: 1px;
     	top: 3px;
@@ -2629,7 +2629,7 @@ input[type=button_layer] {
 	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
 	text-decoration: none;
 	font-weight: bold;
-	color:#FFF;
+	color:#444;
 	font-size: 12px;
 	line-height: 12px;
 	min-height: 22px;
@@ -3476,7 +3476,7 @@ table.calibrateModalTable td {
 #cvjs_unitForScale{
     position:absolute;
     top: 34px;
-    left: 64px;
+    left: 80px;
  	width: 100px; 
  	height: 22px !important;
     min-height: 22px !important;
@@ -3800,7 +3800,7 @@ table.measurementModalTable td {
 
 
 
-.printModal{
+.cvjs_printModal{
 	/* 7.3.14*/
 
    	z-index:1000;
@@ -4105,12 +4105,15 @@ table.printModalTable td {
 
 
 #cvjs_greyScaleLocation{
+
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-size: 13px !important;	
     width: 110px !important;     /* 6.1.27 increase   */
     height: 20px !important;   
     min-height: 20px !important;   
     position: absolute !important;   
     left: 32px !important;
-    top: 64px !important;
+    top: 64px ;
 }
 
 
@@ -8425,13 +8428,15 @@ button.multiselect {
 	top:  7px;  
 	left: 18px;
 	z-index: 3;
+	color:#000;
 }
 
 .compareDrawingbox1Text2 {
 	position: absolute; 
 	top:  29px;  
 	left: 18px;
-	z-index: 3;	
+	z-index: 3;
+	color:#000;	
 }
 /* 4.1.01b */
 
@@ -8463,20 +8468,23 @@ button.multiselect {
 	top:  8px;  
 	left: 20px;
 	z-index: 3;
+	color:#000;
 }
 
 .compareDrawingbox2Text2 {
 	position: absolute; 
 	top:  29px;  
 	left: 20px;
-	z-index: 3;	
+	z-index: 3;
+	color:#000;	
 }
 
 .compareDrawingbox2Text3 {
 	position: absolute; 
 	top:  51px;  
 	left: 20px;
-	z-index: 3;	
+	z-index: 3;
+	color:#000;	
 }
 
 
@@ -8562,7 +8570,7 @@ button.multiselect {
 }	
 
 
-
+/*9.66.4*/
 .floatpagemenuText1_topBar { 
 	position: absolute; 
 	top: 7px; 
@@ -8572,9 +8580,11 @@ button.multiselect {
 	background-color: transparent; 
 	border: 0px solid blue; 
 	line-height: 16px;
+	color:black;
 }	
 
 
+/*9.66.4*/
 
 .floatpagemenuText2_topBar { 
 	position: absolute; 
@@ -8585,8 +8595,10 @@ button.multiselect {
 	background-color: transparent; 
 	border: 0px solid blue; 
 	line-height: 16px;
+	color:black;
 }	
 
+/* 9.66.4*/
 
 .cvjs_enterpagenumber_topBar { 
 	position: absolute; 
@@ -8598,6 +8610,7 @@ button.multiselect {
 	opacity: 0.0; 
 	border: 0px solid yellow; 
 	z-index: 5;	
+	color:black;
 }	
 
 
@@ -9995,6 +10008,7 @@ h3_list {
   margin:0 0 0.3rem;
   font-weight: normal;
   font-weight:bold;
+  color:#000;
 }
 
 h3_selected {

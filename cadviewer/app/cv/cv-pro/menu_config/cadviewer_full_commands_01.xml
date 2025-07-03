@@ -4,7 +4,7 @@
 	<startpage>1</startpage>
 	<pages>
 		<page>
-			<command>cvjs_LayerList</command>
+            <command>cvjs_LayerList</command>
 			<command>cvjs_Print</command>
 			<command>cvjs_toggleBlackWhite</command>
 			<command>cvjs_setBackgroundColor</command>
@@ -19,7 +19,8 @@
 			<command>cvjs_activateLineThicknessModal</command>
 			<command>cvjs_About</command>
 			<command>cvjs_Settings</command>
-		</page>
+            <command>cvjs_Help</command>
+            </page>
 		<page>
 			<command>cvjs_publishPDF</command>
 			<command>cvjs_saveAsSVGOnServer</command>
@@ -30,6 +31,7 @@
 			<command>cvjs_drawStickyNote</command>
 			<command>cvjs_drawRedlineText</command>
 			<command>cvjs_drawRedline_Freehand</command>
+			<command>cvjs_drawRedlineSingleLine</command>
 			<command>cvjs_drawRedlineEllipseCloud</command>
 			<command>cvjs_drawRedlineFilledPolygon</command>
 			<command>cvjs_drawRedlinePolyline</command>
@@ -37,13 +39,16 @@
 			<command>cvjs_drawRedlineRectangle</command>
 			<command>cvjs_drawRedlineTriangle</command>
 			<command>cvjs_drawRedlineArrow</command>
-			<command>cvjs_deleteSingleRedline</command>
+            <command>cvjs_moveRedline</command>
+            <command>cvjs_resizeRedline</command>
+            <command>cvjs_rotateRedline</command>
+            <command>cvjs_deleteSingleRedline</command>
 			<command>cvjs_deleteLastRedline</command>
 			<command>cvjs_undoDeleteLastRedline</command>
 			<command>cvjs_clearCurrentRedline</command>
 			<command>cvjs_mergeDXFDWG</command>
-			<command>cvjs_mergeQR</command>			
-		</page>
+            <command>cvjs_Help</command>
+            </page>
 		<page>
 			<command>cvjs_insertImageLink</command>
 			<command>cvjs_loadAllImageLinks</command>
@@ -53,12 +58,11 @@
 			<command>cvjs_showMeCounts</command>
 			<command>cvjs_clearQuickCounts</command>
 			<command>cvjs_compareDrawings_LoadSecondDrawing</command>
-			<command>cvjs_compareDrawings_ToggleDrawings</command>
-			<command>cvjs_compareDrawings_ToggleDrawingOverlay</command>
-			<command>cvjs_exitCompareDrawings</command>
-		</page>
+            <command>cvjs_Help</command>
+            </page>
 		<page>
 			<command>cvjs_changeSpaceObjectDisplayMode</command>
+			<command>cvjs_setSpaceObjectColor</command>
 			<command>cvjs_addPolygonSpaceObject</command>
 			<command>cvjs_addRectangleSpaceObject</command>
 			<command>cvjs_addCircleSpaceObject</command>
@@ -74,7 +78,12 @@
 			<command>cvjs_loadSpaceObjectsUser</command>
 			<command>cvjs_saveSpaceObjectsUser</command>
 			<command>cvjs_saveAsSVGOnServer</command>
-		</page>
+			<command>cvjs_bringToFront</command>
+			<command>cvjs_sendToBack</command>
+			<command>cvjs_bringForward</command>
+			<command>cvjs_sendBackward</command>
+            <command>cvjs_Help</command>
+            </page>
 	</pages>
 	<icons_per_row>0</icons_per_row>
 	<icon_page_left_x>0</icon_page_left_x>
@@ -93,8 +102,7 @@
 	</customcommand>	
 </iconmenu>
 <zoommenu>
-	<location_left_x>0</location_left_x>
-	<location_left_y>30</location_left_y>
+	<location_left_x>2</location_left_x>
+	<location_left_y>40</location_left_y>
 </zoommenu>
 </cvjs>
-						

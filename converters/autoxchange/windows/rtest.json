@@ -1,0 +1,17 @@
+{
+"Raster_Details": {
+	"Input File": "test.dwg",
+	"Output File": "rtest.png",
+	"Drawing Extents": {
+		"llx": -84672.7,
+		"lly": -32310.4,
+		"urx": 37244.9,
+		"ury": 168258
+		},
+	"Raster Size": {
+		"Width": 1815,
+		"Height": 1284
+		},
+	"RasterScale": 67.1722
+	}
+}

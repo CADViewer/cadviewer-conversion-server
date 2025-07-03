@@ -1,0 +1,51 @@
+{
+  "AllObjects": [
+    {
+      "RedlineObjects": [
+        {
+          "node": "RED_1",
+          "outerhtml": "<g id='cv_RED_1_group' style='display: none;'><g id='cv_RED_1_group_translate'><g id='cv_RED_1_group_scale'><path d='M909.6229490575814,178.62652823560484L1300.9261118752397,178.62652823560484L1300.9261118752397,449.1246877672747L909.6229490575814,449.1246877672747L909.6229490575814,178.62652823560484Z' stroke='#ff0000' fill='#ff0000' style='stroke-width: 4; fill-opacity: 0.1;' id='cv_RED_1'></path></g></g></g>",
+          "name": "redline1",
+          "id": 1,
+          "layer": "RedLineLayer",
+          "group": "RedLineLayer",
+          "color": "#FF0000",
+          "strokeWidth": 4,
+          "fill": "#FFF",
+          "username": "User_5uetx",
+          "userid": "user_id_5uetx",
+          "currentPage": 1,
+          "polypath_arrow": "none",
+          "redline_text": "none",
+          "fill_opacity": "0.01",
+          "transform": "none",
+          "drawingRotation": 0
+        },
+        {
+          "node": "RED_2",
+          "outerhtml": "<g id='cv_RED_2_group'><g id='cv_RED_2_group_translate'><g id='cv_RED_2_group_scale'><path d='M591.0304691017275,155.01008438489674L732.8556599558542,155.01008438489674L732.8556599558542,1457.7007263042829L591.0304691017275,1457.7007263042829L591.0304691017275,155.01008438489674Z' stroke='#ff0000' fill='#ff0000' style='stroke-width: 4; fill-opacity: 0.1;' id='cv_RED_2'></path></g></g></g>",
+          "name": "redline2",
+          "id": 2,
+          "layer": "RedLineLayer",
+          "group": "RedLineLayer",
+          "color": "#FF0000",
+          "strokeWidth": 4,
+          "fill": "#FFF",
+          "username": "User_9bz",
+          "userid": "user_id_9bz",
+          "currentPage": 2,
+          "triange_design": "none",
+          "polypath_arrow": "none",
+          "redline_text": "none",
+          "fill_opacity": "0.01",
+          "transform": "none",
+          "locked": false,
+          "drawingRotation": 0,
+          "area": "1063836510846.6006",
+          "unit": "in"
+        }
+      ]
+    },
+    { "StickyNoteObjects": [] }
+  ]
+}

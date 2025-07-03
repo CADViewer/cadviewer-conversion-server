@@ -1,0 +1,3539 @@
+<!DOCTYPE html>
+<html lang="fr" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CADViewer - Conversion server settings</title>
+    <!-- Inclusion du CDN Tailwind CSS -->
+    <script src="/settings/tailwind.js"></script>
+    <!--Favicon-->
+    <link
+      rel="shortcut icon"
+      href="https://www.cadviewer.com/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="https://www.cadviewer.com/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/settings/style.css" />
+    <script src="/settings/vanilla-toast.js"></script>
+    <script src="/settings/cache-stats.js"></script>
+    <script src="/settings/icons.js"></script>
+    <link rel="stylesheet" href="/settings/vanilla-toast.css" />
+  </head>
+
+  <body class="h-full">
+    <div>
+      <!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
+      <div class="relative z-50 lg:hidden" role="dialog" aria-modal="true">
+        <div class="fixed inset-0 bg-gray-900/80" aria-hidden="true"></div>
+
+        <div class="fixed inset-0 flex">
+          <div class="relative mr-16 flex w-full max-w-xs flex-1">
+            <div class="absolute left-full top-0 flex w-16 justify-center pt-5">
+              <button type="button" class="-m-2.5 p-2.5">
+                <span class="sr-only">Close sidebar</span>
+                <svg
+                  class="h-6 w-6 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  data-slot="icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18 18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <!-- Sidebar component, swap this element with another sidebar if you like -->
+            <div
+              class="flex grow flex-col gap-y-5 overflow-y-auto bg-white px-6 pb-4 h-full"
+            >
+              <div class="flex h-16 shrink-0 items-center">
+                <img
+                  class="h-8 w-auto"
+                  src="https://www.cadviewer.com/images/cadviewer/cv-logo-smaller.png"
+                  alt="Your Company"
+                />
+              </div>
+              <nav class="flex flex-1 flex-col">
+                <ul role="list" class="flex flex-1 flex-col gap-y-7">
+                  <li>
+                    <ul role="list" class="-mx-2 space-y-1">
+                      <li>
+                        <!-- Current: "bg-gray-50 text-orange-600", Default: "text-gray-700 hover:text-orange-600 hover:bg-gray-50" -->
+                        <a
+                          href="/settings"
+                          class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                        >
+                          <svg
+                            class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            data-slot="icon"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                            />
+                          </svg>
+                          Dashboard
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/settings/users"
+                          class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                        >
+                          <svg
+                            class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            data-slot="icon"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"
+                            />
+                          </svg>
+                          Users
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/settings/folders"
+                          class="group flex gap-x-3 rounded-md bg-gray-50 p-2 text-sm font-semibold leading-6 text-orange-600"
+                        >
+                          <svg
+                            class="h-6 w-6 shrink-0 text-orange-600"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            data-slot="icon"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z"
+                            />
+                          </svg>
+                          Folders
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/settings/cache"
+                          class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                        >
+                          <svg
+                            class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            data-slot="icon"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5m8.25 3v6.75m0 0l-3-3m3 3l3-3M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"
+                            />
+                          </svg>
+                          Conversion Cache
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/settings/licences"
+                          class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                        >
+                          <svg
+                            class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            data-slot="icon"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"
+                            />
+                          </svg>
+                          Licences
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/settings/logs"
+                          class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z"
+                            />
+                          </svg>
+                          Logs
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="/settings/restapi-test"
+                          class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M5.25 14.25h13.5m-13.5 0a3 3 0 0 1-3-3m3 3a3 3 0 1 0 0 6h13.5a3 3 0 1 0 0-6m-16.5-3a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3m-19.5 0a4.5 4.5 0 0 1 .9-2.7L5.737 5.1a3.375 3.375 0 0 1 2.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 0 1 .9 2.7m0 0a3 3 0 0 1-3 3m0 3h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Zm-3 6h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Z"
+                            />
+                          </svg>
+                          Rest API Test
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="/settings/config"
+                          class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z"
+                            />
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                            />
+                          </svg>
+                          Config
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/settings/doctor"
+                          class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                        >
+                          <svg
+                            class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            data-slot="icon"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z"
+                            />
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z"
+                            />
+                          </svg>
+                          CADViewer Doctor
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="text-xs font-semibold leading-6 text-gray-400">
+                      Useful Links
+                    </div>
+                    <ul role="list" class="-mx-2 mt-2 space-y-1">
+                      <li>
+                        <!-- Current: "bg-gray-50 text-orange-600", Default: "text-gray-700 hover:text-orange-600 hover:bg-gray-50" -->
+                        <a
+                          href="https://www.cadviewer.com/"
+                          target="_blank"
+                          class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                        >
+                          <span
+                            class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-white text-[0.625rem] font-medium text-gray-400 group-hover:border-orange-600 group-hover:text-orange-600"
+                            >C</span
+                          >
+                          <span class="truncate">CADViewer</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.tailormade.com/"
+                          target="_blank"
+                          class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                        >
+                          <span
+                            class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-white text-[0.625rem] font-medium text-gray-400 group-hover:border-orange-600 group-hover:text-orange-600"
+                            >T</span
+                          >
+                          <span class="truncate">Tailormade</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://store.cadviewer.com/"
+                          target="_blank"
+                          class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                        >
+                          <span
+                            class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-white text-[0.625rem] font-medium text-gray-400 group-hover:border-orange-600 group-hover:text-orange-600"
+                            >S</span
+                          >
+                          <span class="truncate">CADViewer Store</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+              <div class="mt-auto">
+                <div class="bg-gray-100 rounded-lg p-3 shadow-sm mb-3">
+                  <div class="flex justify-between items-center mb-2">
+                    <div class="text-sm text-gray-600 font-medium">
+                      Conversion Cache
+                    </div>
+                    <button
+                      onclick="flushCache()"
+                      class="text-xs bg-orange-600 text-white px-2 py-1 rounded hover:bg-orange-500"
+                    >
+                      Flush Cache
+                    </button>
+                  </div>
+                  <div class="space-y-1">
+                    <div class="flex justify-between items-center">
+                      <span class="text-sm text-gray-500">Files:</span>
+                      <span class="text-sm text-gray-800 cache-file-count"
+                        >-</span
+                      >
+                    </div>
+                    <div class="flex justify-between items-center">
+                      <span class="text-sm text-gray-500">Size:</span>
+                      <span class="text-sm text-gray-800 cache-size">-</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-3 shadow-sm">
+                  <div class="text-sm text-gray-600 font-medium">Version</div>
+                  <div class="text-base text-gray-800">{version}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Static sidebar for desktop -->
+      <div
+        class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col"
+      >
+        <!-- Sidebar component, swap this element with another sidebar if you like -->
+        <div
+          class="flex grow flex-col gap-y-5 overflow-y-auto border-r border-gray-200 bg-white px-6 h-full pb-4"
+        >
+          <div class="flex h-16 shrink-0 items-center">
+            <img
+              class="h-12 w-auto"
+              src="https://www.cadviewer.com/images/cadviewer/cv-logo-smaller.png"
+              alt="CADViewer"
+            />
+          </div>
+          <nav class="flex flex-1 flex-col">
+            <ul role="list" class="flex flex-1 flex-col gap-y-7">
+              <li>
+                <ul role="list" class="-mx-2 space-y-1">
+                  <li>
+                    <!-- Current: "bg-gray-50 text-orange-600", Default: "text-gray-700 hover:text-orange-600 hover:bg-gray-50" -->
+                    <a
+                      href="/settings"
+                      class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                    >
+                      <svg
+                        class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                        />
+                      </svg>
+                      Dashboard
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/settings/users"
+                      class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                    >
+                      <svg
+                        class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"
+                        />
+                      </svg>
+                      Users
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/settings/folders"
+                      class="group flex gap-x-3 rounded-md bg-gray-50 p-2 text-sm font-semibold leading-6 text-orange-600"
+                    >
+                      <svg
+                        class="h-6 w-6 shrink-0 text-orange-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z"
+                        />
+                      </svg>
+                      Folders
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/settings/cache"
+                      class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                    >
+                      <svg
+                        class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5m8.25 3v6.75m0 0l-3-3m3 3l3-3M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"
+                        />
+                      </svg>
+                      Conversion Cache
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/settings/licences"
+                      class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                    >
+                      <svg
+                        class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"
+                        />
+                      </svg>
+                      Licences
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/settings/logs"
+                      class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z"
+                        />
+                      </svg>
+                      Logs
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="/settings/restapi-test"
+                      class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M5.25 14.25h13.5m-13.5 0a3 3 0 0 1-3-3m3 3a3 3 0 1 0 0 6h13.5a3 3 0 1 0 0-6m-16.5-3a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3m-19.5 0a4.5 4.5 0 0 1 .9-2.7L5.737 5.1a3.375 3.375 0 0 1 2.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 0 1 .9 2.7m0 0a3 3 0 0 1-3 3m0 3h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Zm-3 6h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Z"
+                        />
+                      </svg>
+                      Rest API Test
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="/settings/config"
+                      class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z"
+                            />
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                            />
+                          </svg>
+                          Config
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/settings/doctor"
+                          class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                        >
+                          <svg
+                            class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-orange-600"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            data-slot="icon"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z"
+                            />
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z"
+                            />
+                          </svg>
+                          CADViewer Doctor
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="text-xs font-semibold leading-6 text-gray-400">
+                      Useful Links
+                    </div>
+                    <ul role="list" class="-mx-2 mt-2 space-y-1">
+                      <li>
+                        <!-- Current: "bg-gray-50 text-orange-600", Default: "text-gray-700 hover:text-orange-600 hover:bg-gray-50" -->
+                        <a
+                          href="https://www.cadviewer.com/"
+                          target="_blank"
+                          class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                        >
+                          <span
+                            class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-white text-[0.625rem] font-medium text-gray-400 group-hover:border-orange-600 group-hover:text-orange-600"
+                            >C</span
+                          >
+                          <span class="truncate">CADViewer</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.tailormade.com/"
+                          target="_blank"
+                          class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                        >
+                          <span
+                            class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-white text-[0.625rem] font-medium text-gray-400 group-hover:border-orange-600 group-hover:text-orange-600"
+                            >T</span
+                          >
+                          <span class="truncate">Tailormade</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://store.cadviewer.com/"
+                          target="_blank"
+                          class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                        >
+                          <span
+                            class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-white text-[0.625rem] font-medium text-gray-400 group-hover:border-orange-600 group-hover:text-orange-600"
+                            >S</span
+                          >
+                          <span class="truncate">CADViewer Store</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="mt-auto">
+            <div class="bg-gray-100 rounded-lg p-3 shadow-sm mb-3">
+              <div class="flex justify-between items-center mb-2">
+                <div class="text-sm text-gray-600 font-medium">
+                  Conversion Cache
+                </div>
+                <button
+                  onclick="flushCache()"
+                  class="text-xs bg-orange-600 text-white px-2 py-1 rounded hover:bg-orange-500"
+                >
+                  Flush Cache
+                </button>
+              </div>
+              <div class="space-y-1">
+                <div class="flex justify-between items-center">
+                  <span class="text-sm text-gray-500">Files:</span>
+                  <span class="text-sm text-gray-800 cache-file-count">-</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-sm text-gray-500">Size:</span>
+                  <span class="text-sm text-gray-800 cache-size">-</span>
+                </div>
+              </div>
+            </div>
+            <div class="bg-gray-100 rounded-lg p-3 shadow-sm">
+              <div class="text-sm text-gray-600 font-medium">Version</div>
+              <div class="text-base text-gray-800">{version}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:pl-72">
+        <div
+          class="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4 bg-white px-4 sm:gap-x-6 sm:px-6 lg:px-8"
+        >
+          <button type="button" class="-m-2.5 p-2.5 text-gray-700 lg:hidden">
+            <span class="sr-only">Open sidebar</span>
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+              data-slot="icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+
+          <!-- Separator -->
+          <div class="h-6 w-px bg-gray-200 lg:hidden" aria-hidden="true"></div>
+          <h1 class="text-xl font-semibold leading-6 text-gray-900">Folders</h1>
+        </div>
+
+        <main class="px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between items-center">
+            <nav
+              class="py-4 flex-1"
+              aria-label="Breadcrumb"
+              id="breadcrumb"
+            ></nav>
+            <button
+              type="button"
+              onclick="openModalUpload()"
+              class="ml-1 rounded bg-orange-600 px-2 py-1 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600 min-w-16"
+            >
+              Upload
+            </button>
+            <button
+              type="button"
+              onclick="openModalNewFolder()"
+              class="ml-1 rounded bg-orange-600 px-2 py-1 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600 min-w-16"
+            >
+              New folder
+            </button>
+          </div>
+          <div class="grid grid-cols-5 gap-4 pb-4" id="folders-view"></div>
+        </main>
+      </div>
+    </div>
+    <div
+      class="bg-black opacity-50 fixed top-0 bottom-0 left-0 right-0 hidden"
+      style="z-index: 51"
+      id="backdrop"
+    ></div>
+    <div
+      id="modal"
+      class="relative hidden"
+      style="z-index: 500"
+      aria-labelledby="modal-title"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div
+        id="modal-backdrop"
+        class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+        aria-hidden="true"
+      ></div>
+      <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+        <div
+          class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0"
+        >
+          <div
+            id="modal-panel"
+            class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg"
+          >
+            <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+              <div class="sm:flex sm:items-start">
+                <div
+                  class="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-orange-100 sm:mx-0 sm:h-10 sm:w-10"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 text-orange-600"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left w-full"
+                >
+                  <h3
+                    class="text-base font-semibold leading-6 text-gray-900"
+                    id="modal-title"
+                  >
+                    Rename Folder
+                  </h3>
+                  <div class="mt-2">
+                    <div class="w-full">
+                      <label
+                        for="folder-name"
+                        class="block text-sm font-medium leading-6 text-gray-900"
+                        id="folder-name-label"
+                        >Folder name</label
+                      >
+                      <div class="mt-2 w-full">
+                        <input
+                          type="text"
+                          name="value"
+                          id="folder-name"
+                          class="block w-full rounded-md border-0 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6"
+                          placeholder=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6"
+            >
+              <button
+                type="button"
+                id="modal-button-save"
+                class="inline-flex w-full justify-center rounded-md bg-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 sm:ml-3 sm:w-auto"
+              >
+                Save
+              </button>
+              <button
+                type="button"
+                class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto"
+                onclick="closeModal()"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--        Modal for add new folder -->
+    <div
+      id="modal-new-folder"
+      class="relative hidden"
+      style="z-index: 500"
+      aria-labelledby="modal-title"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div
+        id="modal-new-folder-backdrop"
+        class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+        aria-hidden="true"
+      ></div>
+      <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+        <div
+          class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0"
+        >
+          <div
+            id="modal-new-folder-panel"
+            class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg"
+          >
+            <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+              <div class="sm:flex sm:items-start">
+                <div
+                  class="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-orange-100 sm:mx-0 sm:h-10 sm:w-10"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 text-orange-600"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 10.5v6m3-3H9m4.06-7.19-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left w-full"
+                >
+                  <h3
+                    class="text-base font-semibold leading-6 text-gray-900"
+                    id="modal-new-folder-title"
+                  >
+                    Add new Folder
+                  </h3>
+                  <div class="mt-2">
+                    <div class="w-full">
+                      <label
+                        for="folder-name"
+                        class="block text-sm font-medium leading-6 text-gray-900"
+                        id="new-folder-name-label"
+                        >Folder name</label
+                      >
+                      <div class="mt-2 w-full">
+                        <input
+                          type="text"
+                          name="value"
+                          id="new-folder-name"
+                          class="block w-full rounded-md border-0 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6"
+                          placeholder=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6"
+            >
+              <button
+                type="button"
+                id="modal-new-folder-button-save"
+                class="inline-flex w-full justify-center rounded-md bg-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 sm:ml-3 sm:w-auto"
+              >
+                Save
+              </button>
+              <button
+                type="button"
+                class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto"
+                onclick="closeModalNewFolder()"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--        Upload files modal-->
+    <div
+      id="modal-upload"
+      class="relative hidden"
+      style="z-index: 500"
+      aria-labelledby="modal-title"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div
+        id="modal-upload-backdrop"
+        class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+        aria-hidden="true"
+      ></div>
+      <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+        <div
+          class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0"
+        >
+          <div
+            id="modal-upload-panel"
+            class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg"
+          >
+            <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+              <div class="flex gap-2 items-center">
+                <div
+                  class="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-orange-100 sm:mx-0 sm:h-10 sm:w-10"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 text-orange-600"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5m-13.5-9L12 3m0 0 4.5 4.5M12 3v13.5"
+                    />
+                  </svg>
+                </div>
+                <h3
+                  class="text-base font-semibold leading-6 text-gray-900"
+                  id="modal-upload-title"
+                >
+                  Upload files
+                </h3>
+              </div>
+              <div class="mt-4 text-center sm:mt-0 sm:text-left w-full">
+                <div class="mt-2">
+                  <div class="w-full bg-gray-50 p-2 rounded-lg">
+                    <div
+                      id="dropzone"
+                      class="w-full max-w-xl mx-auto p-8 border-2 border-dashed border-gray-300 rounded-lg text-center transition-all duration-300 hover:border-orange-500"
+                    >
+                      <input
+                        type="file"
+                        id="fileInput"
+                        multiple
+                        class="hidden"
+                      />
+                      <div id="dropText" class="text-gray-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                        </svg>
+                        <p class="mt-1 text-sm font-medium text-gray-900">Drag and drop files here</p>
+                        <p class="mt-1 text-xs text-gray-500">or</p>
+                        <button
+                          id="browseBtn"
+                          class="mt-2 inline-flex items-center px-3 py-2 border border-transparent shadow-sm text-sm leading-4 font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700 focus:outline-none"
+                        >
+                          <svg class="-ml-0.5 mr-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13" />
+                          </svg>
+                          Browse
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div id="upload-queue" class="mt-4 space-y-2 max-h-60 overflow-y-auto">
+                    <!-- Upload items will be added here dynamically -->
+                  </div>
+                  
+                  <div id="upload-stats" class="mt-4 flex justify-between text-sm text-gray-500 hidden">
+                    <div>
+                      <span id="upload-completed">0</span>/<span id="upload-total">0</span> completed
+                    </div>
+                    <div>
+                      <span id="upload-progress">0%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+              <button
+                type="button"
+                id="uploadAllBtn"
+                class="inline-flex w-full justify-center rounded-md bg-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 sm:ml-3 sm:w-auto hidden"
+              >
+                Upload all
+              </button>
+              <button
+                type="button"
+                class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto"
+                onclick="closeModalUpload()"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--        Rest api action -->
+    <div
+      id="modal-restapi"
+      class="relative hidden"
+      style="z-index: 500"
+      aria-labelledby="modal-title"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div
+        id="modal-restapi-backdrop"
+        class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+        aria-hidden="true"
+      ></div>
+      <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+        <div
+          class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0"
+        >
+          <div
+            id="modal-restapi-panel"
+            class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg"
+          >
+            <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+              <div class="sm:flex sm:items-start">
+                <div
+                  class="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-orange-100 sm:mx-0 sm:h-10 sm:w-10"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6 text-orange-600"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left w-full"
+                >
+                  <div class="flex justify-between w-full mb-2">
+                    <h3
+                      class="text-base font-semibold leading-6 text-gray-900"
+                      id="modal-restapi-title"
+                    ></h3>
+                    <span
+                      class="text-red-500 cursor-pointer"
+                      onclick="closeModalRestApi()"
+                      >Cancel</span
+                    >
+                  </div>
+                  <div class="mt-2">
+                    <p
+                      class="text-sm text-gray-500"
+                      id="modal-restapi-description"
+                    ></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6"
+            >
+              <button
+                type="button"
+                id="edit-query"
+                class="flex gap-2 items-center w-full justify-center rounded-md bg-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 sm:ml-3 sm:w-auto"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-6 w-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                  />
+                </svg>
+                Edit query
+              </button>
+              <button
+                type="button"
+                id="execute-directly"
+                class="mt-3 flex gap-2 items-center w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-6 w-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"
+                  />
+                </svg>
+                <span>Execute directly</span>
+                <svg
+                  id="execute-directly-loader"
+                  class="hidden animate-spin h-5 w-5 text-gray-900"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <circle
+                    class="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    stroke-width="4"
+                  ></circle>
+                  <path
+                    class="opacity-75"
+                    fill="currentColor"
+                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal VizQuery -->
+    <div id="modal-vizquery" class="relative hidden" style="z-index: 500" aria-labelledby="modal-vizquery-title" role="dialog" aria-modal="true">
+      <div id="modal-vizquery-backdrop" class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity opacity-0"></div>
+      <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+        <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+          <div id="modal-vizquery-panel" class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95">
+            <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+              <div class="sm:flex sm:items-start">
+                <div class="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-orange-100 sm:mx-0 sm:h-10 sm:w-10">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6 text-orange-600">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 01-.657.643 48.39 48.39 0 01-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 01-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 00-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 01-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 00.657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 01-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 005.427-.63 48.05 48.05 0 00.582-4.717.532.532 0 00-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.96.401v0a.656.656 0 00.658-.663 48.422 48.422 0 00-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 01-.61-.58v0z" />
+                  </svg>
+                </div>
+                <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left w-full">
+                  <h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-vizquery-title">Batch process VizQuery</h3>
+                  <div class="mt-2">
+                    <p class="text-sm text-gray-500" id="modal-vizquery-description">Configure and run VizQuery process on this DWG file.</p>
+                  </div>
+                  <div class="mt-4">
+                    <input type="hidden" id="vizquery-params" value='{"action":{"initialization":true,"update":true,"extraction":true,"createDrawing":false},"jsonConfigFilename":"config.json","contentLocation":""}'>
+                    <div id="modal-form-vizquery" class="space-y-4">
+                      <!-- Form will be inserted here by JS -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+              <button type="button" onclick="executeVizQuery()" id="vizquery-execute-btn" class="inline-flex items-center justify-center w-full rounded-md bg-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 sm:ml-3 sm:w-auto">
+                <span>Execute</span>
+              </button>
+              <button type="button" onclick="closeModalVizquery()" id="vizquery-cancel-btn" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto">
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let folders = [];
+      let breadcrumbs = [
+        {
+          index: 0,
+          path: "index",
+          name: `
+                    <svg class="w-5 h-5 shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M9.293 2.293a1 1 0 0 1 1.414 0l7 7A1 1 0 0 1 17 11h-1v6a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-6H3a1 1 0 0 1-.707-1.707l7-7Z" clip-rule="evenodd" />
+                    </svg>
+                `,
+        },
+      ];
+
+      function renderBreadcrumb() {
+        const breadcrumbView = document.getElementById("breadcrumb");
+
+        breadcrumbView.innerHTML = `
+                    <ol role="list" class="flex items-center space-x-4">
+                        ${breadcrumbs
+                          .map((breadcrumb, index) => {
+                            if (index === 0) {
+                              return `
+                    <li class="cursor-pointer">
+                        <div>
+                            <a href="#" onclick="openBreadcrumb(${index})" class="text-gray-400 hover:text-gray-500">
+                                ${breadcrumb.name}
+                            </a>
+                        </div>
+                    </li>`;
+                            } else {
+                              return `
+                    <li class="${
+                      index === breadcrumbs.length - 1 ? "" : "cursor-pointer"
+                    }">
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 shrink-0 text-gray-300" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+                            </svg>
+                            <a href="#" onclick="${
+                              index === breadcrumbs.length - 1
+                                ? ""
+                                : `openBreadcrumb(${index})`
+                            }" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">${
+                                breadcrumb.name
+                              }</a>
+                        </div>
+                    </li>
+                `;
+                            }
+                          })
+                          .join("")}
+                    </ol>
+                `;
+      }
+
+      async function getFoldersList() {
+        try {
+          const response = await fetch("/settings/folders", {
+            method: "POST",
+          });
+
+          if (response.ok) {
+            const data = await response.json();
+            folders = data;
+            if (breadcrumbs.length > 1) {
+              let tmpFolders = folders;
+              for (let i = 1; i < breadcrumbs.length; i++) {
+                tmpFolders =
+                  tmpFolders.find(
+                    (folder) => folder.path === breadcrumbs[i].path
+                  )?.sub_dirs ?? [];
+              }
+              renderFolders(tmpFolders);
+            } else {
+              renderFolders(folders);
+            }
+            renderBreadcrumb();
+            return data;
+          } else if (response.status === 404) {
+            vanillaToast.warning(
+              "Base folder not exists, please verify your configuration.",
+              { duration: 5000 }
+            );
+          } else {
+            vanillaToast.error("Failed to retrieve folders list.", {
+              duration: 5000,
+            });
+          }
+        } catch (error) {
+          console.error("Error:", error);
+          vanillaToast.error("An error occurred while getting folders list.", {
+            duration: 5000,
+          });
+        }
+      }
+
+      function evaluateIcon(filename, is_dir) {
+        if (is_dir) return dirIcon;
+        else if (filename.toLocaleLowerCase().endsWith(".json"))
+          return jsonIcon;
+        else if (filename.toLocaleLowerCase().endsWith(".dwg")) return dwgIcon;
+        else if (filename.toLocaleLowerCase().endsWith(".dxf")) return dxfIcon;
+        else if (filename.toLocaleLowerCase().endsWith(".dwf")) return dwfIcon;
+        else if (filename.toLocaleLowerCase().endsWith(".dgn")) return dgnIcon;
+        else if (filename.toLocaleLowerCase().endsWith(".tiff"))
+          return tiffIcon;
+        else if (filename.toLocaleLowerCase().endsWith(".tif")) return tifIcon;
+        else if (filename.toLocaleLowerCase().endsWith(".pdf")) return pdfIcon;
+        else if (
+          filename.toLocaleLowerCase().endsWith(".svg") ||
+          filename.toLocaleLowerCase().endsWith(".svgz")
+        )
+          return svgIcon;
+        else if (filename.toLocaleLowerCase().endsWith(".gif")) return gifIcon;
+        else if (
+          filename.toLocaleLowerCase().endsWith(".jpg") ||
+          filename.toLocaleLowerCase().endsWith(".jpeg")
+        )
+          return jpgIcon;
+        else if (filename.toLocaleLowerCase().endsWith(".png")) return pngIcon;
+        else if (filename.toLocaleLowerCase().endsWith(".bmp")) return bmpIcon;
+        else if (
+          filename.toLocaleLowerCase().endsWith(".xls") ||
+          filename.toLocaleLowerCase().endsWith(".xlsx") ||
+          filename.toLocaleLowerCase().endsWith(".csv")
+        )
+          return csvIcon;
+        else if (filename.toLocaleLowerCase().endsWith(".pcf")) return pcfIcon;
+        else return unkownIcon;
+      }
+
+      function openBreadcrumb(index) {
+        breadcrumbs = breadcrumbs.slice(0, index + 1);
+        let tmpFolders = folders;
+        for (let i = 1; i < breadcrumbs.length; i++) {
+          tmpFolders =
+            tmpFolders.find((folder) => folder.path === breadcrumbs[i].path)
+              ?.sub_dirs ?? [];
+        }
+        renderFolders(tmpFolders);
+        renderBreadcrumb();
+      }
+
+      function openFolder(folder, index, path) {
+        breadcrumbs.push({ index: index, name: folder, path });
+        console.log(breadcrumbs, path);
+        let tmpFolders = folders;
+        for (let i = 1; i < breadcrumbs.length; i++) {
+          tmpFolders =
+            tmpFolders.find(
+              (folder) =>
+                folder.path.replaceAll(`\\`, "") ===
+                breadcrumbs[i].path.replaceAll(`\\`, "")
+            )?.sub_dirs ?? [];
+        }
+        renderFolders(tmpFolders);
+        renderBreadcrumb();
+      }
+
+      function renderFolders(tmpFolders) {
+        const foldersView = document.getElementById("folders-view");
+
+        let innerHTML = "";
+
+        if (tmpFolders.length === 0) {
+          foldersView.classList.remove("grid", "grid-cols-5", "gap-4", "pb-4");
+          innerHTML = `
+                    <div class="w-full h-full flex justify-center items-center min-h-80" style="min-height: 500px; max-height: 80vh">
+                        <div class="text-center">
+                          <svg class="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m-9 1V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                          </svg>
+                          <h3 class="mt-2 text-sm font-semibold text-gray-900">No files or folders</h3>
+                          <p class="mt-1 text-sm text-gray-500">
+                            You can add new files or folders by clicking on upload or create new folder button below.
+                          </p>
+                          <div class="mt-6 flex gap-2 justify-center">
+
+                                <button type="button" onclick="openModalUpload()" class="ml-1 rounded bg-orange-600 px-2 py-1 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600 min-w-16">
+                                    Upload
+                                </button>
+                                <button type="button" onclick="openModalNewFolder()" class="ml-1 rounded bg-orange-600 px-2 py-1 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600 min-w-16">
+                                    New folder
+                                </button>
+                          </div>
+                        </div>
+                    </div>
+                    `;
+        } else {
+          foldersView.classList.add("grid", "grid-cols-5", "gap-4", "pb-4");
+        }
+
+        function renderFolderFile(folder, index) {
+          folder.normalName = folder.name;
+          folder.name = folder.name.toLocaleLowerCase();
+          // Todo add new config file for file action name, title action and description
+          const folderInnerHTML = `
+                <div onclick="${
+                  folder.isFolder
+                    ? `openFolder('${folder.normalName}', ${index}, '${folder.path}')`
+                    : null
+                }" class="relative rounded-lg border border-muted bg-gray-0 shadow-sm transition-all ${
+            folder.isFolder
+              ? "hover:-translate-y-1 hover:shadow-lg cursor-pointer folderActionParentBlock"
+              : ""
+          } dark:bg-gray-50 p-4">
+                    <div class="w-full flex justify-between">
+                        <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gray-100">
+                            <figure class="h-10 w-10 flex justify-center items-center overflow-hidden">
+                                ${evaluateIcon(folder.name, folder.isFolder)}
+                            </figure>
+                        </div>
+                        <div class="relative fileActionBlock">
+                            <button class="inline-flex items-center justify-center active:enabled:translate-y-px focus:outline-none focus-visible:ring-[1.8px] focus-visible:ring-offset-2 ring-offset-background transition-colors duration-200 p-1 w-9 h-9 rounded hover:text-orange focus-visible:ring-orange-lighter"
+                                type="button" title="More Options"
+                                onclick="function(event){event.preventDefault()}">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" class="h-[18px] w-[18px] text-gray-500" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M156,128a28,28,0,1,1-28-28A28,28,0,0,1,156,128ZM128,76a28,28,0,1,0-28-28A28,28,0,0,0,128,76Zm0,104a28,28,0,1,0,28,28A28,28,0,0,0,128,180Z"></path>
+                                </svg>
+                            </button>
+                            <div  style="z-index: 52" class="absolute right-0 z-10 w-48 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none hidden">
+
+                              ${
+                                !folder.isFolder
+                                  ? `
+                                  <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                                    ${
+                                      folder.name.endsWith(".dwg") ||
+                                      folder.name.endsWith(".dxf") ||
+                                      folder.name.endsWith(".dwf") ||
+                                      folder.name.endsWith(".dgn") ||
+                                      folder.name.endsWith(".tiff") ||
+                                      folder.name.endsWith(".tif") ||
+                                      folder.name.endsWith(".svg") ||
+                                      folder.name.endsWith(".svgz")
+                                        ? `<a href="#" onclick="restApiActionClick('${folder.name}', '${folder.path}', 'jsonDataExtraction')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">JSON Data Extraction</a>`
+                                        : ""
+                                    }
+                                    ${
+                                      folder.name.endsWith(".dwg") ||
+                                      folder.name.endsWith(".dxf") ||
+                                      folder.name.endsWith(".dwf") ||
+                                      folder.name.endsWith(".dgn") ||
+                                      folder.name.endsWith(".tiff") ||
+                                      folder.name.endsWith(".tif")
+                                        ? `<a href="#" onclick="restApiActionClick('${folder.name}', '${folder.path}', 'dwgToSvg')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Conversion to SVG</a>`
+                                        : ""
+                                    }
+                                    ${
+                                      folder.name.endsWith(".dwg") ||
+                                      folder.name.endsWith(".dxf") ||
+                                      folder.name.endsWith(".dwf") ||
+                                      folder.name.endsWith(".dgn") ||
+                                      folder.name.endsWith(".tiff") ||
+                                      folder.name.endsWith(".tif") ||
+                                      folder.name.endsWith(".svg") ||
+                                      folder.name.endsWith(".svgz")
+                                        ? `<a href="#" onclick="restApiActionClick('${folder.name}', '${folder.path}', 'dwgToPdf')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Conversion to PDF</a>`
+                                        : ""
+                                    }
+                                    ${
+                                      folder.name.endsWith(".dwg") ||
+                                      folder.name.endsWith(".dxf") ||
+                                      folder.name.endsWith(".dwf") ||
+                                      folder.name.endsWith(".dgn") ||
+                                      folder.name.endsWith(".tiff") ||
+                                      folder.name.endsWith(".tif") ||
+                                      folder.name.endsWith(".svg") ||
+                                      folder.name.endsWith(".svgz")
+                                        ? `<a href="#" onclick="restApiActionClick('${folder.name}', '${folder.path}', 'displayDwg')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Display in CADViewer</a>`
+                                        : ""
+                                    }
+                                    ${
+                                      folder.name.endsWith(".dwg") ||
+                                      folder.name.endsWith(".dxf") ||
+                                      folder.name.endsWith(".dwf") ||
+                                      folder.name.endsWith(".dgn") ||
+                                      folder.name.endsWith(".tiff") ||
+                                      folder.name.endsWith(".tif") ||
+                                      folder.name.endsWith(".svg") ||
+                                      folder.name.endsWith(".svgz")
+                                        ? `<a href="#" onclick="restApiActionClick('${folder.name}', '${folder.path}', 'dwgToMultiple')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Split DWG ModelSpace</a>`
+                                        : ""
+                                    }
+                                    ${
+                                      folder.name.endsWith(".dwg")
+                                        ? `<a href="#" onclick="openVizQueryModal('${folder.normalName}', '${folder.path}')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Batch process VizQuery</a>`
+                                        : ""
+                                    }
+                                    <a href="#" onclick="downloadFile(event, '${
+                                      folder.path
+                                    }')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Download</a>
+                                    <a href="#" onclick="openModal(event, '${
+                                      folder.path
+                                    }', false)" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Rename</a>
+                                    <a href="#" onclick="deleteFileFolder(event, '${
+                                      folder.path
+                                    }')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Delete</a>
+                                  </div>
+                                `
+                                  : `
+                                  <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                                    <a href="#" onclick="openModal(event, '${folder.path}', true)" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Rename</a>
+                                    <a href="#" onclick="deleteFileFolder(event, '${folder.path}')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Delete</a>
+                                  </div>
+                                `
+                              }
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <h3 class="text-gray-900 font-bold text-base mb-2 break-all">${
+                          folder.normalName
+                        }</h3>
+                        <p class="text-gray-700 text-base">
+                            ${
+                              folder.isFolder
+                                ? `${folder.formatedSize} • ${folder.sub_dirs.length} files/dirs`
+                                : `${folder.formatedSize}`
+                            }
+                        </p>
+                    </div>
+                </div>
+            `;
+          innerHTML += folderInnerHTML;
+        }
+
+        const folders = tmpFolders.filter((folder) => folder.isFolder);
+        folders
+          .sort((a, b) =>
+            a.name.toLowerCase().localeCompare(b.name.toLowerCase())
+          )
+          .forEach(renderFolderFile);
+
+        const files = tmpFolders.filter((folder) => !folder.isFolder);
+        files
+          .sort((a, b) =>
+            a.name.toLowerCase().localeCompare(b.name.toLowerCase())
+          )
+          .forEach(renderFolderFile);
+
+        foldersView.innerHTML = innerHTML;
+        document.querySelectorAll(".fileActionBlock").forEach((block) => {
+          block.querySelector("button").addEventListener("click", (event) => {
+            event.stopPropagation();
+            block.querySelector(".hidden").classList.toggle("hidden");
+            document.querySelector("#backdrop").classList.remove("hidden");
+            document
+              .querySelectorAll(".folderActionParentBlock")
+              .forEach((block) => {
+                block.classList.remove(
+                  "hover:-translate-y-1",
+                  "hover:shadow-lg"
+                );
+              });
+          });
+        });
+      }
+
+      function closeBackdrop() {
+        document.querySelector("#backdrop").classList.add("hidden");
+        document.querySelectorAll(".fileActionBlock>div").forEach((block) => {
+          block.classList.add("hidden");
+        });
+        document
+          .querySelectorAll(".folderActionParentBlock")
+          .forEach((block) => {
+            block.classList.add("hover:-translate-y-1", "hover:shadow-lg");
+          });
+      }
+
+      function deleteFileFolder(event, path) {
+        event.preventDefault();
+        event.stopPropagation();
+        closeBackdrop();
+        // delete file/folder from post endpoint "/folders/delete"
+        fetch("/settings/folders/delete", {
+          method: "DELETE",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ path: path }),
+        })
+          .then((response) => {
+            if (response.ok) {
+              getFoldersList();
+              vanillaToast.success("File/Folder deleted successfully.", {
+                duration: 5000,
+              });
+            } else {
+              throw new Error("Error deleting file/folder");
+            }
+          })
+          .catch((error) => {
+            console.error("Error deleting file/folder:", error);
+            vanillaToast.error("Error deleting file/folder");
+          });
+      }
+
+      function downloadFile(event, path) {
+        event.preventDefault();
+        event.stopPropagation();
+        closeBackdrop();
+        // download file from post endpoint "/folders/download"
+        fetch("/settings/folders/download", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ path: path }),
+        })
+          .then((response) => {
+            if (response.ok) {
+              return response.blob();
+            } else {
+              throw new Error("Error downloading file");
+            }
+          })
+          .then((blob) => {
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = path.split("/").pop();
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            window.URL.revokeObjectURL(url);
+            vanillaToast.success("File downloaded successfully.", {
+              duration: 5000,
+            });
+          })
+          .catch((error) => {
+            console.error("Error downloading file:", error);
+            vanillaToast.error("Error downloading file");
+          });
+      }
+
+      function closeModalUpload() {
+        // Clear the upload queue
+        document.getElementById("upload-queue").innerHTML = "";
+        document.getElementById("upload-stats").classList.add("hidden");
+        document.getElementById("dropText").classList.remove("hidden");
+        document.getElementById("uploadAllBtn").classList.add("hidden");
+
+        document.body.classList.remove("overflow-hidden");
+        document.querySelector("html").classList.remove("overflow-hidden");
+        document.querySelector("body").classList.remove("overflow-hidden");
+        document.getElementById("modal-upload").classList.add("hidden");
+        document
+          .getElementById("modal-upload-backdrop")
+          .classList.remove("opacity-100");
+        document
+          .getElementById("modal-upload-backdrop")
+          .classList.add("opacity-0");
+        document
+          .getElementById("modal-upload-panel")
+          .classList.remove("opacity-100", "translate-y-0", "sm:scale-100");
+        document
+          .getElementById("modal-upload-panel")
+          .classList.add(
+            "opacity-0",
+            "translate-y-4",
+            "sm:translate-y-0",
+            "sm:scale-95"
+          );
+      }
+
+      function closeModal() {
+        document.body.classList.remove("overflow-hidden");
+        document.querySelector("html").classList.remove("overflow-hidden");
+        document.querySelector("body").classList.remove("overflow-hidden");
+        document.getElementById("modal").classList.add("hidden");
+        document
+          .getElementById("modal-backdrop")
+          .classList.remove("opacity-100");
+        document.getElementById("modal-backdrop").classList.add("opacity-0");
+        document
+          .getElementById("modal-panel")
+          .classList.remove("opacity-100", "translate-y-0", "sm:scale-100");
+        document
+          .getElementById("modal-panel")
+          .classList.add(
+            "opacity-0",
+            "translate-y-4",
+            "sm:translate-y-0",
+            "sm:scale-95"
+          );
+      }
+
+      function closeModalNewFolder() {
+        document.body.classList.remove("overflow-hidden");
+        document.querySelector("html").classList.remove("overflow-hidden");
+        document.querySelector("body").classList.remove("overflow-hidden");
+        document.getElementById("modal-new-folder").classList.add("hidden");
+        document
+          .getElementById("modal-new-folder-backdrop")
+          .classList.remove("opacity-100");
+        document
+          .getElementById("modal-new-folder-backdrop")
+          .classList.add("opacity-0");
+        document
+          .getElementById("modal-new-folder-panel")
+          .classList.remove("opacity-100", "translate-y-0", "sm:scale-100");
+        document
+          .getElementById("modal-new-folder-panel")
+          .classList.add(
+            "opacity-0",
+            "translate-y-4",
+            "sm:translate-y-0",
+            "sm:scale-95"
+          );
+      }
+
+      let currentDropzoneInstance = null; // Variable to hold the current instance
+
+      function openModalUpload() {
+        // Fetch upload configuration from server
+        fetch("/settings/folders/upload-config")
+          .then(response => response.json())
+          .then(config => {
+            // Destroy previous instance if exists
+            if (currentDropzoneInstance) {
+              currentDropzoneInstance.destroy();
+              currentDropzoneInstance = null;
+            }
+          
+            // Initialize the dropzone with server configurations
+            currentDropzoneInstance = new FileDropzone({
+              path: breadcrumbs
+                .map((breadcrumb, index) => (index === 0 ? "/" : breadcrumb.name))
+                .join("/"),
+              maxFileSize: config.maxFileSize,
+              allowedTypes: ["*"], // Allow all file types
+              maxConcurrentUploads: config.maxConcurrentUploads,
+              maxFiles: config.maxFiles
+            });
+
+            document.body.classList.add("overflow-hidden");
+            document.querySelector("html").classList.add("overflow-hidden");
+            document.querySelector("body").classList.add("overflow-hidden");
+            document.getElementById("modal-upload").classList.remove("hidden");
+            document
+              .getElementById("modal-upload-backdrop")
+              .classList.remove("opacity-0");
+            document
+              .getElementById("modal-upload-backdrop")
+              .classList.add("opacity-100");
+            document
+              .getElementById("modal-upload-panel")
+              .classList.remove(
+                "opacity-0",
+                "translate-y-4",
+                "sm:translate-y-0",
+                "sm:scale-95"
+              );
+            document
+              .getElementById("modal-upload-panel")
+              .classList.add("opacity-100", "translate-y-0", "sm:scale-100");
+          })
+          .catch(error => {
+            console.error("Error fetching upload configuration:", error);
+            vanillaToast.error("Failed to load upload configuration.", { duration: 3000 });
+            
+            // Fallback to default values
+            const dropzone = new FileDropzone({
+              path: breadcrumbs
+                .map((breadcrumb, index) => (index === 0 ? "/" : breadcrumb.name))
+                .join("/"),
+              maxFileSize: 50 * 1024 * 1024, // 50MB
+              allowedTypes: ["*"], // Allow all file types
+              maxConcurrentUploads: 3,
+              maxFiles: 10
+            });
+            
+            // Show modal
+            document.body.classList.add("overflow-hidden");
+            document.querySelector("html").classList.add("overflow-hidden");
+            document.querySelector("body").classList.add("overflow-hidden");
+            document.getElementById("modal-upload").classList.remove("hidden");
+            document
+              .getElementById("modal-upload-backdrop")
+              .classList.remove("opacity-0");
+            document
+              .getElementById("modal-upload-backdrop")
+              .classList.add("opacity-100");
+            document
+              .getElementById("modal-upload-panel")
+              .classList.remove(
+                "opacity-0",
+                "translate-y-4",
+                "sm:translate-y-0",
+                "sm:scale-95"
+              );
+            document
+              .getElementById("modal-upload-panel")
+              .classList.add("opacity-100", "translate-y-0", "sm:scale-100");
+          });
+      }
+
+      function openModalNewFolder() {
+        document.getElementById("modal-new-folder-button-save").onclick =
+          async () => {
+            const folderName = document.getElementById("new-folder-name").value;
+            const path = breadcrumbs
+              .map((breadcrumb, index) => (index === 0 ? "/" : breadcrumb.name))
+              .join("/");
+
+            try {
+              const response = await fetch("/settings/folders/create", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ folderName, path }),
+              });
+
+              if (response.ok) {
+                closeModalNewFolder();
+                vanillaToast.success("Folder created successfully.", {
+                  duration: 5000,
+                });
+                await getFoldersList();
+              } else {
+                vanillaToast.error("Failed to create folder.", {
+                  duration: 5000,
+                });
+              }
+            } catch (error) {
+              console.error("Error:", error);
+              vanillaToast.error("An error occurred while creating folder.", {
+                duration: 5000,
+              });
+            }
+          };
+
+        document.getElementById("new-folder-name").value = "";
+        document.body.classList.add("overflow-hidden");
+        document.querySelector("html").classList.add("overflow-hidden");
+        document.querySelector("body").classList.add("overflow-hidden");
+        document.getElementById("modal-new-folder").classList.remove("hidden");
+        document
+          .getElementById("modal-new-folder-backdrop")
+          .classList.remove("opacity-0");
+        document
+          .getElementById("modal-new-folder-backdrop")
+          .classList.add("opacity-100");
+        document
+          .getElementById("modal-new-folder-panel")
+          .classList.remove(
+            "opacity-0",
+            "translate-y-4",
+            "sm:translate-y-0",
+            "sm:scale-95"
+          );
+        document
+          .getElementById("modal-new-folder-panel")
+          .classList.add("opacity-100", "translate-y-0", "sm:scale-100");
+      }
+
+      function openModal(event, path, isFolder) {
+        event.preventDefault();
+        event.stopPropagation();
+        closeBackdrop();
+        document.getElementById("modal-button-save").onclick = async () => {
+          const newValue = document.getElementById("folder-name").value;
+
+          try {
+            const response = await fetch("/settings/folders/update", {
+              method: "PUT",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({ newName: newValue, isFolder, path }),
+            });
+
+            if (response.ok) {
+              closeModal();
+              await getFoldersList();
+              vanillaToast.success(
+                isFolder
+                  ? "Folder renamed successfully."
+                  : "File renamed successfully.",
+                { duration: 5000 }
+              );
+            } else {
+              vanillaToast.error(
+                isFolder
+                  ? "Failed to rename folder."
+                  : "Failed to rename file.",
+                { duration: 5000 }
+              );
+            }
+          } catch (error) {
+            console.error("Error:", error);
+            vanillaToast.error(
+              isFolder
+                ? "An error occurred while renaming folder."
+                : "An error occurred while renaming file.",
+              { duration: 5000 }
+            );
+          }
+        };
+
+        document.getElementById("modal-title").innerText = isFolder
+          ? `Rename Folder - ${path.split("/").pop()}`
+          : `Rename File - ${path.split("/").pop()}`;
+        document.getElementById("folder-name").value = path.split("/").pop();
+        document.getElementById("folder-name-label").innerText = isFolder
+          ? "Folder Name"
+          : "File Name";
+        document.body.classList.add("overflow-hidden");
+        document.querySelector("html").classList.add("overflow-hidden");
+        document.querySelector("body").classList.add("overflow-hidden");
+        document.getElementById("modal").classList.remove("hidden");
+        document.getElementById("modal-backdrop").classList.remove("opacity-0");
+        document.getElementById("modal-backdrop").classList.add("opacity-100");
+        document
+          .getElementById("modal-panel")
+          .classList.remove(
+            "opacity-0",
+            "translate-y-4",
+            "sm:translate-y-0",
+            "sm:scale-95"
+          );
+        document
+          .getElementById("modal-panel")
+          .classList.add("opacity-100", "translate-y-0", "sm:scale-100");
+      }
+
+      // closeModal();
+
+      // on document load
+      document.addEventListener("DOMContentLoaded", () => {
+        getFoldersList();
+      });
+
+      document.querySelector("#backdrop").onclick = function () {
+        closeBackdrop();
+      };
+
+      class FileDropzone {
+        constructor(options = {}) {
+          this.dropzone = document.getElementById("dropzone");
+          this.fileInput = document.getElementById("fileInput");
+          this.browseBtn = document.getElementById("browseBtn");
+          this.dropText = document.getElementById("dropText");
+          this.uploadQueue = document.getElementById("upload-queue");
+          this.uploadStats = document.getElementById("upload-stats");
+          this.uploadAllBtn = document.getElementById("uploadAllBtn");
+          this.uploadCompletedCount = document.getElementById("upload-completed");
+          this.uploadTotalCount = document.getElementById("upload-total");
+          this.uploadProgressPercent = document.getElementById("upload-progress");
+
+          this.path = options.path || "/";
+          this.apiUrl = options.apiUrl || "/settings/folders/upload";
+          this.maxFileSize = options.maxFileSize || 50 * 1024 * 1024; // 50MB default
+          this.allowedTypes = options.allowedTypes || ["*"];
+          this.maxConcurrentUploads = options.maxConcurrentUploads || 3;
+          this.maxFiles = options.maxFiles || 10;
+
+          this.files = [];
+          this.activeUploads = 0;
+          this.completedUploads = 0;
+          
+          // Store bound event handlers for removal
+          this.boundHighlight = this.highlight.bind(this);
+          this.boundUnhighlight = this.unhighlight.bind(this);
+          this.boundHandleDrop = this.handleDrop.bind(this);
+          this.boundBrowseClick = () => this.fileInput.click();
+          this.boundHandleFiles = this.handleFiles.bind(this);
+          this.boundStartAllUploads = this.startAllUploads.bind(this);
+          
+          this.initEventListeners();
+        }
+
+        initEventListeners() {
+          // Drag events
+          ["dragenter", "dragover", "dragleave", "drop"].forEach(
+            (eventName) => {
+              this.dropzone.addEventListener(
+                eventName,
+                this.preventDefaults,
+                false
+              );
+            }
+          );
+
+          this.dropzone.addEventListener(
+            "dragenter",
+            this.boundHighlight // Use bound handler
+          );
+          this.dropzone.addEventListener(
+            "dragover",
+            this.boundHighlight // Use bound handler
+          );
+          this.dropzone.addEventListener(
+            "dragleave",
+            this.boundUnhighlight // Use bound handler
+          );
+          this.dropzone.addEventListener(
+            "drop",
+            this.boundHandleDrop // Use bound handler
+          );
+
+          // Click events
+          this.browseBtn.addEventListener("click", this.boundBrowseClick); // Use bound handler
+          this.fileInput.addEventListener(
+            "change",
+            this.boundHandleFiles // Use bound handler
+          );
+
+          // Upload all button
+          this.uploadAllBtn.addEventListener("click", this.boundStartAllUploads); // Use bound handler
+        }
+
+        preventDefaults(e) {
+          e.preventDefault();
+          e.stopPropagation();
+        }
+
+        highlight(e) {
+          this.dropzone.classList.add("border-orange-500", "bg-orange-50");
+        }
+
+        unhighlight(e) {
+          this.dropzone.classList.remove("border-orange-500", "bg-orange-50");
+        }
+
+        handleDrop(e) {
+          this.unhighlight();
+          const droppedFiles = e.dataTransfer.files;
+          this.addFiles(droppedFiles);
+        }
+
+        handleFiles(e) {
+          const selectedFiles = e.target.files;
+          this.addFiles(selectedFiles);
+          // Reset file input to allow selecting the same file again
+          this.fileInput.value = "";
+        }
+
+        addFiles(newFiles) {
+          const filesArray = Array.from(newFiles);
+          
+          // Check if adding these files would exceed the maximum
+          if (this.files.length >= this.maxFiles) {
+            vanillaToast.warning(`Maximum number of files (${this.maxFiles}) reached.`, { duration: 3000 });
+            return;
+          }
+          
+          // Calculate how many more files we can add
+          const remainingSlots = this.maxFiles - this.files.length;
+          const filesToProcess = filesArray.slice(0, remainingSlots);
+          
+          if (filesToProcess.length < filesArray.length) {
+            vanillaToast.warning(`Only ${remainingSlots} more files can be added. Maximum is ${this.maxFiles}.`, { duration: 3000 });
+          }
+          
+          for (const file of filesToProcess) {
+            if (this.validateFile(file)) {
+              const fileId = `file-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+              const fileObj = {
+                id: fileId,
+                file: file,
+                status: 'pending', // pending, uploading, completed, error
+                progress: 0,
+                error: null
+              };
+              
+              this.files.push(fileObj);
+              this.createFileItem(fileObj);
+            }
+          }
+          
+          this.updateStats();
+          this.showHideUploadAllButton();
+        }
+
+        validateFile(file) {
+          // Check file type if restrictions exist
+          if (this.allowedTypes[0] !== "*") {
+            const isValidType = this.allowedTypes.some((type) => {
+              if (type.endsWith("/*")) {
+                // Handle mime type patterns like "image/*"
+                const mainType = type.split("/")[0];
+                return file.type.startsWith(mainType + "/");
+              }
+              return file.type === type;
+            });
+
+            if (!isValidType) {
+              vanillaToast.warning(`File type not allowed: ${file.name}`, { duration: 3000 });
+              return false;
+            }
+          }
+
+          // Check file size
+          if (file.size > this.maxFileSize) {
+            vanillaToast.warning(`File too large: ${file.name} (Max: ${this.formatSize(this.maxFileSize)})`, { duration: 3000 });
+            return false;
+          }
+
+          // Check if file is already in queue
+          if (this.files.some(f => f.file.name === file.name && f.file.size === file.size)) {
+            vanillaToast.warning(`File already in queue: ${file.name}`, { duration: 3000 });
+            return false;
+          }
+
+          return true;
+        }
+
+        formatSize(bytes) {
+          if (bytes === 0) return '0 Bytes';
+          const k = 1024;
+          const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+          const i = Math.floor(Math.log(bytes) / Math.log(k));
+          return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+        }
+
+        createFileItem(fileObj) {
+          const { id, file, status } = fileObj;
+          
+          const fileItem = document.createElement('div');
+          fileItem.id = id;
+          fileItem.className = 'bg-white rounded-lg shadow-sm border border-gray-200 p-3 relative';
+          
+          // Get appropriate icon based on file type
+          let fileIcon = this.getFileIcon(file.name);
+          
+          fileItem.innerHTML = `
+            <div class="flex items-start">
+              <div class="flex-shrink-0 text-gray-400">
+                ${fileIcon}
+              </div>
+              <div class="ml-3 flex-1">
+                <div class="flex items-center justify-between">
+                  <p class="text-sm font-medium text-gray-900 truncate" title="${file.name}">${file.name}</p>
+                  <div class="flex items-center">
+                    <span class="text-xs text-gray-500">${this.formatSize(file.size)}</span>
+                    <button type="button" class="remove-file ml-2 text-gray-400 hover:text-red-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="mt-1 relative">
+                  <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                    <div class="file-progress h-full bg-orange-600 rounded-full" style="width: 0%"></div>
+                  </div>
+                </div>
+                <div class="mt-1 flex items-center justify-between">
+                  <div class="file-status text-xs ${status === 'pending' ? 'text-gray-500' : 'text-orange-600'}">
+                    ${this.getStatusText(status)}
+                  </div>
+                  <div class="file-actions">
+                    <button type="button" class="upload-file text-xs bg-orange-600 text-white px-2 py-1 rounded hover:bg-orange-500">
+                      Upload
+                    </button>
+                    <button type="button" class="retry-upload text-xs bg-orange-600 text-white px-2 py-1 rounded hover:bg-orange-500 hidden">
+                      Retry
+                    </button>
+                  </div>
+                </div>
+                <div class="file-error mt-1 text-xs text-red-500 hidden"></div>
+              </div>
+            </div>
+          `;
+          
+          // Add event listeners
+          const removeBtn = fileItem.querySelector('.remove-file');
+          removeBtn.addEventListener('click', () => this.removeFile(id));
+          
+          const uploadBtn = fileItem.querySelector('.upload-file');
+          uploadBtn.addEventListener('click', () => this.uploadFile(id));
+          
+          const retryBtn = fileItem.querySelector('.retry-upload');
+          retryBtn.addEventListener('click', () => this.retryUpload(id));
+          
+          this.uploadQueue.appendChild(fileItem);
+        }
+        
+        getFileIcon(filename) {
+          // Simple function to determine icon based on file extension
+          const ext = filename.split('.').pop().toLowerCase();
+          
+          if (['jpg', 'jpeg', 'png', 'gif', 'bmp'].includes(ext)) {
+            return `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>`;
+          } else if (['pdf'].includes(ext)) {
+            return `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+            </svg>`;
+          } else if (['dwg', 'dxf', 'dwf', 'dgn'].includes(ext)) {
+            return `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>`;
+          } else {
+            return `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+            </svg>`;
+          }
+        }
+        
+        getStatusText(status) {
+          switch (status) {
+            case 'pending': return 'Waiting';
+            case 'uploading': return 'Uploading...';
+            case 'completed': return 'Completed';
+            case 'error': return 'Error';
+            default: return status;
+          }
+        }
+
+        removeFile(id) {
+          const index = this.files.findIndex(file => file.id === id);
+          
+          if (index !== -1) {
+            // If file is uploading, we can't remove it
+            if (this.files[index].status === 'uploading') {
+              vanillaToast.info("Impossible to remove a file that is being uploaded.", { duration: 3000 });
+              return;
+            }
+            
+            this.files.splice(index, 1);
+            
+            // Remove from DOM
+            const fileItem = document.getElementById(id);
+            if (fileItem) {
+              fileItem.remove();
+            }
+            
+            this.updateStats();
+            this.showHideUploadAllButton();
+            
+            // If there was a completed upload, check if we can start more
+            if (this.activeUploads < this.maxConcurrentUploads) {
+              this.processNextInQueue();
+            }
+          }
+        }
+
+        updateStats() {
+          const total = this.files.length;
+          const completed = this.files.filter(file => file.status === 'completed').length;
+          const progress = total ? Math.round((completed / total) * 100) : 0;
+          
+          this.uploadCompletedCount.textContent = completed;
+          this.uploadTotalCount.textContent = total;
+          this.uploadProgressPercent.textContent = `${progress}%`;
+          
+          if (total > 0) {
+            this.uploadStats.classList.remove('hidden');
+          } else {
+            this.uploadStats.classList.add('hidden');
+          }
+        }
+
+        showHideUploadAllButton() {
+          const hasPendingFiles = this.files.some(file => file.status === 'pending' || file.status === 'error');
+          
+          if (hasPendingFiles) {
+            this.uploadAllBtn.classList.remove('hidden');
+          } else {
+            this.uploadAllBtn.classList.add('hidden');
+          }
+          
+          // If we have files, hide the dropzone text
+          if (this.files.length > 0) {
+            this.dropText.classList.add('hidden');
+          } else {
+            this.dropText.classList.remove('hidden');
+          }
+        }
+
+        startAllUploads() {
+          for (const fileObj of this.files) {
+            if (fileObj.status === 'pending' || fileObj.status === 'error') {
+              this.uploadFile(fileObj.id);
+            }
+          }
+        }
+
+        uploadFile(id) {
+          const fileObj = this.files.find(file => file.id === id);
+          
+          if (!fileObj || fileObj.status === 'uploading' || fileObj.status === 'completed') {
+            return;
+          }
+          
+          // If we're already at max concurrent uploads, queue this file
+          if (this.activeUploads >= this.maxConcurrentUploads) {
+            return;
+          }
+          
+          this.activeUploads++;
+          
+          // Update UI state
+          const fileItem = document.getElementById(id);
+          const statusElem = fileItem.querySelector('.file-status');
+          const progressElem = fileItem.querySelector('.file-progress');
+          const uploadBtn = fileItem.querySelector('.upload-file');
+          const retryBtn = fileItem.querySelector('.retry-upload');
+          const errorElem = fileItem.querySelector('.file-error');
+          
+          // Reset error state if retrying
+          errorElem.classList.add('hidden');
+          errorElem.textContent = '';
+          
+          // Update status
+          fileObj.status = 'uploading';
+          fileObj.progress = 0;
+          
+          statusElem.textContent = this.getStatusText(fileObj.status);
+          statusElem.classList.remove('text-gray-500', 'text-red-500');
+          statusElem.classList.add('text-orange-600');
+          
+          // Hide both buttons during upload
+          uploadBtn.classList.add('hidden');
+          retryBtn.classList.add('hidden');
+          
+          // Create FormData
+          const formData = new FormData();
+          formData.append("path", this.path);
+          formData.append("files", fileObj.file, fileObj.file.name);
+          
+          // Track upload progress
+          const xhr = new XMLHttpRequest();
+          
+          xhr.open("POST", this.apiUrl, true);
+          
+          xhr.upload.onprogress = (e) => {
+            if (e.lengthComputable) {
+              const percentComplete = Math.round((e.loaded / e.total) * 100);
+              fileObj.progress = percentComplete;
+              progressElem.style.width = `${percentComplete}%`;
+            }
+          };
+          
+          xhr.onload = () => {
+            if (xhr.status >= 200 && xhr.status < 300) {
+              // Success
+              fileObj.status = 'completed';
+              fileObj.progress = 100;
+              progressElem.style.width = '100%';
+              statusElem.textContent = this.getStatusText(fileObj.status);
+              statusElem.classList.remove('text-orange-600');
+              statusElem.classList.add('text-green-600');
+              
+              this.completedUploads++;
+            } else {
+              // Error
+              fileObj.status = 'error';
+              fileObj.error = `Erreur ${xhr.status}: ${xhr.statusText}`;
+              statusElem.textContent = this.getStatusText(fileObj.status);
+              statusElem.classList.remove('text-orange-600');
+              statusElem.classList.add('text-red-500');
+              
+              errorElem.textContent = fileObj.error;
+              errorElem.classList.remove('hidden');
+              
+              retryBtn.classList.remove('hidden');
+            }
+            
+            // Update stats and start next upload
+            this.activeUploads--;
+            this.updateStats();
+            this.showHideUploadAllButton();
+            this.processNextInQueue();
+            
+            // If this was the last file, refresh folder list
+            if (this.files.every(f => f.status === 'completed')) {
+              getFoldersList();
+              vanillaToast.success("All files have been uploaded successfully.", { duration: 3000 });
+            }
+          };
+          
+          xhr.onerror = () => {
+            // Network error
+            fileObj.status = 'error';
+            fileObj.error = "Network error during upload.";
+            statusElem.textContent = this.getStatusText(fileObj.status);
+            statusElem.classList.remove('text-orange-600');
+            statusElem.classList.add('text-red-500');
+            
+            errorElem.textContent = fileObj.error;
+            errorElem.classList.remove('hidden');
+            
+            retryBtn.classList.remove('hidden');
+            
+            this.activeUploads--;
+            this.updateStats();
+            this.showHideUploadAllButton();
+            this.processNextInQueue();
+          };
+          
+          xhr.send(formData);
+        }
+
+        retryUpload(id) {
+          this.uploadFile(id);
+        }
+
+        processNextInQueue() {
+          // If we have capacity and pending files, start uploading
+          if (this.activeUploads < this.maxConcurrentUploads) {
+            // Find next pending file
+            const nextFile = this.files.find(file => file.status === 'pending');
+            if (nextFile) {
+              this.uploadFile(nextFile.id);
+            }
+          }
+        }
+        
+        destroy() {
+          // Remove event listeners added in initEventListeners
+          ["dragenter", "dragover", "dragleave", "drop"].forEach(
+            (eventName) => {
+              this.dropzone.removeEventListener(
+                eventName,
+                this.preventDefaults,
+                false
+              );
+            }
+          );
+          this.dropzone.removeEventListener("dragenter", this.boundHighlight);
+          this.dropzone.removeEventListener("dragover", this.boundHighlight);
+          this.dropzone.removeEventListener("dragleave", this.boundUnhighlight);
+          this.dropzone.removeEventListener("drop", this.boundHandleDrop);
+          
+          this.browseBtn.removeEventListener("click", this.boundBrowseClick);
+          this.fileInput.removeEventListener("change", this.boundHandleFiles);
+          this.uploadAllBtn.removeEventListener("click", this.boundStartAllUploads);
+
+          // Clean up file items event listeners if necessary (though removing the item should handle this)
+          this.uploadQueue.innerHTML = ''; // Clear queue visually
+          this.files = []; // Clear internal file list
+          
+          console.log("FileDropzone instance destroyed");
+        }
+      }
+
+      function closeModalRestApi() {
+        document.body.classList.remove("overflow-hidden");
+        document.querySelector("html").classList.remove("overflow-hidden");
+        document.querySelector("body").classList.remove("overflow-hidden");
+        document.getElementById("modal-restapi").classList.add("hidden");
+        document
+          .getElementById("modal-restapi-backdrop")
+          .classList.remove("opacity-100");
+        document
+          .getElementById("modal-restapi-backdrop")
+          .classList.add("opacity-0");
+        document
+          .getElementById("modal-restapi-panel")
+          .classList.remove("opacity-100", "translate-y-0", "sm:scale-100");
+        document
+          .getElementById("modal-restapi-panel")
+          .classList.add(
+            "opacity-0",
+            "translate-y-4",
+            "sm:translate-y-0",
+            "sm:scale-95"
+          );
+      }
+
+      /**
+     Code from rest-api.html
+     */
+      const jsonParamsDefault = {
+        action: "data_extraction",
+        converter: "LinkList 2025",
+        version: "V25.00",
+        contentType: "file",
+        contentResponse: "stream",
+        contentFormat: "DWG",
+        contentUsername: "",
+        contentPassword: "",
+        userLabel: "fromMyApp",
+        leaveStreamOnServer: 0,
+        contentLocation: `${window.location.origin}/content/drawings/dwg/1st floor plan.dwg`,
+        parameters: [
+          { paramName: "json", paramValue: "" },
+          { paramName: "blocks", paramValue: "" },
+        ],
+      };
+      const svgParamsDefault = {
+        action: "svg_creation",
+        converter: "AutoXchange AX2025",
+        version: "V25.00",
+        contentType: "file",
+        contentResponse: "stream",
+        contentFormat: "DWG",
+        contentUsername: "",
+        contentPassword: "",
+        userLabel: "fromMyApp",
+        leaveStreamOnServer: 0,
+        contentLocation: `${window.location.origin}/content/drawings/dwg/1st floor plan.dwg`,
+        parameters: [
+          { paramName: "f", paramValue: "svg" },
+          { paramName: "model", paramValue: "" },
+          { paramName: "hlall", paramValue: "" },
+        ],
+      };
+      const pdfParamsDefault = {
+        action: "svg_creation",
+        converter: "AutoXchange AX2025",
+        version: "V25.00",
+        contentType: "file",
+        contentResponse: "stream",
+        contentFormat: "DWG",
+        contentUsername: "",
+        contentPassword: "",
+        userLabel: "fromMyApp",
+        leaveStreamOnServer: 0,
+        contentLocation: `${window.location.origin}/content/drawings/dwg/1st floor plan.dwg`,
+        parameters: [
+          { paramName: "f", paramValue: "pdf" },
+          { paramName: "model", paramValue: "" },
+        ],
+      };
+      const displayDwgParamsDefault = {
+        action: "cadviewer_display",
+        converter: "AutoXchange AX2025",
+        version: "V25.00",
+        contentType: "file",
+        contentResponse: "stream",
+        contentFormat: "DWG",
+        contentUsername: "",
+        contentPassword: "",
+        userLabel: "fromMyApp",
+        leaveStreamOnServer: 0,
+        contentLocation: `${window.location.origin}/content/drawings/dwg/1st floor plan.dwg`,
+        parameters: [
+          { paramName: "f", paramValue: "svg" },
+          { paramName: "model", paramValue: "" },
+          { paramName: "hlall", paramValue: "" },
+        ],
+      };
+      const splittingDwgParamsDefault = {
+        action: "data_extraction",
+        converter: "LinkList 2025",
+        version: "V25.00",
+        contentType: "file",
+        contentResponse: "stream",
+        contentFormat: "DWG",
+        contentUsername: "",
+        contentPassword: "",
+        userLabel: "fromMyApp",
+        leaveStreamOnServer: 0,
+        contentLocation:
+          "http://localhost:3000/content/drawings/dwg/1st floor plan.dwg",
+        parameters: [
+          {
+            paramName: "splity",
+            paramValue: "",
+          },
+        ],
+      };
+
+      function downloadBlob(blob, filename) {
+        // Create a URL for the blob
+        const url = window.URL.createObjectURL(blob);
+
+        // Create a temporary anchor element
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = filename; // Specify the file name for the download
+
+        // Append the anchor to the document and trigger a click
+        document.body.appendChild(a);
+        a.click();
+
+        // Remove the anchor from the document
+        document.body.removeChild(a);
+
+        // Revoke the object URL to release memory
+        window.URL.revokeObjectURL(url);
+      }
+
+      // get the blob of the url with fetch and download it
+      function downloadLink(url, filename) {
+        fetch(url)
+          .then((response) => response.blob())
+          .then((blob) => {
+            downloadBlob(blob, filename);
+          });
+      }
+
+      async function call_server_post(data_object, tms_rest_api_url_pw) {
+        const api_data = JSON.stringify(data_object);
+        console.log(api_data);
+        let status = "Unknown";
+
+        const filelist_data = {
+          request: api_data,
+        };
+
+        const response = await fetch(tms_rest_api_url_pw, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(filelist_data),
+        });
+        status = response.status;
+        const Api_response = await response.json();
+        console.log(
+          "call_server_post - SERVER RESPONSE POST: " +
+            JSON.stringify(Api_response)
+        );
+
+        let conversion_result = "";
+
+        try {
+          conversion_result = JSON.parse(Api_response);
+        } catch (err) {
+          console.log("Do not parse, so this is JSON:(" + err + ")");
+          conversion_result = Api_response;
+        }
+
+        let RESTcontent = conversion_result.contentStreamData;
+
+        // 9.46.3 remove garbage
+        RESTcontent = RESTcontent.replaceAll("//", "/");
+        RESTcontent = RESTcontent.replaceAll(":/", "://");
+
+        console.log("call_server_post: " + RESTcontent);
+
+        // Post Processing the return data
+        // window.open(RESTcontent);
+        return { status, response: Api_response };
+      }
+      /** End of that code*/
+
+      async function loadActionContentLocationParams(
+        actionName,
+        contentLocation
+      ) {
+        try {
+          const response = await fetch(
+            "/settings/restapi-test/parameters/search",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                actionName,
+                contentLocation,
+              }),
+            }
+          );
+          let data = await response.json();
+          if (response.status === 200) {
+            return data["parameters"];
+          } else {
+            console.error("Error:", data);
+            vanillaToast.error("An error occurred while loading parameters.", {
+              duration: 5000,
+            });
+            return [];
+          }
+        } catch (error) {
+          console.error("Error:", error);
+          vanillaToast.error("An error occurred while loading parameters.", {
+            duration: 5000,
+          });
+          return [];
+        }
+      }
+
+      function restApiActionClick(filename, path, action) {
+        closeBackdrop();
+        // list action: jsonDataExtraction, dwgToSvg, dwgToPdf, displayDwg, dwgToMultiple
+
+        let title = "";
+        switch (action) {
+          case "jsonDataExtraction":
+            title = "JSON Data Extraction";
+            break;
+          case "dwgToSvg":
+            title = "Conversion to SVG";
+            break;
+          case "dwgToPdf":
+            title = "Conversion to PDF";
+            break;
+          case "displayDwg":
+            title = "Display in CADViewer";
+            break;
+          case "dwgToMultiple":
+            title = "Split Modelspace in multiple files";
+            break;
+          default:
+            title = "Action";
+            break;
+        }
+
+        let description = "";
+        switch (action) {
+          case "jsonDataExtraction":
+            description = "Test POST Conversion Server - JSON Data Extraction";
+            break;
+          case "dwgToSvg":
+            description = "Test POST Conversion Server - Conversion to SVG";
+            break;
+          case "dwgToPdf":
+            description = "Test POST Conversion Server - Conversion to PDF";
+            break;
+          case "displayDwg":
+            description = "CADViewer Display";
+            break;
+          case "dwgToMultiple":
+            description = "Splitting of modelspace DWG file in multiple files";
+            break;
+          default:
+            description = "Action";
+            break;
+        }
+
+        document.getElementById("modal-restapi-title").innerText = title;
+        document.getElementById("modal-restapi-description").innerText =
+          description;
+
+        // enable button
+        document.getElementById("execute-directly").disabled = false;
+        document.getElementById("edit-query").disabled = false;
+
+        const jsonParams = jsonParamsDefault;
+        const svgParams = svgParamsDefault;
+        const pdfParams = pdfParamsDefault;
+        const displayDwgParams = displayDwgParamsDefault;
+        const splittingDwgParams = splittingDwgParamsDefault;
+
+        loadActionContentLocationParams(action, path).then((params) => {
+          if (params.length > 0) {
+            switch (action) {
+              case "jsonDataExtraction":
+                jsonParams.parameters = params;
+                break;
+              case "dwgToSvg":
+                svgParams.parameters = params;
+                break;
+              case "dwgToPdf":
+                pdfParams.parameters = params;
+                break;
+              case "displayDwg":
+                displayDwgParams.parameters = params;
+                break;
+              case "dwgToMultiple":
+                splittingDwgParams.parameters = params;
+                break;
+              default:
+                break;
+            }
+          }
+        });
+
+        document.getElementById("execute-directly").onclick = async () => {
+          // enable button
+          jsonParams.contentLocation = path;
+          svgParams.contentLocation = path;
+          pdfParams.contentLocation = path;
+          displayDwgParams.contentLocation = path;
+          splittingDwgParams.contentLocation = path;
+
+          document.getElementById("execute-directly").disabled = true;
+          document.getElementById("edit-query").disabled = true;
+          document
+            .getElementById("execute-directly-loader")
+            .classList.remove("hidden");
+
+          switch (action) {
+            case "jsonDataExtraction":
+              const { response } = await call_server_post(
+                jsonParams,
+                `${window.location.origin}/callapiconversion`
+              );
+              if (response.contentStreamData && response.tempFile) {
+                downloadLink(response.contentStreamData, response.tempFile);
+                vanillaToast.success("JSON data extracted successfully.", {
+                  duration: 5000,
+                });
+              } else {
+                vanillaToast.error("Failed to extract JSON data.", {
+                  duration: 5000,
+                });
+              }
+              break;
+            case "dwgToSvg":
+              const { response: responseSvg } = await call_server_post(
+                svgParams,
+                `${window.location.origin}/callapiconversion`
+              );
+              if (responseSvg.contentStreamData && responseSvg.tempFile) {
+                downloadLink(
+                  responseSvg.contentStreamData,
+                  responseSvg.tempFile
+                );
+                vanillaToast.success("DWG converted to SVG successfully.", {
+                  duration: 5000,
+                });
+              } else {
+                vanillaToast.error("Failed to convert DWG to SVG.", {
+                  duration: 5000,
+                });
+              }
+              break;
+            case "dwgToPdf":
+              const { response: responsePdf } = await call_server_post(
+                pdfParams,
+                `${window.location.origin}/callapiconversion`
+              );
+              if (responsePdf.contentStreamData && responsePdf.tempFile) {
+                downloadLink(
+                  responsePdf.contentStreamData,
+                  responsePdf.tempFile
+                );
+                vanillaToast.success("DWG converted to PDF successfully.", {
+                  duration: 5000,
+                });
+              } else {
+                vanillaToast.error("Failed to convert DWG to PDF.", {
+                  duration: 5000,
+                });
+              }
+              break;
+            case "displayDwg":
+              const { response: responseDisplayDwg } = await call_server_post(
+                displayDwgParams,
+                `${window.location.origin}/callapiconversion`
+              );
+              if (
+                responseDisplayDwg.contentStreamData &&
+                responseDisplayDwg.tempFile
+              ) {
+                window.open(responseDisplayDwg.contentStreamData, "_blank");
+                vanillaToast.success("DWG displayed successfully.", {
+                  duration: 5000,
+                });
+              } else {
+                vanillaToast.error("Failed to display DWG.", {
+                  duration: 5000,
+                });
+              }
+              break;
+            case "dwgToMultiple":
+              const { response: responseSplittingDwg } = await call_server_post(
+                splittingDwgParams,
+                `${window.location.origin}/callapiconversion`
+              );
+              if (
+                responseSplittingDwg.contentStreamData &&
+                responseSplittingDwg.tempFile
+              ) {
+                window.open(responseSplittingDwg.contentStreamData, "_blank");
+                vanillaToast.success("DWG splitted successfully.", {
+                  duration: 5000,
+                });
+              } else {
+                vanillaToast.error("Failed to split DWG.", { duration: 5000 });
+              }
+              break;
+            default:
+              vanillaToast.error("Action not found.", { duration: 5000 });
+              break;
+          }
+
+          closeModalRestApi();
+          document
+            .getElementById("execute-directly-loader")
+            .classList.add("hidden");
+        };
+
+        document.getElementById("edit-query").onclick = async () => {
+          const url = new URL(
+            window.location.origin +
+              "/settings/restapi-test" +
+              "?path=" +
+              path +
+              "&action=" +
+              action
+          );
+          // open in new tab
+          window.open(url, "_blank");
+          closeModalRestApi();
+        };
+
+        document.body.classList.add("overflow-hidden");
+        document.querySelector("html").classList.add("overflow-hidden");
+        document.querySelector("body").classList.add("overflow-hidden");
+        document.getElementById("modal-restapi").classList.remove("hidden");
+        document
+          .getElementById("modal-restapi-backdrop")
+          .classList.remove("opacity-0");
+        document
+          .getElementById("modal-restapi-backdrop")
+          .classList.add("opacity-100");
+        document
+          .getElementById("modal-restapi-panel")
+          .classList.remove(
+            "opacity-0",
+            "translate-y-4",
+            "sm:translate-y-0",
+            "sm:scale-95"
+          );
+        document
+          .getElementById("modal-restapi-panel")
+          .classList.add("opacity-100", "translate-y-0", "sm:scale-100");
+      }
+
+      // document.getElementById('refresh').addEventListener('click', () => {
+      //     getFoldersList();
+      // });
+
+      async function openVizQueryModal(filename, path) {
+        closeBackdrop();
+        
+        // reset cancel and execute button
+        document.getElementById('vizquery-cancel-btn').disabled = false;
+        document.getElementById('vizquery-execute-btn').disabled = false;
+        document.getElementById('vizquery-execute-btn').innerHTML = '<span>Execute</span>';
+
+        // Prepare default VizQuery parameters
+        const jsonData = {
+          filename: filename,
+          action: {
+            initialization: true,
+            update: false,
+            extraction: false,
+            createDrawing: false
+          },
+          jsonConfigFilename: filename.replace('.dwg', '.json'),
+          contentLocation: path
+        };
+        
+        // Update modal title based on the selected file
+        const modalTitle = document.getElementById('modal-vizquery-title');
+        if (modalTitle) {
+          modalTitle.textContent = `Batch process VizQuery - ${filename}`;
+        }
+
+        // Create base filename without extension
+        const baseName = filename.replace('.dwg', '');
+        
+        document.getElementById("vizquery-params").value = JSON.stringify(jsonData, null, 2);
+        
+        // Display modal form with checkboxes
+        const modalFormInnerHTML = `
+        <div id="vizquery-options">
+          <div class="mb-4">
+            <div class="mb-2 font-medium text-gray-700">Source file: <span class="text-orange-600">${filename}</span></div>
+            <div class="space-y-4">
+              <!-- Initialization Section -->
+              <div id="initialization-section" class="border border-gray-200 rounded-md p-3">
+                <div class="flex items-center mb-2">
+                  <input type="checkbox" id="initialization" name="initialization" checked class="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded accent-orange-600">
+                  <label for="initialization" class="ml-2 block text-sm font-medium text-gray-900">Initialization</label>
+                </div>
+                <div class="pl-6 space-y-3 initialization-options">
+                  <div>
+                    <label for="init-output-filename" class="block text-sm font-medium text-gray-700">Output Filename</label>
+                    <input type="text" id="init-output-filename" name="init-output-filename" value="${baseName}-temp-name.dwg" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-1 px-2 text-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500">
+                  </div>
+                  <div>
+                    <div class="flex justify-between items-center">
+                      <label for="init-config-filename" class="block text-sm font-medium text-gray-700">Configuration Filename</label>
+                      <div id="init-config-actions" class="hidden">
+                        <button type="button" class="text-xs text-blue-600 hover:text-blue-800 mx-1 view-config" data-target="init">View</button>/
+                        <button type="button" class="text-xs text-green-600 hover:text-green-800 mx-1 edit-config" data-target="init">Edit</button>/
+                        <button type="button" class="text-xs text-red-600 hover:text-red-800 mx-1 save-config" data-target="init">Save</button>
+                      </div>
+                    </div>
+                    <div class="flex mt-1">
+                      <input type="text" id="init-config-filename" name="init-config-filename" value="${baseName}-init.json" class="block w-full border border-gray-300 rounded-l-md shadow-sm py-1 px-2 text-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500">
+                      <label for="init-config-file" class="cursor-pointer inline-flex items-center px-3 py-1 border border-l-0 border-gray-300 shadow-sm text-sm font-medium rounded-r-md text-white bg-orange-600 hover:bg-orange-700 focus:outline-none">
+                        Load
+                        <input type="file" id="init-config-file" name="init-config-file" accept=".json" class="sr-only config-file-input" data-target="init">
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Update Section -->
+              <div id="update-section" class="border border-gray-200 rounded-md p-3">
+                <div class="flex items-center mb-2">
+                  <input type="checkbox" id="update" name="update" class="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded accent-orange-600">
+                  <label for="update" class="ml-2 block text-sm font-medium text-gray-900">Update</label>
+                </div>
+                <div class="pl-6 space-y-3 update-options hidden">
+                  <div>
+                    <label for="update-output-filename" class="block text-sm font-medium text-gray-700">Output Filename</label>
+                    <input type="text" id="update-output-filename" name="update-output-filename" value="${baseName}-new.dwg" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-1 px-2 text-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500">
+                  </div>
+                  <div>
+                    <div class="flex justify-between items-center">
+                      <label for="update-config-filename" class="block text-sm font-medium text-gray-700">Configuration Filename</label>
+                      <div id="update-config-actions" class="hidden">
+                        <button type="button" class="text-xs text-blue-600 hover:text-blue-800 mx-1 view-config" data-target="update">View</button>/
+                        <button type="button" class="text-xs text-green-600 hover:text-green-800 mx-1 edit-config" data-target="update">Edit</button>/
+                        <button type="button" class="text-xs text-red-600 hover:text-red-800 mx-1 save-config" data-target="update">Save</button>
+                      </div>
+                    </div>
+                    <div class="flex mt-1">
+                      <input type="text" id="update-config-filename" name="update-config-filename" value="${baseName}-changes.json" class="block w-full border border-gray-300 rounded-l-md shadow-sm py-1 px-2 text-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500">
+                      <label for="update-config-file" class="cursor-pointer inline-flex items-center px-3 py-1 border border-l-0 border-gray-300 shadow-sm text-sm font-medium rounded-r-md text-white bg-orange-600 hover:bg-orange-700 focus:outline-none">
+                        Load
+                        <input type="file" id="update-config-file" name="update-config-file" accept=".json" class="sr-only config-file-input" data-target="update">
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Extraction Section -->
+              <div id="extraction-section" class="border border-gray-200 rounded-md p-3">
+                <div class="flex items-center mb-2">
+                  <input type="checkbox" id="extraction" name="extraction" class="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded accent-orange-600">
+                  <label for="extraction" class="ml-2 block text-sm font-medium text-gray-900">Extraction</label>
+                </div>
+                <div class="pl-6 space-y-3 extraction-options hidden">
+                  <div>
+                    <label for="extract-output-filename" class="block text-sm font-medium text-gray-700">Output Filename</label>
+                    <input type="text" id="extract-output-filename" name="extract-output-filename" value="${baseName}.json" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-1 px-2 text-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500">
+                  </div>
+                  <div>
+                    <div class="flex justify-between items-center">
+                      <label for="extract-config-filename" class="block text-sm font-medium text-gray-700">Configuration Filename</label>
+                      <div id="extract-config-actions" class="hidden">
+                        <button type="button" class="text-xs text-blue-600 hover:text-blue-800 mx-1 view-config" data-target="extract">View</button>/
+                        <button type="button" class="text-xs text-green-600 hover:text-green-800 mx-1 edit-config" data-target="extract">Edit</button>/
+                        <button type="button" class="text-xs text-red-600 hover:text-red-800 mx-1 save-config" data-target="extract">Save</button>
+                      </div>
+                    </div>
+                    <div class="flex mt-1">
+                      <input type="text" id="extract-config-filename" name="extract-config-filename" value="${baseName}-extract.json" class="block w-full border border-gray-300 rounded-l-md shadow-sm py-1 px-2 text-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500">
+                      <label for="extract-config-file" class="cursor-pointer inline-flex items-center px-3 py-1 border border-l-0 border-gray-300 shadow-sm text-sm font-medium rounded-r-md text-white bg-orange-600 hover:bg-orange-700 focus:outline-none">
+                        Load
+                        <input type="file" id="extract-config-file" name="extract-config-file" accept=".json" class="sr-only config-file-input" data-target="extract">
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Create Drawing Section -->
+              <div id="create-drawing-section" class="border border-gray-200 rounded-md p-3">
+                <div class="flex items-center mb-2">
+                  <input type="checkbox" id="create-drawing" name="create-drawing" class="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded accent-orange-600">
+                  <label for="create-drawing" class="ml-2 block text-sm font-medium text-gray-900">Create Drawing</label>
+                </div>
+                <div class="pl-6 space-y-3 create-drawing-options hidden">
+                  <div>
+                    <label for="drawing-output-filename" class="block text-sm font-medium text-gray-700">Output Filename</label>
+                    <input type="text" id="drawing-output-filename" name="drawing-output-filename" value="${baseName}.svg" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-1 px-2 text-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        `;
+        
+        document.getElementById("modal-form-vizquery").innerHTML = modalFormInnerHTML;
+        
+        // Add event listeners for process option checkboxes
+        document.getElementById('initialization').addEventListener('change', function() {
+          const optionsDiv = document.querySelector('.initialization-options');
+          const extractionCheckbox = document.getElementById('extraction');
+          
+          if (this.checked) {
+            optionsDiv.classList.remove('hidden');
+            
+            // If initialization is checked, uncheck and disable extraction
+            if (extractionCheckbox.checked) {
+              extractionCheckbox.checked = false;
+              document.querySelector('.extraction-options').classList.add('hidden');
+            }
+            extractionCheckbox.disabled = true;
+            extractionCheckbox.parentElement.classList.add('opacity-50');
+          } else {
+            optionsDiv.classList.add('hidden');
+            
+            // If initialization is unchecked, enable extraction
+            extractionCheckbox.disabled = false;
+            extractionCheckbox.parentElement.classList.remove('opacity-50');
+          }
+        });
+        
+        document.getElementById('update').addEventListener('change', function() {
+          const optionsDiv = document.querySelector('.update-options');
+          if (this.checked) {
+            optionsDiv.classList.remove('hidden');
+          } else {
+            optionsDiv.classList.add('hidden');
+          }
+        });
+        
+        document.getElementById('extraction').addEventListener('change', function() {
+          const optionsDiv = document.querySelector('.extraction-options');
+          const initializationCheckbox = document.getElementById('initialization');
+          
+          if (this.checked) {
+            optionsDiv.classList.remove('hidden');
+            
+            // If extraction is checked, uncheck initialization
+            if (initializationCheckbox.checked) {
+              initializationCheckbox.checked = false;
+              document.querySelector('.initialization-options').classList.add('hidden');
+            }
+          } else {
+            optionsDiv.classList.add('hidden');
+          }
+        });
+        
+        document.getElementById('create-drawing').addEventListener('change', function() {
+          const optionsDiv = document.querySelector('.create-drawing-options');
+          if (this.checked) {
+            optionsDiv.classList.remove('hidden');
+          } else {
+            optionsDiv.classList.add('hidden');
+          }
+        });
+        
+        // Initial setup for initialization/extraction exclusivity
+        if (document.getElementById('initialization').checked) {
+          const extractionCheckbox = document.getElementById('extraction');
+          extractionCheckbox.disabled = true;
+          extractionCheckbox.parentElement.classList.add('opacity-50');
+        }
+        
+        // Add event listeners for file uploads
+        document.querySelectorAll('.config-file-input').forEach(fileInput => {
+          fileInput.addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            const target = this.getAttribute('data-target');
+            
+            if (file) {
+              // Set the filename in the filename field
+              document.getElementById(`${target}-config-filename`).value = file.name;
+              
+              // Show the action buttons
+              document.getElementById(`${target}-config-actions`).classList.remove('hidden');
+              
+              // Read the file content
+              const reader = new FileReader();
+              reader.onload = function(e) {
+                // Store the file content in a data attribute for later use
+                fileInput.setAttribute('data-file-content', e.target.result);
+              };
+              reader.readAsText(file);
+            }
+          });
+        });
+        
+        // Add event listeners for View/Edit/Save buttons
+        document.querySelectorAll('.view-config').forEach(button => {
+          button.addEventListener('click', function() {
+            const target = this.getAttribute('data-target');
+            const fileInput = document.getElementById(`${target}-config-file`);
+            const fileContent = fileInput.getAttribute('data-file-content');
+            
+            if (fileContent) {
+              const filename = document.getElementById(`${target}-config-filename`).value;
+              // Open in modal for viewing
+              openModalConfig(`View Configuration - ${filename}`, fileContent, 'view', target);
+            }
+          });
+        });
+        
+        document.querySelectorAll('.edit-config').forEach(button => {
+          button.addEventListener('click', function() {
+            const target = this.getAttribute('data-target');
+            const fileInput = document.getElementById(`${target}-config-file`);
+            const fileContent = fileInput.getAttribute('data-file-content');
+            
+            if (fileContent) {
+              const filename = document.getElementById(`${target}-config-filename`).value;
+              // Open in modal for editing
+              openModalConfig(`Edit Configuration - ${filename}`, fileContent, 'edit', target);
+            }
+          });
+        });
+        
+        document.querySelectorAll('.save-config').forEach(button => {
+          button.addEventListener('click', async function() {
+            const target = this.getAttribute('data-target');
+            const fileInput = document.getElementById(`${target}-config-file`);
+            const fileContent = fileInput.getAttribute('data-file-content');
+            
+            if (fileContent) {
+              const filename = document.getElementById(`${target}-config-filename`).value;
+              try {
+                await uploadConfigFile(filename, jsonData.contentLocation, fileContent);
+                vanillaToast.success(`Configuration file ${filename} saved successfully`, {
+                  duration: 3000,
+                });
+              } catch (error) {
+                vanillaToast.error(`Failed to save configuration file: ${error}`, {
+                  duration: 3000,
+                });
+              }
+            }
+          });
+        });
+        // Open modal
+        openModalVizquery();
+      }
+      
+      function openModalVizquery() {
+        document.body.classList.add("overflow-hidden");
+        document.querySelector("html").classList.add("overflow-hidden");
+        document.querySelector("body").classList.add("overflow-hidden");
+        document.getElementById("modal-vizquery").classList.remove("hidden");
+        document.getElementById("modal-vizquery-backdrop").classList.remove("opacity-0");
+        document.getElementById("modal-vizquery-backdrop").classList.add("opacity-100");
+        document.getElementById("modal-vizquery-panel").classList.remove("opacity-0", "translate-y-4", "sm:translate-y-0", "sm:scale-95");
+        document.getElementById("modal-vizquery-panel").classList.add("opacity-100", "translate-y-0", "sm:scale-100");
+      }
+      
+      function closeModalVizquery() {
+        document.body.classList.remove("overflow-hidden");
+        document.querySelector("html").classList.remove("overflow-hidden");
+        document.querySelector("body").classList.remove("overflow-hidden");
+        document.getElementById("modal-vizquery-backdrop").classList.remove("opacity-100");
+        document.getElementById("modal-vizquery-backdrop").classList.add("opacity-0");
+        document.getElementById("modal-vizquery-panel").classList.remove("opacity-100", "translate-y-0", "sm:scale-100");
+        document.getElementById("modal-vizquery-panel").classList.add("opacity-0", "translate-y-4", "sm:translate-y-0", "sm:scale-95");
+        setTimeout(() => {
+          document.getElementById("modal-vizquery").classList.add("hidden");
+        }, 300);
+      }
+      
+      async function executeVizQuery() {
+        try {
+          // Disable the buttons and show loader
+          const executeBtn = document.getElementById('vizquery-execute-btn');
+          const cancelBtn = document.getElementById('vizquery-cancel-btn');
+          
+          executeBtn.disabled = true;
+          cancelBtn.disabled = true;
+          
+          // Add loader to execute button
+          executeBtn.innerHTML = `
+            <svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+            <span>Processing...</span>
+          `;
+          
+          // Update parameters from form
+          const jsonData = JSON.parse(document.getElementById("vizquery-params").value);
+          
+          // Update action flags based on checkboxes
+          jsonData.action.initialization = document.getElementById("initialization").checked;
+          jsonData.action.update = document.getElementById("update").checked;
+          jsonData.action.extraction = document.getElementById("extraction").checked;
+          jsonData.action.createDrawing = document.getElementById("create-drawing").checked;
+          
+          // Get the file names for each process
+          if (jsonData.action.initialization) {
+            jsonData.initOutputFilename = document.getElementById("init-output-filename").value;
+            jsonData.initConfigFilename = document.getElementById("init-config-filename").value;
+            
+            // Upload configuration file if one was loaded
+            const initFileInput = document.getElementById('init-config-file');
+            const initFileContent = initFileInput.getAttribute('data-file-content');
+            if (initFileContent) {
+              await uploadConfigFile(jsonData.initConfigFilename, jsonData.contentLocation, initFileContent);
+            }
+          }
+          
+          if (jsonData.action.update) {
+            jsonData.updateOutputFilename = document.getElementById("update-output-filename").value;
+            jsonData.updateConfigFilename = document.getElementById("update-config-filename").value;
+            
+            // Upload configuration file if one was loaded
+            const updateFileInput = document.getElementById('update-config-file');
+            const updateFileContent = updateFileInput.getAttribute('data-file-content');
+            if (updateFileContent) {
+              await uploadConfigFile(jsonData.updateConfigFilename, jsonData.contentLocation, updateFileContent);
+            }
+          }
+          
+          if (jsonData.action.extraction) {
+            jsonData.extractOutputFilename = document.getElementById("extract-output-filename").value;
+            jsonData.extractConfigFilename = document.getElementById("extract-config-filename").value;
+            
+            // Upload configuration file if one was loaded
+            const extractFileInput = document.getElementById('extract-config-file');
+            const extractFileContent = extractFileInput.getAttribute('data-file-content');
+            if (extractFileContent) {
+              await uploadConfigFile(jsonData.extractConfigFilename, jsonData.contentLocation, extractFileContent);
+            }
+          }
+          
+          if (jsonData.action.createDrawing) {
+            jsonData.drawingOutputFilename = document.getElementById("drawing-output-filename").value;
+          }
+          
+          document.getElementById("vizquery-params").value = JSON.stringify(jsonData, null, 2);
+          
+          // Execute VizQuery process
+          const response = await call_vizquery(jsonData);
+          
+          if (response.status === 200) {
+            vanillaToast.success("VizQuery process executed successfully", {
+              duration: 5000,
+            });
+            
+            // Refresh folders list to show new files
+            getFoldersList();
+            
+            // Close modal
+            closeModalVizquery();
+          } else {
+            // Reset button states
+            executeBtn.disabled = false;
+            cancelBtn.disabled = false;
+            executeBtn.innerHTML = '<span>Execute</span>';
+            
+            vanillaToast.error(response.error || "Failed to execute VizQuery process", {
+              duration: 5000,
+            });
+          }
+        } catch (error) {
+          console.error("Error executing VizQuery:", error);
+          
+          // Reset button states
+          const executeBtn = document.getElementById('vizquery-execute-btn');
+          const cancelBtn = document.getElementById('vizquery-cancel-btn');
+          executeBtn.disabled = false;
+          cancelBtn.disabled = false;
+          executeBtn.innerHTML = '<span>Execute</span>';
+          
+          vanillaToast.error("An error occurred while executing VizQuery", {
+            duration: 5000,
+          });
+        }
+      }
+      
+      async function uploadConfigFile(jsonConfigFilename, contentLocation, fileContent) {
+        try {
+          // Parse the file content to verify JSON structure
+          const configData = JSON.parse(fileContent);
+          
+          const response = await fetch('/callapivizquery/config-file', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              jsonConfigFilename,
+              contentLocation,
+              configData
+            }),
+          });
+          
+          const data = await response.json();
+          
+          if (response.ok) {
+            vanillaToast.success("Configuration file uploaded successfully", {
+              duration: 3000,
+            });
+            return true;
+          } else {
+            vanillaToast.error(`Error uploading configuration file: ${data.error}`, {
+              duration: 5000,
+            });
+            return false;
+          }
+        } catch (error) {
+          vanillaToast.error(`Invalid JSON file: ${error.message}`, {
+            duration: 5000,
+          });
+          return false;
+        }
+      }
+      
+      async function call_vizquery(data) {
+        try {
+          const response = await fetch("/callapivizquery", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+          });
+          
+          return {
+            status: response.status,
+            ...(await response.json()),
+          };
+        } catch (error) {
+          console.error("Error calling VizQuery API:", error);
+          throw error;
+        }
+      }
+    </script>
+    
+    <!-- Modal for View/Edit Config -->
+    <div id="modal-config" class="fixed z-50 inset-0 overflow-y-auto hidden" style="z-index: 1000;" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+      <div id="modal-config-backdrop" class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity opacity-0"></div>
+      <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+        <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+        <div id="modal-config-panel" class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-3xl w-full opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95">
+          <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+            <div class="flex justify-between items-center pb-3 border-b border-gray-200">
+              <h3 id="modal-config-title" class="text-lg leading-6 font-medium text-gray-900"></h3>
+              <button type="button" onclick="closeModalConfig()" class="bg-white rounded-md text-gray-400 hover:text-gray-500 focus:outline-none">
+                <span class="sr-only">Close</span>
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-4">
+              <div id="modal-config-mode-view" class="hidden">
+                <pre id="config-view-content" class="bg-gray-50 p-4 rounded-md overflow-auto max-h-96 text-sm"></pre>
+              </div>
+              <div id="modal-config-mode-edit" class="hidden">
+                <textarea id="config-edit-content" class="w-full h-96 font-mono text-sm p-4 border border-gray-300 rounded-md"></textarea>
+                <div class="flex justify-end mt-4">
+                  <button type="button" id="config-save-btn" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700 focus:outline-none">
+                    Save Changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function openModalConfig(title, content, mode, target) {
+        // Set modal title
+        document.getElementById('modal-config-title').textContent = title;
+        
+        // Set content based on mode
+        if (mode === 'view') {
+          document.getElementById('config-view-content').textContent = content;
+          document.getElementById('modal-config-mode-view').classList.remove('hidden');
+          document.getElementById('modal-config-mode-edit').classList.add('hidden');
+        } else if (mode === 'edit') {
+          document.getElementById('config-edit-content').value = content;
+          document.getElementById('modal-config-mode-view').classList.add('hidden');
+          document.getElementById('modal-config-mode-edit').classList.remove('hidden');
+          
+          // Add event listener for save button
+          const saveBtn = document.getElementById('config-save-btn');
+          saveBtn.onclick = function() {
+            const updatedContent = document.getElementById('config-edit-content').value;
+            try {
+              // Validate JSON
+              JSON.parse(updatedContent);
+              
+              // Update file content
+              const fileInput = document.getElementById(`${target}-config-file`);
+              fileInput.setAttribute('data-file-content', updatedContent);
+              
+              vanillaToast.success("Changes saved to memory. Click 'Save' button to save to server.", {
+                duration: 3000,
+              });
+              
+              closeModalConfig();
+            } catch (error) {
+              vanillaToast.error(`Invalid JSON: ${error.message}`, {
+                duration: 5000,
+              });
+            }
+          };
+        }
+        
+        // Show modal
+        document.body.classList.add("overflow-hidden");
+        document.querySelector("html").classList.add("overflow-hidden");
+        document.querySelector("body").classList.add("overflow-hidden");
+        document.getElementById("modal-config").classList.remove("hidden");
+        document.getElementById("modal-config-backdrop").classList.remove("opacity-0");
+        document.getElementById("modal-config-backdrop").classList.add("opacity-100");
+        document.getElementById("modal-config-panel").classList.remove("opacity-0", "translate-y-4", "sm:translate-y-0", "sm:scale-95");
+        document.getElementById("modal-config-panel").classList.add("opacity-100", "translate-y-0", "sm:scale-100");
+      }
+      
+      function closeModalConfig() {
+        document.body.classList.remove("overflow-hidden");
+        document.querySelector("html").classList.remove("overflow-hidden");
+        document.querySelector("body").classList.remove("overflow-hidden");
+        document.getElementById("modal-config-backdrop").classList.remove("opacity-100");
+        document.getElementById("modal-config-backdrop").classList.add("opacity-0");
+        document.getElementById("modal-config-panel").classList.remove("opacity-100", "translate-y-0", "sm:scale-100");
+        document.getElementById("modal-config-panel").classList.add("opacity-0", "translate-y-4", "sm:translate-y-0", "sm:scale-95");
+        setTimeout(() => {
+          document.getElementById("modal-config").classList.add("hidden");
+        }, 300);
+      }
+    </script>
+  </body>
+</html>
