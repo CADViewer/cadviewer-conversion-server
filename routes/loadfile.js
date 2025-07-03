@@ -1,6 +1,6 @@
 // loadfile.js
 // version: 9.56.2
-
+// 10.73.7
 
 var config = require('../CADViewer_config.json');
 var cvjs_debug = config.cvjs_debug;
@@ -73,8 +73,8 @@ function loadFile(req,res){
             }
             else{
                 // if menu-file with blank path, we must concatenate the path
-                // 7.0.70   - menufile / languagefile
-                if ((loadtype!= undefined && loadtype.indexOf("menufile")==0) || (loadtype!= undefined && loadtype.indexOf("languagefile")==0) || (loadtype!= undefined && loadtype.indexOf("merge")==0) || (loadtype!= undefined && loadtype.indexOf("redline")==0)){
+                // 7.0.70   - menufile / languagefile   10.73.7
+                if ((loadtype!= undefined && loadtype.indexOf("base64file")==0) || (loadtype!= undefined && loadtype.indexOf("menufile")==0) || (loadtype!= undefined && loadtype.indexOf("languagefile")==0) || (loadtype!= undefined && loadtype.indexOf("merge")==0) || (loadtype!= undefined && loadtype.indexOf("redline")==0)){
 
                     if (inputFile.indexOf("http:")==0 || inputFile.indexOf("https:")==0){
                         // do nothing  - this is a call with http or https
@@ -121,7 +121,21 @@ function loadFile(req,res){
 
                 if (cvjs_debug) console.log("finshed loading "+inputFile+" , writing to: "+newcontentLocation);
 
-                var data = fs.readFileSync(newcontentLocation);
+                var data;
+
+                // 10.73.6
+                if (outputFormat.toLowerCase().indexOf("png")==0 && loadtype == "base64file") {
+                    // convert to base64
+                    //data = data.toString('base64');
+                    data = fs.readFileSync(newcontentLocation, { encoding: 'base64' });
+                    data = "data:image/png;base64," + data; 
+                }
+                else
+                    data = fs.readFileSync(newcontentLocation);
+
+
+                //var data = fs.readFileSync(newcontentLocation);
+                
 
                 if (outputFormat.indexOf("png")==0) 
                     res.setHeader('Content-Type', 'image/png')
@@ -164,8 +178,17 @@ function loadFile(req,res){
         else{
 
             var data = fs.readFileSync(inputFile);
-
             var outputFormat = inputFile.substring(inputFile.lastIndexOf(".")+1);
+            if (outputFormat.toLowerCase().indexOf("png")==0 && loadtype == "base64file") {
+                // convert to base64
+                //data = data.toString('base64');
+                data = fs.readFileSync(inputFile, { encoding: 'base64' });
+                data = "data:image/png;base64," + data; 
+            }
+            else
+                data = fs.readFileSync(inputFile);
+
+
 
             if (outputFormat.indexOf("png")==0) 
                 res.setHeader('Content-Type', 'image/png')
@@ -189,7 +212,7 @@ function loadFile(req,res){
                 res.setHeader('Content-Type', 'application/dwg')
                 var returnfilename = inputFile.substring(inputFile.lastIndexOf("/")+1);
                 res.setHeader('Content-Disposition', 'attachment;filename="'+returnfilename+'"');
-        }
+            }
             else
                 res.setHeader('Content-Type', 'text/plain')
 
