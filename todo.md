@@ -1,3 +1,5 @@
+# TASK
+
 - [x] Config page, for display the current configuration
 - [x] Rest api, for test the endpoint
 - [x] Add search function in the logs and also button for clean the logs file
@@ -23,3 +25,6 @@
 - [x] In Cache conversion case open the json and grap the filename of the list and merge with RL/TL Processing
 - [x] Undefined -> Display of DWG
 - [x] Available Files CSV JSON SVGZ -> RL/TL Processing and get filename from JSON file of Cache conversion
+- [x] Update system prompt for the AI to tell him to return only one json object
+- [x] Optimize text correction for the AI shop name correction
+- [x] Update the AI to handle query if there is part of the query that is understand and the rest tell to user that this part it's not understand _(I need all stores within 100m from Bulgari, between 100 and 300m2, rent below €3000 per year, lease expiration in 2027 and with a contract that stipulates no competitors within 75m)_

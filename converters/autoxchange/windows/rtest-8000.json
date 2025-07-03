@@ -1,0 +1,17 @@
+{
+"Raster_Details": {
+	"Input File": "test.dwg",
+	"Output File": "rtest-8000.png",
+	"Drawing Extents": {
+		"llx": -84672.7,
+		"lly": -32310.4,
+		"urx": 37244.9,
+		"ury": 168258
+		},
+	"Raster Size": {
+		"Width": 5809,
+		"Height": 4108
+		},
+	"RasterScale": 20.9877
+	}
+}

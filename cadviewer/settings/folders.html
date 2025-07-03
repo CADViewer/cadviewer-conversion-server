@@ -1749,13 +1749,21 @@
           );
       }
 
+      let currentDropzoneInstance = null; // Variable to hold the current instance
+
       function openModalUpload() {
         // Fetch upload configuration from server
         fetch("/settings/folders/upload-config")
           .then(response => response.json())
           .then(config => {
+            // Destroy previous instance if exists
+            if (currentDropzoneInstance) {
+              currentDropzoneInstance.destroy();
+              currentDropzoneInstance = null;
+            }
+          
             // Initialize the dropzone with server configurations
-            const dropzone = new FileDropzone({
+            currentDropzoneInstance = new FileDropzone({
               path: breadcrumbs
                 .map((breadcrumb, index) => (index === 0 ? "/" : breadcrumb.name))
                 .join("/"),
@@ -1992,6 +2000,14 @@
           this.activeUploads = 0;
           this.completedUploads = 0;
           
+          // Store bound event handlers for removal
+          this.boundHighlight = this.highlight.bind(this);
+          this.boundUnhighlight = this.unhighlight.bind(this);
+          this.boundHandleDrop = this.handleDrop.bind(this);
+          this.boundBrowseClick = () => this.fileInput.click();
+          this.boundHandleFiles = this.handleFiles.bind(this);
+          this.boundStartAllUploads = this.startAllUploads.bind(this);
+          
           this.initEventListeners();
         }
 
@@ -2009,28 +2025,30 @@
 
           this.dropzone.addEventListener(
             "dragenter",
-            this.highlight.bind(this)
+            this.boundHighlight // Use bound handler
           );
-          this.dropzone.addEventListener("dragover", this.highlight.bind(this));
+          this.dropzone.addEventListener(
+            "dragover",
+            this.boundHighlight // Use bound handler
+          );
           this.dropzone.addEventListener(
             "dragleave",
-            this.unhighlight.bind(this)
+            this.boundUnhighlight // Use bound handler
           );
-          this.dropzone.addEventListener("drop", this.handleDrop.bind(this));
+          this.dropzone.addEventListener(
+            "drop",
+            this.boundHandleDrop // Use bound handler
+          );
 
           // Click events
-          this.browseBtn.addEventListener("click", () =>
-            this.fileInput.click()
-          );
+          this.browseBtn.addEventListener("click", this.boundBrowseClick); // Use bound handler
           this.fileInput.addEventListener(
             "change",
-            this.handleFiles.bind(this)
+            this.boundHandleFiles // Use bound handler
           );
 
           // Upload all button
-          this.uploadAllBtn.addEventListener("click", () => {
-            this.startAllUploads();
-          });
+          this.uploadAllBtn.addEventListener("click", this.boundStartAllUploads); // Use bound handler
         }
 
         preventDefaults(e) {
@@ -2431,6 +2449,33 @@
               this.uploadFile(nextFile.id);
             }
           }
+        }
+        
+        destroy() {
+          // Remove event listeners added in initEventListeners
+          ["dragenter", "dragover", "dragleave", "drop"].forEach(
+            (eventName) => {
+              this.dropzone.removeEventListener(
+                eventName,
+                this.preventDefaults,
+                false
+              );
+            }
+          );
+          this.dropzone.removeEventListener("dragenter", this.boundHighlight);
+          this.dropzone.removeEventListener("dragover", this.boundHighlight);
+          this.dropzone.removeEventListener("dragleave", this.boundUnhighlight);
+          this.dropzone.removeEventListener("drop", this.boundHandleDrop);
+          
+          this.browseBtn.removeEventListener("click", this.boundBrowseClick);
+          this.fileInput.removeEventListener("change", this.boundHandleFiles);
+          this.uploadAllBtn.removeEventListener("click", this.boundStartAllUploads);
+
+          // Clean up file items event listeners if necessary (though removing the item should handle this)
+          this.uploadQueue.innerHTML = ''; // Clear queue visually
+          this.files = []; // Clear internal file list
+          
+          console.log("FileDropzone instance destroyed");
         }
       }
 

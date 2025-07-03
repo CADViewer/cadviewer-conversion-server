@@ -1,1 +1,28 @@
-{"AllObjects":[{"RedlineObjects":[]},{"StickyNoteObjects":[]}]}
+{
+  "AllObjects": [
+    {
+      "RedlineObjects": [
+        {
+          "node": "RED_1",
+          "outerhtml": "<g id='cv_RED_1_group' style='display: inline;'><g id='cv_RED_1_group_translate'><g id='cv_RED_1_group_scale'><path d='M1266.0136942904346,436.1143817009078L1967.9843929686954,436.1143817009078L1967.9843929686954,883.471979502647L1266.0136942904346,883.471979502647L1266.0136942904346,436.1143817009078Z' stroke='#ff0000' fill='#ff0000' style='stroke-width: 4; fill-opacity: 0.1;' id='cv_RED_1'></path><circle cx='1266.0136942904346' cy='883.471979502647' r='24' stroke='#00ff00' fill='#0000ff' id='cv_RED_1_p_4' style='fill-opacity: 0.9; opacity: 0.9; display: none;'></circle><circle cx='1967.9843929686954' cy='883.471979502647' r='24' stroke='#00ff00' fill='#0000ff' id='cv_RED_1_p_3' style='fill-opacity: 0.9; opacity: 0.9; display: none;'></circle><circle cx='1967.9843929686954' cy='436.1143817009078' r='24' stroke='#00ff00' fill='#0000ff' id='cv_RED_1_p_2' style='fill-opacity: 0.9; opacity: 0.9; display: none;'></circle><circle cx='1266.0136942904346' cy='436.1143817009078' r='24' stroke='#00ff00' fill='#0000ff' id='cv_RED_1_p_1' style='fill-opacity: 0.9; opacity: 0.9; display: none;'></circle></g></g></g>",
+          "name": "redline1",
+          "id": 1,
+          "layer": "RedLineLayer",
+          "group": "RedLineLayer",
+          "color": "#FF0000",
+          "strokeWidth": 4,
+          "fill": "#FFF",
+          "username": "none",
+          "userid": "none",
+          "currentPage": 1,
+          "polypath_arrow": "none",
+          "redline_text": "none",
+          "fill_opacity": "0.01",
+          "transform": "none",
+          "drawingRotation": 0
+        }
+      ]
+    },
+    { "StickyNoteObjects": [] }
+  ]
+}

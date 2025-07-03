@@ -64,7 +64,7 @@
      inkscape:groupmode="layer"
      id="layer1-8"
      transform="translate(0.46010903,-2.0685272)"
-     style="display:inline">
+     style="display:none">
     <path
        sodipodi:type="star"
        style="fill:#dc0a0a;fill-opacity:1"
@@ -89,7 +89,7 @@
      inkscape:groupmode="layer"
      id="layer1-6"
      transform="translate(-0.1608742,-4.0685272)"
-     style="display:inline">
+     style="display:none">
     <path
        sodipodi:type="star"
        style="fill:#3dcd58"

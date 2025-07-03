@@ -35,11 +35,12 @@
      inkscape:current-layer="layer1-5-1" />
   <defs
      id="defs1049" />
+
   <g
-     inkscape:label="online"
+     inkscape:label="unknown"
      inkscape:groupmode="layer"
      id="layer1-4"
-     style="display:none;fill:#3dcd58;fill-opacity:1"
+     style="display:inline;fill:#3dcd58;fill-opacity:1"
      transform="translate(-98.210366,-19.390258)">
     <path
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#3dcd58;fill-opacity:1;fill-rule:evenodd;stroke-width:1.21263;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
@@ -54,6 +55,7 @@
        sodipodi:arc-type="slice"
        d="m 297.16389,119.6152 a 99.721298,99.973122 0 0 1 -99.58872,99.97303 99.721298,99.973122 0 0 1 -99.853519,-99.70722 99.721298,99.973122 0 0 1 99.323229,-100.23814 99.721298,99.973122 0 0 1 100.1176,99.4407 l -99.71988,0.53163 z" />
   </g>
+  
   <g
      inkscape:label="offline"
      inkscape:groupmode="layer"
@@ -74,11 +76,11 @@
        d="M 297.65297,120.11885 A 99.721298,99.973122 0 0 1 198.06424,220.09188 99.721298,99.973122 0 0 1 98.210725,120.38466 99.721298,99.973122 0 0 1 197.53396,20.146524 99.721298,99.973122 0 0 1 297.65156,119.58723 l -99.71989,0.53162 z" />
   </g>
   <g
-     inkscape:label="unknow"
+     inkscape:label="online"
      inkscape:groupmode="layer"
      id="layer1-5-1"
      transform="translate(-98.69944,-19.879332)"
-     style="display:inline">
+     style="display:none">
     <path
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#00ffff;fill-opacity:1;fill-rule:evenodd;stroke-width:1.21263;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
        id="path1646-8-7"

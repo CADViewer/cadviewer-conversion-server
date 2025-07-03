@@ -1,1 +1,120 @@
-{"SpaceObjects":[]}
+{
+  "SpaceObjects": [
+    {
+      "path": "M954.2911128434782,293.3406802748209h53.9v53.9h-53.9v-53.9 Z",
+      "tags": "unassigned",
+      "node": "NODE_1",
+      "area": "unassigned",
+      "outerhtml": "<g id='cv_NODE_1_group' style='display: inline;'><g id='cv_NODE_1_group_translate'><g id='cv_NODE_1_group_scale'><path d='M954.2911128434782,293.3406802748209h53.9v53.9h-53.9v-53.9 Z' id='cv_NODE_1_base' stroke='none' fill='none' style=''></path><image xlink:href='http://localhost:3000/loadfile?loadtype=menufile&amp;listtype=none&amp;file=/content/customInsertSpaceObjectMenu//images/HVAC_02.svg' preserveAspectRatio='none' x='954.2911128434782' y='293.3406802748209' width='53.9' height='53.9' id='cv_NODE_1_image' style='pointer-events: none;'></image><path d='M954.2911128434782,293.3406802748209h53.9v53.9h-53.9v-53.9 Z' stroke='#b00000' fill='none' id='cv_NODE_1' cvjs:node='NODE_1' cvjs:roomid='Fan_1' cvjs:name='Fan_1' cvjs:type='Fan' style='fill: rgb(255, 255, 255); fill-opacity: 0; stroke: rgb(204, 204, 204); stroke-width: 0px; stroke-opacity: 0; stroke-linejoin: round;' class='cvjs_nodes'></path></g></g></g>",
+      "occupancy": "unassigned",
+      "name": "Fan_1",
+      "type": "Fan",
+      "id": "Fan_1",
+      "defaultcolor": {
+        "fill": "#ffffff",
+        "fill-opacity": "0.0",
+        "stroke": "#CCC",
+        "stroke-width": 0,
+        "stroke-opacity": "0.0",
+        "stroke-linejoin": "round"
+      },
+      "highlightcolor": {
+        "fill": "ffffff",
+        "fill-opacity": "0.0",
+        "stroke": "#ffd7f4",
+        "stroke-width": 0,
+        "stroke-opacity": "0.0"
+      },
+      "selectcolor": {
+        "fill": "#ffffff",
+        "fill-opacity": "0.0",
+        "stroke": "#3E20E7",
+        "stroke-width": 1,
+        "stroke-opacity": "0.8"
+      },
+      "basecolor": {
+        "fill": "#A2FFC4",
+        "fill-opacity": "0.3",
+        "stroke": "#A2FFC4",
+        "stroke-width": "2",
+        "stroke-linejoin": "round"
+      },
+      "layer": "Space Object Layer",
+      "group": "none",
+      "linked": false,
+      "attributes": "none",
+      "attributeStatus": "unpopulated",
+      "displaySpaceObject": "on",
+      "translate_x": 954.2911128434782,
+      "translate_y": 293.3406802748209,
+      "zvalue": 1,
+      "scale_x": 1,
+      "scale_y": 1,
+      "rotate": 0,
+      "transform": "",
+      "customContent": "undefined",
+      "pageNumber": 1,
+      "pageName": "Page_1",
+      "parent": "none",
+      "unit": ""
+    },
+    {
+      "path": "M771.0648626799999,633.6180020069949L771.0648626799999,1202.3332460209078L1149.4151714591303,1202.3332460209078L1149.4151714591303,633.6180020069949L771.0648626799999,633.6180020069949 Z",
+      "tags": "unassigned",
+      "node": "NODE_2",
+      "area": "1239179549472.7600",
+      "outerhtml": "<g id='cv_NODE_2_group' style='display: inline;'><g id='cv_NODE_2_group_translate'><g id='cv_NODE_2_group_scale'><path d='M771.0648626799999,633.6180020069949L771.0648626799999,1202.3332460209078L1149.4151714591303,1202.3332460209078L1149.4151714591303,633.6180020069949L771.0648626799999,633.6180020069949 Z' id='cv_NODE_2_base' style='fill: rgb(162, 255, 196); fill-opacity: 0.3; stroke: rgb(162, 255, 196); stroke-width: 2; stroke-linejoin: round;'></path><path d='M771.0648626799999,633.6180020069949L771.0648626799999,1202.3332460209078L1149.4151714591303,1202.3332460209078L1149.4151714591303,633.6180020069949L771.0648626799999,633.6180020069949 Z' id='cv_NODE_2' cvjs:node='NODE_2' cvjs:roomid='Fan_1' cvjs:name='Fan_1' cvjs:type='Fan' style='fill: rgb(255, 255, 255); fill-opacity: 0; stroke: rgb(204, 204, 204); stroke-width: 0px; stroke-opacity: 0; stroke-linejoin: round;' class='cvjs_nodes'></path></g></g></g>",
+      "occupancy": "",
+      "name": "2",
+      "type": "myType",
+      "id": "2",
+      "defaultcolor": {
+        "fill": "#ffffff",
+        "fill-opacity": "0.0",
+        "stroke": "#CCC",
+        "stroke-width": 0,
+        "stroke-opacity": "0.0",
+        "stroke-linejoin": "round"
+      },
+      "highlightcolor": {
+        "fill": "ffffff",
+        "fill-opacity": "0.0",
+        "stroke": "#ffd7f4",
+        "stroke-width": 0,
+        "stroke-opacity": "0.0"
+      },
+      "selectcolor": {
+        "fill": "#ffffff",
+        "fill-opacity": "0.0",
+        "stroke": "#3E20E7",
+        "stroke-width": 1,
+        "stroke-opacity": "0.8"
+      },
+      "basecolor": {
+        "fill": "#A2FFC4",
+        "fill-opacity": "0.3",
+        "stroke": "#A2FFC4",
+        "stroke-width": "2",
+        "stroke-linejoin": "round"
+      },
+      "layer": "cvjs_SpaceLayer",
+      "group": "",
+      "linked": false,
+      "attributes": "",
+      "attributeStatus": "",
+      "displaySpaceObject": "on",
+      "translate_x": 771.0648626799999,
+      "translate_y": 633.6180020069949,
+      "zvalue": 2,
+      "scale_x": 1,
+      "scale_y": 1,
+      "rotate": 0,
+      "transform": "",
+      "customContent": "undefined",
+      "pageNumber": 1,
+      "pageName": "Page_1",
+      "parent": "none",
+      "unit": "in"
+    }
+  ]
+}

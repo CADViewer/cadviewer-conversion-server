@@ -1,5 +1,5 @@
-# Use the official Node.js 16 image based on Debian
-FROM node:16-bullseye
+# Use the official Node.js 20 image based on Debian
+FROM node:20-bullseye
 
 # Set environment variable
 ENV RUNING_IN_DOCKER=true
@@ -9,7 +9,7 @@ WORKDIR /nodejs/cadviewer-conversion-server/
 
 # Copy dependency files
 COPY package*.json ./
-COPY yarn.lock ./
+COPY yarn.lock ./cl
 RUN yarn
 
 # Copy application code
