@@ -54,6 +54,13 @@ Read the sections on installing and handling [Fonts](https://tailormade.com/ax20
 
 **Run:** Run by using the _npm start_ script or _node app_ from the command line.
 
+
+## Interface Access
+
+To access the CADViewer Conversion Server Interface, in the browser load:  ***http://localhost:3000/settings/***  with **Username/Password** as **admin/admin**. This gives access to the entire interface, where you can monitor conversions, cache, change the configuration dynamically, clear conversion cache, run the RestAPI directly, and load CADViewer up directly for file display.
+
+
+
 ## Docker installation
 
 The installation provides a template **_Dockerfile_** and **_docker-compose-yml_**, which can be updated according to platform. When running under Docker the internal url is **_0.0.0.0_**, and therefore the following fields in the **_CADViewer_config.json_** needs to be configured, note that **_callbackMethod_gatewayUrl_** is the external url when calling the container, which also needs to be updated appropriately:
