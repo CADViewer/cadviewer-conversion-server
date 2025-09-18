@@ -57,8 +57,12 @@ Read the sections on installing and handling [Fonts](https://tailormade.com/ax20
 
 ## Interface Access
 
-To access the CADViewer Conversion Server Interface, in the browser load:  ***http://localhost:3000/settings/***  with **Username/Password** as **admin/admin**. This gives access to the entire interface, where you can monitor conversions, cache, change the configuration dynamically, clear conversion cache, run the RestAPI directly, and load CADViewer up directly for file display.
+To access the CADViewer Conversion Server Interface, in the browser load:  ***http://localhost:3000/settings/***  with **Username/Password** as **admin/admin**. This gives access to the entire interface, where you can monitor conversions, cache, change the configuration dynamically, clear conversion cache, run the RestAPI directly, and load CADViewer up directly for file display. You can update the credentials with the ***CADViewer_config.json*** variables:
 
+```json
+   "settingsUserBasicAuth": "admin",
+   "settingsPasswordBasicAuth": "admin",
+```
 
 
 ## Docker installation
