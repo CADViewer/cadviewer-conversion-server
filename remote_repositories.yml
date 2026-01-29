@@ -1,0 +1,32 @@
+# Remote Repositories Configuration
+# This file defines target repositories for automated deployment of cadviewer-conversion-server
+# Each repository can be configured with obfuscation, AI features, and config overrides
+
+repositories:
+  nextgen:
+    github: CADViewer/cadviewer-conversion-server
+    branch: master
+    # Obfuscate JS (libs/, routes/, app.js) and HTML (cadviewer/settings/*.html)
+    obfuscate: true
+    # Remove all AI/ML features (routes, libs, dependencies, config keys)
+    keep_ai_features: false
+    # Override values in CADViewer_config.json
+    config_overrides:
+      ServerPort: "3000"
+      ServerUrl: "http://localhost:3000"
+      cvjs_debug: true
+    # Additional folders/files to exclude from deployment
+    exclude:
+      - converters/ax2024
+
+  # Example: Client repository with AI features, no obfuscation
+  # client_ai:
+  #   github: CADViewer/cadviewer-client-ai
+  #   branch: main
+  #   obfuscate: false
+  #   keep_ai_features: true
+  #   config_overrides:
+  #     ServerPort: "8080"
+  #     AI_SYSTEM_TO_USE: "GROQ"
+  #     GROQ_API_KEY: ""
+  #     GROQ_MODEL: "meta-llama/llama-4-scout-17b-16e-instruct"

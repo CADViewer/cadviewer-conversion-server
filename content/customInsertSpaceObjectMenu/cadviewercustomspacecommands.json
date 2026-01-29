@@ -121,6 +121,16 @@
                         "commandName" : "UNIQLO_Logo",
                         "imageLocation" : "/images/uniqlo.svg",
                         "toolTip" : "UNIQLO Logo"
+                    },
+                    {
+                        "commandName" : "FireExit_gif",
+                        "imageLocation" : "/images/fire_exit.gif",
+                        "toolTip" : "FireExit gif"
+                    },
+                    {
+                        "commandName" : "FireExit_jpg",
+                        "imageLocation" : "/images/fire_exit.jpg",
+                        "toolTip" : "FireExit jpg"
                     }
 
 

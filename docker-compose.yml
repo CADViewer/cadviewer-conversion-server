@@ -29,6 +29,8 @@ services:
       - MYSQL_DATABASE=visualquery
       - MYSQL_USER=visualquery
       - MARIADB_ALLOW_EMPTY_ROOT_PASSWORD=true
+    ports:
+      - "3307:3306"
 
   adminer:
     image: adminer
@@ -36,13 +38,13 @@ services:
     ports:
       - 8084:8080
 
-  cadviewer_node:
+  conversion_server:
     build: .
     #    platform: linux/arm64/v8
-    platform: linux/amd64
+    # platform: linux/amd64
     restart: always
     ports:
       - "3000:3000"
     volumes:
-      - ./:/nodejs/cadviewer-conversion-server
-      - /nodejs/cadviewer-conversion-server/node_modules
+      - ./:/nodejs/cadviewer-conversion-server-nextgen
+      - /nodejs/cadviewer-conversion-server-nextgen/node_modules
