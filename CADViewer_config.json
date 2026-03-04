@@ -16,8 +16,8 @@
   "webapp": "none",
   "platform": "windows",
   "autodetect_location": true,
-  "autoxchange_executable": "AX2025_W64_25_11_156a.exe",
-  "autoxchange_executable_windows": "AX2025_W64_25_11_156a.exe",
+  "autoxchange_executable": "AX2025_W64_25_11_158j.exe",
+  "autoxchange_executable_windows": "AX2025_W64_25_11_158j.exe",
   "autoxchange_executable_linux": "ax2025_L64_25_11_157",
   "licenseLocation": "/converters/autoxchange/",
   "xpathLocation": "/converters/xpath/",
@@ -76,5 +76,8 @@
   "usersExportFrequency": "monthly",
   "maxUploadFileSize": 50,
   "maxConcurrentUploads": 3,
-  "maxUploadFiles": 100
+  "maxUploadFiles": 100,
+  "MRI_BASE_URL": "https://your-tenant.mricommercial.com",
+  "MRI_CLIENT_ID": "your-client-id",
+  "MRI_CLIENT_SECRET": "your-client-secret"
 }

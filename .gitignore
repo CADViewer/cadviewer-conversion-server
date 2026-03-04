@@ -1,4 +1,6 @@
 content/custom/*
+content/vizquery_demo/*
+content/vizquery_nextgen/*
 tmp
 photos/
 node_modules/

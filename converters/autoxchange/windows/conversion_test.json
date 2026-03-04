@@ -1,0 +1,12 @@
+{
+    "Parameters": {
+        "i": "/nodejs/cadviewer-conversion-server-nextgen/content/custom/kkfileview/test2-测试.dwg",
+        "o": "/nodejs/cadviewer-conversion-server-nextgen/converters/files/chinesetest测试.svg",
+        "f": "svg",
+        "fpath": "/home/tms/fonts",
+        "lpath": "/home/tms/license",
+        "xpath": "/home/tms/some/place/with/xrefs",
+        "last": "",
+        "trace": ""
+    }
+}

@@ -1,146 +1,137 @@
 {
-    "cadviewercustomspacecommands" : {
-        "totalpages" : 2,
-        "currentpage" : 1,
-        "pages" :[
-                [
-                    {
-                        "commandName" : "Door",
-                        "imageLocation" : "/images/door_allstates01.svg",
-                        "toolTip" : "Insert Door Object - with states"
-                    },
-                    {
-                        "commandName" : "Danger",
-                        "imageLocation" : "/images/danger.png",
-                        "toolTip" : "Insert Danger object"
-                    },
-                    {
-                        "commandName" : "Wi-Fi",
-                        "imageLocation" : "/images/wifi_25.svg",
-                        "toolTip" : "Insert Wi-Fi object "
-                    }
-                    ,
-                    {
-                        "commandName" : "Heater",
-                        "imageLocation" : "/images/HVAC_01.svg",
-                        "toolTip" : "Insert Heater object "
-                    },
-                    {
-                        "commandName" : "Fan",
-                        "imageLocation" : "/images/HVAC_02.svg",
-                        "toolTip" : "Insert Fan object "
-                    },
-                    {
-                        "commandName" : "Thermo",
-                        "imageLocation" : "/images/HVAC_03.svg",
-                        "toolTip" : "Insert Thermometer object "
-                    },
-                    {
-                        "commandName" : "Aircon",
-                        "imageLocation" : "/images/HVAC_04.svg",
-                        "toolTip" : "Insert AirCon object "
-                    }
-                    ,
-                    {
-                        "commandName" : "Sensor",
-                        "imageLocation" : "/images/device_54.svg",
-                        "toolTip" : "Insert Sensor object "
-                    }
-                    ,                    
-                    {
-                        "commandName" : "AssemblyPoint",
-                        "imageLocation" : "/images/assembly_point.png",
-                        "toolTip" : "Insert Assembly Point object "
-                    }
-                    ,
-                    {
-                        "commandName" : "FireAlarmCallPoint",
-                        "imageLocation" : "/images/fire_alarm_call_point.png",
-                        "toolTip" : "Insert Fire Alarm Call Point object "
-                    }
-                    ,
-                    {
-                        "commandName" : "FireExit",
-                        "imageLocation" : "/images/fire_exit.png",
-                        "toolTip" : "Insert Fire Exit object "
-                    }
-                    ,
-                    {
-                        "commandName" : "FireExtinguisher",
-                        "imageLocation" : "/images/fire_extinguisher.png",
-                        "toolTip" : "Insert Fire Extinguisher object "
-                    }
-                    ,
-                    {
-                        "commandName" : "Ventilation",
-                        "imageLocation" : "/images/ventilation-fan-blower-icon.svg",
-                        "toolTip" : "Insert Ventilation Symbol "
-                    }
-
-                ]
-                ,
-                [
-                   
-                    {
-                        "commandName" : "RefugePoint",
-                        "imageLocation" : "/images/refuge_point.png",
-                        "toolTip" : "Insert Refuge Point object "
-                    },
-                    {
-                        "commandName" : "Marker",
-                        "imageLocation" : "/images/pin_02.svg",
-                        "toolTip" : "Insert marker object "
-                    },
-                    {
-                        "commandName" : "StateCircle",
-                        "imageLocation" : "/images/sensor_c.svg",
-                        "toolTip" : "Sensor Object "
-                    }
-                    ,
-                    {
-                        "commandName" : "StateTriangle",
-                        "imageLocation" : "/images/gateway_c.svg",
-                        "toolTip" : "Gateway Object "
-                    },
-                    {
-                        "commandName" : "Arrow",
-                        "imageLocation" : "/images/arrow_rotate03.svg",
-                        "toolTip" : "RotateArrow Symbol "
-                    },
-                    {
-                        "commandName" : "HM_Logo",
-                        "imageLocation" : "/images/HM-Logo.svg",
-                        "toolTip" : "HM Logo"
-                    },
-                    {
-                        "commandName" : "Gap_Logo",
-                        "imageLocation" : "/images/Gap_logo.svg",
-                        "toolTip" : "Gap Logo"
-                    },
-                    {
-                        "commandName" : "UNIQLO_Logo",
-                        "imageLocation" : "/images/uniqlo.svg",
-                        "toolTip" : "UNIQLO Logo"
-                    },
-                    {
-                        "commandName" : "FireExit_gif",
-                        "imageLocation" : "/images/fire_exit.gif",
-                        "toolTip" : "FireExit gif"
-                    },
-                    {
-                        "commandName" : "FireExit_jpg",
-                        "imageLocation" : "/images/fire_exit.jpg",
-                        "toolTip" : "FireExit jpg"
-                    }
-
-
-
-                    
-
+    "cadviewercustomspacecommands": {
+        "totalpages": 2,
+        "currentpage": 1,
+        "pages": [
+            [
+                {
+                    "commandName": "Door",
+                    "imageLocation": "/images/door_allstates01.svg",
+                    "toolTip": "Insert Door Object - with states"
+                },
+                {
+                    "commandName": "Danger",
+                    "imageLocation": "/images/danger.png",
+                    "toolTip": "Insert Danger object"
+                },
+                {
+                    "commandName": "Wi-Fi",
+                    "imageLocation": "/images/wifi_25.svg",
+                    "toolTip": "Insert Wi-Fi object "
+                },
+                {
+                    "commandName": "Heater",
+                    "imageLocation": "/images/HVAC_01.svg",
+                    "toolTip": "Insert Heater object "
+                },
+                {
+                    "commandName": "Fan",
+                    "imageLocation": "/images/HVAC_02.svg",
+                    "toolTip": "Insert Fan object "
+                },
+                {
+                    "commandName": "Thermo",
+                    "imageLocation": "/images/HVAC_03.svg",
+                    "toolTip": "Insert Thermometer object "
+                },
+                {
+                    "commandName": "Aircon",
+                    "imageLocation": "/images/HVAC_04.svg",
+                    "toolTip": "Insert AirCon object "
+                },
+                {
+                    "commandName": "Sensor",
+                    "imageLocation": "/images/device_54.svg",
+                    "toolTip": "Insert Sensor object "
+                },
+                {
+                    "commandName": "AssemblyPoint",
+                    "imageLocation": "/images/assembly_point.png",
+                    "toolTip": "Insert Assembly Point object "
+                },
+                {
+                    "commandName": "FireAlarmCallPoint",
+                    "imageLocation": "/images/fire_alarm_call_point.png",
+                    "toolTip": "Insert Fire Alarm Call Point object "
+                },
+                {
+                    "commandName": "FireExit",
+                    "imageLocation": "/images/fire_exit.png",
+                    "toolTip": "Insert Fire Exit object "
+                },
+                {
+                    "commandName": "FireExtinguisher",
+                    "imageLocation": "/images/fire_extinguisher.png",
+                    "toolTip": "Insert Fire Extinguisher object "
+                },
+                {
+                    "commandName": "Ventilation",
+                    "imageLocation": "/images/ventilation-fan-blower-icon.svg",
+                    "toolTip": "Insert Ventilation Symbol "
+                }
+            ],
+            [
+                {
+                    "commandName": "RefugePoint",
+                    "imageLocation": "/images/refuge_point.png",
+                    "toolTip": "Insert Refuge Point object "
+                },
+                {
+                    "commandName": "Marker",
+                    "imageLocation": "/images/pin_02.svg",
+                    "toolTip": "Insert marker object "
+                },
+                {
+                    "commandName": "Target",
+                    "imageLocation": "/images/target_01.svg",
+                    "toolTip": "Insert Target object "
+                },
+                {
+                    "commandName": "StateCircle",
+                    "imageLocation": "/images/sensor_c.svg",
+                    "toolTip": "Sensor Object "
+                },
+                {
+                    "commandName": "StateTriangle",
+                    "imageLocation": "/images/gateway_c.svg",
+                    "toolTip": "Gateway Object "
+                },
+                {
+                    "commandName": "Arrow",
+                    "imageLocation": "/images/arrow_rotate03.svg",
+                    "toolTip": "RotateArrow Symbol "
+                },
+                {
+                    "commandName": "HM_Logo",
+                    "imageLocation": "/images/HM-Logo.svg",
+                    "toolTip": "HM Logo"
+                },
+                {
+                    "commandName": "Gap_Logo",
+                    "imageLocation": "/images/Gap_logo.svg",
+                    "toolTip": "Gap Logo"
+                },
+                {
+                    "commandName": "UNIQLO_Logo",
+                    "imageLocation": "/images/uniqlo.svg",
+                    "toolTip": "UNIQLO Logo"
+                },
+                {
+                    "commandName": "FireExit_gif",
+                    "imageLocation": "/images/fire_exit.gif",
+                    "toolTip": "FireExit gif"
+                },
+                {
+                    "commandName": "FireExit_jpg",
+                    "imageLocation": "/images/fire_exit.jpg",
+                    "toolTip": "FireExit jpg"
+                },
+                {
+                    "commandName": "rect",
+                    "imageLocation": "/images/rect.svg",
+                    "toolTip": "Rectangle Symbol "
+                }
             ]
-
-
-
         ]
     }
 }
