@@ -1607,7 +1607,7 @@
 }
 .cadviewer-core-styles #cvjs_spaceobjectchangesettingsTextSpaceId {
   position: absolute;
-  top: 63px;
+  top: 64px;
   left: 5px;
   text-indent: 1px;
   text-align: center;
@@ -1618,27 +1618,9 @@
   font-size: 13px;
   line-height: 1;
 }
-
-
-.cadviewer-core-styles #cvjs_spaceobjectchangesettingsNameSpaceId{
-    position: absolute;
-    top: 90px;
-    left: 5px;
-    text-indent: 1px;
-    text-align:center;
-    font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    font-weight: none;
-    color:#000000;
-    font-size: 13px;
-    line-height: 1;
-}
-
-
-
 .cadviewer-core-styles #cvjs_spaceobjectchangesettingsTextType {
   position: absolute;
-  top: 63px;
+  top: 64px;
   left: 200px;
   text-indent: 1px;
   text-align: center;
@@ -1653,7 +1635,7 @@
   position: absolute;
   top: 58px;
   left: 300px;
-  width: 180px;
+  width: 100px;
   text-indent: 1px;
   text-align: center;
   font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
@@ -1697,28 +1679,6 @@
   height: 20px;
   min-height: 20px !important;
 }
-
-
-
-
-.cadviewer-core-styles #cvjs_spaceobjectchangeNameFromModal{
-    position: absolute;
-    top: 84px;
-    left: 120px;
-    width: 200px;
-    text-indent: 1px;
-    text-align:center;
-	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
-	text-decoration: none;
-	font-weight: none;
-	color:#000000;
-	font-size: 13px;
-	line-height: 1;
-    height: 20px;
-    min-height: 20px !important;
-}
-
-
 .cadviewer-core-styles #cvjs_spaceobjectchangesettingsTextLayer {
   position: absolute;
   top: 34px;
@@ -1735,7 +1695,7 @@
 .cadviewer-core-styles #cvjs_spaceobjectchangesettingsExplanation {
   position: absolute;
   width: 400px;
-  top: 135px;
+  top: 116px;
   left: 5px;
   text-indent: 1px;
   text-align: left;
@@ -1747,10 +1707,9 @@
   line-height: 1;
 }
 .cadviewer-core-styles #cvjs_updateChangeSpaceObjects {
-  cursor: pointer;
   position: absolute;
-  top: 110px;
-  left: 110px;
+  top: 90px;
+  left: 80px;
   width: 120px;
   text-indent: 1px;
   text-align: center;
@@ -1764,10 +1723,9 @@
   min-height: 20px !important;
 }
 .cadviewer-core-styles #cvjs_unlinkChangeSpaceObjects {
-  cursor: pointer;
   position: absolute;
-  top: 110px;
-  left: 270px;
+  top: 90px;
+  left: 240px;
   width: 120px;
   text-indent: 1px;
   text-align: center;
@@ -1885,7 +1843,6 @@
   /* 7.3.7*/
 }
 .cadviewer-core-styles #cvjs_layer_settings_button1 {
-  cursor: pointer;
   position: relative;
   top: 5px !important;
   left: 20 !important;
@@ -1927,7 +1884,6 @@
   /* 7.3.7*/
 }
 .cadviewer-core-styles #cvjs_layer_settings_button3 {
-  cursor: pointer;
   position: relative;
   top: 5px !important;
   left: 160 !important;
@@ -2315,8 +2271,8 @@
 .cadviewer-core-styles .spaceobjectchangeModal {
   /* 7.3.14*/
   z-index: 1000;
-  width: 500px;
-  height: 166px;
+  width: 420px;
+  height: 145px;
   border-radius: 3px;
   background-color: #FFFFFF;
   border: 2px solid gray;
@@ -2449,46 +2405,6 @@
 
   /*7.3.8*/
 }
-
-
-.cadviewer-core-styles #cvjs_spaceobjectsettingsTextCreate {
-  cursor: pointer;
-  position: absolute;
-  top: 58px;
-  right: 10px;
-  width: 60px;
-  height: 20px;
-  min-height: 20px !important;
-  /*10.89.2 */
-  padding: 1px;
-  z-index: 1000;
-  margin: 0px;
-  text-indent: 1px;
-  text-align: center;
-  font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  font-weight: bold;
-  color: #000000;
-  font-size: 12px;
-  line-height: 1;
-  background: #F0F0F0;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .cadviewer-core-styles #cvjs_textModalSmall {
   position: absolute;
   top: 62px;
@@ -2669,7 +2585,7 @@
   width: 370px !important;
   /*7.6.5 height: 260px;*/
 /*8.45.2 */
-  height: 264px;  /* 10.83.7 */
+  height: 264px !important;
 
   border-radius: 3px;
   background-color: #FFFFFF;
@@ -2749,34 +2665,6 @@
   background: #F0F0F0;
 
 }
-
-.cadviewer-core-styles #cvjs_calibrate_button4 {
-  cursor: pointer;
-  position: absolute;
-  top: 64px;
-  right: 10px;
-  width: 40px;
-  height: 20px;
-  min-height: 20px !important;
-  padding: 1px;
-  z-index: 1000;
-  margin: 0px;
-  text-indent: 1px;
-  text-align: center;
-  font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  font-weight: bold;
-  color: #000000;
-  font-size: 12px;
-  line-height: 1;
-  background: #F0F0F0;
-
-  /* 7.4.42 */
-}
-
-
-
-
 .cadviewer-core-styles #cvjs_calibrate_button2 {
   cursor: pointer;
   position: absolute;
@@ -2861,28 +2749,6 @@
   height: 16px;
   min-height: 16px !important;
 }
-
-.cadviewer-core-styles #cvjs_checkboxCalibrateAll{
-    position: absolute;
-    top: 67px;
-    left: 30px;
-    height: 16px;
-    min-height: 16px !important;
-	font-size: 12px;
-	line-height: 12px;
-
-}
-
-
-
-.cadviewer-core-styles #cvjs_calibrate_checkbox4 {
-  position: absolute;
-  top: 62px;
-  left: 10px;
-  height: 16px;
-  min-height: 16px !important;
-}
-
 .cadviewer-core-styles #cvjs_calibrate_checkbox3 {
   position: absolute;
   top: 123px;
@@ -3831,118 +3697,6 @@
   vertical-align: top;
   /* 8.4.1  8.6.4 below */
 }
-.cadviewer-core-styles .selectCalibrateModal {
-  /* 7.3.14*/
-  z-index: 1000;
-  width: 300px;
-  height: 85px;
-  border-radius: 3px;
-  background-color: #FFFFFF;
-  border: 2px solid gray;
-  position: absolute;
-  cursor: default;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  /* line-height: 1.42857143; */
-  color: #333;
-}
-
-.cadviewer-core-styles table.selectCalibrateModalTable {
-	width: 275px  ;
-	height: 80px ;
-   	z-index:1000;
-	padding: 0px !important;
-	border-spacing: 0px;
-	border-collapse: separate;
-	text-align: left;
-
-		
-}
-
-
-.cadviewer-core-styles #cvjs_selectCalibration_button {
-  cursor: pointer;
-  position: absolute;
-  top: 55px;
-  left: 5px;
-  width: 140px !important;
-  height: 20px !important;
-  min-height: 20px !important;
-  border: solid 1px #ccc;
-  border-radius: 5px;
-  padding: 1px 1px;
-  margin-bottom: 10px;
-  font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  font-weight: bold;
-  color: #000000;
-  font-size: 12px;
-  background: #F0F0F0;
-  line-height: 12px;
-
-}
-
-
-.cadviewer-core-styles #cvjs_selectMeasurement_button {
-  cursor: pointer;
-  position: absolute;
-  top: 55px !important;
-  left: 150px !important;
-  width: 140px !important;
-  height: 20px !important;
-  min-height: 20px !important;
-  border: solid 1px #ccc;
-  border-radius: 5px;
-  padding: 1px 1px;
-  margin-bottom: 10px;
-  font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  font-weight: bold;
-  color: #000000;
-  font-size: 12px;
-  background: #F0F0F0;
-  line-height: 12px;
-
-}
-
-
-.cadviewer-core-styles #cvjs_cancelMeasurement_button {
-  cursor: pointer;
-  position: absolute;
-  top: 55px !important;
-  left: 296px !important;
-  width: 60px !important;
-  height: 20px !important;
-  min-height: 20px !important;
-  border: solid 1px #ccc;
-  border-radius: 5px;
-  padding: 1px 1px;
-  margin-bottom: 10px;
-  font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  font-weight: bold;
-  color: #000000;
-  font-size: 12px;
-  background: #F0F0F0;
-  line-height: 12px;
-
-}
-
-
-
-
-.cadviewer-core-styles .cvjs_modal_styles
-{
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: normal;
-  width: 300px; 
-  max-width: 400px
-}
-
-
-
-
-
 .cadviewer-core-styles .compareModalHeader {
   z-index: 1100;
   position: absolute;
@@ -4339,35 +4093,6 @@
   background: #FFF;
 
 }
-
-
-.cadviewer-core-styles #cvjs_spaceobjectcolor_button {
-  cursor: pointer;
-  width: 40px;
-  height: 20px !important;
-  min-height: 20px !important;
-  padding: 1px;
-  z-index: 1000;
-  margin: 0px;
-  text-indent: 1px;
-  text-align: center;
-  font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  font-weight: bold;
-  color: #000000;
-  font-size: 12px;
-  line-height: 1;
-  position: absolute;
-  left: 10px;
-  top: 160px;
-  /*7.6.19 */
-  background: #F0F0F0;
-
-}
-
-
-
-
 .cadviewer-core-styles #cvjs_redlinecolor_button {
   cursor: pointer;
   width: 40px;
@@ -4425,23 +4150,6 @@
   font-size: 13px;
   line-height: 1;
 }
-
-.cadviewer-core-styles #cvjs_select_calibration_type {
-  position: absolute;
-  top: 34px;
-  left: 5px;
-  text-indent: 1px;
-  text-align: left;
-  font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  font-weight: none;
-  color: #000000;
-  font-size: 13px;
-  line-height: 1;
-}
-
-
-
 .cadviewer-core-styles #cvjs_publish_redline_to_pdf_button {
   cursor: pointer;
   width: 40px;
@@ -7470,7 +7178,7 @@
   position: absolute;
   left: 86px;
   top: 58px;
-  width: 100px;  /*10.84.5 */
+  width: 90px;
   font-size: 13px;
   height: 20px !important;
   min-height: 20px !important;
@@ -7490,7 +7198,7 @@
   position: absolute;
   left: 310px;
   top: 58px;
-  width: 100px;  /*10.84.5 */
+  width: 90px;
   font-size: 13px;
   height: 20px !important;
   min-height: 20px !important;

@@ -336,17 +336,6 @@ foreignObject{ white-space:pre-wrap !important; }
 }
 
 
-
-.cvjs_modal_styles
-{
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: normal;
-	width: 300px;
-	max-width: 400px;
-}
-
-
-
 .cvjs_modal_header_stickynote_info_2
 {
 	font-family: Arial, Helvetica, sans-serif;
@@ -366,9 +355,6 @@ foreignObject{ white-space:pre-wrap !important; }
 	margin: 0;
 	padding: 1px;
 }
-
-
-
 
 
 .cvjs_callback_modal_1 {
@@ -2062,20 +2048,6 @@ input[type=button_layer] {
 
 
 
-#cvjs_spaceobjectchangesettingsNameSpaceId{
-    position: absolute;
-    top: 90px;
-    left: 5px;
-    text-indent: 1px;
-    text-align:center;
-	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
-	text-decoration: none;
-	font-weight: none;
-	color:#000000;
-	font-size: 13px;
-	line-height: 1;
-
-}
 
 
 
@@ -2094,7 +2066,7 @@ input[type=button_layer] {
 #cvjs_spaceobjectchangesettingsTextSpaceId{
 
     position: absolute;
-    top: 63px;
+    top: 64px;
     left: 5px;
     text-indent: 1px;
     text-align:center;
@@ -2110,7 +2082,7 @@ input[type=button_layer] {
 #cvjs_spaceobjectchangesettingsTextType{
 
     position: absolute;
-    top: 63px;
+    top: 64px;
     left: 200px;
     text-indent: 1px;
     text-align:center;
@@ -2127,7 +2099,7 @@ input[type=button_layer] {
     position: absolute;
     top: 58px;
     left: 300px;
-    width: 180px;
+    width: 100px;
     text-indent: 1px;
     text-align:center;
 	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
@@ -2185,34 +2157,6 @@ input[type=button_layer] {
 }
 
 
-#cvjs_spaceobjectchangeNameFromModal{
-
-    position: absolute;
-    top: 84px;
-    left: 120px;
-    width: 200px;
-    text-indent: 1px;
-    text-align:center;
-	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
-	text-decoration: none;
-	font-weight: none;
-	color:#000000;
-	font-size: 13px;
-	line-height: 1;
-    height: 20px;
-    min-height: 20px !important;
-
-
-
-}
-
-
-
-
-
-
-
-
 #cvjs_spaceobjectchangesettingsTextLayer{
 
     position: absolute;
@@ -2234,7 +2178,7 @@ input[type=button_layer] {
 
     position: absolute;
     width: 400px;
-    top: 135px;
+    top: 116px;
     left: 5px;
     text-indent: 1px;
     text-align: left;
@@ -2252,10 +2196,9 @@ input[type=button_layer] {
 
 #cvjs_updateChangeSpaceObjects{
 
-	cursor: pointer;
     position: absolute;
-    top: 110px;
-    left: 110px;
+    top: 90px;
+    left: 80px;
     width: 120px;
     text-indent: 1px;
     text-align:center;
@@ -2276,10 +2219,9 @@ input[type=button_layer] {
 
 #cvjs_unlinkChangeSpaceObjects{
 
-	cursor: pointer;
     position: absolute;
-    top: 110px;
-    left: 270px;
+    top: 90px;
+    left: 240px;
     width: 120px;
     text-indent: 1px;
     text-align:center;
@@ -2455,7 +2397,6 @@ input[type=button_layer] {
 
 /* 7.3.7*/
 #cvjs_layer_settings_button1{
-	  cursor: pointer;
     position: relative;
     top: 5px !important;
     left: 20 !important;
@@ -2477,8 +2418,7 @@ input[type=button_layer] {
 
 /* 7.3.7*/
 #cvjs_layer_settings_button2{
-    cursor: pointer;
-	position: relative;
+    position: relative;
     top: 5px !important;
     left: 100 !important;
     width: 115px !important;
@@ -2500,8 +2440,7 @@ input[type=button_layer] {
 
 /* 7.3.7*/
 #cvjs_layer_settings_button3{
-    cursor: pointer;
-	position: relative;
+    position: relative;
     top: 5px !important;
     left: 160 !important;
     width: 115px !important;
@@ -2975,8 +2914,8 @@ table.textsearchModalTable td {
 	/* 7.3.14*/
 
    	z-index:1000;
-	width: 500px; 
-	height: 166px;
+	width: 420px; 
+	height: 145px;
 	border-radius: 3px;
 	background-color: #FFFFFF;
 	border: 2px solid gray;
@@ -3147,35 +3086,6 @@ table.info_messageModal_2Table td {
 	line-height: 1;
 	 
 }
-
-
-
-#cvjs_spaceobjectsettingsTextCreate {
-  cursor: pointer;
-  position: absolute;
-  top: 58px;
-  right: 10px;
-  width: 60px;
-  height: 20px;
-  min-height: 20px !important;
-  /*10.89.2 */
-  padding: 1px;
-  z-index: 1000;
-  margin: 0px;
-  text-indent: 1px;
-  text-align: center;
-  font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  font-weight: bold;
-  color: #000000;
-  font-size: 12px;
-  line-height: 1;
-  background: #F0F0F0;
-
-}
-
-
-
 
 
 /*7.3.8*/
@@ -3391,20 +3301,13 @@ table.info_messageModal_2Table td {
 	line-height: 12px;
 }
 
-#cvjs_calibrate_checkbox4 {
-  position: absolute;
-  top: 62px;
-  left: 10px;
-  height: 16px;
-  min-height: 16px !important;
-}
 
 .calibrateModal{
 	/* 7.3.14*/
 
    	z-index:1000;
 	width: 370px !important;   /*7.6.5 */
-	height: 264px;   /*!important;*/
+	height: 260px;
 	border-radius: 3px;
 	background-color: #FFFFFF;
 	border: 2px solid gray;
@@ -3521,19 +3424,6 @@ table.calibrateModalTable td {
 
 }
 
-
-
-#cvjs_checkboxCalibrateAll{
-
-    position: absolute;
-    top: 67px;
-    left: 30px;
-    height: 16px;
-    min-height: 16px !important;
-	font-size: 12px;
-	line-height: 12px;
-
-}
 
 
 
@@ -4691,115 +4581,6 @@ table.ellipseModalTable td {
 
 
 
-
-
-.selectCalibrateModal{
-	/* 7.3.14*/
-
-   	z-index:1000;
-	width: 300px; 
-	height: 85px;
-	border-radius: 3px;
-	background-color: #FFFFFF;
-	border: 2px solid gray;
-	position: absolute;
-	cursor:default;
-
-	 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-	 font-size: 14px;
-	 /* line-height: 1.42857143; */
-	 color: #333
-	
-
-}
-
-table.selectCalibrateModalTable {
-	width: 275px  ;
-	height: 80px ;
-   	z-index:1000;
-	padding: 0px !important;
-	border-spacing: 0px;
-	border-collapse: separate;
-	text-align: left;
-
-		
-}
-
-
-#cvjs_selectCalibration_button {
-  cursor: pointer;
-  position: absolute;
-  top: 55px;
-  left: 5px;
-  width: 140px !important;
-  height: 20px !important;
-  min-height: 20px !important;
-  border: solid 1px #ccc;
-  border-radius: 5px;
-  padding: 1px 1px;
-  margin-bottom: 10px;
-  font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  font-weight: bold;
-  color: #000000;
-  font-size: 12px;
-  background: #F0F0F0;
-  line-height: 12px;
-
-}
-
-
-#cvjs_selectMeasurement_button {
-  cursor: pointer;
-  position: absolute;
-  top: 55px !important;
-  left: 150px !important;
-  width: 140px !important;
-  height: 20px !important;
-  min-height: 20px !important;
-  border: solid 1px #ccc;
-  border-radius: 5px;
-  padding: 1px 1px;
-  margin-bottom: 10px;
-  font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  font-weight: bold;
-  color: #000000;
-  font-size: 12px;
-  background: #F0F0F0;
-  line-height: 12px;
-
-}
-
-
-#cvjs_cancelMeasurement_button {
-  cursor: pointer;
-  position: absolute;
-  top: 55px !important;
-  left: 296px !important;
-  width: 60px !important;
-  height: 20px !important;
-  min-height: 20px !important;
-  border: solid 1px #ccc;
-  border-radius: 5px;
-  padding: 1px 1px;
-  margin-bottom: 10px;
-  font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  font-weight: bold;
-  color: #000000;
-  font-size: 12px;
-  background: #F0F0F0;
-  line-height: 12px;
-
-}
-
-
-
-
-
-
-
 /* 8.4.1  8.6.4 below */
 
 .compareModalHeader{
@@ -5317,42 +5098,6 @@ table.publishPDFModalTable td {
 	line-height: 1;
 }
 
-
-
-#cvjs_spaceobjectcolor_button {
-  cursor: pointer;
-  width: 40px;
-  height: 20px !important;
-  min-height: 20px !important;
-  padding: 1px;
-  z-index: 1000;
-  margin: 0px;
-  text-indent: 1px;
-  text-align: center;
-  font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  font-weight: bold;
-  color: #000000;
-  font-size: 12px;
-  line-height: 1;
-  position: absolute;
-  left: 10px;
-  top: 160px;
-  /*7.6.19 */
-  background: #F0F0F0;
-
-}
-
-
-
-
-
-
-
-
-
-
-
 #cvjs_redlinecolor_button{
 	cursor: pointer;
 	width: 40px;
@@ -5419,21 +5164,6 @@ table.publishPDFModalTable td {
 }
 
 
-#cvjs_select_calibration_type{
-
-    position: absolute;
-    top: 34px;
-    left: 5px;
-    text-indent: 1px;
-    text-align: left;
-	font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
-	text-decoration: none;
-	font-weight: none;
-	color:#000000;
-	font-size: 13px;
-	line-height: 1;
-
-}
 
 
 
@@ -9177,7 +8907,7 @@ table.settingsModalTable td {
 	position: absolute; 
 	left : 86px;
 	top : 58px    ;
-    width: 100px;  /*10.84.5 */
+    width: 90px;
 	font-size: 13px;
 
 	height: 20px !important;
@@ -9204,7 +8934,7 @@ table.settingsModalTable td {
 	position: absolute; 
 	left : 310px;
 	top : 58px;    
-    width: 100px;  /*10.84.5 */
+    width: 90px;
 	font-size: 13px;
 
 	height: 20px !important;

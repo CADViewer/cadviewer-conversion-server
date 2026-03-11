@@ -8,9 +8,5 @@ FangSong_GB2312 ==>  fangsong.ttf
 fangsong_gb2312 ==>  fangsong.ttf 
 @fangsong_gb2312 ==>  fangsong.ttf 
 仿宋_GB2312 ==> fangsong.ttf
-GulimChe ==> fangsong.ttf
-HYHeadLine-Medium ==> fangsong.ttf
-Gulim ==> fangsong.ttf
-DotumChe ==> fangsong.ttf
 [stroke]
 techno_m.shx
