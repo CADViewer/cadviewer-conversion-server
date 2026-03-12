@@ -1,4 +1,6 @@
 content/custom/*
+content/vizquery_demo/*
+content/vizquery_nextgen/*
 tmp
 photos/
 node_modules/
@@ -20,3 +22,18 @@ cadviewer/settings/requests-callapiconversion-monitoring.json
 cadviewer/settings/converter-files-analysis.json
 .DS_Store
 exports/*
+content/versions/
+converters/autoxchange/linux/ax_font_map.txt
+converters/autoxchange/linux/AutoXchange**.pdf
+converters/autoxchange/linux/ax2025_L64_25_11_157
+converters/autoxchange/linux/Test01.dxf
+# TypeScript
+*.tsbuildinfo
+*.log
+
+# Test coverage
+coverage/
+*.lcov
+
+# IDE
+.vscode/

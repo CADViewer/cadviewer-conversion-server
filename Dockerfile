@@ -5,11 +5,11 @@ FROM node:20-bullseye
 ENV RUNING_IN_DOCKER=true
 
 # Create app directory
-WORKDIR /nodejs/cadviewer-conversion-server/
+WORKDIR /nodejs/cadviewer-conversion-server-nextgen/
 
 # Copy dependency files
 COPY package*.json ./
-COPY yarn.lock ./cl
+COPY yarn.lock ./
 RUN yarn
 
 # Copy application code
