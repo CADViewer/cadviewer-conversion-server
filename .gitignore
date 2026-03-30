@@ -4,7 +4,8 @@ content/vizquery_nextgen/*
 tmp
 photos/
 node_modules/
-converters/files/*
+converters/files/**
+!converters/files/**/
 !converters/files/**/.gitkeep
 uploads/*
 node-ffi
