@@ -5,6 +5,7 @@ tmp
 photos/
 node_modules/
 converters/files/*
+!converters/files/**/.gitkeep
 uploads/*
 node-ffi
 call-Api_Conversion_log.log
