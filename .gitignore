@@ -37,3 +37,14 @@ coverage/
 
 # IDE
 .vscode/
+
+# Secrets - NEVER commit these
+.env
+.env.local
+.env.*.local
+
+# Internal logs and diagnostics - may contain sensitive data / API keys
+internal_logs_and_issues/
+
+# Temp files committed by accident
+temp.dwg
