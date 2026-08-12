@@ -50,3 +50,7 @@ internal_logs_and_issues/
 
 # Temp files committed by accident
 temp.dwg
+
+# Rapports de restauration des utilisateurs (contiennent des mots de passe en clair)
+scripts/restore-users-report-*.csv
+scripts/restore-users-email-preview.html

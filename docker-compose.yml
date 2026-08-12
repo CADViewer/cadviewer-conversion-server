@@ -45,6 +45,26 @@ services:
     restart: always
     ports:
       - "3000:3000"
+    environment:
+      # DB connectivity: inside the compose network the DB is the `db` service,
+      # not localhost (env overrides win over CADViewer_config.json).
+      - MYSQL_HOST=${MYSQL_HOST:-db}
+      - MYSQL_PORT=${MYSQL_PORT:-3306}
+      - MYSQL_USER=${MYSQL_USER:-root}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD:-root}
+      - MYSQL_DATABASE=${MYSQL_DATABASE:-tenant_test}
+      # Master key protecting POST /tenants (tenant registration by the platform).
+      - CONVERSION_MASTER_KEY=${CONVERSION_MASTER_KEY:-local-dev-master-key}
+      # Snowflake credentials, read from .env (gitignored). Without these the
+      # container falls back to the placeholders in CADViewer_config.json and
+      # every /ai/proxy call fails on an unresolvable host.
+      - SNOWFLAKE_BASE_URL=${SNOWFLAKE_BASE_URL:-}
+      - SNOWFLAKE_BEARER_TOKEN=${SNOWFLAKE_BEARER_TOKEN:-}
+      - SNOWFLAKE_FUNCTION_TEST=${SNOWFLAKE_FUNCTION_TEST:-}
+      - SNOWFLAKE_FUNCTION_PROD=${SNOWFLAKE_FUNCTION_PROD:-}
+      - SNOWFLAKE_AGENT_DATABASE=${SNOWFLAKE_AGENT_DATABASE:-}
+      - SNOWFLAKE_AGENT_SCHEMA=${SNOWFLAKE_AGENT_SCHEMA:-}
+      - SNOWFLAKE_AGENT_NAME=${SNOWFLAKE_AGENT_NAME:-}
     volumes:
       - ./:/nodejs/cadviewer-conversion-server-nextgen
       - /nodejs/cadviewer-conversion-server-nextgen/node_modules

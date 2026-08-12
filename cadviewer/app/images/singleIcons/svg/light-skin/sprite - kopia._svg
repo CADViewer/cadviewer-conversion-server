@@ -1,0 +1,1392 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="about" viewBox="0 0 90 90">
+    <defs><style>.about-cls-1{fill:#fff;}.about-cls-2{fill:#1ccbd1;}.about-cls-3{fill:none;stroke:#1ccbd1;stroke-linecap:round;stroke-miterlimit:10;stroke-width:4px;}</style></defs><g id="about-Background"><rect class="about-cls-1" width="90" height="90"/></g><path d="M45,22A23,23,0,1,1,22,45,23,23,0,0,1,45,22m0-4A27,27,0,1,0,72,45,27,27,0,0,0,45,18Z" transform="translate(0 0)"/><circle class="about-cls-2" cx="45" cy="33.18" r="2.41"/><line class="about-cls-3" x1="45" y1="40.91" x2="45" y2="58.21"/>
+  </symbol>
+  <symbol id="adjustlayerlineweight" viewBox="0 0 90 90">
+    <defs><style>.adjustlayerlineweight-cls-1{fill:none;}.adjustlayerlineweight-cls-2{fill:#000;}</style></defs>
+<g id="adjustlayerlineweight-Background"><rect class="adjustlayerlineweight-cls-1" width="90" height="90"/>
+</g>
+<rect class="adjustlayerlineweight-cls-2" x="18" y="18" width="54" height="16.4"/>
+<rect class="adjustlayerlineweight-cls-2" x="18" y="68.71" width="54" height="3.29"/>
+<rect class="adjustlayerlineweight-cls-2" x="18" y="56.53" width="54" height="6.18"/>
+<rect class="adjustlayerlineweight-cls-2" x="18" y="40.4" width="54" height="10.13"/>
+  </symbol>
+  <symbol id="adjustlineweight" viewBox="0 0 90 90">
+    <defs><style>.adjustlineweight-cls-1{fill:#fff;}.adjustlineweight-cls-2{fill:#1ccbd1;}</style></defs><g id="adjustlineweight-Background"><rect class="adjustlineweight-cls-1" width="90" height="90"/></g><rect class="adjustlineweight-cls-2" x="18" y="18" width="54" height="16.4"/><rect class="adjustlineweight-cls-2" x="18" y="68.71" width="54" height="3.29"/><rect class="adjustlineweight-cls-2" x="18" y="56.53" width="54" height="6.18"/><rect class="adjustlineweight-cls-2" x="18" y="40.4" width="54" height="10.13"/>
+  </symbol>
+  <symbol id="adjustredline" viewBox="0 0 90 90">
+    <defs>
+<style>.adjustredline-cls-1{fill:#fff;}.adjustredline-cls-2{fill:none;}.adjustredline-cls-2,
+.adjustredline-cls-3{stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.adjustredline-cls-3{fill:#e22f30;}.adjustredline-cls-4{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:5px;fill:none}</style></defs>
+<rect id="adjustredline-Background" class="adjustredline-cls-1" width="90" height="90"/>
+<polyline class="adjustredline-cls-2" points="36 60 63 72 72 72 72 63 72 36"/>
+<polyline class="adjustredline-cls-2" points="72 36 72 27 45 27 45 18 18 18 18 45 36 60"/>
+<polyline class="adjustredline-cls-4" points="45.77 37 58 37 58 49.23"/>
+<line class="adjustredline-cls-4" x1="45.76" y1="49.24" x2="58" y2="37"/>
+<circle class="adjustredline-cls-4" cx="36" cy="60" r="7"/>
+  </symbol>
+  <symbol id="adjustredlineweight" viewBox="0 0 90 90">
+    <defs><style>.adjustredlineweight-cls-1{fill:#fff;}.adjustredlineweight-cls-2{fill:#e22f30;}</style></defs><g id="adjustredlineweight-Background"><rect class="adjustredlineweight-cls-1" width="90" height="90"/></g><rect class="adjustredlineweight-cls-2" x="18" y="18" width="54" height="16.4"/><rect class="adjustredlineweight-cls-2" x="18" y="68.71" width="54" height="3.29"/><rect class="adjustredlineweight-cls-2" x="18" y="56.53" width="54" height="6.18"/><rect class="adjustredlineweight-cls-2" x="18" y="40.4" width="54" height="10.13"/>
+  </symbol>
+  <symbol id="adjustspaceobject" viewBox="0 0 90 90">
+    <defs>
+<style>.adjustspaceobject-cls-1{fill:#fff;}.adjustspaceobject-cls-2{fill:none;}.adjustspaceobject-cls-2,.adjustspaceobject-cls-3{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.adjustspaceobject-cls-3{fill:#1ccbd1;}.adjustspaceobject-cls-4{stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:5px;fill:none}</style></defs>
+<rect id="adjustspaceobject-Background" class="adjustspaceobject-cls-1" width="90" height="90"/>
+<polyline class="adjustspaceobject-cls-2" points="36 60 63 72 72 72 72 63 72 36"/>
+<polyline class="adjustspaceobject-cls-2" points="72 36 72 27 45 27 45 18 18 18 18 45 36 60"/>
+<polyline class="adjustspaceobject-cls-2" points="45.77 37 58 37 58 49.23"/>
+<line class="adjustspaceobject-cls-2" x1="45.76" y1="49.24" x2="58" y2="37"/>
+<circle class="adjustspaceobject-cls-4" cx="36" cy="60" r="7"/>
+  </symbol>
+  <symbol id="alllayerson" viewBox="0 0 90 90">
+    <defs><style>.alllayerson-cls-1{fill:#fff;}.alllayerson-cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="alllayerson-Background"><rect class="alllayerson-cls-1" width="90" height="90"/></g><polygon points="72 42.29 45 57.58 18 42.29 27 37.19 27 45 63 45 63 37.19 72 42.29"/><polyline class="alllayerson-cls-2" points="26.39 37.54 18 42.29 45 57.58 72 42.29 63.61 37.54"/><path class="alllayerson-cls-2" d="M24.08,46.27,18,49.72,43.6,64.21a2.85,2.85,0,0,0,2.8,0L72,49.72l-5.82-3.3" transform="translate(0)"/><path class="alllayerson-cls-2" d="M23.64,54,18,57.14l25.6,14.5a2.9,2.9,0,0,0,2.8,0L72,57.14l-5.23-3" transform="translate(0)"/><polyline class="alllayerson-cls-2" points="27 45 27 18 63 18 63 45"/><line class="alllayerson-cls-2" x1="38.5" y1="32.5" x2="51.5" y2="32.5"/><line class="alllayerson-cls-2" x1="45" y1="39" x2="45" y2="26"/>
+  </symbol>
+  <symbol id="background" viewBox="0 0 90 90">
+    <defs><style>.background-cls-1{fill:#fff;}.background-cls-2,.background-cls-3,.background-cls-4{fill:none;stroke:#000;stroke-width:4px;}.background-cls-2,.background-cls-4{stroke-linecap:round;}.background-cls-2{stroke-miterlimit:10;}.background-cls-3,.background-cls-4{stroke-linejoin:round;}</style></defs><g id="background-Background"><rect class="background-cls-1" width="90" height="90"/></g><path class="background-cls-2" d="M47.76,18H70.5c.83,0,1.5.9,1.5,2V70c0,1.1-.67,2-1.5,2h-51c-.83,0-1.5-.9-1.5-2V55.65"/><path class="background-cls-3" d="M26.54,25.18H44.74a2,2,0,0,1,2,2V54.79a0,0,0,0,1,0,0H24.54a0,0,0,0,1,0,0V27.18A2,2,0,0,1,26.54,25.18Z" transform="translate(32.57 93.45) rotate(-135)"/><line class="background-cls-4" x1="38.26" y1="21.66" x2="34.59" y2="18"/><path d="M49.23,42.1,25.05,34.86,18.62,41.3a1.64,1.64,0,0,0,0,2.32L32,57a1.65,1.65,0,0,0,2.33,0Z"/><path d="M59.7,50.81c0-2.51-4.54-7.4-4.54-7.4s-4.55,4.89-4.55,7.4a4.55,4.55,0,1,0,9.09,0Z"/>
+  </symbol>
+  <symbol id="birdseye" viewBox="0 0 90 90">
+    <defs><style>.birdseye-cls-1{fill:#fff;}.birdseye-cls-2{fill:#1ccbd1;}.birdseye-cls-2,.birdseye-cls-4{fill-rule:evenodd;}.birdseye-cls-3{fill:none;stroke:#1ccbd1;stroke-miterlimit:10;stroke-width:4px;}</style></defs><g id="birdseye-Background"><rect class="birdseye-cls-1" width="90" height="90"/></g><polygon class="birdseye-cls-2" points="31.5 29.51 15 29.51 21.44 36 31.5 29.51"/><circle class="birdseye-cls-3" cx="31.5" cy="45" r="13.5"/><path class="birdseye-cls-4" d="M31.5,39.38a5.53,5.53,0,0,0-1.87.33,2.52,2.52,0,1,1-3.42,3.42A5.53,5.53,0,0,0,25.88,45a5.62,5.62,0,1,0,5.62-5.62Z" transform="translate(0 0)"/><polygon class="birdseye-cls-2" points="58.5 29.51 75 29.51 68.56 36 58.5 29.51"/><circle class="birdseye-cls-3" cx="58.5" cy="45" r="13.5"/><path class="birdseye-cls-4" d="M58.5,39.38a5.57,5.57,0,0,0-1.87.33,2.52,2.52,0,1,1-3.42,3.42A5.53,5.53,0,0,0,52.88,45a5.62,5.62,0,1,0,5.62-5.62Z" transform="translate(0 0)"/>
+  </symbol>
+  <symbol id="blackwhite" viewBox="0 0 90 90">
+    <defs><style>.blackwhite-cls-1,.blackwhite-cls-3{fill:#fff;}.blackwhite-cls-2,.blackwhite-cls-3,.blackwhite-cls-4{stroke:#000;stroke-miterlimit:10;stroke-width:4px;}.blackwhite-cls-4{fill:none;}</style></defs><g id="blackwhite-Background"><rect class="blackwhite-cls-1" width="90" height="90"/></g><rect class="blackwhite-cls-2" x="18" y="18" width="27" height="27" rx="2"/><rect class="blackwhite-cls-3" x="45" y="45" width="27" height="27" rx="2"/><path class="blackwhite-cls-4" d="M54,27h5a4,4,0,0,1,4,4v5" transform="translate(0 0)"/><path class="blackwhite-cls-4" d="M36,63H31a4,4,0,0,1-4-4V54" transform="translate(0 0)"/>
+  </symbol>
+  <symbol id="bringforward" viewBox="0 0 90 90">
+    <defs><style>.bringforward-cls-1{fill:#fff;}.bringforward-cls-2{fill:none;stroke:#000;}.bringforward-cls-2,.bringforward-cls-3{stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.bringforward-cls-3{fill:#1ccbd1;stroke:#1ccbd1;}</style></defs><g id="bringforward-Background"><rect class="bringforward-cls-1" width="90" height="90"/></g><rect class="bringforward-cls-2" x="45" y="45" width="27" height="27"/><rect class="bringforward-cls-3" x="18" y="18" width="36" height="36"/>
+  </symbol>
+  <symbol id="bringtofront" viewBox="0 0 90 90">
+    <defs><style>.bringtofront-cls-1{fill:#fff;}.bringtofront-cls-2{fill:none;stroke:#000;}.bringtofront-cls-2,.bringtofront-cls-3{stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.bringtofront-cls-3{fill:#1ccbd1;stroke:#1ccbd1;}</style></defs><g id="bringtofront-Background"><rect class="bringtofront-cls-1" width="90" height="90"/></g><rect class="bringtofront-cls-2" x="18" y="18" width="18" height="18"/><rect class="bringtofront-cls-2" x="54" y="54" width="18" height="18"/><rect class="bringtofront-cls-3" x="27" y="27" width="36" height="36"/>
+  </symbol>
+  <symbol id="calibrate" viewBox="0 0 90 90">
+    <defs><style>.calibrate-cls-1{fill:#fff;}.calibrate-cls-2,.calibrate-cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.calibrate-cls-2{stroke:#1ccbd1;}.calibrate-cls-3{stroke:#000;}</style></defs><g id="calibrate-Background"><rect class="calibrate-cls-1" width="90" height="90"/></g><line class="calibrate-cls-2" x1="45" y1="18" x2="45" y2="13"/><line class="calibrate-cls-3" x1="22.1" y1="65.64" x2="18" y2="72"/><path class="calibrate-cls-3" d="M40.75,45,28.32,64.29a4.5,4.5,0,0,1-6.22,1.35h0a4.51,4.51,0,0,1-1.35-6.22L33.47,39.67"/><path class="calibrate-cls-3" d="M49.25,45,61.68,64.29a4.5,4.5,0,0,0,6.22,1.35h0a4.51,4.51,0,0,0,1.35-6.22L56.53,39.67"/><line class="calibrate-cls-3" x1="67.9" y1="65.64" x2="72" y2="72"/><circle class="calibrate-cls-3" cx="45" cy="31.5" r="13.5"/><circle class="calibrate-cls-2" cx="45" cy="31.5" r="5.95"/>
+  </symbol>
+  <symbol id="circlespaceobject" viewBox="0 0 90 90">
+    <defs><style>.circlespaceobject-cls-1{fill:#fff;}.circlespaceobject-cls-2{fill:#1ccbd1;}.circlespaceobject-cls-2,.circlespaceobject-cls-3{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.circlespaceobject-cls-3{fill:none;}</style></defs><g id="circlespaceobject-Background"><rect class="circlespaceobject-cls-1" width="90" height="90"/></g><polygon class="circlespaceobject-cls-2" points="72.55 48.39 65.89 42.34 47.72 62.31 45 72 54.38 68.37 72.55 48.39"/><path class="circlespaceobject-cls-3" d="M36.15,70.51A27,27,0,1,1,70.46,36"/>
+  </symbol>
+  <symbol id="clearall" viewBox="0 0 90 90">
+    <defs><style>.clearall-cls-1{fill:#fff;}.clearall-cls-2,.clearall-cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.clearall-cls-2{stroke:#1ccbd1;}.clearall-cls-3{stroke:#e22f30;}</style></defs><g id="clearall-Background"><rect class="clearall-cls-1" width="90" height="90"/></g><polygon class="clearall-cls-2" points="72 45 58.5 45 58.5 58.5 45 58.5 45 72 72 72 72 45"/><polygon class="clearall-cls-2" points="45 18 31.5 18 31.5 31.5 18 31.5 18 45 45 45 45 31.5 63 27 63 18 45 18"/><line class="clearall-cls-3" x1="18" y1="57.41" x2="32.59" y2="72"/><line class="clearall-cls-3" x1="32.59" y1="57.41" x2="18" y2="72"/>
+  </symbol>
+  <symbol id="clearallredlines" viewBox="0 0 90 90">
+    <defs><style>.clearallredlines-cls-1{fill:#fff;}.clearallredlines-cls-2,.clearallredlines-cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.clearallredlines-cls-2{stroke:#000;}.clearallredlines-cls-3{stroke:#e22f30;}</style></defs><g id="clearallredlines-Background"><rect class="clearallredlines-cls-1" width="90" height="90"/></g><path d="M44.15,53.27l12-12a2.94,2.94,0,0,1,4.16,0l9.89,9.88a2.94,2.94,0,0,1,0,4.16l-12,12Z"/><path class="clearallredlines-cls-2" d="M44.15,72l-7.29-7.28a2.94,2.94,0,0,1,0-4.16L56.11,41.31a2.94,2.94,0,0,1,4.16,0l9.89,9.88a2.94,2.94,0,0,1,0,4.16L53.51,72Z"/><line class="clearallredlines-cls-3" x1="18" y1="18" x2="40.45" y2="40.45"/><line class="clearallredlines-cls-3" x1="18" y1="40.45" x2="40.45" y2="18"/>
+  </symbol>
+  <symbol id="clearimagelinks" viewBox="0 0 90 90">
+    <defs><style>.clearimagelinks-cls-1{fill:#fff;}.clearimagelinks-cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="clearimagelinks-Background"><rect class="clearimagelinks-cls-1" width="90" height="90"/></g><polyline class="clearimagelinks-cls-2" points="45 27 72 27 72 72 18 72 18 54"/><path d="M18,72V58.5L33.9,45.65a3.71,3.71,0,0,1,4.2,0L51.9,56a3.71,3.71,0,0,0,4.2,0l4.8-3.6a3.71,3.71,0,0,1,4.2,0L72,58.5V72Z" transform="translate(0)"/><circle cx="57" cy="42" r="4.09"/><line class="clearimagelinks-cls-2" x1="17.99" y1="18" x2="35.99" y2="36"/><line class="clearimagelinks-cls-2" x1="17.99" y1="36" x2="35.99" y2="18"/>
+  </symbol>
+  <symbol id="clearquickcounts" viewBox="0 0 90 90">
+    <defs><style>.clearquickcounts-cls-1{fill:#fff;}.clearquickcounts-cls-2,.clearquickcounts-cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.clearquickcounts-cls-2{stroke:#f66011;}.clearquickcounts-cls-3{stroke:#e22f30;}</style></defs><g id="clearquickcounts-Background"><rect class="clearquickcounts-cls-1" width="90" height="90"/></g><polyline class="clearquickcounts-cls-2" points="45 45 27 63 18 54"/><polyline class="clearquickcounts-cls-2" points="72 54 54 72 45 63"/><line class="clearquickcounts-cls-3" x1="36" y1="18" x2="54" y2="36"/><line class="clearquickcounts-cls-3" x1="54" y1="18" x2="36" y2="36"/>
+  </symbol>
+  <symbol id="compare" viewBox="0 0 90 90">
+    <defs><style>.compare-cls-1{fill:#fff;}.compare-cls-2,.compare-cls-3,.compare-cls-4{fill:none;}.compare-cls-2{stroke:#e22f30;}.compare-cls-2,.compare-cls-3,.compare-cls-4,.compare-cls-5{stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.compare-cls-3{stroke:#fdc003;}.compare-cls-4{stroke:#3c4ac7;}.compare-cls-5{stroke:#000;}</style></defs><g id="compare-Background"><rect class="compare-cls-1" width="90" height="90"/></g><rect class="compare-cls-2" x="21.93" y="35.49" width="19.11" height="19.11" transform="translate(-22.63 35.46) rotate(-45)"/><rect class="compare-cls-3" x="35.44" y="21.98" width="19.11" height="19.11" transform="translate(-9.12 41.06) rotate(-45)"/><rect class="compare-cls-4" x="48.96" y="35.49" width="19.11" height="19.11" transform="translate(-14.72 54.57) rotate(-45)"/><rect class="compare-cls-5" x="40.38" y="60.92" width="9.25" height="9.25" transform="translate(-33.16 51.02) rotate(-45)"/>
+  </symbol>
+  <symbol id="copycirclespaceobject" viewBox="0 0 90 90">
+    <defs><style>.copycirclespaceobject-cls-1{fill:#fff;}.copycirclespaceobject-cls-2{fill:none;stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="copycirclespaceobject-Background"><rect class="copycirclespaceobject-cls-1" width="90" height="90"/></g><circle class="copycirclespaceobject-cls-2" cx="40.5" cy="40.5" r="22.5"/><circle class="copycirclespaceobject-cls-2" cx="49.5" cy="49.5" r="22.5"/>
+  </symbol>
+  <symbol id="deletesingleredline" viewBox="0 0 90 90">
+    <defs><style>.deletesingleredline-cls-1{fill:#fff;}.deletesingleredline-cls-2,.deletesingleredline-cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.deletesingleredline-cls-2{stroke:#000;}.deletesingleredline-cls-3{stroke:#e22f30;}</style></defs><g id="deletesingleredline-Background"><rect class="deletesingleredline-cls-1" width="90" height="90"/></g><path d="M32.53,35.44,48.8,19.17a4,4,0,0,1,5.65,0L67.89,32.61a4,4,0,0,1,0,5.65L51.62,54.53Z"/><path class="deletesingleredline-cls-2" d="M32.53,60.89,22.63,51a4,4,0,0,1,0-5.66L48.8,19.17a4,4,0,0,1,5.65,0L67.89,32.61a4,4,0,0,1,0,5.65L45.26,60.89Z"/><line class="deletesingleredline-cls-3" x1="18" y1="72" x2="72" y2="72"/>
+  </symbol>
+  <symbol id="deletespaceobject" viewBox="0 0 90 90">
+    <defs><style>.deletespaceobject-cls-1{fill:#fff;}.deletespaceobject-cls-2,.deletespaceobject-cls-4{fill:none;}.deletespaceobject-cls-2,.deletespaceobject-cls-3{stroke:#1ccbd1;}.deletespaceobject-cls-2,.deletespaceobject-cls-3,.deletespaceobject-cls-4{stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.deletespaceobject-cls-3{fill:#1ccbd1;}.deletespaceobject-cls-4{stroke:#e22f30;}</style></defs><g id="deletespaceobject-Background"><rect class="deletespaceobject-cls-1" width="90" height="90"/></g><polyline class="deletespaceobject-cls-2" points="72 36 72 18 45 18 45 36 45 45 18 45 18 54 18 72 27 72 36 72"/><polygon class="deletespaceobject-cls-3" points="72 48.39 65.34 42.34 47.18 62.31 44.45 72 53.84 68.37 72 48.39"/><polyline class="deletespaceobject-cls-2" points="72 63 72 72 63 72"/><line class="deletespaceobject-cls-4" x1="18" y1="18" x2="33" y2="33"/><line class="deletespaceobject-cls-4" x1="33" y1="18" x2="18" y2="33"/>
+  </symbol>
+  <symbol id="ellipsecloud" viewBox="0 0 90 90">
+    <defs><style>.ellipsecloud-cls-1{fill:#fff;}.ellipsecloud-cls-2{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="ellipsecloud-Background"><rect class="ellipsecloud-cls-1" width="90" height="90"/></g><ellipse class="ellipsecloud-cls-2" cx="45" cy="36" rx="27" ry="18"/><path class="ellipsecloud-cls-2" d="M18,54c0,2.68,2.64,5,6.28,5.72-1.76,2.26-1.22,5.11,1.63,7h0a12.58,12.58,0,0,0,10.51,1.08C37.57,70.24,41,72,45,72s7.43-1.76,8.58-4.19a12.58,12.58,0,0,0,10.51-1.08h0c2.85-1.9,3.39-4.75,1.63-7C69.36,59,72,56.68,72,54"/><path class="ellipsecloud-cls-2" d="M60.92,39.9a13.17,13.17,0,0,0-7.34.29C52.43,37.76,49,36,45,36s-7.43,1.76-8.58,4.19a13.13,13.13,0,0,0-7.8-.16"/>
+  </symbol>
+  <symbol id="fileload" viewBox="0 0 90 90">
+    <defs><style>.fileload-cls-1{fill:#fff;}.fileload-cls-2{fill:none;stroke-linecap:round;}.fileload-cls-2,.fileload-cls-3{stroke:#000;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="fileload-Background"><rect class="fileload-cls-1" width="90" height="90"/></g><polyline class="fileload-cls-2" points="54 27 72 27 72 72 18 72 18 36 27 27 36 27"/><polygon class="fileload-cls-3" points="72 72 18 72 18 63 27 54 72 54 72 72"/><line class="fileload-cls-2" x1="45" y1="9" x2="45" y2="45"/><polyline class="fileload-cls-2" points="54 18 45 9 36 18"/>
+  </symbol>
+  <symbol id="filesave" viewBox="0 0 90 90">
+    <defs><style>.filesave-cls-1{fill:#fff;}.filesave-cls-2{fill:none;stroke-linecap:round;}.filesave-cls-2,.filesave-cls-3{stroke:#000;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="filesave-Background"><rect class="filesave-cls-1" width="90" height="90"/></g><polyline class="filesave-cls-2" points="54 18 72 18 72 72 18 72 18 27 27 18 36 18"/><polygon class="filesave-cls-3" points="72 72 18 72 18 63 27 54 72 54 72 72"/><line class="filesave-cls-2" x1="45" y1="45" x2="45" y2="9"/><polyline class="filesave-cls-2" points="36 36 45 45 54 36"/>
+  </symbol>
+  <symbol id="floppyredlines" viewBox="0 0 90 90">
+    <defs><style>.floppyredlines-cls-1{fill:#fff;}.floppyredlines-cls-2{fill:none;stroke-linecap:round;}.floppyredlines-cls-2,.floppyredlines-cls-3{stroke:#e22f30;stroke-linejoin:round;stroke-width:4px;}.floppyredlines-cls-3{fill:#e22f30;}</style></defs><g id="floppyredlines-Background"><rect class="floppyredlines-cls-1" width="90" height="90"/></g><polyline class="floppyredlines-cls-2" points="54 18 72 18 72 72 18 72 18 27 27 18 36 18"/><polygon class="floppyredlines-cls-3" points="72 72 18 72 18 63 27 54 72 54 72 72"/><line class="floppyredlines-cls-2" x1="45" y1="45" x2="45" y2="9"/><polyline class="floppyredlines-cls-2" points="36 36 45 45 54 36"/>
+  </symbol>
+  <symbol id="freehand" viewBox="0 0 90 90">
+    <defs><style>.freehand-cls-1{fill:#fff;}.freehand-cls-2{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="freehand-Background"><rect class="freehand-cls-1" width="90" height="90"/></g><path class="freehand-cls-2" d="M72,27C57.59,37.47,46.52,9.93,37.82,19.71c-5.64,6.35,4.68,8.86,1.65,17-3.74,10.1-18.28-3.32-20.23,3.78-2.5,9,22,8.88,16.11,16.47-9.08,11.73,14,21.28,20,10.56C61.56,56.27,72.43,63.47,72,54c-.41-9.1-12.76-1-16.06-17.82" transform="translate(0)"/>
+  </symbol>
+  <symbol id="help" viewBox="0 0 90 90">
+    <defs><style>.help-cls-1{fill:#fff;}.help-cls-2{fill:#1ccbd1;}</style></defs><g id="help-Background"><rect class="help-cls-1" width="90" height="90"/></g><path class="help-cls-2" d="M40.7,56v-1.2a20.56,20.56,0,0,1,1-7.15,9.63,9.63,0,0,1,2.78-4,39.85,39.85,0,0,1,4.25-3,13.81,13.81,0,0,0,4-3.79,8.8,8.8,0,0,0,1.5-5.1A7.68,7.68,0,0,0,53,27.4a7.94,7.94,0,0,0-3.15-2.78,10.62,10.62,0,0,0-8.89,0,7.89,7.89,0,0,0-3.29,2.92,10,10,0,0,0-1.42,5H29.62a14.79,14.79,0,0,1,2.25-7.81,13.83,13.83,0,0,1,5.61-5A17.39,17.39,0,0,1,45.34,18a17.21,17.21,0,0,1,8,1.79,13.21,13.21,0,0,1,5.33,4.92,13.61,13.61,0,0,1,1.89,7.17,13.8,13.8,0,0,1-1.88,7.28,16.12,16.12,0,0,1-5.38,5.29,26,26,0,0,0-3.68,2.73,7.27,7.27,0,0,0-2,3,14.64,14.64,0,0,0-.61,4.72V56ZM44,72a4.69,4.69,0,1,1,0-9.38A4.48,4.48,0,0,1,47.27,64a4.71,4.71,0,0,1,0,6.62A4.48,4.48,0,0,1,44,72Z"/>
+  </symbol>
+  <symbol id="insertimage" viewBox="0 0 90 90">
+    <defs><style>.insertimage-cls-1{fill:#fff;}.insertimage-cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="insertimage-Background"><rect class="insertimage-cls-1" width="90" height="90"/></g><rect class="insertimage-cls-2" x="18" y="18" width="54" height="54"/><path d="M18,72V54L33.9,36.87a3,3,0,0,1,4.2,0l13.8,13.8a3,3,0,0,0,4.2,0l4.8-4.8a3,3,0,0,1,4.2,0L72,54V72Z" transform="translate(0)"/><circle cx="54" cy="36" r="4.91"/>
+  </symbol>
+  <symbol id="layercolor" viewBox="0 0 90 90">
+    <sodipodi:namedview
+     id="layercolor-namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="18.322222"
+     inkscape:cx="45"
+     inkscape:cy="45"
+     inkscape:window-width="2059"
+     inkscape:window-height="1360"
+     inkscape:window-x="550"
+     inkscape:window-y="373"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Icon" />
+  <defs
+     id="layercolor-defs1">
+    <style
+       id="layercolor-style1">.layercolor-cls-1{fill:none;}.layercolor-cls-2,.layercolor-cls-3,.layercolor-cls-4{fill:none;stroke-width:4px;}.layercolor-cls-2,.layercolor-cls-3{stroke:#000;stroke-linejoin:round;}.layercolor-cls-3,.layercolor-cls-4{stroke-linecap:round;}.layercolor-cls-4{stroke:#e22f30;stroke-miterlimit:10;}</style>
+  </defs>
+  <g
+     id="layercolor-Background">
+    <rect
+       class="layercolor-cls-1"
+       width="90"
+       height="90"
+       id="layercolor-rect1" />
+  </g>
+  <path
+     class="layercolor-cls-2"
+     d="M26.39,23.82H44.6a2,2,0,0,1,2,2V53.43a0,0,0,0,1,0,0H24.39a0,0,0,0,1,0,0V25.82A2,2,0,0,1,26.39,23.82Z"
+     transform="translate(33.29 91.04) rotate(-135)"
+     id="layercolor-path1" />
+  <line
+     class="layercolor-cls-3"
+     x1="38.12"
+     y1="20.31"
+     x2="34.45"
+     y2="16.65"
+     id="layercolor-line1" />
+  <path
+     d="M49.09,40.74,24.91,33.51l-6.43,6.43a1.65,1.65,0,0,0,0,2.33L31.86,55.64a1.62,1.62,0,0,0,2.32,0Z"
+     transform="translate(0)"
+     id="layercolor-path2" />
+  <path
+     d="M59.56,49.46c0-2.51-4.54-7.4-4.54-7.4s-4.55,4.89-4.55,7.4a4.55,4.55,0,1,0,9.09,0Z"
+     transform="translate(0)"
+     id="layercolor-path3" />
+  <line
+     class="layercolor-cls-4"
+     x1="18"
+     y1="72"
+     x2="45"
+     y2="72"
+     id="layercolor-line3"
+     style="stroke:#000;stroke-opacity:1" />
+  <line
+     class="layercolor-cls-4"
+     x1="45"
+     y1="63"
+     x2="72"
+     y2="63"
+     id="layercolor-line4"
+     style="stroke:#000;stroke-opacity:1" />
+  </symbol>
+  <symbol id="layeroff" viewBox="0 0 90 90">
+    <defs><style>.layeroff-cls-1{fill:#fff;}.layeroff-cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="layeroff-Background"><rect class="layeroff-cls-1" width="90" height="90"/></g><polygon points="72 42.29 45 57.58 18 42.29 27 37.19 27 45 63 45 63 37.19 72 42.29"/><polyline class="layeroff-cls-2" points="26.39 37.54 18 42.29 45 57.58 72 42.29 63.61 37.54"/><path class="layeroff-cls-2" d="M24.08,46.27,18,49.72,43.6,64.21a2.85,2.85,0,0,0,2.8,0L72,49.72l-5.82-3.3" transform="translate(0 0)"/><path class="layeroff-cls-2" d="M23.64,54,18,57.14l25.6,14.5a2.9,2.9,0,0,0,2.8,0L72,57.14l-5.23-3" transform="translate(0 0)"/><polyline class="layeroff-cls-2" points="27 45 27 18 63 18 63 45"/><line class="layeroff-cls-2" x1="38.5" y1="32.5" x2="51.5" y2="32.5"/>
+  </symbol>
+  <symbol id="layers" viewBox="0 0 90 90">
+    <defs><style>.layers-cls-1{fill:#fff;}.layers-cls-2,.layers-cls-3{stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.layers-cls-3{fill:none;}</style></defs><g id="layers-Background"><rect class="layers-cls-1" width="90" height="90"/></g><polygon class="layers-cls-2" points="45 17.48 18 36 45 54.52 72 36 45 17.48"/><path class="layers-cls-3" d="M24.08,40.83,18,45,43.6,62.57a2.47,2.47,0,0,0,2.8,0L72,45l-5.82-4" transform="translate(0 0)"/><path class="layers-cls-3" d="M23.64,50.13,18,54,43.6,71.57a2.47,2.47,0,0,0,2.8,0L72,54l-5.23-3.59" transform="translate(0 0)"/>
+  </symbol>
+  <symbol id="light-skin-sprite" viewBox="0 0 90 90">
+    <symbol id="light-skin-sprite-about" viewBox="0 0 90 90">
+    <defs><style>.light-skin-sprite-cls-1{fill:#fff;}.light-skin-sprite-cls-2{fill:#1ccbd1;}.light-skin-sprite-cls-3{fill:none;stroke:#1ccbd1;stroke-linecap:round;stroke-miterlimit:10;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><path d="M45,22A23,23,0,1,1,22,45,23,23,0,0,1,45,22m0-4A27,27,0,1,0,72,45,27,27,0,0,0,45,18Z" transform="translate(0 0)"/><circle class="light-skin-sprite-cls-2" cx="45" cy="33.18" r="2.41"/><line class="light-skin-sprite-cls-3" x1="45" y1="40.91" x2="45" y2="58.21"/>
+  </symbol>
+  <symbol id="light-skin-sprite-adjustlayerlineweight" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:none;}.cls-2{fill:#000;}</style></defs>
+<g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/>
+</g>
+<rect class="light-skin-sprite-cls-2" x="18" y="18" width="54" height="16.4"/>
+<rect class="light-skin-sprite-cls-2" x="18" y="68.71" width="54" height="3.29"/>
+<rect class="light-skin-sprite-cls-2" x="18" y="56.53" width="54" height="6.18"/>
+<rect class="light-skin-sprite-cls-2" x="18" y="40.4" width="54" height="10.13"/>
+  </symbol>
+  <symbol id="light-skin-sprite-adjustlineweight" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:#1ccbd1;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><rect class="light-skin-sprite-cls-2" x="18" y="18" width="54" height="16.4"/><rect class="light-skin-sprite-cls-2" x="18" y="68.71" width="54" height="3.29"/><rect class="light-skin-sprite-cls-2" x="18" y="56.53" width="54" height="6.18"/><rect class="light-skin-sprite-cls-2" x="18" y="40.4" width="54" height="10.13"/>
+  </symbol>
+  <symbol id="light-skin-sprite-adjustredline" viewBox="0 0 90 90">
+    <defs>
+<style>.cls-1{fill:#fff;}.cls-2{fill:none;}.cls-2,
+.cls-3{stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#e22f30;}.cls-4{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:5px;fill:none}</style></defs>
+<rect id="light-skin-sprite-Background" class="light-skin-sprite-cls-1" width="90" height="90"/>
+<polyline class="light-skin-sprite-cls-2" points="36 60 63 72 72 72 72 63 72 36"/>
+<polyline class="light-skin-sprite-cls-2" points="72 36 72 27 45 27 45 18 18 18 18 45 36 60"/>
+<polyline class="light-skin-sprite-cls-4" points="45.77 37 58 37 58 49.23"/>
+<line class="light-skin-sprite-cls-4" x1="45.76" y1="49.24" x2="58" y2="37"/>
+<circle class="light-skin-sprite-cls-4" cx="36" cy="60" r="7"/>
+  </symbol>
+  <symbol id="light-skin-sprite-adjustredlineweight" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:#e22f30;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><rect class="light-skin-sprite-cls-2" x="18" y="18" width="54" height="16.4"/><rect class="light-skin-sprite-cls-2" x="18" y="68.71" width="54" height="3.29"/><rect class="light-skin-sprite-cls-2" x="18" y="56.53" width="54" height="6.18"/><rect class="light-skin-sprite-cls-2" x="18" y="40.4" width="54" height="10.13"/>
+  </symbol>
+  <symbol id="light-skin-sprite-adjustspaceobject" viewBox="0 0 90 90">
+    <defs>
+<style>.cls-1{fill:#fff;}.cls-2{fill:none;}.cls-2,.cls-3{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#1ccbd1;}.cls-4{stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:5px;fill:none}</style></defs>
+<rect id="light-skin-sprite-Background" class="light-skin-sprite-cls-1" width="90" height="90"/>
+<polyline class="light-skin-sprite-cls-2" points="36 60 63 72 72 72 72 63 72 36"/>
+<polyline class="light-skin-sprite-cls-2" points="72 36 72 27 45 27 45 18 18 18 18 45 36 60"/>
+<polyline class="light-skin-sprite-cls-2" points="45.77 37 58 37 58 49.23"/>
+<line class="light-skin-sprite-cls-2" x1="45.76" y1="49.24" x2="58" y2="37"/>
+<circle class="light-skin-sprite-cls-4" cx="36" cy="60" r="7"/>
+  </symbol>
+  <symbol id="light-skin-sprite-alllayerson" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polygon points="72 42.29 45 57.58 18 42.29 27 37.19 27 45 63 45 63 37.19 72 42.29"/><polyline class="light-skin-sprite-cls-2" points="26.39 37.54 18 42.29 45 57.58 72 42.29 63.61 37.54"/><path class="light-skin-sprite-cls-2" d="M24.08,46.27,18,49.72,43.6,64.21a2.85,2.85,0,0,0,2.8,0L72,49.72l-5.82-3.3" transform="translate(0)"/><path class="light-skin-sprite-cls-2" d="M23.64,54,18,57.14l25.6,14.5a2.9,2.9,0,0,0,2.8,0L72,57.14l-5.23-3" transform="translate(0)"/><polyline class="light-skin-sprite-cls-2" points="27 45 27 18 63 18 63 45"/><line class="light-skin-sprite-cls-2" x1="38.5" y1="32.5" x2="51.5" y2="32.5"/><line class="light-skin-sprite-cls-2" x1="45" y1="39" x2="45" y2="26"/>
+  </symbol>
+  <symbol id="light-skin-sprite-background" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3,.cls-4{fill:none;stroke:#000;stroke-width:4px;}.cls-2,.cls-4{stroke-linecap:round;}.cls-2{stroke-miterlimit:10;}.cls-3,.cls-4{stroke-linejoin:round;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><path class="light-skin-sprite-cls-2" d="M47.76,18H70.5c.83,0,1.5.9,1.5,2V70c0,1.1-.67,2-1.5,2h-51c-.83,0-1.5-.9-1.5-2V55.65"/><path class="light-skin-sprite-cls-3" d="M26.54,25.18H44.74a2,2,0,0,1,2,2V54.79a0,0,0,0,1,0,0H24.54a0,0,0,0,1,0,0V27.18A2,2,0,0,1,26.54,25.18Z" transform="translate(32.57 93.45) rotate(-135)"/><line class="light-skin-sprite-cls-4" x1="38.26" y1="21.66" x2="34.59" y2="18"/><path d="M49.23,42.1,25.05,34.86,18.62,41.3a1.64,1.64,0,0,0,0,2.32L32,57a1.65,1.65,0,0,0,2.33,0Z"/><path d="M59.7,50.81c0-2.51-4.54-7.4-4.54-7.4s-4.55,4.89-4.55,7.4a4.55,4.55,0,1,0,9.09,0Z"/>
+  </symbol>
+  <symbol id="light-skin-sprite-birdseye" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:#1ccbd1;}.cls-2,.cls-4{fill-rule:evenodd;}.cls-3{fill:none;stroke:#1ccbd1;stroke-miterlimit:10;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polygon class="light-skin-sprite-cls-2" points="31.5 29.51 15 29.51 21.44 36 31.5 29.51"/><circle class="light-skin-sprite-cls-3" cx="31.5" cy="45" r="13.5"/><path class="light-skin-sprite-cls-4" d="M31.5,39.38a5.53,5.53,0,0,0-1.87.33,2.52,2.52,0,1,1-3.42,3.42A5.53,5.53,0,0,0,25.88,45a5.62,5.62,0,1,0,5.62-5.62Z" transform="translate(0 0)"/><polygon class="light-skin-sprite-cls-2" points="58.5 29.51 75 29.51 68.56 36 58.5 29.51"/><circle class="light-skin-sprite-cls-3" cx="58.5" cy="45" r="13.5"/><path class="light-skin-sprite-cls-4" d="M58.5,39.38a5.57,5.57,0,0,0-1.87.33,2.52,2.52,0,1,1-3.42,3.42A5.53,5.53,0,0,0,52.88,45a5.62,5.62,0,1,0,5.62-5.62Z" transform="translate(0 0)"/>
+  </symbol>
+  <symbol id="light-skin-sprite-blackwhite" viewBox="0 0 90 90">
+    <defs><style>.cls-1,.cls-3{fill:#fff;}.cls-2,.cls-3,.cls-4{stroke:#000;stroke-miterlimit:10;stroke-width:4px;}.cls-4{fill:none;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><rect class="light-skin-sprite-cls-2" x="18" y="18" width="27" height="27" rx="2"/><rect class="light-skin-sprite-cls-3" x="45" y="45" width="27" height="27" rx="2"/><path class="light-skin-sprite-cls-4" d="M54,27h5a4,4,0,0,1,4,4v5" transform="translate(0 0)"/><path class="light-skin-sprite-cls-4" d="M36,63H31a4,4,0,0,1-4-4V54" transform="translate(0 0)"/>
+  </symbol>
+  <symbol id="light-skin-sprite-bringforward" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;}.cls-2,.cls-3{stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#1ccbd1;stroke:#1ccbd1;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><rect class="light-skin-sprite-cls-2" x="45" y="45" width="27" height="27"/><rect class="light-skin-sprite-cls-3" x="18" y="18" width="36" height="36"/>
+  </symbol>
+  <symbol id="light-skin-sprite-bringtofront" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;}.cls-2,.cls-3{stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#1ccbd1;stroke:#1ccbd1;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><rect class="light-skin-sprite-cls-2" x="18" y="18" width="18" height="18"/><rect class="light-skin-sprite-cls-2" x="54" y="54" width="18" height="18"/><rect class="light-skin-sprite-cls-3" x="27" y="27" width="36" height="36"/>
+  </symbol>
+  <symbol id="light-skin-sprite-calibrate" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-2{stroke:#1ccbd1;}.cls-3{stroke:#000;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><line class="light-skin-sprite-cls-2" x1="45" y1="18" x2="45" y2="13"/><line class="light-skin-sprite-cls-3" x1="22.1" y1="65.64" x2="18" y2="72"/><path class="light-skin-sprite-cls-3" d="M40.75,45,28.32,64.29a4.5,4.5,0,0,1-6.22,1.35h0a4.51,4.51,0,0,1-1.35-6.22L33.47,39.67"/><path class="light-skin-sprite-cls-3" d="M49.25,45,61.68,64.29a4.5,4.5,0,0,0,6.22,1.35h0a4.51,4.51,0,0,0,1.35-6.22L56.53,39.67"/><line class="light-skin-sprite-cls-3" x1="67.9" y1="65.64" x2="72" y2="72"/><circle class="light-skin-sprite-cls-3" cx="45" cy="31.5" r="13.5"/><circle class="light-skin-sprite-cls-2" cx="45" cy="31.5" r="5.95"/>
+  </symbol>
+  <symbol id="light-skin-sprite-circlespaceobject" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:#1ccbd1;}.cls-2,.cls-3{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:none;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polygon class="light-skin-sprite-cls-2" points="72.55 48.39 65.89 42.34 47.72 62.31 45 72 54.38 68.37 72.55 48.39"/><path class="light-skin-sprite-cls-3" d="M36.15,70.51A27,27,0,1,1,70.46,36"/>
+  </symbol>
+  <symbol id="light-skin-sprite-clearall" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-2{stroke:#1ccbd1;}.cls-3{stroke:#e22f30;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polygon class="light-skin-sprite-cls-2" points="72 45 58.5 45 58.5 58.5 45 58.5 45 72 72 72 72 45"/><polygon class="light-skin-sprite-cls-2" points="45 18 31.5 18 31.5 31.5 18 31.5 18 45 45 45 45 31.5 63 27 63 18 45 18"/><line class="light-skin-sprite-cls-3" x1="18" y1="57.41" x2="32.59" y2="72"/><line class="light-skin-sprite-cls-3" x1="32.59" y1="57.41" x2="18" y2="72"/>
+  </symbol>
+  <symbol id="light-skin-sprite-clearallredlines" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-2{stroke:#000;}.cls-3{stroke:#e22f30;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><path d="M44.15,53.27l12-12a2.94,2.94,0,0,1,4.16,0l9.89,9.88a2.94,2.94,0,0,1,0,4.16l-12,12Z"/><path class="light-skin-sprite-cls-2" d="M44.15,72l-7.29-7.28a2.94,2.94,0,0,1,0-4.16L56.11,41.31a2.94,2.94,0,0,1,4.16,0l9.89,9.88a2.94,2.94,0,0,1,0,4.16L53.51,72Z"/><line class="light-skin-sprite-cls-3" x1="18" y1="18" x2="40.45" y2="40.45"/><line class="light-skin-sprite-cls-3" x1="18" y1="40.45" x2="40.45" y2="18"/>
+  </symbol>
+  <symbol id="light-skin-sprite-clearimagelinks" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polyline class="light-skin-sprite-cls-2" points="45 27 72 27 72 72 18 72 18 54"/><path d="M18,72V58.5L33.9,45.65a3.71,3.71,0,0,1,4.2,0L51.9,56a3.71,3.71,0,0,0,4.2,0l4.8-3.6a3.71,3.71,0,0,1,4.2,0L72,58.5V72Z" transform="translate(0)"/><circle cx="57" cy="42" r="4.09"/><line class="light-skin-sprite-cls-2" x1="17.99" y1="18" x2="35.99" y2="36"/><line class="light-skin-sprite-cls-2" x1="17.99" y1="36" x2="35.99" y2="18"/>
+  </symbol>
+  <symbol id="light-skin-sprite-clearquickcounts" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-2{stroke:#f66011;}.cls-3{stroke:#e22f30;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polyline class="light-skin-sprite-cls-2" points="45 45 27 63 18 54"/><polyline class="light-skin-sprite-cls-2" points="72 54 54 72 45 63"/><line class="light-skin-sprite-cls-3" x1="36" y1="18" x2="54" y2="36"/><line class="light-skin-sprite-cls-3" x1="54" y1="18" x2="36" y2="36"/>
+  </symbol>
+  <symbol id="light-skin-sprite-compare" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3,.cls-4{fill:none;}.cls-2{stroke:#e22f30;}.cls-2,.cls-3,.cls-4,.cls-5{stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{stroke:#fdc003;}.cls-4{stroke:#3c4ac7;}.cls-5{stroke:#000;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><rect class="light-skin-sprite-cls-2" x="21.93" y="35.49" width="19.11" height="19.11" transform="translate(-22.63 35.46) rotate(-45)"/><rect class="light-skin-sprite-cls-3" x="35.44" y="21.98" width="19.11" height="19.11" transform="translate(-9.12 41.06) rotate(-45)"/><rect class="light-skin-sprite-cls-4" x="48.96" y="35.49" width="19.11" height="19.11" transform="translate(-14.72 54.57) rotate(-45)"/><rect class="light-skin-sprite-cls-5" x="40.38" y="60.92" width="9.25" height="9.25" transform="translate(-33.16 51.02) rotate(-45)"/>
+  </symbol>
+  <symbol id="light-skin-sprite-copycirclespaceobject" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><circle class="light-skin-sprite-cls-2" cx="40.5" cy="40.5" r="22.5"/><circle class="light-skin-sprite-cls-2" cx="49.5" cy="49.5" r="22.5"/>
+  </symbol>
+  <symbol id="light-skin-sprite-deletesingleredline" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-2{stroke:#000;}.cls-3{stroke:#e22f30;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><path d="M32.53,35.44,48.8,19.17a4,4,0,0,1,5.65,0L67.89,32.61a4,4,0,0,1,0,5.65L51.62,54.53Z"/><path class="light-skin-sprite-cls-2" d="M32.53,60.89,22.63,51a4,4,0,0,1,0-5.66L48.8,19.17a4,4,0,0,1,5.65,0L67.89,32.61a4,4,0,0,1,0,5.65L45.26,60.89Z"/><line class="light-skin-sprite-cls-3" x1="18" y1="72" x2="72" y2="72"/>
+  </symbol>
+  <symbol id="light-skin-sprite-deletespaceobject" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-4{fill:none;}.cls-2,.cls-3{stroke:#1ccbd1;}.cls-2,.cls-3,.cls-4{stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#1ccbd1;}.cls-4{stroke:#e22f30;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polyline class="light-skin-sprite-cls-2" points="72 36 72 18 45 18 45 36 45 45 18 45 18 54 18 72 27 72 36 72"/><polygon class="light-skin-sprite-cls-3" points="72 48.39 65.34 42.34 47.18 62.31 44.45 72 53.84 68.37 72 48.39"/><polyline class="light-skin-sprite-cls-2" points="72 63 72 72 63 72"/><line class="light-skin-sprite-cls-4" x1="18" y1="18" x2="33" y2="33"/><line class="light-skin-sprite-cls-4" x1="33" y1="18" x2="18" y2="33"/>
+  </symbol>
+  <symbol id="light-skin-sprite-ellipsecloud" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><ellipse class="light-skin-sprite-cls-2" cx="45" cy="36" rx="27" ry="18"/><path class="light-skin-sprite-cls-2" d="M18,54c0,2.68,2.64,5,6.28,5.72-1.76,2.26-1.22,5.11,1.63,7h0a12.58,12.58,0,0,0,10.51,1.08C37.57,70.24,41,72,45,72s7.43-1.76,8.58-4.19a12.58,12.58,0,0,0,10.51-1.08h0c2.85-1.9,3.39-4.75,1.63-7C69.36,59,72,56.68,72,54"/><path class="light-skin-sprite-cls-2" d="M60.92,39.9a13.17,13.17,0,0,0-7.34.29C52.43,37.76,49,36,45,36s-7.43,1.76-8.58,4.19a13.13,13.13,0,0,0-7.8-.16"/>
+  </symbol>
+  <symbol id="light-skin-sprite-fileload" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke-linecap:round;}.cls-2,.cls-3{stroke:#000;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polyline class="light-skin-sprite-cls-2" points="54 27 72 27 72 72 18 72 18 36 27 27 36 27"/><polygon class="light-skin-sprite-cls-3" points="72 72 18 72 18 63 27 54 72 54 72 72"/><line class="light-skin-sprite-cls-2" x1="45" y1="9" x2="45" y2="45"/><polyline class="light-skin-sprite-cls-2" points="54 18 45 9 36 18"/>
+  </symbol>
+  <symbol id="light-skin-sprite-filesave" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke-linecap:round;}.cls-2,.cls-3{stroke:#000;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polyline class="light-skin-sprite-cls-2" points="54 18 72 18 72 72 18 72 18 27 27 18 36 18"/><polygon class="light-skin-sprite-cls-3" points="72 72 18 72 18 63 27 54 72 54 72 72"/><line class="light-skin-sprite-cls-2" x1="45" y1="45" x2="45" y2="9"/><polyline class="light-skin-sprite-cls-2" points="36 36 45 45 54 36"/>
+  </symbol>
+  <symbol id="light-skin-sprite-floppyredlines" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke-linecap:round;}.cls-2,.cls-3{stroke:#e22f30;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#e22f30;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polyline class="light-skin-sprite-cls-2" points="54 18 72 18 72 72 18 72 18 27 27 18 36 18"/><polygon class="light-skin-sprite-cls-3" points="72 72 18 72 18 63 27 54 72 54 72 72"/><line class="light-skin-sprite-cls-2" x1="45" y1="45" x2="45" y2="9"/><polyline class="light-skin-sprite-cls-2" points="36 36 45 45 54 36"/>
+  </symbol>
+  <symbol id="light-skin-sprite-freehand" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><path class="light-skin-sprite-cls-2" d="M72,27C57.59,37.47,46.52,9.93,37.82,19.71c-5.64,6.35,4.68,8.86,1.65,17-3.74,10.1-18.28-3.32-20.23,3.78-2.5,9,22,8.88,16.11,16.47-9.08,11.73,14,21.28,20,10.56C61.56,56.27,72.43,63.47,72,54c-.41-9.1-12.76-1-16.06-17.82" transform="translate(0)"/>
+  </symbol>
+  <symbol id="light-skin-sprite-help" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:#1ccbd1;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><path class="light-skin-sprite-cls-2" d="M40.7,56v-1.2a20.56,20.56,0,0,1,1-7.15,9.63,9.63,0,0,1,2.78-4,39.85,39.85,0,0,1,4.25-3,13.81,13.81,0,0,0,4-3.79,8.8,8.8,0,0,0,1.5-5.1A7.68,7.68,0,0,0,53,27.4a7.94,7.94,0,0,0-3.15-2.78,10.62,10.62,0,0,0-8.89,0,7.89,7.89,0,0,0-3.29,2.92,10,10,0,0,0-1.42,5H29.62a14.79,14.79,0,0,1,2.25-7.81,13.83,13.83,0,0,1,5.61-5A17.39,17.39,0,0,1,45.34,18a17.21,17.21,0,0,1,8,1.79,13.21,13.21,0,0,1,5.33,4.92,13.61,13.61,0,0,1,1.89,7.17,13.8,13.8,0,0,1-1.88,7.28,16.12,16.12,0,0,1-5.38,5.29,26,26,0,0,0-3.68,2.73,7.27,7.27,0,0,0-2,3,14.64,14.64,0,0,0-.61,4.72V56ZM44,72a4.69,4.69,0,1,1,0-9.38A4.48,4.48,0,0,1,47.27,64a4.71,4.71,0,0,1,0,6.62A4.48,4.48,0,0,1,44,72Z"/>
+  </symbol>
+  <symbol id="light-skin-sprite-insertimage" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><rect class="light-skin-sprite-cls-2" x="18" y="18" width="54" height="54"/><path d="M18,72V54L33.9,36.87a3,3,0,0,1,4.2,0l13.8,13.8a3,3,0,0,0,4.2,0l4.8-4.8a3,3,0,0,1,4.2,0L72,54V72Z" transform="translate(0)"/><circle cx="54" cy="36" r="4.91"/>
+  </symbol>
+  <symbol id="light-skin-sprite-layercolor" viewBox="0 0 90 90">
+    <sodipodi:namedview
+     id="light-skin-sprite-namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="18.322222"
+     inkscape:cx="45"
+     inkscape:cy="45"
+     inkscape:window-width="2059"
+     inkscape:window-height="1360"
+     inkscape:window-x="550"
+     inkscape:window-y="373"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Icon" />
+  <defs
+     id="light-skin-sprite-defs1">
+    <style
+       id="light-skin-sprite-style1">.cls-1{fill:none;}.cls-2,.cls-3,.cls-4{fill:none;stroke-width:4px;}.cls-2,.cls-3{stroke:#000;stroke-linejoin:round;}.cls-3,.cls-4{stroke-linecap:round;}.cls-4{stroke:#e22f30;stroke-miterlimit:10;}</style>
+  </defs>
+  <g
+     id="light-skin-sprite-Background">
+    <rect
+       class="light-skin-sprite-cls-1"
+       width="90"
+       height="90"
+       id="light-skin-sprite-rect1" />
+  </g>
+  <path
+     class="light-skin-sprite-cls-2"
+     d="M26.39,23.82H44.6a2,2,0,0,1,2,2V53.43a0,0,0,0,1,0,0H24.39a0,0,0,0,1,0,0V25.82A2,2,0,0,1,26.39,23.82Z"
+     transform="translate(33.29 91.04) rotate(-135)"
+     id="light-skin-sprite-path1" />
+  <line
+     class="light-skin-sprite-cls-3"
+     x1="38.12"
+     y1="20.31"
+     x2="34.45"
+     y2="16.65"
+     id="light-skin-sprite-line1" />
+  <path
+     d="M49.09,40.74,24.91,33.51l-6.43,6.43a1.65,1.65,0,0,0,0,2.33L31.86,55.64a1.62,1.62,0,0,0,2.32,0Z"
+     transform="translate(0)"
+     id="light-skin-sprite-path2" />
+  <path
+     d="M59.56,49.46c0-2.51-4.54-7.4-4.54-7.4s-4.55,4.89-4.55,7.4a4.55,4.55,0,1,0,9.09,0Z"
+     transform="translate(0)"
+     id="light-skin-sprite-path3" />
+  <line
+     class="light-skin-sprite-cls-4"
+     x1="18"
+     y1="72"
+     x2="45"
+     y2="72"
+     id="light-skin-sprite-line3"
+     style="stroke:#000;stroke-opacity:1" />
+  <line
+     class="light-skin-sprite-cls-4"
+     x1="45"
+     y1="63"
+     x2="72"
+     y2="63"
+     id="light-skin-sprite-line4"
+     style="stroke:#000;stroke-opacity:1" />
+  </symbol>
+  <symbol id="light-skin-sprite-layeroff" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polygon points="72 42.29 45 57.58 18 42.29 27 37.19 27 45 63 45 63 37.19 72 42.29"/><polyline class="light-skin-sprite-cls-2" points="26.39 37.54 18 42.29 45 57.58 72 42.29 63.61 37.54"/><path class="light-skin-sprite-cls-2" d="M24.08,46.27,18,49.72,43.6,64.21a2.85,2.85,0,0,0,2.8,0L72,49.72l-5.82-3.3" transform="translate(0 0)"/><path class="light-skin-sprite-cls-2" d="M23.64,54,18,57.14l25.6,14.5a2.9,2.9,0,0,0,2.8,0L72,57.14l-5.23-3" transform="translate(0 0)"/><polyline class="light-skin-sprite-cls-2" points="27 45 27 18 63 18 63 45"/><line class="light-skin-sprite-cls-2" x1="38.5" y1="32.5" x2="51.5" y2="32.5"/>
+  </symbol>
+  <symbol id="light-skin-sprite-layers" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3{stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:none;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polygon class="light-skin-sprite-cls-2" points="45 17.48 18 36 45 54.52 72 36 45 17.48"/><path class="light-skin-sprite-cls-3" d="M24.08,40.83,18,45,43.6,62.57a2.47,2.47,0,0,0,2.8,0L72,45l-5.82-4" transform="translate(0 0)"/><path class="light-skin-sprite-cls-3" d="M23.64,50.13,18,54,43.6,71.57a2.47,2.47,0,0,0,2.8,0L72,54l-5.23-3.59" transform="translate(0 0)"/>
+  </symbol>
+  <symbol id="light-skin-sprite-loadallimagelinks" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polyline class="light-skin-sprite-cls-2" points="45 27 72 27 72 72 18 72 18 54"/><path d="M18,72V58.5L33.9,45.65a3.71,3.71,0,0,1,4.2,0L51.9,56a3.71,3.71,0,0,0,4.2,0l4.8-3.6a3.71,3.71,0,0,1,4.2,0L72,58.5V72Z" transform="translate(0)"/><circle cx="57" cy="42" r="4.09"/><line class="light-skin-sprite-cls-2" x1="27" y1="18" x2="27" y2="42.59"/><polyline class="light-skin-sprite-cls-2" points="36 27 27 18 18 27"/>
+  </symbol>
+  <symbol id="light-skin-sprite-loadredlines" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke-linecap:round;}.cls-2,.cls-3{stroke:#e22f30;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#e22f30;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polyline class="light-skin-sprite-cls-2" points="54 27 72 27 72 72 18 72 18 36 27 27 36 27"/><polygon class="light-skin-sprite-cls-3" points="72 72 18 72 18 63 27 54 72 54 72 72"/><line class="light-skin-sprite-cls-2" x1="45" y1="9" x2="45" y2="45"/><polyline class="light-skin-sprite-cls-2" points="54 18 45 9 36 18"/>
+  </symbol>
+  <symbol id="light-skin-sprite-loadseconddrawing" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3,.cls-4{fill:none;}.cls-2{stroke:#e22f30;}.cls-2,.cls-3,.cls-4,.cls-5{stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{stroke:#fdc003;}.cls-4{stroke:#3c4ac7;}.cls-5{stroke:#000;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><rect class="light-skin-sprite-cls-2" x="21.93" y="35.49" width="19.11" height="19.11" transform="translate(-22.63 35.46) rotate(-45)"/><rect class="light-skin-sprite-cls-3" x="35.44" y="21.98" width="19.11" height="19.11" transform="translate(-9.12 41.06) rotate(-45)"/><rect class="light-skin-sprite-cls-4" x="48.96" y="35.49" width="19.11" height="19.11" transform="translate(-14.72 54.57) rotate(-45)"/><rect class="light-skin-sprite-cls-5" x="40.38" y="60.92" width="9.25" height="9.25" transform="translate(-33.16 51.02) rotate(-45)"/>
+  </symbol>
+  <symbol id="light-skin-sprite-loadspaceobjects" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;}.cls-2,.cls-3{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#1ccbd1;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polyline class="light-skin-sprite-cls-2" points="54 27 72 27 72 72 18 72 18 36 27 27 36 27"/><polygon class="light-skin-sprite-cls-3" points="72 72 18 72 18 63 27 54 72 54 72 72"/><line class="light-skin-sprite-cls-2" x1="45" y1="9" x2="45" y2="45"/><polyline class="light-skin-sprite-cls-2" points="54 18 45 9 36 18"/>
+  </symbol>
+  <symbol id="light-skin-sprite-measure" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-2{stroke:#000;}.cls-3{stroke:#1ccbd1;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><rect class="light-skin-sprite-cls-2" x="18" y="45" width="54" height="27"/><line class="light-skin-sprite-cls-2" x1="27" y1="63" x2="27" y2="45"/><line class="light-skin-sprite-cls-2" x1="36" y1="54" x2="36" y2="45"/><line class="light-skin-sprite-cls-2" x1="45" y1="63" x2="45" y2="45"/><line class="light-skin-sprite-cls-2" x1="54" y1="54" x2="54" y2="45"/><line class="light-skin-sprite-cls-2" x1="63" y1="63" x2="63" y2="45"/><line class="light-skin-sprite-cls-3" x1="72" y1="27" x2="18" y2="27"/><polyline class="light-skin-sprite-cls-3" points="63 18 72 27 63 36"/><polyline class="light-skin-sprite-cls-3" points="27 36 18 27 27 18"/>
+  </symbol>
+  <symbol id="light-skin-sprite-merge" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-2{stroke:#000;}.cls-3{stroke:#1ccbd1;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polyline class="light-skin-sprite-cls-2" points="18 36 18 18 72 18 72 36"/><polyline class="light-skin-sprite-cls-2" points="72 54 72 72 18 72 18 54"/><line class="light-skin-sprite-cls-3" x1="36" y1="45" x2="18" y2="45"/><polyline class="light-skin-sprite-cls-3" points="29.18 51.82 36 45 29.18 38.18"/><line class="light-skin-sprite-cls-3" x1="54" y1="45" x2="72" y2="45"/><polyline class="light-skin-sprite-cls-3" points="60.82 38.18 54 45 60.82 51.82"/><line class="light-skin-sprite-cls-3" x1="45" y1="27" x2="45" y2="63"/>
+  </symbol>
+  <symbol id="light-skin-sprite-moveicons" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><line class="light-skin-sprite-cls-2" x1="45" y1="18" x2="45" y2="36"/><polyline class="light-skin-sprite-cls-2" points="54 27 45 18 36 27"/><line class="light-skin-sprite-cls-2" x1="45" y1="72" x2="45" y2="54"/><polyline class="light-skin-sprite-cls-2" points="36 63 45 72 54 63"/><line class="light-skin-sprite-cls-2" x1="18" y1="45" x2="36" y2="45"/><polyline class="light-skin-sprite-cls-2" points="27 36 18 45 27 54"/><line class="light-skin-sprite-cls-2" x1="72" y1="45" x2="54" y2="45"/><polyline class="light-skin-sprite-cls-2" points="63 54 72 45 63 36"/>
+  </symbol>
+  <symbol id="light-skin-sprite-moveredline" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:#e22f30;}.cls-2,.cls-3{stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:none;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><rect class="light-skin-sprite-cls-2" x="36" y="36" width="18" height="18"/><polyline class="light-skin-sprite-cls-3" points="27 36 18 45 27 54"/><polyline class="light-skin-sprite-cls-3" points="36 63 45 72 54 63"/><polyline class="light-skin-sprite-cls-3" points="63 36 72 45 63 54"/><polyline class="light-skin-sprite-cls-3" points="36 27 45 18 54 27"/><line class="light-skin-sprite-cls-3" x1="45" y1="18" x2="45" y2="36"/><line class="light-skin-sprite-cls-3" x1="18" y1="45" x2="36" y2="45"/><line class="light-skin-sprite-cls-3" x1="45" y1="72" x2="45" y2="54"/><line class="light-skin-sprite-cls-3" x1="72" y1="45" x2="54" y2="45"/>
+  </symbol>
+  <symbol id="light-skin-sprite-movespaceobject" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:#1ccbd1;}.cls-2,.cls-3{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:none;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><rect class="light-skin-sprite-cls-2" x="36" y="36" width="18" height="18"/><polyline class="light-skin-sprite-cls-3" points="27 36 18 45 27 54"/><polyline class="light-skin-sprite-cls-3" points="36 63 45 72 54 63"/><polyline class="light-skin-sprite-cls-3" points="63 36 72 45 63 54"/><polyline class="light-skin-sprite-cls-3" points="36 27 45 18 54 27"/><line class="light-skin-sprite-cls-3" x1="45" y1="18" x2="45" y2="36"/><line class="light-skin-sprite-cls-3" x1="18" y1="45" x2="36" y2="45"/><line class="light-skin-sprite-cls-3" x1="45" y1="72" x2="45" y2="54"/><line class="light-skin-sprite-cls-3" x1="72" y1="45" x2="54" y2="45"/>
+  </symbol>
+  <symbol id="light-skin-sprite-nextpage" viewBox="0 0 54 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="54" height="90"/></g><polygon class="light-skin-sprite-cls-2" points="36 36 27 27 18 36 36 36"/><rect class="light-skin-sprite-cls-2" x="27" y="45" width="18" height="18" transform="translate(54 108) rotate(180)"/><rect class="light-skin-sprite-cls-2" x="45" y="45" width="18" height="18" transform="translate(90 108) rotate(180)"/>
+  </symbol>
+  <symbol id="light-skin-sprite-nextpagespace" viewBox="0 0 54 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="54" height="90"/></g><polygon class="light-skin-sprite-cls-2" points="36 36 27 27 18 36 36 36"/><rect class="light-skin-sprite-cls-2" x="27" y="45" width="18" height="18" transform="translate(54 108) rotate(180)"/><rect class="light-skin-sprite-cls-2" x="45" y="45" width="18" height="18" transform="translate(90 108) rotate(180)"/>
+  </symbol>
+  <symbol id="light-skin-sprite-polygonspaceobject" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;}.cls-2,.cls-3{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#1ccbd1;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polyline class="light-skin-sprite-cls-2" points="63 72 72 72 72 63"/><polyline class="light-skin-sprite-cls-2" points="72 36 72 27 45 27 45 18 18 18 18 45 36 63"/><polygon class="light-skin-sprite-cls-3" points="72.55 48.39 65.89 42.34 47.72 62.31 45 72 54.38 68.37 72.55 48.39"/>
+  </symbol>
+  <symbol id="light-skin-sprite-previouspage" viewBox="0 0 54 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="54" height="90"/></g><polygon class="light-skin-sprite-cls-2" points="18 54 27 63 36 54 18 54"/><rect class="light-skin-sprite-cls-2" x="27" y="27" width="18" height="18"/><rect class="light-skin-sprite-cls-2" x="9" y="27" width="18" height="18"/>
+  </symbol>
+  <symbol id="light-skin-sprite-previouspagespace" viewBox="0 0 54 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="54" height="90"/></g><polygon class="light-skin-sprite-cls-2" points="18 54 27 63 36 54 18 54"/><rect class="light-skin-sprite-cls-2" x="27" y="27" width="18" height="18"/><rect class="light-skin-sprite-cls-2" x="9" y="27" width="18" height="18"/>
+  </symbol>
+  <symbol id="light-skin-sprite-print" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3,.cls-4{fill:none;stroke:#000;stroke-width:4px;}.cls-2,.cls-4{stroke-miterlimit:10;}.cls-3{stroke-linejoin:round;}.cls-4{stroke-linecap:round;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><path class="light-skin-sprite-cls-2" d="M27,63H19.5c-.83,0-1.5-.9-1.5-2V38c0-1.1.67-2,1.5-2h51c.83,0,1.5.9,1.5,2V61c0,1.1-.67,2-1.5,2H63" transform="translate(0 0)"/><rect class="light-skin-sprite-cls-2" x="27" y="54" width="36" height="18"/><polygon class="light-skin-sprite-cls-3" points="63 36 27 36 27 27 36 18 63 18 63 36"/><line class="light-skin-sprite-cls-4" x1="38.25" y1="63" x2="51.75" y2="63"/>
+  </symbol>
+  <symbol id="light-skin-sprite-quickcount" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-2{stroke:#000;}.cls-3{stroke:#f66011;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><path class="light-skin-sprite-cls-2" d="M18,54" transform="translate(0)"/><path class="light-skin-sprite-cls-2" d="M72,18" transform="translate(0)"/><polyline class="light-skin-sprite-cls-3" points="72 27 36 63 18 45"/>
+  </symbol>
+  <symbol id="light-skin-sprite-quickcountcolor" viewBox="0 0 90 90">
+    <sodipodi:namedview
+     id="light-skin-sprite-namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="18.322222"
+     inkscape:cx="45"
+     inkscape:cy="45"
+     inkscape:window-width="2059"
+     inkscape:window-height="1360"
+     inkscape:window-x="550"
+     inkscape:window-y="373"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Icon" />
+  <defs
+     id="light-skin-sprite-defs1">
+    <style
+       id="light-skin-sprite-style1">.cls-1{fill:#fff;}.cls-2,.cls-3,.cls-4{fill:none;stroke-width:4px;}.cls-2,.cls-3{stroke:#000;stroke-linejoin:round;}.cls-3,.cls-4{stroke-linecap:round;}.cls-4{stroke:#e22f30;stroke-miterlimit:10;}</style>
+  </defs>
+  <g
+     id="light-skin-sprite-Background">
+    <rect
+       class="light-skin-sprite-cls-1"
+       width="90"
+       height="90"
+       id="light-skin-sprite-rect1" />
+  </g>
+  <path
+     class="light-skin-sprite-cls-2"
+     d="M26.39,23.82H44.6a2,2,0,0,1,2,2V53.43a0,0,0,0,1,0,0H24.39a0,0,0,0,1,0,0V25.82A2,2,0,0,1,26.39,23.82Z"
+     transform="translate(33.29 91.04) rotate(-135)"
+     id="light-skin-sprite-path1" />
+  <line
+     class="light-skin-sprite-cls-3"
+     x1="38.12"
+     y1="20.31"
+     x2="34.45"
+     y2="16.65"
+     id="light-skin-sprite-line1" />
+  <path
+     d="M49.09,40.74,24.91,33.51l-6.43,6.43a1.65,1.65,0,0,0,0,2.33L31.86,55.64a1.62,1.62,0,0,0,2.32,0Z"
+     transform="translate(0)"
+     id="light-skin-sprite-path2" />
+  <path
+     d="M59.56,49.46c0-2.51-4.54-7.4-4.54-7.4s-4.55,4.89-4.55,7.4a4.55,4.55,0,1,0,9.09,0Z"
+     transform="translate(0)"
+     id="light-skin-sprite-path3" />
+  <line
+     class="light-skin-sprite-cls-4"
+     x1="18"
+     y1="72"
+     x2="45"
+     y2="72"
+     id="light-skin-sprite-line3"
+     style="stroke:#f66011;stroke-opacity:1" />
+  <line
+     class="light-skin-sprite-cls-4"
+     x1="45"
+     y1="63"
+     x2="72"
+     y2="63"
+     id="light-skin-sprite-line4"
+     style="stroke:#f66011;stroke-opacity:1" />
+  </symbol>
+  <symbol id="light-skin-sprite-quickcountsummary" viewBox="0 0 90 90">
+    <defs><style>.cls-1,.cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-1{stroke:#000;}.cls-2{fill:#fff;}.cls-3{stroke:#f66011;}</style></defs><path class="light-skin-sprite-cls-1" d="M72,18" transform="translate(0)"/><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-2" width="90" height="90"/></g><polyline class="light-skin-sprite-cls-3" points="45 45 27 63 18 54"/><polyline class="light-skin-sprite-cls-3" points="72 54 54 72 45 63"/><polyline class="light-skin-sprite-cls-3" points="54 18 36 36 27 27"/>
+  </symbol>
+  <symbol id="light-skin-sprite-rectanglespaceobject" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:#1ccbd1;}.cls-2,.cls-3{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:none;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polygon class="light-skin-sprite-cls-2" points="72.55 48.39 65.89 42.34 47.72 62.31 45 72 54.38 68.37 72.55 48.39"/><polyline class="light-skin-sprite-cls-3" points="72 36 72 27 18 27 18 63 36 63"/>
+  </symbol>
+  <symbol id="light-skin-sprite-redlinearrow" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polyline class="light-skin-sprite-cls-2" points="72 27 18 27 18 63 72 63"/><polyline class="light-skin-sprite-cls-2" points="63 18 72 27 63 36"/>
+  </symbol>
+  <symbol id="light-skin-sprite-redlinecolor" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3,.cls-4{fill:none;stroke-width:4px;}.cls-2,.cls-3{stroke:#000;stroke-linejoin:round;}.cls-3,.cls-4{stroke-linecap:round;}.cls-4{stroke:#e22f30;stroke-miterlimit:10;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><path class="light-skin-sprite-cls-2" d="M26.39,23.82H44.6a2,2,0,0,1,2,2V53.43a0,0,0,0,1,0,0H24.39a0,0,0,0,1,0,0V25.82A2,2,0,0,1,26.39,23.82Z" transform="translate(33.29 91.04) rotate(-135)"/><line class="light-skin-sprite-cls-3" x1="38.12" y1="20.31" x2="34.45" y2="16.65"/><path d="M49.09,40.74,24.91,33.51l-6.43,6.43a1.65,1.65,0,0,0,0,2.33L31.86,55.64a1.62,1.62,0,0,0,2.32,0Z" transform="translate(0)"/><path d="M59.56,49.46c0-2.51-4.54-7.4-4.54-7.4s-4.55,4.89-4.55,7.4a4.55,4.55,0,1,0,9.09,0Z" transform="translate(0)"/><line class="light-skin-sprite-cls-4" x1="18" y1="72" x2="45" y2="72"/><line class="light-skin-sprite-cls-4" x1="45" y1="63" x2="72" y2="63"/>
+  </symbol>
+  <symbol id="light-skin-sprite-redlinefilledpolygon" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:#e22f30;opacity:0.4;}.cls-3{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polygon class="light-skin-sprite-cls-2" points="18 18 18 45 45 72 72 72 72 54 54 54 54 45 72 45 72 27 45 27 45 18 18 18"/><polygon class="light-skin-sprite-cls-3" points="18 18 18 45 45 72 72 72 72 54 54 54 54 45 72 45 72 27 45 27 45 18 18 18"/>
+  </symbol>
+  <symbol id="light-skin-sprite-redlinefilledrectangle" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:#e22f30;opacity:0.4;}.cls-3{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polyline class="light-skin-sprite-cls-2" points="18 27 18 63 72 63 72 27"/><rect class="light-skin-sprite-cls-3" x="18" y="27" width="54" height="36"/>
+  </symbol>
+  <symbol id="light-skin-sprite-redlinepolyline" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polyline class="light-skin-sprite-cls-2" points="45 27 45 18 18 18 18 45 45 72 72 72 72 54 54 54 54 45 72 45 72 27"/>
+  </symbol>
+  <symbol id="light-skin-sprite-redlinerectangle" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><rect class="light-skin-sprite-cls-2" x="18" y="27" width="54" height="36"/>
+  </symbol>
+  <symbol id="light-skin-sprite-redlinesingleline" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><line class="light-skin-sprite-cls-2" x1="18" y1="18" x2="72" y2="72"/>
+  </symbol>
+  <symbol id="light-skin-sprite-redlinestickynote" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polygon class="light-skin-sprite-cls-2" points="54 72 72 54 72 18 18 18 18 72 54 72"/><line class="light-skin-sprite-cls-2" x1="27" y1="27" x2="63" y2="27"/><line class="light-skin-sprite-cls-2" x1="27" y1="36" x2="63" y2="36"/><line class="light-skin-sprite-cls-2" x1="27" y1="45" x2="45" y2="45"/><polyline class="light-skin-sprite-cls-2" points="72 54 54 54 54 72"/>
+  </symbol>
+  <symbol id="light-skin-sprite-redlinetext" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polygon class="light-skin-sprite-cls-2" points="18 18 18 36 27 36 27 27 40 27 40 63 29 63 29 72 61 72 61 63 50 63 50 27 63 27 63 36 72 36 72 18 18 18"/>
+  </symbol>
+  <symbol id="light-skin-sprite-redlinetriangle" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polygon class="light-skin-sprite-cls-2" points="45.45 27 18.91 63 72 63 45.45 27"/>
+  </symbol>
+  <symbol id="light-skin-sprite-redolastredline" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-2{stroke:#000;}.cls-3{stroke:#e22f30;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><path d="M44.15,53.27l12-12a2.94,2.94,0,0,1,4.16,0l9.89,9.88a2.94,2.94,0,0,1,0,4.16l-12,12Z"/><path class="light-skin-sprite-cls-2" d="M44.15,72l-7.29-7.28a2.94,2.94,0,0,1,0-4.16L56.11,41.31a2.94,2.94,0,0,1,4.16,0l9.89,9.88a2.94,2.94,0,0,1,0,4.16L53.51,72Z"/><path class="light-skin-sprite-cls-3" d="M18,23H36a9,9,0,0,1,9,9h0a9,9,0,0,1-9,9H18"/><polyline class="light-skin-sprite-cls-3" points="24.77 16.23 18 23 24.77 29.77"/>
+  </symbol>
+  <symbol id="light-skin-sprite-resizeredline" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;}.cls-2,.cls-3{stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#e22f30;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polyline class="light-skin-sprite-cls-2" points="50.77 27 63 27 63 39.23"/><line class="light-skin-sprite-cls-2" x1="50.76" y1="39.24" x2="63" y2="27"/><rect class="light-skin-sprite-cls-3" x="18" y="45" width="27" height="27"/><polyline class="light-skin-sprite-cls-2" points="18 36 18 18 72 18 72 72 54 72"/>
+  </symbol>
+  <symbol id="light-skin-sprite-resizespaceobject" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;}.cls-2,.cls-3{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#1ccbd1;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polyline class="light-skin-sprite-cls-2" points="50.77 27 63 27 63 39.23"/><line class="light-skin-sprite-cls-2" x1="50.76" y1="39.24" x2="63" y2="27"/><rect class="light-skin-sprite-cls-3" x="18" y="45" width="27" height="27"/><polyline class="light-skin-sprite-cls-2" points="18 36 18 18 72 18 72 72 54 72"/>
+  </symbol>
+  <symbol id="light-skin-sprite-rotateredline" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;}.cls-2,.cls-3{stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#e22f30;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polyline class="light-skin-sprite-cls-2" points="31.24 32.63 19.25 36.88 14.99 24.88"/><path class="light-skin-sprite-cls-2" d="M19.64,54.28a27,27,0,1,0-.4-17.4" transform="translate(0)"/><rect class="light-skin-sprite-cls-3" x="36" y="36" width="18" height="18" transform="translate(-18.64 45) rotate(-45)"/>
+  </symbol>
+  <symbol id="light-skin-sprite-rotatespaceobject" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;}.cls-2,.cls-3{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#1ccbd1;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polyline class="light-skin-sprite-cls-2" points="31.24 32.63 19.25 36.88 14.99 24.88"/><path class="light-skin-sprite-cls-2" d="M19.64,54.28a27,27,0,1,0-.4-17.4" transform="translate(0)"/><rect class="light-skin-sprite-cls-3" x="36" y="36" width="18" height="18" transform="translate(-18.64 45) rotate(-45)"/>
+  </symbol>
+  <symbol id="light-skin-sprite-saveallimagelinks" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polyline class="light-skin-sprite-cls-2" points="45 27 72 27 72 72 18 72 18 54"/><path d="M18,72V58.5L33.9,45.65a3.71,3.71,0,0,1,4.2,0L51.9,56a3.71,3.71,0,0,0,4.2,0l4.8-3.6a3.71,3.71,0,0,1,4.2,0L72,58.5V72Z" transform="translate(0)"/><circle cx="57" cy="42" r="4.09"/><line class="light-skin-sprite-cls-2" x1="27" y1="42.59" x2="27" y2="18"/><polyline class="light-skin-sprite-cls-2" points="18 33.59 27 42.59 36 33.59"/>
+  </symbol>
+  <symbol id="light-skin-sprite-savepdf" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polyline class="light-skin-sprite-cls-2" points="54 18 72 18 72 72 18 72 18 27 27 18 36 18"/><line class="light-skin-sprite-cls-2" x1="45" y1="36" x2="45" y2="9"/><polyline class="light-skin-sprite-cls-2" points="36 27 45 36 54 27"/><path d="M31.88,54.13H29.45V57.9h2.43a1.89,1.89,0,1,0,0-3.77Z" transform="translate(0)"/><path d="M44,54.13h-1.7v8.74H44a4.09,4.09,0,0,0,4.37-4.38A4.08,4.08,0,0,0,44,54.13Z" transform="translate(0)"/><path d="M72,43H27a2,2,0,0,0-1.41.59l-9,9A2,2,0,0,0,16,54V72a2,2,0,0,0,2,2H72a2,2,0,0,0,2-2V45A2,2,0,0,0,72,43ZM31.86,60.39H29.45v5H26.6V51.65h5.26c2.83,0,4.86,1.51,4.86,4.38S34.66,60.39,31.86,60.39Zm12.1,5H39.49V51.65H44c4.45,0,7.3,2.87,7.3,6.84S48.39,65.35,44,65.35ZM63.42,54.13H56.89v3.48H62.5v2.48H56.89v5.26H54V51.65h9.38Z" transform="translate(0)"/>
+  </symbol>
+  <symbol id="light-skin-sprite-savespaceobjects" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;}.cls-2,.cls-3{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#1ccbd1;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polyline class="light-skin-sprite-cls-2" points="54 18 72 18 72 72 18 72 18 27 27 18 36 18"/><polygon class="light-skin-sprite-cls-3" points="72 72 18 72 18 63 27 54 72 54 72 72"/><line class="light-skin-sprite-cls-2" x1="45" y1="45" x2="45" y2="9"/><polyline class="light-skin-sprite-cls-2" points="36 36 45 45 54 36"/>
+  </symbol>
+  <symbol id="light-skin-sprite-savesvg" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polyline class="light-skin-sprite-cls-2" points="54 18 72 18 72 72 18 72 18 27 27 18 36 18"/><line class="light-skin-sprite-cls-2" x1="45" y1="36" x2="45" y2="9"/><polyline class="light-skin-sprite-cls-2" points="36 27 45 36 54 27"/><path d="M72,43H27a2,2,0,0,0-1.41.59l-9,9A2,2,0,0,0,16,54V72a2,2,0,0,0,2,2H72a2,2,0,0,0,2-2V45A2,2,0,0,0,72,43ZM30.75,57l2.39.77c2,.65,3,1.81,3,3.48,0,2.2-1.83,3.74-4.45,3.74a5.2,5.2,0,0,1-5.09-3.5l2.12-1a3.46,3.46,0,0,0,3.13,2.2c1.06,0,1.75-.52,1.75-1.33,0-.58-.36-1-1.11-1.24l-2.44-.8c-2-.65-3-1.86-3-3.53,0-2.19,1.76-3.72,4.32-3.72a4.86,4.86,0,0,1,4.77,3.17l-2.11,1a2.84,2.84,0,0,0-2.66-1.86c-1.06,0-1.76.56-1.76,1.36C29.61,56.27,30,56.7,30.75,57Zm14.6,7.78h-3L38.06,52.27h2.85l2.93,9.12,2.93-9.12h2.84Zm18.07-5.79a5.67,5.67,0,0,1-5.85,6,6.27,6.27,0,0,1-6.36-6.45,6.18,6.18,0,0,1,6.29-6.43,5.46,5.46,0,0,1,5.34,3.34l-2.3,1.1a3.13,3.13,0,0,0-3-2.09c-2.21,0-3.7,1.65-3.7,4.08s1.56,4.1,3.77,4.1c1.7,0,3.26-1,3.26-2.76v0H57.5V57.62h5.92Z" transform="translate(0 0)"/>
+  </symbol>
+  <symbol id="light-skin-sprite-scaleicon" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;}.cls-2,.cls-3{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#1ccbd1;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polyline class="light-skin-sprite-cls-2" points="50.77 27 63 27 63 39.23"/><line class="light-skin-sprite-cls-2" x1="50.76" y1="39.24" x2="63" y2="27"/><rect class="light-skin-sprite-cls-3" x="18" y="45" width="27" height="27"/><polyline class="light-skin-sprite-cls-2" points="18 36 18 18 72 18 72 72 54 72"/>
+  </symbol>
+  <symbol id="light-skin-sprite-search" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3,.cls-4{fill:none;stroke:#1ccbd1;stroke-width:4px;}.cls-2,.cls-3{stroke-miterlimit:10;}.cls-3,.cls-4{stroke-linecap:round;}.cls-4{stroke-linejoin:round;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><circle class="light-skin-sprite-cls-2" cx="31.5" cy="40.52" r="13.5"/><line class="light-skin-sprite-cls-3" x1="41.05" y1="50.06" x2="63" y2="72.02"/><polyline class="light-skin-sprite-cls-4" points="72 22.52 72 18.02 45 18.02 45 22.52"/><line class="light-skin-sprite-cls-4" x1="58.5" y1="18.02" x2="58.5" y2="45.02"/><line class="light-skin-sprite-cls-4" x1="54" y1="45.02" x2="63" y2="45.02"/>
+  </symbol>
+  <symbol id="light-skin-sprite-sendbackward" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:#1ccbd1;stroke:#1ccbd1;}.cls-2,.cls-3{stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:none;stroke:#000;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><rect class="light-skin-sprite-cls-2" x="36" y="36" width="36" height="36"/><rect class="light-skin-sprite-cls-3" x="18" y="18" width="27" height="27"/>
+  </symbol>
+  <symbol id="light-skin-sprite-sendtoback" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:#1ccbd1;stroke:#1ccbd1;}.cls-2,.cls-3{stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:none;stroke:#000;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><rect class="light-skin-sprite-cls-2" x="27" y="27" width="36" height="36"/><rect class="light-skin-sprite-cls-3" x="18" y="18" width="18" height="18"/><rect class="light-skin-sprite-cls-3" x="54" y="54" width="18" height="18"/>
+  </symbol>
+  <symbol id="light-skin-sprite-settings" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><path d="M70.5,40.53H63.8a1.74,1.74,0,0,1-1.61-1.08l-1.11-2.68a1.74,1.74,0,0,1,.37-1.9l4.74-4.74a1.49,1.49,0,0,0,0-2.12L62,23.81a1.49,1.49,0,0,0-2.12,0l-4.73,4.73a1.77,1.77,0,0,1-1.92.38l-2.67-1.11a1.74,1.74,0,0,1-1.08-1.61V19.5A1.5,1.5,0,0,0,48,18H42a1.5,1.5,0,0,0-1.5,1.5v6.69a1.76,1.76,0,0,1-1.08,1.62l-2.68,1.11a1.74,1.74,0,0,1-1.9-.37l-4.74-4.74a1.49,1.49,0,0,0-2.12,0L23.81,28a1.49,1.49,0,0,0,0,2.12l4.73,4.73a1.77,1.77,0,0,1,.38,1.92l-1.11,2.67a1.76,1.76,0,0,1-1.62,1.08H19.5A1.5,1.5,0,0,0,18,42V48a1.5,1.5,0,0,0,1.5,1.5h6.7a1.73,1.73,0,0,1,1.61,1.08l1.11,2.68a1.74,1.74,0,0,1-.37,1.9l-4.74,4.74a1.49,1.49,0,0,0,0,2.12l4.2,4.2a1.49,1.49,0,0,0,2.12,0l4.73-4.73a1.77,1.77,0,0,1,1.92-.38l2.67,1.11a1.74,1.74,0,0,1,1.08,1.61v6.7A1.5,1.5,0,0,0,42,72H48a1.5,1.5,0,0,0,1.5-1.5V63.81a1.76,1.76,0,0,1,1.08-1.62l2.67-1.11a1.77,1.77,0,0,1,1.92.38l4.73,4.73a1.49,1.49,0,0,0,2.12,0l4.2-4.2a1.49,1.49,0,0,0,0-2.12l-4.73-4.73a1.77,1.77,0,0,1-.38-1.92l1.11-2.67a1.73,1.73,0,0,1,1.61-1.08h6.7A1.5,1.5,0,0,0,72,48V42A1.5,1.5,0,0,0,70.5,40.53ZM45,54a9,9,0,1,1,9-9A9,9,0,0,1,45,54Z"/>
+  </symbol>
+  <symbol id="light-skin-sprite-showhide" viewBox="0 0 54 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="54" height="90"/></g><path class="light-skin-sprite-cls-2" d="M63,63Q45,81,27,63,45,45,63,63Z" transform="translate(-18)"/><rect class="light-skin-sprite-cls-2" x="9" y="18" width="18" height="18"/><rect class="light-skin-sprite-cls-2" x="27" y="18" width="18" height="18"/><circle class="light-skin-sprite-cls-2" cx="27" cy="63" r="6.28"/>
+  </symbol>
+  <symbol id="light-skin-sprite-showhidemove" viewBox="0 0 144 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3{fill:none;stroke:#000;}.cls-2{stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{stroke-miterlimit:10;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="144" height="90"/></g><line class="light-skin-sprite-cls-2" x1="45" y1="18" x2="45" y2="36"/><polyline class="light-skin-sprite-cls-2" points="54 27 45 18 36 27"/><line class="light-skin-sprite-cls-2" x1="45" y1="72" x2="45" y2="54"/><polyline class="light-skin-sprite-cls-2" points="36 63 45 72 54 63"/><line class="light-skin-sprite-cls-2" x1="18" y1="45" x2="36" y2="45"/><polyline class="light-skin-sprite-cls-2" points="27 36 18 45 27 54"/><line class="light-skin-sprite-cls-2" x1="72" y1="45" x2="54" y2="45"/><polyline class="light-skin-sprite-cls-2" points="63 54 72 45 63 36"/><path class="light-skin-sprite-cls-2" d="M108,63Q90,81,72,63,90,45,108,63Z" transform="translate(27 0)"/><rect class="light-skin-sprite-cls-2" x="99" y="18" width="18" height="18"/><rect class="light-skin-sprite-cls-2" x="117" y="18" width="18" height="18"/><circle class="light-skin-sprite-cls-2" cx="117" cy="63" r="6.28"/><line class="light-skin-sprite-cls-3" x1="90" x2="90" y2="90"/>
+  </symbol>
+  <symbol id="light-skin-sprite-spaceobjectcolor" viewBox="0 0 90 90">
+    <sodipodi:namedview
+     id="light-skin-sprite-namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="18.322222"
+     inkscape:cx="45"
+     inkscape:cy="45"
+     inkscape:window-width="2059"
+     inkscape:window-height="1360"
+     inkscape:window-x="550"
+     inkscape:window-y="373"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Icon" />
+  <defs
+     id="light-skin-sprite-defs1">
+    <style
+       id="light-skin-sprite-style1">.cls-1{fill:#fff;}.cls-2,.cls-3,.cls-4{fill:none;stroke-width:4px;}.cls-2,.cls-3{stroke:#000;stroke-linejoin:round;}.cls-3,.cls-4{stroke-linecap:round;}.cls-4{stroke:#e22f30;stroke-miterlimit:10;}</style>
+  </defs>
+  <g
+     id="light-skin-sprite-Background">
+    <rect
+       class="light-skin-sprite-cls-1"
+       width="90"
+       height="90"
+       id="light-skin-sprite-rect1" />
+  </g>
+  <path
+     class="light-skin-sprite-cls-2"
+     d="M26.39,23.82H44.6a2,2,0,0,1,2,2V53.43a0,0,0,0,1,0,0H24.39a0,0,0,0,1,0,0V25.82A2,2,0,0,1,26.39,23.82Z"
+     transform="translate(33.29 91.04) rotate(-135)"
+     id="light-skin-sprite-path1" />
+  <line
+     class="light-skin-sprite-cls-3"
+     x1="38.12"
+     y1="20.31"
+     x2="34.45"
+     y2="16.65"
+     id="light-skin-sprite-line1" />
+  <path
+     d="M49.09,40.74,24.91,33.51l-6.43,6.43a1.65,1.65,0,0,0,0,2.33L31.86,55.64a1.62,1.62,0,0,0,2.32,0Z"
+     transform="translate(0)"
+     id="light-skin-sprite-path2" />
+  <path
+     d="M59.56,49.46c0-2.51-4.54-7.4-4.54-7.4s-4.55,4.89-4.55,7.4a4.55,4.55,0,1,0,9.09,0Z"
+     transform="translate(0)"
+     id="light-skin-sprite-path3" />
+  <line
+     class="light-skin-sprite-cls-4"
+     x1="18"
+     y1="72"
+     x2="45"
+     y2="72"
+     id="light-skin-sprite-line3"
+     style="stroke:#2fdce2;stroke-opacity:1" />
+  <line
+     class="light-skin-sprite-cls-4"
+     x1="45"
+     y1="63"
+     x2="72"
+     y2="63"
+     id="light-skin-sprite-line4"
+     style="stroke:#1dc8ce;stroke-opacity:1" />
+  </symbol>
+  <symbol id="light-skin-sprite-swaplayers" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><path d="M72,42.29,45,57.58,18,42.29l9-5.12a18,18,0,0,0,35.92,0Z"/><polyline class="light-skin-sprite-cls-2" points="25.88 37.83 18 42.29 45 57.58 72 42.29 63.87 37.68"/><path class="light-skin-sprite-cls-2" d="M24.08,46.27,18,49.72,43.6,64.21a2.85,2.85,0,0,0,2.8,0L72,49.72l-5.82-3.3"/><path class="light-skin-sprite-cls-2" d="M23.64,54,18,57.14l25.6,14.5a2.9,2.9,0,0,0,2.8,0L72,57.14l-5.23-3"/><circle class="light-skin-sprite-cls-2" cx="45" cy="36" r="18"/><path class="light-skin-sprite-cls-2" d="M36,36a9,9,0,0,1,13.53-7.78"/><path class="light-skin-sprite-cls-2" d="M54,36a9,9,0,0,1-13.64,7.72"/><polygon points="31.82 36 36 40.88 40.18 36 31.82 36"/><polygon points="58.18 36 54 31.12 49.82 36 58.18 36"/>
+  </symbol>
+  <symbol id="light-skin-sprite-togglespace" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-4{fill:none;}.cls-2,.cls-3{stroke:#1ccbd1;}.cls-2,.cls-3,.cls-4{stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#1ccbd1;}.cls-4{stroke:#000;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><polyline class="light-skin-sprite-cls-2" points="72 36 72 18 45 18 45 36 45 45 18 45 18 54 18 72 27 72 36 72"/><polygon class="light-skin-sprite-cls-3" points="72 48.39 65.34 42.34 47.18 62.31 44.45 72 53.84 68.37 72 48.39"/><polyline class="light-skin-sprite-cls-4" points="18 18 18 31.4 36 31.4"/><polyline class="light-skin-sprite-cls-4" points="30 37.4 36 31.4 30 25.4"/><polyline class="light-skin-sprite-cls-2" points="72 63 72 72 63 72"/>
+  </symbol>
+  <symbol id="light-skin-sprite-undolastredline" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-2{stroke:#000;}.cls-3{stroke:#e22f30;}</style></defs><g id="light-skin-sprite-Background"><rect class="light-skin-sprite-cls-1" width="90" height="90"/></g><path d="M44.15,53.27l12-12a2.94,2.94,0,0,1,4.16,0l9.89,9.88a2.94,2.94,0,0,1,0,4.16l-12,12Z"/><path class="light-skin-sprite-cls-2" d="M44.15,72l-7.29-7.28a2.94,2.94,0,0,1,0-4.16L56.11,41.31a2.94,2.94,0,0,1,4.16,0l9.89,9.88a2.94,2.94,0,0,1,0,4.16L53.51,72Z"/><path class="light-skin-sprite-cls-3" d="M45,23H27a9,9,0,0,0-9,9h0a9,9,0,0,0,9,9H45"/><polyline class="light-skin-sprite-cls-3" points="38.23 16.23 45 23 38.23 29.77"/>
+  </symbol>
+  </symbol>
+  <symbol id="loadallimagelinks" viewBox="0 0 90 90">
+    <defs><style>.loadallimagelinks-cls-1{fill:#fff;}.loadallimagelinks-cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="loadallimagelinks-Background"><rect class="loadallimagelinks-cls-1" width="90" height="90"/></g><polyline class="loadallimagelinks-cls-2" points="45 27 72 27 72 72 18 72 18 54"/><path d="M18,72V58.5L33.9,45.65a3.71,3.71,0,0,1,4.2,0L51.9,56a3.71,3.71,0,0,0,4.2,0l4.8-3.6a3.71,3.71,0,0,1,4.2,0L72,58.5V72Z" transform="translate(0)"/><circle cx="57" cy="42" r="4.09"/><line class="loadallimagelinks-cls-2" x1="27" y1="18" x2="27" y2="42.59"/><polyline class="loadallimagelinks-cls-2" points="36 27 27 18 18 27"/>
+  </symbol>
+  <symbol id="loadredlines" viewBox="0 0 90 90">
+    <defs><style>.loadredlines-cls-1{fill:#fff;}.loadredlines-cls-2{fill:none;stroke-linecap:round;}.loadredlines-cls-2,.loadredlines-cls-3{stroke:#e22f30;stroke-linejoin:round;stroke-width:4px;}.loadredlines-cls-3{fill:#e22f30;}</style></defs><g id="loadredlines-Background"><rect class="loadredlines-cls-1" width="90" height="90"/></g><polyline class="loadredlines-cls-2" points="54 27 72 27 72 72 18 72 18 36 27 27 36 27"/><polygon class="loadredlines-cls-3" points="72 72 18 72 18 63 27 54 72 54 72 72"/><line class="loadredlines-cls-2" x1="45" y1="9" x2="45" y2="45"/><polyline class="loadredlines-cls-2" points="54 18 45 9 36 18"/>
+  </symbol>
+  <symbol id="loadseconddrawing" viewBox="0 0 90 90">
+    <defs><style>.loadseconddrawing-cls-1{fill:#fff;}.loadseconddrawing-cls-2,.loadseconddrawing-cls-3,.loadseconddrawing-cls-4{fill:none;}.loadseconddrawing-cls-2{stroke:#e22f30;}.loadseconddrawing-cls-2,.loadseconddrawing-cls-3,.loadseconddrawing-cls-4,.loadseconddrawing-cls-5{stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.loadseconddrawing-cls-3{stroke:#fdc003;}.loadseconddrawing-cls-4{stroke:#3c4ac7;}.loadseconddrawing-cls-5{stroke:#000;}</style></defs><g id="loadseconddrawing-Background"><rect class="loadseconddrawing-cls-1" width="90" height="90"/></g><rect class="loadseconddrawing-cls-2" x="21.93" y="35.49" width="19.11" height="19.11" transform="translate(-22.63 35.46) rotate(-45)"/><rect class="loadseconddrawing-cls-3" x="35.44" y="21.98" width="19.11" height="19.11" transform="translate(-9.12 41.06) rotate(-45)"/><rect class="loadseconddrawing-cls-4" x="48.96" y="35.49" width="19.11" height="19.11" transform="translate(-14.72 54.57) rotate(-45)"/><rect class="loadseconddrawing-cls-5" x="40.38" y="60.92" width="9.25" height="9.25" transform="translate(-33.16 51.02) rotate(-45)"/>
+  </symbol>
+  <symbol id="loadspaceobjects" viewBox="0 0 90 90">
+    <defs><style>.loadspaceobjects-cls-1{fill:#fff;}.loadspaceobjects-cls-2{fill:none;}.loadspaceobjects-cls-2,.loadspaceobjects-cls-3{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.loadspaceobjects-cls-3{fill:#1ccbd1;}</style></defs><g id="loadspaceobjects-Background"><rect class="loadspaceobjects-cls-1" width="90" height="90"/></g><polyline class="loadspaceobjects-cls-2" points="54 27 72 27 72 72 18 72 18 36 27 27 36 27"/><polygon class="loadspaceobjects-cls-3" points="72 72 18 72 18 63 27 54 72 54 72 72"/><line class="loadspaceobjects-cls-2" x1="45" y1="9" x2="45" y2="45"/><polyline class="loadspaceobjects-cls-2" points="54 18 45 9 36 18"/>
+  </symbol>
+  <symbol id="measure" viewBox="0 0 90 90">
+    <defs><style>.measure-cls-1{fill:#fff;}.measure-cls-2,.measure-cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.measure-cls-2{stroke:#000;}.measure-cls-3{stroke:#1ccbd1;}</style></defs><g id="measure-Background"><rect class="measure-cls-1" width="90" height="90"/></g><rect class="measure-cls-2" x="18" y="45" width="54" height="27"/><line class="measure-cls-2" x1="27" y1="63" x2="27" y2="45"/><line class="measure-cls-2" x1="36" y1="54" x2="36" y2="45"/><line class="measure-cls-2" x1="45" y1="63" x2="45" y2="45"/><line class="measure-cls-2" x1="54" y1="54" x2="54" y2="45"/><line class="measure-cls-2" x1="63" y1="63" x2="63" y2="45"/><line class="measure-cls-3" x1="72" y1="27" x2="18" y2="27"/><polyline class="measure-cls-3" points="63 18 72 27 63 36"/><polyline class="measure-cls-3" points="27 36 18 27 27 18"/>
+  </symbol>
+  <symbol id="merge" viewBox="0 0 90 90">
+    <defs><style>.merge-cls-1{fill:#fff;}.merge-cls-2,.merge-cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.merge-cls-2{stroke:#000;}.merge-cls-3{stroke:#1ccbd1;}</style></defs><g id="merge-Background"><rect class="merge-cls-1" width="90" height="90"/></g><polyline class="merge-cls-2" points="18 36 18 18 72 18 72 36"/><polyline class="merge-cls-2" points="72 54 72 72 18 72 18 54"/><line class="merge-cls-3" x1="36" y1="45" x2="18" y2="45"/><polyline class="merge-cls-3" points="29.18 51.82 36 45 29.18 38.18"/><line class="merge-cls-3" x1="54" y1="45" x2="72" y2="45"/><polyline class="merge-cls-3" points="60.82 38.18 54 45 60.82 51.82"/><line class="merge-cls-3" x1="45" y1="27" x2="45" y2="63"/>
+  </symbol>
+  <symbol id="moveicons" viewBox="0 0 90 90">
+    <defs><style>.moveicons-cls-1{fill:#fff;}.moveicons-cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="moveicons-Background"><rect class="moveicons-cls-1" width="90" height="90"/></g><line class="moveicons-cls-2" x1="45" y1="18" x2="45" y2="36"/><polyline class="moveicons-cls-2" points="54 27 45 18 36 27"/><line class="moveicons-cls-2" x1="45" y1="72" x2="45" y2="54"/><polyline class="moveicons-cls-2" points="36 63 45 72 54 63"/><line class="moveicons-cls-2" x1="18" y1="45" x2="36" y2="45"/><polyline class="moveicons-cls-2" points="27 36 18 45 27 54"/><line class="moveicons-cls-2" x1="72" y1="45" x2="54" y2="45"/><polyline class="moveicons-cls-2" points="63 54 72 45 63 36"/>
+  </symbol>
+  <symbol id="moveredline" viewBox="0 0 90 90">
+    <defs><style>.moveredline-cls-1{fill:#fff;}.moveredline-cls-2{fill:#e22f30;}.moveredline-cls-2,.moveredline-cls-3{stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.moveredline-cls-3{fill:none;}</style></defs><g id="moveredline-Background"><rect class="moveredline-cls-1" width="90" height="90"/></g><rect class="moveredline-cls-2" x="36" y="36" width="18" height="18"/><polyline class="moveredline-cls-3" points="27 36 18 45 27 54"/><polyline class="moveredline-cls-3" points="36 63 45 72 54 63"/><polyline class="moveredline-cls-3" points="63 36 72 45 63 54"/><polyline class="moveredline-cls-3" points="36 27 45 18 54 27"/><line class="moveredline-cls-3" x1="45" y1="18" x2="45" y2="36"/><line class="moveredline-cls-3" x1="18" y1="45" x2="36" y2="45"/><line class="moveredline-cls-3" x1="45" y1="72" x2="45" y2="54"/><line class="moveredline-cls-3" x1="72" y1="45" x2="54" y2="45"/>
+  </symbol>
+  <symbol id="movespaceobject" viewBox="0 0 90 90">
+    <defs><style>.movespaceobject-cls-1{fill:#fff;}.movespaceobject-cls-2{fill:#1ccbd1;}.movespaceobject-cls-2,.movespaceobject-cls-3{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.movespaceobject-cls-3{fill:none;}</style></defs><g id="movespaceobject-Background"><rect class="movespaceobject-cls-1" width="90" height="90"/></g><rect class="movespaceobject-cls-2" x="36" y="36" width="18" height="18"/><polyline class="movespaceobject-cls-3" points="27 36 18 45 27 54"/><polyline class="movespaceobject-cls-3" points="36 63 45 72 54 63"/><polyline class="movespaceobject-cls-3" points="63 36 72 45 63 54"/><polyline class="movespaceobject-cls-3" points="36 27 45 18 54 27"/><line class="movespaceobject-cls-3" x1="45" y1="18" x2="45" y2="36"/><line class="movespaceobject-cls-3" x1="18" y1="45" x2="36" y2="45"/><line class="movespaceobject-cls-3" x1="45" y1="72" x2="45" y2="54"/><line class="movespaceobject-cls-3" x1="72" y1="45" x2="54" y2="45"/>
+  </symbol>
+  <symbol id="nextpage" viewBox="0 0 54 90">
+    <defs><style>.nextpage-cls-1{fill:#fff;}.nextpage-cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="nextpage-Background"><rect class="nextpage-cls-1" width="54" height="90"/></g><polygon class="nextpage-cls-2" points="36 36 27 27 18 36 36 36"/><rect class="nextpage-cls-2" x="27" y="45" width="18" height="18" transform="translate(54 108) rotate(180)"/><rect class="nextpage-cls-2" x="45" y="45" width="18" height="18" transform="translate(90 108) rotate(180)"/>
+  </symbol>
+  <symbol id="nextpagespace" viewBox="0 0 54 90">
+    <defs><style>.nextpagespace-cls-1{fill:#fff;}.nextpagespace-cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="nextpagespace-Background"><rect class="nextpagespace-cls-1" width="54" height="90"/></g><polygon class="nextpagespace-cls-2" points="36 36 27 27 18 36 36 36"/><rect class="nextpagespace-cls-2" x="27" y="45" width="18" height="18" transform="translate(54 108) rotate(180)"/><rect class="nextpagespace-cls-2" x="45" y="45" width="18" height="18" transform="translate(90 108) rotate(180)"/>
+  </symbol>
+  <symbol id="polygonspaceobject" viewBox="0 0 90 90">
+    <defs><style>.polygonspaceobject-cls-1{fill:#fff;}.polygonspaceobject-cls-2{fill:none;}.polygonspaceobject-cls-2,.polygonspaceobject-cls-3{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.polygonspaceobject-cls-3{fill:#1ccbd1;}</style></defs><g id="polygonspaceobject-Background"><rect class="polygonspaceobject-cls-1" width="90" height="90"/></g><polyline class="polygonspaceobject-cls-2" points="63 72 72 72 72 63"/><polyline class="polygonspaceobject-cls-2" points="72 36 72 27 45 27 45 18 18 18 18 45 36 63"/><polygon class="polygonspaceobject-cls-3" points="72.55 48.39 65.89 42.34 47.72 62.31 45 72 54.38 68.37 72.55 48.39"/>
+  </symbol>
+  <symbol id="previouspage" viewBox="0 0 54 90">
+    <defs><style>.previouspage-cls-1{fill:#fff;}.previouspage-cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="previouspage-Background"><rect class="previouspage-cls-1" width="54" height="90"/></g><polygon class="previouspage-cls-2" points="18 54 27 63 36 54 18 54"/><rect class="previouspage-cls-2" x="27" y="27" width="18" height="18"/><rect class="previouspage-cls-2" x="9" y="27" width="18" height="18"/>
+  </symbol>
+  <symbol id="previouspagespace" viewBox="0 0 54 90">
+    <defs><style>.previouspagespace-cls-1{fill:#fff;}.previouspagespace-cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="previouspagespace-Background"><rect class="previouspagespace-cls-1" width="54" height="90"/></g><polygon class="previouspagespace-cls-2" points="18 54 27 63 36 54 18 54"/><rect class="previouspagespace-cls-2" x="27" y="27" width="18" height="18"/><rect class="previouspagespace-cls-2" x="9" y="27" width="18" height="18"/>
+  </symbol>
+  <symbol id="print" viewBox="0 0 90 90">
+    <defs><style>.print-cls-1{fill:#fff;}.print-cls-2,.print-cls-3,.print-cls-4{fill:none;stroke:#000;stroke-width:4px;}.print-cls-2,.print-cls-4{stroke-miterlimit:10;}.print-cls-3{stroke-linejoin:round;}.print-cls-4{stroke-linecap:round;}</style></defs><g id="print-Background"><rect class="print-cls-1" width="90" height="90"/></g><path class="print-cls-2" d="M27,63H19.5c-.83,0-1.5-.9-1.5-2V38c0-1.1.67-2,1.5-2h51c.83,0,1.5.9,1.5,2V61c0,1.1-.67,2-1.5,2H63" transform="translate(0 0)"/><rect class="print-cls-2" x="27" y="54" width="36" height="18"/><polygon class="print-cls-3" points="63 36 27 36 27 27 36 18 63 18 63 36"/><line class="print-cls-4" x1="38.25" y1="63" x2="51.75" y2="63"/>
+  </symbol>
+  <symbol id="quickcount" viewBox="0 0 90 90">
+    <defs><style>.quickcount-cls-1{fill:#fff;}.quickcount-cls-2,.quickcount-cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.quickcount-cls-2{stroke:#000;}.quickcount-cls-3{stroke:#f66011;}</style></defs><g id="quickcount-Background"><rect class="quickcount-cls-1" width="90" height="90"/></g><path class="quickcount-cls-2" d="M18,54" transform="translate(0)"/><path class="quickcount-cls-2" d="M72,18" transform="translate(0)"/><polyline class="quickcount-cls-3" points="72 27 36 63 18 45"/>
+  </symbol>
+  <symbol id="quickcountcolor" viewBox="0 0 90 90">
+    <sodipodi:namedview
+     id="quickcountcolor-namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="18.322222"
+     inkscape:cx="45"
+     inkscape:cy="45"
+     inkscape:window-width="2059"
+     inkscape:window-height="1360"
+     inkscape:window-x="550"
+     inkscape:window-y="373"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Icon" />
+  <defs
+     id="quickcountcolor-defs1">
+    <style
+       id="quickcountcolor-style1">.quickcountcolor-cls-1{fill:#fff;}.quickcountcolor-cls-2,.quickcountcolor-cls-3,.quickcountcolor-cls-4{fill:none;stroke-width:4px;}.quickcountcolor-cls-2,.quickcountcolor-cls-3{stroke:#000;stroke-linejoin:round;}.quickcountcolor-cls-3,.quickcountcolor-cls-4{stroke-linecap:round;}.quickcountcolor-cls-4{stroke:#e22f30;stroke-miterlimit:10;}</style>
+  </defs>
+  <g
+     id="quickcountcolor-Background">
+    <rect
+       class="quickcountcolor-cls-1"
+       width="90"
+       height="90"
+       id="quickcountcolor-rect1" />
+  </g>
+  <path
+     class="quickcountcolor-cls-2"
+     d="M26.39,23.82H44.6a2,2,0,0,1,2,2V53.43a0,0,0,0,1,0,0H24.39a0,0,0,0,1,0,0V25.82A2,2,0,0,1,26.39,23.82Z"
+     transform="translate(33.29 91.04) rotate(-135)"
+     id="quickcountcolor-path1" />
+  <line
+     class="quickcountcolor-cls-3"
+     x1="38.12"
+     y1="20.31"
+     x2="34.45"
+     y2="16.65"
+     id="quickcountcolor-line1" />
+  <path
+     d="M49.09,40.74,24.91,33.51l-6.43,6.43a1.65,1.65,0,0,0,0,2.33L31.86,55.64a1.62,1.62,0,0,0,2.32,0Z"
+     transform="translate(0)"
+     id="quickcountcolor-path2" />
+  <path
+     d="M59.56,49.46c0-2.51-4.54-7.4-4.54-7.4s-4.55,4.89-4.55,7.4a4.55,4.55,0,1,0,9.09,0Z"
+     transform="translate(0)"
+     id="quickcountcolor-path3" />
+  <line
+     class="quickcountcolor-cls-4"
+     x1="18"
+     y1="72"
+     x2="45"
+     y2="72"
+     id="quickcountcolor-line3"
+     style="stroke:#f66011;stroke-opacity:1" />
+  <line
+     class="quickcountcolor-cls-4"
+     x1="45"
+     y1="63"
+     x2="72"
+     y2="63"
+     id="quickcountcolor-line4"
+     style="stroke:#f66011;stroke-opacity:1" />
+  </symbol>
+  <symbol id="quickcountsummary" viewBox="0 0 90 90">
+    <defs><style>.quickcountsummary-cls-1,.quickcountsummary-cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.quickcountsummary-cls-1{stroke:#000;}.quickcountsummary-cls-2{fill:#fff;}.quickcountsummary-cls-3{stroke:#f66011;}</style></defs><path class="quickcountsummary-cls-1" d="M72,18" transform="translate(0)"/><g id="quickcountsummary-Background"><rect class="quickcountsummary-cls-2" width="90" height="90"/></g><polyline class="quickcountsummary-cls-3" points="45 45 27 63 18 54"/><polyline class="quickcountsummary-cls-3" points="72 54 54 72 45 63"/><polyline class="quickcountsummary-cls-3" points="54 18 36 36 27 27"/>
+  </symbol>
+  <symbol id="rectanglespaceobject" viewBox="0 0 90 90">
+    <defs><style>.rectanglespaceobject-cls-1{fill:#fff;}.rectanglespaceobject-cls-2{fill:#1ccbd1;}.rectanglespaceobject-cls-2,.rectanglespaceobject-cls-3{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.rectanglespaceobject-cls-3{fill:none;}</style></defs><g id="rectanglespaceobject-Background"><rect class="rectanglespaceobject-cls-1" width="90" height="90"/></g><polygon class="rectanglespaceobject-cls-2" points="72.55 48.39 65.89 42.34 47.72 62.31 45 72 54.38 68.37 72.55 48.39"/><polyline class="rectanglespaceobject-cls-3" points="72 36 72 27 18 27 18 63 36 63"/>
+  </symbol>
+  <symbol id="redlinearrow" viewBox="0 0 90 90">
+    <defs><style>.redlinearrow-cls-1{fill:#fff;}.redlinearrow-cls-2{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="redlinearrow-Background"><rect class="redlinearrow-cls-1" width="90" height="90"/></g><polyline class="redlinearrow-cls-2" points="72 27 18 27 18 63 72 63"/><polyline class="redlinearrow-cls-2" points="63 18 72 27 63 36"/>
+  </symbol>
+  <symbol id="redlinecolor" viewBox="0 0 90 90">
+    <defs><style>.redlinecolor-cls-1{fill:#fff;}.redlinecolor-cls-2,.redlinecolor-cls-3,.redlinecolor-cls-4{fill:none;stroke-width:4px;}.redlinecolor-cls-2,.redlinecolor-cls-3{stroke:#000;stroke-linejoin:round;}.redlinecolor-cls-3,.redlinecolor-cls-4{stroke-linecap:round;}.redlinecolor-cls-4{stroke:#e22f30;stroke-miterlimit:10;}</style></defs><g id="redlinecolor-Background"><rect class="redlinecolor-cls-1" width="90" height="90"/></g><path class="redlinecolor-cls-2" d="M26.39,23.82H44.6a2,2,0,0,1,2,2V53.43a0,0,0,0,1,0,0H24.39a0,0,0,0,1,0,0V25.82A2,2,0,0,1,26.39,23.82Z" transform="translate(33.29 91.04) rotate(-135)"/><line class="redlinecolor-cls-3" x1="38.12" y1="20.31" x2="34.45" y2="16.65"/><path d="M49.09,40.74,24.91,33.51l-6.43,6.43a1.65,1.65,0,0,0,0,2.33L31.86,55.64a1.62,1.62,0,0,0,2.32,0Z" transform="translate(0)"/><path d="M59.56,49.46c0-2.51-4.54-7.4-4.54-7.4s-4.55,4.89-4.55,7.4a4.55,4.55,0,1,0,9.09,0Z" transform="translate(0)"/><line class="redlinecolor-cls-4" x1="18" y1="72" x2="45" y2="72"/><line class="redlinecolor-cls-4" x1="45" y1="63" x2="72" y2="63"/>
+  </symbol>
+  <symbol id="redlinefilledpolygon" viewBox="0 0 90 90">
+    <defs><style>.redlinefilledpolygon-cls-1{fill:#fff;}.redlinefilledpolygon-cls-2{fill:#e22f30;opacity:0.redlinefilledpolygon-4;}.redlinefilledpolygon-cls-3{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="redlinefilledpolygon-Background"><rect class="redlinefilledpolygon-cls-1" width="90" height="90"/></g><polygon class="redlinefilledpolygon-cls-2" points="18 18 18 45 45 72 72 72 72 54 54 54 54 45 72 45 72 27 45 27 45 18 18 18"/><polygon class="redlinefilledpolygon-cls-3" points="18 18 18 45 45 72 72 72 72 54 54 54 54 45 72 45 72 27 45 27 45 18 18 18"/>
+  </symbol>
+  <symbol id="redlinefilledrectangle" viewBox="0 0 90 90">
+    <defs><style>.redlinefilledrectangle-cls-1{fill:#fff;}.redlinefilledrectangle-cls-2{fill:#e22f30;opacity:0.redlinefilledrectangle-4;}.redlinefilledrectangle-cls-3{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="redlinefilledrectangle-Background"><rect class="redlinefilledrectangle-cls-1" width="90" height="90"/></g><polyline class="redlinefilledrectangle-cls-2" points="18 27 18 63 72 63 72 27"/><rect class="redlinefilledrectangle-cls-3" x="18" y="27" width="54" height="36"/>
+  </symbol>
+  <symbol id="redlinepolyline" viewBox="0 0 90 90">
+    <defs><style>.redlinepolyline-cls-1{fill:#fff;}.redlinepolyline-cls-2{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="redlinepolyline-Background"><rect class="redlinepolyline-cls-1" width="90" height="90"/></g><polyline class="redlinepolyline-cls-2" points="45 27 45 18 18 18 18 45 45 72 72 72 72 54 54 54 54 45 72 45 72 27"/>
+  </symbol>
+  <symbol id="redlinerectangle" viewBox="0 0 90 90">
+    <defs><style>.redlinerectangle-cls-1{fill:#fff;}.redlinerectangle-cls-2{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="redlinerectangle-Background"><rect class="redlinerectangle-cls-1" width="90" height="90"/></g><rect class="redlinerectangle-cls-2" x="18" y="27" width="54" height="36"/>
+  </symbol>
+  <symbol id="redlinesingleline" viewBox="0 0 90 90">
+    <defs><style>.redlinesingleline-cls-1{fill:#fff;}.redlinesingleline-cls-2{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="redlinesingleline-Background"><rect class="redlinesingleline-cls-1" width="90" height="90"/></g><line class="redlinesingleline-cls-2" x1="18" y1="18" x2="72" y2="72"/>
+  </symbol>
+  <symbol id="redlinestickynote" viewBox="0 0 90 90">
+    <defs><style>.redlinestickynote-cls-1{fill:#fff;}.redlinestickynote-cls-2{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="redlinestickynote-Background"><rect class="redlinestickynote-cls-1" width="90" height="90"/></g><polygon class="redlinestickynote-cls-2" points="54 72 72 54 72 18 18 18 18 72 54 72"/><line class="redlinestickynote-cls-2" x1="27" y1="27" x2="63" y2="27"/><line class="redlinestickynote-cls-2" x1="27" y1="36" x2="63" y2="36"/><line class="redlinestickynote-cls-2" x1="27" y1="45" x2="45" y2="45"/><polyline class="redlinestickynote-cls-2" points="72 54 54 54 54 72"/>
+  </symbol>
+  <symbol id="redlinetext" viewBox="0 0 90 90">
+    <defs><style>.redlinetext-cls-1{fill:#fff;}.redlinetext-cls-2{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="redlinetext-Background"><rect class="redlinetext-cls-1" width="90" height="90"/></g><polygon class="redlinetext-cls-2" points="18 18 18 36 27 36 27 27 40 27 40 63 29 63 29 72 61 72 61 63 50 63 50 27 63 27 63 36 72 36 72 18 18 18"/>
+  </symbol>
+  <symbol id="redlinetriangle" viewBox="0 0 90 90">
+    <defs><style>.redlinetriangle-cls-1{fill:#fff;}.redlinetriangle-cls-2{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="redlinetriangle-Background"><rect class="redlinetriangle-cls-1" width="90" height="90"/></g><polygon class="redlinetriangle-cls-2" points="45.45 27 18.91 63 72 63 45.45 27"/>
+  </symbol>
+  <symbol id="redolastredline" viewBox="0 0 90 90">
+    <defs><style>.redolastredline-cls-1{fill:#fff;}.redolastredline-cls-2,.redolastredline-cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.redolastredline-cls-2{stroke:#000;}.redolastredline-cls-3{stroke:#e22f30;}</style></defs><g id="redolastredline-Background"><rect class="redolastredline-cls-1" width="90" height="90"/></g><path d="M44.15,53.27l12-12a2.94,2.94,0,0,1,4.16,0l9.89,9.88a2.94,2.94,0,0,1,0,4.16l-12,12Z"/><path class="redolastredline-cls-2" d="M44.15,72l-7.29-7.28a2.94,2.94,0,0,1,0-4.16L56.11,41.31a2.94,2.94,0,0,1,4.16,0l9.89,9.88a2.94,2.94,0,0,1,0,4.16L53.51,72Z"/><path class="redolastredline-cls-3" d="M18,23H36a9,9,0,0,1,9,9h0a9,9,0,0,1-9,9H18"/><polyline class="redolastredline-cls-3" points="24.77 16.23 18 23 24.77 29.77"/>
+  </symbol>
+  <symbol id="resizeredline" viewBox="0 0 90 90">
+    <defs><style>.resizeredline-cls-1{fill:#fff;}.resizeredline-cls-2{fill:none;}.resizeredline-cls-2,.resizeredline-cls-3{stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.resizeredline-cls-3{fill:#e22f30;}</style></defs><g id="resizeredline-Background"><rect class="resizeredline-cls-1" width="90" height="90"/></g><polyline class="resizeredline-cls-2" points="50.77 27 63 27 63 39.23"/><line class="resizeredline-cls-2" x1="50.76" y1="39.24" x2="63" y2="27"/><rect class="resizeredline-cls-3" x="18" y="45" width="27" height="27"/><polyline class="resizeredline-cls-2" points="18 36 18 18 72 18 72 72 54 72"/>
+  </symbol>
+  <symbol id="resizespaceobject" viewBox="0 0 90 90">
+    <defs><style>.resizespaceobject-cls-1{fill:#fff;}.resizespaceobject-cls-2{fill:none;}.resizespaceobject-cls-2,.resizespaceobject-cls-3{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.resizespaceobject-cls-3{fill:#1ccbd1;}</style></defs><g id="resizespaceobject-Background"><rect class="resizespaceobject-cls-1" width="90" height="90"/></g><polyline class="resizespaceobject-cls-2" points="50.77 27 63 27 63 39.23"/><line class="resizespaceobject-cls-2" x1="50.76" y1="39.24" x2="63" y2="27"/><rect class="resizespaceobject-cls-3" x="18" y="45" width="27" height="27"/><polyline class="resizespaceobject-cls-2" points="18 36 18 18 72 18 72 72 54 72"/>
+  </symbol>
+  <symbol id="rotateredline" viewBox="0 0 90 90">
+    <defs><style>.rotateredline-cls-1{fill:#fff;}.rotateredline-cls-2{fill:none;}.rotateredline-cls-2,.rotateredline-cls-3{stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.rotateredline-cls-3{fill:#e22f30;}</style></defs><g id="rotateredline-Background"><rect class="rotateredline-cls-1" width="90" height="90"/></g><polyline class="rotateredline-cls-2" points="31.24 32.63 19.25 36.88 14.99 24.88"/><path class="rotateredline-cls-2" d="M19.64,54.28a27,27,0,1,0-.4-17.4" transform="translate(0)"/><rect class="rotateredline-cls-3" x="36" y="36" width="18" height="18" transform="translate(-18.64 45) rotate(-45)"/>
+  </symbol>
+  <symbol id="rotatespaceobject" viewBox="0 0 90 90">
+    <defs><style>.rotatespaceobject-cls-1{fill:#fff;}.rotatespaceobject-cls-2{fill:none;}.rotatespaceobject-cls-2,.rotatespaceobject-cls-3{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.rotatespaceobject-cls-3{fill:#1ccbd1;}</style></defs><g id="rotatespaceobject-Background"><rect class="rotatespaceobject-cls-1" width="90" height="90"/></g><polyline class="rotatespaceobject-cls-2" points="31.24 32.63 19.25 36.88 14.99 24.88"/><path class="rotatespaceobject-cls-2" d="M19.64,54.28a27,27,0,1,0-.4-17.4" transform="translate(0)"/><rect class="rotatespaceobject-cls-3" x="36" y="36" width="18" height="18" transform="translate(-18.64 45) rotate(-45)"/>
+  </symbol>
+  <symbol id="saveallimagelinks" viewBox="0 0 90 90">
+    <defs><style>.saveallimagelinks-cls-1{fill:#fff;}.saveallimagelinks-cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="saveallimagelinks-Background"><rect class="saveallimagelinks-cls-1" width="90" height="90"/></g><polyline class="saveallimagelinks-cls-2" points="45 27 72 27 72 72 18 72 18 54"/><path d="M18,72V58.5L33.9,45.65a3.71,3.71,0,0,1,4.2,0L51.9,56a3.71,3.71,0,0,0,4.2,0l4.8-3.6a3.71,3.71,0,0,1,4.2,0L72,58.5V72Z" transform="translate(0)"/><circle cx="57" cy="42" r="4.09"/><line class="saveallimagelinks-cls-2" x1="27" y1="42.59" x2="27" y2="18"/><polyline class="saveallimagelinks-cls-2" points="18 33.59 27 42.59 36 33.59"/>
+  </symbol>
+  <symbol id="savepdf" viewBox="0 0 90 90">
+    <defs><style>.savepdf-cls-1{fill:#fff;}.savepdf-cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="savepdf-Background"><rect class="savepdf-cls-1" width="90" height="90"/></g><polyline class="savepdf-cls-2" points="54 18 72 18 72 72 18 72 18 27 27 18 36 18"/><line class="savepdf-cls-2" x1="45" y1="36" x2="45" y2="9"/><polyline class="savepdf-cls-2" points="36 27 45 36 54 27"/><path d="M31.88,54.13H29.45V57.9h2.43a1.89,1.89,0,1,0,0-3.77Z" transform="translate(0)"/><path d="M44,54.13h-1.7v8.74H44a4.09,4.09,0,0,0,4.37-4.38A4.08,4.08,0,0,0,44,54.13Z" transform="translate(0)"/><path d="M72,43H27a2,2,0,0,0-1.41.59l-9,9A2,2,0,0,0,16,54V72a2,2,0,0,0,2,2H72a2,2,0,0,0,2-2V45A2,2,0,0,0,72,43ZM31.86,60.39H29.45v5H26.6V51.65h5.26c2.83,0,4.86,1.51,4.86,4.38S34.66,60.39,31.86,60.39Zm12.1,5H39.49V51.65H44c4.45,0,7.3,2.87,7.3,6.84S48.39,65.35,44,65.35ZM63.42,54.13H56.89v3.48H62.5v2.48H56.89v5.26H54V51.65h9.38Z" transform="translate(0)"/>
+  </symbol>
+  <symbol id="savespaceobjects" viewBox="0 0 90 90">
+    <defs><style>.savespaceobjects-cls-1{fill:#fff;}.savespaceobjects-cls-2{fill:none;}.savespaceobjects-cls-2,.savespaceobjects-cls-3{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.savespaceobjects-cls-3{fill:#1ccbd1;}</style></defs><g id="savespaceobjects-Background"><rect class="savespaceobjects-cls-1" width="90" height="90"/></g><polyline class="savespaceobjects-cls-2" points="54 18 72 18 72 72 18 72 18 27 27 18 36 18"/><polygon class="savespaceobjects-cls-3" points="72 72 18 72 18 63 27 54 72 54 72 72"/><line class="savespaceobjects-cls-2" x1="45" y1="45" x2="45" y2="9"/><polyline class="savespaceobjects-cls-2" points="36 36 45 45 54 36"/>
+  </symbol>
+  <symbol id="savesvg" viewBox="0 0 90 90">
+    <defs><style>.savesvg-cls-1{fill:#fff;}.savesvg-cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="savesvg-Background"><rect class="savesvg-cls-1" width="90" height="90"/></g><polyline class="savesvg-cls-2" points="54 18 72 18 72 72 18 72 18 27 27 18 36 18"/><line class="savesvg-cls-2" x1="45" y1="36" x2="45" y2="9"/><polyline class="savesvg-cls-2" points="36 27 45 36 54 27"/><path d="M72,43H27a2,2,0,0,0-1.41.59l-9,9A2,2,0,0,0,16,54V72a2,2,0,0,0,2,2H72a2,2,0,0,0,2-2V45A2,2,0,0,0,72,43ZM30.75,57l2.39.77c2,.65,3,1.81,3,3.48,0,2.2-1.83,3.74-4.45,3.74a5.2,5.2,0,0,1-5.09-3.5l2.12-1a3.46,3.46,0,0,0,3.13,2.2c1.06,0,1.75-.52,1.75-1.33,0-.58-.36-1-1.11-1.24l-2.44-.8c-2-.65-3-1.86-3-3.53,0-2.19,1.76-3.72,4.32-3.72a4.86,4.86,0,0,1,4.77,3.17l-2.11,1a2.84,2.84,0,0,0-2.66-1.86c-1.06,0-1.76.56-1.76,1.36C29.61,56.27,30,56.7,30.75,57Zm14.6,7.78h-3L38.06,52.27h2.85l2.93,9.12,2.93-9.12h2.84Zm18.07-5.79a5.67,5.67,0,0,1-5.85,6,6.27,6.27,0,0,1-6.36-6.45,6.18,6.18,0,0,1,6.29-6.43,5.46,5.46,0,0,1,5.34,3.34l-2.3,1.1a3.13,3.13,0,0,0-3-2.09c-2.21,0-3.7,1.65-3.7,4.08s1.56,4.1,3.77,4.1c1.7,0,3.26-1,3.26-2.76v0H57.5V57.62h5.92Z" transform="translate(0 0)"/>
+  </symbol>
+  <symbol id="scaleicon" viewBox="0 0 90 90">
+    <defs><style>.scaleicon-cls-1{fill:#fff;}.scaleicon-cls-2{fill:none;}.scaleicon-cls-2,.scaleicon-cls-3{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.scaleicon-cls-3{fill:#1ccbd1;}</style></defs><g id="scaleicon-Background"><rect class="scaleicon-cls-1" width="90" height="90"/></g><polyline class="scaleicon-cls-2" points="50.77 27 63 27 63 39.23"/><line class="scaleicon-cls-2" x1="50.76" y1="39.24" x2="63" y2="27"/><rect class="scaleicon-cls-3" x="18" y="45" width="27" height="27"/><polyline class="scaleicon-cls-2" points="18 36 18 18 72 18 72 72 54 72"/>
+  </symbol>
+  <symbol id="search" viewBox="0 0 90 90">
+    <defs><style>.search-cls-1{fill:#fff;}.search-cls-2,.search-cls-3,.search-cls-4{fill:none;stroke:#1ccbd1;stroke-width:4px;}.search-cls-2,.search-cls-3{stroke-miterlimit:10;}.search-cls-3,.search-cls-4{stroke-linecap:round;}.search-cls-4{stroke-linejoin:round;}</style></defs><g id="search-Background"><rect class="search-cls-1" width="90" height="90"/></g><circle class="search-cls-2" cx="31.5" cy="40.52" r="13.5"/><line class="search-cls-3" x1="41.05" y1="50.06" x2="63" y2="72.02"/><polyline class="search-cls-4" points="72 22.52 72 18.02 45 18.02 45 22.52"/><line class="search-cls-4" x1="58.5" y1="18.02" x2="58.5" y2="45.02"/><line class="search-cls-4" x1="54" y1="45.02" x2="63" y2="45.02"/>
+  </symbol>
+  <symbol id="sendbackward" viewBox="0 0 90 90">
+    <defs><style>.sendbackward-cls-1{fill:#fff;}.sendbackward-cls-2{fill:#1ccbd1;stroke:#1ccbd1;}.sendbackward-cls-2,.sendbackward-cls-3{stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.sendbackward-cls-3{fill:none;stroke:#000;}</style></defs><g id="sendbackward-Background"><rect class="sendbackward-cls-1" width="90" height="90"/></g><rect class="sendbackward-cls-2" x="36" y="36" width="36" height="36"/><rect class="sendbackward-cls-3" x="18" y="18" width="27" height="27"/>
+  </symbol>
+  <symbol id="sendtoback" viewBox="0 0 90 90">
+    <defs><style>.sendtoback-cls-1{fill:#fff;}.sendtoback-cls-2{fill:#1ccbd1;stroke:#1ccbd1;}.sendtoback-cls-2,.sendtoback-cls-3{stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.sendtoback-cls-3{fill:none;stroke:#000;}</style></defs><g id="sendtoback-Background"><rect class="sendtoback-cls-1" width="90" height="90"/></g><rect class="sendtoback-cls-2" x="27" y="27" width="36" height="36"/><rect class="sendtoback-cls-3" x="18" y="18" width="18" height="18"/><rect class="sendtoback-cls-3" x="54" y="54" width="18" height="18"/>
+  </symbol>
+  <symbol id="settings" viewBox="0 0 90 90">
+    <defs><style>.settings-cls-1{fill:#fff;}</style></defs><g id="settings-Background"><rect class="settings-cls-1" width="90" height="90"/></g><path d="M70.5,40.53H63.8a1.74,1.74,0,0,1-1.61-1.08l-1.11-2.68a1.74,1.74,0,0,1,.37-1.9l4.74-4.74a1.49,1.49,0,0,0,0-2.12L62,23.81a1.49,1.49,0,0,0-2.12,0l-4.73,4.73a1.77,1.77,0,0,1-1.92.38l-2.67-1.11a1.74,1.74,0,0,1-1.08-1.61V19.5A1.5,1.5,0,0,0,48,18H42a1.5,1.5,0,0,0-1.5,1.5v6.69a1.76,1.76,0,0,1-1.08,1.62l-2.68,1.11a1.74,1.74,0,0,1-1.9-.37l-4.74-4.74a1.49,1.49,0,0,0-2.12,0L23.81,28a1.49,1.49,0,0,0,0,2.12l4.73,4.73a1.77,1.77,0,0,1,.38,1.92l-1.11,2.67a1.76,1.76,0,0,1-1.62,1.08H19.5A1.5,1.5,0,0,0,18,42V48a1.5,1.5,0,0,0,1.5,1.5h6.7a1.73,1.73,0,0,1,1.61,1.08l1.11,2.68a1.74,1.74,0,0,1-.37,1.9l-4.74,4.74a1.49,1.49,0,0,0,0,2.12l4.2,4.2a1.49,1.49,0,0,0,2.12,0l4.73-4.73a1.77,1.77,0,0,1,1.92-.38l2.67,1.11a1.74,1.74,0,0,1,1.08,1.61v6.7A1.5,1.5,0,0,0,42,72H48a1.5,1.5,0,0,0,1.5-1.5V63.81a1.76,1.76,0,0,1,1.08-1.62l2.67-1.11a1.77,1.77,0,0,1,1.92.38l4.73,4.73a1.49,1.49,0,0,0,2.12,0l4.2-4.2a1.49,1.49,0,0,0,0-2.12l-4.73-4.73a1.77,1.77,0,0,1-.38-1.92l1.11-2.67a1.73,1.73,0,0,1,1.61-1.08h6.7A1.5,1.5,0,0,0,72,48V42A1.5,1.5,0,0,0,70.5,40.53ZM45,54a9,9,0,1,1,9-9A9,9,0,0,1,45,54Z"/>
+  </symbol>
+  <symbol id="showhide" viewBox="0 0 54 90">
+    <defs><style>.showhide-cls-1{fill:#fff;}.showhide-cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="showhide-Background"><rect class="showhide-cls-1" width="54" height="90"/></g><path class="showhide-cls-2" d="M63,63Q45,81,27,63,45,45,63,63Z" transform="translate(-18)"/><rect class="showhide-cls-2" x="9" y="18" width="18" height="18"/><rect class="showhide-cls-2" x="27" y="18" width="18" height="18"/><circle class="showhide-cls-2" cx="27" cy="63" r="6.28"/>
+  </symbol>
+  <symbol id="showhidemove" viewBox="0 0 144 90">
+    <defs><style>.showhidemove-cls-1{fill:#fff;}.showhidemove-cls-2,.showhidemove-cls-3{fill:none;stroke:#000;}.showhidemove-cls-2{stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.showhidemove-cls-3{stroke-miterlimit:10;}</style></defs><g id="showhidemove-Background"><rect class="showhidemove-cls-1" width="144" height="90"/></g><line class="showhidemove-cls-2" x1="45" y1="18" x2="45" y2="36"/><polyline class="showhidemove-cls-2" points="54 27 45 18 36 27"/><line class="showhidemove-cls-2" x1="45" y1="72" x2="45" y2="54"/><polyline class="showhidemove-cls-2" points="36 63 45 72 54 63"/><line class="showhidemove-cls-2" x1="18" y1="45" x2="36" y2="45"/><polyline class="showhidemove-cls-2" points="27 36 18 45 27 54"/><line class="showhidemove-cls-2" x1="72" y1="45" x2="54" y2="45"/><polyline class="showhidemove-cls-2" points="63 54 72 45 63 36"/><path class="showhidemove-cls-2" d="M108,63Q90,81,72,63,90,45,108,63Z" transform="translate(27 0)"/><rect class="showhidemove-cls-2" x="99" y="18" width="18" height="18"/><rect class="showhidemove-cls-2" x="117" y="18" width="18" height="18"/><circle class="showhidemove-cls-2" cx="117" cy="63" r="6.28"/><line class="showhidemove-cls-3" x1="90" x2="90" y2="90"/>
+  </symbol>
+  <symbol id="spaceobjectcolor" viewBox="0 0 90 90">
+    <sodipodi:namedview
+     id="spaceobjectcolor-namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="18.322222"
+     inkscape:cx="45"
+     inkscape:cy="45"
+     inkscape:window-width="2059"
+     inkscape:window-height="1360"
+     inkscape:window-x="550"
+     inkscape:window-y="373"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Icon" />
+  <defs
+     id="spaceobjectcolor-defs1">
+    <style
+       id="spaceobjectcolor-style1">.spaceobjectcolor-cls-1{fill:#fff;}.spaceobjectcolor-cls-2,.spaceobjectcolor-cls-3,.spaceobjectcolor-cls-4{fill:none;stroke-width:4px;}.spaceobjectcolor-cls-2,.spaceobjectcolor-cls-3{stroke:#000;stroke-linejoin:round;}.spaceobjectcolor-cls-3,.spaceobjectcolor-cls-4{stroke-linecap:round;}.spaceobjectcolor-cls-4{stroke:#e22f30;stroke-miterlimit:10;}</style>
+  </defs>
+  <g
+     id="spaceobjectcolor-Background">
+    <rect
+       class="spaceobjectcolor-cls-1"
+       width="90"
+       height="90"
+       id="spaceobjectcolor-rect1" />
+  </g>
+  <path
+     class="spaceobjectcolor-cls-2"
+     d="M26.39,23.82H44.6a2,2,0,0,1,2,2V53.43a0,0,0,0,1,0,0H24.39a0,0,0,0,1,0,0V25.82A2,2,0,0,1,26.39,23.82Z"
+     transform="translate(33.29 91.04) rotate(-135)"
+     id="spaceobjectcolor-path1" />
+  <line
+     class="spaceobjectcolor-cls-3"
+     x1="38.12"
+     y1="20.31"
+     x2="34.45"
+     y2="16.65"
+     id="spaceobjectcolor-line1" />
+  <path
+     d="M49.09,40.74,24.91,33.51l-6.43,6.43a1.65,1.65,0,0,0,0,2.33L31.86,55.64a1.62,1.62,0,0,0,2.32,0Z"
+     transform="translate(0)"
+     id="spaceobjectcolor-path2" />
+  <path
+     d="M59.56,49.46c0-2.51-4.54-7.4-4.54-7.4s-4.55,4.89-4.55,7.4a4.55,4.55,0,1,0,9.09,0Z"
+     transform="translate(0)"
+     id="spaceobjectcolor-path3" />
+  <line
+     class="spaceobjectcolor-cls-4"
+     x1="18"
+     y1="72"
+     x2="45"
+     y2="72"
+     id="spaceobjectcolor-line3"
+     style="stroke:#2fdce2;stroke-opacity:1" />
+  <line
+     class="spaceobjectcolor-cls-4"
+     x1="45"
+     y1="63"
+     x2="72"
+     y2="63"
+     id="spaceobjectcolor-line4"
+     style="stroke:#1dc8ce;stroke-opacity:1" />
+  </symbol>
+  <symbol id="sprite" viewBox="0 0 90 90">
+    <symbol id="sprite-about" viewBox="0 0 90 90">
+    <defs><style>.sprite-cls-1{fill:#fff;}.sprite-cls-2{fill:#1ccbd1;}.sprite-cls-3{fill:none;stroke:#1ccbd1;stroke-linecap:round;stroke-miterlimit:10;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><path d="M45,22A23,23,0,1,1,22,45,23,23,0,0,1,45,22m0-4A27,27,0,1,0,72,45,27,27,0,0,0,45,18Z" transform="translate(0 0)"/><circle class="sprite-cls-2" cx="45" cy="33.18" r="2.41"/><line class="sprite-cls-3" x1="45" y1="40.91" x2="45" y2="58.21"/>
+  </symbol>
+  <symbol id="sprite-adjustlayerlineweight" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:none;}.cls-2{fill:#000;}</style></defs>
+<g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/>
+</g>
+<rect class="sprite-cls-2" x="18" y="18" width="54" height="16.4"/>
+<rect class="sprite-cls-2" x="18" y="68.71" width="54" height="3.29"/>
+<rect class="sprite-cls-2" x="18" y="56.53" width="54" height="6.18"/>
+<rect class="sprite-cls-2" x="18" y="40.4" width="54" height="10.13"/>
+  </symbol>
+  <symbol id="sprite-adjustlineweight" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:#1ccbd1;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><rect class="sprite-cls-2" x="18" y="18" width="54" height="16.4"/><rect class="sprite-cls-2" x="18" y="68.71" width="54" height="3.29"/><rect class="sprite-cls-2" x="18" y="56.53" width="54" height="6.18"/><rect class="sprite-cls-2" x="18" y="40.4" width="54" height="10.13"/>
+  </symbol>
+  <symbol id="sprite-adjustredline" viewBox="0 0 90 90">
+    <defs>
+<style>.cls-1{fill:#fff;}.cls-2{fill:none;}.cls-2,
+.cls-3{stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#e22f30;}.cls-4{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:5px;fill:none}</style></defs>
+<rect id="sprite-Background" class="sprite-cls-1" width="90" height="90"/>
+<polyline class="sprite-cls-2" points="36 60 63 72 72 72 72 63 72 36"/>
+<polyline class="sprite-cls-2" points="72 36 72 27 45 27 45 18 18 18 18 45 36 60"/>
+<polyline class="sprite-cls-4" points="45.77 37 58 37 58 49.23"/>
+<line class="sprite-cls-4" x1="45.76" y1="49.24" x2="58" y2="37"/>
+<circle class="sprite-cls-4" cx="36" cy="60" r="7"/>
+  </symbol>
+  <symbol id="sprite-adjustredlineweight" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:#e22f30;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><rect class="sprite-cls-2" x="18" y="18" width="54" height="16.4"/><rect class="sprite-cls-2" x="18" y="68.71" width="54" height="3.29"/><rect class="sprite-cls-2" x="18" y="56.53" width="54" height="6.18"/><rect class="sprite-cls-2" x="18" y="40.4" width="54" height="10.13"/>
+  </symbol>
+  <symbol id="sprite-adjustspaceobject" viewBox="0 0 90 90">
+    <defs>
+<style>.cls-1{fill:#fff;}.cls-2{fill:none;}.cls-2,.cls-3{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#1ccbd1;}.cls-4{stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:5px;fill:none}</style></defs>
+<rect id="sprite-Background" class="sprite-cls-1" width="90" height="90"/>
+<polyline class="sprite-cls-2" points="36 60 63 72 72 72 72 63 72 36"/>
+<polyline class="sprite-cls-2" points="72 36 72 27 45 27 45 18 18 18 18 45 36 60"/>
+<polyline class="sprite-cls-2" points="45.77 37 58 37 58 49.23"/>
+<line class="sprite-cls-2" x1="45.76" y1="49.24" x2="58" y2="37"/>
+<circle class="sprite-cls-4" cx="36" cy="60" r="7"/>
+  </symbol>
+  <symbol id="sprite-alllayerson" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polygon points="72 42.29 45 57.58 18 42.29 27 37.19 27 45 63 45 63 37.19 72 42.29"/><polyline class="sprite-cls-2" points="26.39 37.54 18 42.29 45 57.58 72 42.29 63.61 37.54"/><path class="sprite-cls-2" d="M24.08,46.27,18,49.72,43.6,64.21a2.85,2.85,0,0,0,2.8,0L72,49.72l-5.82-3.3" transform="translate(0)"/><path class="sprite-cls-2" d="M23.64,54,18,57.14l25.6,14.5a2.9,2.9,0,0,0,2.8,0L72,57.14l-5.23-3" transform="translate(0)"/><polyline class="sprite-cls-2" points="27 45 27 18 63 18 63 45"/><line class="sprite-cls-2" x1="38.5" y1="32.5" x2="51.5" y2="32.5"/><line class="sprite-cls-2" x1="45" y1="39" x2="45" y2="26"/>
+  </symbol>
+  <symbol id="sprite-background" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3,.cls-4{fill:none;stroke:#000;stroke-width:4px;}.cls-2,.cls-4{stroke-linecap:round;}.cls-2{stroke-miterlimit:10;}.cls-3,.cls-4{stroke-linejoin:round;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><path class="sprite-cls-2" d="M47.76,18H70.5c.83,0,1.5.9,1.5,2V70c0,1.1-.67,2-1.5,2h-51c-.83,0-1.5-.9-1.5-2V55.65"/><path class="sprite-cls-3" d="M26.54,25.18H44.74a2,2,0,0,1,2,2V54.79a0,0,0,0,1,0,0H24.54a0,0,0,0,1,0,0V27.18A2,2,0,0,1,26.54,25.18Z" transform="translate(32.57 93.45) rotate(-135)"/><line class="sprite-cls-4" x1="38.26" y1="21.66" x2="34.59" y2="18"/><path d="M49.23,42.1,25.05,34.86,18.62,41.3a1.64,1.64,0,0,0,0,2.32L32,57a1.65,1.65,0,0,0,2.33,0Z"/><path d="M59.7,50.81c0-2.51-4.54-7.4-4.54-7.4s-4.55,4.89-4.55,7.4a4.55,4.55,0,1,0,9.09,0Z"/>
+  </symbol>
+  <symbol id="sprite-birdseye" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:#1ccbd1;}.cls-2,.cls-4{fill-rule:evenodd;}.cls-3{fill:none;stroke:#1ccbd1;stroke-miterlimit:10;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polygon class="sprite-cls-2" points="31.5 29.51 15 29.51 21.44 36 31.5 29.51"/><circle class="sprite-cls-3" cx="31.5" cy="45" r="13.5"/><path class="sprite-cls-4" d="M31.5,39.38a5.53,5.53,0,0,0-1.87.33,2.52,2.52,0,1,1-3.42,3.42A5.53,5.53,0,0,0,25.88,45a5.62,5.62,0,1,0,5.62-5.62Z" transform="translate(0 0)"/><polygon class="sprite-cls-2" points="58.5 29.51 75 29.51 68.56 36 58.5 29.51"/><circle class="sprite-cls-3" cx="58.5" cy="45" r="13.5"/><path class="sprite-cls-4" d="M58.5,39.38a5.57,5.57,0,0,0-1.87.33,2.52,2.52,0,1,1-3.42,3.42A5.53,5.53,0,0,0,52.88,45a5.62,5.62,0,1,0,5.62-5.62Z" transform="translate(0 0)"/>
+  </symbol>
+  <symbol id="sprite-blackwhite" viewBox="0 0 90 90">
+    <defs><style>.cls-1,.cls-3{fill:#fff;}.cls-2,.cls-3,.cls-4{stroke:#000;stroke-miterlimit:10;stroke-width:4px;}.cls-4{fill:none;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><rect class="sprite-cls-2" x="18" y="18" width="27" height="27" rx="2"/><rect class="sprite-cls-3" x="45" y="45" width="27" height="27" rx="2"/><path class="sprite-cls-4" d="M54,27h5a4,4,0,0,1,4,4v5" transform="translate(0 0)"/><path class="sprite-cls-4" d="M36,63H31a4,4,0,0,1-4-4V54" transform="translate(0 0)"/>
+  </symbol>
+  <symbol id="sprite-bringforward" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;}.cls-2,.cls-3{stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#1ccbd1;stroke:#1ccbd1;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><rect class="sprite-cls-2" x="45" y="45" width="27" height="27"/><rect class="sprite-cls-3" x="18" y="18" width="36" height="36"/>
+  </symbol>
+  <symbol id="sprite-bringtofront" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;}.cls-2,.cls-3{stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#1ccbd1;stroke:#1ccbd1;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><rect class="sprite-cls-2" x="18" y="18" width="18" height="18"/><rect class="sprite-cls-2" x="54" y="54" width="18" height="18"/><rect class="sprite-cls-3" x="27" y="27" width="36" height="36"/>
+  </symbol>
+  <symbol id="sprite-calibrate" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-2{stroke:#1ccbd1;}.cls-3{stroke:#000;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><line class="sprite-cls-2" x1="45" y1="18" x2="45" y2="13"/><line class="sprite-cls-3" x1="22.1" y1="65.64" x2="18" y2="72"/><path class="sprite-cls-3" d="M40.75,45,28.32,64.29a4.5,4.5,0,0,1-6.22,1.35h0a4.51,4.51,0,0,1-1.35-6.22L33.47,39.67"/><path class="sprite-cls-3" d="M49.25,45,61.68,64.29a4.5,4.5,0,0,0,6.22,1.35h0a4.51,4.51,0,0,0,1.35-6.22L56.53,39.67"/><line class="sprite-cls-3" x1="67.9" y1="65.64" x2="72" y2="72"/><circle class="sprite-cls-3" cx="45" cy="31.5" r="13.5"/><circle class="sprite-cls-2" cx="45" cy="31.5" r="5.95"/>
+  </symbol>
+  <symbol id="sprite-circlespaceobject" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:#1ccbd1;}.cls-2,.cls-3{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:none;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polygon class="sprite-cls-2" points="72.55 48.39 65.89 42.34 47.72 62.31 45 72 54.38 68.37 72.55 48.39"/><path class="sprite-cls-3" d="M36.15,70.51A27,27,0,1,1,70.46,36"/>
+  </symbol>
+  <symbol id="sprite-clearall" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-2{stroke:#1ccbd1;}.cls-3{stroke:#e22f30;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polygon class="sprite-cls-2" points="72 45 58.5 45 58.5 58.5 45 58.5 45 72 72 72 72 45"/><polygon class="sprite-cls-2" points="45 18 31.5 18 31.5 31.5 18 31.5 18 45 45 45 45 31.5 63 27 63 18 45 18"/><line class="sprite-cls-3" x1="18" y1="57.41" x2="32.59" y2="72"/><line class="sprite-cls-3" x1="32.59" y1="57.41" x2="18" y2="72"/>
+  </symbol>
+  <symbol id="sprite-clearallredlines" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-2{stroke:#000;}.cls-3{stroke:#e22f30;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><path d="M44.15,53.27l12-12a2.94,2.94,0,0,1,4.16,0l9.89,9.88a2.94,2.94,0,0,1,0,4.16l-12,12Z"/><path class="sprite-cls-2" d="M44.15,72l-7.29-7.28a2.94,2.94,0,0,1,0-4.16L56.11,41.31a2.94,2.94,0,0,1,4.16,0l9.89,9.88a2.94,2.94,0,0,1,0,4.16L53.51,72Z"/><line class="sprite-cls-3" x1="18" y1="18" x2="40.45" y2="40.45"/><line class="sprite-cls-3" x1="18" y1="40.45" x2="40.45" y2="18"/>
+  </symbol>
+  <symbol id="sprite-clearimagelinks" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polyline class="sprite-cls-2" points="45 27 72 27 72 72 18 72 18 54"/><path d="M18,72V58.5L33.9,45.65a3.71,3.71,0,0,1,4.2,0L51.9,56a3.71,3.71,0,0,0,4.2,0l4.8-3.6a3.71,3.71,0,0,1,4.2,0L72,58.5V72Z" transform="translate(0)"/><circle cx="57" cy="42" r="4.09"/><line class="sprite-cls-2" x1="17.99" y1="18" x2="35.99" y2="36"/><line class="sprite-cls-2" x1="17.99" y1="36" x2="35.99" y2="18"/>
+  </symbol>
+  <symbol id="sprite-clearquickcounts" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-2{stroke:#f66011;}.cls-3{stroke:#e22f30;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polyline class="sprite-cls-2" points="45 45 27 63 18 54"/><polyline class="sprite-cls-2" points="72 54 54 72 45 63"/><line class="sprite-cls-3" x1="36" y1="18" x2="54" y2="36"/><line class="sprite-cls-3" x1="54" y1="18" x2="36" y2="36"/>
+  </symbol>
+  <symbol id="sprite-compare" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3,.cls-4{fill:none;}.cls-2{stroke:#e22f30;}.cls-2,.cls-3,.cls-4,.cls-5{stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{stroke:#fdc003;}.cls-4{stroke:#3c4ac7;}.cls-5{stroke:#000;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><rect class="sprite-cls-2" x="21.93" y="35.49" width="19.11" height="19.11" transform="translate(-22.63 35.46) rotate(-45)"/><rect class="sprite-cls-3" x="35.44" y="21.98" width="19.11" height="19.11" transform="translate(-9.12 41.06) rotate(-45)"/><rect class="sprite-cls-4" x="48.96" y="35.49" width="19.11" height="19.11" transform="translate(-14.72 54.57) rotate(-45)"/><rect class="sprite-cls-5" x="40.38" y="60.92" width="9.25" height="9.25" transform="translate(-33.16 51.02) rotate(-45)"/>
+  </symbol>
+  <symbol id="sprite-copycirclespaceobject" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><circle class="sprite-cls-2" cx="40.5" cy="40.5" r="22.5"/><circle class="sprite-cls-2" cx="49.5" cy="49.5" r="22.5"/>
+  </symbol>
+  <symbol id="sprite-deletesingleredline" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-2{stroke:#000;}.cls-3{stroke:#e22f30;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><path d="M32.53,35.44,48.8,19.17a4,4,0,0,1,5.65,0L67.89,32.61a4,4,0,0,1,0,5.65L51.62,54.53Z"/><path class="sprite-cls-2" d="M32.53,60.89,22.63,51a4,4,0,0,1,0-5.66L48.8,19.17a4,4,0,0,1,5.65,0L67.89,32.61a4,4,0,0,1,0,5.65L45.26,60.89Z"/><line class="sprite-cls-3" x1="18" y1="72" x2="72" y2="72"/>
+  </symbol>
+  <symbol id="sprite-deletespaceobject" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-4{fill:none;}.cls-2,.cls-3{stroke:#1ccbd1;}.cls-2,.cls-3,.cls-4{stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#1ccbd1;}.cls-4{stroke:#e22f30;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polyline class="sprite-cls-2" points="72 36 72 18 45 18 45 36 45 45 18 45 18 54 18 72 27 72 36 72"/><polygon class="sprite-cls-3" points="72 48.39 65.34 42.34 47.18 62.31 44.45 72 53.84 68.37 72 48.39"/><polyline class="sprite-cls-2" points="72 63 72 72 63 72"/><line class="sprite-cls-4" x1="18" y1="18" x2="33" y2="33"/><line class="sprite-cls-4" x1="33" y1="18" x2="18" y2="33"/>
+  </symbol>
+  <symbol id="sprite-ellipsecloud" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><ellipse class="sprite-cls-2" cx="45" cy="36" rx="27" ry="18"/><path class="sprite-cls-2" d="M18,54c0,2.68,2.64,5,6.28,5.72-1.76,2.26-1.22,5.11,1.63,7h0a12.58,12.58,0,0,0,10.51,1.08C37.57,70.24,41,72,45,72s7.43-1.76,8.58-4.19a12.58,12.58,0,0,0,10.51-1.08h0c2.85-1.9,3.39-4.75,1.63-7C69.36,59,72,56.68,72,54"/><path class="sprite-cls-2" d="M60.92,39.9a13.17,13.17,0,0,0-7.34.29C52.43,37.76,49,36,45,36s-7.43,1.76-8.58,4.19a13.13,13.13,0,0,0-7.8-.16"/>
+  </symbol>
+  <symbol id="sprite-fileload" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke-linecap:round;}.cls-2,.cls-3{stroke:#000;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polyline class="sprite-cls-2" points="54 27 72 27 72 72 18 72 18 36 27 27 36 27"/><polygon class="sprite-cls-3" points="72 72 18 72 18 63 27 54 72 54 72 72"/><line class="sprite-cls-2" x1="45" y1="9" x2="45" y2="45"/><polyline class="sprite-cls-2" points="54 18 45 9 36 18"/>
+  </symbol>
+  <symbol id="sprite-filesave" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke-linecap:round;}.cls-2,.cls-3{stroke:#000;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polyline class="sprite-cls-2" points="54 18 72 18 72 72 18 72 18 27 27 18 36 18"/><polygon class="sprite-cls-3" points="72 72 18 72 18 63 27 54 72 54 72 72"/><line class="sprite-cls-2" x1="45" y1="45" x2="45" y2="9"/><polyline class="sprite-cls-2" points="36 36 45 45 54 36"/>
+  </symbol>
+  <symbol id="sprite-floppyredlines" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke-linecap:round;}.cls-2,.cls-3{stroke:#e22f30;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#e22f30;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polyline class="sprite-cls-2" points="54 18 72 18 72 72 18 72 18 27 27 18 36 18"/><polygon class="sprite-cls-3" points="72 72 18 72 18 63 27 54 72 54 72 72"/><line class="sprite-cls-2" x1="45" y1="45" x2="45" y2="9"/><polyline class="sprite-cls-2" points="36 36 45 45 54 36"/>
+  </symbol>
+  <symbol id="sprite-freehand" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><path class="sprite-cls-2" d="M72,27C57.59,37.47,46.52,9.93,37.82,19.71c-5.64,6.35,4.68,8.86,1.65,17-3.74,10.1-18.28-3.32-20.23,3.78-2.5,9,22,8.88,16.11,16.47-9.08,11.73,14,21.28,20,10.56C61.56,56.27,72.43,63.47,72,54c-.41-9.1-12.76-1-16.06-17.82" transform="translate(0)"/>
+  </symbol>
+  <symbol id="sprite-help" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:#1ccbd1;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><path class="sprite-cls-2" d="M40.7,56v-1.2a20.56,20.56,0,0,1,1-7.15,9.63,9.63,0,0,1,2.78-4,39.85,39.85,0,0,1,4.25-3,13.81,13.81,0,0,0,4-3.79,8.8,8.8,0,0,0,1.5-5.1A7.68,7.68,0,0,0,53,27.4a7.94,7.94,0,0,0-3.15-2.78,10.62,10.62,0,0,0-8.89,0,7.89,7.89,0,0,0-3.29,2.92,10,10,0,0,0-1.42,5H29.62a14.79,14.79,0,0,1,2.25-7.81,13.83,13.83,0,0,1,5.61-5A17.39,17.39,0,0,1,45.34,18a17.21,17.21,0,0,1,8,1.79,13.21,13.21,0,0,1,5.33,4.92,13.61,13.61,0,0,1,1.89,7.17,13.8,13.8,0,0,1-1.88,7.28,16.12,16.12,0,0,1-5.38,5.29,26,26,0,0,0-3.68,2.73,7.27,7.27,0,0,0-2,3,14.64,14.64,0,0,0-.61,4.72V56ZM44,72a4.69,4.69,0,1,1,0-9.38A4.48,4.48,0,0,1,47.27,64a4.71,4.71,0,0,1,0,6.62A4.48,4.48,0,0,1,44,72Z"/>
+  </symbol>
+  <symbol id="sprite-insertimage" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><rect class="sprite-cls-2" x="18" y="18" width="54" height="54"/><path d="M18,72V54L33.9,36.87a3,3,0,0,1,4.2,0l13.8,13.8a3,3,0,0,0,4.2,0l4.8-4.8a3,3,0,0,1,4.2,0L72,54V72Z" transform="translate(0)"/><circle cx="54" cy="36" r="4.91"/>
+  </symbol>
+  <symbol id="sprite-layercolor" viewBox="0 0 90 90">
+    <sodipodi:namedview
+     id="sprite-namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="18.322222"
+     inkscape:cx="45"
+     inkscape:cy="45"
+     inkscape:window-width="2059"
+     inkscape:window-height="1360"
+     inkscape:window-x="550"
+     inkscape:window-y="373"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Icon" />
+  <defs
+     id="sprite-defs1">
+    <style
+       id="sprite-style1">.cls-1{fill:none;}.cls-2,.cls-3,.cls-4{fill:none;stroke-width:4px;}.cls-2,.cls-3{stroke:#000;stroke-linejoin:round;}.cls-3,.cls-4{stroke-linecap:round;}.cls-4{stroke:#e22f30;stroke-miterlimit:10;}</style>
+  </defs>
+  <g
+     id="sprite-Background">
+    <rect
+       class="sprite-cls-1"
+       width="90"
+       height="90"
+       id="sprite-rect1" />
+  </g>
+  <path
+     class="sprite-cls-2"
+     d="M26.39,23.82H44.6a2,2,0,0,1,2,2V53.43a0,0,0,0,1,0,0H24.39a0,0,0,0,1,0,0V25.82A2,2,0,0,1,26.39,23.82Z"
+     transform="translate(33.29 91.04) rotate(-135)"
+     id="sprite-path1" />
+  <line
+     class="sprite-cls-3"
+     x1="38.12"
+     y1="20.31"
+     x2="34.45"
+     y2="16.65"
+     id="sprite-line1" />
+  <path
+     d="M49.09,40.74,24.91,33.51l-6.43,6.43a1.65,1.65,0,0,0,0,2.33L31.86,55.64a1.62,1.62,0,0,0,2.32,0Z"
+     transform="translate(0)"
+     id="sprite-path2" />
+  <path
+     d="M59.56,49.46c0-2.51-4.54-7.4-4.54-7.4s-4.55,4.89-4.55,7.4a4.55,4.55,0,1,0,9.09,0Z"
+     transform="translate(0)"
+     id="sprite-path3" />
+  <line
+     class="sprite-cls-4"
+     x1="18"
+     y1="72"
+     x2="45"
+     y2="72"
+     id="sprite-line3"
+     style="stroke:#000;stroke-opacity:1" />
+  <line
+     class="sprite-cls-4"
+     x1="45"
+     y1="63"
+     x2="72"
+     y2="63"
+     id="sprite-line4"
+     style="stroke:#000;stroke-opacity:1" />
+  </symbol>
+  <symbol id="sprite-layeroff" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polygon points="72 42.29 45 57.58 18 42.29 27 37.19 27 45 63 45 63 37.19 72 42.29"/><polyline class="sprite-cls-2" points="26.39 37.54 18 42.29 45 57.58 72 42.29 63.61 37.54"/><path class="sprite-cls-2" d="M24.08,46.27,18,49.72,43.6,64.21a2.85,2.85,0,0,0,2.8,0L72,49.72l-5.82-3.3" transform="translate(0 0)"/><path class="sprite-cls-2" d="M23.64,54,18,57.14l25.6,14.5a2.9,2.9,0,0,0,2.8,0L72,57.14l-5.23-3" transform="translate(0 0)"/><polyline class="sprite-cls-2" points="27 45 27 18 63 18 63 45"/><line class="sprite-cls-2" x1="38.5" y1="32.5" x2="51.5" y2="32.5"/>
+  </symbol>
+  <symbol id="sprite-layers" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3{stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:none;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polygon class="sprite-cls-2" points="45 17.48 18 36 45 54.52 72 36 45 17.48"/><path class="sprite-cls-3" d="M24.08,40.83,18,45,43.6,62.57a2.47,2.47,0,0,0,2.8,0L72,45l-5.82-4" transform="translate(0 0)"/><path class="sprite-cls-3" d="M23.64,50.13,18,54,43.6,71.57a2.47,2.47,0,0,0,2.8,0L72,54l-5.23-3.59" transform="translate(0 0)"/>
+  </symbol>
+  <symbol id="sprite-loadallimagelinks" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polyline class="sprite-cls-2" points="45 27 72 27 72 72 18 72 18 54"/><path d="M18,72V58.5L33.9,45.65a3.71,3.71,0,0,1,4.2,0L51.9,56a3.71,3.71,0,0,0,4.2,0l4.8-3.6a3.71,3.71,0,0,1,4.2,0L72,58.5V72Z" transform="translate(0)"/><circle cx="57" cy="42" r="4.09"/><line class="sprite-cls-2" x1="27" y1="18" x2="27" y2="42.59"/><polyline class="sprite-cls-2" points="36 27 27 18 18 27"/>
+  </symbol>
+  <symbol id="sprite-loadredlines" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke-linecap:round;}.cls-2,.cls-3{stroke:#e22f30;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#e22f30;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polyline class="sprite-cls-2" points="54 27 72 27 72 72 18 72 18 36 27 27 36 27"/><polygon class="sprite-cls-3" points="72 72 18 72 18 63 27 54 72 54 72 72"/><line class="sprite-cls-2" x1="45" y1="9" x2="45" y2="45"/><polyline class="sprite-cls-2" points="54 18 45 9 36 18"/>
+  </symbol>
+  <symbol id="sprite-loadseconddrawing" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3,.cls-4{fill:none;}.cls-2{stroke:#e22f30;}.cls-2,.cls-3,.cls-4,.cls-5{stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{stroke:#fdc003;}.cls-4{stroke:#3c4ac7;}.cls-5{stroke:#000;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><rect class="sprite-cls-2" x="21.93" y="35.49" width="19.11" height="19.11" transform="translate(-22.63 35.46) rotate(-45)"/><rect class="sprite-cls-3" x="35.44" y="21.98" width="19.11" height="19.11" transform="translate(-9.12 41.06) rotate(-45)"/><rect class="sprite-cls-4" x="48.96" y="35.49" width="19.11" height="19.11" transform="translate(-14.72 54.57) rotate(-45)"/><rect class="sprite-cls-5" x="40.38" y="60.92" width="9.25" height="9.25" transform="translate(-33.16 51.02) rotate(-45)"/>
+  </symbol>
+  <symbol id="sprite-loadspaceobjects" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;}.cls-2,.cls-3{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#1ccbd1;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polyline class="sprite-cls-2" points="54 27 72 27 72 72 18 72 18 36 27 27 36 27"/><polygon class="sprite-cls-3" points="72 72 18 72 18 63 27 54 72 54 72 72"/><line class="sprite-cls-2" x1="45" y1="9" x2="45" y2="45"/><polyline class="sprite-cls-2" points="54 18 45 9 36 18"/>
+  </symbol>
+  <symbol id="sprite-measure" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-2{stroke:#000;}.cls-3{stroke:#1ccbd1;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><rect class="sprite-cls-2" x="18" y="45" width="54" height="27"/><line class="sprite-cls-2" x1="27" y1="63" x2="27" y2="45"/><line class="sprite-cls-2" x1="36" y1="54" x2="36" y2="45"/><line class="sprite-cls-2" x1="45" y1="63" x2="45" y2="45"/><line class="sprite-cls-2" x1="54" y1="54" x2="54" y2="45"/><line class="sprite-cls-2" x1="63" y1="63" x2="63" y2="45"/><line class="sprite-cls-3" x1="72" y1="27" x2="18" y2="27"/><polyline class="sprite-cls-3" points="63 18 72 27 63 36"/><polyline class="sprite-cls-3" points="27 36 18 27 27 18"/>
+  </symbol>
+  <symbol id="sprite-merge" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-2{stroke:#000;}.cls-3{stroke:#1ccbd1;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polyline class="sprite-cls-2" points="18 36 18 18 72 18 72 36"/><polyline class="sprite-cls-2" points="72 54 72 72 18 72 18 54"/><line class="sprite-cls-3" x1="36" y1="45" x2="18" y2="45"/><polyline class="sprite-cls-3" points="29.18 51.82 36 45 29.18 38.18"/><line class="sprite-cls-3" x1="54" y1="45" x2="72" y2="45"/><polyline class="sprite-cls-3" points="60.82 38.18 54 45 60.82 51.82"/><line class="sprite-cls-3" x1="45" y1="27" x2="45" y2="63"/>
+  </symbol>
+  <symbol id="sprite-moveicons" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><line class="sprite-cls-2" x1="45" y1="18" x2="45" y2="36"/><polyline class="sprite-cls-2" points="54 27 45 18 36 27"/><line class="sprite-cls-2" x1="45" y1="72" x2="45" y2="54"/><polyline class="sprite-cls-2" points="36 63 45 72 54 63"/><line class="sprite-cls-2" x1="18" y1="45" x2="36" y2="45"/><polyline class="sprite-cls-2" points="27 36 18 45 27 54"/><line class="sprite-cls-2" x1="72" y1="45" x2="54" y2="45"/><polyline class="sprite-cls-2" points="63 54 72 45 63 36"/>
+  </symbol>
+  <symbol id="sprite-moveredline" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:#e22f30;}.cls-2,.cls-3{stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:none;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><rect class="sprite-cls-2" x="36" y="36" width="18" height="18"/><polyline class="sprite-cls-3" points="27 36 18 45 27 54"/><polyline class="sprite-cls-3" points="36 63 45 72 54 63"/><polyline class="sprite-cls-3" points="63 36 72 45 63 54"/><polyline class="sprite-cls-3" points="36 27 45 18 54 27"/><line class="sprite-cls-3" x1="45" y1="18" x2="45" y2="36"/><line class="sprite-cls-3" x1="18" y1="45" x2="36" y2="45"/><line class="sprite-cls-3" x1="45" y1="72" x2="45" y2="54"/><line class="sprite-cls-3" x1="72" y1="45" x2="54" y2="45"/>
+  </symbol>
+  <symbol id="sprite-movespaceobject" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:#1ccbd1;}.cls-2,.cls-3{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:none;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><rect class="sprite-cls-2" x="36" y="36" width="18" height="18"/><polyline class="sprite-cls-3" points="27 36 18 45 27 54"/><polyline class="sprite-cls-3" points="36 63 45 72 54 63"/><polyline class="sprite-cls-3" points="63 36 72 45 63 54"/><polyline class="sprite-cls-3" points="36 27 45 18 54 27"/><line class="sprite-cls-3" x1="45" y1="18" x2="45" y2="36"/><line class="sprite-cls-3" x1="18" y1="45" x2="36" y2="45"/><line class="sprite-cls-3" x1="45" y1="72" x2="45" y2="54"/><line class="sprite-cls-3" x1="72" y1="45" x2="54" y2="45"/>
+  </symbol>
+  <symbol id="sprite-nextpage" viewBox="0 0 54 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="54" height="90"/></g><polygon class="sprite-cls-2" points="36 36 27 27 18 36 36 36"/><rect class="sprite-cls-2" x="27" y="45" width="18" height="18" transform="translate(54 108) rotate(180)"/><rect class="sprite-cls-2" x="45" y="45" width="18" height="18" transform="translate(90 108) rotate(180)"/>
+  </symbol>
+  <symbol id="sprite-nextpagespace" viewBox="0 0 54 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="54" height="90"/></g><polygon class="sprite-cls-2" points="36 36 27 27 18 36 36 36"/><rect class="sprite-cls-2" x="27" y="45" width="18" height="18" transform="translate(54 108) rotate(180)"/><rect class="sprite-cls-2" x="45" y="45" width="18" height="18" transform="translate(90 108) rotate(180)"/>
+  </symbol>
+  <symbol id="sprite-polygonspaceobject" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;}.cls-2,.cls-3{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#1ccbd1;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polyline class="sprite-cls-2" points="63 72 72 72 72 63"/><polyline class="sprite-cls-2" points="72 36 72 27 45 27 45 18 18 18 18 45 36 63"/><polygon class="sprite-cls-3" points="72.55 48.39 65.89 42.34 47.72 62.31 45 72 54.38 68.37 72.55 48.39"/>
+  </symbol>
+  <symbol id="sprite-previouspage" viewBox="0 0 54 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="54" height="90"/></g><polygon class="sprite-cls-2" points="18 54 27 63 36 54 18 54"/><rect class="sprite-cls-2" x="27" y="27" width="18" height="18"/><rect class="sprite-cls-2" x="9" y="27" width="18" height="18"/>
+  </symbol>
+  <symbol id="sprite-previouspagespace" viewBox="0 0 54 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="54" height="90"/></g><polygon class="sprite-cls-2" points="18 54 27 63 36 54 18 54"/><rect class="sprite-cls-2" x="27" y="27" width="18" height="18"/><rect class="sprite-cls-2" x="9" y="27" width="18" height="18"/>
+  </symbol>
+  <symbol id="sprite-print" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3,.cls-4{fill:none;stroke:#000;stroke-width:4px;}.cls-2,.cls-4{stroke-miterlimit:10;}.cls-3{stroke-linejoin:round;}.cls-4{stroke-linecap:round;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><path class="sprite-cls-2" d="M27,63H19.5c-.83,0-1.5-.9-1.5-2V38c0-1.1.67-2,1.5-2h51c.83,0,1.5.9,1.5,2V61c0,1.1-.67,2-1.5,2H63" transform="translate(0 0)"/><rect class="sprite-cls-2" x="27" y="54" width="36" height="18"/><polygon class="sprite-cls-3" points="63 36 27 36 27 27 36 18 63 18 63 36"/><line class="sprite-cls-4" x1="38.25" y1="63" x2="51.75" y2="63"/>
+  </symbol>
+  <symbol id="sprite-quickcount" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-2{stroke:#000;}.cls-3{stroke:#f66011;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><path class="sprite-cls-2" d="M18,54" transform="translate(0)"/><path class="sprite-cls-2" d="M72,18" transform="translate(0)"/><polyline class="sprite-cls-3" points="72 27 36 63 18 45"/>
+  </symbol>
+  <symbol id="sprite-quickcountcolor" viewBox="0 0 90 90">
+    <sodipodi:namedview
+     id="sprite-namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="18.322222"
+     inkscape:cx="45"
+     inkscape:cy="45"
+     inkscape:window-width="2059"
+     inkscape:window-height="1360"
+     inkscape:window-x="550"
+     inkscape:window-y="373"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Icon" />
+  <defs
+     id="sprite-defs1">
+    <style
+       id="sprite-style1">.cls-1{fill:#fff;}.cls-2,.cls-3,.cls-4{fill:none;stroke-width:4px;}.cls-2,.cls-3{stroke:#000;stroke-linejoin:round;}.cls-3,.cls-4{stroke-linecap:round;}.cls-4{stroke:#e22f30;stroke-miterlimit:10;}</style>
+  </defs>
+  <g
+     id="sprite-Background">
+    <rect
+       class="sprite-cls-1"
+       width="90"
+       height="90"
+       id="sprite-rect1" />
+  </g>
+  <path
+     class="sprite-cls-2"
+     d="M26.39,23.82H44.6a2,2,0,0,1,2,2V53.43a0,0,0,0,1,0,0H24.39a0,0,0,0,1,0,0V25.82A2,2,0,0,1,26.39,23.82Z"
+     transform="translate(33.29 91.04) rotate(-135)"
+     id="sprite-path1" />
+  <line
+     class="sprite-cls-3"
+     x1="38.12"
+     y1="20.31"
+     x2="34.45"
+     y2="16.65"
+     id="sprite-line1" />
+  <path
+     d="M49.09,40.74,24.91,33.51l-6.43,6.43a1.65,1.65,0,0,0,0,2.33L31.86,55.64a1.62,1.62,0,0,0,2.32,0Z"
+     transform="translate(0)"
+     id="sprite-path2" />
+  <path
+     d="M59.56,49.46c0-2.51-4.54-7.4-4.54-7.4s-4.55,4.89-4.55,7.4a4.55,4.55,0,1,0,9.09,0Z"
+     transform="translate(0)"
+     id="sprite-path3" />
+  <line
+     class="sprite-cls-4"
+     x1="18"
+     y1="72"
+     x2="45"
+     y2="72"
+     id="sprite-line3"
+     style="stroke:#f66011;stroke-opacity:1" />
+  <line
+     class="sprite-cls-4"
+     x1="45"
+     y1="63"
+     x2="72"
+     y2="63"
+     id="sprite-line4"
+     style="stroke:#f66011;stroke-opacity:1" />
+  </symbol>
+  <symbol id="sprite-quickcountsummary" viewBox="0 0 90 90">
+    <defs><style>.cls-1,.cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-1{stroke:#000;}.cls-2{fill:#fff;}.cls-3{stroke:#f66011;}</style></defs><path class="sprite-cls-1" d="M72,18" transform="translate(0)"/><g id="sprite-Background"><rect class="sprite-cls-2" width="90" height="90"/></g><polyline class="sprite-cls-3" points="45 45 27 63 18 54"/><polyline class="sprite-cls-3" points="72 54 54 72 45 63"/><polyline class="sprite-cls-3" points="54 18 36 36 27 27"/>
+  </symbol>
+  <symbol id="sprite-rectanglespaceobject" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:#1ccbd1;}.cls-2,.cls-3{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:none;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polygon class="sprite-cls-2" points="72.55 48.39 65.89 42.34 47.72 62.31 45 72 54.38 68.37 72.55 48.39"/><polyline class="sprite-cls-3" points="72 36 72 27 18 27 18 63 36 63"/>
+  </symbol>
+  <symbol id="sprite-redlinearrow" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polyline class="sprite-cls-2" points="72 27 18 27 18 63 72 63"/><polyline class="sprite-cls-2" points="63 18 72 27 63 36"/>
+  </symbol>
+  <symbol id="sprite-redlinecolor" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3,.cls-4{fill:none;stroke-width:4px;}.cls-2,.cls-3{stroke:#000;stroke-linejoin:round;}.cls-3,.cls-4{stroke-linecap:round;}.cls-4{stroke:#e22f30;stroke-miterlimit:10;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><path class="sprite-cls-2" d="M26.39,23.82H44.6a2,2,0,0,1,2,2V53.43a0,0,0,0,1,0,0H24.39a0,0,0,0,1,0,0V25.82A2,2,0,0,1,26.39,23.82Z" transform="translate(33.29 91.04) rotate(-135)"/><line class="sprite-cls-3" x1="38.12" y1="20.31" x2="34.45" y2="16.65"/><path d="M49.09,40.74,24.91,33.51l-6.43,6.43a1.65,1.65,0,0,0,0,2.33L31.86,55.64a1.62,1.62,0,0,0,2.32,0Z" transform="translate(0)"/><path d="M59.56,49.46c0-2.51-4.54-7.4-4.54-7.4s-4.55,4.89-4.55,7.4a4.55,4.55,0,1,0,9.09,0Z" transform="translate(0)"/><line class="sprite-cls-4" x1="18" y1="72" x2="45" y2="72"/><line class="sprite-cls-4" x1="45" y1="63" x2="72" y2="63"/>
+  </symbol>
+  <symbol id="sprite-redlinefilledpolygon" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:#e22f30;opacity:0.4;}.cls-3{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polygon class="sprite-cls-2" points="18 18 18 45 45 72 72 72 72 54 54 54 54 45 72 45 72 27 45 27 45 18 18 18"/><polygon class="sprite-cls-3" points="18 18 18 45 45 72 72 72 72 54 54 54 54 45 72 45 72 27 45 27 45 18 18 18"/>
+  </symbol>
+  <symbol id="sprite-redlinefilledrectangle" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:#e22f30;opacity:0.4;}.cls-3{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polyline class="sprite-cls-2" points="18 27 18 63 72 63 72 27"/><rect class="sprite-cls-3" x="18" y="27" width="54" height="36"/>
+  </symbol>
+  <symbol id="sprite-redlinepolyline" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polyline class="sprite-cls-2" points="45 27 45 18 18 18 18 45 45 72 72 72 72 54 54 54 54 45 72 45 72 27"/>
+  </symbol>
+  <symbol id="sprite-redlinerectangle" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><rect class="sprite-cls-2" x="18" y="27" width="54" height="36"/>
+  </symbol>
+  <symbol id="sprite-redlinesingleline" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><line class="sprite-cls-2" x1="18" y1="18" x2="72" y2="72"/>
+  </symbol>
+  <symbol id="sprite-redlinestickynote" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polygon class="sprite-cls-2" points="54 72 72 54 72 18 18 18 18 72 54 72"/><line class="sprite-cls-2" x1="27" y1="27" x2="63" y2="27"/><line class="sprite-cls-2" x1="27" y1="36" x2="63" y2="36"/><line class="sprite-cls-2" x1="27" y1="45" x2="45" y2="45"/><polyline class="sprite-cls-2" points="72 54 54 54 54 72"/>
+  </symbol>
+  <symbol id="sprite-redlinetext" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polygon class="sprite-cls-2" points="18 18 18 36 27 36 27 27 40 27 40 63 29 63 29 72 61 72 61 63 50 63 50 27 63 27 63 36 72 36 72 18 18 18"/>
+  </symbol>
+  <symbol id="sprite-redlinetriangle" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polygon class="sprite-cls-2" points="45.45 27 18.91 63 72 63 45.45 27"/>
+  </symbol>
+  <symbol id="sprite-redolastredline" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-2{stroke:#000;}.cls-3{stroke:#e22f30;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><path d="M44.15,53.27l12-12a2.94,2.94,0,0,1,4.16,0l9.89,9.88a2.94,2.94,0,0,1,0,4.16l-12,12Z"/><path class="sprite-cls-2" d="M44.15,72l-7.29-7.28a2.94,2.94,0,0,1,0-4.16L56.11,41.31a2.94,2.94,0,0,1,4.16,0l9.89,9.88a2.94,2.94,0,0,1,0,4.16L53.51,72Z"/><path class="sprite-cls-3" d="M18,23H36a9,9,0,0,1,9,9h0a9,9,0,0,1-9,9H18"/><polyline class="sprite-cls-3" points="24.77 16.23 18 23 24.77 29.77"/>
+  </symbol>
+  <symbol id="sprite-resizeredline" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;}.cls-2,.cls-3{stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#e22f30;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polyline class="sprite-cls-2" points="50.77 27 63 27 63 39.23"/><line class="sprite-cls-2" x1="50.76" y1="39.24" x2="63" y2="27"/><rect class="sprite-cls-3" x="18" y="45" width="27" height="27"/><polyline class="sprite-cls-2" points="18 36 18 18 72 18 72 72 54 72"/>
+  </symbol>
+  <symbol id="sprite-resizespaceobject" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;}.cls-2,.cls-3{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#1ccbd1;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polyline class="sprite-cls-2" points="50.77 27 63 27 63 39.23"/><line class="sprite-cls-2" x1="50.76" y1="39.24" x2="63" y2="27"/><rect class="sprite-cls-3" x="18" y="45" width="27" height="27"/><polyline class="sprite-cls-2" points="18 36 18 18 72 18 72 72 54 72"/>
+  </symbol>
+  <symbol id="sprite-rotateredline" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;}.cls-2,.cls-3{stroke:#e22f30;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#e22f30;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polyline class="sprite-cls-2" points="31.24 32.63 19.25 36.88 14.99 24.88"/><path class="sprite-cls-2" d="M19.64,54.28a27,27,0,1,0-.4-17.4" transform="translate(0)"/><rect class="sprite-cls-3" x="36" y="36" width="18" height="18" transform="translate(-18.64 45) rotate(-45)"/>
+  </symbol>
+  <symbol id="sprite-rotatespaceobject" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;}.cls-2,.cls-3{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#1ccbd1;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polyline class="sprite-cls-2" points="31.24 32.63 19.25 36.88 14.99 24.88"/><path class="sprite-cls-2" d="M19.64,54.28a27,27,0,1,0-.4-17.4" transform="translate(0)"/><rect class="sprite-cls-3" x="36" y="36" width="18" height="18" transform="translate(-18.64 45) rotate(-45)"/>
+  </symbol>
+  <symbol id="sprite-saveallimagelinks" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polyline class="sprite-cls-2" points="45 27 72 27 72 72 18 72 18 54"/><path d="M18,72V58.5L33.9,45.65a3.71,3.71,0,0,1,4.2,0L51.9,56a3.71,3.71,0,0,0,4.2,0l4.8-3.6a3.71,3.71,0,0,1,4.2,0L72,58.5V72Z" transform="translate(0)"/><circle cx="57" cy="42" r="4.09"/><line class="sprite-cls-2" x1="27" y1="42.59" x2="27" y2="18"/><polyline class="sprite-cls-2" points="18 33.59 27 42.59 36 33.59"/>
+  </symbol>
+  <symbol id="sprite-savepdf" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polyline class="sprite-cls-2" points="54 18 72 18 72 72 18 72 18 27 27 18 36 18"/><line class="sprite-cls-2" x1="45" y1="36" x2="45" y2="9"/><polyline class="sprite-cls-2" points="36 27 45 36 54 27"/><path d="M31.88,54.13H29.45V57.9h2.43a1.89,1.89,0,1,0,0-3.77Z" transform="translate(0)"/><path d="M44,54.13h-1.7v8.74H44a4.09,4.09,0,0,0,4.37-4.38A4.08,4.08,0,0,0,44,54.13Z" transform="translate(0)"/><path d="M72,43H27a2,2,0,0,0-1.41.59l-9,9A2,2,0,0,0,16,54V72a2,2,0,0,0,2,2H72a2,2,0,0,0,2-2V45A2,2,0,0,0,72,43ZM31.86,60.39H29.45v5H26.6V51.65h5.26c2.83,0,4.86,1.51,4.86,4.38S34.66,60.39,31.86,60.39Zm12.1,5H39.49V51.65H44c4.45,0,7.3,2.87,7.3,6.84S48.39,65.35,44,65.35ZM63.42,54.13H56.89v3.48H62.5v2.48H56.89v5.26H54V51.65h9.38Z" transform="translate(0)"/>
+  </symbol>
+  <symbol id="sprite-savespaceobjects" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;}.cls-2,.cls-3{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#1ccbd1;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polyline class="sprite-cls-2" points="54 18 72 18 72 72 18 72 18 27 27 18 36 18"/><polygon class="sprite-cls-3" points="72 72 18 72 18 63 27 54 72 54 72 72"/><line class="sprite-cls-2" x1="45" y1="45" x2="45" y2="9"/><polyline class="sprite-cls-2" points="36 36 45 45 54 36"/>
+  </symbol>
+  <symbol id="sprite-savesvg" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polyline class="sprite-cls-2" points="54 18 72 18 72 72 18 72 18 27 27 18 36 18"/><line class="sprite-cls-2" x1="45" y1="36" x2="45" y2="9"/><polyline class="sprite-cls-2" points="36 27 45 36 54 27"/><path d="M72,43H27a2,2,0,0,0-1.41.59l-9,9A2,2,0,0,0,16,54V72a2,2,0,0,0,2,2H72a2,2,0,0,0,2-2V45A2,2,0,0,0,72,43ZM30.75,57l2.39.77c2,.65,3,1.81,3,3.48,0,2.2-1.83,3.74-4.45,3.74a5.2,5.2,0,0,1-5.09-3.5l2.12-1a3.46,3.46,0,0,0,3.13,2.2c1.06,0,1.75-.52,1.75-1.33,0-.58-.36-1-1.11-1.24l-2.44-.8c-2-.65-3-1.86-3-3.53,0-2.19,1.76-3.72,4.32-3.72a4.86,4.86,0,0,1,4.77,3.17l-2.11,1a2.84,2.84,0,0,0-2.66-1.86c-1.06,0-1.76.56-1.76,1.36C29.61,56.27,30,56.7,30.75,57Zm14.6,7.78h-3L38.06,52.27h2.85l2.93,9.12,2.93-9.12h2.84Zm18.07-5.79a5.67,5.67,0,0,1-5.85,6,6.27,6.27,0,0,1-6.36-6.45,6.18,6.18,0,0,1,6.29-6.43,5.46,5.46,0,0,1,5.34,3.34l-2.3,1.1a3.13,3.13,0,0,0-3-2.09c-2.21,0-3.7,1.65-3.7,4.08s1.56,4.1,3.77,4.1c1.7,0,3.26-1,3.26-2.76v0H57.5V57.62h5.92Z" transform="translate(0 0)"/>
+  </symbol>
+  <symbol id="sprite-scaleicon" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;}.cls-2,.cls-3{stroke:#1ccbd1;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#1ccbd1;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polyline class="sprite-cls-2" points="50.77 27 63 27 63 39.23"/><line class="sprite-cls-2" x1="50.76" y1="39.24" x2="63" y2="27"/><rect class="sprite-cls-3" x="18" y="45" width="27" height="27"/><polyline class="sprite-cls-2" points="18 36 18 18 72 18 72 72 54 72"/>
+  </symbol>
+  <symbol id="sprite-search" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3,.cls-4{fill:none;stroke:#1ccbd1;stroke-width:4px;}.cls-2,.cls-3{stroke-miterlimit:10;}.cls-3,.cls-4{stroke-linecap:round;}.cls-4{stroke-linejoin:round;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><circle class="sprite-cls-2" cx="31.5" cy="40.52" r="13.5"/><line class="sprite-cls-3" x1="41.05" y1="50.06" x2="63" y2="72.02"/><polyline class="sprite-cls-4" points="72 22.52 72 18.02 45 18.02 45 22.52"/><line class="sprite-cls-4" x1="58.5" y1="18.02" x2="58.5" y2="45.02"/><line class="sprite-cls-4" x1="54" y1="45.02" x2="63" y2="45.02"/>
+  </symbol>
+  <symbol id="sprite-sendbackward" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:#1ccbd1;stroke:#1ccbd1;}.cls-2,.cls-3{stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:none;stroke:#000;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><rect class="sprite-cls-2" x="36" y="36" width="36" height="36"/><rect class="sprite-cls-3" x="18" y="18" width="27" height="27"/>
+  </symbol>
+  <symbol id="sprite-sendtoback" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:#1ccbd1;stroke:#1ccbd1;}.cls-2,.cls-3{stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:none;stroke:#000;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><rect class="sprite-cls-2" x="27" y="27" width="36" height="36"/><rect class="sprite-cls-3" x="18" y="18" width="18" height="18"/><rect class="sprite-cls-3" x="54" y="54" width="18" height="18"/>
+  </symbol>
+  <symbol id="sprite-settings" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><path d="M70.5,40.53H63.8a1.74,1.74,0,0,1-1.61-1.08l-1.11-2.68a1.74,1.74,0,0,1,.37-1.9l4.74-4.74a1.49,1.49,0,0,0,0-2.12L62,23.81a1.49,1.49,0,0,0-2.12,0l-4.73,4.73a1.77,1.77,0,0,1-1.92.38l-2.67-1.11a1.74,1.74,0,0,1-1.08-1.61V19.5A1.5,1.5,0,0,0,48,18H42a1.5,1.5,0,0,0-1.5,1.5v6.69a1.76,1.76,0,0,1-1.08,1.62l-2.68,1.11a1.74,1.74,0,0,1-1.9-.37l-4.74-4.74a1.49,1.49,0,0,0-2.12,0L23.81,28a1.49,1.49,0,0,0,0,2.12l4.73,4.73a1.77,1.77,0,0,1,.38,1.92l-1.11,2.67a1.76,1.76,0,0,1-1.62,1.08H19.5A1.5,1.5,0,0,0,18,42V48a1.5,1.5,0,0,0,1.5,1.5h6.7a1.73,1.73,0,0,1,1.61,1.08l1.11,2.68a1.74,1.74,0,0,1-.37,1.9l-4.74,4.74a1.49,1.49,0,0,0,0,2.12l4.2,4.2a1.49,1.49,0,0,0,2.12,0l4.73-4.73a1.77,1.77,0,0,1,1.92-.38l2.67,1.11a1.74,1.74,0,0,1,1.08,1.61v6.7A1.5,1.5,0,0,0,42,72H48a1.5,1.5,0,0,0,1.5-1.5V63.81a1.76,1.76,0,0,1,1.08-1.62l2.67-1.11a1.77,1.77,0,0,1,1.92.38l4.73,4.73a1.49,1.49,0,0,0,2.12,0l4.2-4.2a1.49,1.49,0,0,0,0-2.12l-4.73-4.73a1.77,1.77,0,0,1-.38-1.92l1.11-2.67a1.73,1.73,0,0,1,1.61-1.08h6.7A1.5,1.5,0,0,0,72,48V42A1.5,1.5,0,0,0,70.5,40.53ZM45,54a9,9,0,1,1,9-9A9,9,0,0,1,45,54Z"/>
+  </symbol>
+  <symbol id="sprite-showhide" viewBox="0 0 54 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="54" height="90"/></g><path class="sprite-cls-2" d="M63,63Q45,81,27,63,45,45,63,63Z" transform="translate(-18)"/><rect class="sprite-cls-2" x="9" y="18" width="18" height="18"/><rect class="sprite-cls-2" x="27" y="18" width="18" height="18"/><circle class="sprite-cls-2" cx="27" cy="63" r="6.28"/>
+  </symbol>
+  <symbol id="sprite-showhidemove" viewBox="0 0 144 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3{fill:none;stroke:#000;}.cls-2{stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{stroke-miterlimit:10;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="144" height="90"/></g><line class="sprite-cls-2" x1="45" y1="18" x2="45" y2="36"/><polyline class="sprite-cls-2" points="54 27 45 18 36 27"/><line class="sprite-cls-2" x1="45" y1="72" x2="45" y2="54"/><polyline class="sprite-cls-2" points="36 63 45 72 54 63"/><line class="sprite-cls-2" x1="18" y1="45" x2="36" y2="45"/><polyline class="sprite-cls-2" points="27 36 18 45 27 54"/><line class="sprite-cls-2" x1="72" y1="45" x2="54" y2="45"/><polyline class="sprite-cls-2" points="63 54 72 45 63 36"/><path class="sprite-cls-2" d="M108,63Q90,81,72,63,90,45,108,63Z" transform="translate(27 0)"/><rect class="sprite-cls-2" x="99" y="18" width="18" height="18"/><rect class="sprite-cls-2" x="117" y="18" width="18" height="18"/><circle class="sprite-cls-2" cx="117" cy="63" r="6.28"/><line class="sprite-cls-3" x1="90" x2="90" y2="90"/>
+  </symbol>
+  <symbol id="sprite-spaceobjectcolor" viewBox="0 0 90 90">
+    <sodipodi:namedview
+     id="sprite-namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="18.322222"
+     inkscape:cx="45"
+     inkscape:cy="45"
+     inkscape:window-width="2059"
+     inkscape:window-height="1360"
+     inkscape:window-x="550"
+     inkscape:window-y="373"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Icon" />
+  <defs
+     id="sprite-defs1">
+    <style
+       id="sprite-style1">.cls-1{fill:#fff;}.cls-2,.cls-3,.cls-4{fill:none;stroke-width:4px;}.cls-2,.cls-3{stroke:#000;stroke-linejoin:round;}.cls-3,.cls-4{stroke-linecap:round;}.cls-4{stroke:#e22f30;stroke-miterlimit:10;}</style>
+  </defs>
+  <g
+     id="sprite-Background">
+    <rect
+       class="sprite-cls-1"
+       width="90"
+       height="90"
+       id="sprite-rect1" />
+  </g>
+  <path
+     class="sprite-cls-2"
+     d="M26.39,23.82H44.6a2,2,0,0,1,2,2V53.43a0,0,0,0,1,0,0H24.39a0,0,0,0,1,0,0V25.82A2,2,0,0,1,26.39,23.82Z"
+     transform="translate(33.29 91.04) rotate(-135)"
+     id="sprite-path1" />
+  <line
+     class="sprite-cls-3"
+     x1="38.12"
+     y1="20.31"
+     x2="34.45"
+     y2="16.65"
+     id="sprite-line1" />
+  <path
+     d="M49.09,40.74,24.91,33.51l-6.43,6.43a1.65,1.65,0,0,0,0,2.33L31.86,55.64a1.62,1.62,0,0,0,2.32,0Z"
+     transform="translate(0)"
+     id="sprite-path2" />
+  <path
+     d="M59.56,49.46c0-2.51-4.54-7.4-4.54-7.4s-4.55,4.89-4.55,7.4a4.55,4.55,0,1,0,9.09,0Z"
+     transform="translate(0)"
+     id="sprite-path3" />
+  <line
+     class="sprite-cls-4"
+     x1="18"
+     y1="72"
+     x2="45"
+     y2="72"
+     id="sprite-line3"
+     style="stroke:#2fdce2;stroke-opacity:1" />
+  <line
+     class="sprite-cls-4"
+     x1="45"
+     y1="63"
+     x2="72"
+     y2="63"
+     id="sprite-line4"
+     style="stroke:#1dc8ce;stroke-opacity:1" />
+  </symbol>
+  <symbol id="sprite-swaplayers" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><path d="M72,42.29,45,57.58,18,42.29l9-5.12a18,18,0,0,0,35.92,0Z"/><polyline class="sprite-cls-2" points="25.88 37.83 18 42.29 45 57.58 72 42.29 63.87 37.68"/><path class="sprite-cls-2" d="M24.08,46.27,18,49.72,43.6,64.21a2.85,2.85,0,0,0,2.8,0L72,49.72l-5.82-3.3"/><path class="sprite-cls-2" d="M23.64,54,18,57.14l25.6,14.5a2.9,2.9,0,0,0,2.8,0L72,57.14l-5.23-3"/><circle class="sprite-cls-2" cx="45" cy="36" r="18"/><path class="sprite-cls-2" d="M36,36a9,9,0,0,1,13.53-7.78"/><path class="sprite-cls-2" d="M54,36a9,9,0,0,1-13.64,7.72"/><polygon points="31.82 36 36 40.88 40.18 36 31.82 36"/><polygon points="58.18 36 54 31.12 49.82 36 58.18 36"/>
+  </symbol>
+  <symbol id="sprite-togglespace" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-4{fill:none;}.cls-2,.cls-3{stroke:#1ccbd1;}.cls-2,.cls-3,.cls-4{stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:#1ccbd1;}.cls-4{stroke:#000;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><polyline class="sprite-cls-2" points="72 36 72 18 45 18 45 36 45 45 18 45 18 54 18 72 27 72 36 72"/><polygon class="sprite-cls-3" points="72 48.39 65.34 42.34 47.18 62.31 44.45 72 53.84 68.37 72 48.39"/><polyline class="sprite-cls-4" points="18 18 18 31.4 36 31.4"/><polyline class="sprite-cls-4" points="30 37.4 36 31.4 30 25.4"/><polyline class="sprite-cls-2" points="72 63 72 72 63 72"/>
+  </symbol>
+  <symbol id="sprite-undolastredline" viewBox="0 0 90 90">
+    <defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-2{stroke:#000;}.cls-3{stroke:#e22f30;}</style></defs><g id="sprite-Background"><rect class="sprite-cls-1" width="90" height="90"/></g><path d="M44.15,53.27l12-12a2.94,2.94,0,0,1,4.16,0l9.89,9.88a2.94,2.94,0,0,1,0,4.16l-12,12Z"/><path class="sprite-cls-2" d="M44.15,72l-7.29-7.28a2.94,2.94,0,0,1,0-4.16L56.11,41.31a2.94,2.94,0,0,1,4.16,0l9.89,9.88a2.94,2.94,0,0,1,0,4.16L53.51,72Z"/><path class="sprite-cls-3" d="M45,23H27a9,9,0,0,0-9,9h0a9,9,0,0,0,9,9H45"/><polyline class="sprite-cls-3" points="38.23 16.23 45 23 38.23 29.77"/>
+  </symbol>
+  </symbol>
+  <symbol id="swaplayers" viewBox="0 0 90 90">
+    <defs><style>.swaplayers-cls-1{fill:#fff;}.swaplayers-cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}</style></defs><g id="swaplayers-Background"><rect class="swaplayers-cls-1" width="90" height="90"/></g><path d="M72,42.29,45,57.58,18,42.29l9-5.12a18,18,0,0,0,35.92,0Z"/><polyline class="swaplayers-cls-2" points="25.88 37.83 18 42.29 45 57.58 72 42.29 63.87 37.68"/><path class="swaplayers-cls-2" d="M24.08,46.27,18,49.72,43.6,64.21a2.85,2.85,0,0,0,2.8,0L72,49.72l-5.82-3.3"/><path class="swaplayers-cls-2" d="M23.64,54,18,57.14l25.6,14.5a2.9,2.9,0,0,0,2.8,0L72,57.14l-5.23-3"/><circle class="swaplayers-cls-2" cx="45" cy="36" r="18"/><path class="swaplayers-cls-2" d="M36,36a9,9,0,0,1,13.53-7.78"/><path class="swaplayers-cls-2" d="M54,36a9,9,0,0,1-13.64,7.72"/><polygon points="31.82 36 36 40.88 40.18 36 31.82 36"/><polygon points="58.18 36 54 31.12 49.82 36 58.18 36"/>
+  </symbol>
+  <symbol id="togglespace" viewBox="0 0 90 90">
+    <defs><style>.togglespace-cls-1{fill:#fff;}.togglespace-cls-2,.togglespace-cls-4{fill:none;}.togglespace-cls-2,.togglespace-cls-3{stroke:#1ccbd1;}.togglespace-cls-2,.togglespace-cls-3,.togglespace-cls-4{stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.togglespace-cls-3{fill:#1ccbd1;}.togglespace-cls-4{stroke:#000;}</style></defs><g id="togglespace-Background"><rect class="togglespace-cls-1" width="90" height="90"/></g><polyline class="togglespace-cls-2" points="72 36 72 18 45 18 45 36 45 45 18 45 18 54 18 72 27 72 36 72"/><polygon class="togglespace-cls-3" points="72 48.39 65.34 42.34 47.18 62.31 44.45 72 53.84 68.37 72 48.39"/><polyline class="togglespace-cls-4" points="18 18 18 31.4 36 31.4"/><polyline class="togglespace-cls-4" points="30 37.4 36 31.4 30 25.4"/><polyline class="togglespace-cls-2" points="72 63 72 72 63 72"/>
+  </symbol>
+  <symbol id="undolastredline" viewBox="0 0 90 90">
+    <defs><style>.undolastredline-cls-1{fill:#fff;}.undolastredline-cls-2,.undolastredline-cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.undolastredline-cls-2{stroke:#000;}.undolastredline-cls-3{stroke:#e22f30;}</style></defs><g id="undolastredline-Background"><rect class="undolastredline-cls-1" width="90" height="90"/></g><path d="M44.15,53.27l12-12a2.94,2.94,0,0,1,4.16,0l9.89,9.88a2.94,2.94,0,0,1,0,4.16l-12,12Z"/><path class="undolastredline-cls-2" d="M44.15,72l-7.29-7.28a2.94,2.94,0,0,1,0-4.16L56.11,41.31a2.94,2.94,0,0,1,4.16,0l9.89,9.88a2.94,2.94,0,0,1,0,4.16L53.51,72Z"/><path class="undolastredline-cls-3" d="M45,23H27a9,9,0,0,0-9,9h0a9,9,0,0,0,9,9H45"/><polyline class="undolastredline-cls-3" points="38.23 16.23 45 23 38.23 29.77"/>
+  </symbol>
+</svg>

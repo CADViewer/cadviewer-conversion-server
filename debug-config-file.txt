@@ -1,0 +1,6 @@
+contentLocation: /nodejs/cadviewer-conversion-server-nextgen/content/custom/docuex.co.uk/2026_TT40_EG_all/2026_TT40_1OG-init.json
+reqDir: /nodejs/cadviewer-conversion-server-nextgen/content/custom/docuex.co.uk/2026_TT40_EG_all/2026_TT40_1OG-init.json
+directoryStr: /nodejs/cadviewer-conversion-server-nextgen/content/custom/docuex.co.uk/2026_TT40_EG_all
+directory: C:\nodejs\cadviewer-conversion-server-nextgen\content\custom\docuex.co.uk\2026_TT40_EG_all
+fullFilePath: C:\nodejs\cadviewer-conversion-server-nextgen\content\custom\docuex.co.uk\2026_TT40_EG_all\2026_TT40_1OG-init.json
+contentRoot: /nodejs/cadviewer-conversion-server-nextgen/content

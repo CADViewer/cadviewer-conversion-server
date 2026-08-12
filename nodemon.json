@@ -1,0 +1,8 @@
+{
+  "ignore": [
+    "content/*",
+    "tmp/*",
+    "node_modules/*",
+    ".git/*"
+  ]
+}
