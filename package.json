@@ -1,8 +1,14 @@
 {
   "name": "cadviewer-conversion-server",
-  "version": "12.7.15",
+  "version": "12.10.31",
   "description": "CADViewer NodeJS Server Encapsulation of CAD Converters",
   "main": "app.js",
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/*.test.js"
+    ]
+  },
   "scripts": {
     "start": "node app.js",
     "start:ts": "node dist/app.js",
@@ -22,6 +28,7 @@
   "author": "charnung",
   "license": "TMS 1.0",
   "dependencies": {
+    "archiver": "^7.0.1",
     "aws-serverless-express": "^3.4.0",
     "axios": "^1.8.4",
     "bcryptjs": "^2.4.3",

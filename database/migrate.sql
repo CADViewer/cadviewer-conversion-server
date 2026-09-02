@@ -106,3 +106,30 @@ CREATE TABLE IF NOT EXISTS `agent_targets` (
   PRIMARY KEY (`target`),
   KEY `idx_agent_targets_tenant` (`tenant_id`)
 );
+
+-- ─────────────────────────────────────────────────────────────────────────────
+-- Per-frontend partition
+-- A tenant may run several frontends (apps) and they used to share everything:
+-- a drawing uploaded on one appeared in the folder panel of the others. Each
+-- app now owns its files under `apps/<name>/` inside the tenant's roots, and
+-- its accounts. `app_folder` is the app's subdomain; NULL means tenant-wide
+-- (content and accounts that predate the split).
+--
+-- libs/tenant.js ensureSchema() applies all of this automatically at boot —
+-- this file stays the readable record of what it does.
+-- ─────────────────────────────────────────────────────────────────────────────
+ALTER TABLE `agent_targets`
+  ADD COLUMN IF NOT EXISTS `app_folder` VARCHAR(64) NULL;
+
+ALTER TABLE `users`
+  ADD COLUMN IF NOT EXISTS `app_folder` VARCHAR(64) NULL;
+
+CREATE INDEX IF NOT EXISTS `idx_users_app` ON `users` (`tenant_id`, `app_folder`);
+
+-- The same address must be free to hold an account on two frontends of one
+-- tenant, so the uniqueness rule gains the app. Added before the narrower key
+-- is dropped, so the table is never without one.
+ALTER TABLE `users`
+  ADD UNIQUE KEY IF NOT EXISTS `uq_users_tenant_app_email` (`tenant_id`, `app_folder`, `email`);
+ALTER TABLE `users`
+  DROP INDEX IF EXISTS `uq_users_tenant_email`;
