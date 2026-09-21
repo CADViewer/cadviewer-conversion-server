@@ -6,8 +6,12 @@ ALTER TABLE `users`
 ADD `avatar_url` text COLLATE 'latin1_swedish_ci' NULL;
 
 
+-- A role is free text named by the site (see the frontend's role profiles on
+-- the analytics platform), not one of three fixed words: "space_manager" alone
+-- does not fit varchar(10). libs/tenant.js widens this at boot on an existing
+-- database (COLUMN_WIDENINGS); keep the two in sync.
 ALTER TABLE `users`
-ADD `role` varchar(10) COLLATE 'latin1_swedish_ci' NOT NULL DEFAULT 'user';
+ADD `role` varchar(32) COLLATE 'latin1_swedish_ci' NOT NULL DEFAULT 'user';
 ALTER TABLE `users`
 ADD `is_enabled` tinyint NOT NULL DEFAULT '1';
 

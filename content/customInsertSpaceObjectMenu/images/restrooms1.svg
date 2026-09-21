@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <!-- Yellow Background with Black Border -->
+  <rect x="5" y="5" width="190" height="190" rx="20" ry="20" fill="#FFD700" stroke="#000000" stroke-width="8"/>
+  
+  <!-- Divider Line -->
+  <line x1="100" y1="30" x2="100" y2="170" stroke="#000000" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Men Symbol (Left) -->
+  <circle cx="55" cy="50" r="12" fill="#000000" />
+  <path d="M43,68 C43,65 46,65 55,65 C64,65 67,65 67,68 L67,110 C67,113 64,113 62,113 L62,155 C62,160 48,160 48,155 L48,113 C46,113 43,113 43,110 Z" fill="#000000" />
+  
+  <!-- Women Symbol (Right) -->
+  <circle cx="145" cy="50" r="12" fill="#000000" />
+  <path d="M145,65 C137,65 132,70 130,85 L122,120 C121,123 124,125 127,125 L135,125 L135,155 C135,160 142,160 142,155 L142,125 L148,125 L148,155 C148,160 155,160 155,155 L155,125 L163,125 C166,125 169,123 168,120 L160,85 C158,70 153,65 145,65 Z" fill="#000000" />
+</svg>

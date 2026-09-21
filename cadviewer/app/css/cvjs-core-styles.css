@@ -4789,6 +4789,22 @@ table.publishPDFModalTable td {
   width: 40px;
   height: 20px !important;
   min-height: 20px !important;
+
+  cursor: pointer;
+  position: absolute;
+  border: solid 1px #ccc;
+  border-radius: 12px !important;
+  padding: 1px 1px;
+  margin-bottom: 10px;
+  font-family: "Arial-BoldMT", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+  font-size: 12px;
+  background: #F0F0F0;
+
+/*
+12.10.14
   padding: 1px;
   z-index: 1000;
   margin: 0px;
@@ -4801,10 +4817,10 @@ table.publishPDFModalTable td {
   font-size: 12px;
   line-height: 1;
   position: absolute;
-  left: 460px;
-  top: 190px;
+  left: 230px;
+  top: 75px;
   background: #F0F0F0;
-
+*/
 }
 
 #enter_email_content_table {
@@ -10495,5 +10511,225 @@ h3_selected {
     bottom: auto !important;
     width: auto !important;
     height: 30px !important;
+}
+
+/* === MODERN: Compare Modal === */
+.compareModal {
+    width: 500px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.compareModal table.compareModalTable {
+    width: 100% !important;
+    height: auto !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+    border: 1px solid #e5e7eb !important;
+    border-radius: 8px !important;
+    border-spacing: 0 !important;
+    border-collapse: separate !important;
+    background: #ffffff !important;
+    box-shadow:
+        0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+}
+
+.compareModal table.compareModalTable tbody,
+.compareModal table.compareModalTable tr {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+}
+
+.compareModal table.compareModalTable td {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
+    vertical-align: top !important;
+    box-sizing: border-box !important;
+}
+
+.compareModal .compareModalHeader {
+    position: static !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    height: 40px !important;
+    margin: 0 !important;
+    padding: 0 12px !important;
+    box-sizing: border-box !important;
+    border: none !important;
+    border-bottom: 1px solid #e5e7eb !important;
+    border-radius: 0 !important;
+    background: #ffffff !important;
+}
+
+.compareModal .compareModalHeaderContent {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    min-width: 0 !important;
+}
+
+.compareModal .modalIconLogo {
+    position: static !important;
+    display: flex !important;
+    align-items: center !important;
+    width: auto !important;
+    height: auto !important;
+    border: none !important;
+}
+
+.compareModal .modalIconLogo .cvjs_img {
+    display: block !important;
+    width: 20px !important;
+    height: 20px !important;
+    object-fit: contain !important;
+}
+
+.compareModal .modalHeaderText {
+    position: static !important;
+    margin: 0 0 0 12px !important;
+    color: #0a0042 !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    white-space: nowrap !important;
+}
+
+.compareModal #cvjs_compare_modal_hide {
+    position: static !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex: 0 0 auto !important;
+    width: auto !important;
+    height: auto !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 4px !important;
+    border: none !important;
+    border-radius: 6px !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    color: #4b5563 !important;
+    cursor: pointer !important;
+}
+
+.compareModal #cvjs_compare_modal_hide svg {
+    display: block !important;
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.compareModal .compareModalBody {
+    padding: 16px 24px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.compareModal #cvjs_compare_select_text {
+    position: static !important;
+    display: block !important;
+    margin: 0 0 6px !important;
+    padding: 0 !important;
+    color: #0a0042 !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    line-height: 20px !important;
+    text-align: left !important;
+}
+
+.compareModal .compareModalRadioGroup {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 3px !important;
+}
+
+.compareModal .compareModalOptionRow {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 20px !important;
+    min-height: 28px !important;
+}
+
+.compareModal .compareModalDifferenceRow {
+    min-height: 28px !important;
+}
+
+.compareModal .compareModalRadioRow,
+.compareModal #cvjs_compare1,
+.compareModal #cvjs_compare2,
+.compareModal #cvjs_compare3 {
+    position: static !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    width: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #374151 !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 20px !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+}
+
+.compareModal .compareModalOptionRow .compareModalRadioRow {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+}
+
+.compareModal .radioCompare1,
+.compareModal .radioCompare2,
+.compareModal .radioCompare3 {
+    position: static !important;
+    flex: 0 0 auto !important;
+    width: 16px !important;
+    height: 16px !important;
+    min-height: 0 !important;
+    margin: 2px 10px 0 0 !important;
+    padding: 0 !important;
+    accent-color: #f15a24;
+    cursor: pointer !important;
+}
+
+.compareModal #cvjs_compare_button1,
+.compareModal #cvjs_compare_button2 {
+    position: static !important;
+    flex: 0 0 150px !important;
+    width: 150px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 7px 10px !important;
+    border: 1px solid #0a0042 !important;
+    border-radius: 6px !important;
+    background: #ffffff !important;
+    color: #0a0042 !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+    text-align: center !important;
+    cursor: pointer !important;
+}
+
+.compareModal #cvjs_compare_button1:hover,
+.compareModal #cvjs_compare_button2:hover {
+    background: #f3f4f6 !important;
 }
 

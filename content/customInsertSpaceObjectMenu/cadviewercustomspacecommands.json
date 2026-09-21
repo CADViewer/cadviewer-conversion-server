@@ -130,6 +130,16 @@
                     "commandName": "rect",
                     "imageLocation": "/images/rect.svg",
                     "toolTip": "Rectangle Symbol "
+                },
+                {
+                    "commandName": "restroom",
+                    "imageLocation": "/images/restrooms1.svg",
+                    "toolTip": "Restroom Symbol "
+                },
+                {
+                    "commandName": "accessible",
+                    "imageLocation": "/images/wheelchair1.svg",
+                    "toolTip": "Wheelchair Symbol "
                 }
             ]
         ]

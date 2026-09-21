@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+<!-- Yellow Background with Black Border -->
+  <rect x="5" y="5" width="190" height="190" rx="20" ry="20" fill="#FFD700" stroke="#000000" stroke-width="8"/>
+  
+  <!-- Wheelchair Symbol -->
+  <g fill="#000000">
+    <!-- Head -->
+    <circle cx="115" cy="45" r="12" />
+    <!-- Wheel / Chair Base -->
+    <path d="M90,105 A 35,35 0 1,0 120,138 L105,133 A 20,20 0 1,1 88,113 Z" />
+    <!-- Torso and Arms -->
+    <path d="M110,65 L85,65 C80,65 78,70 78,75 L78,105 C78,110 83,110 85,110 L90,110 L90,80 L112,80 L128,115 C130,120 135,122 140,120 L155,112 C160,110 158,102 153,105 L140,112 L125,78 C122,70 118,65 110,65 Z" />
+  </g>
+</svg>

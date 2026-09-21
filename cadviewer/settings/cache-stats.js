@@ -50,7 +50,23 @@ function formatBytes(bytes) {
   return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + " " + sizes[i];
 }
 
-// Refresh stats every minute
+// Listen for server-sent events to refresh stats on demand
 document.addEventListener("DOMContentLoaded", () => {
   getCacheStats();
+
+  // Fallback polling just in case SSE fails or is buffered
+  setInterval(() => {
+    getCacheStats();
+  }, 3000);
+
+  const eventSource = new EventSource("/settings/cache/stream");
+  eventSource.onmessage = function (event) {
+    if (event.data === "update") {
+      getCacheStats();
+    }
+  };
+  eventSource.onerror = function () {
+    // Optionally handle error or reconnect logic, EventSource auto-reconnects by default.
+  };
 });
+
