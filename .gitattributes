@@ -1,1 +1,4 @@
 
+
+# Control files shipped to a Linux host: shell scripts must keep LF endings.
+deploy-targets/**/*.sh text eol=lf
