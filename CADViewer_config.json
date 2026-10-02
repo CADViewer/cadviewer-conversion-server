@@ -54,7 +54,7 @@
   "jwtSecretKey": "",
   "bcryptSaltRounds": 10,
   "globalApplicationSasToken": "",
-  "globalApplicationSasToken__": "your-sas-token-here",
+  "globalApplicationSasToken__": "",
   "globalApplicationSasToken_": "",
   "globalBearerAutentication": false,
   "globalBearerAutenticationToken": "",
