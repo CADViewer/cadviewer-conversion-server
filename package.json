@@ -15,7 +15,7 @@
     "run": "node app.js",
     "dev": "nodemon app.js",
     "dev:ts": "ts-node-dev --respawn --transpile-only app.ts",
-    "build": "tsc",
+    "build": "echo \"No build required\"",
     "build:watch": "tsc --watch",
     "type-check": "tsc --noEmit",
     "test": "jest",
