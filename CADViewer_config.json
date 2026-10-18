@@ -17,7 +17,7 @@
   "platform": "linux",
   "autodetect_location": true,
   "autoxchange_executable": "ax2026_L64_27_06b_163e",
-  "autoxchange_executable_windows": "AX2026_W64_27_07_163h.exe",
+  "autoxchange_executable_windows": "AX2026_W64_27_08_164b.exe",
   "autoxchange_executable_linux": "ax2026_L64_27_06b_163e",
   "licenseLocation": "/converters/autoxchange/",
   "xpathLocation": "/converters/xpath/",
@@ -54,6 +54,7 @@
   "jwtSecretKey": "",
   "bcryptSaltRounds": 10,
   "globalApplicationSasToken": "",
+  "globalApplicationSasToken___": "?sp=rl&st=2026-09-21T15:32:46Z&se=2026-10-15T23:47:46Z&spr=https&sv=2026-02-06&sr=c&sig=sV73EjlLrqMni0QFw4%2Bt%2FpK5rpEvMjwDkx9v0haQqSk%3D",
   "globalApplicationSasToken__": "",
   "globalApplicationSasToken_": "",
   "globalBearerAutentication": false,
@@ -84,5 +85,6 @@
   "SALESFORCE_CLIENT_ID": "your-salesforce-client-id",
   "SALESFORCE_CLIENT_SECRET": "",
   "SALESFORCE_INSTANCE_URL": "https://your-domain.my.salesforce.com",
-  "SALESFORCE_API_VERSION": "v60.0"
+  "SALESFORCE_API_VERSION": "v60.0",
+  "__CONVERSION_MASTER_KEY": "local-dev-master-key-12345"
 }

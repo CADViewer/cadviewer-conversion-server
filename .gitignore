@@ -1,4 +1,5 @@
 content/custom/*
+content/[0-9a-f][0-9a-f][0-9a-f]*/
 tmp
 photos/
 node_modules/
