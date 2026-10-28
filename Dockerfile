@@ -1,5 +1,5 @@
-# Use the official Node.js 20 image based on Debian
-FROM node:20-bullseye
+# Use the official Node.js 20 image based on Debian Bookworm (glibc 2.36+, libstdc++ 12+)
+FROM node:20-bookworm
 
 # Set environment variable
 ENV RUNING_IN_DOCKER=true
