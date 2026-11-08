@@ -16,9 +16,9 @@
   "webapp": "none",
   "platform": "linux",
   "autodetect_location": true,
-  "autoxchange_executable": "ax2026_L64_27_09_164d",
-  "autoxchange_executable_windows": "AX2026_W64_27_08_164b.exe",
-  "autoxchange_executable_linux": "ax2026_L64_27_09_164d",
+  "autoxchange_executable": "ax2026_L64G8_27_09_164i",
+  "autoxchange_executable_windows": "AX2026_W64_27_09_164i.exe",
+  "autoxchange_executable_linux": "ax2026_L64G8_27_09_164i",
   "licenseLocation": "/converters/autoxchange/",
   "xpathLocation": "/converters/xpath/",
   "fileLocation": "/converters/files/",
@@ -86,5 +86,7 @@
   "SALESFORCE_CLIENT_SECRET": "",
   "SALESFORCE_INSTANCE_URL": "https://your-domain.my.salesforce.com",
   "SALESFORCE_API_VERSION": "v60.0",
+  "LOCAL_CADVIEWER_ANALYTICS_URL": "http://localhost:3005/api/v1/agents/demo-mall-agent-1/chat",
+  "LOCAL_CADVIEWER_ANALYTICS_API_KEY": "cav_e3e4ea9ef5808c4adddf518e7958ee9133d5719279fdc4790e5d2422d0d315d6",
   "__CONVERSION_MASTER_KEY": "local-dev-master-key-12345"
 }
